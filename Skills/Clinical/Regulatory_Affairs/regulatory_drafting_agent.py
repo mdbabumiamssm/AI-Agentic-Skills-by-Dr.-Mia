@@ -1,39 +1,90 @@
-# Regulatory Drafting Agent - Stub Implementation
+"""
+Regulatory Drafting Agent (2026 Update)
+
+Uses RAG (Retrieval Augmented Generation) to draft compliance documents.
+Integrates with the new VectorStore to cite specific FDA/ICH guidelines.
+"""
+
+import sys
+import os
+
+# Add paths
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../Agentic_AI/Memory_Systems')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../Computer_Science/Data_Structures')))
+
+try:
+    from memory_architecture import MemorySystem
+    HAS_MEM = True
+except ImportError:
+    HAS_MEM = False
 
 class RegulatoryAgent:
-    def __init__(self, vector_store, llm):
-        self.vector_store = vector_store # Contains FDA Guidelines
-        self.llm = llm
+    def __init__(self):
+        if not HAS_MEM:
+            raise ImportError("Memory Architecture not found.")
+            
+        self.memory = MemorySystem(agent_name="RegBot")
+        self._ingest_knowledge_base()
 
-    def retrieve_guidance(self, topic: str):
-        """Retrieves relevant FDA/ICH guidelines."""
-        print(f"Searching guidelines for: {topic}")
-        # RAG implementation here
-        return ["ICH M3(R2)", "FDA Safety Guidance 2023"]
-
-    def draft_section(self, section_name: str, study_data: dict) -> str:
+    def _ingest_knowledge_base(self):
         """
-        Drafts a specific CTD section using study data and guidelines.
+        Simulates ingesting a PDF/Database of Regulatory Guidelines.
         """
-        guidelines = self.retrieve_guidance(section_name)
+        guidelines = [
+            "FDA Guidance: Safety Reporting. All serious adverse events (SAEs) must be reported within 15 days.",
+            "ICH M3(R2): Nonclinical safety studies should be conducted in two species (rodent and non-rodent).",
+            "21 CFR Part 11: Electronic records must have audit trails to ensure integrity.",
+            "EMA Guideline: First-in-human trials require a starting dose calculation based on MABEL."
+        ]
         
+        # Manually inject into the semantic vector store
+        for i, text in enumerate(guidelines):
+            vec = self.memory._get_embedding(text)
+            self.memory.semantic.add(f"doc_{i}", vec, text, metadata={"type": "guideline"})
+            
+    def draft_response(self, query: str):
+        """
+        Drafts a regulatory response by retrieving relevant guidelines first.
+        """
+        print(f"--- Query: {query} ---")
+        
+        # 1. Retrieval
+        # We use the retrieve_context method which does vector search
+        context = self.memory.retrieve_context(query, k=2)
+        
+        # 2. Augmentation (Prompt Construction)
         prompt = f"""
-        You are a Regulatory Affairs specialist.
-        Draft Section: {section_name}
+        ROLE: Regulatory Affairs Expert
+        TASK: Answer the user query based strictly on the provided Context.
         
-        Using the following Study Data:
-        {study_data}
+        CONTEXT:
+        {context}
         
-        And adhering to these Guidelines:
-        {guidelines}
+        USER QUERY:
+        {query}
         
-        Output formal regulatory text.
+        DRAFT:
         """
         
-        # response = self.llm.invoke(prompt)
-        response = "[DRAFT] The nonclinical safety profile... (Placeholder)"
-        return response
+        print("Generated RAG Prompt:")
+        print(prompt)
+        
+        # 3. Generation (Mock LLM)
+        print("\n[Mock LLM Output]:")
+        if "rodent" in context.lower():
+            print("Based on ICH M3(R2), we must conduct toxicity studies in both a rodent and a non-rodent species prior to Phase 1.")
+elif "15 days" in context.lower():
+            print("Per FDA Guidance, all SAEs must be expedited and reported within 15 calendar days.")
+else:
+            print("I recommend consulting specific therapeutic area guidelines as no general rule was found in immediate context.")
 
 if __name__ == "__main__":
-    agent = RegulatoryAgent(None, None)
-    print(agent.draft_section("Nonclinical Overview", {"tox_findings": "None observed"}))
+    agent = RegulatoryAgent()
+    
+    # Test 1: Toxicology question
+    agent.draft_response("What species do we need for tox studies?")
+    
+    print("\n" + "="*50 + "\n")
+    
+    # Test 2: Safety reporting
+    agent.draft_response("What is the timeline for reporting a serious adverse event?")

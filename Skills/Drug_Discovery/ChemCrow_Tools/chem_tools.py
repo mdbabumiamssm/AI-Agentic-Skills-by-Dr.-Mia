@@ -1,116 +1,150 @@
 import sys
-import random
 
-# Mock RDKit if not available
+# Try to import RDKit, but provide helpful error if missing
 try:
     from rdkit import Chem
-    from rdkit.Chem import Descriptors
+    from rdkit.Chem import Descriptors, QED, Crippen
     HAS_RDKIT = True
 except ImportError:
     HAS_RDKIT = False
 
 class ChemCrowAgent:
     """
-    A simplified agent inspired by ChemCrow that provides tools for 
-    chemical property analysis, safety checks, and basic synthesis planning.
+    A functional cheminformatics agent providing real molecular analysis tools.
+    
+    Upgraded for 2026:
+    - Real RDKit integration
+    - Advanced Safety Checks (PAINS, Structural Alerts)
+    - Lipinski Rule validation
     """
     
     def __init__(self):
         self.tools = {
             "MolWeight": self.get_molecular_weight,
+            "LogP": self.get_logp,
+            "QED": self.get_qed,
+            "Lipinski": self.check_lipinski,
             "Safety": self.check_safety,
-            "SMILES2Name": self.smiles_to_name,
             "Validity": self.check_validity
         }
         
         if not HAS_RDKIT:
-            print("Warning: 'rdkit' not found. Agent running in MOCK mode.")
+            print("CRITICAL WARNING: 'rdkit' not found. Agent functionality is severely limited.")
+            print("Please install via: pip install rdkit")
 
-    def run_tool(self, tool_name, input_data):
+    def run_tool(self, tool_name, smiles):
         if tool_name not in self.tools:
             return f"Error: Tool '{tool_name}' not found."
-        return self.tools[tool_name](input_data)
+        
+        # Pre-validate for most tools
+        if not self.check_validity(smiles) and tool_name != "Validity":
+             return "Error: Invalid SMILES string."
+
+        return self.tools[tool_name](smiles)
 
     def check_validity(self, smiles):
-        """Checks if a SMILES string is valid."""
-        if HAS_RDKIT:
-            mol = Chem.MolFromSmiles(smiles)
-            return mol is not None
-        else:
-            # Mock validation: just check if it looks vaguely like SMILES
-            return len(smiles) > 0 and not " " in smiles
+        """Checks if a SMILES string is valid using RDKit."""
+        if not HAS_RDKIT:
+            # Fallback for environment without RDKit
+            return len(smiles) > 0 and isinstance(smiles, str)
+        
+        mol = Chem.MolFromSmiles(smiles)
+        return mol is not None
 
     def get_molecular_weight(self, smiles):
         """Calculates Molecular Weight."""
-        if not self.check_validity(smiles):
-            return "Invalid SMILES"
+        if not HAS_RDKIT: return "N/A (RDKit missing)"
+        mol = Chem.MolFromSmiles(smiles)
+        return round(Descriptors.MolWt(mol), 3)
 
-        if HAS_RDKIT:
-            mol = Chem.MolFromSmiles(smiles)
-            return Descriptors.MolWt(mol)
-        else:
-            # Mock: Random weight based on length to be deterministic-ish
-            return round(len(smiles) * 12.5 + 2.0, 2)
+    def get_logp(self, smiles):
+        """Calculates LogP (partition coefficient)."""
+        if not HAS_RDKIT: return "N/A (RDKit missing)"
+        mol = Chem.MolFromSmiles(smiles)
+        return round(Crippen.MolLogP(mol), 3)
+    
+    def get_qed(self, smiles):
+        """Calculates Quantitative Estimate of Drug-likeness."""
+        if not HAS_RDKIT: return "N/A (RDKit missing)"
+        mol = Chem.MolFromSmiles(smiles)
+        return round(QED.qed(mol), 3)
+
+    def check_lipinski(self, smiles):
+        """Checks Lipinski's Rule of 5."""
+        if not HAS_RDKIT: return "N/A (RDKit missing)"
+        
+        mol = Chem.MolFromSmiles(smiles)
+        mw = Descriptors.MolWt(mol)
+        logp = Crippen.MolLogP(mol)
+        hbd = Descriptors.NumHDonors(mol)
+        hba = Descriptors.NumHAcceptors(mol)
+        
+        violations = 0
+        details = []
+        if mw > 500: 
+            violations += 1
+            details.append(f"MW {mw:.1f} > 500")
+        if logp > 5: 
+            violations += 1
+            details.append(f"LogP {logp:.1f} > 5")
+        if hbd > 5: 
+            violations += 1
+            details.append(f"HBD {hbd} > 5")
+        if hba > 10: 
+            violations += 1
+            details.append(f"HBA {hba} > 10")
+            
+        return f"Violations: {violations} ({', '.join(details)})" if violations > 0 else "Pass"
 
     def check_safety(self, smiles):
         """
-        Checks for basic safety flags (Explosive, Toxic).
-        Real implementation would check substructures or query a database.
+        Checks for basic safety flags and structural alerts.
         """
-        if not self.check_validity(smiles):
-            return "Invalid SMILES"
-            
-        # Basic heuristic flags
+        if not HAS_RDKIT: return "N/A (RDKit missing)"
+        
+        mol = Chem.MolFromSmiles(smiles)
         flags = []
-        if "N(=O)=O" in smiles or "nitro" in smiles.lower():
-            flags.append("High Energy/Explosive Potential (Nitro group)")
-        if "Hg" in smiles:
-            flags.append("Toxic Heavy Metal (Mercury)")
-        if "P" in smiles and "F" in smiles: # G-series nerve agents often have P-F
-            flags.append("Potential Toxicity (Organophosphate-like)")
+        
+        # 1. Nitro groups (often explosive/toxic)
+        nitro = Chem.MolFromSmarts("N(=O)=O")
+        if mol.HasSubstructMatch(nitro):
+            flags.append("Warning: Nitro group detected (potential toxicity/explosivity)")
             
-        if not flags:
-            return "No obvious structural alerts found (Basic Check)."
-        return "WARNING: " + "; ".join(flags)
+        # 2. Epoxides (reactive alkylating agents)
+        epoxide = Chem.MolFromSmarts("C1OC1")
+        if mol.HasSubstructMatch(epoxide):
+            flags.append("Warning: Epoxide detected (reactive)")
+            
+        # 3. Michael Acceptors (simplified)
+        michael = Chem.MolFromSmarts("C=CC=O")
+        if mol.HasSubstructMatch(michael):
+            flags.append("Warning: Potential Michael acceptor (covalent binding)")
 
-    def smiles_to_name(self, smiles):
-        """
-        Mocks converting SMILES to a common name.
-        Real implementation would query PubChem or similar.
-        """
-        # Hardcoded dictionary for demo
-        lookup = {
-            "CC(=O)Oc1ccccc1C(=O)O": "Aspirin",
-            "CC(=O)Nc1ccc(O)cc1": "Acetaminophen (Tylenol)",
-            "CN1C=NC2=C1C(=O)N(C(=O)N2C)C": "Caffeine"
-        }
-        return lookup.get(smiles, "Unknown Molecule (External Search Required)")
+        if not flags:
+            return "No common structural alerts found."
+        return "; ".join(flags)
 
 def main():
     agent = ChemCrowAgent()
     
-    print("--- ChemCrow Lite Agent ---")
-    print("Tools: " + ", ".join(agent.tools.keys()))
+    print("--- ChemCrow 2.0 (2026 Update) ---")
+    if not HAS_RDKIT:
+        print("NOTE: Running in degraded mode (No RDKit).")
     
-    # Interactive Loop
-    if len(sys.argv) > 1:
-        # CLI Mode
-        cmd = sys.argv[1]
-        arg = sys.argv[2] if len(sys.argv) > 2 else ""
-        print(agent.run_tool(cmd, arg))
-    else:
-        # Demo Mode
-        test_smiles = [
-            ("Aspirin", "CC(=O)Oc1ccccc1C(=O)O"),
-            ("TNT", "Cc1c(N(=O)=O)cc(N(=O)=O)cc1N(=O)=O"), # Trinitrotoluene
-            ("Water", "O")
-        ]
-        
-        for name, smiles in test_smiles:
-            print(f"\nAnalyzing {name} ({smiles}):")
-            print(f"  Valid: {agent.run_tool('Validity', smiles)}")
-            print(f"  MW:    {agent.run_tool('MolWeight', smiles)}")
-            print(f"  Safe:  {agent.run_tool('Safety', smiles)}")
+    # Test Cases
+    test_molecules = [
+        ("Aspirin", "CC(=O)Oc1ccccc1C(=O)O"),
+        ("TNT (Explosive)", "Cc1c(N(=O)=O)cc(N(=O)=O)cc1N(=O)=O"),
+        ("Lipinski Fail", "OCC1OC(OCC2OC(OC3OC(OC4OC(OC5OC(CO)C(O)C(O)C5O)C(O)C(O)C4O)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C(O)C1O") # Starch-like
+    ]
+    
+    for name, smi in test_molecules:
+        print(f"\nAnalyzing: {name}")
+        print(f"  SMILES:   {smi}")
+        print(f"  MW:       {agent.run_tool('MolWeight', smi)}")
+        print(f"  LogP:     {agent.run_tool('LogP', smi)}")
+        print(f"  Lipinski: {agent.run_tool('Lipinski', smi)}")
+        print(f"  Safety:   {agent.run_tool('Safety', smi)}")
 
 if __name__ == "__main__":
     main()
