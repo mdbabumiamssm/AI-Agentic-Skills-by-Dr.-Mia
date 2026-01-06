@@ -18,14 +18,14 @@ class SkillsGenerator:
         """
         action = task['action'].lower()
         
-        if "orchestrator" in action or "supervisor" in action:
+        if any(kw in action for kw in ["orchestrator", "supervisor", "agentic"]):
             self._create_orchestrator()
-        elif "chem_tools" in action or "rdkit" in action:
+        
+        if any(kw in action for kw in ["chem_tools", "rdkit", "chemistry", "physics", "drug"]):
             self._update_chem_tools()
-        elif "medprompt" in action:
+            
+        if any(kw in action for kw in ["medprompt", "clinical", "rigour", "safety"]):
             self._create_medprompt()
-        else:
-            print(f"No template for action: {action}")
 
     def _create_orchestrator(self):
         content = '''from typing import List, Dict, Any
