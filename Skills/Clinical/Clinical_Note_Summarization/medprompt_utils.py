@@ -72,6 +72,40 @@ Return the corrected analysis.
 """
         return prompt
 
+    def generate_ensemble_prompts(self, task: str, clinical_text: str, num_paths: int = 5) -> List[str]:
+        """
+        Generates multiple distinct prompts to encourage diverse reasoning paths 
+        (Self-Consistency).
+        """
+        prompts = []
+        strategies = [
+            "Think step-by-step focusing on ruling out dangerous conditions first.",
+            "Think step-by-step focusing on chronological events.",
+            "Think step-by-step focusing on evidence-based guidelines.",
+            "Act as a skeptic and challenge every assumption.",
+            "Act as a concise summarizer focusing on billing codes."
+        ]
+        
+        for i in range(num_paths):
+            strategy = strategies[i % len(strategies)]
+            prompt = f"""
+Task: {task}
+Strategy: {strategy}
+Input: {clinical_text}
+Output: Provide your best answer.
+"""
+            prompts.append(prompt)
+        return prompts
+
+    def consensus_vote(self, responses: List[str]) -> str:
+        """
+        Placeholder for a majority-voting or aggregator logic.
+        In production, this would use embeddings to find the centroid answer.
+        """
+        # Simple length-based heuristic for now (preferring more detailed answers)
+        return max(responses, key=len)
+
+
     def format_as_fhir_json(self, summary_data: Dict) -> str:
         """
         Helper to wrap data in a pseudo-FHIR Bundle structure.

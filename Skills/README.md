@@ -1,68 +1,77 @@
-# Artificial Intelligence & Biotechnology Skills Repository
+# Skills Repository: Advanced AI Agents for Biomedicine (2026)
 
-**Status:** Active Development  
-**Maintainer:** AI Group  
-**Last Updated:** January 2026
+**Status:** Active Development (v2026.1)
+**Maintainer:** Artificial Intelligence Group
+**Focus:** Agentic AI, Drug Discovery, Clinical Informatics, Genomics
 
-## Overview
-This repository serves as a comprehensive "Skills Library" for Artificial Intelligence agents and researchers. It bridges the gap between **Biomedical Sciences** and **Computer Science/AI**, providing modular, executable, and well-documented capabilities.
+## 🚀 Vision 2026
+This repository represents a transition from *experimental scripts* to **Production-Grade Agentic Workflows**. It houses a collection of modular "Skills"—specialized capabilities that can be orchestrated by AI systems to solve complex biomedical problems.
 
-The repository is organized into domain-specific categories, each containing specialized "Skills" (agents, workflows, or educational modules).
+**Key Paradigms:**
+*   **Multi-Agent Orchestration:** Moving beyond single-prompt chains to "Supervisor-Worker" hierarchies (Agent OS patterns).
+*   **Agentic RAG:** Systems that reason over retrieved data, verify facts, and iteratively refine answers.
+*   **Self-Driving Labs:** Agents capable of generating executable robotic protocols (Opentrons/Tecan).
+*   **Generative Biology:** Integration of SOTA models (AlphaFold 3, DiffDock, ESM-3) via API wrappers.
 
-## Directory Structure
+## 📂 Directory Structure
 
-### 🧬 Biomedical & Life Sciences
-*Legacy and active modules for drug discovery, clinical analysis, and genomics.*
+### 🧠 Agentic AI Core (`Agentic_AI/`)
+The "Brain" of the system.
+*   **`Multi_Agent_Systems/`**: Orchestrators, debate supervisors, and swarm protocols.
+*   **`Reasoning_Models/`**: Tree-of-Thought (ToT), Chain-of-Verification (CoV).
+*   **`Memory_Systems/`**: Vector store implementations (Chroma/Milvus) and episodic memory.
 
-- **Clinical/**: EHR analysis, note summarization, trial matching.
-- **Drug_Discovery/**: Small molecule design, toxicology, cheminformatics tools.
-- **Genomics/**: CRISPR design, single-cell analysis, variant interpretation.
-- **Immunology_Vaccines/**: Epitope prediction, vaccine design.
-- **Proteomics/**: Protein folding (AlphaFold), design, and interaction networks.
+### 💊 Drug Discovery & Design (`Drug_Discovery/`, `Generative_Drug_Design/`)
+From target identification to lead optimization.
+*   **`ChemCrow_Tools/`**: RDKit-powered tools for molecular property calculation and safety checking.
+*   **`AgentD_Drug_Discovery/`**: Autonomous agents for planning synthesis campaigns.
+*   **`Self_Driving_Labs/`**: Modules for controlling lab automation hardware.
 
-### 💻 Computer Science & Fundamental AI
-*New (2026) foundational modules for building robust AI systems.*
+### 🏥 Clinical Intelligence (`Clinical/`)
+Safe, compliant, and rigorous healthcare AI.
+*   **`Clinical_Note_Summarization/`**: MedPrompt implementations for high-fidelity EHR analysis.
+*   **`Trial_Matching/`**: RAG-based systems for matching patients to clinical trials (FHIR standard).
+*   **`Regulatory_Affairs/`**: Drafting agents compliant with FDA/EMA guidelines.
 
-- **Computer_Science/**
-  - `Algorithms/`: Graph theory, sorting, search algorithms.
-  - `Data_Structures/`: Efficient storage layouts.
-  - `Distributed_Systems/`: Scalable architecture patterns.
+### 🧬 Genomics & Bioinformatics (`Genomics/`)
+*   **`Variant_Interpretation/`**: Agents that rank pathogenicity using ACMG guidelines.
+*   **`Single_Cell/`**: Workflows for scRNA-seq analysis.
 
-- **Agentic_AI/**
-  - `Agent_Architectures/`: ReAct, Plan-and-Solve, cognitive architectures.
-  - `Multi_Agent_Systems/`: Swarm intelligence, consensus protocols.
-  - `Memory_Systems/`: Vector databases, episodic memory implementations.
+### 💻 Computer Science Foundations (`Computer_Science/`)
+*   **`Graph_RAG/`**: Engines for traversing biomedical knowledge graphs.
+*   **`Distributed_Systems/`**: Asynchronous patterns for scaling agent workloads.
 
-- **LLM_Research/**
-  - `Prompt_Engineering/`: Chain-of-Thought (CoT), Tree-of-Thought (ToT).
-  - `Model_Fine_Tuning/`: PEFT, LoRA, quantization techniques.
-  - `RAG_Systems/`: Retrieval Augmented Generation patterns.
-
-- **Mathematics/**
-  - `Linear_Algebra/`: Matrix operations, eigenvalues/vectors (NumPy based).
-  - `Probability_Statistics/`: Distributions, hypothesis testing.
-  - `Optimization/`: Gradient descent, convex optimization.
-
-## Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
-Most skills require Python 3.10+.
-Common dependencies:
+*   Python 3.10+
+*   Key Libraries: `langchain`, `langgraph`, `rdkit`, `biopython`, `pydantic`, `numpy`
+
+### Installation
 ```bash
-pip install numpy pandas scipy langchain openai anthropic
+# Clone the repository
+git clone https://github.com/your-org/Skills.git
+cd Skills
+
+# Install dependencies (virtual environment recommended)
+pip install -r requirements.txt
 ```
 
-### Usage
-Navigate to a specific skill directory and consult its `README.md`.
-Example:
+### Example: Running a Multi-Agent Debate
 ```bash
-cd Agentic_AI/Agent_Architectures/ReAct_Agent
-python react_core.py
+cd Agentic_AI/Multi_Agent_Systems
+python debate_supervisor.py --topic "Is Cas9 superior to Prime Editing for this target?"
 ```
 
-## Contribution Standards
-To maintain the "Best in World" quality:
-1.  **Documentation:** Every skill MUST have a `README.md` explaining "What", "Why", and "How".
-2.  **Dependencies:** Include a `requirements.txt` for reproducibility.
-3.  **Testing:** Include sample scripts or unit tests (e.g., `test_*.py`).
-4.  **Metadata:** Use consistent naming and clear difficulty levels.
+## ⚠️ Safety & Ethics
+This repository contains powerful capabilities.
+*   **Human-in-the-Loop:** All clinical and drug design outputs must be verified by qualified professionals.
+*   **Dual-Use Concerns:** Generative biology tools include safety checks to prevent the design of hazardous materials.
+
+## 📈 Roadmap 2026
+- [ ] **Q1:** Implement "Supervisor" orchestration pattern (Completed).
+- [ ] **Q2:** Integrate "Self-Correction" loops in RAG systems.
+- [ ] **Q3:** Deploy "Digital Twin" patient agents for trial simulation.
+
+---
+*Built for the Future of Science.*
