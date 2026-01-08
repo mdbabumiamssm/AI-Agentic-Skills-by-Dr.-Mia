@@ -1,6 +1,5 @@
 # LLMs Universal Life Science & Clinical Skills
 
-
 MD BABU MIA, PHD,
 Assistant Professor
 Mount Sinai Tisch Cancer Institute
@@ -18,7 +17,7 @@ Email: md.babu.mia@mssm.edu
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen.svg)]()
 [![Platform: Multi-LLM](https://img.shields.io/badge/Platform-Claude%20%7C%20ChatGPT%20%7C%20Gemini-purple.svg)]()
-[![Skills: 25+](https://img.shields.io/badge/Skills-25%2B-orange.svg)]()
+[![Skills: 35+](https://img.shields.io/badge/Skills-35%2B-orange.svg)]()
 
 ---
 
@@ -30,48 +29,54 @@ We build **production-ready, platform-agnostic biomedical AI skills** that empow
 
 ## Skills Catalog
 
-### Clinical Skills (8 skills)
+### Agentic AI (New Core)
+*The "Brain" of the system.*
 
 | Skill | ID | Description |
 |-------|-----|-------------|
+| **Plan-and-Solve Agent** | `agentic.architectures.planner` | Multi-step reasoning with planning phase |
+| **Supervisor Orchestrator** | `agentic.multi_agent.orchestrator` | LangGraph-style state machine |
+| **ReAct Agent** | `agentic.architectures.react` | Thought-Action-Observation loops |
+| **Tree of Thought** | `agentic.reasoning.tot` | Advanced problem solving |
+
+### Computer Science & Math
+*The "Engine" of the system.*
+
+| Skill | ID | Description |
+|-------|-----|-------------|
+| **Knowledge Graph** | `cs.algorithms.knowledge_graph` | Biomedical pathfinding (BFS/DFS) |
+| **Bayesian Optimization** | `math.prob_stats.bayes_opt` | Experimental design for Self-Driving Labs |
+| **Advanced RAG** | `llm.rag.advanced` | HyDE & Contextual Reranking |
+
+### Clinical Skills (10 skills)
+
+| Skill | ID | Description |
+|-------|-----|-------------|
+| **MedPrompt Engine** | `biomedical.clinical.medprompt` | Few-shot CoT ensemble (SOTA) |
+| **Hallucination Detector** | `biomedical.clinical.safety` | CHECK framework validation |
 | **Clinical Note Summarization** | `biomedical.clinical.note_summarization` | SOAP format clinical notes |
 | **Trial Eligibility Agent** | `biomedical.clinical.trial_eligibility` | Patient-trial matching |
 | **Precision Oncology Agent** | `biomedical.clinical.precision_oncology` | Multimodal cancer recommendations |
 | **Medical Imaging AI** | `biomedical.clinical.medical_imaging` | CT/MRI/X-ray analysis (MONAI) |
-| **Clinical NLP Toolkit** | `biomedical.clinical.clinical_nlp` | medspaCy, BioBERT extraction |
-| **Digital Pathology** | `biomedical.clinical.digital_pathology` | WSI analysis (QuPath, histolab) |
 | **EHR/FHIR Integration** | `biomedical.clinical.ehr_fhir_integration` | Healthcare interoperability |
-| **Medical NER** | `biomedical.clinical.medical_ner` | Entity & relation extraction |
+
+### Drug Discovery Skills (6 skills)
+
+| Skill | ID | Description |
+|-------|-----|-------------|
+| **Real RDKit Tools** | `biomedical.drug_discovery.chem_tools` | LogP, QED, Lipinski, PAINS, SA_Score |
+| **AgentD Drug Discovery** | `biomedical.drug_discovery.agentd` | Early-stage discovery |
+| **Protein Structure** | `biomedical.drug_discovery.protein_structure` | AlphaFold 2/3, OpenFold |
+| **Antibody Design** | `biomedical.drug_discovery.antibody_design` | MAGE multistate design |
 
 ### Genomics Skills (7 skills)
 
 | Skill | ID | Description |
 |-------|-----|-------------|
+| **scGPT Agent** | `biomedical.genomics.scgpt` | Single-cell foundation model (33M cells) |
 | **Single-Cell RNA QC** | `biomedical.genomics.single_cell_qc` | MAD-based adaptive filtering |
 | **CRISPR Design Agent** | `biomedical.genomics.crispr_design` | Guide RNA design & off-target |
 | **Variant Annotation** | `biomedical.genomics.variant_annotation` | VEP, ClinVar, ACMG classification |
-| **Proteomics/MS Analysis** | `biomedical.genomics.proteomics_ms` | AlphaPeptDeep, DeepLC |
-| **Spatial Transcriptomics** | `biomedical.genomics.spatial_transcriptomics` | STAgent multimodal analysis |
-| **Single-Cell Ecosystems** | `biomedical.genomics.single_cell` | scverse, Seurat, CellAgent |
-| **Multi-Agent Workflows** | `biomedical.genomics.biomaster` | BioMaster pipelines |
-
-### Drug Discovery Skills (5 skills)
-
-| Skill | ID | Description |
-|-------|-----|-------------|
-| **Chemical Properties** | `biomedical.drug_discovery.chemical_properties` | RDKit molecular calculations |
-| **AgentD Drug Discovery** | `biomedical.drug_discovery.agentd` | Early-stage discovery |
-| **Protein Structure** | `biomedical.drug_discovery.protein_structure` | AlphaFold 2/3, OpenFold |
-| **Knowledge Graph** | `biomedical.drug_discovery.knowledge_graph` | Drug repurposing (iKraph, PrimeKG) |
-| **Antibody Design** | `biomedical.drug_discovery.antibody_design` | MAGE multistate design |
-
-### Research Tools (3 skills)
-
-| Skill | ID | Description |
-|-------|-----|-------------|
-| **Data Analysis** | `biomedical.research_tools.data_analysis` | Python, R, SQL, Tableau, Power BI |
-| **General Agent (Biomni)** | `biomedical.research_tools.biomni` | 150+ biomedical tools |
-| **BioMCP Servers** | `biomedical.mcp_servers.biomcp` | PubMed, ClinicalTrials.gov APIs |
 
 ---
 
@@ -79,46 +84,39 @@ We build **production-ready, platform-agnostic biomedical AI skills** that empow
 
 ```
 skills/
-├── src/                              # Main source code (GitHub submodule)
-│   ├── Skills/                       # Production-ready skills
-│   │   ├── Clinical/                 # 8 healthcare AI skills
-│   │   │   ├── Clinical_Note_Summarization/
-│   │   │   ├── Trial_Eligibility_Agent/
-│   │   │   ├── Trial_Matching_Agent/ # TrialGPT Implementation
-│   │   │   ├── Oncology/Precision_Oncology_Agent/
-│   │   │   ├── Medical_Imaging/      # MONAI integration
-│   │   │   ├── Clinical_NLP/         # medspaCy, OpenMed
-│   │   │   ├── Digital_Pathology/    # QuPath, histolab
-│   │   │   ├── EHR_FHIR_Integration/ # FHIR R4, SMART
-│   │   │   └── Medical_NER/          # BioBERT, transformers
-│   │   │
-│   │   ├── Drug_Discovery/           # 5 pharma/cheminformatics skills
-│   │   │   ├── Chemical_Property_Lookup/
-│   │   │   ├── ChemCrow_Tools/       # ChemCrow Lite
-│   │   │   ├── AgentD_Drug_Discovery/
-│   │   │   ├── Protein_Structure/    # AlphaFold
-│   │   │   ├── Knowledge_Graph/      # Drug repurposing
-│   │   │   └── Antibody_Design/      # MAGE
-│   │   │
-│   │   ├── Genomics/                 # 7 bioinformatics skills
-│   │   │   ├── Single_Cell_RNA_QC/
-│   │   │   ├── CRISPR_Design_Agent/
-│   │   │   ├── Variant_Annotation/   # VEP, ClinVar
-│   │   │   ├── Proteomics_MS/        # Mass spectrometry
-│   │   │   ├── Single_Cell/          # Ecosystems
-│   │   │   ├── Spatial_Transcriptomics/
-│   │   │   └── Multi_Agent_Workflows/
-│   │   │
-│   │   ├── MCP_Servers/              # Model Context Protocol
-│   │   │   └── BioMCP_Reference/     # Reference Implementation
-│   │   └── Research_Tools/           # General tools
+├── Skills/                           # Core Source Code
+│   ├── Agentic_AI/                   # [NEW] Orchestration & Reasoning
+│   │   ├── Agent_Architectures/      # Plan-and-Solve, ReAct
+│   │   ├── Multi_Agent_Systems/      # Supervisor, Orchestrator
+│   │   └── Reasoning_Models/         # Tree of Thought
 │   │
-│   ├── test_demonstration/           # Validation suite
-│   └── presentation_materials/       # Tutorials
+│   ├── Computer_Science/             # [NEW] Algorithms
+│   │   └── Graph_Algorithms/         # Knowledge Graphs
+│   │
+│   ├── Mathematics/                  # [NEW] Probability & Stats
+│   │   └── Probability_Statistics/   # Bayesian Optimization
+│   │
+│   ├── Clinical/                     # Healthcare AI
+│   │   ├── Clinical_Note_Summarization/ # MedPrompt
+│   │   ├── Hallucination_Detection/     # CHECK Framework
+│   │   └── ...
+│   │
+│   ├── Drug_Discovery/               # Cheminformatics
+│   │   ├── ChemCrow_Tools/           # RDKit Integration
+│   │   └── ...
+│   │
+│   ├── Foundation_Models/            # SOTA Models
+│   │   ├── scGPT_Agent/
+│   │   └── ...
+│   │
+│   ├── LLM_Research/                 # RAG & Prompting
+│   │   └── RAG_Systems/              # HyDE, Reranking
+│   │
+│   ├── MCP_Servers/                  # Model Context Protocol
+│   └── Research_Tools/               # General tools
 │
-├── skill collections/                # 28+ curated external resources
+├── test_demonstration/               # Validation suite
 ├── platform/                         # USDL Platform Prototype
-├── tests/                            # Local testing
 └── docs/                             # Documentation
 ```
 
@@ -138,23 +136,22 @@ skills/
 
 ---
 
-## Latest Updates
+## Latest Updates (Phase 2.5 Expansion)
 
-**Clinical Domain:**
-- **Trial Matching Agent (TrialGPT)**: `Skills/Clinical/Trial_Matching_Agent`
-  - Hybrid keyword/semantic search (using `sentence-transformers`) to match patient profiles with clinical trials.
-  - Features configurable matching logic and "Mock Mode" for testing without heavy dependencies.
+**Computer Science & Math:**
+- **Knowledge Graphs**: Implemented robust BFS/DFS pathfinding for biomedical networks.
+- **Bayesian Optimization**: Added mathematical engine for Self-Driving Labs (Gaussian Processes).
 
-**Drug Discovery Domain:**
-- **ChemCrow Lite**: `Skills/Drug_Discovery/ChemCrow_Tools`
-  - Lightweight implementation of the ChemCrow agent for chemical property analysis.
-  - Tools include: Molecular Weight calculator, Safety Checker (heuristic), and SMILES validity.
+**Agentic AI:**
+- **Plan-and-Solve**: New agent architecture that separates planning from execution for complex reasoning.
+- **Orchestrator**: Production-grade supervisor pattern for multi-agent coordination.
 
-**Infrastructure (MCP):**
-- **BioMCP Reference Server**: `Skills/MCP_Servers/BioMCP_Reference`
-  - Reference implementation of the Model Context Protocol (MCP) for biomedical tasks.
-  - Connects AI agents (like Claude Desktop) to local Python tools for PubMed searching and Gene Info retrieval.
+**LLM Research:**
+- **Advanced RAG**: Implemented HyDE (Hypothetical Document Embeddings) and Contextual Reranking.
 
+**Clinical & Drug Discovery:**
+- **MedPrompt**: Upgrade to full Chain-of-Thought ensemble.
+- **Real RDKit**: Replaced mocks with actual cheminformatics calculations.
 
 ---
 
