@@ -1,4 +1,4 @@
-# Universal Biomedical Skills Platform (v2026.2 "Wild West")
+# Universal Biomedical Skills Platform 
 
 > **The Agentic Operating System for Life Sciences.**
 
