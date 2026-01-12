@@ -73,9 +73,9 @@ class RegulatoryAgent:
         print("\n[Mock LLM Output]:")
         if "rodent" in context.lower():
             print("Based on ICH M3(R2), we must conduct toxicity studies in both a rodent and a non-rodent species prior to Phase 1.")
-elif "15 days" in context.lower():
+        elif "15 days" in context.lower():
             print("Per FDA Guidance, all SAEs must be expedited and reported within 15 calendar days.")
-else:
+        else:
             print("I recommend consulting specific therapeutic area guidelines as no general rule was found in immediate context.")
 
 if __name__ == "__main__":

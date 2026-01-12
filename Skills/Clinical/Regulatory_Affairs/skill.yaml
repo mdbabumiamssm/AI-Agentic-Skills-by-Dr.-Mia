@@ -1,0 +1,25 @@
+skill:
+  id: biomedical.clinical.regulatory_affairs
+  version: 1.0.0
+  name: Regulatory
+  category: clinical/regulatory_affairs
+  description:
+    short: No description provided.
+    long: No description provided.
+    use_cases:
+    - Auto-generated from source code
+  capabilities:
+  - name: draft_response
+    description: Drafts a regulatory response by retrieving relevant guidelines first.
+    inputs:
+    - name: query
+      type: str
+      description: Input parameter query
+      required: true
+    outputs:
+    - name: result
+      type: object
+      description: Result of the operation
+  metadata:
+    created: '2026-01-12'
+    author: BioKernel Auto-Generator

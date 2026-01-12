@@ -39,6 +39,22 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **Tensor Operations:** `Mathematics/Linear_Algebra/tensor_operations.py` breaks down the math behind Attention mechanisms.
 *   **Graph RAG:** `Computer_Science/Graph_Algorithms/knowledge_graph.py` provides traversal for Drug-Target-Disease interactions.
 
+## 🤝 Dual Health Stacks (New)
+
+### OpenAI Health Stack
+*   **Care Copilot:** `Consumer_Health/wearable_copilot_openai.py` + `Consumer_Health/Wearable_Analysis/health_copilot.py` translate wearable JSON into schema-validated action plans.
+*   **Clinical Ops Automator:** `Clinical/openai_clinical_ops_automator.py` emits ICD-10/CPT suggestions, SOAP notes, and prior auth packets with local JSON validation.
+*   **Lab Automation Bridge:** `Lab_Automation/openai_lab_automation_bridge.py` wraps Experiment Designer outputs in Thermo-style payloads.
+*   **Documentation:** See [OpenAI_Health_STACK.md](OpenAI_Health_STACK.md) for workflows, CLI usage, and BioKernel integration.
+
+### Anthropic Co-Worker Stack
+*   **Inbox Router:** `Clinical/anthropic_inbox_router.py` fans work items into coworkers via the Event Bus.
+*   **Prior Auth Coworker:** `Clinical/Prior_Authorization/anthropic_coworker.py` mirrors `<thinking>/<analysis>/<decision>` traces.
+*   **Regulatory Coworker:** `Pharma/Regulatory_Affairs/anthropic_regulatory_coworker.py` drafts CTD responses with citations.
+*   **Pharmacovigilance Monitor:** `Clinical/Safety/pharmacovigilance_monitor.py` triages safety signals and emits audit-ready traces.
+*   **USDL Alignment:** Specs such as `Skills/USDL_SPEC_PRIOR_AUTH.json` feed `platform/optimizer/usdl_transpiler.py`, ensuring the same agent definition compiles for Claude, OpenAI, Gemini, etc.
+*   **Documentation:** See [Anthropic_Health_STACK.md](Anthropic_Health_STACK.md) for integration details.
+
 ## 📂 Directory Structure
 
 ```text

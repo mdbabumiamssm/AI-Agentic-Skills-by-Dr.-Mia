@@ -1,0 +1,36 @@
+skill:
+  id: biomedical.agentic_ai.multimodal_agents
+  version: 1.0.0
+  name: LabObserver
+  category: agentic_ai/multimodal_agents
+  description:
+    short: No description provided.
+    long: No description provided.
+    use_cases:
+    - Auto-generated from source code
+  capabilities:
+  - name: monitor_experiment
+    description: Execute monitor_experiment
+    inputs:
+    - name: image_feed
+      type: list
+      description: Input parameter image_feed
+      required: true
+    outputs:
+    - name: result
+      type: object
+      description: Result of the operation
+  - name: decide_action
+    description: Execute decide_action
+    inputs:
+    - name: visual_description
+      type: str
+      description: Input parameter visual_description
+      required: true
+    outputs:
+    - name: result
+      type: str
+      description: Result of the operation
+  metadata:
+    created: '2026-01-12'
+    author: BioKernel Auto-Generator

@@ -1,0 +1,39 @@
+{
+  "name": "Prior Authorization Coworker",
+  "description": "Evaluates medical necessity requests using payer policy and emits determinations plus justification.",
+  "inputs": [
+    {
+      "name": "clinical_note",
+      "description": "Unstructured clinical documentation for the patient encounter",
+      "type": "string"
+    },
+    {
+      "name": "procedure_code",
+      "description": "Requested CPT/HCPCS code",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "decision",
+      "description": "APPROVED or DENIED flag",
+      "type": "string"
+    },
+    {
+      "name": "justification",
+      "description": "Policy criteria mapping with evidence references",
+      "type": "array"
+    },
+    {
+      "name": "escalation_required",
+      "description": "Boolean flag indicating need for human review",
+      "type": "boolean"
+    }
+  ],
+  "safety_checks": [
+    "Quote payer policy sections verbatim when available.",
+    "Escalate whenever information is incomplete or conflicting.",
+    "Never invent patient data or policy content."
+  ],
+  "audit_policy": "Persist every response plus the <thinking> trace to BioKernel AuditLog."
+}

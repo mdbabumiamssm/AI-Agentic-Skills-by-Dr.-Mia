@@ -1,107 +1,85 @@
-from typing import List, Optional
-import math
-import numpy as np
+from typing import List, Dict, Optional
 
-class MedPromptUtils:
-    """
-    Implements Microsoft's MedPrompt strategies for high-accuracy clinical reasoning.
-    Reference: 'Steering Llama 2 via Prompt Engineering to State-of-the-Art Performance'
-    
-    Core Components:
-    1. Dynamic Few-Shot Selection (k-NN based)
-    2. Chain of Thought (CoT)
-    3. Self-Consistency / Ensemble Refinement
-    """
+# MedPrompt Implementation (Microsoft Research / SOTA 2026)
+# Strategy: Dynamic Few-Shot + Chain of Thought + Ensemble
+# Used for high-stakes clinical reasoning tasks.
 
-    def __init__(self, embedding_model=None):
-        self.embedding_model = embedding_model # Mock: In prod, use OpenAI/HuggingFace embeddings
-        self.example_store = [] # List of {question, reasoning, answer, embedding}
+class MedPromptEngine:
+    def __init__(self, model_client=None):
+        self.client = model_client
+        self.exemplars = self._load_exemplars()
 
-    def add_few_shot_example(self, question: str, reasoning: str, answer: str):
-        """Adds a verified clinical Q&A pair to the example store."""
-        # Mock embedding generation
-        mock_embedding = np.random.rand(128) 
-        self.example_store.append({
-            "question": question,
-            "reasoning": reasoning,
-            "answer": answer,
-            "embedding": mock_embedding
-        })
-
-    def get_dynamic_examples(self, query: str, k: int = 3) -> List[dict]:
+    def generate_prompt(self, question: str, k_shots: int = 5) -> str:
         """
-        Retrieves the k-most similar examples to the current query.
-        This is the 'Dynamic Few-Shot' component.
+        Generates a full MedPrompt strategy prompt:
+        1. Selects k-nearest few-shot examples (Dynamic Few-Shot)
+        2. Appends Chain-of-Thought instructions
+        3. Formats for the target model
         """
-        if not self.example_store:
-            return []
+        selected_examples = self._retrieve_similar_cases(question, k=k_shots)
+        
+        prompt = "You are an expert medical AI. Solve the following clinical case.\n\n"
+        
+        # 1. Few-Shot Context
+        for ex in selected_examples:
+            prompt += f"Case: {ex['question']}\n"
+            prompt += f"Reasoning: {ex['cot_reasoning']}\n"
+            prompt += f"Answer: {ex['answer']}\n\n"
             
-        # Mock cosine similarity logic
-        # In prod: Calculate cosine sim between query_embedding and store_embeddings
-        return self.example_store[:k] 
-
-    def construct_prompt(self, query: str, context: str = "") -> str:
-        """
-        Constructs the full MedPrompt.
-        Structure:
-        [System Role]
-        [Context/EHR Data]
-        [Few-Shot Examples (Dynamic)]
-        [Target Question]
-        [Chain of Thought Trigger]
-        """
+        # 2. Target Question
+        prompt += f"Case: {question}\n"
+        prompt += "Reasoning: Let's think step by step.\n"
         
-        system_role = (
-            "You are an expert medical AI assistant. "
-            "Think step-by-step before answering. "
-            "Cite guidelines where possible."
-        )
-        
-        examples = self.get_dynamic_examples(query)
-        formatted_examples = ""
-        for i, ex in enumerate(examples):
-            formatted_examples += (
-                f"\nExample {i+1}:\n"
-                f"Q: {ex['question']}\n"
-                f"Thinking: {ex['reasoning']}\n"
-                f"A: {ex['answer']}\n"
-            )
-
-        prompt = (
-            f"{system_role}\n\n"
-            f"CONTEXT:\n{context}\n\n"
-            f"SIMILAR CASES:\n{formatted_examples}\n\n"
-            f"CURRENT QUESTION:\n{query}\n\n"
-            f"Let's think step by step to ensure patient safety and diagnostic accuracy."
-        )
         return prompt
 
-    def ensemble_refinement(self, responses: List[str]) -> str:
+    def chain_of_verification(self, initial_response: str) -> str:
         """
-        Simulates the 'Self-Consistency' or 'Ensemble' step.
-        Takes multiple reasoning paths and generates a consensus.
+        Reduced Hallucination Step (CoVe).
+        Generates verification questions against the initial response.
         """
-        # In a real implementation, this would use an LLM to summarize/vote.
-        # Here we mock a consensus selection.
-        unique_answers = set(responses)
-        if len(unique_answers) == 1:
-            return responses[0]
-        
-        return f"Consensus derived from {len(responses)} reasoning paths: {responses[0]}"
+        # In a real impl, this would call the LLM to generate questions
+        verification_prompt = f"Verify the following statement for medical accuracy: {initial_response}"
+        return verification_prompt
 
-# --- Example Usage ---
+    def format_as_fhir_json(self, clinical_text: str) -> Dict:
+        """
+        Converts unstructured output to FHIR-compliant JSON.
+        """
+        # Mock transformation
+        return {
+            "resourceType": "Bundle",
+            "type": "collection",
+            "entry": [
+                {
+                    "resource": {
+                        "resourceType": "ClinicalImpression",
+                        "summary": clinical_text[:50] + "..."
+                    }
+                }
+            ]
+        }
+
+    def _load_exemplars(self) -> List[Dict]:
+        """
+        Loads a database of high-quality solved medical cases (MedQA, USMLE).
+        """
+        return [
+            {
+                "question": "65yo male with chest pain...",
+                "cot_reasoning": "Patient age and symptoms suggest ACS. ECG is first line...",
+                "answer": "Perform 12-lead ECG"
+            }
+            # ... would contain hundreds of embeddings in production
+        ]
+
+    def _retrieve_similar_cases(self, query: str, k: int) -> List[Dict]:
+        """
+        KNN Search using embeddings (Mocked).
+        """
+        # Returns the first k for demo
+        return self.exemplars[:k]
+
 if __name__ == "__main__":
-    mp = MedPromptUtils()
-    
-    # Seed with some dummy clinical data
-    mp.add_few_shot_example(
-        "Patient has high fever and stiff neck.",
-        "Symptoms suggest meningeal irritation. Kernig's sign should be checked.",
-        "Possible Meningitis."
-    )
-    
-    query = "Patient presents with headache, photophobia, and neck stiffness."
-    prompt = mp.construct_prompt(query)
-    
-    print("--- Generated MedPrompt ---")
+    engine = MedPromptEngine()
+    prompt = engine.generate_prompt("45F with sudden onset severe headache...")
     print(prompt)

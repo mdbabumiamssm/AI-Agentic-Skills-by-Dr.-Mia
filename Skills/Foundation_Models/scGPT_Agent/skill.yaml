@@ -1,0 +1,123 @@
+skill:
+  id: biomedical.foundation_models.scgpt_agent
+  version: 1.0.0
+  name: scGPT
+  category: foundation_models/scgpt_agent
+  description:
+    short: Agent for scGPT single-cell foundation model operations.
+    long: "Agent for scGPT single-cell foundation model operations.\n\nProvides cell\
+      \ type annotation, perturbation prediction, and batch\nintegration using the\
+      \ scGPT transformer model trained on 33M+ cells.\n\nExample:\n    >>> agent\
+      \ = scGPTAgent(model=\"scgpt-whole-human\")\n    >>> result = agent.annotate_cell_types(adata)\n\
+      \    >>> print(f\"Found {len(result.cell_types)} cell types\")"
+    use_cases:
+    - Auto-generated from source code
+  capabilities:
+  - name: load_model
+    description: "Load the scGPT model.\n\nReturns:\n    True if successful, False\
+      \ otherwise"
+    inputs: []
+    outputs:
+    - name: result
+      type: bool
+      description: Result of the operation
+  - name: annotate_cell_types
+    description: "Annotate cell types in single-cell data.\n\nArgs:\n    adata: AnnData\
+      \ object with scRNA-seq data\n    config: Annotation configuration\n\nReturns:\n\
+      \    AnnotationResult with cell type predictions"
+    inputs:
+    - name: adata
+      type: Any
+      description: Input parameter adata
+      required: true
+    - name: config
+      type: Optional[AnnotationConfig]
+      description: Input parameter config
+      required: true
+    outputs:
+    - name: result
+      type: AnnotationResult
+      description: Result of the operation
+  - name: predict_perturbation
+    description: "Predict cellular response to gene perturbation.\n\nArgs:\n    adata:\
+      \ AnnData object with baseline expression\n    config: Perturbation configuration\n\
+      \nReturns:\n    PerturbationResult with predicted changes"
+    inputs:
+    - name: adata
+      type: Any
+      description: Input parameter adata
+      required: true
+    - name: config
+      type: Optional[PerturbationConfig]
+      description: Input parameter config
+      required: true
+    outputs:
+    - name: result
+      type: PerturbationResult
+      description: Result of the operation
+  - name: integrate_batches
+    description: "Integrate multiple single-cell datasets.\n\nArgs:\n    adata_list:\
+      \ List of AnnData objects to integrate\n    config: Integration configuration\n\
+      \nReturns:\n    Integrated AnnData object (or mock result)"
+    inputs:
+    - name: adata_list
+      type: List[Any]
+      description: Input parameter adata_list
+      required: true
+    - name: config
+      type: Optional[IntegrationConfig]
+      description: Input parameter config
+      required: true
+    outputs:
+    - name: result
+      type: Any
+      description: Result of the operation
+  - name: get_cell_embeddings
+    description: "Extract cell embeddings from scGPT.\n\nArgs:\n    adata: AnnData\
+      \ object\n    layer: Which transformer layer to use (\"last\", \"mean\", or\
+      \ layer number)\n\nReturns:\n    Cell embedding matrix (n_cells x n_dims)"
+    inputs:
+    - name: adata
+      type: Any
+      description: Input parameter adata
+      required: true
+    - name: layer
+      type: str
+      description: Input parameter layer
+      required: true
+    outputs:
+    - name: result
+      type: Any
+      description: Result of the operation
+  - name: gene_expression_prediction
+    description: "Predict expression of masked genes.\n\nArgs:\n    adata: AnnData\
+      \ object\n    genes_to_predict: List of gene names to predict\n    use_neighbors:\
+      \ Whether to use cell neighbors for prediction\n\nReturns:\n    Dictionary mapping\
+      \ gene names to predicted expression arrays"
+    inputs:
+    - name: adata
+      type: Any
+      description: Input parameter adata
+      required: true
+    - name: genes_to_predict
+      type: List[str]
+      description: Input parameter genes_to_predict
+      required: true
+    - name: use_neighbors
+      type: bool
+      description: Input parameter use_neighbors
+      required: true
+    outputs:
+    - name: result
+      type: Dict[Any]
+      description: Result of the operation
+  - name: get_model_info
+    description: Get information about the loaded model.
+    inputs: []
+    outputs:
+    - name: result
+      type: Dict[Any]
+      description: Result of the operation
+  metadata:
+    created: '2026-01-12'
+    author: BioKernel Auto-Generator
