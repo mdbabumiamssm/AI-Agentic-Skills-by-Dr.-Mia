@@ -1,11 +1,11 @@
-import asyncio
 from typing import Dict, List, Callable, Any
 from dataclasses import dataclass
 from datetime import datetime
 import json
+import asyncio
 
-# The "Telegraph Line" of the Wild West
-# Asynchronous Event Bus for Decoupled Agent Communication
+# Asynchronous Event Bus
+# Facilitates decoupled communication between agents in the distributed system.
 
 @dataclass
 class Event:
@@ -24,21 +24,21 @@ class EventBus:
         self._history: List[Event] = []
 
     async def subscribe(self, topic: str, callback: Callable):
-        """Listen for messages on a specific channel."""
+        """Register a callback for a specific topic."""
         if topic not in self._subscribers:
             self._subscribers[topic] = []
         self._subscribers[topic].append(callback)
-        print(f"[EventBus] Subscribed to '{topic}'")
+        print(f"[EventBus] Subscriber added for '{topic}'")
 
     async def publish(self, topic: str, payload: Dict, source: str = "System"):
-        """Broadcast a message to the Wild West."""
+        """Broadcast an event to all subscribers."""
         event = Event(topic=topic, payload=payload, source=source)
         self._history.append(event)
         
         print(f"⚡ [BUS] {source} -> {topic}: {json.dumps(payload)[:50]}...")
         
         if topic in self._subscribers:
-            # Fire and forget (Wild West style)
+            # Asynchronous dispatch
             tasks = [cb(event) for cb in self._subscribers[topic]]
             await asyncio.gather(*tasks, return_exceptions=True)
 
@@ -50,11 +50,11 @@ bus = EventBus()
 
 # Example Usage
 if __name__ == "__main__":
-    async def sheriff_logger(event: Event):
-        print(f"🤠 Sheriff received: {event.payload}")
+    async def system_logger(event: Event):
+        print(f"System Log: {event.payload}")
 
     async def main():
-        await bus.subscribe("outlaw_sighted", sheriff_logger)
-        await bus.publish("outlaw_sighted", {"name": "Billy the Kid", "location": "Saloon"}, "Bartender")
+        await bus.subscribe("system_alert", system_logger)
+        await bus.publish("system_alert", {"level": "INFO", "msg": "Bus initialized"}, "Kernel")
 
     asyncio.run(main())

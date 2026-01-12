@@ -16,7 +16,7 @@ except ImportError:
     bus = None
     MedPromptEngine = None
 
-app = FastAPI(title="BioKernel Pro", version="2026.2.0-WILDWEST")
+app = FastAPI(title="BioKernel Enterprise", version="2026.3.0-PRO")
 
 class AgentRequest(BaseModel):
     query: str
@@ -37,13 +37,13 @@ class BioKernel:
 
     def _discover_skills(self):
         """
-        Wild West Mode: Dynamically scans the Skills/ directory for any file ending in '_agent.py'.
+        Enterprise Mode: Dynamically scans the Skills/ directory for any file ending in '_agent.py'.
         """
         base_dir = "Skills"
         if not os.path.exists(base_dir):
             return
 
-        print(f"🤠 [BioKernel] Scanning {base_dir} for bounty hunters (agents)...")
+        print(f"🚀 [BioKernel] Scanning {base_dir} for active agents...")
         for root, _, files in os.walk(base_dir):
             for file in files:
                 if file.endswith("_agent.py") or file == "agent.py":
