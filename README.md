@@ -11,7 +11,6 @@
 
 ## 👨‍💻 Author & Maintainer
 
-**Best regards,**
 **MD BABU MIA, PHD**
 Assistant Professor
 Mount Sinai Tisch Cancer Institute
