@@ -11,10 +11,17 @@
 
 ## 👨‍💻 Author & Maintainer
 
-**MD BABU MIA**
-*Artificial Intelligence Group*
-*Icahn School of Medicine at Mount Sinai*
-md.babu.mia@mssm.edu
+**Best regards,**
+**MD BABU MIA, PHD**
+Assistant Professor
+Mount Sinai Tisch Cancer Institute
+Icahn School of Medicine at Mount Sinai
+Mount Sinai Hospital
+One Gustave L. Levy Place
+New York, NY 10029
+Desk phone:(212) 241-2764 (x42764)
+Mobile phone:(332) 256-3038
+Email: md.babu.mia@mssm.edu
 
 ---
 
@@ -52,7 +59,7 @@ The system now features robust, asynchronous agent orchestration, allowing speci
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[Single-Cell RNA QC](Skills/Genomics/Single_Cell_RNA_QC/)** | MAD-based adaptive outlier detection | scanpy, anndata |
+| **[Single Cell Multi-Omics](Skills/Genomics/Single_Cell/)** | **(UPDATED)** Integrated analysis of RNA, Protein, ATAC, and Genotyping | scverse, Seurat, MultiVI |
 | **[CRISPR Design Agent](Skills/Genomics/CRISPR_Design_Agent/)** | Automated guide RNA design | Off-target analysis |
 | **[Spatial Transcriptomics (STAgent)](Skills/Genomics/Spatial_Transcriptomics/)** | Multimodal spatial analysis | Dynamic code generation |
 | **[Multi-Agent Workflows (BioMaster)](Skills/Genomics/Multi_Agent_Workflows/)** | Automated bioinformatics pipelines | RNA-seq, ChIP-seq, scRNA-seq |
@@ -82,23 +89,23 @@ The system now features robust, asynchronous agent orchestration, allowing speci
 
 ```mermaid
 graph TD
-    User[User / Dashboard] -->|HTTP| Kernel[BioKernel Enterprise]
+    User["User / Dashboard"] -->|HTTP| Kernel["BioKernel Enterprise"]
     
     subgraph "Distributed System Layer"
-        Kernel -->|Publish| Bus{Event Bus}
-        Bus -->|Sync| Shared[Shared Context Blackboard]
+        Kernel -->|Publish| Bus{"Event Bus"}
+        Bus -->|Sync| Shared["Shared Context Blackboard"]
         Bus -->|Trigger| Agents
     end
     
     subgraph "Agent Swarm"
-        Agents --> Evo[Molecule Evolution]
-        Agents --> Recruit[Trial Recruitment]
-        Agents --> Auth[Prior Auth]
+        Agents --> Evo["Molecule Evolution"]
+        Agents --> Recruit["Trial Recruitment"]
+        Agents --> Auth["Prior Auth"]
     end
     
-    Evo -->|Tools| Docking[Docking Oracle]
-    Recruit -->|Tools| VectorDB[Vector DB]
-    Auth -->|Tools| MedPrompt[MedPrompt Engine]
+    Evo -->|Tools| Docking["Docking Oracle"]
+    Recruit -->|Tools| VectorDB["Vector DB"]
+    Auth -->|Tools| MedPrompt["MedPrompt Engine"]
 ```
 
 ---
