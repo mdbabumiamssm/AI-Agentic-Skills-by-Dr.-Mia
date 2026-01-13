@@ -75,21 +75,19 @@ Skills/
 **1. Run the Multi-Agent Orchestrator:**
 ```bash
 python3 Agentic_AI/Multi_Agent_Systems/orchestrator.py
+# Tutorial: Agentic_AI/Multi_Agent_Systems/TUTORIAL_BUILDING_A_SWARM.md
 ```
 
-**2. Annotate Single-Cell Data:**
+**2. Transpile a Universal Skill:**
 ```bash
-python3 Genomics/Single_Cell/Cell_Type_Annotation/RNA/universal_annotator.py
+python3 ../platform/optimizer/usdl_transpiler.py --file ../platform/optimizer/my_skill.json
+# Tutorial: ../platform/optimizer/TUTORIAL_USDL_TRANSPILER.md
 ```
 
-**3. Simulate an Adaptive Clinical Trial:**
+**3. Run a Self-Driving Lab Simulation:**
 ```bash
-python3 Clinical/Clinical_Trials/Adaptive_Trial_Design_Agent/adaptive_trial_sim.py
-```
-
-**4. Start the BioMCP Server:**
-```bash
-python3 MCP_Servers/BioMCP/bio_mcp_server.py
+python3 Mathematics/Probability_Statistics/bayesian_optimization.py
+# Tutorial: Mathematics/Probability_Statistics/TUTORIAL_SELF_DRIVING_LAB_OPTIMIZER.md
 ```
 
 ## 📈 Roadmap (2026)
@@ -97,7 +95,8 @@ python3 MCP_Servers/BioMCP/bio_mcp_server.py
 *   [x] **Phase 2:** Math Foundations (Bayesian Opt, Graph Theory) - *Completed Jan 2026*
 *   [x] **Phase 3:** Single Cell & Clinical Simulators - *Completed Jan 2026*
 *   [x] **Phase 4:** Initial MCP Server Integration - *Completed Jan 2026*
-*   [ ] **Phase 5:** Deployment to FHIR Servers & Real Lab Integration
+*   [x] **Phase 5:** Dual Health Stacks (OpenAI/Anthropic) & USDL - *Completed Jan 2026*
+*   [ ] **Phase 6:** Deployment to FHIR Servers & Real Lab Integration
 
 ---
 *Maintained by the Artificial Intelligence Group.*

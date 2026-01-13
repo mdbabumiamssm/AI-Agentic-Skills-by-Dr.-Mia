@@ -149,20 +149,46 @@ class USDLTranspiler:
 
 
 def _demo() -> None:
-    spec = USDLSpec(
-        name="Prior Authorization Coworker",
-        description="Review requests against payer policy and emit determination JSON.",
-        inputs=[FieldSpec(name="clinical_note", description="Unstructured note text", type="string")],
-        outputs=[FieldSpec(name="decision", description="APPROVED or DENIED", type="string")],
-        safety_checks=["Never hallucinate policy references.", "Escalate unclear cases to humans."],
-        audit_policy="Post determination + trace to Event Bus topic prior_auth.decisions.",
-    )
-    transpiler = USDLTranspiler()
-    for provider in Provider:
-        artifact = transpiler.compile(spec, provider)
-        print(f"--- {provider.value.upper()} ---")
-        print(artifact)
+    import argparse
+    import json
+    import sys
 
+    parser = argparse.ArgumentParser(description="USDL Transpiler CLI")
+    parser.add_argument("--file", type=str, help="Path to a USDL JSON spec file")
+    parser.add_argument("--provider", type=str, choices=[p.value for p in Provider], default="openai")
+    
+    # If no args, run the hardcoded demo
+    if len(sys.argv) == 1:
+        print("Running internal demo... (Use --file <path> to transpile your own specs)")
+        spec = USDLSpec(
+            name="Prior Authorization Coworker",
+            description="Review requests against payer policy and emit determination JSON.",
+            inputs=[FieldSpec(name="clinical_note", description="Unstructured note text", type="string")],
+            outputs=[FieldSpec(name="decision", description="APPROVED or DENIED", type="string")],
+            safety_checks=["Never hallucinate policy references.", "Escalate unclear cases to humans."],
+            audit_policy="Post determination + trace to Event Bus topic prior_auth.decisions.",
+        )
+        transpiler = USDLTranspiler()
+        for provider in Provider:
+            artifact = transpiler.compile(spec, provider)
+            print(f"\n--- {provider.value.upper()} ---")
+            print(artifact)
+        return
+
+    args = parser.parse_args()
+    
+    if args.file:
+        try:
+            with open(args.file, "r") as f:
+                data = json.load(f)
+            spec = USDLSpec.from_dict(data)
+            transpiler = USDLTranspiler()
+            provider_enum = Provider(args.provider)
+            artifact = transpiler.compile(spec, provider_enum)
+            print(json.dumps(artifact, indent=2))
+        except Exception as e:
+            print(f"Error processing file: {e}")
+            sys.exit(1)
 
 if __name__ == "__main__":
     _demo()

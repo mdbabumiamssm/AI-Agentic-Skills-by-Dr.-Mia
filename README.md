@@ -26,61 +26,57 @@ Email: md.babu.mia@mssm.edu
 
 ## 🏢 Mission
 
-We have matured the platform from a research prototype into a **Production-Grade Ecosystem**. Our mission is to build **production-ready, platform-agnostic biomedical AI skills** that empower researchers, clinicians, and developers to deploy advanced AI capabilities across any LLM interface.
+We have matured the platform from a research prototype into a **Biomedical Agentic OS**. Our mission is to standardize how AI agents—whether running on OpenAI, Anthropic, or open models—collaborate to solve complex scientific problems.
 
-The system now features robust, asynchronous agent orchestration, allowing specialized micro-agents to collaborate on complex biomedical tasks via a **Shared Context** and **Event Bus**.
+The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-Stack Alignment** (OpenAI JSON + Anthropic Thinking Blocks), and **Self-Driving Lab** capabilities.
 
 ---
 
 ## 🚀 Key Capabilities (2026 Enterprise Update)
 
-1.  **BioKernel Enterprise:** A FastAPI-based runtime that auto-discovers and registers agent skills (`.py` files), ensuring immediate deployment of new capabilities.
-2.  **Event-Driven Architecture:** Decoupled communication via an asynchronous `EventBus`, allowing agents to publish findings and trigger downstream workflows without tight coupling.
-3.  **Shared Context Blackboard:** A centralized state management system where agents collaborate on complex problems (e.g., Literature Mining -> Target ID -> Drug Design).
-4.  **Auto-Synced USDL:** The `platform/utils/usdl_generator.py` tool automatically scans Python code and generates compliant YAML schemas, ensuring every agent is discoverable, documented, and type-safe.
+1.  **Swarm Orchestrator:** A new `SwarmOrchestrator` (`Skills/Agentic_AI/Multi_Agent_Systems`) allows specialized agents (Researcher, Reviewer, Safety Officer) to work in parallel.
+2.  **Dual-Stack Health:** Native support for:
+    *   **OpenAI Health Stack:** JSON Schema-enforced agents for clinical triage and ops.
+    *   **Anthropic Co-Worker Stack:** "Thinking Block" agents for high-stakes regulatory and safety reasoning.
+3.  **Self-Driving Labs:** Integrated Bayesian Optimization (`Skills/Mathematics/Probability_Statistics`) for autonomous experiment design.
+4.  **USDL Transpiler:** A "Write Once, Run Anywhere" tool (`platform/optimizer`) that converts generic skill specs into provider-optimized prompts.
 
 ---
 
 ## 📂 Comprehensive Skills Overview
 
+### 🧠 Agentic AI & Core (New)
+
+| Skill | Description | Key Tools |
+|-------|-------------|-----------|
+| **[Swarm Orchestrator](Skills/Agentic_AI/Multi_Agent_Systems/)** | **(NEW)** Coordinate multi-agent teams | AsyncIO, Task Routing |
+| **[USDL Transpiler](platform/optimizer/)** | **(NEW)** Cross-compile skills for any model | CLI, JSON/XML Gen |
+| **[BioKnowledge Graph](Skills/Computer_Science/Graph_Algorithms/)** | **(NEW)** GraphRAG for drug pathways | NetworkX, Dijkstra |
+
 ### ⚕️ Clinical Skills
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[Prior Auth Agent](Skills/Clinical/Prior_Authorization/)** | **(NEW)** Automated medical necessity determination | Policy Logic, MedPrompt |
-| **[Recruitment Agent](Skills/Clinical/Clinical_Trials/)** | **(NEW)** Vector-based patient-trial matching | Vector DB, Cosine Similarity |
-| **[Clinical Note Summarization](Skills/Clinical/Clinical_Note_Summarization/)** | Transform unstructured clinical notes to SOAP format | NLP, structuring |
-| **[Precision Oncology Agent](Skills/Clinical/Oncology/Precision_Oncology_Agent/)** | Multimodal cancer treatment recommendations | Genomics, pathology, clinical |
-| **[Medical Imaging AI](Skills/Clinical/Medical_Imaging/)** | CT, MRI, X-ray analysis | MONAI, deep learning |
-| **[EHR/FHIR Integration](Skills/Clinical/EHR_FHIR_Integration/)** | Healthcare data interoperability | fhir.resources, SMART on FHIR |
+| **[OpenAI Care Copilot](Skills/OpenAI_Health_Stack/)** | **(NEW)** Patient triage with strict JSON schemas | JSON Mode, GPT-4o |
+| **[Anthropic Reg. Drafter](Skills/Anthropic_Health_Stack/)** | **(NEW)** Regulatory drafting with audit trails | XML Tags, Claude 3.5 |
+| **[Prior Auth Agent](Skills/Clinical/Prior_Authorization/)** | Automated medical necessity determination | Policy Logic, MedPrompt |
+| **[Recruitment Agent](Skills/Clinical/Clinical_Trials/)** | Vector-based patient-trial matching | Vector DB, Cosine Similarity |
 
 ### 🧬 Genomics Skills
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[Single Cell Multi-Omics](Skills/Genomics/Single_Cell/)** | **(UPDATED)** Integrated analysis of RNA, Protein, ATAC, and Genotyping | scverse, Seurat, MultiVI |
-| **[CRISPR Design Agent](Skills/Genomics/CRISPR_Design_Agent/)** | Automated guide RNA design | Off-target analysis |
-| **[Spatial Transcriptomics (STAgent)](Skills/Genomics/Spatial_Transcriptomics/)** | Multimodal spatial analysis | Dynamic code generation |
-| **[Multi-Agent Workflows (BioMaster)](Skills/Genomics/Multi_Agent_Workflows/)** | Automated bioinformatics pipelines | RNA-seq, ChIP-seq, scRNA-seq |
-| **[Variant Annotation](Skills/Genomics/Variant_Annotation/)** | VEP, ClinVar, gnomAD integration | ACMG classification |
+| **[CRISPR Design Agent](Skills/Genomics/CRISPR_Design_Agent/)** | **(UPDATED)** Automated gRNA design | Off-target analysis |
+| **[Single Cell Multi-Omics](Skills/Genomics/Single_Cell/)** | Integrated analysis of RNA, Protein, ATAC | scverse, Seurat |
+| **[Spatial Transcriptomics](Skills/Genomics/Spatial_Transcriptomics/)** | Multimodal spatial analysis | Dynamic code generation |
 
 ### 🧪 Drug Discovery Skills
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[Molecule Evolution Agent](Skills/Drug_Discovery/Molecule_Design/)** | **(NEW)** Evolutionary de novo drug design | Genetic Algorithm, Docking Oracle |
-| **[AgentD Drug Discovery](Skills/Drug_Discovery/AgentD_Drug_Discovery/)** | Early-stage drug discovery | Literature mining, molecule generation |
-| **[Protein Structure Prediction](Skills/Drug_Discovery/Protein_Structure/)** | AI-powered structure prediction | AlphaFold 2/3, OpenFold, ESMFold |
-| **[Antibody Design (MAGE)](Skills/Drug_Discovery/Antibody_Design/)** | Multistate antibody generation | Deep learning design |
-| **[Knowledge Graph](Skills/Drug_Discovery/Knowledge_Graph/)** | KG reasoning for therapeutics | iKraph, PrimeKG |
-
-### ⌚ Consumer Health & Research Tools
-
-| Skill | Description | Key Tools |
-|-------|-------------|-----------|
-| **[Wearable Analyst](Skills/Consumer_Health/Wearable_Analysis/)** | **(NEW)** Detects health anomalies (Sleep/HR) | Time-series Analysis |
-| **[Data Analysis](Skills/Research_Tools/Data_Analysis/)** | Multi-language analytics | Python, R, SQL, Tableau |
-| **[BioMCP Servers](Skills/MCP_Servers/BioMCP/)** | Model Context Protocol for bio-APIs | PubMed, ClinicalTrials.gov |
+| **[Self-Driving Lab](Skills/Mathematics/Probability_Statistics/)** | **(NEW)** Bayesian Optimization for experiments | Gaussian Processes, UCB |
+| **[Molecule Evolution Agent](Skills/Drug_Discovery/Molecule_Design/)** | Evolutionary de novo drug design | Genetic Algorithm |
+| **[Protein Structure Prediction](Skills/Drug_Discovery/Protein_Structure/)** | AI-powered structure prediction | AlphaFold 2/3 |
 
 ---
 
@@ -97,14 +93,13 @@ graph TD
     end
     
     subgraph "Agent Swarm"
-        Agents --> Evo["Molecule Evolution"]
-        Agents --> Recruit["Trial Recruitment"]
-        Agents --> Auth["Prior Auth"]
+        Agents --> Orchestrator["Swarm Orchestrator"]
+        Orchestrator --> Researcher["Researcher Agent"]
+        Orchestrator --> Reviewer["Reviewer Agent"]
+        Orchestrator --> LabBot["Self-Driving Lab Bot"]
     end
     
-    Evo -->|Tools| Docking["Docking Oracle"]
-    Recruit -->|Tools| VectorDB["Vector DB"]
-    Auth -->|Tools| MedPrompt["MedPrompt Engine"]
+    LabBot -->|Opt| Bayesian["Bayesian Optimizer"]
 ```
 
 ---
@@ -113,31 +108,29 @@ graph TD
 
 | Stack | Focus | Entry Points |
 | --- | --- | --- |
-| **OpenAI Health Stack** | ChatGPT Health + OpenAI for Healthcare parity (consumer coaching, clinical ops, Thermo-style lab automation). | `Skills/OpenAI_Health_STACK.md`, CLI commands powered by `wearable_copilot_openai.py`, `openai_clinical_ops_automator.py`. |
-| **Anthropic Health Stack** | Claude co-worker workflows for prior auth, regulatory responses, and pharmacovigilance. | `Skills/Anthropic_Health_STACK.md`, router in `Clinical/anthropic_inbox_router.py`. |
-
-Each stack exposes schema-enforced payloads, traces, and Event Bus topics so BioKernel can target OpenAI or Anthropic backends interchangeably.
+| **OpenAI Health Stack** | Clinical Ops, Triage, Consumer Coaching. Uses strictly enforced JSON schemas. | `Skills/OpenAI_Health_Stack/TUTORIAL_OPENAI_HEALTH.md` |
+| **Anthropic Health Stack** | Regulatory Affairs, Safety Monitoring. Uses "Thinking Blocks" for auditability. | `Skills/Anthropic_Health_Stack/TUTORIAL_ANTHROPIC_WORKFLOWS.md` |
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Run the Enterprise Dashboard
-Visualize the orchestrated workflows in real-time:
+### 1. Run the Swarm Orchestrator
+Coordinate a multi-agent research mission:
+```bash
+python3 Skills/Agentic_AI/Multi_Agent_Systems/orchestrator.py
+```
+
+### 2. Transpile a Skill
+Convert a generic skill into an OpenAI prompt:
+```bash
+python3 platform/optimizer/usdl_transpiler.py --file my_skill.json --provider openai
+```
+
+### 3. Run the Dashboard
+Visualize workflows in real-time:
 ```bash
 python3 platform/dashboard.py
-```
-
-### 2. Start the BioKernel Runtime
-Run the backend server powering the agent swarm:
-```bash
-python3 platform/biokernel/server.py
-```
-
-### 3. Execute a Skill via CLI
-Run a specific skill directly from the command line:
-```bash
-python3 platform/cli.py run clinical_prior_auth "MRI Lumbar Spine for back pain"
 ```
 
 ---
