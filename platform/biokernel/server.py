@@ -34,6 +34,7 @@ class BioKernel:
         self.skills_registry = {}
         self.medprompt = MedPromptEngine() if MedPromptEngine else None
         self._discover_skills()
+        self._discover_antigravity_skills()
 
     def _discover_skills(self):
         """
@@ -51,8 +52,54 @@ class BioKernel:
                     rel_path = os.path.relpath(os.path.join(root, file), base_dir)
                     skill_id = rel_path.replace("/", "_").replace(".py", "").lower()
                     
-                    self.skills_registry[skill_id] = os.path.join(root, file)
-                    print(f"  + Registered: {skill_id}")
+                    self.skills_registry[skill_id] = {
+                        "path": os.path.join(root, file),
+                        "type": "python",
+                        "name": skill_id
+                    }
+                    print(f"  + Registered (Python): {skill_id}")
+
+    def _discover_antigravity_skills(self):
+        """
+        Antigravity Mode: Scans for SKILL.md files.
+        """
+        search_dirs = ["skill collections/Antigravity_Skills", "Skills"]
+        print(f"🚀 [BioKernel] Scanning for Antigravity SKILL.md files...")
+        
+        for base_dir in search_dirs:
+            if not os.path.exists(base_dir):
+                continue
+                
+            for root, _, files in os.walk(base_dir):
+                if "SKILL.md" in files:
+                    file_path = os.path.join(root, "SKILL.md")
+                    try:
+                        with open(file_path, 'r') as f:
+                            content = f.read()
+                            # Simple frontmatter parser
+                            if content.startswith("---"):
+                                parts = content.split("---", 2)
+                                if len(parts) >= 3:
+                                    frontmatter_raw = parts[1]
+                                    name = None
+                                    description = "No description"
+                                    
+                                    for line in frontmatter_raw.splitlines():
+                                        if line.strip().startswith("name:"):
+                                            name = line.split(":", 1)[1].strip()
+                                        elif line.strip().startswith("description:"):
+                                            description = line.split(":", 1)[1].strip()
+                                    
+                                    if name:
+                                        self.skills_registry[name] = {
+                                            "path": file_path,
+                                            "type": "antigravity",
+                                            "description": description,
+                                            "content": parts[2] # Markdown body
+                                        }
+                                        print(f"  + Registered (Antigravity): {name}")
+                    except Exception as e:
+                        print(f"  ! Failed to load {file_path}: {e}")
 
     async def route_request(self, request: AgentRequest) -> str:
         """
@@ -63,7 +110,15 @@ class BioKernel:
         if bus:
             await bus.publish("kernel_routing", {"query": request.query}, "BioKernel")
 
-        # Routing Logic
+        # 1. Check Antigravity Skills first (Direct Match)
+        for skill_id, meta in self.skills_registry.items():
+            if meta["type"] == "antigravity":
+                # Simple keyword matching based on description or name
+                keywords = skill_id.split("-") + meta["description"].lower().split()
+                if any(k in query_lower for k in keywords if len(k) > 3):
+                    return skill_id
+
+        # 2. Fallback to Python Agents
         if "insurance" in query_lower:
             return "clinical_prior_authorization_agent" # Matches file path structure
         elif "heart" in query_lower:
@@ -83,15 +138,25 @@ class BioKernel:
             print("  ⚕️ [BioKernel] Injecting MedPrompt Strategy...")
             query = self.medprompt.generate_prompt(query)
 
-        # 2. Execution (Mocked for now, but wired for expansion)
-        # In a real system, we'd dynamically import and run the agent class here.
-        # For this demo, we simulate the specific responses of the new agents.
-        
         response_text = ""
         tools = []
         model = "claude-3-5-sonnet"
 
-        if "evolution" in skill_id:
+        # 2. Execution Logic
+        skill_meta = self.skills_registry.get(skill_id)
+        
+        if skill_meta and skill_meta.get("type") == "antigravity":
+            # Antigravity Execution: Return the prompt/instructions for the agent to follow
+            model = "gemini-3-pro-antigravity" # Hypothetical model
+            response_text = f"Activated Skill: {skill_meta['name']}\n\n" \
+                            f"Description: {skill_meta['description']}\n" \
+                            f"--- INSTRUCTIONS ---\n" \
+                            f"{skill_meta['content']}\n" \
+                            f"--- END INSTRUCTIONS ---\n\n" \
+                            f"Context: {query}"
+            tools = ["mcp_browser", "mcp_filesystem"]
+
+        elif "evolution" in skill_id:
             response_text = "🧬 Evolution Complete: Generated 50 variants. Top candidate (Score: 0.98) binds to Target X."
             tools = ["genetic_algorithm", "docking_oracle"]
         elif "recruitment" in skill_id:

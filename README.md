@@ -35,11 +35,14 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 ## 🚀 Key Capabilities (2026 Enterprise Update)
 
 1.  **Swarm Orchestrator:** A new `SwarmOrchestrator` (`Skills/Agentic_AI/Multi_Agent_Systems`) allows specialized agents (Researcher, Reviewer, Safety Officer) to work in parallel.
-2.  **Dual-Stack Health:** Native support for:
+2.  **Universal Adapter (Write Once, Run Anywhere):**
+    *   **Google Antigravity Support:** Native support for the `SKILL.md` format.
+    *   **Multi-Provider Transpiler:** Automatically converts `SKILL.md` instructions into **OpenAI** JSON Schemas, **Anthropic** XML Thinking Blocks, or **Gemini** prompts.
+3.  **Dual-Stack Health:** Native support for:
     *   **OpenAI Health Stack:** JSON Schema-enforced agents for clinical triage and ops.
     *   **Anthropic Co-Worker Stack:** "Thinking Block" agents for high-stakes regulatory and safety reasoning.
-3.  **Self-Driving Labs:** Integrated Bayesian Optimization (`Skills/Mathematics/Probability_Statistics`) for autonomous experiment design.
-4.  **USDL Transpiler:** A "Write Once, Run Anywhere" tool (`platform/optimizer`) that converts generic skill specs into provider-optimized prompts.
+4.  **Self-Driving Labs:** Integrated Bayesian Optimization (`Skills/Mathematics/Probability_Statistics`) for autonomous experiment design.
+5.  **MCP Server:** A standard JSON-RPC 2.0 server to expose all skills to tools like Claude Desktop or your own agent IDE.
 
 ---
 
@@ -49,6 +52,7 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
+| **[Antigravity Skills](skill%20collections/Antigravity_Skills/)** | **(NEW)** Universal `SKILL.md` agents | MCP, Universal Transpiler |
 | **[Swarm Orchestrator](Skills/Agentic_AI/Multi_Agent_Systems/)** | **(NEW)** Coordinate multi-agent teams | AsyncIO, Task Routing |
 | **[USDL Transpiler](platform/optimizer/)** | **(NEW)** Cross-compile skills for any model | CLI, JSON/XML Gen |
 | **[BioKnowledge Graph](Skills/Computer_Science/Graph_Algorithms/)** | **(NEW)** GraphRAG for drug pathways | NetworkX, Dijkstra |
@@ -84,22 +88,20 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 
 ```mermaid
 graph TD
-    User["User / Dashboard"] -->|HTTP| Kernel["BioKernel Enterprise"]
+    User["User / Dashboard / MCP Client"] -->|JSON-RPC| Kernel["BioKernel Enterprise"]
+    
+    subgraph "Universal Adapter Layer"
+        Kernel -->|Transpile| Transpiler["USDL Transpiler"]
+        Transpiler -->|Emit| OpenAI["OpenAI Schema"]
+        Transpiler -->|Emit| Anthropic["Anthropic XML"]
+        Transpiler -->|Emit| Gemini["Gemini Prompt"]
+    end
     
     subgraph "Distributed System Layer"
         Kernel -->|Publish| Bus{"Event Bus"}
         Bus -->|Sync| Shared["Shared Context Blackboard"]
         Bus -->|Trigger| Agents
     end
-    
-    subgraph "Agent Swarm"
-        Agents --> Orchestrator["Swarm Orchestrator"]
-        Orchestrator --> Researcher["Researcher Agent"]
-        Orchestrator --> Reviewer["Reviewer Agent"]
-        Orchestrator --> LabBot["Self-Driving Lab Bot"]
-    end
-    
-    LabBot -->|Opt| Bayesian["Bayesian Optimizer"]
 ```
 
 ---
@@ -115,19 +117,26 @@ graph TD
 
 ## 🚀 Quick Start
 
-### 1. Run the Swarm Orchestrator
+### 1. Run the MCP Server (Recommended)
+Connect your favorite agent client (Claude Desktop, etc.) to the BioKernel:
+```bash
+python3 platform/biokernel/mcp_server.py
+```
+
+### 2. Run the Swarm Orchestrator
 Coordinate a multi-agent research mission:
 ```bash
 python3 Skills/Agentic_AI/Multi_Agent_Systems/orchestrator.py
 ```
 
-### 2. Transpile a Skill
-Convert a generic skill into an OpenAI prompt:
+### 3. Transpile a Skill (CLI)
+Convert a generic `SKILL.md` into an OpenAI prompt:
 ```bash
+# Requires python script update to point to SKILL.md
 python3 platform/optimizer/usdl_transpiler.py --file my_skill.json --provider openai
 ```
 
-### 3. Run the Dashboard
+### 4. Run the Dashboard
 Visualize workflows in real-time:
 ```bash
 python3 platform/dashboard.py
