@@ -84,28 +84,6 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 
 ---
 
-## 🛠️ Architecture
-
-```mermaid
-graph TD
-    User["User / Dashboard / MCP Client"] -->|JSON-RPC| Kernel["BioKernel Enterprise"]
-    
-    subgraph "Universal Adapter Layer"
-        Kernel -->|Transpile| Transpiler["USDL Transpiler"]
-        Transpiler -->|Emit| OpenAI["OpenAI Schema"]
-        Transpiler -->|Emit| Anthropic["Anthropic XML"]
-        Transpiler -->|Emit| Gemini["Gemini Prompt"]
-    end
-    
-    subgraph "Distributed System Layer"
-        Kernel -->|Publish| Bus{"Event Bus"}
-        Bus -->|Sync| Shared["Shared Context Blackboard"]
-        Bus -->|Trigger| Agents
-    end
-```
-
----
-
 ## 🤝 Dual Healthcare Alignments
 
 | Stack | Focus | Entry Points |
