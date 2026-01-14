@@ -1,0 +1,86 @@
+name: Validate samples
+
+on:
+  pull_request:
+    types: [opened, synchronize]  # new, updates
+
+jobs:
+  update-python-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744  # v3
+
+      - name: Get Changed Files
+        id: changed_files
+        uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32  # v44
+        with:
+          files:  |
+            samples/*.py
+
+      - name: Check Python samples
+        env:
+          NEW_FILES: ${{ steps.changed_files.outputs.all_modified_files }}
+          README: samples/README.md
+        run: |
+          #!/bin/bash
+          
+          for file in ${NEW_FILES}; do
+            echo "Testing $file"
+            name=$(basename $file)
+            if [[ -f ${file} ]]; then
+              # File exists, so needs to be listed.
+              if ! grep -q $name ${README}; then
+                echo "Error: Sample not listed in README ($name)"
+                exit 1
+              fi
+            else
+              # File does not exist, ensure it's not listed
+              if grep -q $name ${README}; then
+                echo "Error: Sample should not be listed in README ($name)"
+                exit 1
+              fi
+            fi
+          done
+
+  update-rest-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744  # v3
+
+      - name: Get Changed Files
+        id: changed_files
+        uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32  # v44
+        with:
+          files:  |
+            samples/rest/*.sh
+
+      - name: Check REST samples
+        env:
+          NEW_FILES: ${{ steps.changed_files.outputs.all_modified_files }}
+          README: samples/rest/README.md
+        run: |
+          #!/bin/bash
+          
+          for file in ${NEW_FILES}; do
+            echo "Testing $file"
+            if [[ -f ${file} ]]; then
+              # File exists, so needs to be listed.
+              echo $(basename $file)
+              name=$(basename $file)
+              if ! grep -q $name ${README}; then
+                echo "Error: Sample not listed in README ($name)"
+                exit 1
+              fi
+            else
+              # File does not exist, ensure it's not listed
+              name=$(basename $file)
+              if grep -q $name ${README}; then
+                echo "Error: Sample should not be listed in README ($name)"
+                exit 1
+              fi
+            fi
+          done

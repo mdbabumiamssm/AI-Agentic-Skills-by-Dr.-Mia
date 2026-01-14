@@ -52,7 +52,7 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[Antigravity Skills](skill%20collections/Antigravity_Skills/)** | **(NEW)** Universal `SKILL.md` agents | MCP, Universal Transpiler |
+| **[Antigravity Skills](Skills/External_Collections/Antigravity_Skills/)** | **(NEW)** Universal `SKILL.md` agents | MCP, Universal Transpiler |
 | **[Swarm Orchestrator](Skills/Agentic_AI/Multi_Agent_Systems/)** | **(NEW)** Coordinate multi-agent teams | AsyncIO, Task Routing |
 | **[USDL Transpiler](platform/optimizer/)** | **(NEW)** Cross-compile skills for any model | CLI, JSON/XML Gen |
 | **[BioKnowledge Graph](Skills/Computer_Science/Graph_Algorithms/)** | **(NEW)** GraphRAG for drug pathways | NetworkX, Dijkstra |

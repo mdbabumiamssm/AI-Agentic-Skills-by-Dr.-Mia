@@ -1,0 +1,10 @@
+/venv/
+/.eggs/
+/.idea/
+/.pytype/
+/build/
+*.egg-info
+.DS_Store
+__pycache__
+*.iml
+/dist/

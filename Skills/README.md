@@ -63,12 +63,25 @@ Skills/
 ├── Clinical/             # MedPrompt, Note Summarization, Adaptive Trials
 ├── Computer_Science/     # Graph Algo, Distributed Systems (Async)
 ├── Drug_Discovery/       # ChemCrow, Self-Driving Labs
+├── External_Collections/ # Consolidated external skill libraries (see below)
 ├── Foundation_Models/    # AlphaFold3 Wrapper, BiomedGPT
 ├── Genomics/             # Single Cell (Annotation, Pathways), CRISPR
 ├── LLM_Research/         # RAG, Fine-Tuning, Prompt Engineering
 ├── Mathematics/          # Bayesian Opt, Linear Algebra, Probability
 └── MCP_Servers/          # BioMCP Implementation
 ```
+
+### External_Collections
+Consolidated third-party skill libraries and frameworks:
+- **Auto-GPT** / **Auto-GPT-Plugins**: Autonomous GPT frameworks
+- **awesome-llm-skills**: Community-curated LLM skills
+- **semantic-kernel**: Microsoft's AI orchestration SDK
+- **langchain**: LangChain framework components
+- **google-gemini-cookbook**: Google Gemini examples
+- **mcp-servers-reference**: MCP server implementations
+- **Antigravity_Skills**: Universal SKILL.md agents
+- **Awesome-Biomedical-LLM-Agents**: Biomedical agent resources
+- **life-sciences_Claudeai-main**: Life sciences Claude integrations
 
 ## 🛠️ Usage Examples
 

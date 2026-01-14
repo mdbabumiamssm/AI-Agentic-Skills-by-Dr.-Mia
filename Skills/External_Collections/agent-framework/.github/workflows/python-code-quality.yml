@@ -1,0 +1,53 @@
+name: Python - Code Quality
+on:
+  merge_group:
+  workflow_dispatch:
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "python/**"
+
+env:
+  # Configure a constant location for the uv cache
+  UV_CACHE_DIR: /tmp/.uv-cache
+
+jobs:
+  pre-commit:
+    name: Checks
+    if: "!cancelled()"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.14"]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    defaults:
+      run:
+        working-directory: ./python
+    env:
+      UV_PYTHON: ${{ matrix.python-version }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up python and install the project
+        id: python-setup
+        uses: ./.github/actions/python-setup
+        with:
+          python-version: ${{ matrix.python-version }}
+          os: ${{ runner.os }}
+        env:
+          # Configure a constant location for the uv cache
+          UV_CACHE_DIR: /tmp/.uv-cache
+      - uses: actions/cache@v5
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit|${{ matrix.python-version }}|${{ hashFiles('python/.pre-commit-config.yaml') }}
+      - uses: pre-commit/action@v3.0.1
+        name: Run Pre-Commit Hooks
+        with:
+          extra_args: --config python/.pre-commit-config.yaml --all-files
+      - name: Run Mypy
+        env:
+          GITHUB_BASE_REF: ${{ github.event.pull_request.base.ref || github.base_ref || 'main' }}
+        run: uv run poe ci-mypy
