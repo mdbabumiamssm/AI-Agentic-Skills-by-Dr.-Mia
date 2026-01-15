@@ -68,14 +68,31 @@ class PriorAuthCoworker:
 
 
 def _demo() -> None:
+    import argparse
+    parser = argparse.ArgumentParser(description="Run Prior Auth Review")
+    parser.add_argument("--note", type=str, help="Clinical note text")
+    parser.add_argument("--code", type=str, help="Procedure code (e.g., MRI-L-SPINE)")
+    args = parser.parse_args()
+
     coworker = PriorAuthCoworker()
-    case = {
-        "case_id": "PA-1001",
-        "procedure_code": "MRI-L-SPINE",
-        "clinical_note": "Chronic back pain for 8 weeks with failed PT and NSAIDs. No trauma.",
-    }
-    payload = coworker.review(case)
-    print(json.dumps(payload, indent=2))
+
+    if args.note and args.code:
+        case = {
+            "case_id": "CLI-CASE-001",
+            "procedure_code": args.code,
+            "clinical_note": args.note,
+        }
+        payload = coworker.review(case)
+        print(json.dumps(payload, indent=2))
+    else:
+        # Default Demo
+        case = {
+            "case_id": "PA-1001",
+            "procedure_code": "MRI-L-SPINE",
+            "clinical_note": "Chronic back pain for 8 weeks with failed PT and NSAIDs. No trauma.",
+        }
+        payload = coworker.review(case)
+        print(json.dumps(payload, indent=2))
 
 
 if __name__ == "__main__":

@@ -183,12 +183,18 @@ async def main():
     swarm.register_agent(ReviewAgent("Reviewer", "Quality Control", ["verify_facts", "critique"]))
     swarm.register_agent(SafetyAgent("SafetyOfficer", "Compliance", ["check_phi", "hazmat_check"]))
     
-    # 3. Run Complex Mission
-    # This prompt triggers Researcher AND Reviewer based on keywords
-    await swarm.run_mission("Investigate usage of Imatinib in GIST and review for side effects.")
+    # 3. Run Mission
+    import argparse
+    parser = argparse.ArgumentParser(description="Run a Swarm Mission")
+    parser.add_argument("--mission", type=str, help="The mission objective for the swarm")
+    args = parser.parse_args()
 
-    # 4. Run Safety Mission
-    await swarm.run_mission("Perform safety compliance check on the lab dataset.")
+    if args.mission:
+         await swarm.run_mission(args.mission)
+    else:
+        # Default Demo Mode
+        await swarm.run_mission("Investigate usage of Imatinib in GIST and review for side effects.")
+        await swarm.run_mission("Perform safety compliance check on the lab dataset.")
 
 if __name__ == "__main__":
     asyncio.run(main())

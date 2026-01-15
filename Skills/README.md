@@ -39,6 +39,11 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **Tensor Operations:** `Mathematics/Linear_Algebra/tensor_operations.py` breaks down the math behind Attention mechanisms.
 *   **Graph RAG:** `Computer_Science/Graph_Algorithms/knowledge_graph.py` provides traversal for Drug-Target-Disease interactions.
 
+### 💻 Software Engineering (New!)
+*   **React & Next.js Best Practices:** `Software_Engineering/Web_Development/` contains standardized rules (`SKILL.md`) for building modern, performant web UIs.
+*   **Data Science Standards:** `Software_Engineering/Data_Science/Python_Pandas_Best_Practices/` provides guidelines for vectorized, memory-efficient data manipulation.
+*   **Core Python:** `Software_Engineering/Core_Python_Best_Practices/` enforces modern typing and idiomatic Python 3.10+ patterns.
+
 ## 🤝 Dual Health Stacks (New)
 
 ### OpenAI Health Stack
@@ -68,7 +73,9 @@ Skills/
 ├── Genomics/             # Single Cell (Annotation, Pathways), CRISPR
 ├── LLM_Research/         # RAG, Fine-Tuning, Prompt Engineering
 ├── Mathematics/          # Bayesian Opt, Linear Algebra, Probability
-└── MCP_Servers/          # BioMCP Implementation
+├── MCP_Servers/          # BioMCP Implementation
+└── Software_Engineering/ # Web Dev (React/Next.js), Data Science (Pandas), Core Python
+
 ```
 
 ### External_Collections
@@ -102,6 +109,13 @@ python3 ../platform/optimizer/usdl_transpiler.py --file ../platform/optimizer/my
 python3 Mathematics/Probability_Statistics/bayesian_optimization.py
 # Tutorial: Mathematics/Probability_Statistics/TUTORIAL_SELF_DRIVING_LAB_OPTIMIZER.md
 ```
+
+**4. Annotate Single-Cell Data:**
+```bash
+python3 Skills/Genomics/Single_Cell/Cell_Type_Annotation/RNA/universal_annotator.py
+# Tutorial: Skills/Genomics/Single_Cell/TUTORIAL_CELL_ANNOTATION.md
+```
+
 
 ## 📈 Roadmap (2026)
 *   [x] **Phase 1:** Core Architectures (Orchestrator, Async Runtime) - *Completed Jan 2026*
