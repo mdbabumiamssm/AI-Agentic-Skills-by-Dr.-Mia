@@ -65,6 +65,38 @@ class OpenAIHealthCareCopilot:
         self._validate_schema(asdict(plan))
         return plan
 
+    def generate_synthetic_insight(self, plan: CarePlan) -> str:
+        """
+        Uses the Meta-Prompter to construct a prompt for OpenAI, then
+        simulates the LLM response (summarizing the structured Care Plan).
+        """
+        # Import internally to avoid top-level dependency issues if platform is missing
+        try:
+            import sys, os
+            sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
+            from optimizer.meta_prompter import PromptOptimizer, ModelTarget
+            optimizer = PromptOptimizer()
+        except ImportError:
+            return "Optimizer not found. Insight generation unavailable."
+
+        raw_prompt = f"""
+        Data: {plan.to_json()}
+        Task: Summarize this care plan for the patient in a friendly, encouraging tone.
+        """
+        
+        optimized = optimizer.optimize(raw_prompt, ModelTarget.OPENAI)
+        
+        # Mocking the LLM Response
+        return f"""
+[System Prompt Sent to OpenAI]:
+{optimized}
+
+[Simulated Response]:
+"Hello! Based on your recent data, your resting heart rate has increased slightly. 
+We've noticed this trend and recommend a low-intensity recovery day. 
+Try to prioritize sleep tonight—we've added some tips to your plan!"
+        """
+
     # ------------------
     # Internal helpers
     # ------------------

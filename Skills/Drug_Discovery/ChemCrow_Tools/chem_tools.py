@@ -727,66 +727,60 @@ class ChemTools:
 # --- Example Usage ---
 
 if __name__ == "__main__":
+    import argparse
+    import json
+    import sys
+
+    parser = argparse.ArgumentParser(description="ChemCrow Tools - Molecular Analysis")
+    parser.add_argument("--smiles", help="SMILES string to analyze")
+    parser.add_argument("--output", help="Path to save JSON output")
+    parser.add_argument("--demo", action="store_true", help="Run demonstration on test molecules")
+    
+    args = parser.parse_args()
+    
     tools = ChemTools()
 
-    # Test molecules
-    test_molecules = {
-        "Aspirin": "CC(=O)OC1=CC=CC=C1C(=O)O",
-        "Caffeine": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
-        "Ibuprofen": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
-        "Atorvastatin": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4"
-    }
+    if args.demo:
+        # Test molecules
+        test_molecules = {
+            "Aspirin": "CC(=O)OC1=CC=CC=C1C(=O)O",
+            "Caffeine": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+            "Ibuprofen": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+            "Atorvastatin": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4"
+        }
 
-    print("=" * 70)
-    print("ChemCrow Tools - Comprehensive Molecular Analysis")
-    print("=" * 70)
-    print(f"RDKit Available: {RDKIT_AVAILABLE}")
-    print()
+        print("=" * 70)
+        print("ChemCrow Tools - Comprehensive Molecular Analysis")
+        print("=" * 70)
+        print(f"RDKit Available: {RDKIT_AVAILABLE}")
+        print()
 
-    for name, smiles in test_molecules.items():
-        print(f"\n{'='*60}")
-        print(f"Compound: {name}")
-        print(f"SMILES: {smiles}")
-        print("=" * 60)
-
-        # Full screening
+        for name, smiles in test_molecules.items():
+            print(f"\n{'='*60}")
+            print(f"Compound: {name}")
+            print(f"SMILES: {smiles}")
+            print("=" * 60)
+            
+            try:
+                result = tools.screen_compound(smiles)
+                print(json.dumps(result, indent=2, default=str))
+            except Exception as e:
+                print(f"Error: {e}")
+                
+    elif args.smiles:
         try:
-            result = tools.screen_compound(smiles)
-
-            print(f"\nProperties:")
-            print(f"  MW: {result['properties']['mol_weight']:.2f}")
-            print(f"  LogP: {result['properties']['log_p']:.2f}")
-            print(f"  TPSA: {result['properties']['tpsa']:.2f}")
-            print(f"  QED: {result['properties']['qed']:.3f}")
-
-            print(f"\nLipinski Rule of 5:")
-            print(f"  Passes: {result['lipinski']['passes']}")
-            print(f"  Violations: {result['lipinski']['violations']}")
-
-            print(f"\nSynthetic Accessibility:")
-            print(f"  Score: {result['synthetic_accessibility']['score']:.2f}")
-            print(f"  Category: {result['synthetic_accessibility']['category']}")
-
-            if result['toxicity_alerts']:
-                print(f"\nToxicity Alerts:")
-                for alert in result['toxicity_alerts']:
-                    print(f"  - {alert['name']} ({alert['severity']})")
-
-            if result['pains_alerts']:
-                print(f"\nPAINS Alerts: {result['pains_alerts']}")
-
-            print(f"\nDruglikeness Score: {result['druglikeness_score']:.3f}")
-            print(f"\nRecommendation: {result['recommendation']}")
-
+            result = tools.screen_compound(args.smiles)
+            output_json = json.dumps(result, indent=2, default=str)
+            print(output_json)
+            
+            if args.output:
+                with open(args.output, 'w') as f:
+                    f.write(output_json)
+                    print(f"\nSaved to {args.output}", file=sys.stderr)
+                    
         except Exception as e:
-            print(f"Error analyzing {name}: {e}")
-
-    # Similarity example
-    print("\n" + "=" * 60)
-    print("Similarity Analysis")
-    print("=" * 60)
-    sim = tools.calculate_similarity(
-        test_molecules["Aspirin"],
-        test_molecules["Ibuprofen"]
-    )
-    print(f"Aspirin vs Ibuprofen Tanimoto Similarity: {sim:.3f}")
+            print(f"Error processing SMILES: {e}", file=sys.stderr)
+            sys.exit(1)
+            
+    else:
+        parser.print_help()

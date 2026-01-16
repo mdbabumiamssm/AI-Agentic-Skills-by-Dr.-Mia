@@ -59,11 +59,25 @@ class PlanAndSolveAgent:
 
 # --- Example Usage ---
 if __name__ == "__main__":
-    agent = PlanAndSolveAgent("PlannerBot")
-    query = "Analyze the effect of inhibitor X on Pathway Y considering mutation Z."
+    import argparse
+    import sys
     
-    agent.generate_plan(query)
+    parser = argparse.ArgumentParser(description="Plan-and-Solve Agent")
+    parser.add_argument("--query", required=True, help="Complex query to decompose and solve")
+    parser.add_argument("--output", help="Path to save execution report")
+    
+    args = parser.parse_args()
+    
+    agent = PlanAndSolveAgent("PlannerBot")
+    
+    agent.generate_plan(args.query)
     agent.execute_plan()
     
+    report = agent.get_summary()
     print("\n--- Final Report ---")
-    print(agent.get_summary())
+    print(report)
+    
+    if args.output:
+        with open(args.output, 'w') as f:
+            f.write(report)
+

@@ -73,19 +73,27 @@ class CRISPRDesigner:
         return {"gc": round(gc_percent, 1), "efficiency": max(0, score)}
 
 if __name__ == "__main__":
+    import argparse
+    import json
+    import sys
+
+    parser = argparse.ArgumentParser(description="CRISPR Design Agent")
+    parser.add_argument("--sequence", required=True, help="DNA sequence to scan")
+    parser.add_argument("--output", help="Path to save JSON output")
+    
+    args = parser.parse_args()
+    
     designer = CRISPRDesigner()
     
-    # Example Gene Fragment (TP53 exon mock)
-    gene_seq = "ATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTGTGAGTGGATCCATTGGAAGGGC"
+    print(f"Scanning DNA ({len(args.sequence)} bp) for CRISPR targets...", file=sys.stderr)
     
-    print(f"Scanning DNA ({len(gene_seq)} bp) for CRISPR targets...\n")
+    targets = designer.find_targets(args.sequence)
     
-    targets = designer.find_targets(gene_seq)
-    
-    print(f"{'Loc':<5} {'Spacer Sequence (20bp)':<22} {'PAM':<4} {'GC%':<5} {'Score'}")
-    print("""---------------------"""")
-    
-    for t in targets:
-        print(f"{t['location']:<5} {t['spacer']} {t['pam']} {t['gc_content']:<5} {t['efficiency_score']}")
-        
-    print(f"\nFound {len(targets)} potential guides.")
+    if args.output:
+        with open(args.output, 'w') as f:
+            json.dump(targets, f, indent=2)
+        print(f"Saved {len(targets)} targets to {args.output}", file=sys.stderr)
+    else:
+        # Print valid JSON to stdout for piping
+        print(json.dumps(targets, indent=2))
+

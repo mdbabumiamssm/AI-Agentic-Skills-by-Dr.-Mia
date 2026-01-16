@@ -29,10 +29,21 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 ### 🔌 Model Context Protocol (MCP)
 *   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools (`sequence_length`, `reverse_complement`) to LLMs like Claude Desktop.
 
-### 🧪 Clinical & Drug Discovery
-*   **Adaptive Clinical Trials:** `Clinical/Clinical_Trials/Adaptive_Trial_Design_Agent/adaptive_trial_sim.py` runs **Bayesian Multi-Arm Multi-Stage (MAMS)** simulations, automatically dropping futile arms.
-*   **AlphaFold 3 Wrapper:** `Foundation_Models/AlphaFold3_Agent/af3_wrapper.py` standardizes protein structure prediction calls.
-*   **MedPrompt:** `LLM_Research/Prompt_Engineering/medprompt.py` implements Microsoft's SOTA clinical reasoning strategy (Dynamic Few-Shot + Ensemble).
+### 🏥 Clinical & Operations (New!)
+*   **EHR/FHIR Integration:** `Clinical/EHR_FHIR_Integration/fhir_client.py` provides tools to search and retrieve patient data from FHIR R4 servers.
+*   **Clinical NLP:** `Clinical/Clinical_NLP/entity_extractor.py` extracts medical entities (Diseases, Meds) from unstructured text.
+*   **Multimodal Imaging:** `Clinical/Medical_Imaging/Multimodal_Analysis/multimodal_agent.py` uses VLMs to analyze X-rays/CTs alongside clinical text.
+*   **Opentrons Agent:** `Lab_Automation/Opentrons_Agent/` generates liquid handling protocols from natural language.
+
+### 💊 Drug Discovery & Genomics (Updated)
+*   **ChemCrow Tools:** `Drug_Discovery/ChemCrow_Tools/chem_tools.py` enables agents to calculate molecular properties (LogP, TPSA) and screen for toxicity.
+*   **CRISPR Design:** `Genomics/CRISPR_Design_Agent/crispr_designer.py` automates gRNA selection and efficiency scoring for gene editing.
+*   **Protein Structure:** `Drug_Discovery/Protein_Structure/esmfold_client.py` mocks ESMFold/AF3 inference for 3D structure prediction.
+*   **Variant Interpretation:** `Genomics/Variant_Interpretation/acmg_classifier.py` classifies genetic variants using ACMG evidence codes.
+
+### 🧪 Clinical Simulators & Research
+*   **Adaptive Clinical Trials:** `Clinical/Clinical_Trials/Adaptive_Trial_Design_Agent/adaptive_trial_sim.py` runs Bayesian MAMS simulations.
+*   **MedPrompt:** `LLM_Research/Prompt_Engineering/medprompt.py` implements Microsoft's SOTA clinical reasoning strategy.
 *   **Self-Driving Labs:** `Mathematics/Probability_Statistics/bayesian_optimization.py` enables autonomous experiment selection using Gaussian Processes.
 
 ### 📐 Math & CS (The Foundation)

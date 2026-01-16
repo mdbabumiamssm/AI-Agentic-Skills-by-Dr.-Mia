@@ -85,36 +85,84 @@ class BayesianOptimizer:
         best_idx = np.argmax(scores)
         return candidates[best_idx]
 
-# --- Example Usage ---
 if __name__ == "__main__":
-    # Define a "Black Box" function (e.g., experimental yield)
-    # Goal: Maximize this function
-    def synthetic_experiment(params):
-        # Simple 1D function: f(x) = -(x-2)^2 + 10. Max is at x=2, value=10.
-        x = params[0]
-        return -(x - 2.0)**2 + 10.0
+    import argparse
+    import json
+    import ast
+    import sys
 
-    # Initialize Optimizer for 1D space between [-5, 5]
-    opt = BayesianOptimizer(bounds=[(-5.0, 5.0)])
+    parser = argparse.ArgumentParser(description="Bayesian Optimization Agent")
+    parser.add_argument("--history", help="List of [X, Y] pairs or JSON history. Format: '[[[x1], y1], [[x2], y2]]'")
+    parser.add_argument("--bounds", required=True, help="List of (min, max) tuples. Format: '[[min1, max1], ...]'")
+    parser.add_argument("--demo", action="store_true", help="Run the internal synthetic demo")
+    parser.add_argument("--output", help="Path to save output JSON")
     
-    print("--- Starting Self-Driving Lab Simulation ---")
-    
-    # Initial random observations
-    X_init = [np.array([0.0]), np.array([4.0])]
-    Y_init = [synthetic_experiment(x) for x in X_init]
-    opt.fit(X_init, Y_init)
-    
-    # Run 5 optimization steps
-    for step in range(5):
-        next_param = opt.propose_next_location()
-        actual_value = synthetic_experiment(next_param)
+    args = parser.parse_args()
+
+    if args.demo:
+        # Define a "Black Box" function (e.g., experimental yield)
+        # Goal: Maximize this function
+        def synthetic_experiment(params):
+            # Simple 1D function: f(x) = -(x-2)^2 + 10. Max is at x=2, value=10.
+            x = params[0]
+            return -(x - 2.0)**2 + 10.0
+
+        # Initialize Optimizer for 1D space between [-5, 5]
+        opt = BayesianOptimizer(bounds=[(-5.0, 5.0)])
         
-        print(f"Step {step+1}: Suggested Param {next_param}, Result {actual_value:.4f}")
+        print("--- Starting Self-Driving Lab Simulation ---")
         
-        # Add to known data
-        X_init.append(next_param)
-        Y_init.append(actual_value)
+        # Initial random observations
+        X_init = [np.array([0.0]), np.array([4.0])]
+        Y_init = [synthetic_experiment(x) for x in X_init]
         opt.fit(X_init, Y_init)
+        
+        # Run 5 optimization steps
+        for step in range(5):
+            next_param = opt.propose_next_location()
+            actual_value = synthetic_experiment(next_param)
+            
+            print(f"Step {step+1}: Suggested Param {next_param}, Result {actual_value:.4f}")
+            
+            # Add to known data
+            X_init.append(next_param)
+            Y_init.append(actual_value)
+            opt.fit(X_init, Y_init)
 
-    best_y = max(Y_init)
-    print(f"Optimization Complete. Best Value Found: {best_y:.4f}")
+        best_y = max(Y_init)
+        print(f"Optimization Complete. Best Value Found: {best_y:.4f}")
+        
+    else:
+        # Parsing CLI arguments
+        try:
+            bounds = json.loads(args.bounds)
+            opt = BayesianOptimizer(bounds=bounds)
+            
+            if args.history:
+                # History format expected: [ [[x1_1, x1_2], y1], [[x2_1, x2_2], y2] ]
+                history = json.loads(args.history)
+                X_hist = []
+                Y_hist = []
+                for x, y in history:
+                    X_hist.append(np.array(x))
+                    Y_hist.append(y)
+                
+                if X_hist:
+                    opt.fit(X_hist, Y_hist)
+            
+            next_param = opt.propose_next_location()
+            
+            result = {
+                "next_parameters": next_param.tolist(),
+                "status": "ready"
+            }
+            
+            print(json.dumps(result, indent=2))
+            
+            if args.output:
+                with open(args.output, 'w') as f:
+                    json.dump(result, f, indent=2)
+                    
+        except Exception as e:
+            print(f"Error parsing arguments: {e}", file=sys.stderr)
+            sys.exit(1)
