@@ -95,16 +95,42 @@ class SelfCorrectionAgent:
         Simulates LLM responses for demonstration purposes.
         In a production BioKernel env, this would use `platform.adapters`.
         """
-        if mode == "draft":
-            return "The patient has a fever. We should give Tylenol."
-        elif mode == "critique":
-            # Simple toggle to simulate improvement needed once
-            if "dosage" not in prompt and "history" not in prompt: # simplistic check
-                return "The draft fails to mention dosage and checking patient history for liver disease."
-            return "NO_ISSUES"
-        elif mode == "refine":
-            return "The patient has a fever. Check liver history. If clear, administer 650mg Acetaminophen q6h."
-        return ""
+        prompt_lower = prompt.lower()
+        
+        # Domain: Prior Authorization / Appeals
+        if "appeal" in prompt_lower or "denial" in prompt_lower:
+            if mode == "draft":
+                return "To Whom It May Concern, I am writing to appeal the denial for Patient X. They have diabetes."
+            elif mode == "critique":
+                if "contraindication" not in prompt_lower and "policy" not in prompt_lower:
+                    return "Critique: The draft is too generic. It fails to mention the specific contraindication (renal failure) or the payer policy code."
+                return "NO_ISSUES"
+            elif mode == "refine":
+                return "Dear Medical Reviewer, This is an appeal for Patient X. The denial states 'step therapy required'. However, the patient has Stage 4 CKD (eGFR 25), which is a contraindication for Metformin per Policy 101. Therefore, the requested medication is medically necessary."
+
+        # Domain: Regulatory
+        elif "regulatory" in prompt_lower or "waiver" in prompt_lower:
+            if mode == "draft":
+                return "We request a waiver. Kids don't get this disease."
+            elif mode == "critique":
+                if "cfr" not in prompt_lower:
+                    return "Critique: Too informal. Needs to cite 21 CFR 314.55."
+                return "NO_ISSUES"
+            elif mode == "refine":
+                return "Pursuant to 21 CFR 314.55(c)(2), we request a full waiver. The disease etiology in pediatric populations is nonexistent."
+
+        # Default / Medical Triage
+        else:
+            if mode == "draft":
+                return "The patient has a fever. We should give Tylenol."
+            elif mode == "critique":
+                if "dosage" not in prompt_lower and "history" not in prompt_lower: 
+                    return "The draft fails to mention dosage and checking patient history for liver disease."
+                return "NO_ISSUES"
+            elif mode == "refine":
+                return "The patient has a fever. Check liver history. If clear, administer 650mg Acetaminophen q6h."
+        
+        return " [ LLM Output ] "
 
 if __name__ == "__main__":
     agent = SelfCorrectionAgent()
