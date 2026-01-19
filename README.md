@@ -61,9 +61,9 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
-| **[OpenAI Care Copilot](Skills/OpenAI_Health_Stack/)** | **(NEW)** Patient triage with strict JSON schemas | JSON Mode, GPT-4o |
-| **[Anthropic Reg. Drafter](Skills/Anthropic_Health_Stack/)** | **(NEW)** Regulatory drafting with audit trails | XML Tags, Claude 3.5 |
-| **[Prior Auth Agent](Skills/Clinical/Prior_Authorization/)** | Automated medical necessity determination | Policy Logic, MedPrompt |
+| **[Care Copilot](Skills/Consumer_Health/)** | **(UPDATED)** Patient triage with agentic self-correction | JSON Mode, Self-Correction |
+| **[Regulatory Drafter](Skills/Anthropic_Health_Stack/)** | **(UPDATED)** Regulatory drafting with audit trails | Chain-of-Thought, XML |
+| **[Prior Auth Agent](Skills/Clinical/Prior_Authorization/)** | **(NEW)** Automated medical necessity & **Appeals** | Self-Correction, MedPrompt |
 | **[Recruitment Agent](Skills/Clinical/Clinical_Trials/)** | Vector-based patient-trial matching | Vector DB, Cosine Similarity |
 
 ### 🧬 Genomics Skills
@@ -71,13 +71,15 @@ The system now features **Swarm Orchestration** (multi-agent teaming), **Dual-St
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
 | **[CRISPR Design Agent](Skills/Genomics/CRISPR_Design_Agent/)** | **(UPDATED)** Automated gRNA design | Off-target analysis |
+| **[Variant Classifier](Skills/Genomics/Variant_Interpretation/)** | **(UPDATED)** ACMG classification & AI Reporting | Prompt Optimization |
 | **[Single Cell Multi-Omics](Skills/Genomics/Single_Cell/)** | Integrated analysis of RNA, Protein, ATAC | scverse, Seurat |
 | **[Spatial Transcriptomics](Skills/Genomics/Spatial_Transcriptomics/)** | Multimodal spatial analysis | Dynamic code generation |
 
-### 🧪 Drug Discovery Skills
+### 🧪 Lab & Drug Discovery Skills
 
 | Skill | Description | Key Tools |
 |-------|-------------|-----------|
+| **[Opentrons Generator](Skills/Lab_Automation/Opentrons_Agent/)** | **(NEW)** High-level intent to robot code | Opentrons API, Meta-Prompt |
 | **[Self-Driving Lab](Skills/Mathematics/Probability_Statistics/)** | **(NEW)** Bayesian Optimization for experiments | Gaussian Processes, UCB |
 | **[Molecule Evolution Agent](Skills/Drug_Discovery/Molecule_Design/)** | Evolutionary de novo drug design | Genetic Algorithm |
 | **[Protein Structure Prediction](Skills/Drug_Discovery/Protein_Structure/)** | AI-powered structure prediction | AlphaFold 2/3 |

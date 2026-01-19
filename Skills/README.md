@@ -22,7 +22,8 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **Database:** A curated [Tool Database](Genomics/Single_Cell/Tool_Database.md) of 2026 single-cell tools (MultiKano, scPS, etc.).
 
 ### 🧠 Agentic AI (The Brain)
-*   **Orchestrated Swarms:** `Agentic_AI/Multi_Agent_Systems/orchestrator.py` implements a Supervisor pattern that delegates tasks to specialized sub-agents (Coder, Chemist, Reviewer).
+*   **Self-Correction:** `Agentic_AI/Agent_Architectures/Self_Correction/self_correction_agent.py` implements a Reflexion pattern for iterative improvement.
+*   **Orchestrated Swarms:** `Agentic_AI/Multi_Agent_Systems/orchestrator.py` implements a Supervisor pattern that delegates tasks to specialized sub-agents.
 *   **Plan-and-Solve:** `Agentic_AI/Agent_Architectures/Plan_and_Solve/` breaks down complex user queries into Directed Acyclic Graphs (DAGs).
 *   **Async Runtime:** `Computer_Science/Distributed_Systems/agent_concurrency.py` provides a Ray-like async runtime for parallel agents.
 
@@ -30,16 +31,16 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools (`sequence_length`, `reverse_complement`) to LLMs like Claude Desktop.
 
 ### 🏥 Clinical & Operations (New!)
+*   **Prior Auth Appeals:** `Clinical/Prior_Authorization/appeals_agent.py` uses self-correction to iteratively refine arguments for overturning insurance denials.
 *   **EHR/FHIR Integration:** `Clinical/EHR_FHIR_Integration/fhir_client.py` provides tools to search and retrieve patient data from FHIR R4 servers.
 *   **Clinical NLP:** `Clinical/Clinical_NLP/entity_extractor.py` extracts medical entities (Diseases, Meds) from unstructured text.
-*   **Multimodal Imaging:** `Clinical/Medical_Imaging/Multimodal_Analysis/multimodal_agent.py` uses VLMs to analyze X-rays/CTs alongside clinical text.
-*   **Opentrons Agent:** `Lab_Automation/Opentrons_Agent/` generates liquid handling protocols from natural language.
+*   **Opentrons Agent:** `Lab_Automation/Opentrons_Agent/opentrons_generator.py` generates liquid handling protocols from high-level intent.
 
 ### 💊 Drug Discovery & Genomics (Updated)
+*   **Variant Interpretation:** `Genomics/Variant_Interpretation/acmg_classifier.py` classifies genetic variants and generates AI-powered clinical reports.
 *   **ChemCrow Tools:** `Drug_Discovery/ChemCrow_Tools/chem_tools.py` enables agents to calculate molecular properties (LogP, TPSA) and screen for toxicity.
 *   **CRISPR Design:** `Genomics/CRISPR_Design_Agent/crispr_designer.py` automates gRNA selection and efficiency scoring for gene editing.
 *   **Protein Structure:** `Drug_Discovery/Protein_Structure/esmfold_client.py` mocks ESMFold/AF3 inference for 3D structure prediction.
-*   **Variant Interpretation:** `Genomics/Variant_Interpretation/acmg_classifier.py` classifies genetic variants using ACMG evidence codes.
 
 ### 🧪 Clinical Simulators & Research
 *   **Adaptive Clinical Trials:** `Clinical/Clinical_Trials/Adaptive_Trial_Design_Agent/adaptive_trial_sim.py` runs Bayesian MAMS simulations.
@@ -60,16 +61,15 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 ### OpenAI Health Stack
 *   **Care Copilot:** `Consumer_Health/wearable_copilot_openai.py` + `Consumer_Health/Wearable_Analysis/health_copilot.py` translate wearable JSON into schema-validated action plans.
 *   **Clinical Ops Automator:** `Clinical/openai_clinical_ops_automator.py` emits ICD-10/CPT suggestions, SOAP notes, and prior auth packets with local JSON validation.
-*   **Lab Automation Bridge:** `Lab_Automation/openai_lab_automation_bridge.py` wraps Experiment Designer outputs in Thermo-style payloads.
+*   **Lab Automation Bridge:** `Lab_Automation/openai_lab_automation_bridge.py` wraps Experiment Designer outputs in payloads.
 *   **Documentation:** See [OpenAI_Health_STACK.md](OpenAI_Health_STACK.md) for workflows, CLI usage, and BioKernel integration.
 
-### Anthropic Co-Worker Stack
+### Co-Worker Stack
 *   **Inbox Router:** `Clinical/anthropic_inbox_router.py` fans work items into coworkers via the Event Bus.
-*   **Prior Auth Coworker:** `Clinical/Prior_Authorization/anthropic_coworker.py` mirrors `<thinking>/<analysis>/<decision>` traces.
+*   **Prior Auth Coworker:** `Clinical/Prior_Authorization/appeals_agent.py` mirrors reasoning traces.
 *   **Regulatory Coworker:** `Pharma/Regulatory_Affairs/anthropic_regulatory_coworker.py` drafts CTD responses with citations.
 *   **Pharmacovigilance Monitor:** `Clinical/Safety/pharmacovigilance_monitor.py` triages safety signals and emits audit-ready traces.
-*   **USDL Alignment:** Specs such as `Skills/USDL_SPEC_PRIOR_AUTH.json` feed `platform/optimizer/usdl_transpiler.py`, ensuring the same agent definition compiles for Claude, OpenAI, Gemini, etc.
-*   **Documentation:** See [Anthropic_Health_STACK.md](Anthropic_Health_STACK.md) for integration details.
+*   **Regulatory Drafter:** `Anthropic_Health_Stack/regulatory_drafter.py` drafts regulatory submissions with audit trails.
 
 ## 📂 Directory Structure
 
