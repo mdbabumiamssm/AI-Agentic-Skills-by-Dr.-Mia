@@ -1,7 +1,7 @@
 import time
 import sys
 import os
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 # Adjust path to find platform module if running standalone
 if __name__ == "__main__":
@@ -13,8 +13,7 @@ if __name__ == "__main__":
 try:
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 except ImportError:
-    # Fallback if paths are tricky (e.g. running from root with different setup)
-    # Try adding platform dir explicitly if not added
+    # Fallback if paths are tricky
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 
@@ -24,71 +23,121 @@ class RegulatoryDrafter:
     
     Demonstrates:
     1. Integration with Meta-Prompter for optimized prompt engineering.
-    2. Long Context Handling.
+    2. Long Context Handling (up to 200k tokens).
     3. Chain-of-Thought transparency (<thinking> blocks).
     4. Structured Output.
     """
     
-    def __init__(self, model: str = "claude-3-5-sonnet-20241022"):
+    def __init__(self, model: str = "claude-3-5-sonnet-20241022", adapter=None):
         self.model = model
         self.optimizer = PromptOptimizer()
+        self.adapter = adapter
 
-    def draft_submission(self, clinical_data: str, fda_guidance: str) -> Dict[str, Any]:
+    def set_adapter(self, adapter):
+        """Inject a real LLM adapter (e.g. from platform.adapters)."""
+        self.adapter = adapter
+
+    def draft_submission(self, 
+                         section_name: str,
+                         clinical_data: str, 
+                         guidance_text: str,
+                         style_guide: Optional[str] = None) -> Dict[str, Any]:
         """
         Drafts a regulatory submission section based on data and guidance.
-        Returns a structured dictionary with trace and draft.
+        
+        Args:
+            section_name: e.g. "Pediatric Assessment Waiver", "Nonclinical Overview"
+            clinical_data: The raw data/study results.
+            guidance_text: Relevant FDA/EMA guidance.
+            style_guide: Optional formatting/tone instructions.
+            
+        Returns:
+            Dictionary with status, trace, and draft content.
         """
-        # 1. Optimize Prompt (Demonstration of Meta-Prompter)
-        raw_prompt = f"""
-        Task: Draft a Pediatric Assessment Waiver Request.
+        
+        # 1. Optimize Prompt
+        base_context = f"""
+        Role: Senior Regulatory Affairs Writer
+        Task: Draft the '{section_name}' section for a submission.
+        
         Context:
         - Clinical Data: {clinical_data}
-        - FDA Guidance: {fda_guidance}
+        - Guidance: {guidance_text}
+        """
+        
+        if style_guide:
+            base_context += f"\n- Style Guide: {style_guide}"
+            
+        raw_prompt = f"""
+        {base_context}
         
         Requirements:
         - Analyze the data against the guidance.
-        - Determine if a waiver is applicable.
-        - Draft the submission text citing specific CFR codes.
+        - Cite specific regulations/guidance sections where applicable.
+        - Maintain a formal, objective regulatory tone.
+        - Output format: Markdown.
         """
         
         optimized_prompt = self.optimizer.optimize(raw_prompt, ModelTarget.CLAUDE)
         
-        print(f"--- RegulatoryDrafter: Processing with {self.model} ---")
-        print(f">> Optimized Prompt Structure:\n{optimized_prompt[:200]}...\n")
+        print(f"--- RegulatoryDrafter: Processing '{section_name}' with {self.model} ---")
         
-        # SIMULATING ANTHROPIC'S "THINKING" BLOCK
+        # 2. Execution (Real or Mock)
+        if self.adapter:
+            # In a real BioKernel setup, we'd use the adapter
+            response = self.adapter.generate(optimized_prompt)
+            return {
+                "status": "success",
+                "model": self.model,
+                "prompt_used": optimized_prompt,
+                "draft": response
+            }
+        else:
+            return self._run_simulation(section_name, optimized_prompt)
+
+    def _run_simulation(self, section_name: str, prompt: str) -> Dict[str, Any]:
+        """Mock simulation for demonstration/testing without API keys."""
         print(">> Claude is thinking...")
-        time.sleep(1.0)
+        time.sleep(0.8)
         
-        thinking_process = """
+        # Dynamic-ish thinking block
+        thinking_process = f"""
 <thinking>
-1.  **Analyze the Request**: The user wants a submission section justifying the exclusion of pediatric patients.
-2.  **Review Guidance**: The provided FDA guidance (Section 4.2) states that pediatric waivers are granted if the disease does not exist in children.
-3.  **Review Data**: The clinical data shows the target indication is "Age-related Macular Degeneration" (AMD), which typically affects patients > 50.
-4.  **Formulate Argument**:
-    *   Premise 1: Disease biology is age-dependent.
-    *   Premise 2: No pediatric population exists for this indication.
-    *   Conclusion: Request full waiver per 21 CFR 314.55(c)(2).
-5.  **Drafting Strategy**: Use formal regulatory tone. Cite specific CFR codes.
+1.  **Analyze the Request**: Draft '{section_name}'.
+2.  **Review Guidance**: Checking provided guidance for constraints on '{section_name}'.
+3.  **Review Data**: Synthesizing clinical data points relevant to this section.
+4.  **Formulate Argument**: Constructing narrative flow: Introduction -> Data Presentation -> Conclusion.
+5.  **Drafting Strategy**: Adhering to CTD format.
 </thinking>
 """
         
-        # THE FINAL OUTPUT
-        draft_text = """
+        # Placeholder drafts for common demos
+        if "Pediatric" in section_name:
+            draft_text = """
 **Draft Submission: Pediatric Assessment Waiver Request**
 
-Pursuant to 21 CFR 314.55(c)(2), the Sponsor requests a full waiver of the requirement to submit data on the assessment of the safety and effectiveness of [Drug X] in pediatric subpopulations.
+Pursuant to 21 CFR 314.55(c)(2), the Sponsor requests a full waiver...
 
 **Rationale:**
-The indication sought, Age-related Macular Degeneration (AMD), is an adult-onset condition that does not occur in the pediatric population. As noted in the provided Clinical Overview (Section 2.1), the youngest patient enrolled in Phase 3 trials was 58 years of age.
-
-Therefore, studies in pediatric patients are impossible or highly impracticable because the number of such patients is so small or geographically dispersed.
+The indication is adult-onset (e.g., AMD) and does not exist in pediatric populations.
 """
-        
+        elif "Nonclinical" in section_name:
+             draft_text = """
+**2.4 Nonclinical Overview**
+
+**2.4.1 Introduction**
+The nonclinical program for [Drug X] was designed to support chronic administration...
+
+**2.4.2 Pharmacology**
+Primary pharmacology studies demonstrated high affinity binding (Ki = 0.5 nM)...
+"""
+        else:
+            draft_text = f"**{section_name}**\n\n[Draft content generated based on input data...]"
+
         return {
             "status": "success",
             "model": self.model,
-            "prompt_used": optimized_prompt,
+            "prompt_used": prompt,
             "trace": thinking_process.strip(),
             "draft": draft_text.strip()
         }
@@ -96,12 +145,20 @@ Therefore, studies in pediatric patients are impossible or highly impracticable 
 if __name__ == "__main__":
     agent = RegulatoryDrafter()
     
-    # Mock Inputs
-    data_snippet = "Study 101 enrolled 500 patients. Mean age 72. Diagnosis: Wet AMD."
-    guidance_snippet = "FDA Guidance for Industry: Pediatric Study Plans..."
+    # Test 1: Pediatric Waiver
+    print(">> TEST 1: Pediatric Waiver")
+    res1 = agent.draft_submission(
+        section_name="Pediatric Assessment Waiver",
+        clinical_data="Indication: Wet AMD. Mean age 72.",
+        guidance_text="FDA Guidance on Pediatric Studies..."
+    )
+    print(res1["draft"][:100] + "...")
     
-    result = agent.draft_submission(data_snippet, guidance_snippet)
-    print("\n>> Final Output Payload:")
-    import json
-    print(json.dumps(result, indent=2))
-
+    # Test 2: Nonclinical Overview
+    print("\n>> TEST 2: Nonclinical Overview")
+    res2 = agent.draft_submission(
+        section_name="Nonclinical Overview",
+        clinical_data="Ki = 0.5 nM. No off-target effects.",
+        guidance_text="ICH M3(R2)"
+    )
+    print(res2["draft"][:100] + "...")

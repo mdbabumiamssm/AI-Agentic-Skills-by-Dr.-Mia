@@ -1,22 +1,31 @@
 """
-OpenAI Health Stack – Care Copilot
----------------------------------
+OpenAI Health Stack – Care Copilot (Universal Edition)
+------------------------------------------------------
 Transforms wearable and patient-reported data into a schema-enforced
 coaching plan similar to ChatGPT Health. 
+
+Updates (Jan 2026):
+- Integration with Agentic AI Self-Correction.
+- Enhanced Schema Validation.
 """
 
 from __future__ import annotations
 
 import json
+import sys
+import os
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from statistics import mean
 from typing import Any, Dict, List, Optional
 
+# Adjust path to find platform module if running standalone
+if __name__ == "__main__":
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
 
 class SchemaValidationError(Exception):
     """Raised when a generated payload violates the declared schema."""
-
 
 @dataclass
 class CarePlan:
@@ -67,35 +76,41 @@ class OpenAIHealthCareCopilot:
 
     def generate_synthetic_insight(self, plan: CarePlan) -> str:
         """
-        Uses the Meta-Prompter to construct a prompt for OpenAI, then
-        simulates the LLM response (summarizing the structured Care Plan).
+        Uses the Meta-Prompter to construct a prompt for OpenAI.
+        If 'SelfCorrectionAgent' is available, it uses it to refine the output.
         """
-        # Import internally to avoid top-level dependency issues if platform is missing
+        # Try to import SelfCorrectionAgent
         try:
-            import sys, os
-            sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
+            # Adjust path to find Agentic_AI
+            # Current: Skills/Consumer_Health/
+            # Agentic: Skills/Agentic_AI/
+            sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../Agentic_AI/Agent_Architectures/Self_Correction")))
+            # Fallback relative import
+            from Skills.Agentic_AI.Agent_Architectures.Self_Correction.self_correction_agent import SelfCorrectionAgent
+            
+            agent = SelfCorrectionAgent()
+            task = f"Analyze this care plan and provide a patient-facing summary: {plan.to_json()}"
+            criteria = ["Be empathetic", "Highlight top risk", "Propose one immediate action", "Keep it under 50 words"]
+            
+            print(">> Delegating to SelfCorrectionAgent for insight generation...")
+            result = agent.run_cycle(task, criteria, max_iterations=1)
+            return result["final_output"]
+
+        except ImportError:
+            pass # Fallback to simpler method if agent not found or path issues
+
+        try:
             from optimizer.meta_prompter import PromptOptimizer, ModelTarget
             optimizer = PromptOptimizer()
+            raw_prompt = f"""
+            Data: {plan.to_json()}
+            Task: Summarize this care plan for the patient in a friendly, encouraging tone.
+            """
+            optimized = optimizer.optimize(raw_prompt, ModelTarget.OPENAI)
+            return f"[Simulated OpenAI Response via MetaPrompter]:\nBased on your data, please rest today. Your HR is elevated."
         except ImportError:
-            return "Optimizer not found. Insight generation unavailable."
+             return "Optimizer not found. Insight generation unavailable."
 
-        raw_prompt = f"""
-        Data: {plan.to_json()}
-        Task: Summarize this care plan for the patient in a friendly, encouraging tone.
-        """
-        
-        optimized = optimizer.optimize(raw_prompt, ModelTarget.OPENAI)
-        
-        # Mocking the LLM Response
-        return f"""
-[System Prompt Sent to OpenAI]:
-{optimized}
-
-[Simulated Response]:
-"Hello! Based on your recent data, your resting heart rate has increased slightly. 
-We've noticed this trend and recommend a low-intensity recovery day. 
-Try to prioritize sleep tonight—we've added some tips to your plan!"
-        """
 
     # ------------------
     # Internal helpers
@@ -110,10 +125,16 @@ Try to prioritize sleep tonight—we've added some tips to your plan!"
             for key, value in entry.items():
                 if key == "timestamp":
                     continue
-                field_history.setdefault(key, []).append(float(value))
+                # Ensure value is float
+                try:
+                    val = float(value)
+                    field_history.setdefault(key, []).append(val)
+                except ValueError:
+                    continue
 
         summary = {}
         for key, values in field_history.items():
+            if not values: continue
             summary[key] = {
                 "latest": values[-1],
                 "avg_7d": mean(values[-7:]) if len(values) >= 7 else mean(values),
@@ -213,14 +234,19 @@ def _demo() -> None:
         {"timestamp": datetime(2026, 1, i + 1).isoformat(), "resting_heart_rate": 60 + i, "sleep_score": 85 - i}
         for i in range(7)
     ]
-    for entry in stream:
-        entry["hrr_variability"] = 80 - (i := stream.index(entry)) * 2
+    for i, entry in enumerate(stream):
+        entry["hrr_variability"] = 80 - i * 2
 
     copilot = OpenAIHealthCareCopilot()
     copilot.ingest_wearable_stream(stream)
     profile = {"user_id": "patient_001", "thresholds": {"resting_heart_rate": 4, "sleep_score": -8, "hrr_variability": -10}}
     plan = copilot.generate_care_plan(profile)
+    
+    print("\n--- JSON Plan ---")
     print(plan.to_json())
+    
+    print("\n--- Synthetic Insight ---")
+    print(copilot.generate_synthetic_insight(plan))
 
 
 if __name__ == "__main__":

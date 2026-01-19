@@ -2,47 +2,66 @@
 Anthropic Health Stack – Regulatory Coworker
 -------------------------------------------
 Drafts responses to regulatory agencies with structured justifications.
+Wraps the core `RegulatoryDrafter` skill.
 """
 
 from __future__ import annotations
 
 import json
+import sys
+import os
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict, List, Any
+
+# Adjust path to find sibling skills
+if __name__ == "__main__":
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
+
+try:
+    from Skills.Anthropic_Health_Stack.regulatory_drafter import RegulatoryDrafter
+except ImportError:
+    # Fallback for relative imports if not in module path
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../Anthropic_Health_Stack")))
+    from regulatory_drafter import RegulatoryDrafter
 
 
 class RegulatoryCoworker:
     def __init__(self) -> None:
         self.ctd_sections = {"2.3.S", "2.4", "2.5"}
+        self.drafter = RegulatoryDrafter()
 
-    def prepare_response(self, query: Dict[str, str], evidence: List[str]) -> Dict[str, str]:
+    def prepare_response(self, query: Dict[str, str], evidence: List[str]) -> Dict[str, Any]:
         section = query.get("section", "2.3.S")
         if section not in self.ctd_sections:
-            raise ValueError("Unsupported CTD section.")
+            raise ValueError(f"Unsupported CTD section. Supported: {self.ctd_sections}")
 
-        citations = [f"doc://{i}" for i, _ in enumerate(evidence)]
+        # In a real system, 'evidence' (file paths) would be read and passed as text.
+        # Here we mock that "Reading" step.
+        mock_clinical_data = f"Extracted data from {len(evidence)} documents: " + ", ".join(evidence)
+        mock_guidance = "ICH M4: The Common Technical Document"
 
-        narrative = (
-            f"<thinking>Clarifying {section} question: {query['question']}</thinking>\n"
-            f"<analysis>Reviewed {len(evidence)} evidence files.</analysis>\n"
-            "<decision>Drafting response referencing cited documents.</decision>"
+        # Delegate to the core RegulatoryDrafter skill
+        draft_result = self.drafter.draft_submission(
+            section_name=section,
+            clinical_data=mock_clinical_data,
+            guidance_text=mock_guidance
         )
 
-        draft = {
+        return {
             "section": section,
             "query_id": query.get("id", "unknown"),
-            "response": f"Per section {section}, the manufacturing process ...",
-            "citations": citations,
-            "trace": narrative,
+            "response": draft_result.get("draft", ""),
+            "citations": [f"doc://{e}" for e in evidence],
+            "trace": draft_result.get("trace", ""),
             "generated_at": datetime.utcnow().isoformat(),
+            "model_used": draft_result.get("model")
         }
-        return draft
 
 
 def _demo() -> None:
     coworker = RegulatoryCoworker()
     query = {"id": "FDA-REQ-9", "section": "2.3.S", "question": "Clarify impurity profile."}
-    payload = coworker.prepare_response(query, ["/tmp/impurity_report.pdf"])
+    payload = coworker.prepare_response(query, ["impurity_report.pdf", "manufacturing_log.csv"])
     print(json.dumps(payload, indent=2))
 
 
