@@ -19,7 +19,7 @@ except ImportError:
 
 class RegulatoryDrafter:
     """
-    Anthropic Health Stack Agent: Regulatory Drafter
+    Regulatory Agent: Regulatory Drafter
     
     Demonstrates:
     1. Integration with Meta-Prompter for optimized prompt engineering.
@@ -97,7 +97,7 @@ class RegulatoryDrafter:
 
     def _run_simulation(self, section_name: str, prompt: str) -> Dict[str, Any]:
         """Mock simulation for demonstration/testing without API keys."""
-        print(">> Claude is thinking...")
+        print(">> AI Agent is thinking...")
         time.sleep(0.8)
         
         # Dynamic-ish thinking block

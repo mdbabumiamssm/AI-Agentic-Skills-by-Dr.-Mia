@@ -2,7 +2,7 @@
 OpenAI Health Stack – Care Copilot (Universal Edition)
 ------------------------------------------------------
 Transforms wearable and patient-reported data into a schema-enforced
-coaching plan similar to ChatGPT Health. 
+coaching plan for health coaching. 
 
 Updates (Jan 2026):
 - Integration with Agentic AI Self-Correction.
@@ -107,7 +107,7 @@ class OpenAIHealthCareCopilot:
             Task: Summarize this care plan for the patient in a friendly, encouraging tone.
             """
             optimized = optimizer.optimize(raw_prompt, ModelTarget.OPENAI)
-            return f"[Simulated OpenAI Response via MetaPrompter]:\nBased on your data, please rest today. Your HR is elevated."
+            return f"[Simulated AI Response via MetaPrompter]:\nBased on your data, please rest today. Your HR is elevated."
         except ImportError:
              return "Optimizer not found. Insight generation unavailable."
 

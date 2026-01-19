@@ -1,7 +1,7 @@
 """
-Anthropic Health Stack - Research Literature Coworker
+Research Literature Coworker
 ------------------------------------------------------
-Implements Claude's PubMed integration for biomedical literature search
+Implements PubMed integration for biomedical literature search
 and evidence synthesis.
 
 Provides access to 35+ million biomedical literature sources for
@@ -42,7 +42,7 @@ class PublicationType(Enum):
 
 class ResearchLiteratureCoworker:
     """
-    Claude-style coworker for biomedical literature search and synthesis.
+    AI coworker for biomedical literature search and synthesis.
     Integrates with PubMed and produces evidence-graded summaries.
     """
 
@@ -107,7 +107,7 @@ class ResearchLiteratureCoworker:
         max_results: int = 10,
     ) -> Dict[str, Any]:
         """
-        Search biomedical literature with Claude-style reasoning.
+        Search biomedical literature with Chain-of-Thought reasoning.
         """
         trace = []
 
