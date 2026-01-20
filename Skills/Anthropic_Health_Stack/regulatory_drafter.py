@@ -1,7 +1,8 @@
 import time
 import sys
 import os
-from typing import Dict, Any, Optional
+import json
+from typing import Dict, Any, Optional, List
 
 # Adjust path to find platform module if running standalone
 if __name__ == "__main__":
@@ -17,13 +18,21 @@ except ImportError:
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 
+# Import SelfCorrectionAgent
+try:
+    from Skills.Agentic_AI.Agent_Architectures.Self_Correction.self_correction_agent import SelfCorrectionAgent
+except ImportError:
+    # Fallback for relative imports
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../Agentic_AI/Agent_Architectures/Self_Correction")))
+    from self_correction_agent import SelfCorrectionAgent
+
 class RegulatoryDrafter:
     """
     Regulatory Agent: Regulatory Drafter
     
     Demonstrates:
     1. Integration with Meta-Prompter for optimized prompt engineering.
-    2. Long Context Handling (up to 200k tokens).
+    2. Agentic Self-Correction Loop for high-quality drafting.
     3. Chain-of-Thought transparency (<thinking> blocks).
     4. Structured Output.
     """
@@ -32,6 +41,7 @@ class RegulatoryDrafter:
         self.model = model
         self.optimizer = PromptOptimizer()
         self.adapter = adapter
+        self.corrector = SelfCorrectionAgent()
 
     def set_adapter(self, adapter):
         """Inject a real LLM adapter (e.g. from platform.adapters)."""
@@ -43,7 +53,7 @@ class RegulatoryDrafter:
                          guidance_text: str,
                          style_guide: Optional[str] = None) -> Dict[str, Any]:
         """
-        Drafts a regulatory submission section based on data and guidance.
+        Drafts a regulatory submission section using an agentic feedback loop.
         
         Args:
             section_name: e.g. "Pediatric Assessment Waiver", "Nonclinical Overview"
@@ -55,8 +65,8 @@ class RegulatoryDrafter:
             Dictionary with status, trace, and draft content.
         """
         
-        # 1. Optimize Prompt
-        base_context = f"""
+        # 1. Define the Task for the Agent
+        task = f"""
         Role: Senior Regulatory Affairs Writer
         Task: Draft the '{section_name}' section for a submission.
         
@@ -66,10 +76,9 @@ class RegulatoryDrafter:
         """
         
         if style_guide:
-            base_context += f"\n- Style Guide: {style_guide}"
+            task += f"\n- Style Guide: {style_guide}"
             
-        raw_prompt = f"""
-        {base_context}
+        task += """
         
         Requirements:
         - Analyze the data against the guidance.
@@ -78,68 +87,32 @@ class RegulatoryDrafter:
         - Output format: Markdown.
         """
         
-        optimized_prompt = self.optimizer.optimize(raw_prompt, ModelTarget.CLAUDE)
+        # 2. Define Success Criteria for the Critic (Self-Correction)
+        criteria = [
+            "Strictly adhere to the provided guidance text.",
+            "Use formal, objective regulatory language.",
+            "Explicitly reference data points from the clinical data.",
+            "Ensure the structure matches standard CTD formats.",
+            "No hallucinations; only use provided data."
+        ]
+
+        print(f"--- RegulatoryDrafter: Processing '{section_name}' with Agentic Loop ---")
         
-        print(f"--- RegulatoryDrafter: Processing '{section_name}' with {self.model} ---")
+        # 3. Execution (Real or Mock Agent Loop)
+        # The SelfCorrectionAgent handles the loop. 
+        # In a real scenario, SelfCorrectionAgent would call an LLM. 
+        # Here, SelfCorrectionAgent runs a simulation if no LLM is wired, 
+        # or we can rely on its internal mock if adapter is missing.
         
-        # 2. Execution (Real or Mock)
-        if self.adapter:
-            # In a real BioKernel setup, we'd use the adapter
-            response = self.adapter.generate(optimized_prompt)
-            return {
-                "status": "success",
-                "model": self.model,
-                "prompt_used": optimized_prompt,
-                "draft": response
-            }
-        else:
-            return self._run_simulation(section_name, optimized_prompt)
-
-    def _run_simulation(self, section_name: str, prompt: str) -> Dict[str, Any]:
-        """Mock simulation for demonstration/testing without API keys."""
-        print(">> AI Agent is thinking...")
-        time.sleep(0.8)
-        
-        # Dynamic-ish thinking block
-        thinking_process = f"""
-<thinking>
-1.  **Analyze the Request**: Draft '{section_name}'.
-2.  **Review Guidance**: Checking provided guidance for constraints on '{section_name}'.
-3.  **Review Data**: Synthesizing clinical data points relevant to this section.
-4.  **Formulate Argument**: Constructing narrative flow: Introduction -> Data Presentation -> Conclusion.
-5.  **Drafting Strategy**: Adhering to CTD format.
-</thinking>
-"""
-        
-        # Placeholder drafts for common demos
-        if "Pediatric" in section_name:
-            draft_text = """
-**Draft Submission: Pediatric Assessment Waiver Request**
-
-Pursuant to 21 CFR 314.55(c)(2), the Sponsor requests a full waiver...
-
-**Rationale:**
-The indication is adult-onset (e.g., AMD) and does not exist in pediatric populations.
-"""
-        elif "Nonclinical" in section_name:
-             draft_text = """
-**2.4 Nonclinical Overview**
-
-**2.4.1 Introduction**
-The nonclinical program for [Drug X] was designed to support chronic administration...
-
-**2.4.2 Pharmacology**
-Primary pharmacology studies demonstrated high affinity binding (Ki = 0.5 nM)...
-"""
-        else:
-            draft_text = f"**{section_name}**\n\n[Draft content generated based on input data...]"
+        result = self.corrector.run_cycle(task, criteria, max_iterations=2)
 
         return {
             "status": "success",
             "model": self.model,
-            "prompt_used": prompt,
-            "trace": thinking_process.strip(),
-            "draft": draft_text.strip()
+            "prompt_used": task, # The initial task prompt
+            "draft": result["final_output"],
+            "iterations": result["iterations"],
+            "history": result["history"]
         }
 
 if __name__ == "__main__":
@@ -149,16 +122,18 @@ if __name__ == "__main__":
     print(">> TEST 1: Pediatric Waiver")
     res1 = agent.draft_submission(
         section_name="Pediatric Assessment Waiver",
-        clinical_data="Indication: Wet AMD. Mean age 72.",
-        guidance_text="FDA Guidance on Pediatric Studies..."
+        clinical_data="Indication: Wet AMD. Mean age 72. No pediatric incidence.",
+        guidance_text="FDA Guidance: Waivers granted if disease does not occur in children."
     )
-    print(res1["draft"][:100] + "...")
+    print("\n[FINAL DRAFT]:")
+    print(res1["draft"])
     
     # Test 2: Nonclinical Overview
     print("\n>> TEST 2: Nonclinical Overview")
     res2 = agent.draft_submission(
         section_name="Nonclinical Overview",
-        clinical_data="Ki = 0.5 nM. No off-target effects.",
-        guidance_text="ICH M3(R2)"
+        clinical_data="Ki = 0.5 nM. No off-target effects in Cerep panel.",
+        guidance_text="ICH M3(R2): Nonclinical safety studies for conduct of human clinical trials."
     )
-    print(res2["draft"][:100] + "...")
+    print("\n[FINAL DRAFT]:")
+    print(res2["draft"])

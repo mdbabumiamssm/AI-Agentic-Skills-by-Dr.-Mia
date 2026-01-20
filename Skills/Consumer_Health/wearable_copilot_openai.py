@@ -7,6 +7,7 @@ coaching plan for health coaching.
 Updates (Jan 2026):
 - Integration with Agentic AI Self-Correction.
 - Enhanced Schema Validation.
+- Statistical Anomaly Detection (Z-Score).
 """
 
 from __future__ import annotations
@@ -16,7 +17,7 @@ import sys
 import os
 from dataclasses import dataclass, asdict
 from datetime import datetime
-from statistics import mean
+from statistics import mean, stdev
 from typing import Any, Dict, List, Optional
 
 # Adjust path to find platform module if running standalone
@@ -79,13 +80,13 @@ class OpenAIHealthCareCopilot:
         Uses the Meta-Prompter to construct a prompt for OpenAI.
         If 'SelfCorrectionAgent' is available, it uses it to refine the output.
         """
-        # Try to import SelfCorrectionAgent
+        # Try to import SelfCorrectionAgent robustly
         try:
-            # Adjust path to find Agentic_AI
-            # Current: Skills/Consumer_Health/
-            # Agentic: Skills/Agentic_AI/
-            sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../Agentic_AI/Agent_Architectures/Self_Correction")))
-            # Fallback relative import
+            # Add repo root to path if not present
+            repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+            if repo_root not in sys.path:
+                sys.path.append(repo_root)
+            
             from Skills.Agentic_AI.Agent_Architectures.Self_Correction.self_correction_agent import SelfCorrectionAgent
             
             agent = SelfCorrectionAgent()
@@ -96,8 +97,8 @@ class OpenAIHealthCareCopilot:
             result = agent.run_cycle(task, criteria, max_iterations=1)
             return result["final_output"]
 
-        except ImportError:
-            pass # Fallback to simpler method if agent not found or path issues
+        except ImportError as e:
+            print(f"Warning: Could not import SelfCorrectionAgent ({e}). Falling back to MetaPrompter or basic.")
 
         try:
             from optimizer.meta_prompter import PromptOptimizer, ModelTarget
@@ -135,48 +136,80 @@ class OpenAIHealthCareCopilot:
         summary = {}
         for key, values in field_history.items():
             if not values: continue
+            
+            # Calculate basic stats
+            s_mean = mean(values)
+            s_std = stdev(values) if len(values) > 1 else 0.0
+            
             summary[key] = {
                 "latest": values[-1],
-                "avg_7d": mean(values[-7:]) if len(values) >= 7 else mean(values),
+                "avg_7d": mean(values[-7:]) if len(values) >= 7 else s_mean,
+                "std_dev": s_std,
                 "trend": values[-1] - values[0],
+                "history_len": len(values)
             }
         return summary
 
     def _detect_risks(
         self, vitals: Dict[str, Any], patient_profile: Dict[str, Any]
     ) -> List[Dict[str, Any]]:
+        """
+        Uses Z-score anomaly detection if enough history (n>5), else falls back to static thresholds.
+        """
         risk_flags: List[Dict[str, Any]] = []
+        
+        # Default static thresholds
         thresholds = patient_profile.get(
             "thresholds",
             {"resting_heart_rate": 5, "sleep_score": -10, "hrr_variability": -15},
         )
+        
+        Z_SCORE_THRESHOLD = 2.0  # Deviations > 2 sigma are flagged
 
         for metric, stats in vitals.items():
-            change = stats.get("trend", 0)
-            if metric == "resting_heart_rate" and change > thresholds["resting_heart_rate"]:
-                risk_flags.append(
-                    {
-                        "metric": metric,
-                        "severity": "high" if change > thresholds["resting_heart_rate"] * 2 else "medium",
-                        "message": f"Resting HR increased by {change:.1f} bpm.",
-                    }
-                )
-            if metric == "sleep_score" and change < thresholds["sleep_score"]:
-                risk_flags.append(
-                    {
-                        "metric": metric,
-                        "severity": "medium",
-                        "message": "Sleep score trending downward more than expected.",
-                    }
-                )
-            if metric == "hrr_variability" and change < thresholds["hrr_variability"]:
-                risk_flags.append(
-                    {
-                        "metric": metric,
-                        "severity": "high",
-                        "message": "Heart rate variability declining—possible recovery issues.",
-                    }
-                )
+            latest = stats["latest"]
+            avg = stats.get("avg_7d", stats["latest"]) # Approximate baseline
+            std_dev = stats.get("std_dev", 0)
+            history_len = stats.get("history_len", 0)
+            
+            is_anomaly = False
+            msg = ""
+            severity = "low"
+
+            # Method A: Statistical (Preferred)
+            if history_len > 5 and std_dev > 0.1:
+                z_score = (latest - avg) / std_dev
+                
+                # Logic varies by metric directionality
+                if metric == "resting_heart_rate" and z_score > Z_SCORE_THRESHOLD:
+                    is_anomaly = True
+                    severity = "high" if z_score > 3 else "medium"
+                    msg = f"Resting HR is {z_score:.1f} sigma above baseline."
+                
+                elif metric in ["sleep_score", "hrr_variability"] and z_score < -Z_SCORE_THRESHOLD:
+                    is_anomaly = True
+                    severity = "high" if z_score < -3 else "medium"
+                    msg = f"{metric} is {-z_score:.1f} sigma below baseline."
+
+            # Method B: Threshold Fallback
+            else:
+                change = stats.get("trend", 0)
+                if metric == "resting_heart_rate" and change > thresholds.get("resting_heart_rate", 5):
+                    is_anomaly = True
+                    severity = "medium"
+                    msg = f"Resting HR increased by {change:.1f} bpm (static check)."
+                elif metric in thresholds and change < thresholds[metric]:
+                    is_anomaly = True
+                    severity = "medium"
+                    msg = f"{metric} dropped by {change:.1f} points (static check)."
+
+            if is_anomaly:
+                risk_flags.append({
+                    "metric": metric,
+                    "severity": severity,
+                    "message": msg
+                })
+
         return risk_flags
 
     def _build_recommendations(
@@ -230,13 +263,14 @@ class OpenAIHealthCareCopilot:
 
 
 def _demo() -> None:
+    # Generate data with a spike at the end
     stream = [
-        {"timestamp": datetime(2026, 1, i + 1).isoformat(), "resting_heart_rate": 60 + i, "sleep_score": 85 - i}
-        for i in range(7)
+        {"timestamp": datetime(2026, 1, i + 1).isoformat(), "resting_heart_rate": 60 + (i%2), "sleep_score": 85}
+        for i in range(10)
     ]
-    for i, entry in enumerate(stream):
-        entry["hrr_variability"] = 80 - i * 2
-
+    # Add a spike
+    stream.append({"timestamp": datetime(2026, 1, 11).isoformat(), "resting_heart_rate": 75, "sleep_score": 50})
+    
     copilot = OpenAIHealthCareCopilot()
     copilot.ingest_wearable_stream(stream)
     profile = {"user_id": "patient_001", "thresholds": {"resting_heart_rate": 4, "sleep_score": -8, "hrr_variability": -10}}
