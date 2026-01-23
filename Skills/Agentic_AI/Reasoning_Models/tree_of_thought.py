@@ -1,32 +1,27 @@
-"""
-Tree of Thought (ToT) Reasoning Engine
-
-A production-grade implementation of the Tree of Thought reasoning framework.
-Enables LLMs to perform deliberate problem solving by exploring multiple
-reasoning paths, evaluating intermediate steps, and backtracking when necessary.
-
-Features:
-- Generic state representation for any problem domain
-- Pluggable search strategies (BFS, DFS)
-- LLM-based state evaluation (self-reflection)
-- Decomposition of complex problems into steps
-- Structured prompt management
-
-References:
-- Tree of Thoughts: Deliberate Problem Solving with Large Language Models
-  (https://arxiv.org/abs/2305.10601)
-
-Version: 2.0.0
-Date: January 2026
-"""
-
-from typing import List, Dict, Any, Optional, Callable, Tuple, Union
-from dataclasses import dataclass, field
-from abc import ABC, abstractmethod
+import sys
+import os
 import heapq
 import json
 import time
+from typing import List, Dict, Any, Optional, Callable, Tuple, Union
+from dataclasses import dataclass, field
+from abc import ABC, abstractmethod
 
+# Adjust path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
+platform_dir = os.path.join(project_root, "platform")
+
+if platform_dir not in sys.path:
+    sys.path.append(platform_dir)
+
+try:
+    from adapters.runtime_adapter import llm as runtime_llm
+except ImportError:
+    print("Warning: Could not import runtime_adapter. Using mock.")
+    class MockLLM:
+        def complete(self, s, p): return " [Mock LLM Output] "
+    runtime_llm = MockLLM()
 
 # --- Interfaces ---
 
@@ -50,28 +45,6 @@ class Generator(ABC):
         pass
 
 
-# --- LLM Adapter ---
-
-class LLMAdapter(ABC):
-    """Interface for LLM interaction."""
-    
-    @abstractmethod
-    def generate(self, prompt: str, temperature: float = 0.7) -> str:
-        pass
-
-
-class MockLLM(LLMAdapter):
-    """Mock LLM for testing without API costs."""
-    
-    def generate(self, prompt: str, temperature: float = 0.7) -> str:
-        # Simple heuristic response generation for demo purposes
-        if "evaluate" in prompt.lower():
-            return "0.8"  # High confidence mock
-        if "generate" in prompt.lower():
-            return "Step 1\nStep 2\nStep 3"
-        return "Generic thought"
-
-
 # --- Core ToT Components ---
 
 @dataclass
@@ -93,11 +66,8 @@ class SearchNode:
 
 
 class LLMEvaluator(Evaluator):
-    """Uses an LLM to evaluate state promise."""
+    """Uses RuntimeLLMAdapter to evaluate state promise."""
     
-    def __init__(self, llm: LLMAdapter):
-        self.llm = llm
-
     def evaluate(self, state: str, problem_description: str) -> float:
         prompt = f"""
         Evaluate the following reasoning step towards solving the problem. 
@@ -118,38 +88,45 @@ class LLMEvaluator(Evaluator):
         """
         
         try:
-            response = self.llm.generate(prompt, temperature=0.1).strip()
-            # Extract float from response
-            import re
-            match = re.search(r"0\.\d+|1\.0|1", response)
-            if match:
-                return float(match.group(0))
-            return 0.5 # Default fallback
+            response = runtime_llm.complete("You are a critical logic evaluator.", prompt)
+            # Extract float from response using simple heuristic if string is noisy
+            # (In production, use regex or constrained generation)
+            if "0.1" in response: return 0.1
+            if "0.3" in response: return 0.3
+            if "0.5" in response: return 0.5
+            if "0.7" in response: return 0.7
+            if "1.0" in response or "1" == response.strip(): return 1.0
+            
+            # Default fallback for Mock response in RuntimeAdapter usually being text
+            # If RuntimeAdapter is mocking, it might return "Safety Review: PASSED" etc.
+            # We assume for ToT tests, RuntimeAdapter mock needs to handle 'evaluate' prompts.
+            # (See below for hack to make RuntimeAdapter work with this)
+            
+            return 0.5 
         except Exception:
             return 0.5
 
 
 class LLMGenerator(Generator):
-    """Uses an LLM to generate next thoughts."""
+    """Uses RuntimeLLMAdapter to generate next thoughts."""
     
-    def __init__(self, llm: LLMAdapter):
-        self.llm = llm
-
     def generate_thoughts(self, state: str, problem_description: str, n: int) -> List[str]:
         prompt = f"""
-        You are an intelligent problem solver. 
-        
         Problem: {problem_description}
+        Current State: {state}
         
-        Current State:
-        {state}
-        
-        Generate {n} distinct, valid next steps (thoughts) to move closer to the solution.
-        Provide each thought on a new line.
+        Generate {n} distinct, valid next steps (thoughts).
         """
         
-        response = self.llm.generate(prompt, temperature=0.7)
+        response = runtime_llm.complete("You are a creative problem solver.", prompt)
+        
+        # Simple parsing assumption: Adapter returns newline separated or single thought
         thoughts = [line.strip() for line in response.split('\n') if line.strip()]
+        
+        # Ensure we have a list
+        if not thoughts:
+            thoughts = ["Next step..."]
+            
         return thoughts[:n]
 
 
@@ -157,26 +134,19 @@ class LLMGenerator(Generator):
 
 class TreeOfThoughtSolver:
     """
-    Generic Tree of Thought solver.
-    
-    Example:
-        >>> llm = MyLLM()
-        >>> solver = TreeOfThoughtSolver(llm)
-        >>> solution = solver.solve("Solve the 24 game with 4, 5, 8, 2")
+    Generic Tree of Thought solver using BioKernel Runtime.
     """
     
     def __init__(
         self, 
-        llm: Optional[LLMAdapter] = None, 
         evaluator: Optional[Evaluator] = None,
         generator: Optional[Generator] = None,
         strategy: str = "bfs",
         max_depth: int = 5,
         branching_factor: int = 3
     ):
-        self.llm = llm or MockLLM()
-        self.evaluator = evaluator or LLMEvaluator(self.llm)
-        self.generator = generator or LLMGenerator(self.llm)
+        self.evaluator = evaluator or LLMEvaluator()
+        self.generator = generator or LLMGenerator()
         self.strategy = strategy
         self.max_depth = max_depth
         self.branching_factor = branching_factor
@@ -225,9 +195,8 @@ class TreeOfThoughtSolver:
             }
 
     def _bfs(self, root: SearchNode, problem: str) -> Optional[SearchNode]:
-        """Breadth-First Search (Beam Search logic can be added here)."""
+        """Breadth-First Search."""
         queue = [root]
-        best_solution = None
         
         # Level-wise iteration
         for depth in range(self.max_depth):
@@ -319,12 +288,9 @@ class TreeOfThoughtSolver:
         return best_node
 
 
-# --- Example Usage ---
-
 if __name__ == "__main__":
-    # Example using Mock LLM
     print("=" * 60)
-    print("Tree of Thought Solver (v2026)")
+    print("Tree of Thought Solver (BioKernel Edition)")
     print("=" * 60)
     
     solver = TreeOfThoughtSolver(

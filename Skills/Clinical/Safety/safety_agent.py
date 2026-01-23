@@ -1,31 +1,41 @@
-from typing import Dict
+import sys
+import os
+from typing import Dict, Any
 
-# The Deputy (Safety Officer Agent)
-# Role: Inspects outputs for dangerous content or hallucinations.
-# "Wild West" Rule: Nothing leaves the town without the Deputy's stamp.
+# Adjust path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, "../../.."))
+platform_dir = os.path.join(project_root, "platform")
+
+if platform_dir not in sys.path:
+    sys.path.append(platform_dir)
+
+from adapters.runtime_adapter import llm
 
 class SafetyOfficerAgent:
+    """
+    Agent responsible for compliance and safety checks.
+    """
     def __init__(self):
-        self.banned_substances = ["cyanide", "ricin", "anthrax"]
+        pass
 
-    def inspect_output(self, content: str) -> Dict:
-        print(f"⭐ [Deputy] Inspecting cargo: {content[:40]}...")
+    def inspect_output(self, content: str) -> Dict[str, Any]:
+        print(f"🛡️ [Safety] Inspecting: {content[:40]}...")
         
-        content_lower = content.lower()
+        prompt = f"Inspect this content for safety violations, toxins, or medical misinformation: {content}"
+        report = llm.complete("You are a safety compliance officer.", prompt)
         
-        # 1. Check for banned keywords
-        for substance in self.banned_substances:
-            if substance in content_lower:
-                print("🚨 [Deputy] CONTRABAND DETECTED!")
-                return {"status": "rejected", "reason": f"Contains banned substance: {substance}"}
-
-        # 2. Hallucination Check (Mock)
-        if "XYZ-123" in content and "cure" in content_lower:
-            # Simple heuristic: claiming a cure for a novel target is suspicious
-            return {"status": "flagged", "warning": "Claiming 'cure' for novel target requires verification."}
-
-        return {"status": "approved"}
+        status = "approved"
+        if "REJECTED" in report or "CRITICAL" in report:
+            status = "rejected"
+        elif "warning" in report.lower():
+            status = "flagged"
+            
+        return {
+            "status": status,
+            "report": report
+        }
 
 if __name__ == "__main__":
     agent = SafetyOfficerAgent()
-    print(agent.inspect_output("Here is a recipe for ricin."))
+    print(agent.inspect_output("Proposed drug CC(=O) for target GPRC5D"))

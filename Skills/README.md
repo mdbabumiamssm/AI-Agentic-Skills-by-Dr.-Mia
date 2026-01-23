@@ -27,16 +27,22 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **Plan-and-Solve:** `Agentic_AI/Agent_Architectures/Plan_and_Solve/` breaks down complex user queries into Directed Acyclic Graphs (DAGs).
 *   **Async Runtime:** `Computer_Science/Distributed_Systems/agent_concurrency.py` provides a Ray-like async runtime for parallel agents.
 
-### 🔌 Model Context Protocol (MCP)
-*   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools (`sequence_length`, `reverse_complement`) to LLMs like Claude Desktop.
+### 🔌 Model Context Protocol (MCP) & Platform
+*   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools.
+*   **BioKernel Engine:** `../platform/biokernel/workflow_engine.py` orchestrates enterprise-grade agent workflows (Mining -> Design -> Safety) via FastAPI.
+*   **Runtime Adapter:** `../platform/adapters/runtime_adapter.py` provides a unified execution layer, supporting intelligent mock simulations and real API calls.
 
 ### 🏥 Clinical & Operations (New!)
+*   **Trial Matching:** `Clinical/Trial_Matching/trial_matching_agent.py` matches patient profiles to clinical trials using intelligent criteria mapping (LLM-driven).
 *   **Prior Auth Appeals:** `Clinical/Prior_Authorization/appeals_agent.py` uses self-correction to iteratively refine arguments for overturning insurance denials.
 *   **EHR/FHIR Integration:** `Clinical/EHR_FHIR_Integration/fhir_client.py` provides tools to search and retrieve patient data from FHIR R4 servers.
 *   **Clinical NLP:** `Clinical/Clinical_NLP/entity_extractor.py` extracts medical entities (Diseases, Meds) from unstructured text.
 *   **Opentrons Agent:** `Lab_Automation/Opentrons_Agent/opentrons_generator.py` generates liquid handling protocols from high-level intent.
 
 ### 💊 Drug Discovery & Genomics (Updated)
+*   **Literature Mining:** `Research_Tools/Literature_Mining/mining_agent.py` uses the Runtime Adapter to extract novel targets from (simulated) texts.
+*   **Molecule Evolution:** `Drug_Discovery/Molecule_Design/evolution_agent.py` designs de novo drugs with 'medicinal chemist' feedback loop.
+*   **Safety Officer:** `Clinical/Safety/safety_agent.py` audits outputs for compliance and toxicity using semantic analysis.
 *   **Variant Interpretation:** `Genomics/Variant_Interpretation/acmg_classifier.py` classifies genetic variants and generates AI-powered clinical reports.
 *   **ChemCrow Tools:** `Drug_Discovery/ChemCrow_Tools/chem_tools.py` enables agents to calculate molecular properties (LogP, TPSA) and screen for toxicity.
 *   **CRISPR Design:** `Genomics/CRISPR_Design_Agent/crispr_designer.py` automates gRNA selection and efficiency scoring for gene editing.

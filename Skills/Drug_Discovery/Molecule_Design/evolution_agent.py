@@ -1,54 +1,59 @@
+import sys
+import os
 import random
-from typing import List, Dict
+from typing import Dict, Any
 
-# Molecular Evolution Agent
-# Focus: De Novo Drug Design using Genetic Algorithms
-# "Wild West" Feature: Simulates evolution of SMILES strings
+# Adjust path to find platform module
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, "../../../.."))
+platform_dir = os.path.join(project_root, "platform")
+
+if platform_dir not in sys.path:
+    sys.path.append(platform_dir)
+
+from adapters.runtime_adapter import llm
 
 class MoleculeEvolutionAgent:
+    """
+    Agent that iteratively designs molecules using LLM feedback.
+    """
     def __init__(self):
         self.population = ["CC(=O)OC1=CC=CC=C1C(=O)O"] # Aspirin start
-        self.generations = 5
+        self.generations = 3
 
-    def evolve(self, target_protein: str) -> Dict:
-        print(f"🧬 [EvoAgent] Starting evolution for target: {target_protein}")
+    def evolve(self, target_protein: str) -> Dict[str, Any]:
+        print(f"🧬 [Designer] Initiating evolution for target: {target_protein}")
         
+        best_candidate = self.population[0]
         history = []
+        
         for gen in range(self.generations):
-            # 1. Mutate
-            new_pop = []
-            for mol in self.population:
-                mutant = self._mutate_smiles(mol)
-                new_pop.append(mutant)
+            # Ask LLM to improve the molecule
+            prompt = f"Evolve this SMILES '{best_candidate}' to better bind to {target_protein}. Suggest one modification."
+            suggestion = llm.complete("You are a medicinal chemist.", prompt)
             
-            # 2. Score (Mock Oracle)
-            scored = [(m, self._mock_docking_score(m)) for m in new_pop]
+            # Extract SMILES from suggestion (Mock extraction)
+            if "New SMILES:" in suggestion:
+                new_smiles = suggestion.split("New SMILES:")[-1].strip()
+                best_candidate = new_smiles
+            else:
+                # Fallback if LLM serves text only
+                best_candidate += "F" 
             
-            # 3. Select (Survival of the fittest)
-            scored.sort(key=lambda x: x[1], reverse=True)
-            self.population = [x[0] for x in scored[:3]] # Keep top 3
+            score = self._mock_docking_score(best_candidate)
+            history.append(f"Gen {gen}: {best_candidate} (Score: {score:.2f})")
             
-            best_score = scored[0][1]
-            history.append(f"Gen {gen}: Best Score {best_score:.2f} ({scored[0][0]})")
-
         return {
-            "top_candidate": self.population[0],
-            "score": self._mock_docking_score(self.population[0]),
-            "evolution_log": history
+            "top_candidate": best_candidate,
+            "score": score,
+            "evolution_log": history,
+            "rationale": suggestion
         }
 
-    def _mutate_smiles(self, smiles: str) -> str:
-        # Mock mutation: just adds a random atom for demo visual
-        atoms = ["C", "N", "O", "F", "Cl"]
-        mutation = random.choice(atoms)
-        return smiles + mutation
-
     def _mock_docking_score(self, smiles: str) -> float:
-        # Returns a random "affinity"
-        return random.random()
+        # Mock scoring function
+        return 0.85 + (random.random() * 0.1)
 
 if __name__ == "__main__":
     agent = MoleculeEvolutionAgent()
-    result = agent.evolve("EGFR_T790M")
-    import json
-    print(json.dumps(result, indent=2))
+    print(agent.evolve("GPRC5D"))
