@@ -11,54 +11,87 @@ import json
 import sys
 import os
 from datetime import datetime
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
-# Adjust path to find platform module if running standalone
-if __name__ == "__main__":
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../platform")))
+# --- Import Resolution ---
+# We want to be able to import from 'platform' and 'Skills' regardless of where this script is run.
+# Strategy: Find the project root by looking for 'platform' or 'Skills' in parent directories.
+
+def _setup_paths():
+    current = os.path.dirname(os.path.abspath(__file__))
+    # Walk up until we find 'platform' directory
+    while current != "/":
+        if os.path.exists(os.path.join(current, "platform")):
+            if current not in sys.path:
+                sys.path.append(current)
+            # Also add platform explicitly if needed
+            if os.path.join(current, "platform") not in sys.path:
+                sys.path.append(os.path.join(current, "platform"))
+            return
+        current = os.path.dirname(current)
+
+_setup_paths()
 
 try:
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 except ImportError:
-    # Fallback
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../platform")))
-    try:
-        from optimizer.meta_prompter import PromptOptimizer, ModelTarget
-    except ImportError:
-        # Mock for extreme fallback
-        class PromptOptimizer:
-            def optimize(self, p, t): return p
-        class ModelTarget:
-            CLAUDE = "claude"
+    # Fallback mock if environment is strictly isolated
+    class PromptOptimizer:
+        def optimize(self, p, t): return p
+    class ModelTarget:
+        CLAUDE = "claude"
 
 class PriorAuthCoworker:
-    def __init__(self) -> None:
-        self.policy_db = {
-            "MRI-L-SPINE": {
-                "version": "2026.01",
-                "criteria": [
-                    "Persistent back pain > 6 weeks",
-                    "Documented conservative therapy failure",
-                    "Presence of red flag symptoms",
-                ],
-            }
-        }
+    def __init__(self, policy_path: Optional[str] = None) -> None:
         self.optimizer = PromptOptimizer()
+        self._load_policies(policy_path)
+
+    def _load_policies(self, path: Optional[str]) -> None:
+        # Default to policies.json in the same directory
+        if not path:
+            path = os.path.join(os.path.dirname(__file__), "policies.json")
+        
+        if os.path.exists(path):
+            with open(path, 'r') as f:
+                self.policy_db = json.load(f)
+        else:
+            print(f"Warning: Policy file {path} not found. Using minimal fallback.")
+            self.policy_db = {
+                "MRI-L-SPINE": {
+                    "version": "FALLBACK-01",
+                    "criteria": ["Pain > 6 weeks", "Failed PT"]
+                }
+            }
 
     def review(self, casefile: Dict[str, str]) -> Dict[str, Any]:
         """
         Returns Anthropic-style trace plus structured JSON output.
         """
-        policy = self.policy_db.get(casefile["procedure_code"])
-        reasoning = self._evaluate(casefile["clinical_note"], policy)
-        decision = all(item["met"] for item in reasoning)
+        procedure_code = casefile.get("procedure_code")
+        policy = self.policy_db.get(procedure_code)
+        
+        if not policy:
+             return {
+                "case_id": casefile.get("case_id", "unknown"),
+                "error": f"No policy found for {procedure_code}"
+            }
+
+        reasoning = self._evaluate(casefile.get("clinical_note", ""), policy)
+        # Decision logic: All criteria must be met (simplified)
+        # In reality, it might be "ANY red flag OR (Pain AND Therapy)"
+        # Here we assume a simple "ALL" for the demo unless it's a red flag list
+        
+        # improved logic: check if any red flag is met, OR if standard conservative therapy criteria are met
+        # For this demo, let's keep it simple: count how many criteria are met.
+        
+        met_count = sum(1 for item in reasoning if item["met"])
+        decision = met_count == len(reasoning) # Strict approval
         
         trace = self._build_trace(casefile, policy, reasoning, decision)
         
         payload = {
             "case_id": casefile.get("case_id", "unknown"),
-            "procedure_code": casefile["procedure_code"],
+            "procedure_code": procedure_code,
             "policy_version": policy["version"],
             "decision": "APPROVED" if decision else "DENIED",
             "reasoning": reasoning,

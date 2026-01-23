@@ -4,27 +4,43 @@ import os
 import json
 from typing import Dict, Any, Optional, List
 
-# Adjust path to find platform module if running standalone
-if __name__ == "__main__":
-    # Add project root
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-    # Add platform directory to avoid 'platform' stdlib collision
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
+# --- Import Resolution ---
+def _setup_paths():
+    current = os.path.dirname(os.path.abspath(__file__))
+    while current != "/":
+        if os.path.exists(os.path.join(current, "platform")):
+            if current not in sys.path:
+                sys.path.append(current)
+            if os.path.join(current, "platform") not in sys.path:
+                sys.path.append(os.path.join(current, "platform"))
+            return
+        current = os.path.dirname(current)
+
+_setup_paths()
 
 try:
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 except ImportError:
-    # Fallback if paths are tricky
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../platform")))
-    from optimizer.meta_prompter import PromptOptimizer, ModelTarget
+    print("Warning: MetaPrompter not found.")
+    class PromptOptimizer:
+        def optimize(self, p, t): return p
+    class ModelTarget:
+        CLAUDE = "claude"
 
 # Import SelfCorrectionAgent
 try:
     from Skills.Agentic_AI.Agent_Architectures.Self_Correction.self_correction_agent import SelfCorrectionAgent
 except ImportError:
+    print("Warning: SelfCorrectionAgent not found via standard import. Trying relative.")
     # Fallback for relative imports
+    # Path: Skills/Anthropic_Health_Stack/ -> Skills/Agentic_AI/...
+    # ../Agentic_AI/
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../Agentic_AI/Agent_Architectures/Self_Correction")))
-    from self_correction_agent import SelfCorrectionAgent
+    try:
+        from self_correction_agent import SelfCorrectionAgent
+    except ImportError:
+         print("Critical: SelfCorrectionAgent could not be loaded.")
+         SelfCorrectionAgent = None
 
 class RegulatoryDrafter:
     """
