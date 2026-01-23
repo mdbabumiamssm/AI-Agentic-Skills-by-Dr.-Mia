@@ -29,6 +29,33 @@ class RuntimeLLMAdapter:
         """
         p_lower = user_prompt.lower()
         
+        # --- Regulatory Affairs (Waivers, Submissions) ---
+        if "waiver" in p_lower or "pediatric" in p_lower:
+            if "draft" in p_lower:
+                return "Pursuant to 21 CFR 314.55(c)(2), we request a full waiver of pediatric studies. The clinical data indicates the condition (Wet AMD) does not occur in pediatric populations."
+            if "critique" in p_lower:
+                 return "Critique: Ensure explicit citation of the specific FDA guidance clause regarding age prevalence."
+        
+        if "regulatory" in p_lower or "submission" in p_lower:
+            return "Section 2.4 (Nonclinical Overview): The safety profile is supported by GLP toxicology studies. No significant off-target effects observed."
+
+        # --- ACMG Variant Interpretation ---
+        if "acmg" in p_lower or "variant" in p_lower:
+            if "report" in p_lower:
+                return """
+**Clinical Genetic Report**
+**Variant:** BRCA1 c.123G>A
+**Verdict:** PATHOGENIC
+**Summary:** This variant is a null variant (PVS1) in a gene where LOF is a known mechanism of disease. 
+**Recommendation:** Referral to high-risk breast clinic.
+"""
+        
+        # --- Clinical NLP Entity Extraction ---
+        if "extract medical entities" in p_lower:
+            if "headache" in p_lower:
+                return '[{"text": "headache", "type": "PROBLEM", "negated": false}]'
+            return '[{"text": "diabetes", "type": "PROBLEM", "negated": false}]'
+
         # --- Literature Mining Scenarios ---
         if "target" in p_lower and "mine" in p_lower:
             return "Analysis of recent literature (Nature, Cell, 2024-2025) reveals a novel target 'GPRC5D' implicated in resistant multiple myeloma. Confidence: High."

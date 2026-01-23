@@ -6,11 +6,23 @@ import sys
 import os
 
 # Path adjustment for platform modules
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, "../../../"))
+platform_dir = os.path.join(project_root, "platform")
+
+if platform_dir not in sys.path:
+    sys.path.append(platform_dir)
+
 try:
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../platform")))
+    from adapters.runtime_adapter import llm
+except ImportError:
+    print("Warning: RuntimeLLMAdapter not found. Reports will be basic.")
+    llm = None
+
+try:
     from optimizer.meta_prompter import PromptOptimizer, ModelTarget
 except ImportError:
-    pass # Optimizer optional for basic classification
+    PromptOptimizer = None
 
 class ACMGClassifier:
     def __init__(self):
@@ -46,7 +58,7 @@ class ACMGClassifier:
             else:
                 print(f"Warning: Unknown code {code}", file=sys.stderr)
 
-        # Simplified Scoring Logic (Richards et al is more complex logic-wise, this is a score-based approximation)
+        # Simplified Scoring Logic
         verdict = "Uncertain Significance (VUS)"
         
         # Pathogenic logic (Approximation)
@@ -75,47 +87,28 @@ class ACMGClassifier:
 
     def generate_report(self, variant_name: str, classification_result: dict) -> str:
         """
-        Generates a clinical report draft using the Meta-Prompter if available.
+        Generates a clinical report draft using RuntimeLLMAdapter.
         """
-        try:
-            from optimizer.meta_prompter import PromptOptimizer, ModelTarget
-            optimizer = PromptOptimizer()
-            
-            context = json.dumps(classification_result, indent=2)
-            raw_prompt = f"""
-            Task: Write a clinical genetic report section for variant {variant_name}.
-            
-            Classification Result:
-            {context}
-            
-            Requirements:
-            - State the final verdict clearly.
-            - Explain the evidence codes used (e.g., PVS1 means null variant...). 
-            - Provide a recommendation for genetic counseling.
-            - Professional clinical tone.
-            """
-            
-            optimized = optimizer.optimize(raw_prompt, ModelTarget.CLAUDE)
-            
-            # Mocking the LLM generation for standalone usage
-            return f"""
-**Clinical Variant Interpretation Report**
+        if not llm:
+            return "AI Report Generation unavailable."
 
-**Variant:** {variant_name}
-**Classification:** {classification_result['verdict'].upper()}
-
-**Evidence Summary:**
-The variant was classified based on the following ACMG criteria:
-{self._format_evidence_text(classification_result['evidence_applied'])}
-
-**Interpretation:**
-This variant is classified as {classification_result['verdict']}. This determination is based on the strength of the evidence provided, particularly the presence of pathogenic criteria.
-
-**Recommendation:**
-Genetic counseling is recommended to discuss these results in the context of the patient's phenotype and family history.
-            """
-        except ImportError:
-            return "AI Report Generation unavailable (Meta-Prompter not found)."
+        context = json.dumps(classification_result, indent=2)
+        
+        # Use Meta-Prompter logic if we wanted, but let's keep it simple for RuntimeAdapter
+        prompt = f"""
+        Task: Write a clinical genetic report section for variant {variant_name}.
+        
+        Classification Result:
+        {context}
+        
+        Requirements:
+        - State the final verdict clearly.
+        - Explain the evidence codes used (e.g., PVS1 means null variant...). 
+        - Provide a recommendation for genetic counseling.
+        - Professional clinical tone.
+        """
+        
+        return llm.complete("You are a clinical geneticist.", prompt)
 
     def _format_evidence_text(self, evidence_list):
         return "\n".join([f"- {item['code']} ({item['type']})" for item in evidence_list])
