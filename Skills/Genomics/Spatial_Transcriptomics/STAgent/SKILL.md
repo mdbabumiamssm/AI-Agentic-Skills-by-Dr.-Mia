@@ -1,58 +1,54 @@
 ---
-name: st_agent
-description: Multimodal AI agent for spatial transcriptomics analysis (H&E + Gene Expression).
+name: st-agent
+description: A multimodal LLM-based AI agent for deep spatial transcriptomics research, capable of dynamic code generation, visual reasoning, and literature retrieval.
 license: MIT
 metadata:
-  author: Artificial Intelligence Group
+  author: LiuLab-Bioelectronics-Harvard
+  source: "https://github.com/LiuLab-Bioelectronics-Harvard/STAgent"
   version: "1.0.0"
 compatibility:
   - system: Python 3.9+
-  - gpu: Recommended for image analysis
+  - framework: Scanpy, Sqidpy
 allowed-tools:
   - run_shell_command
   - read_file
-  - write_file
+  - web_fetch
 ---
 
 # STAgent (Spatial Transcriptomics Agent)
 
-STAgent is a specialized multimodal agent designed to analyze Spatial Transcriptomics (ST) data. It bridges the gap between histology (visual tissue structure) and genomics (gene expression), allowing for spatially-aware analysis.
+STAgent is a comprehensive agent designed to automate and enhance the analysis of spatial transcriptomics (ST) data. It leverages Large Language Models (LLMs) to bridge the gap between complex ST data and biological insights.
 
 ## When to Use This Skill
 
-*   **Tissue Segmentation**: When you need to annotate tissue regions (e.g., tumor vs. stroma) based on H&E images.
-*   **Spatially Variable Genes**: To identify genes with distinct spatial patterns.
-*   **Cell-Cell Communication**: To infer interactions between neighboring cell types in a spatial context.
-*   **Automated Analysis**: When you want to run a Scanpy/Squidpy workflow via natural language commands.
+*   **Data Analysis**: When you need to analyze spatial transcriptomics datasets (e.g., 10x Visium, Xenium).
+*   **Visual Reasoning**: When you need to interpret spatial plots, H&E images, or cluster maps.
+*   **Code Generation**: When you need to generate Scanpy/Sqidpy code for custom analysis workflows.
+*   **Hypothesis Generation**: When you want to generate biological hypotheses based on spatial gene expression patterns.
 
 ## Core Capabilities
 
-1.  **Visual Reasoning**: Interprets H&E histology images to guide genomic analysis.
-2.  **Code Generation**: Writes and executes Python code (using Scanpy, Squidpy) to answer queries.
-3.  **Report Generation**: Produces summaries of spatial domains and gene markers.
+1.  **Dynamic Code Generation**: Automatically generates and executes Python code for ST data processing (QC, clustering, spatial variable genes).
+2.  **Visual Reasoning**: Analyzes spatial plots to identify tissue domains and cellular neighborhoods.
+3.  **Literature Retrieval**: Fetches relevant literature to contextualize findings.
+4.  **Report Generation**: Produces publication-quality reports summarizing the analysis.
 
 ## Workflow
 
-1.  **Input Data**: The user provides an H&E image and a gene expression matrix (e.g., from 10x Visium or Xenium).
-2.  **Intent Parsing**: The agent determines the goal (e.g., "Find tumor boundary").
-3.  **Execution**: The agent runs the necessary analysis pipeline.
-4.  **Output**: Returns a textual summary and generates visualization artifacts.
+1.  **Ingestion**: Load ST data (H5AD, Spaceranger output).
+2.  **Plan**: The agent formulates an analysis plan (e.g., "Identify spatial domains and marker genes").
+3.  **Execute**:
+    *   Generates Python scripts using standard libraries (Scanpy, Sqidpy).
+    *   Executes scripts to produce plots and tables.
+4.  **Interpret**: The agent views generated plots and describes the biological significance.
 
 ## Example Usage
 
-**User**: "Analyze the tumor regions in sample X and find top spatial markers."
+**User**: "Analyze this human breast cancer ST dataset. Identify the major spatial domains and check for immune cell infiltration."
 
 **Agent Action**:
-```bash
-python3 Skills/Genomics/Spatial_Transcriptomics/STAgent/st_agent_wrapper.py \
-  --image_path "./data/sample_he.jpg" \
-  --h5ad_path "./data/sample_counts.h5ad" \
-  --task "identify_tumor_regions"
-```
-
-## Step-by-Step Guide
-
-1.  **Prepare Data**: Ensure your spatial data is in standard formats (TIFF/JPEG for images, H5AD for expression).
-2.  **Select Task**: Choose from `identify_tumor_regions`, `find_spatial_genes`, or `cell_cell_interactions`.
-3.  **Run Agent**: Execute the wrapper script with appropriate paths.
-4.  **Review Output**: Check the generated `analysis_report.md` and plots.
+1.  Writes script to load data and run `sqidpy.gr.spatial_neighbors`.
+2.  Runs clustering (Leiden) and generates a spatial scatter plot.
+3.  Identifies clusters corresponding to tumor vs. stroma.
+4.  Plots marker genes for immune cells (e.g., CD3D, CD19).
+5.  Summarizes findings: "Cluster 3 represents the tumor core, while Cluster 5 shows high T-cell infiltration..."

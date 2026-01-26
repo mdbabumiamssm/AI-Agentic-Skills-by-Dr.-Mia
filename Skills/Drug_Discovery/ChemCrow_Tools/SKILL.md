@@ -1,48 +1,51 @@
 ---
-name: chemcrow-tools
-description: A production-grade cheminformatics toolkit for analyzing molecular properties, toxicity, and synthetic accessibility.
+name: chemcrow-drug-discovery
+description: An LLM chemistry agent with expert-designed tools for organic synthesis, drug discovery, and materials design.
 license: MIT
 metadata:
-  author: MD BABU MIA
+  author: EPFL / Rochester / ChemCrow Team
+  source: "https://github.com/ur-whitelab/chemcrow-public"
   version: "2.0.0"
 compatibility:
-  - system: Python 3.10+
+  - system: Python 3.9+
 allowed-tools:
   - run_shell_command
-  - read_file
+  - python_repl
 ---
 
-# ChemCrow Tools
+# ChemCrow
 
-**ChemCrow Tools** provides a comprehensive suite of functions for drug discovery agents. It wraps RDKit (with safe fallbacks) to calculate properties, check Lipinski rules, and screen for toxicity.
+ChemCrow is an open-source package for the accurate integration of Large Language Models (LLMs) with chemistry tools. It is designed to autonomously plan and execute chemical syntheses, research materials, and discover new drugs.
 
 ## When to Use This Skill
 
-*   When evaluating a candidate molecule for drug-likeness (Lipinski Rule of 5).
-*   To check for toxic substructures (PAINS, Ames mutagenicity alerts).
-*   To calculate molecular weight, LogP, and TPSA.
-*   To estimate synthetic accessibility (SA Score).
+*   **Synthesis Planning**: "How do I synthesize Ibuprofen?"
+*   **Property Prediction**: "What is the logP of this molecule?"
+*   **Safety Checks**: "Is this reaction explosive?"
+*   **Literature Search**: "Find patents related to this substructure."
 
 ## Core Capabilities
 
-1.  **Property Calculation**: MolWt, LogP, TPSA, QED.
-2.  **Safety Screening**: Detects toxicophores and PAINS.
-3.  **Synthesizability**: Estimates how hard a molecule is to make.
+1.  **Synthesis Planning**: Uses tools like RXN4Chemistry or local retrosynthesis models to plan routes.
+2.  **Molecule Manipulation**: Add/remove functional groups, generate SMILES (RDKit).
+3.  **Safety Assessment**: Checks reagents against safety databases (PubChem, GHS).
+4.  **Web Search**: Google/Patent search for chemical literature.
 
-## Workflow
+## Tools (Expanded List - v2.0)
 
-1.  **Input**: Provide a valid SMILES string.
-2.  **Analyze**: The tool runs a battery of RDKit descriptors and SMARTS pattern matching.
-3.  **Output**: Returns a JSON report with properties and a recommendation.
+*   **RDKit**: Cheminformatics (MolToSmiles, SmilesToMol, descriptors).
+*   **PubChem**: Search for properties and safety data.
+*   **LiteratureSearch**: Search arXiv, patents.
+*   **Synthesis**: IBM RXN, OPLS.
+*   **Name2SMILES**: Convert chemical names to structures.
 
 ## Example Usage
 
-**User**: "Analyze the safety and properties of Aspirin."
+**User**: "Plan a synthesis for a derivative of Aspirin that might have better solubility."
 
 **Agent Action**:
-```bash
-python3 Skills/Drug_Discovery/ChemCrow_Tools/chem_tools.py \
-    --smiles "CC(=O)OC1=CC=CC=C1C(=O)O" \
-    --output aspirin_analysis.json
-```
-
+1.  Retrieves Aspirin structure (SMILES).
+2.  Modifies structure (e.g., adds a polar group) using RDKit.
+3.  Checks solubility prediction.
+4.  Plans synthesis route for the new molecule.
+5.  Checks safety of reagents.
