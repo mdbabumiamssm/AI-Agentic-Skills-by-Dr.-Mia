@@ -1,6 +1,13 @@
 ---
 name: swarm-orchestrator
 description: Deploys a multi-agent swarm (Researcher, Reviewer, Safety Officer) to solve complex biomedical or research tasks in parallel.
+keywords:
+  - multi-agent
+  - swarm
+  - async
+  - orchestration
+  - research
+measurable_outcome: Successfully synthesizes findings from 3+ independent agent perspectives into a unified report within 60 seconds.
 license: MIT
 metadata:
   author: Artificial Intelligence Group

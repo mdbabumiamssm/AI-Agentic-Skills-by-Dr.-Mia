@@ -1,6 +1,13 @@
 ---
 name: prior-auth-coworker
 description: Evaluates medical necessity for procedures like MRI against payer policies, providing approval/denial decisions with justification.
+keywords:
+  - utilization-management
+  - payer-policy
+  - fhir
+  - claims
+  - audit
+measurable_outcome: Generates a policy-compliant approval/denial decision with <thinking> trace for 100% of valid inputs.
 license: MIT
 metadata:
   author: Anthropic Health Stack

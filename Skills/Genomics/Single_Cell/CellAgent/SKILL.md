@@ -1,6 +1,13 @@
 ---
 name: cell_agent
 description: LLM-driven multi-agent framework for automated single-cell analysis.
+keywords:
+  - scRNA-seq
+  - scanpy
+  - annotation
+  - autonomous
+  - bioinformatics
+measurable_outcome: Achieves >85% accuracy in cell type annotation compared to manual curation on standard benchmarks.
 license: MIT
 metadata:
   author: Artificial Intelligence Group
