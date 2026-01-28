@@ -1,5 +1,4 @@
----
-name: code-reviewer
+---name: code-reviewer
 description: Provides comprehensive code review feedback based on best practices, style guides, and potential bug detection. Use when the user requests a code review, asks for improvements to code, or needs to ensure code quality.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ compatibility:
 allowed-tools:
   - read_file
   - run_shell_command
----
+
+keywords:
+  - general-productivity
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Code Review Skill
 

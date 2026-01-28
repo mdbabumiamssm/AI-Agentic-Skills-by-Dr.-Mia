@@ -1,5 +1,4 @@
----
-name: st-agent
+---name: st-agent
 description: A multimodal LLM-based AI agent for deep spatial transcriptomics research, capable of dynamic code generation, visual reasoning, and literature retrieval.
 license: MIT
 metadata:
@@ -13,7 +12,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - web_fetch
----
+
+keywords:
+  - stagent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # STAgent (Spatial Transcriptomics Agent)
 

@@ -1,5 +1,4 @@
----
-name: exosome-ev-analysis-agent
+---name: exosome-ev-analysis-agent
 description: AI-powered extracellular vesicle and exosome analysis for cancer biomarker discovery, liquid biopsy applications, and intercellular communication profiling.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - exosome-ev-analysis-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Exosome/EV Analysis Agent
 

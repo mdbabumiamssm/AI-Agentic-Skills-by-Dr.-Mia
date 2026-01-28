@@ -1,7 +1,12 @@
----
-name: meeting-insights-analyzer
+---name: meeting-insights-analyzer
 description: Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking to improve their communication and leadership skills.
----
+
+keywords:
+  - meeting-insights-analyzer
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Meeting Insights Analyzer
 

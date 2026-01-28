@@ -1,5 +1,4 @@
----
-name: mrd-edge-detection-agent
+---name: mrd-edge-detection-agent
 description: Ultra-sensitive AI-powered molecular residual disease detection using MRD-EDGE deep learning for sub-0.001% VAF ctDNA detection and early relapse prediction.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - mrd-edge-detection-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # MRD-EDGE Detection Agent
 

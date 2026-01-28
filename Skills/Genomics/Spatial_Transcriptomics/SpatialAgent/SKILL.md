@@ -1,5 +1,4 @@
----
-name: spatial-agent
+---name: spatial-agent
 description: An agent that interprets spatial transcriptomics data to propose mechanistic hypotheses and analyze tissue organization.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - spatialagent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # SpatialAgent
 

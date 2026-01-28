@@ -1,5 +1,4 @@
----
-name: liquid-biopsy-analytics-agent
+---name: liquid-biopsy-analytics-agent
 description: AI-powered comprehensive liquid biopsy analysis integrating ctDNA, CTCs, exosomes, and cfRNA for cancer detection, monitoring, and treatment guidance.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - liquid-biopsy-analytics-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Liquid Biopsy Analytics Agent
 

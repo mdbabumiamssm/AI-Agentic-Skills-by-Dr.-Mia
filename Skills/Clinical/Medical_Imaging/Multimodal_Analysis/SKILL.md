@@ -1,5 +1,4 @@
----
-name: multimodal-medical-imaging
+---name: multimodal-medical-imaging
 description: Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - multimodal-analysis
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Multimodal Medical Imaging Analysis
 

@@ -1,9 +1,14 @@
----
-name: notion-meeting-intelligence
+---name: notion-meeting-intelligence
 description: Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.
 metadata:
   short-description: Prep meetings with Notion context and tailored agendas
----
+
+keywords:
+  - notion-meeting-intelligence
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Meeting Intelligence
 

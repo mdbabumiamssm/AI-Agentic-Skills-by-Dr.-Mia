@@ -1,5 +1,4 @@
----
-name: react-performance-optimizer
+---name: react-performance-optimizer
 description: Analyzes React/Next.js code for performance bottlenecks, focusing on waterfalls, bundle size, and rendering efficiency.
 license: MIT
 metadata:
@@ -13,7 +12,13 @@ compatibility:
 allowed-tools:
   - read_file
   - search_file_content
----
+
+keywords:
+  - react-best-practices
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # React Performance Optimization Skill
 

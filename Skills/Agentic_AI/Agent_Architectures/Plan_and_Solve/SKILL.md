@@ -1,5 +1,4 @@
----
-name: plan-and-solve-agent
+---name: plan-and-solve-agent
 description: Breaks down complex queries into a step-by-step plan before execution, improving performance on multi-hop reasoning tasks.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - plan-and-solve
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Plan-and-Solve Agent
 

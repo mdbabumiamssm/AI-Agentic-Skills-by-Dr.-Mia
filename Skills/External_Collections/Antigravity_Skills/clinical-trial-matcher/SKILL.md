@@ -1,7 +1,12 @@
----
-name: clinical-trial-matcher
+---name: clinical-trial-matcher
 description: Matches patient profiles to open clinical trials using vector similarity and inclusion/exclusion criteria. Use when a user provides patient data and asks for relevant trials.
----
+
+keywords:
+  - clinical-trial-matcher
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 # Clinical Trial Matcher
 
 This skill matches a patient's clinical profile against a database of active clinical trials (ClinicalTrials.gov).

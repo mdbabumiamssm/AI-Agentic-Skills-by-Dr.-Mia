@@ -1,5 +1,4 @@
----
-name: react-best-practices
+---name: react-best-practices
 description: A comprehensive guide and rule set for writing clean, performant, and maintainable React code.
 license: MIT
 metadata:
@@ -13,7 +12,13 @@ allowed-tools:
   - read_file
   - replace
   - write_file
----
+
+keywords:
+  - react-best-practices
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # React Best Practices
 

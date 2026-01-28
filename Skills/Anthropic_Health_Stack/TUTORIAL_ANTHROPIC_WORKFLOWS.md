@@ -160,11 +160,11 @@ register_tool("anthropic.lab_interpret", LabResultsCoworker())
 
 ```bash
 # Run each coworker demo
-python3 Skills/Anthropic_Health_Stack/fhir_development_coworker.py
-python3 Skills/Anthropic_Health_Stack/claims_appeals_coworker.py
-python3 Skills/Anthropic_Health_Stack/care_coordination_coworker.py
-python3 Skills/Anthropic_Health_Stack/research_literature_coworker.py
-python3 Skills/Anthropic_Health_Stack/lab_results_coworker.py
+python3 Skills/Anthropic_Health_Stack/FHIR_Development/coworker.py
+python3 Skills/Anthropic_Health_Stack/Claims_Appeals/coworker.py
+python3 Skills/Anthropic_Health_Stack/Care_Coordination/coworker.py
+python3 Skills/Anthropic_Health_Stack/Research_Literature/coworker.py
+python3 Skills/Anthropic_Health_Stack/Lab_Results/coworker.py
 ```
 
 ## Safety Considerations

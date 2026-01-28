@@ -1,5 +1,4 @@
----
-name: variant-interpretation-acmg
+---name: variant-interpretation-acmg
 description: Classifies genetic variants according to ACMG (American College of Medical Genetics) guidelines.
 keywords:
   - acmg
@@ -17,7 +16,7 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+---"
 
 # Variant Interpretation (ACMG)
 

@@ -1,5 +1,4 @@
----
-name: armored-cart-design-agent
+---name: armored-cart-design-agent
 description: AI-powered design of armored CAR-T cells with cytokine/chemokine expression for enhanced solid tumor efficacy, including IL-12, IL-15, IL-18, and IL-7 armoring strategies.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - armored-cart-design-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Armored CAR-T Design Agent
 

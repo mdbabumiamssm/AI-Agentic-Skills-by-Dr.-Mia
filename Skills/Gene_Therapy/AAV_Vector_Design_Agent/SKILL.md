@@ -1,5 +1,4 @@
----
-name: aav-vector-design-agent
+---name: aav-vector-design-agent
 description: AI-powered adeno-associated virus (AAV) vector design for gene therapy including capsid engineering, promoter selection, and tropism optimization.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - aav-vector-design-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # AAV Vector Design Agent
 

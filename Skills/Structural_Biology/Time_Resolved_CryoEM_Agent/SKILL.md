@@ -1,5 +1,4 @@
----
-name: time-resolved-cryoem-agent
+---name: time-resolved-cryoem-agent
 description: AI-powered time-resolved cryo-EM analysis for capturing protein dynamics, drug-binding kinetics, and conformational transitions for dynamics-based drug discovery.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - time-resolved-cryoem-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Time-Resolved Cryo-EM Agent
 

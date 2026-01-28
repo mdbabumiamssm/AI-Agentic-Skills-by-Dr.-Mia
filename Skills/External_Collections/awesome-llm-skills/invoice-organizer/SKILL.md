@@ -1,7 +1,12 @@
----
-name: invoice-organizer
+---name: invoice-organizer
 description: Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information, renaming them consistently, and sorting them into logical folders. Turns hours of manual bookkeeping into minutes of automated organization.
----
+
+keywords:
+  - invoice-organizer
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Invoice Organizer
 

@@ -1,5 +1,4 @@
----
-name: cell_agent
+---name: cell_agent
 description: LLM-driven multi-agent framework for automated single-cell analysis.
 keywords:
   - scRNA-seq
@@ -17,7 +16,7 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+---"
 
 # CellAgent
 

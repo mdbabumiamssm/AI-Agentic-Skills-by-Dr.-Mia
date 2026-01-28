@@ -1,9 +1,14 @@
----
-name: notion-research-documentation
+---name: notion-research-documentation
 description: Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.
 metadata:
   short-description: Research Notion content and produce briefs/reports
----
+
+keywords:
+  - notion-research-documentation
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Research & Documentation
 

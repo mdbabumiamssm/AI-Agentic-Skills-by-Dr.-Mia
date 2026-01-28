@@ -1,5 +1,4 @@
----
-name: prs-net-deep-learning-agent
+---name: prs-net-deep-learning-agent
 description: Geometric deep learning-based polygenic risk score prediction using PRS-Net for modeling gene interactions, enhanced disease prediction, and cross-ancestry portability.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - prs-net-deep-learning-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # PRS-Net Deep Learning Agent
 

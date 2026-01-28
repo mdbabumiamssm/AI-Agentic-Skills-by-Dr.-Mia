@@ -1,5 +1,4 @@
----
-name: prior-auth-coworker
+---name: prior-auth-coworker
 description: Evaluates medical necessity for procedures like MRI against payer policies, providing approval/denial decisions with justification.
 keywords:
   - utilization-management
@@ -16,7 +15,7 @@ compatibility:
   - system: Python 3.9+
 allowed-tools:
   - run_shell_command
----
+---"
 
 # Prior Authorization Coworker
 

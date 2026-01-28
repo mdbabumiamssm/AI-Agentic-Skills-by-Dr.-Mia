@@ -1,5 +1,4 @@
----
-name: chemcrow-drug-discovery
+---name: chemcrow-drug-discovery
 description: An LLM chemistry agent with expert-designed tools for organic synthesis, drug discovery, and materials design.
 license: MIT
 metadata:
@@ -11,7 +10,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - python_repl
----
+
+keywords:
+  - chemcrow-tools
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # ChemCrow
 

@@ -1,5 +1,4 @@
----
-name: cnv-caller-agent
+---name: cnv-caller-agent
 description: AI-enhanced copy number variation calling and analysis from sequencing data for cancer genomics, constitutional CNV detection, and chromosomal aberration characterization.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - cnv-caller-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # CNV Caller Agent
 

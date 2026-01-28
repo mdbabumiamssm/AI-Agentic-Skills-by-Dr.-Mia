@@ -1,5 +1,4 @@
----
-name: cytokine-storm-analysis-agent
+---name: cytokine-storm-analysis-agent
 description: AI-powered cytokine release syndrome (CRS) and cytokine storm analysis for prediction, monitoring, and management in immunotherapy and infectious disease.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - cytokine-storm-analysis-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Cytokine Storm Analysis Agent
 

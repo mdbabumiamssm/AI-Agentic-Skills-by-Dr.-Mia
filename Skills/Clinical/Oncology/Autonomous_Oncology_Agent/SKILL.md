@@ -1,5 +1,4 @@
----
-name: autonomous-oncology-agent
+---name: autonomous-oncology-agent
 description: A multimodal precision oncology agent leveraging GPT-4 and vision transformers for cancer diagnosis, biomarker detection, and treatment planning.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - web_fetch
----
+
+keywords:
+  - autonomous-oncology-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Autonomous Clinical AI Agent (Oncology)
 

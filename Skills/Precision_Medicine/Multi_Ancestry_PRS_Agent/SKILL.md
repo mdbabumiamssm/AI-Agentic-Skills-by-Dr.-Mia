@@ -1,5 +1,4 @@
----
-name: multi-ancestry-prs-agent
+---name: multi-ancestry-prs-agent
 description: AI-powered multi-ancestry polygenic risk score calculation and optimization for equitable disease risk prediction across diverse global populations.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - multi-ancestry-prs-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Multi-Ancestry PRS Agent
 

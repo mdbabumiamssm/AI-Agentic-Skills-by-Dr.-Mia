@@ -1,5 +1,4 @@
----
-name: tumor-clonal-evolution-agent
+---name: tumor-clonal-evolution-agent
 description: AI-powered analysis of tumor clonal architecture, subclonal dynamics, and evolutionary trajectories from multi-region sequencing and longitudinal liquid biopsy data.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - tumor-clonal-evolution-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Tumor Clonal Evolution Agent
 

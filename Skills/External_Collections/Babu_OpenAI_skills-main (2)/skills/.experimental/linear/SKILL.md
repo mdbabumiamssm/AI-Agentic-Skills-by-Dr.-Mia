@@ -1,9 +1,14 @@
----
-name: linear
+---name: linear
 description: Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.
 metadata:
   short-description: Manage Linear issues in Codex
----
+
+keywords:
+  - linear
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Linear
 

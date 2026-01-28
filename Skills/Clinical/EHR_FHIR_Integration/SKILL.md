@@ -1,5 +1,4 @@
----
-name: ehr-fhir-integration
+---name: ehr-fhir-integration
 description: Provides comprehensive tools for working with Electronic Health Records (EHR) using the HL7 FHIR standard.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - ehr-fhir-integration
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # EHR/FHIR Integration
 

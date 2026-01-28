@@ -1,5 +1,4 @@
----
-name: opentrons-protocol-agent
+---name: opentrons-protocol-agent
 description: Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - opentrons-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Opentrons Protocol Agent
 

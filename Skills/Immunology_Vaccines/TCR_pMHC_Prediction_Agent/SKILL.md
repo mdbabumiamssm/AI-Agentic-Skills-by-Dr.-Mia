@@ -1,5 +1,4 @@
----
-name: tcr-pmhc-prediction-agent
+---name: tcr-pmhc-prediction-agent
 description: AI-powered TCR-peptide-MHC interaction prediction using AlphaFold3 and deep learning for therapeutic TCR discovery, neoantigen validation, and T cell immunogenicity assessment.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - tcr-pmhc-prediction-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # TCR-pMHC Prediction Agent
 

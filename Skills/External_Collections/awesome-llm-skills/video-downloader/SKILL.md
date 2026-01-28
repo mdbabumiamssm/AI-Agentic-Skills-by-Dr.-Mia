@@ -1,7 +1,12 @@
----
-name: video-downloader
+---name: video-downloader
 description: Downloads videos from YouTube and other platforms for offline viewing, editing, or archival. Handles various formats and quality options.
----
+
+keywords:
+  - video-downloader
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Video Downloader
 

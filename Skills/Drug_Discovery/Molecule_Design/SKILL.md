@@ -1,5 +1,4 @@
----
-name: molecule-evolution-agent
+---name: molecule-evolution-agent
 description: Iteratively evolves small molecule candidates (SMILES) to improve binding affinity for a target protein using an LLM-driven genetic algorithm.
 keywords:
   - drug-discovery
@@ -16,7 +15,7 @@ compatibility:
   - system: Python 3.10+
 allowed-tools:
   - run_shell_command
----
+---"
 
 # Molecule Evolution Agent
 

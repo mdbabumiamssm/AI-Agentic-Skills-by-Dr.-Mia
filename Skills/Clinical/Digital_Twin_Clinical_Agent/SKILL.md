@@ -1,5 +1,4 @@
----
-name: digital-twin-clinical-agent
+---name: digital-twin-clinical-agent
 description: AI-powered patient digital twin creation for clinical trial simulation, treatment outcome prediction, and personalized medicine using real-world data and multi-omics integration.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - digital-twin-clinical-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Digital Twin Clinical Agent
 

@@ -1,5 +1,4 @@
----
-name: swarm-orchestrator
+---name: swarm-orchestrator
 description: Deploys a multi-agent swarm (Researcher, Reviewer, Safety Officer) to solve complex biomedical or research tasks in parallel.
 keywords:
   - multi-agent
@@ -17,7 +16,7 @@ compatibility:
   - library: asyncio
 allowed-tools:
   - run_shell_command
----
+---"
 
 # Swarm Orchestrator Skill
 

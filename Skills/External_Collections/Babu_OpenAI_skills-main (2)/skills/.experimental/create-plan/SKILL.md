@@ -1,9 +1,14 @@
----
-name: create-plan
+---name: create-plan
 description: Create a concise plan. Use when a user explicitly asks for a plan related to a coding task.
 metadata:
   short-description: Create a plan
----
+
+keywords:
+  - create-plan
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Create Plan
 

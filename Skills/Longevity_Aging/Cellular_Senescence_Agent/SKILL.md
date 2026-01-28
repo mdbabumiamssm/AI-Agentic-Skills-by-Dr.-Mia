@@ -1,5 +1,4 @@
----
-name: cellular-senescence-agent
+---name: cellular-senescence-agent
 description: AI-powered analysis of cellular senescence for aging research, cancer therapy response, and senolytic drug development.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - cellular-senescence-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Cellular Senescence Agent
 

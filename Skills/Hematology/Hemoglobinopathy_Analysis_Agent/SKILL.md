@@ -1,5 +1,4 @@
----
-name: hemoglobinopathy-analysis-agent
+---name: hemoglobinopathy-analysis-agent
 description: AI-powered analysis of hemoglobin disorders including sickle cell disease, thalassemias, and variant hemoglobins using HPLC, electrophoresis, and molecular data.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - hemoglobinopathy-analysis-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Hemoglobinopathy Analysis Agent
 

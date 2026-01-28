@@ -1,5 +1,4 @@
----
-name: crispr-offtarget-predictor
+---name: crispr-offtarget-predictor
 description: Predicts potential off-target sites for a given sgRNA sequence using mismatch analysis.
 license: MIT
 metadata:
@@ -9,7 +8,13 @@ compatibility:
   - system: Python 3.9+
 allowed-tools:
   - run_shell_command
----
+
+keywords:
+  - crispr-prediction
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # CRISPR Off-Target Predictor
 

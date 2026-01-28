@@ -1,5 +1,4 @@
----
-name: immune-checkpoint-combination-agent
+---name: immune-checkpoint-combination-agent
 description: AI-powered analysis for predicting optimal immune checkpoint inhibitor combinations based on tumor microenvironment, biomarkers, and molecular profiling.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - immune-checkpoint-combination-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Immune Checkpoint Combination Agent
 

@@ -1,5 +1,4 @@
----
-name: tcr-repertoire-analysis-agent
+---name: tcr-repertoire-analysis-agent
 description: AI-powered T-cell receptor repertoire analysis for cancer diagnosis, immunotherapy response prediction, and therapeutic TCR selection using deep learning and multi-layer ML approaches.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - tcr-repertoire-analysis-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # TCR Repertoire Analysis Agent
 

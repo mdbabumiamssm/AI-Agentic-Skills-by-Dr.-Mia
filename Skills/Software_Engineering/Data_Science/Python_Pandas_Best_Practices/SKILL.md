@@ -1,5 +1,4 @@
----
-name: pandas-best-practices
+---name: pandas-best-practices
 description: Standards for efficient, readable, and performant data manipulation using Python's Pandas library.
 license: MIT
 metadata:
@@ -13,7 +12,13 @@ allowed-tools:
   - read_file
   - replace
   - write_file
----
+
+keywords:
+  - python-pandas-best-practices
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Pandas Best Practices
 

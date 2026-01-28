@@ -1,7 +1,12 @@
----
-name: regulatory-drafter
+---name: regulatory-drafter
 description: Drafts regulatory documents (FDA, EMA) with audit trails and specific "Thinking Block" reasoning. Use for high-stakes compliance writing.
----
+
+keywords:
+  - regulatory-drafter
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 # Regulatory Document Drafter
 
 This skill generates compliant drafts for regulatory submissions, emphasizing auditability and adherence to guidelines (ICH, FDA).

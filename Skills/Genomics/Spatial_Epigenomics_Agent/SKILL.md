@@ -1,5 +1,4 @@
----
-name: spatial-epigenomics-agent
+---name: spatial-epigenomics-agent
 description: AI-powered spatial epigenomics analysis combining chromatin accessibility, histone modifications, and DNA methylation with spatial coordinates for tissue architecture mapping.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - spatial-epigenomics-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Spatial Epigenomics Agent
 

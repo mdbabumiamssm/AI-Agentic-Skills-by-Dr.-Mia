@@ -1,7 +1,12 @@
----
-name: notion-spec-to-implementation
+---name: notion-spec-to-implementation
 description: Turns product or tech specs into concrete Notion tasks that Claude code can implement. Breaks down spec pages into detailed implementation plans with clear tasks, acceptance criteria, and progress tracking to guide development from requirements to completion.
----
+
+keywords:
+  - notion-spec-to-implementation
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Spec to Implementation
 

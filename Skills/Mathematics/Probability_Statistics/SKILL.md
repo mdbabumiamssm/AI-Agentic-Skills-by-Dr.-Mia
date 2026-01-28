@@ -1,5 +1,4 @@
----
-name: bayesian-optimizer
+---name: bayesian-optimizer
 description: Optimizes black-box functions (e.g., experimental yield) using Gaussian Processes, ideal for self-driving labs.
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - probability-statistics
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Bayesian Optimization (Self-Driving Lab)
 

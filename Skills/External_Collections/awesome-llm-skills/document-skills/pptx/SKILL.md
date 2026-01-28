@@ -1,8 +1,13 @@
----
-name: pptx
+---name: pptx
 description: "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks"
 license: Proprietary. LICENSE.txt has complete terms
----
+
+keywords:
+  - pptx
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # PPTX creation, editing, and analysis
 

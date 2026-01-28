@@ -1,5 +1,4 @@
----
-name: cart-design-optimizer-agent
+---name: cart-design-optimizer-agent
 description: AI-guided CAR-T cell design for solid tumors using antigen prioritization, safety-by-design architectures, and exhaustion-resistant engineering.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - cart-design-optimizer-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # CAR-T Design Optimizer Agent
 

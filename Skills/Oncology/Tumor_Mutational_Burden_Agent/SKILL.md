@@ -1,5 +1,4 @@
----
-name: tumor-mutational-burden-agent
+---name: tumor-mutational-burden-agent
 description: AI-powered tumor mutational burden (TMB) analysis for immunotherapy response prediction, harmonization across platforms, and integration with other biomarkers.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - tumor-mutational-burden-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Tumor Mutational Burden Agent
 

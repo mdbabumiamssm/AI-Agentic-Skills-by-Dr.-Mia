@@ -1,5 +1,4 @@
----
-name: popeve-variant-predictor-agent
+---name: popeve-variant-predictor-agent
 description: AI-powered genetic variant pathogenicity prediction using PopEVE deep learning model for population-aware disease variant identification and rare disease diagnosis.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - popeve-variant-predictor-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # PopEVE Variant Predictor Agent
 

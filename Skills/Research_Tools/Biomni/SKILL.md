@@ -1,5 +1,4 @@
----
-name: biomni-research-agent
+---name: biomni-research-agent
 description: A general-purpose biomedical AI agent capable of executing complex research workflows using over 150 tools and databases.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - web_fetch
   - python_repl
----
+
+keywords:
+  - biomni
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Biomni (General Biomedical Agent)
 

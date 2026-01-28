@@ -1,5 +1,4 @@
----
-name: pan-cancer-multiomics-agent
+---name: pan-cancer-multiomics-agent
 description: AI-powered pan-cancer analysis integrating genomic, transcriptomic, proteomic, and epigenomic data for cancer subtyping, driver identification, and cross-cancer pattern discovery.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - pan-cancer-multiomics-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Pan-Cancer Multi-Omics Agent
 

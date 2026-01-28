@@ -1,5 +1,4 @@
----
-name: long-read-sequencing-agent
+---name: long-read-sequencing-agent
 description: AI-powered analysis of long-read sequencing data (PacBio, ONT) for structural variant detection, isoform discovery, epigenetic modifications, and de novo assembly.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - long-read-sequencing-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Long-Read Sequencing Agent
 

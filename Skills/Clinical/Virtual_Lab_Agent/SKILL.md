@@ -1,5 +1,4 @@
----
-name: virtual-lab-agent
+---name: virtual-lab-agent
 description: AI-powered virtual laboratory orchestrating multi-agent scientific research teams for autonomous hypothesis generation, experimental design, and validation in biomedical research.
 license: MIT
 metadata:
@@ -12,7 +11,13 @@ allowed-tools:
   - run_shell_command
   - read_file
   - write_file
----
+
+keywords:
+  - virtual-lab-agent
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Virtual Lab Agent
 

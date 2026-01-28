@@ -1,5 +1,4 @@
----
-name: universal-single-cell-annotator
+---name: universal-single-cell-annotator
 description: A unified interface for annotating single-cell RNA-seq data using Marker Genes, Deep Learning (CellTypist), or LLMs.
 license: MIT
 metadata:
@@ -13,7 +12,13 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
----
+
+keywords:
+  - rna
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # Universal Single-Cell Annotator
 

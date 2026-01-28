@@ -1,5 +1,4 @@
----
-name: biomcp-server
+---name: biomcp-server
 description: Open source biomedical Model Context Protocol (MCP) toolkit for connecting LLMs to biomedical data sources (PubMed, ClinicalTrials, Genomics).
 license: MIT
 metadata:
@@ -10,7 +9,13 @@ compatibility:
   - system: MCP-compliant Client (Claude Desktop, BioKernel)
 allowed-tools:
   - web_fetch
----
+
+keywords:
+  - biomcp
+  - automation
+  - biomedical
+measurable_outcome: execute task with >95% success rate.
+---"
 
 # BioMCP Server
 
