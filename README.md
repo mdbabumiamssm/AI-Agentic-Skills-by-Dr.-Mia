@@ -1,7 +1,5 @@
 # Universal Biomedical Skills & Agents (2026 Edition)
 
-> **The "Microservices Moment" for Biomedical AI Agents.**
-
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![Agents](https://img.shields.io/badge/Agents-Orchestrated-blue)
 ![Domain](https://img.shields.io/badge/Domain-Biotech%20%7C%20Clinical%20%7C%20Genomics-purple)
