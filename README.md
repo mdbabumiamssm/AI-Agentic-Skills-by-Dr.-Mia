@@ -1,7 +1,7 @@
 # Universal Biomedical Skills & Agents (2026 Edition)
 
 > **The "Microservices Moment" for Biomedical AI Agents.**
-> *Custom Claude & LLM Skills for MD BABU MIA, PhD*
+> *Custom LLM Skills for MD BABU MIA, PhD*
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![Agents](https://img.shields.io/badge/Agents-Orchestrated-blue)
