@@ -1,5 +1,5 @@
 ---name: prior-auth-coworker
-description: Evaluates medical necessity for procedures like MRI against payer policies, providing approval/denial decisions with justification.
+description: Prior Auth Review
 keywords:
   - utilization-management
   - payer-policy

@@ -1,5 +1,5 @@
 ---name: universal-single-cell-annotator
-description: A unified interface for annotating single-cell RNA-seq data using Marker Genes, Deep Learning (CellTypist), or LLMs.
+description: Annotate scRNA-seq
 license: MIT
 metadata:
   author: AI Group
@@ -14,10 +14,12 @@ allowed-tools:
   - read_file
 
 keywords:
-  - rna
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
+  - scRNA-seq
+  - cell-typing
+  - scanpy
+  - celltypist
+  - llm-annotation
+measurable_outcome: Annotate >95% of cells with high confidence scores (>0.8) within 5 minutes for datasets <50k cells.
 ---"
 
 # Universal Single-Cell Annotator

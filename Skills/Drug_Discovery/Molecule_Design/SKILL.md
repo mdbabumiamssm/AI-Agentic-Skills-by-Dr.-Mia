@@ -1,5 +1,5 @@
 ---name: molecule-evolution-agent
-description: Iteratively evolves small molecule candidates (SMILES) to improve binding affinity for a target protein using an LLM-driven genetic algorithm.
+description: Evolve Molecules
 keywords:
   - drug-discovery
   - de-novo-design
