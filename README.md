@@ -15,7 +15,7 @@ Unlike standard chatbot repos, this project focuses on **Agentic Workflows**—w
 
 **MD BABU MIA, PhD**  
 *Professor of Hematology & Medical Oncology | Mount Sinai*  
-Specializing in MPN Research, Single-Cell Multi-Omics, and Computational Biology.
+Specializing in Hemato-Oncology, Computational Biology and Machine Learning - AI.
 
 ---
 
