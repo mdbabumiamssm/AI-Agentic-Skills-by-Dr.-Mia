@@ -1,52 +1,44 @@
----name: crispr-design-agent
-description: A specialized tool for designing efficient and specific gRNA sequences for CRISPR-Cas9 experiments.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: crispr-guide-design
+description: Automate sgRNA selection, scoring, off-target evaluation, and oligo generation for CRISPR experiments using the documented workflow.
+---
 
-keywords:
-  - crispr-design-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
+## At-a-Glance
+- **description (10-20 chars):** Guide foundry
+- **keywords:** CRISPR, sgRNA, Doench, off-target, oligos
+- **measurable_outcome:** Return the requested number of guides (default ≥4) with efficiency + specificity scores, coordinates, and cloning oligos within 10 minutes per gene.
+- **license:** MIT
+- **version:** 1.0.0 (Python 3.10+)
+- **allowed-tools:** `run_shell_command`, `read_file`
 
-# CRISPR Design Agent
-
-The **CRISPR Design Agent** automates the selection of guide RNAs (gRNAs) for gene editing. It scans DNA sequences for PAM sites, extracts spacers, and scores them based on efficiency rules (GC content, homopolymers).
-
-## When to Use This Skill
-
-*   When designing a CRISPR knockout or knock-in experiment.
-*   To find all valid Cas9 target sites in a given DNA sequence.
-*   To filter gRNAs by efficiency scores.
+## When to Use
+- Designing CRISPR knockout/knock-in experiments that need validated guides.
+- Locating all PAM-compatible target sites in a gene or locus.
+- Filtering guides by efficiency/off-target metrics before cloning.
 
 ## Core Capabilities
-
-1.  **Target Discovery**: Identifies NGG PAM sites.
-2.  **Efficiency Scoring**: Calculates scores based on GC content and sequence features.
-3.  **Filtering**: Sorts guides by predicted efficacy.
+1. **Target discovery:** Scan sequences for PAM motifs (e.g., NGG).
+2. **Efficiency scoring:** Evaluate GC content, homopolymers, Doench/DeepCRISPR/CFD scores.
+3. **Filtering & ranking:** Remove risky guides (SNP overlap, off-target hits) and output the best candidates.
 
 ## Workflow
-
-1.  **Input**: Provide a DNA sequence (raw string or FASTA file) and target gene name.
-2.  **Process**: The agent scans the sequence and applies scoring logic.
-3.  **Output**: Returns a ranked list of gRNA sequences with coordinates and scores.
+1. Resolve gene symbol + organism to canonical transcript coordinates and target region.
+2. Enumerate PAM-compatible sites; extract spacers for the chosen Cas variant.
+3. Score guides (efficiency + specificity) and compute GC metrics.
+4. Run off-target search (≤3 mismatches) to flag problematic loci.
+5. Filter/rank guides, generate cloning oligos/primers, and emit JSON/CSV outputs with coordinates.
 
 ## Example Usage
-
-**User**: "Find gRNAs for this sequence: ATCG..."
-
-**Agent Action**:
 ```bash
 python3 Skills/Genomics/CRISPR_Design_Agent/crispr_designer.py \
     --sequence "ATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTGTGAGTGGATCCATTGGAAGGGC" \
     --output guides.json
 ```
 
+## Guardrails
+- Always state genome build and Cas variant assumptions.
+- Avoid guides overlapping common SNPs when `avoid_variants` is true.
+- Flag high off-target density near coding regions for manual review.
+
+## References
+- See `README.md` and `prompt.md` for detailed schema plus supporting literature.

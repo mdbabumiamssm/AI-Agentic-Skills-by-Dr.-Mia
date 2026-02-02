@@ -1,52 +1,37 @@
----name: biomcp-server
-description: Open source biomedical Model Context Protocol (MCP) toolkit for connecting LLMs to biomedical data sources (PubMed, ClinicalTrials, Genomics).
-license: MIT
-metadata:
-  author: LobeHub / GenomOncology
-  source: "https://lobehub.com/mcp/genomoncology-biomcp"
-  version: "1.0.0"
-compatibility:
-  - system: MCP-compliant Client (Claude Desktop, BioKernel)
-allowed-tools:
-  - web_fetch
+---
+name: biomcp-server
+description: Deploy and operate the BioMCP server so MCP-compatible clients (Claude Desktop, LobeChat, etc.) can query biomedical databases via a single standardized interface.
+---
 
-keywords:
-  - biomcp
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
+## At-a-Glance
+- **description (10-20 chars):** MCP bio bridge
+- **keywords:** MCP, PubMed, ClinicalTrials, server, uv
+- **measurable_outcome:** Stand up a working BioMCP endpoint (pip or uv) and return ≥1 PubMed + ≥1 ClinicalTrials.gov response to the client within 10 minutes.
+- **license:** MIT | **version:** 1.0.0 (MCP-compliant clients)
+- **allowed-tools:** `web_fetch` (per upstream spec)
 
-# BioMCP Server
-
-BioMCP is a standardized Model Context Protocol (MCP) server that provides AI agents with direct, structured access to essential biomedical databases and APIs. It acts as a bridge between the LLM and the vast world of biomedical data.
-
-## When to Use This Skill
-
-*   **Literature Search**: When you need to search PubMed or PMC for recent papers.
-*   **Entity Normalization**: When you need to map text to gene IDs, disease codes, or chemical IDs (using PubTator3).
-*   **Clinical Data**: To search for active clinical trials.
-*   **Genomic Information**: To look up variant information or gene summaries.
+## When to Use
+- Unified literature search (PubMed/PMC) inside MCP clients.
+- Entity normalization via PubTator3 or genomic variant lookups.
+- ClinicalTrials.gov queries without bespoke API wrappers.
 
 ## Core Capabilities
+1. **PubMed/PMC search:** Execute complex literature queries.
+2. **PubTator3 annotations:** Map text to genes, diseases, chemicals, species.
+3. **ClinicalTrials.gov:** Retrieve trial metadata/protocols.
+4. **Genomic variant lookups:** Fetch variant/gene summaries from connected sources.
 
-1.  **PubMed/PMC Search**: Execute complex queries against the NCBI literature databases.
-2.  **PubTator3 API**: Annotate biomedical text with normalized entities (Genes, Diseases, Chemicals, Species).
-3.  **ClinicalTrials.gov**: Search and retrieve clinical trial protocols.
-4.  **Genomic Variants**: Retrieve information about specific genetic variants.
+## Deployment Workflow
+1. **Install deps:** `cd repo && uv sync` (preferred) or `pip install .`.
+2. **Run server:** `python -m biomcp.server` or `make run`; Docker Compose provided.
+3. **Configure client:** Add command/args snippet from `README.md` into MCP client config (Claude Desktop, BioKernel, etc.).
+4. **Test tools:** Invoke PubMed + ClinicalTrials + variant endpoints to ensure connectivity.
+5. **Monitor:** Capture logs, rate-limit statuses, and data-source versions for audit.
 
-## Workflow
+## Guardrails
+- Keep API keys/env secrets outside the repo.
+- Respect upstream rate limits to avoid throttling or bans.
+- Document which data sources are enabled per deployment and update when they change.
 
-1.  **Connect**: The agent connects to the running BioMCP server.
-2.  **Call Tool**: The agent selects the appropriate tool (e.g., `search_pubmed`, `annotate_text`).
-3.  **Process**: The server executes the API call and returns structured JSON.
-4.  **Response**: The agent uses the data to answer the user's query.
-
-## Example Usage
-
-**User**: "Find recent clinical trials for CAR-T therapy in glioblastoma and list the key inclusion criteria."
-
-**Agent Action**:
-1.  Calls `biomcp_search_clinical_trials(query="CAR-T glioblastoma", status="Recruiting")`.
-2.  Parses the returned trial JSON.
-3.  Extracts and summarizes the inclusion criteria.
+## References
+- Source repo + configuration examples in `README.md`, `repo/docker-compose.yml`, and `repo/Makefile`.

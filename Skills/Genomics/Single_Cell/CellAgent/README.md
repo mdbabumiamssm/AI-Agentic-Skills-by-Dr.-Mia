@@ -1,28 +1,56 @@
 # CellAgent (CellTypeAgent)
 
-**Source:** [jianghao-zhang/CellTypeAgent](https://github.com/jianghao-zhang/CellTypeAgent)
-**Local Repository:** `./repo`
+**ID:** `biomedical.genomics.cell_annotation`
+**Version:** 1.1.0
 **Status:** Integrated & Downloaded
+**Category:** Genomics / Single-Cell Annotation
+
+---
 
 ## Overview
-CellTypeAgent is an LLM-driven multi-agent framework specifically designed for the automated annotation of cell types in single-cell RNA-seq (scRNA-seq) data. It addresses the "annotation bottleneck" by automating the interpretation of marker genes.
 
-## Key Features
-- **Automated Annotation:** Uses LLMs to assign cell types based on marker gene lists.
-- **Trustworthiness:** Designed to minimize hallucinations common in generic LLM queries.
-- **Benchmarks:** Evaluated on multiple standard scRNA-seq datasets.
+CellTypeAgent is an LLM-driven framework for automated cell type annotation in scRNA-seq data. It interprets marker genes, assigns labels, and generates explanations with confidence scores.
+
+---
+
+## Inputs
+
+| Field | Type | Notes |
+|------|------|------|
+| `markers` | list[str] | Marker genes per cluster |
+| `species` | str | `human` or `mouse` |
+| `tissue` | str | Optional tissue context |
+| `reference` | str | Optional atlas reference |
+
+---
+
+## Outputs
+
+- Cell type labels per cluster
+- Confidence score and evidence markers
+- Suggested ambiguous or mixed identities
+
+---
 
 ## Quick Start
-1.  **Installation:**
-    ```bash
-    cd repo
-    pip install -r requirements.txt
-    ```
-2.  **Usage:**
-    Examine the `repo` directory for the main execution scripts (likely `main.py` or similar in `repo/src` or root).
-    ```bash
-    python repo/main.py --data your_data.h5ad
-    ```
 
-## Note on "CellAgent" Naming
-This repository is `CellTypeAgent`. The broader "CellAgent" framework discussed in some literature may refer to a larger system, but `CellTypeAgent` provides the core cell type annotation capability which is the most critical agentic task in this domain.
+```bash
+cd repo
+pip install -r requirements.txt
+python repo/main.py --data your_data.h5ad
+```
+
+---
+
+## Guardrails
+
+- Do not over-specify cell types without marker support.
+- Use tissue context to resolve ambiguous marker sets.
+- Flag clusters with mixed signatures for manual review.
+
+---
+
+## References
+
+- https://github.com/jianghao-zhang/CellTypeAgent
+

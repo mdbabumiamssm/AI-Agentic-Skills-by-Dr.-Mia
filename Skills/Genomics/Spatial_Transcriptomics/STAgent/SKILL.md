@@ -1,59 +1,45 @@
----name: st-agent
-description: A multimodal LLM-based AI agent for deep spatial transcriptomics research, capable of dynamic code generation, visual reasoning, and literature retrieval.
-license: MIT
-metadata:
-  author: LiuLab-Bioelectronics-Harvard
-  source: "https://github.com/LiuLab-Bioelectronics-Harvard/STAgent"
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-  - framework: Scanpy, Sqidpy
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - web_fetch
+---
+name: spatial-transcriptomics-agent
+description: Run STAgent to align histology images with expression matrices, perform clustering/SVG detection, and generate literature-backed spatial reports.
+---
 
-keywords:
-  - stagent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
+## At-a-Glance
+- **description (10-20 chars):** Spatial analyst
+- **keywords:** spatial, h5ad, H&E, clustering, SVG
+- **measurable_outcome:** For each sample, deliver ≥1 spatial domain map + SVG list + narrative interpretation within 30 minutes.
+- **license:** MIT | **version:** 1.0.0 (Python 3.9+; Scanpy + Squidpy stack)
+- **allowed-tools:** `run_shell_command`, `read_file`, `web_fetch`
 
-# STAgent (Spatial Transcriptomics Agent)
-
-STAgent is a comprehensive agent designed to automate and enhance the analysis of spatial transcriptomics (ST) data. It leverages Large Language Models (LLMs) to bridge the gap between complex ST data and biological insights.
-
-## When to Use This Skill
-
-*   **Data Analysis**: When you need to analyze spatial transcriptomics datasets (e.g., 10x Visium, Xenium).
-*   **Visual Reasoning**: When you need to interpret spatial plots, H&E images, or cluster maps.
-*   **Code Generation**: When you need to generate Scanpy/Sqidpy code for custom analysis workflows.
-*   **Hypothesis Generation**: When you want to generate biological hypotheses based on spatial gene expression patterns.
+## When to Use
+- Analysis of Visium/Xenium or similar ST datasets.
+- Visual reasoning over spatial plots, H&E images, or cluster maps.
+- Automatically generating Scanpy/Squidpy code for new ST workflows.
+- Hypothesis generation about spatial gene expression patterns.
 
 ## Core Capabilities
-
-1.  **Dynamic Code Generation**: Automatically generates and executes Python code for ST data processing (QC, clustering, spatial variable genes).
-2.  **Visual Reasoning**: Analyzes spatial plots to identify tissue domains and cellular neighborhoods.
-3.  **Literature Retrieval**: Fetches relevant literature to contextualize findings.
-4.  **Report Generation**: Produces publication-quality reports summarizing the analysis.
+1. **Dynamic code generation:** Create/execute Python scripts for QC, clustering, SVG detection.
+2. **Visual reasoning:** Interpret spatial plots to identify tissue domains and cell neighborhoods.
+3. **Literature retrieval:** Pull references that contextualize findings.
+4. **Report generation:** Deliver publication-style writeups with plots and SVG tables.
 
 ## Workflow
-
-1.  **Ingestion**: Load ST data (H5AD, Spaceranger output).
-2.  **Plan**: The agent formulates an analysis plan (e.g., "Identify spatial domains and marker genes").
-3.  **Execute**:
-    *   Generates Python scripts using standard libraries (Scanpy, Sqidpy).
-    *   Executes scripts to produce plots and tables.
-4.  **Interpret**: The agent views generated plots and describes the biological significance.
+1. **Env setup:** `conda env create -f environment.yml && conda activate STAgent`.
+2. **Data prep:** Supply `expression_path` (`.h5ad`/Spaceranger) + `image_path` (H&E/IF) and metadata.
+3. **Task selection:** Choose tasks such as `cluster`, `find_svg`, `annotate_domains`, or composite instructions; run `python repo/src/main.py --data_path ... --task "..."`.
+4. **Execute & interpret:** Let STAgent generate scripts, run analyses, and interpret results with literature references.
+5. **Package outputs:** Save UMAP/spatial plots, SVG tables, QC details, and summary markdown.
 
 ## Example Usage
+```text
+User: "Analyze this breast cancer ST dataset, find immune infiltrates."
+Agent: loads data, runs `sqidpy.gr.spatial_neighbors`, computes Leiden clusters, plots marker genes (CD3D, CD19), and summarizes which clusters map to tumor core vs. stromal/immune zones.
+```
 
-**User**: "Analyze this human breast cancer ST dataset. Identify the major spatial domains and check for immune cell infiltration."
+## Guardrails
+- Document coordinate systems and any scaling between imaging and expression coordinates.
+- Avoid definitive cell-type labels without supporting markers.
+- Capture QC parameters for reproducibility.
 
-**Agent Action**:
-1.  Writes script to load data and run `sqidpy.gr.spatial_neighbors`.
-2.  Runs clustering (Leiden) and generates a spatial scatter plot.
-3.  Identifies clusters corresponding to tumor vs. stroma.
-4.  Plots marker genes for immune cells (e.g., CD3D, CD19).
-5.  Summarizes findings: "Cluster 3 represents the tumor core, while Cluster 5 shows high T-cell infiltration..."
+## References
+- Source repo: https://github.com/LiuLab-Bioelectronics-Harvard/STAgent
+- See local `README.md` for detailed instructions.

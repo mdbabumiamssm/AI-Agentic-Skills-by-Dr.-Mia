@@ -1,36 +1,64 @@
 # BioMaster: Automated Bioinformatics Workflows
 
-**Source:** [ai4nucleome/BioMaster](https://github.com/ai4nucleome/BioMaster)
-**Local Repository:** `./repo`
+**ID:** `biomedical.genomics.biomaster`
+**Version:** 1.1.0
 **Status:** Integrated & Downloaded
+**Category:** Genomics / Workflow Orchestration
+
+---
 
 ## Overview
-BioMaster is a multi-agent system designed to handle complex, multi-step bioinformatics workflows. Unlike single-task agents, BioMaster specializes in end-to-end pipeline management for various omics data types.
+
+BioMaster is a multi-agent system for end-to-end bioinformatics pipelines across multiple omics modalities. It decomposes high-level tasks into reproducible steps with tool-specific parameters and error recovery.
+
+---
 
 ## Supported Workflows
-1.  **RNA-seq:** QC -> Alignment -> Quantification -> DEG -> Enrichment.
-2.  **ChIP-seq:** Peak calling -> Motif analysis.
-3.  **Single-Cell:** Standard Scanpy workflow.
-4.  **Hi-C:** Chromatin interaction map generation.
 
-## Key Components
-- **Domain Knowledge RAG:** Retrieves tool manuals and best practices to ensure correct parameter usage.
-- **Task Decomposition:** Breaks down "Analyze this FASTQ file" into shell commands and scripts.
-- **Error Recovery:** Autonomously parses stderr logs to fix common bioinformatics errors.
+- RNA-seq: QC -> alignment -> quantification -> DEG -> enrichment
+- ChIP-seq: QC -> alignment -> peak calling -> motif analysis
+- Single-cell: QC -> normalization -> clustering -> annotation
+- Hi-C: QC -> alignment -> contact map -> compartment analysis
+
+---
+
+## Inputs
+
+| Field | Type | Notes |
+|------|------|------|
+| `config_path` | str | YAML config with tool paths and parameters |
+| `input_data` | str | FASTQ, BAM, or h5ad depending on workflow |
+| `workflow` | str | `rnaseq`, `chipseq`, `singlecell`, `hic` |
+
+---
+
+## Outputs
+
+- Standard pipeline outputs (BAM, counts, peak files)
+- QC reports and logs
+- Summary report with parameters and runtime metadata
+
+---
 
 ## Quick Start
-1.  **Installation:**
-    ```bash
-    cd repo
-    pip install -r requirements.txt
-    ```
-2.  **Execution:**
-    The main entry point is `run.py`.
-    ```bash
-    python repo/run.py --config repo/config.yaml
-    ```
-3.  **Configuration:**
-    Check `repo/config.yaml` to define your tool paths (samtools, star, etc.) and API keys.
 
-## Configuration Details
-BioMaster requires a `tools_registry.json` defining the available CLI tools in the environment. The `repo/data` folder may contain example datasets for testing.
+```bash
+cd repo
+pip install -r requirements.txt
+python repo/run.py --config repo/config.yaml
+```
+
+---
+
+## Guardrails
+
+- Always log tool versions and parameters for reproducibility.
+- Fail fast on missing reference genomes or index files.
+- Require explicit confirmation before deleting intermediate files.
+
+---
+
+## References
+
+- https://github.com/ai4nucleome/BioMaster
+

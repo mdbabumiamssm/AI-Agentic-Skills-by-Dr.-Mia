@@ -1,7 +1,7 @@
 # Clinical Note Summarization
 
 **ID:** `biomedical.clinical.note_summarization`
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Status:** Production
 **Category:** Clinical AI / Documentation
 
@@ -9,55 +9,73 @@
 
 ## Overview
 
-The **Clinical Note Summarization Skill** transforms unstructured clinical text (dictations, progress notes, discharge summaries) into structured **SOAP (Subjective, Objective, Assessment, Plan)** format. It standardizes documentation for EHR systems and clinical workflows.
-
-This skill addresses a critical bottleneck in healthcare: physicians spend 2+ hours daily on documentation. By automating structuring tasks, clinicians can focus on patient care.
+The **Clinical Note Summarization Skill** converts unstructured clinical text (dictations, progress notes, discharge summaries) into structured **SOAP** format with explicit guardrails for accuracy, missing data, and contradictions. It is designed for documentation support workflows that require consistent structure, traceability, and safe handling of PHI.
 
 ---
 
-## Key Capabilities
+## Inputs
 
-### 1. SOAP Format Structuring
+| Field | Type | Notes |
+|------|------|------|
+| `patient_context` | dict | Optional metadata (age, sex, encounter type, PMH). Avoid PHI unless required. |
+| `note_text` | str | Raw clinical note text (dictation, OCR, or EHR export). |
+| `output_format` | str | `markdown` or `json` (recommended for downstream validation). |
 
-Converts free-text clinical notes into standardized sections:
-
-| Section | Content | Example |
-|---------|---------|---------|
-| **Subjective** | Patient's reported symptoms, history, concerns | "Patient reports 3 days of worsening chest pain" |
-| **Objective** | Measurable findings (vitals, exam, labs) | "BP 145/92, HR 88, lungs CTA bilaterally" |
-| **Assessment** | Clinical interpretation and diagnoses | "Hypertensive urgency, r/o ACS" |
-| **Plan** | Treatment decisions and follow-up | "Start amlodipine 5mg, ECG, troponins x2" |
-
-### 2. Medical Entity Extraction
-
-- **Conditions:** ICD-10 mappable diagnoses
-- **Medications:** Drug names, doses, frequencies
-- **Procedures:** CPT-relevant interventions
-- **Vitals:** Structured numeric values
-
-### 3. Multi-Format Support
-
-- Dictation transcripts
-- Handwritten note OCR output
-- Free-text progress notes
-- Discharge summary narratives
+**Recommended minimum input:** `note_text` plus encounter type and age.
 
 ---
 
-## Usage
+## Outputs
 
-### Prompt Template
+### SOAP Summary (Markdown)
 
-The `prompt.md` file contains the system prompt for SOAP structuring:
+- `Subjective` - HPI, ROS, symptoms, and patient-reported history
+- `Objective` - vitals, exam findings, labs/diagnostics
+- `Assessment` - problems with ICD-10 suggestions when supported
+- `Plan` - actions per problem with timing and responsible role
 
-```markdown
-You are a clinical documentation specialist...
-[See prompt.md for full template]
+### Optional JSON Schema
+
+```json
+{
+  "soap": {
+    "subjective": ["..."] ,
+    "objective": ["..."] ,
+    "assessment": [
+      {"problem": "...", "icd10": "...", "evidence": "..."}
+    ],
+    "plan": [
+      {"action": "...", "responsible_role": "...", "timing": "..."}
+    ]
+  },
+  "alerts": ["..."],
+  "missing_information": ["..."]
+}
 ```
 
-### Integration Examples
+---
 
-#### LangChain
+## Workflow
+
+1. **Normalize input** - identify vitals, labs, meds, and timelines; standardize units.
+2. **Extract structure** - map content into SOAP sections.
+3. **Validate** - check for contradictions, missing fields, and medication duplication.
+4. **Output** - return structured SOAP and a data gaps checklist.
+
+---
+
+## Prompt Template
+
+Use `prompt.md` as the canonical system prompt. It enforces:
+- No invention of data
+- Explicit contradictions and missing info
+- Problem-linked assessment and plan
+
+---
+
+## Integration Examples
+
+### LangChain
 
 ```python
 from langchain.prompts import PromptTemplate
@@ -74,7 +92,7 @@ chain = template | ChatOpenAI(model="gpt-4")
 result = chain.invoke({"note": clinical_note_text})
 ```
 
-#### Direct API (OpenAI)
+### Direct API (OpenAI)
 
 ```python
 import openai
@@ -91,78 +109,22 @@ response = openai.ChatCompletion.create(
 )
 ```
 
-#### Anthropic Claude
+---
 
-```python
-import anthropic
+## Guardrails
 
-client = anthropic.Anthropic()
-
-with open("prompt.md") as f:
-    system_prompt = f.read()
-
-message = client.messages.create(
-    model="claude-3-opus-20240229",
-    max_tokens=1024,
-    system=system_prompt,
-    messages=[
-        {"role": "user", "content": f"Structure this note:\n{note}"}
-    ]
-)
-```
+- **No hallucinations**: If not stated, say "not provided".
+- **No clinical decisions**: This is documentation assistance only.
+- **PHI safety**: Use HIPAA-compliant environments; avoid logging raw notes.
+- **Auditability**: Store prompt and model metadata for traceability.
 
 ---
 
-## Example
+## Validation Hooks
 
-### Input (Unstructured Dictation)
-
-```
-45-year-old male here for hypertension follow-up. He says his blood pressure
-has been running high at home, around 150s over 90s. He's been compliant with
-his lisinopril 10mg daily. No chest pain, shortness of breath, or headaches.
-Exam today shows BP 148/94, pulse 76, weight stable at 210 pounds. Heart
-regular rate and rhythm, no murmurs. Plan to increase lisinopril to 20mg daily,
-recheck in 4 weeks, continue low sodium diet.
-```
-
-### Output (Structured SOAP)
-
-```
-## Subjective
-- Chief Complaint: Hypertension follow-up
-- HPI: 45-year-old male with elevated home BP readings (150s/90s)
-- Medications: Lisinopril 10mg daily (compliant)
-- Review of Systems: Denies chest pain, SOB, headaches
-
-## Objective
-- Vitals: BP 148/94, HR 76, Weight 210 lbs
-- Cardiovascular: RRR, no murmurs
-
-## Assessment
-1. Essential hypertension (I10) - suboptimally controlled
-
-## Plan
-1. Increase lisinopril to 20mg daily
-2. Continue low sodium diet
-3. Follow-up in 4 weeks for BP recheck
-```
-
----
-
-## Compliance Considerations
-
-### HIPAA
-
-- This skill processes PHI and must be deployed in HIPAA-compliant environments
-- Use BAA-covered LLM providers (Azure OpenAI, Google Cloud Healthcare API)
-- Never log or store raw clinical notes in non-compliant systems
-
-### Clinical Validation
-
-- Output should be reviewed by licensed clinicians before EHR entry
-- This tool assists documentation; it does not replace clinical judgment
-- Validate against institutional documentation standards
+- Compare extracted vitals/labs against source text.
+- Flag missing allergies, meds, or discharge plan.
+- Require clinician review before EHR insertion.
 
 ---
 
@@ -171,7 +133,7 @@ recheck in 4 weeks, continue low sodium diet.
 | File | Description |
 |------|-------------|
 | `prompt.md` | System prompt template for SOAP structuring |
-| `usage.py` | Python integration examples |
+| `usage.py` | Example integration script |
 
 ---
 
@@ -188,9 +150,8 @@ recheck in 4 weeks, continue low sodium diet.
 
 ## Related Skills
 
-- **Trial Eligibility Screening:** Extract criteria from structured notes
-- **Medical Coding:** ICD-10/CPT assignment from structured documentation
-- **Diagnostic Decision Support:** Differential diagnosis from assessment section
+- **Trial Eligibility Screening**: Use structured notes for matching.
+- **Medical Coding**: ICD-10/CPT assignment from structured output.
 
 ---
 

@@ -4,28 +4,58 @@
 **Local Repository:** `./repo`
 **Status:** Integrated & Downloaded
 
+---
+
 ## Overview
-TrialGPT is an NIH-developed algorithm that uses Large Language Models to match patients with suitable clinical trials. It addresses the critical bottleneck of patient recruitment.
 
-## Functionality
-1.  **Criterion Extraction:** Parses unstructured eligibility criteria.
-2.  **Patient Profiling:** Summarizes patient medical records.
-3.  **Matching Engine:** Calculates a relevance score (0-100).
-4.  **Explanation:** Provides justifications for matches.
+TrialGPT is an NIH-developed framework for matching patients to clinical trials using LLMs. It provides a structured pipeline for trial retrieval, eligibility parsing, and ranking with evidence-based explanations.
 
-## Quick Start
-1.  **Installation:**
-    ```bash
-    cd repo
-    pip install -r requirements.txt
-    ```
-2.  **Modules:**
-    *   **Retrieval:** `repo/trialgpt_retrieval/` - Gets relevant trials.
-    *   **Matching:** `repo/trialgpt_matching/` - detailed criteria check.
-    *   **Ranking:** `repo/trialgpt_ranking/` - final ordering.
-3.  **Running:**
-    Refer to specific scripts in the subdirectories. Likely involves running a retrieval script followed by the matching script.
+---
 
-## Performance
-- **Accuracy:** Rankings closely match expert clinician assessments.
-- **Efficiency:** Reduces screening time significantly.
+## Capabilities
+
+1. **Trial Retrieval** - Identify candidate trials from ClinicalTrials.gov.
+2. **Criteria Parsing** - Convert eligibility text into structured criteria.
+3. **Patient Profiling** - Summarize patient records into matchable features.
+4. **Ranking + Explanation** - Score trial relevance and provide justifications.
+
+---
+
+## Recommended Usage
+
+1. **Install dependencies**
+   ```bash
+   cd repo
+   pip install -r requirements.txt
+   ```
+2. **Run retrieval** - identify candidate trials for a condition.
+3. **Run matching** - evaluate eligibility with structured criteria.
+4. **Review outputs** - validate by clinician or trial coordinator.
+
+---
+
+## Input and Output Expectations
+
+**Input:**
+- Patient summary (structured or narrative)
+- Condition keywords or diagnosis codes
+
+**Output:**
+- Ranked trials with relevance scores
+- Criteria-level match explanations
+- Missing data checklist
+
+---
+
+## Integration Notes
+
+- Use TrialGPT for retrieval and initial ranking, then hand off to the **Clinical Trial Eligibility Agent** for deeper criterion-by-criterion analysis.
+- Cache trial metadata (NCT ID, protocol version) to ensure reproducibility.
+
+---
+
+## Limitations
+
+- Requires up-to-date trial metadata; outdated data can misclassify eligibility.
+- LLM reasoning should be audited by clinical staff before enrollment decisions.
+
