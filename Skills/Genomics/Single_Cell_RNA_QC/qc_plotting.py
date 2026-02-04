@@ -10,6 +10,14 @@ import matplotlib.pyplot as plt
 from scipy.stats import median_abs_deviation
 
 
+def _transform_data(values, transform):
+    if transform is None:
+        return values, None
+    if transform == 'log1p':
+        return np.log1p(values), np.expm1
+    raise ValueError(f"Unsupported transform: {transform}")
+
+
 def plot_qc_distributions(adata, output_path, title='Quality Control Metrics'):
     """
     Create comprehensive QC distribution plots.
@@ -126,17 +134,28 @@ def plot_filtering_thresholds(adata, outlier_masks, thresholds, output_path):
     fig.suptitle('MAD-Based Filtering Thresholds', fontsize=16)
 
     # Helper function to plot with thresholds
-    def plot_with_threshold(ax, metric, outlier_mask, n_mads, hard_threshold=None):
+    def plot_with_threshold(ax, metric, outlier_mask, n_mads, hard_threshold=None, transform=None, tail='both'):
         data = adata.obs[metric]
-        median = np.median(data)
-        mad = median_abs_deviation(data)
+        transformed, inverse = _transform_data(data, transform)
+        median = np.median(transformed)
+        mad = median_abs_deviation(transformed)
         lower = median - n_mads * mad
         upper = median + n_mads * mad
 
+        if inverse is None:
+            plot_lower = lower
+            plot_upper = upper
+        else:
+            plot_lower = inverse(lower)
+            plot_upper = inverse(upper)
+
         ax.hist(data[~outlier_mask], bins=100, alpha=0.7, label='Pass QC', color='steelblue')
         ax.hist(data[outlier_mask], bins=100, alpha=0.7, label='Fail QC', color='coral')
-        ax.axvline(lower, color='red', linestyle='--', linewidth=2, label=f'Thresholds ({n_mads} MADs)')
-        ax.axvline(upper, color='red', linestyle='--', linewidth=2)
+        if tail in ('both', 'low'):
+            ax.axvline(plot_lower, color='red', linestyle='--', linewidth=2,
+                       label=f'Thresholds ({n_mads} MADs, {tail}, {transform})')
+        if tail in ('both', 'high'):
+            ax.axvline(plot_upper, color='red', linestyle='--', linewidth=2)
 
         if hard_threshold is not None:
             ax.axvline(hard_threshold, color='darkred', linestyle=':', linewidth=2,
@@ -156,8 +175,12 @@ def plot_filtering_thresholds(adata, outlier_masks, thresholds, output_path):
     for idx, (metric, label) in enumerate(metrics):
         if metric in outlier_masks and metric in thresholds:
             hard = thresholds[metric].get('hard', None)
-            plot_with_threshold(axes[idx], metric, outlier_masks[metric],
-                              thresholds[metric]['n_mads'], hard)
+            plot_with_threshold(
+                axes[idx], metric, outlier_masks[metric],
+                thresholds[metric]['n_mads'], hard,
+                transform=thresholds[metric].get('transform', None),
+                tail=thresholds[metric].get('tail', 'both')
+            )
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')

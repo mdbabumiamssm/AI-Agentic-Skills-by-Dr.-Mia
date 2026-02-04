@@ -13,12 +13,13 @@ import scanpy as sc
 import sys
 import os
 import argparse
+import json
+from datetime import datetime
 
 # Import our modular utilities
 from qc_core import (
     calculate_qc_metrics,
-    detect_outliers_mad,
-    apply_hard_threshold,
+    build_qc_masks,
     filter_cells,
     filter_genes,
     print_qc_summary
@@ -67,6 +68,7 @@ parser.add_argument('--min-cells', type=int, default=DEFAULT_MIN_CELLS, help=f'M
 parser.add_argument('--mt-pattern', type=str, default=DEFAULT_MT_PATTERN, help=f'Comma-separated mitochondrial gene prefixes (default: "{DEFAULT_MT_PATTERN}")')
 parser.add_argument('--ribo-pattern', type=str, default=DEFAULT_RIBO_PATTERN, help=f'Comma-separated ribosomal gene prefixes (default: "{DEFAULT_RIBO_PATTERN}")')
 parser.add_argument('--hb-pattern', type=str, default=DEFAULT_HB_PATTERN, help=f'Hemoglobin gene regex pattern (default: "{DEFAULT_HB_PATTERN}")')
+parser.add_argument('--no-log1p', action='store_true', help='Disable log1p transform for MAD calculations on counts/genes')
 
 args = parser.parse_args()
 
@@ -76,7 +78,11 @@ if not os.path.exists(args.input_file):
     sys.exit(1)
 
 input_file = args.input_file
-base_name = os.path.splitext(os.path.basename(input_file))[0]
+input_is_dir = os.path.isdir(input_file)
+if input_is_dir:
+    base_name = os.path.basename(os.path.abspath(input_file))
+else:
+    base_name = os.path.splitext(os.path.basename(input_file))[0]
 
 # Set up output directory
 if args.output_dir:
@@ -92,13 +98,17 @@ print(f"\nParameters:")
 print(f"  MAD thresholds: counts={args.mad_counts}, genes={args.mad_genes}, MT%={args.mad_mt}")
 print(f"  MT hard threshold: {args.mt_threshold}%")
 print(f"  Min cells for gene filtering: {args.min_cells}")
-print(f"  Gene patterns: MT={args.mt_pattern}, Ribo={args.ribo_pattern}")
+print(f"  Gene patterns: MT={args.mt_pattern}, Ribo={args.ribo_pattern}, HB={args.hb_pattern}")
+print(f"  MAD transform (counts/genes): {'none' if args.no_log1p else 'log1p'}")
 
 # Load the data
 print("\n[1/5] Loading data...")
 file_ext = os.path.splitext(input_file)[1].lower()
 
-if file_ext == '.h5ad':
+if input_is_dir:
+    adata = sc.read_10x_mtx(input_file, var_names='gene_symbols', make_unique=True)
+    print(f"Loaded 10X directory: {adata.n_obs} cells × {adata.n_vars} genes")
+elif file_ext == '.h5ad':
     adata = ad.read_h5ad(input_file)
     print(f"Loaded .h5ad file: {adata.n_obs} cells × {adata.n_vars} genes")
 elif file_ext == '.h5':
@@ -107,7 +117,7 @@ elif file_ext == '.h5':
     # Make variable names unique (10X data sometimes has duplicate gene names)
     adata.var_names_make_unique()
 else:
-    print(f"\nError: Unsupported file format '{file_ext}'. Expected .h5ad or .h5")
+    print(f"\nError: Unsupported file format '{file_ext}'. Expected .h5ad, .h5, or 10X directory")
     sys.exit(1)
 
 # Store original counts for comparison
@@ -136,24 +146,24 @@ print(f"  Saved: {before_plot}")
 # Apply MAD-based filtering
 print("\n[4/5] Applying MAD-based filtering thresholds...")
 
-# Detect outliers for each metric
-adata.obs['outlier_counts'] = detect_outliers_mad(adata, 'total_counts', args.mad_counts)
-adata.obs['outlier_genes'] = detect_outliers_mad(adata, 'n_genes_by_counts', args.mad_genes)
-adata.obs['outlier_mt'] = detect_outliers_mad(adata, 'pct_counts_mt', args.mad_mt)
-
-# Apply hard threshold for mitochondrial content
-print(f"\n  Applying hard threshold for mitochondrial content (>{args.mt_threshold}%):")
-high_mt_mask = apply_hard_threshold(adata, 'pct_counts_mt', args.mt_threshold, operator='>')
-
-# Combine MT filters (MAD + hard threshold)
-adata.obs['outlier_mt'] = adata.obs['outlier_mt'] | high_mt_mask
-
-# Overall filtering decision
-adata.obs['pass_qc'] = ~(
-    adata.obs['outlier_counts'] |
-    adata.obs['outlier_genes'] |
-    adata.obs['outlier_mt']
+counts_transform = None if args.no_log1p else 'log1p'
+genes_transform = None if args.no_log1p else 'log1p'
+qc_masks = build_qc_masks(
+    adata,
+    mad_counts=args.mad_counts,
+    mad_genes=args.mad_genes,
+    mad_mt=args.mad_mt,
+    mt_threshold=args.mt_threshold,
+    counts_transform=counts_transform,
+    genes_transform=genes_transform,
+    mt_transform=None,
+    verbose=True
 )
+
+adata.obs['outlier_counts'] = qc_masks['outlier_counts']
+adata.obs['outlier_genes'] = qc_masks['outlier_genes']
+adata.obs['outlier_mt'] = qc_masks['outlier_mt']
+adata.obs['pass_qc'] = qc_masks['pass_qc']
 
 print(f"\n  Total cells failing QC: {(~adata.obs['pass_qc']).sum()} ({(~adata.obs['pass_qc']).sum()/adata.n_obs*100:.2f}%)")
 print(f"  Cells passing QC: {adata.obs['pass_qc'].sum()} ({adata.obs['pass_qc'].sum()/adata.n_obs*100:.2f}%)")
@@ -166,9 +176,9 @@ outlier_masks = {
 }
 
 thresholds = {
-    'total_counts': {'n_mads': args.mad_counts},
-    'n_genes_by_counts': {'n_mads': args.mad_genes},
-    'pct_counts_mt': {'n_mads': args.mad_mt, 'hard': args.mt_threshold}
+    'total_counts': {'n_mads': args.mad_counts, 'transform': counts_transform, 'tail': 'both'},
+    'n_genes_by_counts': {'n_mads': args.mad_genes, 'transform': genes_transform, 'tail': 'both'},
+    'pct_counts_mt': {'n_mads': args.mad_mt, 'transform': None, 'tail': 'high', 'hard': args.mt_threshold}
 }
 
 threshold_plot = os.path.join(output_dir, 'qc_filtering_thresholds.png')
@@ -182,8 +192,9 @@ print(f"  Cells after filtering: {adata_filtered.n_obs} (removed {n_cells_origin
 
 # Filter genes
 print(f"\n  Filtering genes detected in <{args.min_cells} cells...")
+n_genes_before_gene_filtering = adata_filtered.n_vars
 filter_genes(adata_filtered, min_cells=args.min_cells, inplace=True)
-print(f"  Genes after filtering: {adata_filtered.n_vars} (removed {n_genes_original - adata_filtered.n_vars})")
+print(f"  Genes after filtering: {adata_filtered.n_vars} (removed {n_genes_before_gene_filtering - adata_filtered.n_vars})")
 
 # Generate summary statistics
 print("\n" + "=" * 80)
@@ -216,6 +227,52 @@ print(f"  Saved: {output_filtered}")
 adata.write(output_with_qc)
 print(f"  Saved: {output_with_qc} (original data with QC annotations)")
 
+# Write summary JSON
+summary_path = os.path.join(output_dir, 'qc_summary.json')
+summary = {
+    'run_timestamp_utc': datetime.utcnow().isoformat() + 'Z',
+    'input': {
+        'path': os.path.abspath(input_file),
+        'type': '10x_directory' if input_is_dir else file_ext.lstrip('.')
+    },
+    'parameters': {
+        'mad_counts': args.mad_counts,
+        'mad_genes': args.mad_genes,
+        'mad_mt': args.mad_mt,
+        'mt_threshold': args.mt_threshold,
+        'min_cells': args.min_cells,
+        'mt_pattern': args.mt_pattern,
+        'ribo_pattern': args.ribo_pattern,
+        'hb_pattern': args.hb_pattern,
+        'counts_transform': counts_transform,
+        'genes_transform': genes_transform
+    },
+    'counts': {
+        'cells_before': int(n_cells_original),
+        'cells_after': int(adata_filtered.n_obs),
+        'genes_before': int(n_genes_original),
+        'genes_after': int(adata_filtered.n_vars)
+    },
+    'filtering': {
+        'outlier_counts': int(adata.obs['outlier_counts'].sum()),
+        'outlier_genes': int(adata.obs['outlier_genes'].sum()),
+        'outlier_mt': int(adata.obs['outlier_mt'].sum()),
+        'cells_removed': int(n_cells_original - adata_filtered.n_obs),
+        'retention_rate': round(adata_filtered.n_obs / n_cells_original * 100, 2)
+    },
+    'outputs': {
+        'qc_metrics_before_filtering': os.path.basename(before_plot),
+        'qc_filtering_thresholds': os.path.basename(threshold_plot),
+        'qc_metrics_after_filtering': os.path.basename(after_plot),
+        'filtered_h5ad': os.path.basename(output_filtered),
+        'with_qc_h5ad': os.path.basename(output_with_qc),
+        'summary_json': os.path.basename(summary_path)
+    }
+}
+with open(summary_path, 'w') as handle:
+    json.dump(summary, handle, indent=2, sort_keys=True)
+print(f"  Saved: {summary_path}")
+
 print("\n" + "=" * 80)
 print("Quality Control Analysis Complete!")
 print("=" * 80)
@@ -226,6 +283,7 @@ print("  2. qc_filtering_thresholds.png - MAD-based threshold visualization")
 print("  3. qc_metrics_after_filtering.png - Post-filtering QC visualizations")
 print(f"  4. {base_name}_filtered.h5ad - Filtered dataset")
 print(f"  5. {base_name}_with_qc.h5ad - Original dataset with QC annotations")
+print("  6. qc_summary.json - Machine-readable QC summary")
 print("\nNext steps:")
 print("  - Consider ambient RNA correction (SoupX)")
 print("  - Consider doublet detection (scDblFinder)")

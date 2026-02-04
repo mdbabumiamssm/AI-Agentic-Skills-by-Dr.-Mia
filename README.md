@@ -15,7 +15,7 @@ Unlike standard chatbot repos, this project focuses on **Agentic Workflows**—w
 
 **MD BABU MIA, PhD**  
 *Professor of Hematology & Medical Oncology | Mount Sinai*  
-Specializing in MPN Research, Single-Cell Multi-Omics, and Computational Biology.
+Specializing in Hemato-Oncology, Computational Biology and Machine Learning - AI.
 
 ---
 
@@ -85,6 +85,22 @@ As of Jan 2026, all skills are being migrated to a standardized `SKILL.md` forma
 *   **Keywords:** For easier indexing and discovery.
 *   **Measurable Outcomes:** SMART goals (e.g., "Achieves >85% accuracy").
 *   **Compatibility:** explicit system and library requirements.
+
+### 🔁 Skill Maintenance Checklist (2026+)
+
+To keep the catalog consistent, follow this workflow whenever updating or adding skills:
+
+1. **Scan `Skills/`:** Locate every existing `SKILL.md` (use `rg --files -g 'SKILL.md' Skills`).
+2. **Enhance Each Entry:** Ensure the frontmatter or first section includes:
+   - `description` (concise 10–20 characters)
+   - `keywords` (3–5 core terms)
+   - `measurable_outcome` (SMART, time-bound)
+3. **Add New Skills:** When you find coverage gaps, scaffold a fresh skill (use `scripts/init_skill.py` if applicable) so every major workflow has a `SKILL.md`.
+4. **Stage Changes:** `git add Skills/` – stage only the skill directories you touched.
+5. **Commit:** Use a conventional commit message such as `feat: Enhance and add SKILL.md` (required for catalog-wide refreshes).
+6. **Push:** `git push origin main` to publish the refresh so GitHub reflects the latest README/SKILL updates immediately.
+
+Following these steps keeps the metadata discoverable and ensures reviewers can see the delta directly on GitHub (including this README).
 
 ## 📄 License
 

@@ -1,7 +1,7 @@
 # Clinical Trial Eligibility Agent
 
 **ID:** `biomedical.clinical.trial_eligibility`
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Status:** Production
 **Category:** Clinical AI / Trial Matching
 
@@ -9,160 +9,80 @@
 
 ## Overview
 
-The **Clinical Trial Eligibility Agent** streamlines clinical trial recruitment by automatically matching patients to suitable trials. It analyzes patient medical records against structured inclusion/exclusion criteria, reducing the manual screening workload that currently bottlenecks enrollment.
-
-Clinical trials fail primarily due to recruitment challenges: 80% of trials don't meet enrollment timelines, and 30% fail to enroll a single patient. This skill addresses that gap by enabling scalable, automated eligibility screening.
+The **Clinical Trial Eligibility Agent** automates patient-to-trial matching by parsing eligibility criteria and evaluating patient data against inclusion/exclusion rules. It reduces manual screening time while preserving traceability and highlighting data gaps.
 
 ---
 
-## Key Capabilities
+## Inputs
 
-### 1. Criteria Extraction
-
-- Parses clinical trial protocols from ClinicalTrials.gov
-- Structures complex inclusion/exclusion criteria into machine-readable format
-- Handles compound criteria (AND/OR logic)
-- Extracts numeric thresholds (age, lab values, tumor stage)
-
-### 2. Patient Matching
-
-Analyzes multiple data sources:
-
-| Source | Data Type | Matching Approach |
-|--------|-----------|-------------------|
-| **EHR Data** | FHIR resources (Conditions, Observations, MedicationRequests) | Structured queries |
-| **Clinical Notes** | Unstructured text | NLP extraction |
-| **Lab Results** | Numeric values with units | Threshold comparison |
-| **Imaging Reports** | Radiology findings | Entity extraction |
-
-### 3. Eligibility Reporting
-
-Generates detailed reports explaining:
-- Which criteria are **MET**
-- Which criteria are **NOT MET** (with explanation)
-- Which criteria have **INSUFFICIENT DATA** (prompts for additional information)
-
-### 4. Privacy-Preserving Processing
-
-- Processes de-identified patient data (HIPAA Safe Harbor or Expert Determination)
-- Supports federated queries without data centralization
-- Audit trail for all matching decisions
+| Field | Type | Notes |
+|------|------|------|
+| `trial_id` | str | ClinicalTrials.gov NCT number or sponsor protocol ID |
+| `patient_summary` | str | Narrative summary of key facts |
+| `patient_structured` | dict | Optional FHIR bundle or structured JSON |
+| `data_sources` | list[str] | e.g., `clinical_notes`, `labs`, `imaging`, `meds` |
 
 ---
 
-## Usage
+## Outputs
 
-### Example Prompt
+### Eligibility Report
+
+- Inclusion criteria status (MET / NOT MET / UNKNOWN)
+- Exclusion criteria status (MET / NOT MET / UNKNOWN)
+- Evidence snippets and confidence per criterion
+- Overall recommendation: `potentially_eligible`, `not_eligible`, or `needs_more_information`
+- Data gap checklist
+
+### JSON Schema (Recommended)
+
+```json
+{
+  "trial_id": "NCT00000000",
+  "criteria": [
+    {"id": "I-01", "text": "Age >= 18", "status": "MET", "evidence": "Age 58", "confidence": "high"}
+  ],
+  "eligibility_summary": "potentially_eligible",
+  "data_gaps": ["Latest ECOG score"],
+  "alerts": ["Confirm brain MRI within 30 days"]
+}
+```
+
+---
+
+## Workflow
+
+1. **Acquire protocol** - Pull eligibility section from ClinicalTrials.gov or sponsor PDF.
+2. **Parse criteria** - Normalize to structured logic (AND/OR, thresholds, units).
+3. **Extract patient facts** - Convert notes and FHIR data into a unified feature map.
+4. **Evaluate criteria** - Assign MET/NOT MET/UNKNOWN with evidence.
+5. **Summarize gaps** - List missing labs, imaging, or biomarker data.
+
+---
+
+## Example Prompt
 
 ```text
-I have a patient with the following characteristics:
+Patient summary:
 - 58-year-old female
-- Stage IIIA NSCLC (non-small cell lung cancer)
-- EGFR mutation positive (exon 19 deletion)
-- Prior treatment: carboplatin/pemetrexed (4 cycles), then osimertinib (progressed after 14 months)
-- ECOG performance status: 1
+- Stage IIIA NSCLC
+- EGFR exon 19 deletion
+- Prior osimertinib, progressed after 14 months
+- ECOG 1
 - No brain metastases
-- Creatinine clearance: 72 mL/min
+- Creatinine clearance 72 mL/min
 
-Check eligibility for trial NCT04487080 (EGFR-targeted therapy).
-List specific criteria met and any exclusion criteria that might be a concern.
-```
-
-### Expected Output
-
-```
-## Eligibility Assessment: NCT04487080
-
-### INCLUSION CRITERIA
-
-| Criterion | Status | Evidence |
-|-----------|--------|----------|
-| Age ≥18 years | MET | Patient is 58 years old |
-| Histologically confirmed NSCLC | MET | Stage IIIA NSCLC documented |
-| EGFR mutation positive | MET | Exon 19 deletion confirmed |
-| Prior EGFR TKI treatment | MET | Prior osimertinib with progression |
-| ECOG PS 0-1 | MET | ECOG 1 documented |
-| Adequate renal function (CrCl ≥50) | MET | CrCl 72 mL/min |
-
-### EXCLUSION CRITERIA
-
-| Criterion | Status | Evidence |
-|-----------|--------|----------|
-| Active brain metastases | NOT APPLICABLE | No brain metastases |
-| Prior treatment with [study drug] | NEEDS REVIEW | Verify specific agent history |
-
-### RECOMMENDATION
-**LIKELY ELIGIBLE** - Patient meets all major criteria. Recommend confirming
-no prior exposure to study agent and obtaining recent imaging.
-```
-
-### LLM Agent Integration
-
-```python
-@tool
-def check_trial_eligibility(
-    patient_summary: str,
-    trial_id: str,
-    data_sources: list[str] = ["clinical_notes"]
-) -> str:
-    """
-    Screens a patient for clinical trial eligibility.
-
-    Args:
-        patient_summary: Text summary of patient characteristics
-        trial_id: ClinicalTrials.gov NCT number
-        data_sources: Available data types for matching
-
-    Returns:
-        Structured eligibility report with criteria assessment
-    """
-    # Implementation fetches trial criteria and performs matching
-    pass
+Check eligibility for NCT04487080 and list MET/NOT MET/UNKNOWN criteria.
 ```
 
 ---
 
-## Prerequisites
+## Guardrails
 
-### Required Data Access
-
-| Resource | Purpose | Format |
-|----------|---------|--------|
-| **ClinicalTrials.gov API** | Trial criteria extraction | REST API |
-| **Patient Records** | Matching data | FHIR R4 or free text |
-| **Terminology Services** | Code normalization | SNOMED-CT, ICD-10, RxNorm |
-
-### Dependencies
-
-```
-requests>=2.28
-fhir.resources>=6.0
-pandas>=1.5
-```
-
----
-
-## Methodology
-
-### Criteria Parsing
-
-1. **Fetch trial record** from ClinicalTrials.gov API
-2. **Parse eligibility text** into structured criteria
-3. **Normalize medical concepts** to standard terminologies
-4. **Build logical query** representing I/E requirements
-
-### Patient Matching
-
-1. **Extract patient features** from available data sources
-2. **Map to trial criteria** using semantic matching
-3. **Evaluate each criterion** (MET / NOT MET / UNKNOWN)
-4. **Generate explanation** with supporting evidence
-
-### Confidence Scoring
-
-- **HIGH:** Structured data directly confirms criterion
-- **MEDIUM:** NLP extraction from notes
-- **LOW:** Inferred from related data
+- **No final enrollment decisions**: results are advisory only.
+- **Cite evidence** for each criterion.
+- **Surface unknowns** rather than inferring.
+- **PHI handling**: use de-identified data and HIPAA-compliant environments.
 
 ---
 
@@ -175,59 +95,35 @@ from fhir.resources.patient import Patient
 from fhir.resources.condition import Condition
 
 def extract_patient_features(fhir_bundle: dict) -> dict:
-    """Extract matching features from FHIR resources."""
     features = {}
-
     for entry in fhir_bundle.get("entry", []):
         resource = entry.get("resource", {})
-        resource_type = resource.get("resourceType")
-
-        if resource_type == "Patient":
+        if resource.get("resourceType") == "Patient":
             patient = Patient.parse_obj(resource)
             features["age"] = calculate_age(patient.birthDate)
-
-        elif resource_type == "Condition":
+        elif resource.get("resourceType") == "Condition":
             condition = Condition.parse_obj(resource)
             features.setdefault("conditions", []).append(
                 condition.code.coding[0].display
             )
-
     return features
-```
-
-### ClinicalTrials.gov API
-
-```python
-import requests
-
-def fetch_trial_criteria(nct_id: str) -> dict:
-    """Fetch and parse trial eligibility criteria."""
-    url = f"https://clinicaltrials.gov/api/v2/studies/{nct_id}"
-    response = requests.get(url)
-    study = response.json()
-
-    return {
-        "inclusion": study["protocolSection"]["eligibilityModule"]["eligibilityCriteria"],
-        "gender": study["protocolSection"]["eligibilityModule"]["sex"],
-        "min_age": study["protocolSection"]["eligibilityModule"]["minimumAge"],
-        "max_age": study["protocolSection"]["eligibilityModule"]["maximumAge"]
-    }
 ```
 
 ---
 
-## Related Skills
+## Dependencies
 
-- **Clinical Note Summarization:** Structure notes before eligibility screening
-- **Diagnostic Decision Support:** Verify diagnosis accuracy
-- **Medical Coding:** Standardize condition codes for matching
+```
+requests>=2.28
+fhir.resources>=6.0
+pandas>=1.5
+```
 
 ---
 
 ## References
 
-- Based on **TrialGPT** (NIH) and **LLM Pharma** frameworks
-- [bab-git/llm_pharma](https://github.com/bab-git/llm_pharma)
+- TrialGPT (NIH)
 - Jin et al. "TrialGPT: Matching Patients to Clinical Trials with Large Language Models" (2023)
 
 ---

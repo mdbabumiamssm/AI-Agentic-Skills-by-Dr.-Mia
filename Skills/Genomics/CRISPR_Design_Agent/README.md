@@ -1,7 +1,7 @@
 # CRISPR Guide Design Agent
 
 **ID:** `biomedical.genomics.crispr_design`
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Status:** Production
 **Category:** Genomics / Gene Editing
 
@@ -9,104 +9,66 @@
 
 ## Overview
 
-The **CRISPR Guide Design Agent** automates the design of CRISPR guide RNAs (sgRNAs) for gene-editing experiments. It assists researchers in identifying optimal genomic targets, predicting off-target effects, and generating complete experimental protocols.
-
-This skill bridges the gap between computational biology expertise and wet-lab execution, enabling AI agents to design publication-quality CRISPR experiments.
+The **CRISPR Guide Design Agent** automates sgRNA design for gene editing experiments. It selects target loci, scores guide efficiency, evaluates off-target risk, and generates cloning-ready oligos and protocols.
 
 ---
 
-## Key Capabilities
+## Inputs
 
-### 1. Target Selection
-
-- Identifies optimal genomic loci for CRISPR-Cas9 targeting
-- Prioritizes exons based on functional domain disruption
-- Considers transcript variants and protein isoforms
-
-### 2. Guide RNA Design
-
-- Generates sgRNA sequences based on PAM constraints (NGG for SpCas9)
-- Supports multiple Cas variants: SpCas9, SaCas9, Cas12a (Cpf1), base editors
-- Optimizes for on-target efficiency using validated scoring algorithms:
-  - **Doench 2016:** Rule Set 2 for SpCas9
-  - **DeepCRISPR:** Deep learning-based scoring
-  - **CFD Score:** Cutting Frequency Determination
-
-### 3. Off-Target Analysis
-
-- Predicts potential off-target cleavage sites genome-wide
-- Supports human (hg38), mouse (mm10), and other reference genomes
-- Integrates with Cas-OFFinder for comprehensive off-target prediction
-
-### 4. Protocol Generation
-
-- Creates step-by-step experimental procedures
-- Supports common vector systems: pX458, pX459, LentiCRISPRv2
-- Generates oligonucleotide sequences for cloning
+| Field | Type | Notes |
+|------|------|------|
+| `gene_symbol` | str | Official gene symbol (HGNC or MGI) |
+| `organism` | str | `human` or `mouse` (hg38/mm10) |
+| `cas_variant` | str | `SpCas9`, `SaCas9`, `Cas12a`, etc. |
+| `target_region` | str | `first_exon`, `all_exons`, or domain name |
+| `num_guides` | int | Number of guides to return |
+| `avoid_variants` | bool | Exclude guides overlapping common SNPs |
 
 ---
 
-## Usage
+## Outputs
 
-### Example Prompt
+- Ranked sgRNA list with efficiency and off-target scores
+- Genomic coordinates (chromosome, start, strand)
+- Cloning oligos with overhangs
+- Protocol steps and validation primers (optional)
 
-```text
-Design 3 optimal sgRNAs for TP53 gene knockout in human cells using CRISPR-Cas9.
-Target the first coding exon.
-Check for off-target effects in the human genome (hg38).
-Generate a cloning protocol for the pX458 vector (GFP reporter).
-```
+### Output Schema (Recommended)
 
-### Expected Output
-
-The agent will return:
-
-1. **Ranked sgRNA sequences** with efficiency scores
-2. **Off-target analysis** showing potential mismatches
-3. **Oligonucleotide sequences** ready for ordering
-4. **Cloning protocol** with annealing and ligation steps
-
-### LLM Agent Integration
-
-```python
-@tool
-def design_crispr_guides(
-    gene_symbol: str,
-    organism: str = "human",
-    cas_variant: str = "SpCas9",
-    num_guides: int = 3,
-    target_region: str = "first_exon"
-) -> str:
-    """
-    Designs optimal CRISPR guide RNAs for gene knockout.
-
-    Args:
-        gene_symbol: Official gene symbol (e.g., TP53, BRCA1)
-        organism: Target organism (human, mouse)
-        cas_variant: CRISPR enzyme (SpCas9, SaCas9, Cas12a)
-        num_guides: Number of guides to design
-        target_region: Region to target (first_exon, all_exons, specific_domain)
-
-    Returns:
-        Formatted guide designs with sequences and protocols
-    """
-    # Implementation calls genomic APIs and scoring algorithms
-    pass
+```json
+{
+  "guide_id": "TP53_exon2_guide1",
+  "sequence": "GACTG...",
+  "pam": "NGG",
+  "locus": "chr17:7577120-7577139:+",
+  "scores": {"doench": 0.62, "cfd": 0.78, "gc_content": 0.55},
+  "off_target_hits": ["chr1:... (2mm)"]
+}
 ```
 
 ---
 
-## Prerequisites
+## Workflow
 
-### Required APIs/Databases
+1. **Resolve target** - map gene symbol to canonical transcript and exon coordinates.
+2. **Enumerate guides** - scan for PAM-compatible sites in target region.
+3. **Score guides** - apply Doench/DeepCRISPR/CFD scoring.
+4. **Off-target search** - find genome-wide near matches (<= 3 mismatches).
+5. **Rank + filter** - remove low-efficiency or high-risk guides.
+6. **Generate protocols** - cloning oligos and validation primers.
 
-| Resource | Purpose | Access |
-|----------|---------|--------|
-| **NCBI/Ensembl** | Genomic sequences | Public API |
-| **Cas-OFFinder** | Off-target prediction | Web service or local |
-| **CRISPOR** | Guide scoring | Web API |
+---
 
-### Dependencies
+## Guardrails
+
+- Always report the reference genome build.
+- Avoid guides overlapping common variants (dbSNP/gnomAD) when possible.
+- Flag guides with high off-target density in coding regions.
+- Output is **experimental design support**, not a guarantee of efficacy.
+
+---
+
+## Dependencies
 
 ```
 biopython>=1.80
@@ -116,35 +78,11 @@ pandas>=1.5
 
 ---
 
-## Methodology
-
-This implementation incorporates validated scoring methods:
-
-1. **Doench et al. (2016):** "Optimized sgRNA design to maximize activity and minimize off-target effects of CRISPR-Cas9." *Nature Biotechnology*
-2. **Hsu et al. (2013):** "DNA targeting specificity of RNA-guided Cas9 nucleases." *Nature Biotechnology*
-
-### Design Principles
-
-- **Exon targeting:** Focus on early exons for complete knockout
-- **Domain disruption:** Prioritize functional domains when known
-- **GC content:** Optimal range 40-70% for efficient loading
-- **Poly-T avoidance:** Exclude sequences with >4 consecutive T's (Pol III terminator)
-
----
-
-## Related Skills
-
-- **Single-Cell RNA-seq QC:** Validate knockout efficiency at single-cell resolution
-- **Variant Interpretation:** Assess pathogenicity of introduced mutations
-- **AgentD Drug Discovery:** Target validation for therapeutic targets
-
----
-
 ## References
 
-- Based on concepts from **CRISPR-GPT** (Huang et al.)
-- Validated against CRISPOR and Benchling design tools
-- [CRISPR-GPT Repository](https://github.com/UEA-Cancer-Genetics-Lab/CRISPR-GPT)
+- Doench et al. (2016) optimized sgRNA design
+- Hsu et al. (2013) specificity of Cas9 nucleases
+- CRISPOR, Cas-OFFinder
 
 ---
 

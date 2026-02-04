@@ -13,6 +13,14 @@ import numpy as np
 from scipy.stats import median_abs_deviation
 
 
+def _apply_transform(values, transform):
+    if transform is None:
+        return values
+    if transform == 'log1p':
+        return np.log1p(values)
+    raise ValueError(f"Unsupported transform: {transform}")
+
+
 def calculate_qc_metrics(adata, mt_pattern='mt-,MT-', ribo_pattern='Rpl,Rps,RPL,RPS',
                         hb_pattern='^Hb[^(p)]|^HB[^(P)]', inplace=True):
     """
@@ -61,7 +69,7 @@ def calculate_qc_metrics(adata, mt_pattern='mt-,MT-', ribo_pattern='Rpl,Rps,RPL,
         return adata
 
 
-def detect_outliers_mad(adata, metric, n_mads, verbose=True):
+def detect_outliers_mad(adata, metric, n_mads, transform=None, tail='both', verbose=True):
     """
     Detect outliers using Median Absolute Deviation (MAD).
 
@@ -73,6 +81,10 @@ def detect_outliers_mad(adata, metric, n_mads, verbose=True):
         Column name in adata.obs to use for outlier detection
     n_mads : float
         Number of MADs to use as threshold
+    transform : str or None
+        Optional transform applied before MAD calculation (e.g., 'log1p')
+    tail : str
+        Which tail(s) to flag: 'both', 'high', or 'low'
     verbose : bool
         Print outlier statistics (default: True)
 
@@ -82,20 +94,27 @@ def detect_outliers_mad(adata, metric, n_mads, verbose=True):
         Boolean mask where True indicates outliers
     """
     metric_values = adata.obs[metric]
-    median = np.median(metric_values)
-    mad = median_abs_deviation(metric_values)
+    transformed = _apply_transform(metric_values, transform)
+    median = np.median(transformed)
+    mad = median_abs_deviation(transformed)
 
     # Calculate bounds
     lower = median - n_mads * mad
     upper = median + n_mads * mad
 
-    # Identify outliers
-    outlier_mask = (metric_values < lower) | (metric_values > upper)
+    if tail == 'both':
+        outlier_mask = (transformed < lower) | (transformed > upper)
+    elif tail == 'high':
+        outlier_mask = transformed > upper
+    elif tail == 'low':
+        outlier_mask = transformed < lower
+    else:
+        raise ValueError(f"Invalid tail: {tail}. Use 'both', 'high', or 'low'.")
 
     if verbose:
         print(f"  {metric}:")
         print(f"    Median: {median:.2f}, MAD: {mad:.2f}")
-        print(f"    Bounds: [{lower:.2f}, {upper:.2f}] ({n_mads} MADs)")
+        print(f"    Bounds: [{lower:.2f}, {upper:.2f}] ({n_mads} MADs, tail={tail}, transform={transform})")
         print(f"    Outliers: {outlier_mask.sum()} cells ({outlier_mask.sum()/len(metric_values)*100:.2f}%)")
 
     return outlier_mask
@@ -167,6 +186,52 @@ def filter_cells(adata, mask, inplace=False):
         return adata[mask].copy()
     else:
         return adata[mask].copy()
+
+
+def build_qc_masks(
+    adata,
+    mad_counts=5,
+    mad_genes=5,
+    mad_mt=3,
+    mt_threshold=8,
+    counts_transform='log1p',
+    genes_transform='log1p',
+    mt_transform=None,
+    verbose=True
+):
+    """
+    Generate QC outlier masks and the combined pass/fail mask.
+
+    Returns a dict with outlier masks and a 'pass_qc' boolean mask.
+    """
+    outlier_counts = detect_outliers_mad(
+        adata, 'total_counts', mad_counts,
+        transform=counts_transform, tail='both', verbose=verbose
+    )
+    outlier_genes = detect_outliers_mad(
+        adata, 'n_genes_by_counts', mad_genes,
+        transform=genes_transform, tail='both', verbose=verbose
+    )
+    outlier_mt = detect_outliers_mad(
+        adata, 'pct_counts_mt', mad_mt,
+        transform=mt_transform, tail='high', verbose=verbose
+    )
+
+    if verbose:
+        print(f"\n  Applying hard threshold for mitochondrial content (>{mt_threshold}%):")
+    high_mt_mask = apply_hard_threshold(
+        adata, 'pct_counts_mt', mt_threshold, operator='>', verbose=verbose
+    )
+    outlier_mt = outlier_mt | high_mt_mask
+
+    pass_qc = ~(outlier_counts | outlier_genes | outlier_mt)
+    return {
+        'outlier_counts': outlier_counts,
+        'outlier_genes': outlier_genes,
+        'outlier_mt': outlier_mt,
+        'high_mt': high_mt_mask,
+        'pass_qc': pass_qc
+    }
 
 
 def filter_genes(adata, min_cells=20, min_counts=None, inplace=True):
