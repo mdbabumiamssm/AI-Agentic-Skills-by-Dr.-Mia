@@ -81,17 +81,53 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 
 ```text
 Skills/
+├── 3D_Genomics/          # Hi-C analysis, chromatin conformation
 ├── Agentic_AI/           # Architectures (ReAct, Plan&Solve, Orchestrators)
-├── Clinical/             # MedPrompt, Note Summarization, Adaptive Trials
+├── Anthropic_Health_Stack/ # Regulatory drafting, care coordination
+├── Clinical/             # MedPrompt, Note Summarization, Adaptive Trials, Clinical Databases
 ├── Computer_Science/     # Graph Algo, Distributed Systems (Async)
-├── Drug_Discovery/       # ChemCrow, Self-Driving Labs
+├── Consumer_Health/      # Wearable analysis, symptom checking
+├── Data_Visualization/   # Heatmaps, volcano plots, circos, genome tracks
+├── Drug_Discovery/       # ChemCrow, Self-Driving Labs, Chemoinformatics
+├── Epigenomics/          # ChIP-seq, ATAC-seq, methylation, epitranscriptomics
+├── Experimental_Design/  # Power analysis, sample size, batch design
 ├── External_Collections/ # Consolidated external skill libraries (see below)
 ├── Foundation_Models/    # AlphaFold3 Wrapper, BiomedGPT
-├── Genomics/             # Single Cell (Annotation, Pathways), CRISPR
+├── Gene_Therapy/         # AAV vector design
+├── Genomics/             # Single Cell, Spatial, CRISPR, Variant Calling, Assembly
+├── Hematology/           # AML, MPN, Flow Cytometry, Coagulation
+├── Imaging_Analysis/     # Imaging mass cytometry, spatial analysis
+├── Immunology_Vaccines/  # CAR-T, TCR/BCR analysis, epitope prediction
+├── Lab_Automation/       # Opentrons, PyLabRobot, self-driving labs
 ├── LLM_Research/         # RAG, Fine-Tuning, Prompt Engineering
+├── Longevity_Aging/      # Biological age clocks, senescence
+├── Machine_Learning/     # Biomarker discovery, survival analysis, model interpretation
 ├── Mathematics/          # Bayesian Opt, Linear Algebra, Probability
 ├── MCP_Servers/          # BioMCP Implementation
-└── Software_Engineering/ # Web Dev (React/Next.js), Data Science (Pandas), Core Python
+├── Metabolomics/         # Peak detection, annotation, pathway mapping
+├── Microbiome/           # 16S/ITS amplicon, diversity, differential abundance
+├── Multi_Omics/          # Cross-modality integration, factor analysis
+├── NGS_QC/               # Read QC, alignment, trimming
+├── Oncology/             # ctDNA, Liquid Biopsy, Radiomics, Pathomics
+├── Pathology_AI/         # Digital pathology, computational pathology
+├── Pharma/               # Drug interactions, regulatory affairs
+├── Population_Genetics/  # GWAS, phylogenetics, epidemiological genomics
+├── Precision_Medicine/   # Pharmacogenomics, polygenic risk scores
+├── Protein_Science/      # AlphaFold3, ESM3, protein design
+├── Proteomics/           # Mass spec, deep visual proteomics
+├── Quantum_Biotech/      # Quantum docking, molecular simulation
+├── Radiology_AI/         # Chest X-ray, CT analysis, report generation
+├── Research_Tools/       # Literature mining, database access, reporting, pathway analysis
+├── RNA_Therapeutics/     # ASO, siRNA, mRNA vaccine, LNP design
+├── Self_Driving_Labs/    # Autonomous lab control, Bayesian experiment design
+├── Sequence_Analysis/    # Alignment, SAM/BAM, FASTA/FASTQ, primer design
+├── Software_Engineering/ # Web Dev (React/Next.js), Data Science (Pandas), Core Python
+├── Structural_Biology/   # CryoEM, protein structure prediction
+├── Synthetic_Biology/    # Genetic circuits, metabolic pathways
+├── Systems_Biology/      # Flux balance analysis, metabolic reconstruction
+├── Transcriptomics/      # Differential expression, RNA quantification, splicing
+├── Variant_Interpretation/ # ACMG classification, clinical interpretation
+└── Workflow_Management/  # Snakemake, Nextflow, CWL pipelines
 
 ```
 
@@ -106,6 +142,20 @@ Consolidated third-party skill libraries and frameworks:
 - **Antigravity_Skills**: Universal SKILL.md agents
 - **Awesome-Biomedical-LLM-Agents**: Biomedical agent resources
 - **life-sciences_Claudeai-main**: Life sciences Claude integrations
+
+### bioSkills Integration (New Feb 2026!)
+Comprehensive bioinformatics skills from the bioSkills collection (388 skills):
+- **Sequence_Analysis/**: FASTA/FASTQ handling, alignment, primer design
+- **NGS_QC/**: FastQC, read trimming, short-read alignment
+- **Transcriptomics/**: DESeq2, edgeR, alternative splicing, Ribo-seq
+- **Epigenomics/**: ChIP-seq, ATAC-seq, methylation, CLIP-seq
+- **3D_Genomics/**: Hi-C contact matrices, TADs, compartments
+- **Population_Genetics/**: GWAS, phylogenetics, pathogen genomics
+- **Data_Visualization/**: Publication-quality plots
+- **Machine_Learning/**: Biomarker discovery, survival analysis
+- **Multi_Omics/**: MOFA, SNF, cross-modality integration
+- **Workflow_Management/**: Snakemake, Nextflow, 35+ ready pipelines
+- **Systems_Biology/**: Flux balance analysis, metabolic modeling
 
 ## 🛠️ Usage Examples
 

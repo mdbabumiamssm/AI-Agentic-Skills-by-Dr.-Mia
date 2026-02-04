@@ -35,7 +35,11 @@ Specializing in MPN Research, Single-Cell Multi-Omics, and Computational Biology
 *   **Clinical NLP:** `Skills/Clinical/Clinical_NLP/entity_extractor.py` - Extracts entities (Problems, Meds) from unstructured notes.
 *   **Trial Matching:** Matches patient profiles to clinical trials using intelligent criteria mapping.
 
-### 💊 Pharma & Regulatory (New!)
+### 🔬 Spatial & Pathology (New!)
+*   **Spatial Analyst:** `Skills/Genomics/Spatial_Transcriptomics/SKILL.md` - Automated analysis for 10x Visium/Xenium (SVGs, Deconvolution).
+*   **Pathology Agent:** `Skills/Pathology_AI/Computational_Pathology_Agent/SKILL.md` - Whole Slide Image analysis, nuclei segmentation, and tissue classification.
+
+### 💊 Pharma & Regulatory
 *   **Regulatory Drafter:** `Skills/Pharma/Regulatory_Affairs/SKILL.md` - Automates drafting of FDA CTD sections with citation management.
 *   **Molecule Evolution:** `Skills/Drug_Discovery/Molecule_Design/SKILL.md` - Iteratively designs de novo drugs using LLM-driven genetic algorithms.
 *   **Pharmacovigilance:** Monitors safety signals and emits audit-ready traces.
