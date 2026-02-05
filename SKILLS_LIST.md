@@ -205,6 +205,70 @@ Based on your profile as a Hematology/Medical Oncology Professor at Mount Sinai 
 
 ---
 
+## 🔟 Biomni (General Research Agent)
+
+**Trigger phrases:**
+- "Research hypothesis generation"
+- "Biomedical literature search"
+- "Analyze this paper"
+- "Find datasets for X"
+
+**Core capabilities:**
+- Autonomous hypothesis generation and validation
+- Integration of 150+ tools and 59 databases
+- Deep literature mining and summarization
+- Connection to public datasets (GEO, SRA)
+
+---
+
+## 1️⃣1️⃣ STAgent (Spatial Transcriptomics)
+
+**Trigger phrases:**
+- "Run STAgent"
+- "Align histology with expression"
+- "Spatial domain detection"
+- "Find spatial variable genes"
+
+**Core capabilities:**
+- Dynamic code generation for Scanpy/Squidpy
+- Visual reasoning on H&E + Spatial plots
+- Literature-backed spatial reporting
+- Automated SVG detection and clustering
+
+---
+
+## 1️⃣2️⃣ BioMaster (Multi-Agent Bioinformatics)
+
+**Trigger phrases:**
+- "Run bioinformatics workflow"
+- "Automated RNA-seq analysis"
+- "ChIP-seq pipeline"
+- "Multi-agent analysis"
+
+**Core capabilities:**
+- Role-based multi-agent orchestration
+- End-to-end pipeline execution (RNA-seq, ChIP-seq, etc.)
+- RAG-enhanced domain knowledge
+- Automated error handling and reporting
+
+---
+
+## 1️⃣3️⃣ BioMCP (Biomedical MCP Server)
+
+**Trigger phrases:**
+- "Query PubMed via MCP"
+- "Search clinical trials"
+- "Find genomic variants"
+- "Access PubTator3"
+
+**Core capabilities:**
+- Standardized Model Context Protocol (MCP) interface
+- Direct access to PubMed, PMC, ClinicalTrials.gov
+- Genomic variant lookup (ClinVar, gnomAD)
+- Chemical and drug information retrieval
+
+---
+
 ## 🔗 Skill Combinations
 
 These skills are designed to work together:
