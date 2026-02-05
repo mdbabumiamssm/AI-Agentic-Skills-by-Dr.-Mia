@@ -289,6 +289,22 @@ Based on your profile as a Hematology/Medical Oncology Professor at Mount Sinai 
 
 ---
 
+## 1️⃣5️⃣ Advanced Research Visualization
+
+**Trigger phrases:**
+- "Generate paper illustration"
+- "Create statistical plot"
+- "Draft biomedical infographic"
+- "Edit medical image"
+- "Run PaperBanana"
+- "Use Nano Banana"
+
+**Core capabilities:**
+- **PaperBanana**: Agentic framework (Retriever, Planner, Visualizer) for automating academic methodology diagrams and statistical plots.
+- **Nano Banana**: Reasoning image engine for generating factually accurate biomedical infographics and synthetic medical imaging data.
+
+---
+
 ## 🔗 Skill Combinations
 
 These skills are designed to work together:
