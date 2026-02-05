@@ -269,6 +269,26 @@ Based on your profile as a Hematology/Medical Oncology Professor at Mount Sinai 
 
 ---
 
+## 1️⃣4️⃣ Knowledge Work Bio-Research Skills
+
+**Trigger phrases:**
+- "Draft clinical trial protocol"
+- "Convert instrument data to ASM"
+- "Develop Nextflow pipeline"
+- "Select scientific problem"
+- "Run scvi-tools analysis"
+- "Perform single-cell RNA QC"
+
+**Core capabilities:**
+- **clinical-trial-protocol**: FDA-aligned protocol drafting with sample size calculation
+- **instrument-data-to-allotrope**: Standardization of instrument data to Allotrope Simple Model (ASM)
+- **nextflow-development**: Automated generation of Nextflow pipelines (RNA-seq, ATAC-seq, Sarek)
+- **scientific-problem-selection**: Strategic framework for choosing high-impact research problems
+- **scvi-tools**: Deep learning-based single-cell analysis (integration, annotation)
+- **single-cell-rna-qc**: Automated quality control for scRNA-seq data
+
+---
+
 ## 🔗 Skill Combinations
 
 These skills are designed to work together:
