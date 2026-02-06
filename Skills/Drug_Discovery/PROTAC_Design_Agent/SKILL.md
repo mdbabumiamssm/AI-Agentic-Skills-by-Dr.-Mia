@@ -1,5 +1,6 @@
----name: protac-design-agent
-description: AI-powered PROTAC (Proteolysis Targeting Chimera) design for targeted protein degradation, integrating ternary complex prediction, linker optimization, and ADMET modeling.
+---
+name: protac-design-agent
+description: Targeted protein degrader design
 license: MIT
 metadata:
   author: AI Group
