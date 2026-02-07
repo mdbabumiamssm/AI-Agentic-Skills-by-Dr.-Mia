@@ -1,23 +1,8 @@
----name: radiomics-pathomics-fusion-agent
-description: AI-powered multimodal fusion of radiology (CT/MRI/PET) and pathology (H&E/IHC) imaging with clinical and genomic data for comprehensive cancer diagnostics and treatment prediction.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'radiomics-pathomics-fusion-agent'
+description: 'AI-powered multimodal fusion of radiology (CT/MRI/PET) and pathology (H&E/IHC) imaging with clinical and genomic data for comprehensive cancer diagnostics and treatment prediction.'
+---
 
-keywords:
-  - radiomics-pathomics-fusion-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Radiomics Pathomics Fusion Agent
 

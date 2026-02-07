@@ -1,21 +1,8 @@
----name: plan-and-solve-agent
-description: Breaks down complex queries into a step-by-step plan before execution, improving performance on multi-hop reasoning tasks.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'plan-and-solve-agent'
+description: 'Breaks down complex queries into a step-by-step plan before execution, improving performance on multi-hop reasoning tasks.'
+---
 
-keywords:
-  - plan-and-solve
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Plan-and-Solve Agent
 

@@ -1,24 +1,8 @@
----name: pandas-best-practices
-description: Standards for efficient, readable, and performant data manipulation using Python's Pandas library.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  category: Software_Engineering
-compatibility:
-  - system: Python 3.9+
-  - system: Pandas 2.0+
-allowed-tools:
-  - read_file
-  - replace
-  - write_file
+---
+name: 'pandas-best-practices'
+description: 'Standards for efficient, readable, and performant data manipulation using Python''s Pandas library.'
+---
 
-keywords:
-  - python-pandas-best-practices
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Pandas Best Practices
 

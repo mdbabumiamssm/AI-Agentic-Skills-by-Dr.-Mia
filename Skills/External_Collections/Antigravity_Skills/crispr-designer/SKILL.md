@@ -1,12 +1,8 @@
----name: crispr-designer
-description: Designs guide RNA (gRNA) sequences for CRISPR-Cas9 editing, including off-target analysis. Use when a user needs to edit a gene or asks for gRNA sequences.
+---
+name: 'crispr-designer'
+description: 'Designs guide RNA (gRNA) sequences for CRISPR-Cas9 editing, including off-target analysis. Use when a user needs to edit a gene or asks for gRNA sequences.'
+---
 
-keywords:
-  - crispr-designer
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 # CRISPR gRNA Designer
 
 This skill designs high-efficiency guide RNAs for gene editing experiments.

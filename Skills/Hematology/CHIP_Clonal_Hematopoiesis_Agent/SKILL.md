@@ -1,23 +1,8 @@
----name: chip-clonal-hematopoiesis-agent
-description: AI-powered clonal hematopoiesis of indeterminate potential (CHIP) detection, risk stratification, and cardiovascular/malignancy risk prediction using genomic and clinical data.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'chip-clonal-hematopoiesis-agent'
+description: 'AI-powered clonal hematopoiesis of indeterminate potential (CHIP) detection, risk stratification, and cardiovascular/malignancy risk prediction using genomic and clinical data.'
+---
 
-keywords:
-  - chip-clonal-hematopoiesis-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # CHIP Clonal Hematopoiesis Agent
 

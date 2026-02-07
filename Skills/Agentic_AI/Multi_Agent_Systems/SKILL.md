@@ -1,22 +1,8 @@
----name: swarm-orchestrator
-description: Run Agent Swarms
-keywords:
-  - multi-agent
-  - swarm
-  - async
-  - orchestration
-  - research
-measurable_outcome: Successfully synthesizes findings from 3+ independent agent perspectives into a unified report within 60 seconds.
-license: MIT
-metadata:
-  author: Artificial Intelligence Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-  - library: asyncio
-allowed-tools:
-  - run_shell_command
----"
+---
+name: 'swarm-orchestrator'
+description: 'Run Agent Swarms'
+---
+
 
 # Swarm Orchestrator Skill
 

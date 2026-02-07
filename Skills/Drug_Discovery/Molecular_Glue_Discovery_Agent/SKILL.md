@@ -1,23 +1,8 @@
----name: molecular-glue-discovery-agent
-description: AI-powered molecular glue discovery for targeted protein degradation, enabling neo-substrate recruitment and undruggable target degradation through E3 ligase interface modulation.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'molecular-glue-discovery-agent'
+description: 'AI-powered molecular glue discovery for targeted protein degradation, enabling neo-substrate recruitment and undruggable target degradation through E3 ligase interface modulation.'
+---
 
-keywords:
-  - molecular-glue-discovery-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Molecular Glue Discovery Agent
 

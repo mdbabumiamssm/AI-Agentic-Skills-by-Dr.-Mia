@@ -1,23 +1,8 @@
----name: multimodal-radpath-fusion-agent
-description: AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data for comprehensive cancer diagnosis and treatment planning.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'multimodal-radpath-fusion-agent'
+description: 'AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data for comprehensive cancer diagnosis and treatment planning.'
+---
 
-keywords:
-  - multimodal-radpath-fusion-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Multimodal Radiology-Pathology Fusion Agent
 

@@ -1,23 +1,8 @@
----name: tpd-ternary-complex-agent
-description: AI-powered ternary complex prediction for targeted protein degradation, modeling POI-degrader-E3 ligase assemblies to optimize PROTAC and molecular glue efficacy.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'tpd-ternary-complex-agent'
+description: 'AI-powered ternary complex prediction for targeted protein degradation, modeling POI-degrader-E3 ligase assemblies to optimize PROTAC and molecular glue efficacy.'
+---
 
-keywords:
-  - tpd-ternary-complex-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # TPD Ternary Complex Agent
 

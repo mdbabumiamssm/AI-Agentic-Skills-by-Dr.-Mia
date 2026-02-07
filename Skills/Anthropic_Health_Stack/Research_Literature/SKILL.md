@@ -1,20 +1,8 @@
 ---
-name: research-literature
-description: Research Literature agent for healthcare workflows.
-keywords:
-  - research-literature
-  - anthropic
-  - healthcare
-measurable_outcome: Process Research Literature requests with <thinking> trace.
-license: MIT
-metadata:
-  author: Anthropic Health Stack
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
+name: 'research-literature'
+description: 'Research Literature agent for healthcare workflows.'
 ---
+
 
 # Research Literature
 

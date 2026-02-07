@@ -1,20 +1,8 @@
 ---
-name: regulatory-drafting
-description: Regulatory Drafting agent for healthcare workflows.
-keywords:
-  - regulatory-drafting
-  - anthropic
-  - healthcare
-measurable_outcome: Process Regulatory Drafting requests with <thinking> trace.
-license: MIT
-metadata:
-  author: Anthropic Health Stack
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
+name: 'regulatory-drafting'
+description: 'Regulatory Drafting agent for healthcare workflows.'
 ---
+
 
 # Regulatory Drafting
 

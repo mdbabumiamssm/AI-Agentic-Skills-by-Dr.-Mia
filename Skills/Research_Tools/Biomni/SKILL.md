@@ -1,23 +1,8 @@
----name: biomni-research-agent
-description: A general-purpose biomedical AI agent capable of executing complex research workflows using over 150 tools and databases.
-license: MIT
-metadata:
-  author: Stanford (Snap Lab)
-  source: "https://github.com/snap-stanford/Biomni"
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
-  - web_fetch
-  - python_repl
+---
+name: 'biomni-research-agent'
+description: 'A general-purpose biomedical AI agent capable of executing complex research workflows using over 150 tools and databases.'
+---
 
-keywords:
-  - biomni
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Biomni (General Biomedical Agent)
 

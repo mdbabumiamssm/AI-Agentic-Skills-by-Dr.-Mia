@@ -1,21 +1,8 @@
----name: antibody-design-agent
-description: An advanced agent for de novo antibody design and optimization using state-of-the-art protein language models (MAGE, RFdiffusion).
-license: MIT
-metadata:
-  author: VUMC / UW Baker Lab
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-  - hardware: GPU required (A100/H100)
-allowed-tools:
-  - run_shell_command
+---
+name: 'antibody-design-agent'
+description: 'An advanced agent for de novo antibody design and optimization using state-of-the-art protein language models (MAGE, RFdiffusion).'
+---
 
-keywords:
-  - antibody-design
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Antibody Design Agent
 

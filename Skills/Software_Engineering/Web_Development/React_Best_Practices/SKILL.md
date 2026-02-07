@@ -1,24 +1,8 @@
----name: react-best-practices
-description: A comprehensive guide and rule set for writing clean, performant, and maintainable React code.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  category: Software_Engineering
-compatibility:
-  - system: React 18+
-  - system: TypeScript 5+
-allowed-tools:
-  - read_file
-  - replace
-  - write_file
+---
+name: 'react-best-practices'
+description: 'A comprehensive guide and rule set for writing clean, performant, and maintainable React code.'
+---
 
-keywords:
-  - react-best-practices
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # React Best Practices
 

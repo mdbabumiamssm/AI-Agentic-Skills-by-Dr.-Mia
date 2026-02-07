@@ -1,21 +1,8 @@
----name: protein-structure-prediction
-description: Predicts 3D protein structures from amino acid sequences using ESMFold or AlphaFold3 (mock).
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'protein-structure-prediction'
+description: 'Predicts 3D protein structures from amino acid sequences using ESMFold or AlphaFold3 (mock).'
+---
 
-keywords:
-  - protein-structure
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Protein Structure Prediction (ESMFold/AF3)
 

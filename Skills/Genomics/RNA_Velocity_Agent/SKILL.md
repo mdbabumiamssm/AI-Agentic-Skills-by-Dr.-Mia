@@ -1,23 +1,8 @@
----name: rna-velocity-agent
-description: AI-powered RNA velocity analysis for predicting cellular state transitions, differentiation trajectories, and dynamic gene regulation from single-cell RNA sequencing data.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-19"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'rna-velocity-agent'
+description: 'AI-powered RNA velocity analysis for predicting cellular state transitions, differentiation trajectories, and dynamic gene regulation from single-cell RNA sequencing data.'
+---
 
-keywords:
-  - rna-velocity-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # RNA Velocity Agent
 

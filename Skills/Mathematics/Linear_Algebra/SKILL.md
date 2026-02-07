@@ -1,21 +1,8 @@
 ---
-name: tensor-operations
-description: Tensor Operations
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
-  - read_file
-keywords:
-  - linear-algebra
-  - attention
-  - transformers
-measurable_outcome: Compute Scaled Dot Product Attention with correct shapes (B, S, D) and weights for 100% of valid inputs.
+name: 'tensor-operations'
+description: 'Tensor Operations'
 ---
+
 
 # Tensor Operations
 

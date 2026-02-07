@@ -1,12 +1,8 @@
----name: content-research-writer
-description: Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.
+---
+name: 'content-research-writer'
+description: 'Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.'
+---
 
-keywords:
-  - content-research-writer
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Content Research Writer
 

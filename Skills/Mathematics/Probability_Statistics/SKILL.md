@@ -1,21 +1,8 @@
----name: bayesian-optimizer
-description: Bayesian Optimize
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'bayesian-optimizer'
+description: 'Bayesian Optimize'
+---
 
-keywords:
-  - probability-statistics
-  - automation
-  - biomedical
-measurable_outcome: Converge to within 5% of the optimal parameter set within 10 iterations.
----"
 
 # Bayesian Optimization (Self-Driving Lab)
 

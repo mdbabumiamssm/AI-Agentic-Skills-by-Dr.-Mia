@@ -1,21 +1,8 @@
----name: molecule-evolution-agent
-description: Evolve Molecules
-keywords:
-  - drug-discovery
-  - de-novo-design
-  - smiles
-  - medicinal-chemistry
-  - evolution
-measurable_outcome: Generates a molecule candidate with an improved docking score after 3 generations of evolution.
-license: MIT
-metadata:
-  author: Artificial Intelligence Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
----"
+---
+name: 'molecule-evolution-agent'
+description: 'Evolve Molecules'
+---
+
 
 # Molecule Evolution Agent
 

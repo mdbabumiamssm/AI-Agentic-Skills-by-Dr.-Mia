@@ -1,20 +1,8 @@
----name: drug-interaction-checker
-description: Checks for potential drug-drug interactions (DDIs) between a list of medications.
-license: MIT
-metadata:
-  author: BioKernel Team
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
+---
+name: 'drug-interaction-checker'
+description: 'Checks for potential drug-drug interactions (DDIs) between a list of medications.'
+---
 
-keywords:
-  - drug-interaction
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Drug-Drug Interaction (DDI) Checker
 
