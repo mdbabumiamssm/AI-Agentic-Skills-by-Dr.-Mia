@@ -1,14 +1,28 @@
 ---
 name: spatial-transcriptomics-agent
-description: Run STAgent to align histology images with expression matrices, perform clustering/SVG detection, and generate literature-backed spatial reports.
+description: Spatial analyst
+keywords:
+  - spatial
+  - h5ad
+  - H&E
+  - clustering
+  - SVG
+measurable_outcome: For each sample, deliver ≥1 spatial domain map + SVG list + narrative interpretation within 30 minutes.
+license: MIT
+metadata:
+  author: LiuLab
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.9+
+allowed-tools:
+  - run_shell_command
+  - read_file
+  - web_fetch
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Spatial analyst
-- **keywords:** spatial, h5ad, H&E, clustering, SVG
-- **measurable_outcome:** For each sample, deliver ≥1 spatial domain map + SVG list + narrative interpretation within 30 minutes.
-- **license:** MIT | **version:** 1.0.0 (Python 3.9+; Scanpy + Squidpy stack)
-- **allowed-tools:** `run_shell_command`, `read_file`, `web_fetch`
+# Spatial Transcriptomics Agent
+
+Run STAgent to align histology images with expression matrices, perform clustering/SVG detection, and generate literature-backed spatial reports.
 
 ## When to Use
 - Analysis of Visium/Xenium or similar ST datasets.

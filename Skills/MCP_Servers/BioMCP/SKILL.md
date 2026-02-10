@@ -1,14 +1,26 @@
 ---
 name: biomcp-server
-description: Deploy and operate the BioMCP server so MCP-compatible clients (Claude Desktop, LobeChat, etc.) can query biomedical databases via a single standardized interface.
+description: MCP bio bridge
+keywords:
+  - MCP
+  - PubMed
+  - ClinicalTrials
+  - server
+  - uv
+measurable_outcome: Stand up a working BioMCP endpoint (pip or uv) and return ≥1 PubMed + ≥1 ClinicalTrials.gov response to the client within 10 minutes.
+license: MIT
+metadata:
+  author: BioMCP Team
+  version: "1.0.0"
+compatibility:
+  - system: MCP-compliant clients
+allowed-tools:
+  - web_fetch
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** MCP bio bridge
-- **keywords:** MCP, PubMed, ClinicalTrials, server, uv
-- **measurable_outcome:** Stand up a working BioMCP endpoint (pip or uv) and return ≥1 PubMed + ≥1 ClinicalTrials.gov response to the client within 10 minutes.
-- **license:** MIT | **version:** 1.0.0 (MCP-compliant clients)
-- **allowed-tools:** `web_fetch` (per upstream spec)
+# BioMCP Server
+
+Deploy and operate the BioMCP server so MCP-compatible clients (Claude Desktop, LobeChat, etc.) can query biomedical databases via a single standardized interface.
 
 ## When to Use
 - Unified literature search (PubMed/PMC) inside MCP clients.

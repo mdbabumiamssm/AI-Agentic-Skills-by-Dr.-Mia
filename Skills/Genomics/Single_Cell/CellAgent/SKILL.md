@@ -1,14 +1,27 @@
 ---
 name: cellagent-annotation
-description: Use CellTypeAgent to interpret marker genes, annotate scRNA-seq clusters, and coordinate multi-agent workflows for downstream analysis.
+description: Cell tagger
+keywords:
+  - single-cell
+  - markers
+  - annotation
+  - confidence
+  - tissue
+measurable_outcome: Label every provided cluster with a cell type + confidence + marker evidence (or "ambiguous") within 15 minutes per dataset.
+license: MIT
+metadata:
+  author: CellAgent Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.9+
+allowed-tools:
+  - run_shell_command
+  - read_file
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Cell tagger
-- **keywords:** single-cell, markers, annotation, confidence, tissue
-- **measurable_outcome:** Label every provided cluster with a cell type + confidence + marker evidence (or "ambiguous") within 15 minutes per dataset.
-- **license:** MIT | **version:** 1.0.0 (Python 3.9+)
-- **allowed-tools:** `run_shell_command`, `read_file`
+# CellAgent Annotation
+
+Use CellTypeAgent to interpret marker genes, annotate scRNA-seq clusters, and coordinate multi-agent workflows for downstream analysis.
 
 ## When to Use
 - Automated annotation of scRNA-seq datasets without manual curation.

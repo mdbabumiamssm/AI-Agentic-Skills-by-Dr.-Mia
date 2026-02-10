@@ -1,5 +1,6 @@
----name: biomni-research-agent
-description: A general-purpose biomedical AI agent capable of executing complex research workflows using over 150 tools and databases.
+---
+name: biomni-research-agent
+description: Bio-Research Generalist
 license: MIT
 metadata:
   author: Stanford (Snap Lab)
@@ -11,15 +12,18 @@ allowed-tools:
   - run_shell_command
   - web_fetch
   - python_repl
-
 keywords:
   - biomni
   - automation
   - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
+  - reasoning
+  - tools
+measurable_outcome: Execute complex research tasks with >95% success rate and validated tool usage.
+---
 
 # Biomni (General Biomedical Agent)
+
+A general-purpose biomedical AI agent capable of executing complex research workflows using over 150 tools and databases.
 
 Biomni is a "General-Purpose" biomedical agent. Unlike specialized skills (e.g., just for folding proteins), Biomni acts as a high-level orchestrator that can break down complex open-ended research questions into solvable sub-tasks using a vast library of tools.
 

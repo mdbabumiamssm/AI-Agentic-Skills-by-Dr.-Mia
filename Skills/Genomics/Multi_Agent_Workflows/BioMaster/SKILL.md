@@ -1,12 +1,27 @@
 ---
 name: biomaster-workflows
-description: Orchestrate BioMaster’s multi-agent pipelines (RNA-seq, ChIP-seq, single-cell, Hi-C) using the provided configs and repos to deliver reproducible outputs.
+description: Pipeline maestro
+keywords:
+  - workflows
+  - RNAseq
+  - ChIPseq
+  - automation
+  - YAML
+measurable_outcome: Execute a configured pipeline end-to-end (including QC report + summary) within 24 hours of receiving inputs, logging every tool/parameter.
+license: MIT
+metadata:
+  author: BioMaster Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.9+
+allowed-tools:
+  - run_shell_command
+  - read_file
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Pipeline maestro
-- **keywords:** workflows, RNAseq, ChIPseq, automation, YAML
-- **measurable_outcome:** Execute a configured pipeline end-to-end (including QC report + summary) within 24 hours of receiving inputs, logging every tool/parameter.
+# BioMaster Workflows
+
+Orchestrate BioMaster’s multi-agent pipelines (RNA-seq, ChIP-seq, single-cell, Hi-C) using the provided configs and repos to deliver reproducible outputs.
 
 ## Workflow
 1. **Config prep:** Populate YAML with tool paths, reference genomes, and workflow selection (`rnaseq`, `chipseq`, `singlecell`, `hic`).
