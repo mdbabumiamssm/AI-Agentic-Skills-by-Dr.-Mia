@@ -29,8 +29,17 @@ Unlike standard codebases, this project transforms static scripts into **Agentic
 ## 👤 Author & Maintainer
 
 **MD BABU MIA, PhD**  
-*Assistant Professor of Hematology & Medical Oncology | Mount Sinai*  
-Specializing in Hemato-Oncology, Computational Biology, and Machine Learning.
+*Assistant Professor of Hematology & Medical Oncology, Machine Learning -AI | Mount Sinai*  
+Mount Sinai Tisch Cancer Institute
+Icahn School of Medicine at Mount Sinai
+Mount Sinai Hospital
+One Gustave L. Levy Place
+New York, NY 10029
+Desk phone:(212) 241-2764 (x42764)
+Mobile phone:(332) 256-3038
+Email: md.babu.mia@mssm.edu
+Specializing in Hemato-Oncology,and Machine Learning-LLM-AI.
+ 
 
 ---
 
