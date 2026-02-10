@@ -1,22 +1,8 @@
----name: regulatory-drafter
-description: Automates the drafting of regulatory documents (e.g., FDA CTD sections) with citation management and audit trails.
-keywords:
-  - regulatory-affairs
-  - fda
-  - ctd
-  - drafting
-  - compliance
-measurable_outcome: Produces a first-draft CTD section with >90% citation accuracy and reduced drafting time by 50%.
-license: MIT
-metadata:
-  author: Artificial Intelligence Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
-  - read_file
----"
+---
+name: 'regulatory-drafter'
+description: 'Automates the drafting of regulatory documents (e.g., FDA CTD sections) with citation management and audit trails.'
+---
+
 
 # Regulatory Drafter Skill
 

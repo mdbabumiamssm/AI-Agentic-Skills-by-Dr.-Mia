@@ -1,23 +1,8 @@
----name: cancer-metabolism-agent
-description: AI-powered analysis of cancer metabolic reprogramming including Warburg effect, glutamine addiction, lipid metabolism, and metabolic vulnerabilities for therapeutic targeting.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-19"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'cancer-metabolism-agent'
+description: 'AI-powered analysis of cancer metabolic reprogramming including Warburg effect, glutamine addiction, lipid metabolism, and metabolic vulnerabilities for therapeutic targeting.'
+---
 
-keywords:
-  - cancer-metabolism-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Cancer Metabolism Agent
 

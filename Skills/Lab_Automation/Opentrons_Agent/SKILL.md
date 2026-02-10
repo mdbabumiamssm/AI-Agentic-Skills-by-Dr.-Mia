@@ -1,21 +1,8 @@
----name: opentrons-protocol-agent
-description: Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.
-license: MIT
-metadata:
-  author: MD BABU MIA
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'opentrons-protocol-agent'
+description: 'Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.'
+---
 
-keywords:
-  - opentrons-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Opentrons Protocol Agent
 

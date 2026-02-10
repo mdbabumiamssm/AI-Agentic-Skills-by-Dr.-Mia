@@ -1,26 +1,8 @@
----name: universal-single-cell-annotator
-description: Annotate scRNA-seq
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  category: Genomics
-compatibility:
-  - system: Python 3.9+
-  - library: scanpy
-  - library: celltypist (optional)
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'universal-single-cell-annotator'
+description: 'Annotate scRNA-seq'
+---
 
-keywords:
-  - scRNA-seq
-  - cell-typing
-  - scanpy
-  - celltypist
-  - llm-annotation
-measurable_outcome: Annotate >95% of cells with high confidence scores (>0.8) within 5 minutes for datasets <50k cells.
----"
 
 # Universal Single-Cell Annotator
 

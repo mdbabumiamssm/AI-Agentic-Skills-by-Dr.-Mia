@@ -1,23 +1,8 @@
----name: cnv-caller-agent
-description: AI-enhanced copy number variation calling and analysis from sequencing data for cancer genomics, constitutional CNV detection, and chromosomal aberration characterization.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-19"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'cnv-caller-agent'
+description: 'AI-enhanced copy number variation calling and analysis from sequencing data for cancer genomics, constitutional CNV detection, and chromosomal aberration characterization.'
+---
 
-keywords:
-  - cnv-caller-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # CNV Caller Agent
 

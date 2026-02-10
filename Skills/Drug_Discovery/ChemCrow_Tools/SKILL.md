@@ -1,22 +1,8 @@
----name: chemcrow-drug-discovery
-description: An LLM chemistry agent with expert-designed tools for organic synthesis, drug discovery, and materials design.
-license: MIT
-metadata:
-  author: EPFL / Rochester / ChemCrow Team
-  source: "https://github.com/ur-whitelab/chemcrow-public"
-  version: "2.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
-  - python_repl
+---
+name: 'chemcrow-drug-discovery'
+description: 'An LLM chemistry agent with expert-designed tools for organic synthesis, drug discovery, and materials design.'
+---
 
-keywords:
-  - chemcrow-tools
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # ChemCrow
 

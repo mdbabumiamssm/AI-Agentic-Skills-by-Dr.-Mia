@@ -1,23 +1,8 @@
----name: autonomous-oncology-agent
-description: A multimodal precision oncology agent leveraging GPT-4 and vision transformers for cancer diagnosis, biomarker detection, and treatment planning.
-license: MIT
-metadata:
-  author: Nature Cancer 2025
-  source: "https://www.nature.com/articles/s43018-025-00991-6"
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-  - models: GPT-4o, Vision Transformers
-allowed-tools:
-  - run_shell_command
-  - web_fetch
+---
+name: 'autonomous-oncology-agent'
+description: 'A multimodal precision oncology agent leveraging GPT-4 and vision transformers for cancer diagnosis, biomarker detection, and treatment planning.'
+---
 
-keywords:
-  - autonomous-oncology-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Autonomous Clinical AI Agent (Oncology)
 

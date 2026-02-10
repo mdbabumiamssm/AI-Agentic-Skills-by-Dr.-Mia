@@ -1,23 +1,8 @@
----name: time-resolved-cryoem-agent
-description: AI-powered time-resolved cryo-EM analysis for capturing protein dynamics, drug-binding kinetics, and conformational transitions for dynamics-based drug discovery.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+---
+name: 'time-resolved-cryoem-agent'
+description: 'AI-powered time-resolved cryo-EM analysis for capturing protein dynamics, drug-binding kinetics, and conformational transitions for dynamics-based drug discovery.'
+---
 
-keywords:
-  - time-resolved-cryoem-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Time-Resolved Cryo-EM Agent
 

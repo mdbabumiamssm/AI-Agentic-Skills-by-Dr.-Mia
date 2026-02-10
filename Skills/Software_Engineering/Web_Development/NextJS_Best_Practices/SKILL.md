@@ -1,24 +1,8 @@
----name: nextjs-best-practices
-description: Guidelines for building scalable, SEO-friendly applications with Next.js (App Router).
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  category: Software_Engineering
-compatibility:
-  - system: Next.js 14+
-  - system: React 18+
-allowed-tools:
-  - read_file
-  - replace
-  - write_file
+---
+name: 'nextjs-best-practices'
+description: 'Guidelines for building scalable, SEO-friendly applications with Next.js (App Router).'
+---
 
-keywords:
-  - nextjs-best-practices
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Next.js Best Practices
 

@@ -1,21 +1,8 @@
----name: multimodal-medical-imaging
-description: Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
+---
+name: 'multimodal-medical-imaging'
+description: 'Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.'
+---
 
-keywords:
-  - multimodal-analysis
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Multimodal Medical Imaging Analysis
 

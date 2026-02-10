@@ -1,22 +1,8 @@
----name: clinical-nlp-extractor
-description: Extracts medical entities (Diseases, Medications, Procedures) from unstructured clinical text using regex and simple rules (or LLM wrappers).
-keywords:
-  - nlp
-  - ner
-  - clinical-notes
-  - entity-extraction
-  - fhir
-measurable_outcome: Extracts key medical entities (Problems, Meds) with >80% recall on standard synthesized clinical notes.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
----"
+---
+name: 'clinical-nlp-extractor'
+description: 'Extracts medical entities (Diseases, Medications, Procedures) from unstructured clinical text using regex and simple rules (or LLM wrappers).'
+---
+
 
 # Clinical NLP Entity Extractor
 

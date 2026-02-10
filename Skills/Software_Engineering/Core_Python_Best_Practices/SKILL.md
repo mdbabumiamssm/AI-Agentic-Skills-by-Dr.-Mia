@@ -1,23 +1,8 @@
----name: core-python-best-practices
-description: Essential guidelines for writing modern, type-safe, and idiomatic Python 3 code.
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  category: Software_Engineering
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - read_file
-  - replace
-  - write_file
+---
+name: 'core-python-best-practices'
+description: 'Essential guidelines for writing modern, type-safe, and idiomatic Python 3 code.'
+---
 
-keywords:
-  - core-python-best-practices
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Core Python Best Practices
 

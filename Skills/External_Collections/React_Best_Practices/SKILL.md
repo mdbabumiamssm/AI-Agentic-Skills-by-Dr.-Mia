@@ -1,24 +1,8 @@
----name: react-performance-optimizer
-description: Analyzes React/Next.js code for performance bottlenecks, focusing on waterfalls, bundle size, and rendering efficiency.
-license: MIT
-metadata:
-  author: Vercel Labs (Synthesized)
-  version: "1.0.0"
-compatibility:
-  - product: VS Code
-  - product: Claude Desktop
-  - framework: React 18+
-  - framework: Next.js 13+
-allowed-tools:
-  - read_file
-  - search_file_content
+---
+name: 'react-performance-optimizer'
+description: 'Analyzes React/Next.js code for performance bottlenecks, focusing on waterfalls, bundle size, and rendering efficiency.'
+---
 
-keywords:
-  - react-best-practices
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # React Performance Optimization Skill
 

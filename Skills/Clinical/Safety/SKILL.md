@@ -1,22 +1,8 @@
 ---
-name: safety-monitor
-description: Safety Monitor
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
-  - read_file
-keywords:
-  - safety
-  - compliance
-  - audit
-  - toxicology
-measurable_outcome: Flag 100% of outputs containing known toxins, PHI, or medical misinformation as 'flagged' or 'rejected'.
+name: 'safety-monitor'
+description: 'Safety Monitor'
 ---
+
 
 # Safety Monitor Agent
 

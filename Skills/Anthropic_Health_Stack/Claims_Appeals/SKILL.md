@@ -1,20 +1,8 @@
 ---
-name: claims-appeals
-description: Claims Appeals agent for healthcare workflows.
-keywords:
-  - claims-appeals
-  - anthropic
-  - healthcare
-measurable_outcome: Process Claims Appeals requests with <thinking> trace.
-license: MIT
-metadata:
-  author: Anthropic Health Stack
-  version: "1.0.0"
-compatibility:
-  - system: Python 3.9+
-allowed-tools:
-  - run_shell_command
+name: 'claims-appeals'
+description: 'Claims Appeals agent for healthcare workflows.'
 ---
+
 
 # Claims Appeals
 

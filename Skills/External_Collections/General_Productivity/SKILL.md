@@ -1,23 +1,8 @@
----name: code-reviewer
-description: Provides comprehensive code review feedback based on best practices, style guides, and potential bug detection. Use when the user requests a code review, asks for improvements to code, or needs to ensure code quality.
-license: MIT
-metadata:
-  author: Agent Skills Community
-  version: "1.1.0"
-compatibility:
-  - product: VS Code
-  - product: Claude Desktop
-  - system: Python 3.9+
-allowed-tools:
-  - read_file
-  - run_shell_command
+---
+name: 'code-reviewer'
+description: 'Provides comprehensive code review feedback based on best practices, style guides, and potential bug detection. Use when the user requests a code review, asks for improvements to code, or needs to ensure code quality.'
+---
 
-keywords:
-  - general-productivity
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # Code Review Skill
 

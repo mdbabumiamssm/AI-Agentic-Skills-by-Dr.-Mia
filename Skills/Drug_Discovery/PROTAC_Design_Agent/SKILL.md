@@ -1,24 +1,8 @@
 ---
-name: protac-design-agent
-description: Targeted protein degrader design
-license: MIT
-metadata:
-  author: AI Group
-  version: "1.0.0"
-  created: "2026-01-20"
-compatibility:
-  - system: Python 3.10+
-allowed-tools:
-  - run_shell_command
-  - read_file
-  - write_file
+name: 'protac-design-agent'
+description: 'AI-powered PROTAC (Proteolysis Targeting Chimera) design for targeted protein degradation, integrating ternary complex prediction, linker optimization, and ADMET modeling.'
+---
 
-keywords:
-  - protac-design-agent
-  - automation
-  - biomedical
-measurable_outcome: execute task with >95% success rate.
----"
 
 # PROTAC Design Agent
 
