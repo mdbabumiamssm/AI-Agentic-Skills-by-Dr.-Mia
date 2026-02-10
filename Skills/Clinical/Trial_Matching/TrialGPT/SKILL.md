@@ -1,12 +1,26 @@
 ---
 name: trialgpt-matching
-description: Run the locally checked-out TrialGPT pipeline to retrieve, rank, and explain candidate trials for a patient before deeper eligibility review.
+description: Trial shortlist
+keywords:
+  - retrieval
+  - ranking
+  - ClinicalTrials
+  - patient-profile
+measurable_outcome: Produce ≥5 ranked trials (when available) with rationale + missing-data notes within 3 minutes of receiving a patient query.
+license: MIT
+metadata:
+  author: TrialGPT Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.9+
+allowed-tools:
+  - run_shell_command
+  - read_file
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Trial shortlist
-- **keywords:** retrieval, ranking, ClinicalTrials, patient-profile
-- **measurable_outcome:** Produce ≥5 ranked trials (when available) with rationale + missing-data notes within 3 minutes of receiving a patient query.
+# TrialGPT Matching
+
+Run the locally checked-out TrialGPT pipeline to retrieve, rank, and explain candidate trials for a patient before deeper eligibility review.
 
 ## Inputs
 - Patient summary (structured JSON or free text) with condition keywords.

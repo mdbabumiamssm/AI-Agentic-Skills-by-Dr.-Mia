@@ -1,12 +1,28 @@
 ---
 name: biomedical-data-analysis
-description: Run the cross-language data analysis workflows (Python, R, SQL, Tableau/Power BI) described in this module to clean, analyze, and visualize biomedical datasets end-to-end.
+description: Omics data forge
+keywords:
+  - pandas
+  - R-tidyverse
+  - SQL
+  - visualization
+  - reproducible
+measurable_outcome: Deliver a cleaned dataset + statistical summary + at least one visualization or dashboard spec for each request within 1 working session (≤30 minutes).
+license: MIT
+metadata:
+  author: BioSkills Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.9+ / R 4.0+
+allowed-tools:
+  - run_shell_command
+  - read_file
+  - python_repl
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Omics data forge
-- **keywords:** pandas, R-tidyverse, SQL, visualization, reproducible
-- **measurable_outcome:** Deliver a cleaned dataset + statistical summary + at least one visualization or dashboard spec for each request within 1 working session (≤30 minutes).
+# Biomedical Data Analysis
+
+Run the cross-language data analysis workflows (Python, R, SQL, Tableau/Power BI) described in this module to clean, analyze, and visualize biomedical datasets end-to-end.
 
 ## Workflow
 1. **Scope request:** Identify analysis_type (`exploratory`, `statistical`, `predictive`, `visualization`) and required language/tooling.
