@@ -1,15 +1,27 @@
 ---
 name: crispr-guide-design
-description: Automate sgRNA selection, scoring, off-target evaluation, and oligo generation for CRISPR experiments using the documented workflow.
+description: Guide foundry
+keywords:
+  - CRISPR
+  - sgRNA
+  - Doench
+  - off-target
+  - oligos
+measurable_outcome: Return the requested number of guides (default ≥4) with efficiency + specificity scores, coordinates, and cloning oligos within 10 minutes per gene.
+license: MIT
+metadata:
+  author: CRISPR-GPT Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.10+
+allowed-tools:
+  - run_shell_command
+  - read_file
 ---
 
-## At-a-Glance
-- **description (10-20 chars):** Guide foundry
-- **keywords:** CRISPR, sgRNA, Doench, off-target, oligos
-- **measurable_outcome:** Return the requested number of guides (default ≥4) with efficiency + specificity scores, coordinates, and cloning oligos within 10 minutes per gene.
-- **license:** MIT
-- **version:** 1.0.0 (Python 3.10+)
-- **allowed-tools:** `run_shell_command`, `read_file`
+# CRISPR Design Agent
+
+Automate sgRNA selection, scoring, off-target evaluation, and oligo generation for CRISPR experiments using the documented workflow.
 
 ## When to Use
 - Designing CRISPR knockout/knock-in experiments that need validated guides.
