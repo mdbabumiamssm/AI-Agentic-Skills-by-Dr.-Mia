@@ -1,6 +1,13 @@
 ---
 name: 'liquid-biopsy-analytics-agent'
-description: 'AI-powered comprehensive liquid biopsy analysis integrating ctDNA, CTCs, exosomes, and cfRNA for cancer detection, monitoring, and treatment guidance.'
+description: 'Comprehensive analysis of liquid biopsy data (ctDNA, CTCs) for cancer detection, MRD monitoring, and response tracking.'
+keywords:
+  - liquid-biopsy
+  - ctdna
+  - mrd
+  - cancer-detection
+  - treatment-response
+measurable_outcome: 'Detects circulating tumor DNA with 0.01% sensitivity and accurately predicts treatment response in longitudinal samples.'
 ---
 
 

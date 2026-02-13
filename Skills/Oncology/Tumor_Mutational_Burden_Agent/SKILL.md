@@ -1,6 +1,13 @@
 ---
 name: 'tumor-mutational-burden-agent'
-description: 'AI-powered tumor mutational burden (TMB) analysis for immunotherapy response prediction, harmonization across platforms, and integration with other biomarkers.'
+description: 'Calculates and harmonizes Tumor Mutational Burden (TMB) across platforms to predict immunotherapy response.'
+keywords:
+  - tmb
+  - immunotherapy
+  - biomarker
+  - harmonization
+  - oncology
+measurable_outcome: 'Harmonizes TMB scores across 5+ assay platforms with <5% variance from WES gold standard.'
 ---
 
 

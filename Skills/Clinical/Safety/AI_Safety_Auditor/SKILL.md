@@ -1,0 +1,54 @@
+---
+name: ai-safety-auditor
+description: Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
+keywords:
+  - ai-safety
+  - compliance
+  - bias-detection
+  - hallucination-check
+  - clinical-validation
+measurable_outcome: Identifies 100% of critical safety violations and potential PHI leakage in generated clinical notes.
+license: MIT
+metadata:
+  author: Biomedical AI Team
+  version: "1.0.0"
+compatibility:
+  - system: Python 3.10+
+allowed-tools:
+  - run_shell_command
+  - read_file
+---
+
+# AI Safety Auditor
+
+The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automated guardrail system. It intercepts outputs from other clinical agents to ensure they meet medical safety standards, do not contain Protected Health Information (PHI) where inappropriate, and are free from harmful hallucinations.
+
+## When to Use This Skill
+
+*   As a final check before any clinical agent output is shown to a user.
+*   To audit historical logs of agent interactions for compliance.
+*   When detecting potential bias in diagnosis or treatment recommendations.
+*   To verify that citations in a generated report actually exist (hallucination check).
+
+## Core Capabilities
+
+1.  **PHI Scrubbing Verification**: Ensures no identifiers leaked into non-secure outputs.
+2.  **Hallucination Detection**: Cross-references generated claims against trusted knowledge bases.
+3.  **Bias Scanning**: Checks for demographic or socioeconomic bias in clinical reasoning.
+4.  **Contraindication Check**: Verifies treatment recommendations against patient allergies/conditions.
+
+## Workflow
+
+1.  **Intercept**: Receive candidate response from a Clinical Agent.
+2.  **Scan**: Run parallel safety checks (PHI, Bias, Factuality).
+3.  **Verdict**: Pass, Flag for Review, or Reject.
+4.  **Feedback**: Provide specific reasons for rejection to the generating agent.
+
+## Example Usage
+
+**User**: "Audit this generated discharge summary for safety."
+
+**Agent Action**:
+```bash
+python3 Skills/Clinical/Safety/AI_Safety_Auditor/audit_output.py --input discharge_summary.txt --checks "all"
+```
