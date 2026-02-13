@@ -1,6 +1,13 @@
 ---
 name: 'swarm-orchestrator'
 description: 'Run Agent Swarms'
+keywords:
+  - swarm
+  - orchestration
+  - multi-agent
+  - parallel-execution
+  - routing
+measurable_outcome: Successfully coordinates 3+ specialized agents to resolve complex queries with 100% completion rate.
 ---
 
 
