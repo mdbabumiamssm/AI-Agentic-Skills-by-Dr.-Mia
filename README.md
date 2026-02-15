@@ -1,3 +1,10 @@
+# Universal AI Agentic Skills & Bio-OS (2026)
+
+![Status](https://img.shields.io/badge/Status-Active-green)
+![Architecture](https://img.shields.io/badge/Architecture-Universal%20Agentic%20OS-blueviolet)
+![Domain](https://img.shields.io/badge/Domain-Universal%20%7C%20Finance%20%7C%20Legal%20%7C%20Coding-orange)
+![Tech](https://img.shields.io/badge/Tech-Gemini%202.0%20%7C%20OpenAI%20o3%20%7C%20Claude%203.7%20%7C%20MCP-blue)
+
 <!--
 # COPYRIGHT NOTICE
 # This file is part of the "Universal Biomedical Skills" project.
@@ -10,35 +17,15 @@
 # Provenance: Authenticated by MD BABU MIA
 -->
 
-# Universal AI Agentic Skills & Bio-OS (2026)
-
-![Status](https://img.shields.io/badge/Status-Active-green)
-![Architecture](https://img.shields.io/badge/Architecture-Universal%20Agentic%20OS-blueviolet)
-![Domain](https://img.shields.io/badge/Domain-Universal%20%7C%20Finance%20%7C%20Coding%20%7C%20Science-orange)
-![Tech](https://img.shields.io/badge/Tech-Gemini%202.0%20%7C%20OpenAI%20o3%20%7C%20Claude%203.7%20%7C%20MCP-blue)
-
-> **⚠️ IMPORTANT DISCLAIMER & COPYRIGHT NOTICE**
-> 
-> This repository, its architecture, agent designs, and specific implementations are the intellectual property of **MD BABU MIA, PhD**.
-> 
-> While open-source components are licensed under MIT, the unique curation, "Biomedical OS" architecture, and agentic workflows are proprietary to the author. 
-> 
-> **If you fork, clone, or copy this repository for public use, you MUST:**
-> 1.  Retain this copyright notice.
-> 2.  Explicitly credit **MD BABU MIA, PhD** as the original author.
-> 3.  Link back to the original repository. 
-> 
-> *Plagiarism or uncredited redistribution is strictly prohibited.*
-
 ---
 
 ## 🚀 The Universal Operating System for AI Agents
 
 **One Platform. Infinite Agents. Zero Limits.**
 
-This is not just a collection of scripts; it is a **Universal Agentic Operating System (OS)** designed to empower professionals across every high-demand industry. By abstracting the "brain" (LLM) from the "body" (Tools), we allow you to deploy state-of-the-art autonomous agents for **Coding, Finance, Research, and Science** instantly.
+This is not just a collection of scripts; it is a **Universal Agentic Operating System (OS)** designed to empower professionals across every high-demand industry. By abstracting the "brain" (LLM) from the "body" (Tools), we allow you to deploy state-of-the-art autonomous agents for **Coding, Finance, Legal, Research, and Science** instantly.
 
-Whether you need to refactor a 100k-line codebase, predict market volatility, simulate quantum docking, or design a clinical trial, this platform has a specialized agent ready for you.
+Whether you need to refactor a 100k-line codebase, audit regulatory compliance, simulate quantum docking, or design a clinical trial, this platform has a specialized agent ready for you.
 
 ---
 
@@ -46,28 +33,32 @@ Whether you need to refactor a 100k-line codebase, predict market volatility, si
 
 We have organized 600+ skills into specialized domains targeting the most critical needs of the modern workforce.
 
-### 💻 For Software Engineers & Architects
-*   **Automated Refactoring:** Deploy `Codebase Investigator` to map legacy repositories, identify debt, and generate modernization plans automatically.
-*   **Spec-Driven Development:** Agents that convert high-level PRDs (Product Requirement Docs) into executable boilerplate code.
-*   **DevOps & CI/CD:** Autonomous agents that monitor pipelines, auto-fix linting errors, and generate infrastructure-as-code (Terraform/Pulumi).
-*   **Key Skills:** `Software_Engineering`, `Computer_Science`, `Workflow_Management`.
-
 ### 💰 For Finance & Quant Professionals
-*   **Market Swarms:** Multi-agent systems that aggregate news, sentiment, and technical indicators to signal market shifts in real-time.
+*   **FinRobot:** An autonomous finance agent for market analysis, report generation, and portfolio optimization.
+*   **Algorithmic Trading:** Agents that backtest, risk-manage, and execute trading strategies.
 *   **Automated Compliance:** Agents that audit transactions against regulatory frameworks (SOX, GDPR) and generate risk reports.
-*   **Portfolio Management:** `Finance_Agent_Team` capable of rebalancing portfolios and simulating stress tests based on macro-economic scenarios.
-*   **Key Skills:** `Data_Science`, `Mathematics`, `External_Collections/ai_finance_agent`.
+*   **Key Skills:** `Finance/FinRobot_Agent`, `Finance/Algorithmic_Trading`, `Legal/Compliance_Agent`.
+
+### ⚖️ For Legal & Compliance Teams
+*   **Contract Review:** Autonomous agents that extract clauses, flag risks, and redline contracts.
+*   **Regulatory Monitoring:** Agents that track SEC/FDA updates and map them to internal policies.
+*   **Key Skills:** `Legal/Contract_Review_Agent`, `Legal/Compliance_Agent`.
+
+### 💻 For Software Engineers & Architects
+*   **GitHub Agentic Workflows:** "Continuous AI" agents that triage issues, auto-fix linting errors, and review PRs.
+*   **Legacy Code Migration:** Agents specialized in refactoring COBOL/Java 8 to modern stacks with 100% test coverage.
+*   **Codebase Investigator:** Autonomous agents that map and analyze complex repositories.
+*   **Key Skills:** `Software_Engineering/GitHub_Agentic_Workflow`, `Software_Engineering/Legacy_Migration_Agent`.
 
 ### 🔬 For Scientists & Physicists
-*   **Quantum Biotech:** Bridge the gap between physics and biology with agents for molecular dynamics simulations and quantum docking.
-*   **Lab Automation:** "Self-Driving Lab" agents that design experiments, control robotic liquid handlers (Opentrons), and analyze results loops.
-*   **Mathematical Proofs:** Specialized agents for symbolic math, differential equations, and complex optimization problems.
-*   **Key Skills:** `Quantum_Biotech`, `Mathematics`, `Structural_Biology`, `Lab_Automation`.
+*   **Material Discovery:** Agents utilizing Graph Neural Networks (GNNs) to predict properties and discover new materials.
+*   **Lab Automation:** "Self-Driving Lab" agents that control robotic liquid handlers (Opentrons) and optimize experiments.
+*   **Quantum Biotech:** Bridge the gap between physics and biology with agents for molecular dynamics simulations.
+*   **Key Skills:** `Science/Material_Discovery_Agent`, `Science/Lab_Automation`, `Quantum_Biotech`.
 
 ### 🤖 For AI Researchers
 *   **Swarm Architecture:** Ready-to-use templates for "Plan-and-Solve," "ReAct," and "Map-Reduce" agent topologies.
-*   **Model Evaluation:** Automated benchmarking pipelines to test LLMs against domain-specific datasets (Medical, Coding, Math).
-*   **Prompt Optimization:** The `Meta-Prompter` module that uses AI to rewrite and optimize its own instructions for peak performance.
+*   **Model Evaluation:** Automated benchmarking pipelines to test LLMs against domain-specific datasets.
 *   **Key Skills:** `Agentic_AI`, `LLM_Research`, `Foundation_Models`.
 
 ### 🧬 For Biomedical Experts (The Core)
@@ -95,12 +86,14 @@ At the heart of this system is the **BioKernel**, a high-performance runtime env
 ```text
 Skills/
 ├── Agentic_AI/           # 🧠 The Brains: Swarms, Planners, Memory Systems
+├── Finance/              # 💰 The Markets: FinRobot, Algo Trading
+├── Legal/                # ⚖️ The Law: Contract Review, Compliance
+├── Software_Engineering/ # 🛠️ The Tools: GitHub Agents, Legacy Migration
+├── Science/              # 🧪 The Lab: Material Discovery, Automation
 ├── Computer_Science/     # 💻 The Engineering: Algos, Distributed Systems
 ├── Data_Science/         # 📊 The Analytics: Visualization, ETL Pipelines
-├── Finance_Agents/       # 💰 The Markets: Trading, Risk, Compliance (External)
 ├── Mathematics/          # 🧮 The Logic: Optimization, Linear Algebra
 ├── Quantum_Biotech/      # ⚛️ The Physics: Simulation, Docking
-├── Software_Engineering/ # 🛠️ The Tools: Refactoring, Testing, DevOps
 ├── Clinical/             # 🏥 The Hospital: EHR, Diagnosis, Trials
 ├── Genomics/             # 🧬 The Lab: Sequencing, CRISPR, Single-Cell
 └── Drug_Discovery/       # 💊 The Cure: Chemistry, Antibodies, Pharma
@@ -126,22 +119,22 @@ python3 platform/biokernel/server.py
 ### 3. Command Your Army
 Send natural language commands to the Universal Agent.
 
-**"Analyze this repository and refactor the auth module:"**
+**"Analyze this legacy Java codebase and plan a migration to Kotlin:"**
 ```bash
 curl -X POST "http://localhost:8000/v1/agent/run" \
-     -d '{"query": "Analyze ./src/auth and propose a refactor pattern."}'
+     -d '{"query": "Analyze ./legacy_src and propose a Kotlin migration plan."}'
 ```
 
-**"Find an arbitrage opportunity in these datasets:"**
+**"Backtest a mean-reversion trading strategy on Apple stock:"**
 ```bash
 curl -X POST "http://localhost:8000/v1/agent/run" \
-     -d '{"query": "Compare dataset A and B for pricing anomalies."}'
+     -d '{"query": "Backtest mean-reversion on AAPL for the last 5 years."}'
 ```
 
-**"Design a guide RNA for this gene target:"**
+**"Review this NDA for gdpr compliance risks:"**
 ```bash
 curl -X POST "http://localhost:8000/v1/agent/run" \
-     -d '{"query": "Design CRISPR gRNA for TP53 exon 4."}'
+     -d '{"query": "Review ./contracts/nda_v1.pdf for GDPR risks."}'
 ```
 
 ---
