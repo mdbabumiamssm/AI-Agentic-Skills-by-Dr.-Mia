@@ -1,9 +1,9 @@
-# Universal Biomedical Skills & Agents (Biomedical OS - 2026)
+# Universal AI Agentic Skills & Bio-OS (2026)
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
-![Architecture](https://img.shields.io/badge/Architecture-Biomedical%20OS-blueviolet)
-![Domain](https://img.shields.io/badge/Domain-Biotech%20%7C%20Clinical%20%7C%20Genomics-purple)
-![Tech](https://img.shields.io/badge/Tech-MCP%20%7C%20DeepSeek%20%7C%20Gemini-orange)
+![Architecture](https://img.shields.io/badge/Architecture-Universal%20Agentic%20OS-blueviolet)
+![Domain](https://img.shields.io/badge/Domain-Universal%20%7C%20Biomedical%20%7C%20Finance%20%7C%20Coding-orange)
+![Tech](https://img.shields.io/badge/Tech-Gemini%20%7C%20OpenAI%20%7C%20Anthropic%20%7C%20MCP-blue)
 
 > **⚠️ IMPORTANT DISCLAIMER & COPYRIGHT NOTICE**
 > 
@@ -20,20 +20,20 @@
 
 ---
 
-## 🚀 The "Best of Best" Biomedical Skills Collection
+## 🚀 The Universal AI Skills Platform
 
-**This repository represents the gold standard for Agentic AI in Biomedicine.**
+**A comprehensive library of 600+ agentic skills for Programmers, Finance Professionals, Mathematicians, Researchers, and Scientists.**
 
-We have painstakingly cataloged, standardized, and optimized over **600+ specialized skills** covering the entire spectrum of modern biomedical science. From single-cell genomics to clinical decision support, every tool in this library has been upgraded to a unified **Agentic Standard**.
+While built on a robust **Biomedical Core**, this platform has evolved into a **Universal Operating System for AI Agents**. It provides a standardized way to discover, execute, and orchestrate AI capabilities across *any* domain.
 
-This is not just a code dump; it is a **Biomedical Operating System (BioOS)** designed to orchestrate autonomous research.
+Whether you are automating a financial audit, solving complex differential equations, refactoring a legacy codebase, or designing a novel protein, this repository offers the **best-in-class agentic tools** for the job.
 
 ---
 
 ## 👤 Author & Maintainer
 
 **MD BABU MIA, PhD**  
-*Assistant Professor of Hematology & Medical Oncology, Machine Learning -AI | Mount Sinai*  
+*Assistant Professor of Hematology & Medical Oncology, Machine Learning -AI | Mount Sinai*
 Mount Sinai Tisch Cancer Institute
 Icahn School of Medicine at Mount Sinai
 Mount Sinai Hospital
@@ -46,83 +46,99 @@ Specializing in Hemato-Oncology,and Machine Learning-LLM-AI.
 
 ---
 
-## 🌟 Major Updates (February 2026)
+## 🌍 A Platform for Everyone
 
-We have successfully migrated the entire codebase to the **Universal Skill Definition Language (USDL)** standard.
+This repository is organized to serve a wide range of professionals. The **Workflow Abstraction Layer (WAL)** allows these skills to run on Gemini, OpenAI, Anthropic, or local models.
 
-### 📜 Standardized Skill Format (SKILL.md)
-Every one of the 600+ skills now adheres to a rigorous metadata schema, ensuring they are **discoverable, measurable, and safe** for autonomous execution.
+### 💻 For Software Engineers & Data Scientists
+*   **Software Engineering:** Best practices for Python, React, Next.js, and clean code architecture.
+*   **Codebase Investigator:** Autonomous agents that map, analyze, and refactor complex repositories.
+*   **Data Science:** Automated EDA, feature engineering, and model validation pipelines.
+*   **Computer Science:** Implementations of graph algorithms, distributed systems, and vector stores.
 
-*   **Discoverable:** Indexed by keywords and domain.
-*   **Measurable:** Every skill defines a "Measurable Outcome" (e.g., "Analyze 10k cells in <5 mins").
-*   **Safe:** "Allowed Tools" restrict agent capabilities to prevent unintended side effects.
+### 💰 For Finance & Operations
+*   **Agentic AI:** General-purpose planning agents, productivity swarms, and memory systems.
+*   **Workflow Management:** Orchestrate complex business logic using state-of-the-art patterns.
+*   **Writing & Productivity:** Automated technical writing, reporting, and documentation generation.
 
-### 📚 The Catalog
-We have implemented a dynamic cataloging system. The entire library is indexed in `skills_catalog.json`.
+### 🧮 For Mathematicians & Physicists
+*   **Mathematics:** Libraries for linear algebra, optimization, probability, and statistics.
+*   **Quantum Biotech:** Agents for quantum simulation and docking (bridging physics and biology).
+*   **Machine Learning:** From foundation models to specialized classifiers.
 
-**To generate the latest catalog:**
-```bash
-python3 platform/skills_catalog.py
-```
+### 🧬 For Biomedical Researchers (The Core)
+*   **Genomics:** Single-cell, Spatial Transcriptomics, and CRISPR engineering.
+*   **Clinical:** Clinical decision support, trial matching, and EHR analysis.
+*   **Drug Discovery:** Antibody design, small molecule generation, and docking.
+*   **Systems Biology:** Metabolic modeling and flux balance analysis.
 
-### 🧬 Key Domain Highlights
+---
 
-#### 1. Genomics & Bioinformatics
-*   **BioMaster:** Orchestrator for RNA-seq, ChIP-seq, and Hi-C pipelines.
-*   **CellAgent:** Autonomous single-cell annotation and quality control.
-*   **STAgent:** Spatial transcriptomics analysis for Visium/Xenium.
-*   **Genome Engineer:** CRISPR gRNA design and off-target prediction.
+## 🌟 Architecture: The "Bio-OS" Kernel
 
-#### 2. Clinical & Operations
-*   **ChatEHR:** Clinical assistant for patient records (FHIR integrated).
-*   **TrialGPT:** Intelligent patient-to-trial matching and ranking.
-*   **RadGPT:** Radiology report summarizer and explainer.
-*   **Precision Oncology:** Multimodal treatment planning (H&E + Genomics).
+At the heart of this system is the **BioKernel**, a runtime environment that powers these skills.
 
-#### 3. Drug Discovery
-*   **MAGE:** Generative antibody design using protein language models.
-*   **CheMatAgent:** Computational chemistry for molecule design.
-*   **Biomni:** General-purpose biomedical research agent (150+ tools).
+*   **Workflow Abstraction Layer (WAL):** A plugin-based system that allows you to swap the "brain" of the agent. Use **Gemini 2.0** for speed, **GPT-4o** for reasoning, or **Local LLMs** for privacy.
+*   **Universal Skill Definition (USDL):** All skills are defined in a standardized format, making them portable and interoperable.
+*   **Meta-Prompter:** An optimizer that refines user queries into high-precision agent instructions.
 
-#### 4. Software Engineering (New!)
-*   **Codebase Investigator:** Autonomous repository mapping and analysis.
-*   **Technical Writing:** Automated generation of high-quality documentation.
-*   **Data Visualization:** Publication-ready scientific plotting agents.
+---
 
-## 📂 Directory Structure
-
-The repository is organized into high-level domains:
+## 📂 Global Directory Structure
 
 ```text
 Skills/
-├── Agentic_AI/           # Orchestrators, Swarms, Planning Agents
-├── Clinical/             # EHR, Radiology, Oncology, Trials
-├── Drug_Discovery/       # Antibody Design, Small Molecules, Chemistry
-├── Genomics/             # Single Cell, Spatial, CRISPR, Variant Interpretation
-├── Hematology/           # Bone Marrow, Flow Cytometry, MPN Analysis
-├── Immunology_Vaccines/  # CAR-T, TCR, Neoantigen Prediction
-├── MCP_Servers/          # BioMCP and other protocol servers
-├── Research_Tools/       # Biomni, Literature Mining, Knowledge Graphs
-├── Software_Engineering/ # Best Practices, Codebase Analysis, Tech Writing
-└── Writing_and_Productivity/ # Technical documentation and reporting
+├── Agentic_AI/           # Planning, Memory, Swarms (General Purpose)
+├── Computer_Science/     # Algorithms, Data Structures, Distributed Systems
+├── Data_Science/         # Visualization, Analytics, ML Pipelines
+├── Mathematics/          # Optimization, Stats, Linear Algebra
+├── Software_Engineering/ # Code Analysis, Best Practices, Refactoring
+├── Writing_and_Productivity/ # Documentation, Reporting
+├── Finance_&_Ops/        # (Planned) Business Logic & Analysis
+├── Clinical/             # Medical & Healthcare Agents
+├── Genomics/             # Bioinformatics & Sequencing
+├── Drug_Discovery/       # Pharma & Chemistry
+└── ... (and many more)
 ```
 
-## 🛠️ Usage Examples
+## 🛠️ Getting Started
 
-**1. Match a Patient to a Clinical Trial (TrialGPT):**
+### 1. Configure Your Brain
+Edit `platform/config.yaml` to select your LLM provider (Gemini, OpenAI, or Local).
+
+```yaml
+provider:
+  name: "gemini" # Options: gemini, local, openai
+```
+
+### 2. Run the Universal Kernel
+Start the OS to load all available skills.
+
 ```bash
-python3 Skills/Clinical/Trial_Matching/TrialGPT/run_matching.py --patient_profile ./patient.json
+python3 platform/biokernel/server.py
 ```
 
-**2. Design an Antibody (MAGE):**
+### 3. Execute a Task (Any Domain)
+
+**Finance Example:**
 ```bash
-python3 Skills/Drug_Discovery/Antibody_Design/MAGE/generate.py --antigen "spike_protein" --count 5
+curl -X POST "http://localhost:8000/v1/agent/run" \
+     -d '{"query": "Analyze the optimization strategy for this resource allocation problem."}'
 ```
 
-**3. Analyze Spatial Transcriptomics (STAgent):**
+**Coding Example:**
 ```bash
-python3 Skills/Genomics/Spatial_Transcriptomics/STAgent/main.py --data ./visium_data.h5ad --task "cluster_domains"
+curl -X POST "http://localhost:8000/v1/agent/run" \
+     -d '{"query": "Refactor the 'server.py' file to use the Factory pattern."}'
 ```
+
+**Biomedical Example:**
+```bash
+curl -X POST "http://localhost:8000/v1/agent/run" \
+     -d '{"query": "Find a target for glioblastoma and design a small molecule inhibitor."}'
+```
+
+---
 
 ## 📄 License
 
