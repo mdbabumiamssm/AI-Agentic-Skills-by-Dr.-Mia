@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # TCR-Epitope Binding - Usage Guide
 
 ## Overview
@@ -53,3 +66,6 @@ Tell your AI agent what you want to do:
 - **Clustering** - TCRs within 1-3 edit distance often share specificity
 - **ERGO-II** - Deep learning provides better predictions than simple matching
 - **Validation** - Predicted specificities should be validated experimentally
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

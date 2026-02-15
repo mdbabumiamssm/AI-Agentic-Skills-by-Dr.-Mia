@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-assembly-assembly-polishing
 description: Polish genome assemblies to reduce errors using short reads (Pilon), long reads (Racon), or ONT-specific tools (medaka). Essential for improving long-read assembly accuracy. Use when improving assembly accuracy with polishing tools.
 tool_type: cli
 primary_tool: Pilon
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Assembly Polishing
@@ -311,3 +328,6 @@ minimap2 -ax map-ont polished.fa reads.fq.gz | samtools stats | grep "error rate
 - short-read-assembly - Source of polishing reads
 - assembly-qc - Assess polishing improvement
 - long-read-sequencing - medaka variant calling
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

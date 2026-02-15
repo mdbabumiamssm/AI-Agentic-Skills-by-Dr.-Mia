@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 📋 Comprehensive Skills List for MD BABU MIA, PhD
 
 ## Summary of Custom Claude Skills
@@ -219,3 +232,6 @@ nano ~/.claude/skills/user/mpn-research-assistant/SKILL.md
 
 *Generated for MD BABU MIA, PhD - Mount Sinai*
 *December 2025*
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

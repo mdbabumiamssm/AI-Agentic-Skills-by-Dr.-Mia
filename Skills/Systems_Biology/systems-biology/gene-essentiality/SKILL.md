@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-systems-biology-gene-essentiality
 description: Perform in silico gene knockout analysis and synthetic lethality screens using COBRApy single and double deletions. Predict essential genes and identify synthetic lethal pairs for drug target discovery. Use when identifying essential genes or finding synthetic lethal drug targets.
 tool_type: python
 primary_tool: cobrapy
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Gene Essentiality Analysis
@@ -213,3 +230,6 @@ def gene_robustness_analysis(model, gene_id, flux_levels=10):
 - systems-biology/flux-balance-analysis - Base FBA methods
 - pathway-analysis/go-enrichment - Enrich essential gene sets
 - clinical-databases/variant-prioritization - Link to disease genes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

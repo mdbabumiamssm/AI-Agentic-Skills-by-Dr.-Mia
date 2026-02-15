@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import logging
 import os
 
@@ -80,3 +90,5 @@ def _load_smfish(save_path: str = "data/", use_high_level_cluster=True) -> annda
         adata.var_names = adata.var_names
     adata.uns = {"cell_types": adata.obs.str_labels.cat.categories}
     return adata
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

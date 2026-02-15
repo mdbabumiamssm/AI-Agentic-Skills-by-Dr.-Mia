@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Find common ancestors and extract subtrees'''
 
 from Bio import Phylo
@@ -20,3 +30,5 @@ print(f'Taxa: {[t.name for t in primates_mrca.get_terminals()]}')
 
 taxa = [tree.find_any(name='Human'), tree.find_any(name='Chimp'), tree.find_any(name='Gorilla')]
 print(f'\nAre primates monophyletic? {tree.is_monophyletic(taxa)}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

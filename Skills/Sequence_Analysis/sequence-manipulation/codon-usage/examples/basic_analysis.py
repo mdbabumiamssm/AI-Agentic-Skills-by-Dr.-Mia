@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Basic codon usage analysis'''
 from Bio.Seq import Seq
 from Bio.SeqUtils import GC123
@@ -52,3 +62,5 @@ for codon, count in counts.items():
 
 for aa, count in sorted(aa_counts.items(), key=lambda x: x[1], reverse=True):
     print(f'{aa}: {count}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

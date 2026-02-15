@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import sqlite3
 import json
 from datetime import datetime, timedelta
@@ -140,3 +150,4 @@ def social_media_trending_search(agent: Agent, limit: int = 10) -> str:
 if __name__ == "__main__":
     print("here...")
     print(social_media_trending_search(None, 5))
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

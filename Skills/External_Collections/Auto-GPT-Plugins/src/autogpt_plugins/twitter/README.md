@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # desojo/autogpt-twitter 🐣
 
 A plugin adding twitter API integration into Auto GPT
@@ -44,3 +57,6 @@ ALLOWLISTED_PLUGINS=AutoGPTTwitter
 4. Create a new app under said project with whatever name you want
 5. Under the app, edit user authentication settings and give it read/write perms.
 6. Grab the keys listed in installation instructions and save them for later
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

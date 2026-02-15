@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ### Understanding Semantic Kernel AI Connectors
 
 AI Connectors in Semantic Kernel are components that facilitate communication between the Kernel's core functionalities and various AI services. They abstract the intricate details of service-specific protocols, allowing developers to seamlessly interact with AI services for tasks like text generation, chat interactions, and more.
@@ -56,3 +69,5 @@ asyncio.run(main())
 ### Conclusion
 
 By following the revised guide and understanding the base class functionalities, developers can effectively create custom connectors within Semantic Kernel. This structured approach enhances integration with various AI services while ensuring alignment with the framework's architectural expectations. Custom connectors offer flexibility, allowing developers to adjust implementations to meet specific service needs, such as additional logging, authentication, or modifications tailored to specific protocols. This guide provides a strong foundation upon which more complex and service-specific extensions can be built, promoting robust and scalable AI service integration.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

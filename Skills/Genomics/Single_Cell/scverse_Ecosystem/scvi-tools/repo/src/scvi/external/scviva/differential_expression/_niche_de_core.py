@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import Iterable as IterableClass
 
 import pandas as pd
@@ -231,3 +241,5 @@ def _niche_de_core(
         n1_index=neighbors_idx1 if return_neighbors_idx else None,
         n2_index=neighbors_idx2 if return_neighbors_idx and group2 != "Rest" else None,
     )
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

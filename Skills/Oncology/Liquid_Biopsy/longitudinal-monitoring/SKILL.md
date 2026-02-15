@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-longitudinal-monitoring
 description: Tracks ctDNA dynamics over time for treatment response monitoring using serial liquid biopsy samples. Analyzes tumor fraction trends, mutation clearance kinetics, and defines molecular response criteria. Use when monitoring patients during therapy or detecting molecular relapse before clinical progression.
 tool_type: python
 primary_tool: pandas
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Longitudinal Monitoring
@@ -252,3 +269,6 @@ def generate_monitoring_report(patient_id, tf_data, mutation_data, imaging_data=
 - ctdna-mutation-detection - Detect mutations to track
 - tumor-fraction-estimation - Estimate tumor fraction per timepoint
 - fragment-analysis - Complement with fragmentomics trends
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

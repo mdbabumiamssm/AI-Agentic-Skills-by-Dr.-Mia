@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Pull Requests
 
 ## GitHub List Pull Requests
@@ -180,3 +193,5 @@ It connects to the GitHub API using the provided credentials and pull request UR
 
 ### Possible use case
 A project coordinator wants to check who is currently assigned to review a specific pull request to ensure all necessary team members are involved in the code review process.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

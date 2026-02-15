@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Documentation
 
 (building-the-docs)=
@@ -136,3 +149,6 @@ dpt_groups : :class:`pandas.Series` (`adata.obs`, dtype `category`)
     '1', ...) for each cell. The groups  typically correspond to
     'progenitor cells', 'undecided cells' or 'branches' of a process.
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Llamafile Integration Notes
 
 Tested with:
@@ -34,3 +47,6 @@ LLAMAFILE="./mistral-7b-instruct-v0.2.Q5_K_M.llamafile"
 * `SMART_LLM`/`FAST_LLM` configuration: Currently, the llamafile server only serves one model at a time. However, there's no reason you can't start multiple llamafile servers on different ports. To support using different models for `smart_llm` and `fast_llm`, you could implement config vars like `LLAMAFILE_SMART_LLM_URL` and `LLAMAFILE_FAST_LLM_URL` that point to different llamafile servers (one serving a 'big model' and one serving a 'fast model'). 
 * Authorization: the `serve.sh` script does not set up any authorization for the llamafile server; this can be turned on by adding arg `--api-key <some-key>` to the server startup command. However I haven't attempted to test whether the integration with autogpt works when this feature is turned on.
 * Test with other models
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

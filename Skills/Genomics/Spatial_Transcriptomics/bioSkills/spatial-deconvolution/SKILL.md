@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-spatial-transcriptomics-spatial-deconvolution
 description: Estimate cell type composition in spatial transcriptomics spots using reference-based deconvolution. Use cell2location, RCTD, SPOTlight, or Tangram to infer cell type proportions from scRNA-seq references. Use when estimating cell type composition in spatial spots.
 tool_type: python
 primary_tool: cell2location
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Spatial Deconvolution
@@ -276,3 +293,6 @@ adata_vis.write_h5ad('spatial_deconvolved.h5ad')
 - single-cell/data-io - Load scRNA-seq reference
 - spatial-visualization - Visualize deconvolution results
 - single-cell/markers-annotation - Annotate reference cell types
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

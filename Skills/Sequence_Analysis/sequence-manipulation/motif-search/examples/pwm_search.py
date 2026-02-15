@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Probabilistic motif searching with PWM/PSSM'''
 from Bio import motifs
 from Bio.Seq import Seq
@@ -59,3 +69,5 @@ print('\n=== Threshold Calculation ===')
 sd = pssm.distribution()
 print(f'Threshold for 1% FPR: {sd.threshold_fpr(0.01):.2f}')
 print(f'Threshold for 10% FNR: {sd.threshold_fnr(0.1):.2f}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

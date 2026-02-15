@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Structure I/O - Usage Guide
 
 ## Overview
@@ -71,3 +84,6 @@ Tell your AI agent what you want to do:
 - **Select class for filtering** - Write subsets without modifying structure
 - **QUIET=True** - Suppress parser warnings for cleaner output
 - **Biological assemblies** - Use `assembly_num` parameter for functional units
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # How to Predict Variant Effects with AlphaGenome
 
 This guide demonstrates how to use Google DeepMind's AlphaGenome to predict regulatory effects of genetic variants on gene expression, chromatin accessibility, and splicing.
@@ -584,3 +597,6 @@ def interpret_expression_change(log2_fc):
 - Explore [comprehensive variant annotations](03-get-comprehensive-variant-annotations.md)
 - Learn about [article searches](01-find-articles-and-cbioportal-data.md) for variants
 - Set up [logging and monitoring](05-logging-and-monitoring-with-bigquery.md)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

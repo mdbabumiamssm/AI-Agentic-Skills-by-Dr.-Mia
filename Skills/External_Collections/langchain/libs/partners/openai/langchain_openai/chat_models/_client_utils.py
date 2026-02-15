@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Helpers for creating OpenAI API clients.
 
 This module allows for the caching of httpx clients to avoid creating new instances
@@ -140,3 +150,5 @@ def _resolve_sync_and_async_api_keys(
             async_api_key_value = async_api_key_wrapper
 
     return sync_api_key_value, async_api_key_value
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

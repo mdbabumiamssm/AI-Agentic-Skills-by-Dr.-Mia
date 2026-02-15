@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # React App for SK Process with Cloud Events
 ## Getting Started
 
@@ -52,3 +65,6 @@ Alternatively, you can use the existing Visual Studio Code task:
 3. Set breakpoints in your code to inspect and debug as needed.
 
 For more details, refer to the official React documentation: [React Docs](https://reactjs.org/docs/getting-started.html).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

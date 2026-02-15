@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-hi-c-analysis-loop-calling
 description: Detect chromatin loops and point interactions from Hi-C data using cooltools, chromosight, and HiCCUPS-like methods. Identify CTCF-mediated loops and enhancer-promoter contacts. Use when detecting chromatin loops from Hi-C data.
 tool_type: mixed
 primary_tool: cooltools
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Chromatin Loop Calling
@@ -264,3 +281,6 @@ print(f'Promoter-enhancer loops: {len(pe_loops)}')
 - hic-data-io - Load Hi-C matrices
 - hic-visualization - Visualize loops
 - chip-seq - CTCF ChIP-seq for loop anchor validation
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

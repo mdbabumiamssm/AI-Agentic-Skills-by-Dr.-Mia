@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: biomcp-server
 description: MCP bio bridge
@@ -47,3 +60,6 @@ Deploy and operate the BioMCP server so MCP-compatible clients (Claude Desktop, 
 
 ## References
 - Source repo + configuration examples in `README.md`, `repo/docker-compose.yml`, and `repo/Makefile`.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

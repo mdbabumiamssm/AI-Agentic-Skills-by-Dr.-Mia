@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # NCI Clinical Trials Search API Reference
 
 The National Cancer Institute's Clinical Trials Search (CTS) API provides advanced search capabilities for cancer clinical trials with enhanced filtering options beyond ClinicalTrials.gov.
@@ -451,3 +464,6 @@ def biomarker_trial_pipeline(gene, variant):
 - **Support Email**: NCICTSApiSupport@mail.nih.gov
 - **Status Page**: [https://status.cancer.gov/](https://status.cancer.gov/)
 - **Terms of Use**: [https://clinicaltrialsapi.cancer.gov/terms](https://clinicaltrialsapi.cancer.gov/terms)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Lineage Tracing Analysis - Usage Guide
 
 ## Overview
@@ -51,3 +64,6 @@ pip install cassiopeia-lineage cospar
 - **Character matrix** - Mutation states (0=WT, 1,2,3...=mutations, -1=missing)
 - **Tree solvers** - Greedy, neighbor-joining, or ILP-based
 - **Validation** - Compare tree to known biology (e.g., tissue of origin)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

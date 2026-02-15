@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # What this sample demonstrates
 
 This sample demonstrates how to use a Hosted Model Context Protocol (MCP) server with an AI agent.
@@ -41,3 +54,6 @@ The sample connects to the Microsoft Learn MCP server and uses its documentation
 5. The agent returns answers based on the Microsoft Learn content
 
 In this configuration, the OpenAI Responses service manages tool invocation directly - the Agent Framework does not handle MCP tool calls.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

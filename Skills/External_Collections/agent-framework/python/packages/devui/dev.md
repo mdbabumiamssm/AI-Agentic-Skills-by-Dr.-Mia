@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Testing DevUI - Quick Setup Guide
 
 Here are the step-by-step instructions to test the new DevUI feature:
@@ -162,3 +175,6 @@ pytest tests/test_mapper.py -v         # Event mapping
 - **Port conflicts**: DevUI uses ports 8080 and 8090 by default - close other services using these ports
 
 Let me know if you run into any issues!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

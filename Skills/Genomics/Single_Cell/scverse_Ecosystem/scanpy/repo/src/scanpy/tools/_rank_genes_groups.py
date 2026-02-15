@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Rank genes according to differential expression."""
 
 from __future__ import annotations
@@ -934,3 +944,5 @@ def filter_rank_genes_groups(  # noqa: PLR0912
     # create new structured array using 'key_added'.
     adata.uns[key_added] = adata.uns[key].copy()
     adata.uns[key_added]["names"] = gene_names.to_records(index=False)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

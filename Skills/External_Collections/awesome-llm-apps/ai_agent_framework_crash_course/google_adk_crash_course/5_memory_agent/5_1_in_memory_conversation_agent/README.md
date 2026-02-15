@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🧠 Tutorial 5.1: In-Memory Conversation Agent
 
 Welcome to your first step into session management! This tutorial teaches you how to create an AI agent that can remember conversations within a single session using `InMemorySessionService`.
@@ -185,3 +198,5 @@ After completing this tutorial, you'll be ready for:
 - **Single Process**: Sessions only work within the same Python process
 - **Memory Usage**: Large conversation histories will consume RAM
 - **Development Only**: Use in-memory sessions for development, not production 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

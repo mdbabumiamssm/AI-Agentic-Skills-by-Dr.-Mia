@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
@@ -46,3 +56,5 @@ fig.write_html('volcano_interactive.html')
 print(f"Saved: volcano_interactive.html")
 print(f"Up-regulated: {sum(df['significance'] == 'Up')}")
 print(f"Down-regulated: {sum(df['significance'] == 'Down')}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

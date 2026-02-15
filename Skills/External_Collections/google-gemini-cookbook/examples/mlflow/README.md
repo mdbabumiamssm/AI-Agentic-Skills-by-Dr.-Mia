@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MLflow Integration with Gemini
 [MLflow](https://mlflow.org/) is an open-source tool for comprehensive management of the Machine Learning Lifecycle. Here's the foundational components of MLflow:
 
@@ -7,3 +20,5 @@
 - Evaluate: Designed for in-depth model analysis, this set of tools facilitates objective model comparison, be it traditional ML algorithms or cutting-edge LLMs.
 
 MLflow provides a native tracing integration with Google Gen AI SDK that automatically generate traces for your interactions with Gemini models. Please refer to [MLflow Gemini integration](https://mlflow.org/docs/latest/tracing/integrations/gemini) for more details.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: paper-banana
 description: Agentic framework for automating the generation of publication-ready academic illustrations and statistical plots.
@@ -10,6 +23,7 @@ compatibility:
 allowed-tools:
   - run_shell_command
   - read_file
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
 ---
 
 # PaperBanana
@@ -36,3 +50,6 @@ PaperBanana is an advanced agentic framework designed to automate the creation o
 
 ## References
 - [Project Website](https://paperbanana.github.io/) (Placeholder based on typical project structure)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

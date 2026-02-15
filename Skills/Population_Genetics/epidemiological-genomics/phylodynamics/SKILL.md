@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-epidemiological-genomics-phylodynamics
 description: Construct time-scaled phylogenies and infer evolutionary dynamics using TreeTime and BEAST2 for outbreak analysis. Estimate divergence times, molecular clock rates, and ancestral states. Use when dating outbreak origins, estimating transmission rates, or building time-calibrated trees.
 tool_type: python
 primary_tool: TreeTime
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Phylodynamics
@@ -182,3 +199,6 @@ def prepare_beast_xml(alignment, dates, template='strict_clock'):
 - epidemiological-genomics/transmission-inference - Infer who-infected-whom
 - phylogenetics/modern-tree-inference - Build input phylogeny
 - epidemiological-genomics/variant-surveillance - Track lineage dynamics
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

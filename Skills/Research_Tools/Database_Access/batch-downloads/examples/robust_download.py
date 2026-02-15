@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Robust batch download with retry logic'''
 from Bio import Entrez
 from urllib.error import HTTPError
@@ -66,3 +76,5 @@ def robust_batch_download(db, term, output_file, rettype='fasta', batch_size=500
 
 # Example
 robust_batch_download('nucleotide', 'mouse[orgn] AND hemoglobin[gene] AND mRNA[fkey]', 'mouse_hemoglobin.fasta')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

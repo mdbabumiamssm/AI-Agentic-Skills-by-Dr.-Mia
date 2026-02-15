@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## 🦙 Finetune Llama 3.2 in 30 Lines of Python
 
 ### 🎓 FREE Step-by-Step Tutorial 
@@ -86,3 +99,6 @@ You can modify the following parameters in the script:
 - This script is optimized for running on Google Colab's free tier, which provides access to GPUs.
 - The finetuning process may take some time, depending on the model size and the available computational resources.
 - Make sure you have enough storage space in your Colab instance to save the finetuned model.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

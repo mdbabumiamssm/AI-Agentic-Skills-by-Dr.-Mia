@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Coverage Analysis - Usage Guide
 
 ## Overview
@@ -78,3 +91,6 @@ chr1    200     300     10.2   # 10.2x coverage, bases 200-299
 - [bedtools genomecov](https://bedtools.readthedocs.io/en/latest/content/tools/genomecov.html)
 - [bedtools coverage](https://bedtools.readthedocs.io/en/latest/content/tools/coverage.html)
 - [bedGraph format](https://genome.ucsc.edu/goldenPath/help/bedgraph.html)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

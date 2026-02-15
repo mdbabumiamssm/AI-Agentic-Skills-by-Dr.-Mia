@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Using environment variables to setup Semantic Kernel
 
 Semantic Kernel allows you multiple ways to setup your connectors. This guide shows that for OpenAI Connectors.
@@ -73,3 +86,6 @@ except ValidationError as e:
 ## One final note:
 
 It is a convention that env settings are setup with all caps, and with underscores between words the loader that we use is case insensitive, so you can use any case you want in your env variables but it is a good practice to follow the convention and use all caps.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

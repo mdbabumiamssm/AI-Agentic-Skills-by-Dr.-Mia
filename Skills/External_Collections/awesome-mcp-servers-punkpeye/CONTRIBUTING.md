@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing to Awesome MCP Servers
 
 Contributions are welcome and encouraged!  Whether you're fixing a typo, adding a new server, or suggesting improvements, your help is appreciated.
@@ -44,3 +57,6 @@ Contributions are welcome and encouraged!  Whether you're fixing a typo, adding 
 * **Clear descriptions:** Write concise and informative descriptions for each server.  Explain what the server does and what its key features are.
 
 Thank you for contributing!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

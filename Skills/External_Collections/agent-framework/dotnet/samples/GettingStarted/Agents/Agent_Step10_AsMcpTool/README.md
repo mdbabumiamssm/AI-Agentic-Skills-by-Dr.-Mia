@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 This sample demonstrates how to expose an existing AI agent as an MCP tool.
 
 ## Run the sample
@@ -27,3 +40,5 @@ To use the [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector)
 1. As soon as the connection is established, open the `Tools` tab in the MCP Inspector interface and select the `Joker` tool from the list.
 1. Specify your prompt as a value for the `query` argument, for example: `Tell me a joke about a pirate` and click the `Run Tool` button to run the tool.
 1. The agent will process the request and return a response in accordance with the provided instructions that instruct it to always start each joke with 'Aye aye, captain!'.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

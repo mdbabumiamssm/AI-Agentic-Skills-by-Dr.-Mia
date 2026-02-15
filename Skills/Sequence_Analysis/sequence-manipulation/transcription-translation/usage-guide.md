@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Transcription and Translation - Usage Guide
 
 ## Overview
@@ -67,3 +80,6 @@ Biopython includes all NCBI codon tables. Common ones:
 - Use `cds=True` for validated coding sequences (will error if invalid)
 - For finding ORFs, search all six reading frames
 - Mention the organism if using non-standard codon tables
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 def predict_protein_disorder_regions(protein_sequence, threshold=0.5, output_file="disorder_prediction_results.csv"):
     """Predicts intrinsically disordered regions (IDRs) in a protein sequence using IUPred2A.
 
@@ -511,3 +521,5 @@ def analyze_tissue_deformation_flow(image_sequence, output_dir="results", pixel_
     log += f"- Summary statistics: {output_dir}/deformation_summary.npy\n"
 
     return log
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

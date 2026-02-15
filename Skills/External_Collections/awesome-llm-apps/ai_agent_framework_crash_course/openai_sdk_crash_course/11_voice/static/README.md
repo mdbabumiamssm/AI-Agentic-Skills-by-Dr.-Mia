@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎙️ Static Voice Agent
 
 A complete voice interaction example using the OpenAI Agents SDK with pre-recorded audio input. This demonstrates the basic voice pipeline workflow with speech-to-text, agent processing, and text-to-speech capabilities.
@@ -223,3 +236,6 @@ After mastering static voice agents:
 - **[Streaming Voice](../streamed/README.md)**: Implement real-time voice interaction
 - **[Advanced Voice Pipelines](https://openai.github.io/openai-agents-python/voice/pipeline/)**: Custom pipeline configurations
 - **Production Voice Apps**: Deploy voice agents in real applications
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

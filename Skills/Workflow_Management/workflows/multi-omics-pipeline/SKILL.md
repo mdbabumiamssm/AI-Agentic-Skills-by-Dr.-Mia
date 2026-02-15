@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-multi-omics-pipeline
 description: End-to-end multi-omics integration workflow. Orchestrates data harmonization, MOFA/mixOmics integration, factor interpretation, and downstream analysis across transcriptomics, proteomics, metabolomics, and other modalities. Use when integrating multiple omics datasets.
@@ -9,6 +22,10 @@ depends_on:
   - multi-omics-integration/mofa-integration
   - multi-omics-integration/mixomics-analysis
   - multi-omics-integration/similarity-network
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Multi-omics Integration Pipeline
@@ -340,3 +357,6 @@ mofa <- create_mofa_from_Seurat(seurat_obj, groups = 'cell_type',
 - multi-omics-integration/data-harmonization - Preprocessing
 - pathway-analysis/go-enrichment - Factor interpretation
 - differential-expression/batch-correction - Batch effects
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

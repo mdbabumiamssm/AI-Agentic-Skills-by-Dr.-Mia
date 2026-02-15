@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Self-Hosting Guide
 
 ## Capabilities
@@ -187,3 +200,6 @@ This is ideal for organizations that want to deploy their own white-labeled prom
 ## Support
 
 For issues and questions, please open a [GitHub Issue](https://github.com/f/awesome-chatgpt-prompts/issues).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

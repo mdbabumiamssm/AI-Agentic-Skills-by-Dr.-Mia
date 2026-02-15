@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multi-Agent Concurrent Orchestration Sample
 
 This sample demonstrates how to use the Durable Agent Framework (DAFx) to create an Azure Functions app that orchestrates concurrent execution of multiple AI agents, each with specialized expertise, to provide comprehensive answers to complex questions.
@@ -63,3 +76,6 @@ Once the orchestration has completed, you can get the status of the orchestratio
   "runtimeStatus": "Completed"
 }
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

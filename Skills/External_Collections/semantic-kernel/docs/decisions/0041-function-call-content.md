@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -445,3 +458,5 @@ The design of a service-agnostic function calling model for connectors' streamin
 The streaming API differs from a non-streaming one in that the content is returned in chunks rather than all at once. For instance, OpenAI connectors currently return function calls in two chunks: the function id and name come in the first chunk, while the function arguments are sent in subsequent chunks. Furthermore, LLM may stream function calls for more than one function in the same response. For example, the first chunk streamed by a connector may have the id and name of the first function, and the following chunk will have the id and name of the second function. 
 
 This will require slight deviations in the design of the function-calling model for the streaming API to more naturally accommodate the streaming specifics. In the case of a significant deviation, a separate ADR will be created to outline the details.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

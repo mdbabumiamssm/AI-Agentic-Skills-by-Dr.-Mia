@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import tempfile
 import streamlit as st
 from embedchain import App
@@ -241,3 +251,4 @@ if openai_access_token:
                 st.error(f"❌ Error chatting with the video: {e}")
         else:
             st.warning("⚠️ Please add a valid video with transcripts first before asking questions.")
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

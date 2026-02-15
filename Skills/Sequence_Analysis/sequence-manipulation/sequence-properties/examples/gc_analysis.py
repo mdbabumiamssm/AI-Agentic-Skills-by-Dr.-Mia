@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''GC content analysis across sequences and windows'''
 from Bio.Seq import Seq
 from Bio.SeqUtils import gc_fraction
@@ -60,3 +70,5 @@ cpg_ratio = cpg_count / expected_cpg if expected_cpg > 0 else 0
 print(f'CpG observed: {cpg_count}')
 print(f'CpG expected: {expected_cpg:.1f}')
 print(f'CpG O/E ratio: {cpg_ratio:.2f}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

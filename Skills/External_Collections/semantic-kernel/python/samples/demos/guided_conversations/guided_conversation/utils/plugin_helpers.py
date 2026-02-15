@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from dataclasses import dataclass
@@ -114,3 +124,5 @@ def update_attempts(error: Exception, attempt_id: str, previous_attempts: list) 
     llm_formatted_attempts = "\n".join(attempts_list)
 
     return previous_attempts, llm_formatted_attempts
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

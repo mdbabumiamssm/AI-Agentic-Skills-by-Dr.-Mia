@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from db.config import get_tracking_db_path
 from db.feeds import get_uncrawled_entries
 from db.articles import store_crawled_article, update_entry_status
@@ -80,3 +90,5 @@ def crawl_in_batches(tracking_db_path=None, batch_size=20, total_batches=5, dela
 if __name__ == "__main__":
     stats = crawl_in_batches(batch_size=20, total_batches=50)
     print_stats(stats)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

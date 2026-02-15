@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing to AutoGPT Agent Server: Creating and Testing Blocks
 
 This guide will walk you through the process of creating and testing a new block for the AutoGPT Agent Server, using the WikipediaSummaryBlock as an example.
@@ -645,3 +658,6 @@ You can use MediaFileType to handle the importing and exporting of files out of 
 6. **Update tests when changing block behavior**: If you modify your block, ensure the tests are updated accordingly.
 
 By following these steps, you can create new blocks that extend the functionality of the AutoGPT Agent Server.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

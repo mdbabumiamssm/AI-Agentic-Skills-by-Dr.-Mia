@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Voice-Controlled LED Ring with the ESP32
 
 This Arduino-based application demonstrates how to capture audio from a microphone, send it to the Gemini API for processing, and control an LED ring based on the API's response.
@@ -102,3 +115,6 @@ This Arduino-based application demonstrates how to capture audio from a micropho
 * The `jsonBufferSize` may need to be adjusted depending on the length of the audio recording.
 * The application uses an insecure WiFi client for simplicity. For production use, consider using a secure connection.
 * The application disables brownout detection and watchdog timers. This is for testing purposes and may not be suitable for production environments.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

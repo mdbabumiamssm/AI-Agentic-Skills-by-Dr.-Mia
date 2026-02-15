@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import numpy as np
@@ -62,3 +72,5 @@ def test_rank_genes_groups_with_unsorted_groups():
         bdata.uns["rank_genes_groups"]["scores"]["Three"]
     ).to_numpy()
     np.testing.assert_equal(array_ad, array_bd)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

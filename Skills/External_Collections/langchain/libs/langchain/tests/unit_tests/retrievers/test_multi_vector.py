@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import Callable
 from typing import Any
 
@@ -132,3 +142,5 @@ async def test_multi_vector_retriever_similarity_search_with_score_async() -> No
     await retriever.docstore.amset(list(zip(["1"], documents, strict=False)))
     results = retriever.invoke("1")
     assert len(results) == 0
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

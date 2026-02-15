@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for ToolRetryMiddleware functionality."""
 
 import time
@@ -1004,3 +1014,5 @@ def test_tool_retry_deprecated_return_message_behavior() -> None:
     assert "3 attempts" in tool_messages[0].content
     assert "ValueError" in tool_messages[0].content
     assert tool_messages[0].status == "error"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

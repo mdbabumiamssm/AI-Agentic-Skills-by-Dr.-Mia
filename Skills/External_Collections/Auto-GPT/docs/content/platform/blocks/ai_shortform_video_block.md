@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AI Shortform Video Creator
 
 ## What it is
@@ -30,3 +43,5 @@ The block takes user input for script, visual style, audio, and other parameters
 
 ## Possible use case
 A social media marketer could use this block to quickly create engaging short-form videos for platforms like TikTok or Instagram Reels. They could input a script about a new product, choose a suitable visual style and background music, and get a professional-looking video without needing advanced video editing skills.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

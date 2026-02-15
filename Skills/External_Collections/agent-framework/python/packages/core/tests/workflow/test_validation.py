@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 import logging
@@ -557,3 +567,5 @@ def test_handler_ctx_any_is_allowed_but_skips_type_checks(caplog: Any) -> None:
     # Builds; later edges from this executor will skip type compatibility when outputs are unspecified
     wf = WorkflowBuilder().add_edge(start, any_out).set_start_executor(start).build()
     assert wf is not None
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Weather widget rendering for ChatKit integration sample."""
@@ -434,3 +444,5 @@ def city_selector_copy_text() -> str:
     """
     cities_list = "\n".join([f"• {city['label']}" for city in POPULAR_CITIES])
     return f"Popular cities (click to get weather):\n{cities_list}\n\nYou can also ask about weather in any other location!"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

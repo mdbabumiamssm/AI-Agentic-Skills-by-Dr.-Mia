@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Single-Cell QC Skill: Verification & Demonstration
 
 **Validation Suite for `biomedical.genomics.single_cell_qc`**
@@ -62,3 +75,5 @@ python integration_analysis.py
 ## 🔗 Connection to Universal Platform
 
 This implementation serves as the "Source of Truth" for the `biomedical.genomics.single_cell_qc` skill. When this skill is deployed to **Claude** (via MCP) or **ChatGPT**, the underlying logic executed matches exactly what is validated here.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

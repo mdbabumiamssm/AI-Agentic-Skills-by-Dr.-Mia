@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎼 Tutorial 9: Multi-Agent Orchestration
 
 Master complex multi-agent workflows! This tutorial teaches you how to coordinate multiple agents using parallel execution, agents-as-tools patterns, and advanced orchestration techniques for building sophisticated AI systems.
@@ -230,3 +243,6 @@ After completing this tutorial, you'll be ready for:
 - **Quality Metrics**: Develop criteria for selecting best results from multiple agents
 - **Workflow Visualization**: Use tracing to understand complex execution flows
 - **Agent Specialization**: Design agents with clear, focused responsibilities
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

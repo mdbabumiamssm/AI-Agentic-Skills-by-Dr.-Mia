@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🚀 Tutorial 4: Running Agents
 
 Master the complete OpenAI Agents SDK execution system! This tutorial covers all aspects of running agents including execution methods, streaming, the agent loop, exception handling, and advanced configuration based on the [official running agents documentation](https://openai.github.io/openai-agents-python/running_agents/).
@@ -226,3 +239,5 @@ After completing this tutorial, you'll be ready for:
 - **Exception Strategy**: Plan for each exception type in production code
 - **Configuration Consistency**: Use RunConfig for repeatable execution patterns
 - **Monitor the Loop**: Use tracing to understand complex agent interactions
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

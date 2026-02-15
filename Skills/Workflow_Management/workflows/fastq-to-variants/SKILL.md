@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-fastq-to-variants
 description: End-to-end DNA sequencing workflow from FASTQ files to variant calls. Covers QC, alignment with BWA, BAM processing, and variant calling with bcftools or GATK HaplotypeCaller. Use when calling variants from raw sequencing reads.
@@ -16,6 +29,10 @@ qc_checkpoints:
   - after_alignment: "Mapping rate >95%, properly paired >90%"
   - after_dedup: "Duplication rate <30% for WGS, <50% for exome"
   - after_calling: "Ti/Tv ratio ~2.1 for WGS, dbSNP overlap >95%"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # FASTQ to Variants Workflow
@@ -352,3 +369,6 @@ echo "Filtered VCF: ${OUTDIR}/variants/cohort.filtered.vcf.gz"
 - variant-calling/gatk-variant-calling - GATK HaplotypeCaller details
 - variant-calling/filtering-best-practices - Advanced filtering strategies
 - variant-calling/variant-annotation - Annotate variants with VEP
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

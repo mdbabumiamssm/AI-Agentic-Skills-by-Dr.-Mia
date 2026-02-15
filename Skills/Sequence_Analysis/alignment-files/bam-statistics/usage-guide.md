@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Alignment Statistics - Usage Guide
 
 ## Overview
@@ -221,3 +234,6 @@ samtools view -s 0.1 sample.bam | samtools depth -  # Sample 10%
 - Depth command provides per-position detail but can be slow for whole genomes
 - Always compare metrics across samples to identify outliers
 - Keep statistics reports for reproducibility and troubleshooting
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

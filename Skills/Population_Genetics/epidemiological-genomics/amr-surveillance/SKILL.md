@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-epidemiological-genomics-amr-surveillance
 description: Detect and track antimicrobial resistance genes using AMRFinderPlus and ResFinder with epidemiological context. Monitor resistance trends and identify emerging resistance patterns. Use when screening genomes for AMR genes or tracking resistance in surveillance programs.
 tool_type: cli
 primary_tool: AMRFinderPlus
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # AMR Surveillance
@@ -209,3 +226,6 @@ def generate_surveillance_report(samples_df, period='month'):
 - metagenomics/amr-detection - AMR from metagenomic samples
 - epidemiological-genomics/pathogen-typing - Strain context for AMR
 - variant-calling/variant-annotation - Point mutation resistance
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

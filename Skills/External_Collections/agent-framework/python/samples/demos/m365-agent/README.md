@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Microsoft Agent Framework Python Weather Agent sample (M365 Agents SDK)
 
 This sample demonstrates a simple Weather Forecast Agent built with the Python Microsoft Agent Framework, exposed through the Microsoft 365 Agents SDK compatible endpoints. The agent accepts natural language requests for a weather forecast and responds with a textual answer. It supports multi-turn conversations to gather required information.
@@ -98,3 +111,6 @@ To test via WebChat you can provision an Azure Bot and point its messaging endpo
 
 - [Microsoft 365 Agents SDK](https://learn.microsoft.com/microsoft-365/agents-sdk/)
 - [Devtunnel docs](https://learn.microsoft.com/azure/developer/dev-tunnels/)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

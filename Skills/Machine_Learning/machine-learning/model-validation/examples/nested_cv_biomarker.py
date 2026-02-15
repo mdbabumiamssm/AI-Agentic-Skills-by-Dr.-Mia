@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Nested cross-validation for unbiased biomarker classifier evaluation'''
 
 import pandas as pd
@@ -54,3 +64,5 @@ grid.fit(X, y)
 # cv_results_ best_score_ is optimistic due to selection bias
 print(f'Non-nested CV AUC: {grid.best_score_:.3f} (biased estimate)')
 print(f'Difference shows optimism: {grid.best_score_ - np.mean(nested_scores):.3f}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

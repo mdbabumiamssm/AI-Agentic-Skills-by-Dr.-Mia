@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## 🌍 MCP Travel Planner Agent Team
 
 A sophisticated Streamlit-based AI travel planning application that creates extremely detailed, personalized travel itineraries using multiple MCP servers and Google Maps integration. The app uses Airbnb MCP for real accommodation data and a custom Google Maps MCP for precise distance calculations and location services.
@@ -131,3 +144,6 @@ The AI Travel Planner Agent Team uses a sophisticated multi-step process to crea
 - **Multi-MCP Integration**: Combines Airbnb and Google Maps MCP servers for real-time data
 - **Google Search Tools**: Provides current weather, reviews, and local insights
 - **Direct Response Generation**: Creates complete itineraries without asking clarifying questions
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

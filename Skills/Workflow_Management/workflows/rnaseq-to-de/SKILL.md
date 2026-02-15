@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-rnaseq-to-de
 description: End-to-end RNA-seq workflow from FASTQ files to differential expression results. Covers QC, quantification (Salmon or STAR+featureCounts), and DESeq2 analysis with visualization. Use when running RNA-seq from FASTQ to DE results.
@@ -14,6 +27,10 @@ qc_checkpoints:
   - after_qc: "Q30 >80%, adapter content <5%"
   - after_quant: "Mapping rate >70%, >10M reads mapped"
   - after_de: "Dispersion fit reasonable, no sample outliers"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # RNA-seq to Differential Expression Workflow
@@ -323,3 +340,6 @@ write.csv(as.data.frame(sig), 'significant_genes.csv')
 - differential-expression/deseq2-basics - Complete DESeq2 reference
 - differential-expression/de-visualization - Advanced visualization options
 - pathway-analysis/go-enrichment - Next step: functional enrichment
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

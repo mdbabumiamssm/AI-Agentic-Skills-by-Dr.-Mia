@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test azure openai embeddings."""
 
 import os
@@ -131,3 +141,5 @@ def test_embed_documents_normalized() -> None:
 def test_embed_query_normalized() -> None:
     output = _get_embeddings().embed_query("foo walked to the market")
     assert np.isclose(np.linalg.norm(output), 1.0)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

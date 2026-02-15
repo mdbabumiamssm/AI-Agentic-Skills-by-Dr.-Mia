@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Timezone conversion utilities for API endpoints.
 Handles conversion between user timezones and UTC for scheduler operations.
@@ -148,3 +158,5 @@ def get_user_timezone_or_utc(user_timezone: Optional[str]) -> str:
 
     logger.warning(f"Invalid user timezone '{user_timezone}', falling back to UTC")
     return "UTC"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

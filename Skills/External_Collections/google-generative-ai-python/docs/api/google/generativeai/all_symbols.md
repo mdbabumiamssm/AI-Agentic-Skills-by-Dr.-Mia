@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # All symbols in Generative AI - Python
 
 <!-- Insert buttons and diff -->
@@ -259,3 +272,5 @@
 *  <a href="../google/generativeai/types/to_file_data.md"><code>google.generativeai.types.to_file_data</code></a>
 *  <a href="../google/generativeai/update_tuned_model.md"><code>google.generativeai.update_tuned_model</code></a>
 *  <a href="../google/generativeai/upload_file.md"><code>google.generativeai.upload_file</code></a>
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini API Python SDK sample code
 
 This directory contains sample code for key features of the SDK, organised by high level feature.
@@ -24,3 +37,6 @@ Each file is structured as a runnable test case, ensuring that samples are execu
 | [system_instruction.py](./system_instruction.py)         | Setting system instructions |
 | [text_generation.py](./text_generation.py)               | Generating text |
 | [tuned_models.py](./tuned_models.py)                     | Creating and managing tuned models |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

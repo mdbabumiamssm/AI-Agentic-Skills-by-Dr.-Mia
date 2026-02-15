@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Design PCR primers with primer3-py'''
 
 import primer3
@@ -39,3 +49,5 @@ for i in range(num_returned):
     print(f'  Reverse: {right_seq}')
     print(f'    Position: {right_pos[0]}, Length: {right_pos[1]}, Tm: {right_tm:.1f}C')
     print(f'  Product size: {product_size}bp\n')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

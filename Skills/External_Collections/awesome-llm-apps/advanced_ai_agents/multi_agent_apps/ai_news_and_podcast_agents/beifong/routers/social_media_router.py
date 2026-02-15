@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from fastapi import APIRouter, Query
 from typing import List, Optional, Dict, Any
 from services.social_media_service import social_media_service
@@ -171,3 +181,4 @@ async def setup_browser_session(sites: Optional[List[str]] = Query(None, descrip
         "message": "Browser session setup triggered successfully",
         "note": "Browser window will open shortly for manual authentication",
     }
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

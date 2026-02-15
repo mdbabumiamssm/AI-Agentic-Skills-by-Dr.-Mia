@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import inspect
@@ -1404,3 +1414,5 @@ def _broadcast_args(*args):
         msg = f"Could not broadcast together arguments with shapes: {lens}."
         raise ValueError(msg)
     return [[arg[0] for _ in range(longest)] if len(arg) == 1 else arg for arg in args]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

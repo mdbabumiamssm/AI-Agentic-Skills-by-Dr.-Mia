@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Count Matrix Ingestion - Usage Guide
 
 ## Overview
@@ -152,3 +165,6 @@ with open('counts.txt', 'r') as f:
 - Remove version suffixes from Ensembl IDs (e.g., ENSG00000141510.15 -> ENSG00000141510) before downstream analysis
 - Use sparse matrices for single-cell data or bulk RNA-seq with >90% zeros
 - Batch query multiple samples at once rather than loading one at a time for better performance
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

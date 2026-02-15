@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import datetime
 from copy import deepcopy
 from typing import Any
@@ -196,3 +206,5 @@ class TimeWeightedVectorStoreRetriever(BaseRetriever):
             doc.metadata["buffer_idx"] = len(self.memory_stream) + i
         self.memory_stream.extend(dup_docs)
         return await self.vectorstore.aadd_documents(dup_docs, **kwargs)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

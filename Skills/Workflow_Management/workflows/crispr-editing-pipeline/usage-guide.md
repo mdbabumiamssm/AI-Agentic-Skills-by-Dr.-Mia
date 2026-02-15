@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # CRISPR Editing Pipeline - Usage Guide
 
 ## Overview
@@ -101,3 +114,6 @@ What type of edit do you need?
 - **Consider Cas9 variants**: Use high-fidelity variants for sensitive applications
 - **HDR timing matters**: Co-deliver donor with RNP for best efficiency
 - **ssODN for small edits**: Single-strand oligos work well for <50bp changes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

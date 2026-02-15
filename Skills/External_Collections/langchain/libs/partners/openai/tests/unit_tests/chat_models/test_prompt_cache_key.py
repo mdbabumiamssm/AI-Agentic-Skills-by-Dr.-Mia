@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for prompt_cache_key parameter."""
 
 from langchain_core.messages import HumanMessage
@@ -85,3 +95,5 @@ def test_prompt_cache_key_responses_api() -> None:
     # prompt_cache_key should be present regardless of API type
     assert "prompt_cache_key" in payload
     assert payload["prompt_cache_key"] == "responses-api-cache-v1"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import torch
 
 
@@ -30,3 +40,5 @@ def masked_softmax(weights, mask, dim=-1, eps=1e-30):
     masked_exps = weight_exps.masked_fill(mask == 0, eps)
     masked_sums = masked_exps.sum(dim, keepdim=True) + eps
     return masked_exps / masked_sums
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

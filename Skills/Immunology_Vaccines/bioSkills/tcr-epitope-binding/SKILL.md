@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-immunoinformatics-tcr-epitope-binding
 description: Predict TCR-epitope specificity using ERGO-II and deep learning models for T-cell receptor antigen recognition. Match TCRs to their cognate epitopes or predict TCR targets. Use when analyzing TCR repertoire specificity or identifying antigen-reactive T-cells.
 tool_type: python
 primary_tool: ERGO-II
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # TCR-Epitope Binding
@@ -238,3 +255,6 @@ def analyze_repertoire_specificity(tcr_df, epitope_db):
 - tcr-bcr-analysis/mixcr-analysis - TCR repertoire sequencing analysis
 - immunoinformatics/mhc-binding-prediction - Epitope context
 - single-cell/clustering - Single-cell TCR analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

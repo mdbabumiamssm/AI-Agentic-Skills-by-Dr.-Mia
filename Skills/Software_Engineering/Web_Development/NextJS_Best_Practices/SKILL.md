@@ -1,6 +1,24 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: 'nextjs-best-practices'
 description: 'Guidelines for building scalable, SEO-friendly applications with Next.js (App Router).'
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
+  - write_file
 ---
 
 
@@ -37,3 +55,6 @@ This skill outlines the standards for developing modern web applications using t
 1.  Reads `references/rules.md`.
 2.  Generates `app/blog/[slug]/page.tsx` as an async Server Component.
 3.  Uses `generateStaticParams` for SSG.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

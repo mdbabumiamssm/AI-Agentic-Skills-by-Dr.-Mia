@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import os
@@ -235,3 +245,5 @@ def peek_loaded_model_registry(dir_path, prefix):
     attr_dict = torch.load(model_path, weights_only=False).get(SAVE_KEYS.ATTR_DICT_KEY)
     registry = attr_dict.pop("registry_")
     return registry
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

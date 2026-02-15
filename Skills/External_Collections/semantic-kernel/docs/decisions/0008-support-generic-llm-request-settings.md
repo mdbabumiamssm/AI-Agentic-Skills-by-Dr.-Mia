@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -231,3 +244,6 @@ PR: <https://github.com/microsoft/semantic-kernel/pull/2829>
 - Good, because it is clear to developers what they should pass when creating a semantic function and it is easy to discover what service specific request setting implementations exist.
 - Good, because it is clear to implementors of a chat/text completion service what they should accept and how to extend the base abstraction to add service specific properties.
 - Neutral, because `ExtensionData` can be used which allows a developer to pass in properties that may be supported by multiple AI services e.g., `temperature` or combine properties for different AI services e.g., `max_tokens` (OpenAI) and `max_new_tokens` (Oobabooga).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

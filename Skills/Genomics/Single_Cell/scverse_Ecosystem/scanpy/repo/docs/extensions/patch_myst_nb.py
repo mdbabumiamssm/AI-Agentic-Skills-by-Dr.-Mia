@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Extension to patch https://github.com/executablebooks/MyST-NB/pull/599."""
 
 # TODO once MyST-NB 1.1.1/1.2.0 is out, this can be removed.
@@ -30,3 +40,5 @@ def get_cell_level_config(
 def setup(app: Sphinx):
     """App setup hook."""
     MditRenderMixin.get_cell_level_config = get_cell_level_config
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

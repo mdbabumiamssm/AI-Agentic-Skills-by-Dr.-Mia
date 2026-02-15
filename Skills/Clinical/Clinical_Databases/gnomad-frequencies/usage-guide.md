@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # gnomAD Frequencies - Usage Guide
 
 ## Overview
@@ -59,3 +72,6 @@ Tell your AI agent:
 - **Population stratification** - some variants are common in one population but rare globally
 - **Absent != pathogenic** - many benign variants are also rare
 - **ACMG PM2** uses AF < 0.01 (1%) as supporting evidence for pathogenicity
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

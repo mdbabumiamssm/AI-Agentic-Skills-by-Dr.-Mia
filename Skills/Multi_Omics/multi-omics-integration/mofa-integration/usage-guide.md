@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MOFA2 Integration - Usage Guide
 
 ## Overview
@@ -67,3 +80,6 @@ Different experimental conditions or batches
 - MOFA2 paper: doi:10.1186/s13059-020-02015-1
 - MOFA+ (single-cell): doi:10.1038/s41592-019-0423-z
 - Vignette: https://biofam.github.io/MOFA2/
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

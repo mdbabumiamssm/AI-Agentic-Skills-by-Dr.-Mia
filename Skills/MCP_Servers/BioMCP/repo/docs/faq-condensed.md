@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # FAQ - Quick Answers
 
 ## Getting Started
@@ -84,3 +97,6 @@ A: 3.10+ required
 2. Read [Troubleshooting](troubleshooting.md)
 3. Search [GitHub Issues](https://github.com/genomoncology/biomcp/issues)
 4. Ask with version info: `biomcp --version`
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

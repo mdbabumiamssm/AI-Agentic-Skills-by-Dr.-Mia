@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MyVariant.info Queries - Usage Guide
 
 ## Overview
@@ -59,3 +72,6 @@ Tell your AI agent:
 - **Specify fields** to reduce response size and improve speed
 - **Check for None** values when accessing nested fields
 - **myvariant.info** aggregates 40+ data sources - specify which you need
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

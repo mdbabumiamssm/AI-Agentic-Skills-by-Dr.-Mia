@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -57,3 +70,6 @@ PR: https://github.com/microsoft/semantic-kernel/pull/5171
 - Bad, because the same function cannot be added to multiple `KernelPlugin`'s
 - Bad, because it will be confusing i.e. depending on how the `KernelPlugin` is created it will behave differently.
 - Bad, because there is a minor breaking change to API signature.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

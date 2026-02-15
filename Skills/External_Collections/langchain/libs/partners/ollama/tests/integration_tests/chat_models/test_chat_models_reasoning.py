@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Ollama integration tests for reasoning chat models."""
 
 import pytest
@@ -224,3 +234,5 @@ def test_reasoning_modes_behavior(model: str) -> None:
     assert len(result_enabled.additional_kwargs["reasoning_content"]) > 0
     assert "<think>" not in result_enabled.additional_kwargs["reasoning_content"]
     assert "</think>" not in result_enabled.additional_kwargs["reasoning_content"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

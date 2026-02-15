@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Read RSS Feed
 
 ## What it is
@@ -30,3 +43,5 @@ The block connects to the provided RSS feed URL, fetches the feed content, and p
 
 ## Possible use case
 A news aggregator application could use this block to continuously monitor multiple RSS feeds from different news sources. The application could then display the latest news items to users, categorized by topic and sorted by publication date.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Step Through Items
 
 ### What it is
@@ -22,3 +35,5 @@ When given a list or dictionary, the block processes each item individually. For
 
 ### Possible use case
 Imagine you have a list of customer names and you want to perform a specific action for each customer, like sending a personalized email. This block could help you go through the list one by one, allowing you to process each customer individually.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

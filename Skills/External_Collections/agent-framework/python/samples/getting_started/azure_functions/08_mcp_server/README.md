@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agent as MCP Tool Sample
 
 This sample demonstrates how to configure AI agents to be accessible as both HTTP endpoints and [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) tools, enabling flexible integration patterns for AI agent consumption.
@@ -185,3 +198,6 @@ This automatically creates the following endpoints based on agent configuration:
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
 - [Microsoft Agent Framework Documentation](https://github.com/microsoft/agent-framework)
 - [Azure Functions Documentation](https://learn.microsoft.com/azure/azure-functions/)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

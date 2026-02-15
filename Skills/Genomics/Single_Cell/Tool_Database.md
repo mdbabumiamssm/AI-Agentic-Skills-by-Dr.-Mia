@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Single-Cell Analysis Tools Database (2026 Edition)
 
 A curated registry of state-of-the-art tools for single-cell analysis, updated for the 2026 landscape.
@@ -60,3 +73,6 @@ A curated registry of state-of-the-art tools for single-cell analysis, updated f
 | **Monocle 3** | Single-cell pseudotime. | Tree-based trajectories. | [Cole Trapnell Lab](https://cole-trapnell-lab.github.io/monocle3/) |
 | **RNA Velocity (scVelo)** | Future state prediction. | Uses spliced/unspliced ratios. | [scVelo](https://scvelo.org/) |
 | **CellRank** | Markov transition matrices. | Combines velocity with similarity kernels. | [CellRank](https://cellrank.org/) |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

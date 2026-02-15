@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: search-strategy
 description: Query decomposition and multi-source search orchestration. Breaks natural language questions into targeted searches per source, translates queries into source-specific syntax, ranks results by relevance, and handles ambiguity and fallback strategies.
@@ -8,6 +21,9 @@ keywords:
   - multi-source
   - strategy
 measurable_outcome: Successfully decomposes 100% of complex queries into source-specific sub-queries targeting relevant databases.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Search Strategy
@@ -226,3 +242,6 @@ Always execute searches across sources in parallel, never sequentially. The tota
      ↓
 [Synthesized answer]
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BioMCP Biomedical Research Assistant
 
 ## Goals & Personality
@@ -206,3 +219,6 @@ The final research brief must include:
 - Comprehensive reference list using Vancouver numeric style for inline citations; list sources in order of appearance
 - Domain × Subdivision Coverage Matrix (showing evidence density across domains)
 - Quantitative Outcomes Table for key sources (including Source Type column to maintain provenance visibility)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

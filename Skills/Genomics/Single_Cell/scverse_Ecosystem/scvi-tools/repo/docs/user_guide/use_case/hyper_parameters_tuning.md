@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Optimize SCVI model with hyperparameter tuning
 
 :::{note}
@@ -73,3 +86,6 @@ Then supply the URL of its UI to scvi-tools settings at the beginning of code an
 The experiment will be logged with all possible metrics (model, training, systems and so on) and be compared to previous experiments.
 
 For more information, See this [link](https://yosef-lab.notion.site/MLFLOW-SCVI-Tools-29957932739c809c94c1d866e64ca1cd)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

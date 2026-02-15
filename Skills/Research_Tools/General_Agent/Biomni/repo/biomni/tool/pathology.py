@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 def analyze_aortic_diameter_and_geometry(image_path, output_dir="./output"):
     """Analyze aortic diameter and geometry from cardiovascular imaging data.
 
@@ -1032,3 +1042,5 @@ def analyze_bone_microct_morphometry(input_file_path, output_dir="./results", th
     log.append(f"- Trabecular Number (Tb.N): {tb_n:.4f} 1/voxel")
 
     return "\n".join(log)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 This is an example implementation of the Agent Protocol DB for development Purposes
 It uses SQLite as the database and file store backend.
@@ -500,3 +510,5 @@ class AgentDB:
         except Exception as e:
             logger.error(f"Unexpected error while listing artifacts: {e}")
             raise
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

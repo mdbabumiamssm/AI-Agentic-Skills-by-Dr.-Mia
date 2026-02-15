@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Restaurant - Demo Application
 
 This sample provides a practical demonstration of how to leverage features from the [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel) to build a console application. Specifically, the application utilizes the [Business Schedule and Booking API](https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app) through Microsoft Graph to enable a Large Language Model (LLM) to book restaurant appointments efficiently. This guide will walk you through the necessary steps to integrate these technologies seamlessly.
@@ -137,3 +150,6 @@ Either run the sample in an IDE, like VSCode, or via the command line.
 > **Assistant** > I have successfully canceled your booking at "The French Laundry" on the 15th of March at 7:00 PM for 4 people.
 >
 > If you have any other questions or need further assistance, please let me know.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

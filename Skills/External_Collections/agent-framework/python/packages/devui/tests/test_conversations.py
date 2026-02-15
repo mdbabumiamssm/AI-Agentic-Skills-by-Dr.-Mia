@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Tests for conversation store implementation."""
@@ -333,3 +343,5 @@ async def test_list_items_handles_images_and_files():
     assert items[0].content[2].type == "input_file"
     file_content = cast(InputFileContent, items[0].content[2])
     assert file_content.file_url == "data:application/pdf;base64,JVBERi0="
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

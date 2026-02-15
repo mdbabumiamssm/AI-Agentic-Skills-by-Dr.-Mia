@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Drug-Drug Interaction Prediction Agent
 
 **ID:** `biomedical.drug_discovery.ddi_prediction`
@@ -374,3 +387,6 @@ def analyze_cyp_interactions(drug1: str, drug2: str) -> dict:
 *Artificial Intelligence Group*
 *Icahn School of Medicine at Mount Sinai*
 md.babu.mia@mssm.edu
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

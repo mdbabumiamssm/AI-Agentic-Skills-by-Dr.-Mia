@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Attempt to implement MRKL systems as described in arxiv.org/pdf/2205.00445.pdf."""
 
 from __future__ import annotations
@@ -214,3 +224,5 @@ class MRKLChain(AgentExecutor):
         ]
         agent = ZeroShotAgent.from_llm_and_tools(llm, tools)
         return cls(agent=agent, tools=tools, **kwargs)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

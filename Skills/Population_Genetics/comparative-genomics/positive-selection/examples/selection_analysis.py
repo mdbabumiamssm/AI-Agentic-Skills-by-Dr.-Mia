@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Positive selection analysis with PAML codeml'''
 
 import os
@@ -220,3 +230,5 @@ if __name__ == '__main__':
     print('6. m7 = parse_mlc_file("m7.mlc")')
     print('7. m8 = parse_mlc_file("m8.mlc")')
     print('8. summarize_selection_test(m7, m8)')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import glob
 import inspect
 import json
@@ -463,3 +473,5 @@ Here is the list of available libraries with their descriptions:
         checker_llm = self.format_check_prompt | self.llm.with_structured_output(output_class)
         result = checker_llm.invoke({"messages": [("user", str(self.log))]}).dict()
         return result
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

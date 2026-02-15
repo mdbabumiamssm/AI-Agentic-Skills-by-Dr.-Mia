@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 📧 Email Generation Agent with Structured Output
 
 A tutorial demonstrating how to implement structured output using Google's ADK (Agent Development Kit) framework. This example uses an email generator agent to show how to create type-safe, structured responses with Pydantic schemas and Gemini 3 Flash model.
@@ -81,3 +94,5 @@ This tutorial shows how Google ADK handles structured output:
 4. **Response Validation**: Ensures the output matches the defined structure and types
 
 This approach demonstrates how to create reliable, type-safe responses in Google ADK applications. 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

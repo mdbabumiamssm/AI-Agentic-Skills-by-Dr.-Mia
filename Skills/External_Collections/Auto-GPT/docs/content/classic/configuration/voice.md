@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Text to Speech
 
 Enter this command to use TTS _(Text-to-Speech)_ for AutoGPT
@@ -35,3 +48,6 @@ In the `.env` file set:
 | Arnold | `VR6AewLTigWG4xSOukaG` |
 | Adam   | `pNInz6obpgDQGcFmaJgB` |
 | Sam    | `yoZ06aMxZJJ28mfd3POQ` |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

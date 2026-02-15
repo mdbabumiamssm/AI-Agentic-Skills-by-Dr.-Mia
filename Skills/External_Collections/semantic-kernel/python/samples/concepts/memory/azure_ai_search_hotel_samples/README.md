@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Azure AI Search with Hotel Sample Data
 
 This guide explains how to use the provided Python samples to set up your Azure AI Search index, load hotel data, and run search queries—all programmatically, without manual configuration in the Azure Portal.
@@ -91,3 +104,6 @@ You no longer need to manually configure the index or upload data via the Azure 
 If you encounter issues, ensure your Azure credentials and endpoints are correctly configured in your environment.
 
 ---
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

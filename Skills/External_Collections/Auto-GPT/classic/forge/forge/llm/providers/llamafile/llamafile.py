@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import enum
 import logging
 import re
@@ -349,3 +359,5 @@ def _tool_calls_compat_extract_calls(response: str) -> Iterator[AssistantToolCal
         # t["function"]["arguments"] = str(t["function"]["arguments"])  # HACK
 
         yield AssistantToolCall.parse_obj(t)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

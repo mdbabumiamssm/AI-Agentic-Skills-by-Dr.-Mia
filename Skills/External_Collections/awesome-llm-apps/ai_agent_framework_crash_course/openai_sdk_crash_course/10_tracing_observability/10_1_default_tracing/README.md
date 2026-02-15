@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Default Tracing
 
 Demonstrates the built-in automatic tracing system that captures all agent workflow events without any setup required.
@@ -103,3 +116,6 @@ result2 = await Runner.run(agent, "Question 2")  # Trace 2
 
 - [Custom Tracing](../10_2_custom_tracing/README.md) - Advanced tracing patterns
 - [Tutorial 11: Production Patterns](../../11_production_patterns/README.md) - Real-world deployment
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

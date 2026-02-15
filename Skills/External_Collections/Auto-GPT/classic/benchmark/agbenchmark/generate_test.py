@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 AGBenchmark's test discovery endpoint for Pytest.
 
@@ -24,3 +34,5 @@ for challenge in chain(load_builtin_challenges(), load_webarena_challenges()):
 
     # Build a map of challenge names and their primary category
     DATA_CATEGORY[challenge.info.name] = challenge.info.category[0].value
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

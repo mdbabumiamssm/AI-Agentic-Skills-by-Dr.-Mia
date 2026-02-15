@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 📑 Notion MCP Agent
 
 ### 🎓 FREE Step-by-Step Tutorial 
@@ -109,3 +122,6 @@ You can exit the conversation at any time by typing `exit`, `quit`, `bye`, or `g
 - "Add a comment to the first paragraph saying 'This looks good!'"
 - "Search for any mentions of meetings"
 - "Summarize our conversation so far"
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

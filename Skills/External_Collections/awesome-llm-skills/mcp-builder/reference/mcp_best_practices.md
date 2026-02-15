@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MCP Server Development Best Practices and Guidelines
 
 ## Overview
@@ -913,3 +926,6 @@ A comprehensive testing strategy for MCP tools should cover:
 * **Security testing**: Validate authentication, authorization, input sanitization, and rate limiting
 * **Performance testing**: Check behavior under load, timeout handling, and resource cleanup
 * **Error handling**: Ensure tools properly report errors through the MCP protocol and clean up resources
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

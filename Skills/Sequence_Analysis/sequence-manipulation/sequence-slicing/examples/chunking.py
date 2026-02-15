@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Splitting sequences into chunks and windows'''
 from Bio.Seq import Seq
 
@@ -43,3 +53,5 @@ flank = 5
 start, end, region = get_flanking(seq, pos, flank)
 print(f'Position {pos} with {flank} bp flanks: positions {start}-{end}')
 print(f'Sequence: {region}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

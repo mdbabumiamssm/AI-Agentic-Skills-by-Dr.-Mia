@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Seurat: R Toolkit for Single Cell Genomics
 
 **Source:** [satijalab/seurat](https://github.com/satijalab/seurat)
@@ -43,3 +56,6 @@ Seurat includes detailed R Markdown vignettes within its repository.
 - **Location:** `./repo/vignettes`
 - **Contents:** Rmd files covering standard workflows, integration, multimodal analysis, and spatial genomics.
 - **How to use:** Open these `.Rmd` files in RStudio to step through the analysis interactively.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

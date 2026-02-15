@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 import pytest
@@ -137,3 +147,5 @@ async def test_it_renders_code_error(kernel: Kernel):
     target = create_kernel_prompt_template(template, allow_dangerously_set_content=True)
     with pytest.raises(TemplateRenderException):
         await target.render(kernel, arguments)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

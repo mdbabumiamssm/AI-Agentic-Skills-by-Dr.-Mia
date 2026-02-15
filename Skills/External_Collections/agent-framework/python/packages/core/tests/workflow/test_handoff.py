@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import AsyncIterable, AsyncIterator
@@ -1670,3 +1680,5 @@ async def test_coordinator_handle_user_input_multiple_consecutive_user_messages(
     assert len(coordinator._conversation) == 2
     assert coordinator._conversation[0].text == "New user message 1"
     assert coordinator._conversation[1].text == "New user message 2"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

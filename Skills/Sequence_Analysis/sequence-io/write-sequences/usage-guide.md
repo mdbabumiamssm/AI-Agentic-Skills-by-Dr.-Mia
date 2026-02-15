@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Write Sequences - Usage Guide
 
 ## Overview
@@ -47,3 +60,6 @@ Tell your AI agent what you want to do:
 - FASTQ requires quality scores for each base
 - GenBank/EMBL require molecule_type annotation
 - Use file handles with 'a' mode to append to existing files
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

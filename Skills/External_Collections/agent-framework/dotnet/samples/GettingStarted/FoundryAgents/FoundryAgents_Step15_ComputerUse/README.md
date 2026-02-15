@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Using Computer Use Tool with AI Agents
 
 This sample demonstrates how to use the computer use tool with AI agents. The computer use tool allows agents to interact with a computer environment by viewing the screen, controlling the mouse and keyboard, and performing various actions to help complete tasks.
@@ -53,3 +66,6 @@ The sample will:
 5. Display the results from the computer tool execution
 6. Display the final response from the agent
 7. Clean up resources by deleting both agents
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

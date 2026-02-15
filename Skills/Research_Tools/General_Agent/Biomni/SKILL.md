@@ -1,6 +1,22 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: biomni-general-agent
 description: Use the local Biomni checkout to orchestrate its 150+ biomedical tools, databases, and know-how workflows for complex research questions.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 ## At-a-Glance
@@ -22,3 +38,6 @@ description: Use the local Biomni checkout to orchestrate its 150+ biomedical to
 
 ## References
 - Full capability list, tool inventory, and tutorial notebooks documented in `README.md` and `repo/tutorials/`.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

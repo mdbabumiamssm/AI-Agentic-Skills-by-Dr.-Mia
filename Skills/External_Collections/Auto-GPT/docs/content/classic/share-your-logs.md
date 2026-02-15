@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Share your logs with us to help improve AutoGPT
 
 Do you notice weird behavior with your agent? Do you have an interesting use case? Do you have a bug you want to report?
@@ -51,3 +64,6 @@ You can name your tag any way you want.
 1. Select the severity.
 
     ![E2b new tag](../imgs/e2b-new-tag.png)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

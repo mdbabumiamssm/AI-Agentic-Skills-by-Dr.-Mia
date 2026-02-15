@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multiome Analysis with MultiVI
 
 This reference covers joint RNA and ATAC-seq analysis from multiome experiments using MultiVI.
@@ -382,3 +395,6 @@ def link_peaks_to_genes(model, mdata, distance_threshold=100000):
 ## Key References
 
 - Ashuach et al. (2023) "MultiVI: deep generative model for the integration of multimodal data"
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

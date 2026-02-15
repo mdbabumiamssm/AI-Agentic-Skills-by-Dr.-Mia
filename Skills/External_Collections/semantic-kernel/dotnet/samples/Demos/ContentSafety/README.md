@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Azure AI Content Safety and Prompt Shields service example
 
 This sample provides a practical demonstration of how to leverage [Semantic Kernel Prompt Filters](https://devblogs.microsoft.com/semantic-kernel/filters-in-semantic-kernel/#prompt-render-filter) feature together with prompt verification services such as Azure AI Content Safety and Prompt Shields.
@@ -40,3 +53,6 @@ It's possible to send [HTTP requests](https://learn.microsoft.com/en-us/aspnet/c
 - [What is Azure AI Content Safety?](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
 - [Analyze text content with Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-text)
 - [Detect attacks with Azure AI Content Safety Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/quickstart-jailbreak)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Azure AI Agent Examples
 
 This folder contains examples demonstrating different ways to create and use agents with the Azure AI client from the `agent_framework.azure` package. These examples use the `AzureAIClient` with the `azure-ai-projects` 2.x (V2) API surface (see [changelog](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-projects/CHANGELOG.md#200b1-2025-11-11)). For V1 (`azure-ai-agents` 1.x) samples using `AzureAIAgentClient`, see the [Azure AI V1 examples folder](../azure_ai_agent/).
@@ -88,3 +101,6 @@ python azure_ai_with_code_interpreter.py
 ```
 
 The examples demonstrate various patterns for working with Azure AI agents, from basic usage to advanced scenarios like thread management and structured outputs.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

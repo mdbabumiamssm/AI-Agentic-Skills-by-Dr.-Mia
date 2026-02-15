@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for override() methods on ModelRequest and ToolCallRequest."""
 
 from langchain_core.language_models.fake_chat_models import GenericFakeChatModel
@@ -371,3 +381,5 @@ class TestToolCallRequestOverride:
         # Original unchanged
         assert original_request.tool_call["args"]["x"] == 5
         assert original_request.state == {"count": 1}
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

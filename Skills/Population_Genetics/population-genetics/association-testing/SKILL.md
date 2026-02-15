@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-population-genetics-association-testing
 description: Genome-wide association studies (GWAS) with PLINK. Perform case-control and quantitative trait association testing using logistic/linear regression with covariates, generate Manhattan and QQ plots for result visualization. Use when running GWAS or association tests.
 tool_type: cli
 primary_tool: plink2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Association Testing
@@ -271,3 +288,6 @@ print(f'Genomic inflation factor: {lambda_gc:.3f}')
 - plink-basics - Data preparation and QC
 - population-structure - PCA for stratification control
 - linkage-disequilibrium - LD pruning before analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

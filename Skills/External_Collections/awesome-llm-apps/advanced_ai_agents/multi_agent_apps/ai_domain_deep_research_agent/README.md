@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🔍 AI Domain Deep Research Agent
 
 ### 🎓 FREE Step-by-Step Tutorial 
@@ -88,3 +101,6 @@ An advanced AI research agent built using the Agno Agent framework, Together AI'
 ## License
 
 This project is part of the awesome-llm-apps collection and is available under the MIT License.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

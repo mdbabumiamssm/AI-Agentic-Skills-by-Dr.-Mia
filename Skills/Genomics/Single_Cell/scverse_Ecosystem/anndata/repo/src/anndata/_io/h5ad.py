@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import re
@@ -391,3 +401,5 @@ def read_dense_as_csc(dataset: h5py.Dataset, axis_chunk: int = 6000):
         sub_matrix = sparse.csc_matrix(dataset[idx])
         sub_matrices.append(sub_matrix)
     return sparse.hstack(sub_matrices, format="csc")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

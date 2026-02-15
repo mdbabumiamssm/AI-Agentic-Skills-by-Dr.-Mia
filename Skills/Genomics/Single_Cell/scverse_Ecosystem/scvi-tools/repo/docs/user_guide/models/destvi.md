@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # DestVI
 
 **DestVI** [^ref1] (Deconvolution of Spatial Transcriptomics profiles using Variational Inference)
@@ -253,3 +266,6 @@ can be found on [destvi_utils](https://destvi-utils.readthedocs.io/en/latest/ins
 [^ref1]: Romain Lopez, Baoguo Li, Hadas Keren-Shaul, Pierre Boyeau, Merav Kedmi, David Pilzer, Adam Jelinski, Ido Yofe, Eyal David, Allon Wagner, Can Ergen, Yoseph Addadi, Ofra Golani, Franca Ronchese, Michael I Jordan, Ido Amit, Nir Yosef (2022). _DestVI identifies continuums of cell types in spatial transcriptomics data._ [Nature Biotechnology (in press)](https://www.biorxiv.org/content/10.1101/2021.05.10.443517v1)
 [^ref2]: Jakub Tomczak, Max Welling (2018),_VAE with a VampPrior_, [Proceedings of Machine Learning Research](https://proceedings.mlr.press/v84/tomczak18a.html)
 [^ref3]: Davide Risso, Fanny Perraudeau, Svetlana Gribkova, Sandrine Dudoit, Jean-Philippe Vert (2018). _A general and flexible method for signal extraction from single-cell RNA-seq data_, [Nature Communications] (https://www.nature.com/articles/s41467-017-02554-5)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

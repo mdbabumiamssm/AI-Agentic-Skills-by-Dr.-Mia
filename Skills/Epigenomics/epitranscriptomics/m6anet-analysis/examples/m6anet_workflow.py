@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''m6Anet workflow for ONT direct RNA m6A detection'''
 import subprocess
 from pathlib import Path
@@ -79,3 +89,5 @@ if __name__ == '__main__':
 
     summary = summarize_by_transcript(sites)
     summary.to_csv(Path(output) / 'm6a_per_transcript.csv', index=False)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

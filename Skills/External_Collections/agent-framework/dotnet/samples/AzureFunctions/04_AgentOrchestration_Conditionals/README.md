@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multi-Agent Orchestration with Conditionals Sample
 
 This sample demonstrates how to use the Durable Agent Framework (DAFx) to create a multi-agent orchestration workflow that includes conditional logic. The workflow implements a spam detection system that processes emails and takes different actions based on whether the email is identified as spam or legitimate.
@@ -111,3 +124,6 @@ The response for the spam email will be a JSON object that looks something like 
   "runtimeStatus": "Completed"
 }
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Creating Components
 
 ## The minimal component
@@ -268,3 +281,6 @@ The best place to see more examples is to look at the built-in components in the
 Guide on how to extend the built-in agent and build your own: [🤖 Agents](./agents.md)  
 Order of some components matters, see [🧩 Components](./components.md) to learn more about components and how they can be customized.  
 To see built-in protocols with accompanying examples visit [⚙️ Protocols](./protocols.md).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

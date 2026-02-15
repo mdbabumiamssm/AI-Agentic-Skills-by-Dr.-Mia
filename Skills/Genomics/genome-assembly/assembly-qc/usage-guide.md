@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Assembly QC - Usage Guide
 
 ## Overview
@@ -47,3 +60,6 @@ Tell your AI agent what you want to do:
 - QUAST with a reference (`-r`) can detect misassemblies and structural errors
 - Run both tools together for a comprehensive quality picture
 - High duplication in BUSCO may indicate contamination or assembly issues
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

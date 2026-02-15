@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: nano-banana
 description: AI-powered reasoning image engine for generating and editing high-quality biomedical infographics and realistic images.
@@ -9,6 +22,7 @@ compatibility:
   - system: Web Interface / API
 allowed-tools:
   - web_fetch
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
 ---
 
 # Nano Banana
@@ -35,3 +49,6 @@ Nano Banana is a cutting-edge AI tool serving as a "reasoning image engine." It 
 
 ## References
 - Associated with Gemini models (Gemini 2.5/3.0).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

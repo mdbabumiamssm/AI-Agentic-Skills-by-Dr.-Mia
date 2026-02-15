@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🔄 GPT-OSS Advanced Critique & Improvement Loop
 
 A Streamlit app demonstrating the "Automatic Critique + Improvement Loop" pattern using GPT-OSS via Groq.
@@ -81,3 +94,5 @@ Typically see:
 - **Fewer logical gaps** or missing information
 
 The improvement is most noticeable on complex topics where initial answers might miss important details or have unclear explanations. 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

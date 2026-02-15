@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import io
 import unittest.mock
 from unittest.mock import AsyncMock
@@ -209,3 +219,5 @@ async def test_upload_media_invalid_signature(mock_settings, mock_storage_client
 
     with pytest.raises(backend.server.v2.store.exceptions.InvalidFileTypeError):
         await backend.server.v2.store.media.upload_media("test-user", test_file)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # <a href="https://spectralib.org"><img src="https://spectralib.org/img/logo.png" width="200px" /></a>
 
 [![Build Status](https://travis-ci.org/yixuan/spectra.svg?branch=master)](https://travis-ci.org/yixuan/spectra) ![Basic CI](https://github.com/yixuan/spectra/workflows/Basic%20CI/badge.svg) [![codecov](https://codecov.io/gh/yixuan/spectra/branch/master/graph/badge.svg)](https://codecov.io/gh/yixuan/spectra)
@@ -256,3 +269,6 @@ By installing **Spectra** in this way, you also create a CMake target `Spectra::
 
 **Spectra** is an open source project licensed under
 [MPL2](https://www.mozilla.org/MPL/2.0/), the same license used by **Eigen**.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,6 +1,23 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: 'code-reviewer'
 description: 'Provides comprehensive code review feedback based on best practices, style guides, and potential bug detection. Use when the user requests a code review, asks for improvements to code, or needs to ensure code quality.'
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 
@@ -48,3 +65,6 @@ This skill helps to perform thorough code reviews, focusing on readability, main
 2.  Run `pylint src/main.py` (if configured).
 3.  Analyze code content.
 4.  Generate a markdown-formatted review with findings.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

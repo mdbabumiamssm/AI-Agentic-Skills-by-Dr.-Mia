@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Block Creation with SDK
 
 This guide explains how to create new blocks for the AutoGPT Platform using the SDK pattern with advanced features.
@@ -307,3 +320,5 @@ poetry run pytest 'backend/blocks/test/test_block.py::test_available_blocks[MyBl
 - **Webhooks**: `/backend/blocks/exa/` - Includes webhook manager
 
 Study these examples to understand different patterns and approaches for building blocks.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

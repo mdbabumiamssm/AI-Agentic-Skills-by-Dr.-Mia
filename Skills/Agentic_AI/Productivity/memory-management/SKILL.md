@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: memory-management
 description: Two-tier memory system that makes Claude a true workplace collaborator. Decodes shorthand, acronyms, nicknames, and internal language so Claude understands requests like a colleague would. CLAUDE.md for working memory, memory/ directory for the full knowledge base.
@@ -8,6 +21,9 @@ keywords:
   - glossary
   - collaboration
 measurable_outcome: Correctly identifies and decodes 90% of user-specific shorthands and acronyms in conversation.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Memory Management
@@ -327,3 +343,6 @@ Use `/productivity:start` to initialize by scanning your chat, calendar, email, 
 - Term rarely used
 
 This keeps CLAUDE.md fresh and relevant.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

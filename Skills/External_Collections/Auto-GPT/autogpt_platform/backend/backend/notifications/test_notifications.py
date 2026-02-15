@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for notification error handling in NotificationManager."""
 
 from datetime import datetime, timezone
@@ -596,3 +606,5 @@ class TestNotificationErrorHandling:
             # Info message about successful sends should be logged
             info_calls = [call[0][0] for call in mock_logger.info.call_args_list]
             assert any("sent and removed" in call.lower() for call in info_calls)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

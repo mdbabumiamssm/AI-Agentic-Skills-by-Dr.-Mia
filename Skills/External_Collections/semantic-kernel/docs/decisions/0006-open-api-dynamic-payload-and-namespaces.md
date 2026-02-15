@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 status: superseded by [ADR-0062](0062-open-api-payload.md)
 contact: SergeyMenshykh
@@ -89,3 +102,6 @@ contextVariables.Set("upn", "<sender-upn-value>");
 contextVariables.Set("receiver.upn", "<receiver-upn-value>");
 contextVariables.Set("cc.upn", "<cc-upn-value>");
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

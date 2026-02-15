@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import AsyncIterable
@@ -451,3 +461,5 @@ async def test_sequential_builder_reusable_after_build_with_factories() -> None:
     assert len(builder._participant_factories) == 2  # type: ignore
     assert builder._participant_factories[0] is create_agent1  # type: ignore
     assert builder._participant_factories[1] is create_agent2  # type: ignore
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

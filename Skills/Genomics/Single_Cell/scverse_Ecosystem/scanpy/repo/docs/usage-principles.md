@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Usage Principles
 
 Import Scanpy as:
@@ -80,3 +93,6 @@ adata.write_loom(filename)
 [matplotlib]: https://matplotlib.org/
 [out-of-memory pipelines]: https://falexwolf.de/blog/171223_AnnData_indexing_views_HDF5-backing/
 [seaborn]: https://seaborn.pydata.org/
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

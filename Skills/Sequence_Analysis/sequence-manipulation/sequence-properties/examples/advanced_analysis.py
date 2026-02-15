@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Advanced sequence property analysis: GC123, GC skew, amino acid codes'''
 from Bio.Seq import Seq
 from Bio.SeqUtils import GC123, GC_skew, nt_search, seq1, seq3
@@ -58,3 +68,5 @@ flex = protein.flexibility()
 for i, f in enumerate(flex[:20]):
     bar = '#' * int(f * 10)
     print(f'{protein.sequence[i]}{i+1:3d}: {f:.3f} {bar}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

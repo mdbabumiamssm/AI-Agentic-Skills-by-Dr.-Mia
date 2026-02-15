@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Planning and task management middleware for agents."""
 
 from __future__ import annotations
@@ -222,3 +232,5 @@ class TodoListMiddleware(AgentMiddleware):
             content=cast("list[str | dict[str, str]]", new_system_content)
         )
         return await handler(request.override(system_message=new_system_message))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

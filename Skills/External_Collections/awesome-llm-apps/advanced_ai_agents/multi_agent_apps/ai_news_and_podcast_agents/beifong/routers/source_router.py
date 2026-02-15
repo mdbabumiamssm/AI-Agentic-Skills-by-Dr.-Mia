@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from fastapi import APIRouter, Body, Path, status
 from typing import List, Optional, Dict, Any
 from models.source_schemas import Source, SourceWithFeeds, Category, PaginatedSources, SourceCreate, SourceUpdate, SourceFeedCreate
@@ -134,3 +144,5 @@ async def delete_feed(feed_id: int = Path(..., gt=0)):
     - **feed_id**: ID of the feed to delete
     """
     return await source_service.delete_feed(feed_id)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

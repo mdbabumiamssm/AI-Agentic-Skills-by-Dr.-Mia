@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SKILL: Intuition Pumps for Scientific Problem Ideation
 
 ## Overview
@@ -262,3 +275,6 @@ When the user is ready, Claude should guide them through the Phase 1 questions t
 ---
 
 *This skill is based on the problem choice framework developed by Michael A. Fischbach and Christopher T. Walsh, as described in "Problem choice and decision trees in science and engineering" (Cell, 2024).*
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

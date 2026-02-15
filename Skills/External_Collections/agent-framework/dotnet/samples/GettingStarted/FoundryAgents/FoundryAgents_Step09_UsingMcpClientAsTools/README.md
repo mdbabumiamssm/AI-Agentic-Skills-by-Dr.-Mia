@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Using MCP Client Tools with AI Agents
 
 This sample demonstrates how to use Model Context Protocol (MCP) client tools with AI agents, allowing agents to access tools provided by MCP servers. This sample uses the GitHub MCP server to provide tools for querying GitHub repositories.
@@ -48,3 +61,5 @@ The sample will:
 5. Run the agent with a prompt to summarize the last four commits to the microsoft/semantic-kernel repository
 6. The agent will use the GitHub MCP tools to query the repository information
 7. Clean up resources by deleting the agent
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

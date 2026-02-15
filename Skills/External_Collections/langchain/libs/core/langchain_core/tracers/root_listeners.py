@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tracers that call listeners."""
 
 from collections.abc import Awaitable, Callable
@@ -128,3 +138,5 @@ class AsyncRootListenersTracer(AsyncBaseTracer):
                 await acall_func_with_variable_args(self._arg_on_end, run, self.config)
         elif self._arg_on_error is not None:
             await acall_func_with_variable_args(self._arg_on_error, run, self.config)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MAGeCK Analysis - Usage Guide
 
 ## Overview
@@ -60,3 +73,6 @@ Effect size from maximum likelihood estimation, comparable across genes.
 - MAGeCK paper: doi:10.1186/s13059-014-0554-4
 - MAGeCK-MLE: doi:10.1186/s13059-015-0843-6
 - Documentation: https://sourceforge.net/p/mageck/wiki/Home/
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

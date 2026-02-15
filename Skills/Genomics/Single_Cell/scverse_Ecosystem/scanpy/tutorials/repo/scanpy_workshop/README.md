@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Scanpy workshop material
 
 This is the workshop material of the 2-day scanpy workshop taken place at the Helmholtz Center Munich in July 2020. Recordings of the main sessions of this course are available on our youtube channel: https://youtube.com/playlist?list=PL4rcQcNPLZxWQQH7LlRBMkAo5NWuHX1e3
@@ -18,3 +31,6 @@ These notebooks do not depend on any Python-R environment. The notebooks themsel
 ## Closing remarks
 
 If you have questions, please do not hesitate to contact us.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

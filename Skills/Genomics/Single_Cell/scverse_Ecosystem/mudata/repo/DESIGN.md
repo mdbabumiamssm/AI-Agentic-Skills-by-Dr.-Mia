@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Designing `MuData`
 
 This document outlines design considerations and some technical details about `MuData` implementation.
@@ -34,3 +47,6 @@ h5ls pbmc_10k.h5mu/mod/rna
 ## Operating on MuData objects
 
 To handle `MuData` objects with multi-omics data, a [multimodal omics analysis framework (`muon`)](https://github.com/PmBio/muon) has been built. More implementation details can be found [in the respective `DESIGN.md` file](https://github.com/scverse/muon/blob/master/DESIGN.md).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

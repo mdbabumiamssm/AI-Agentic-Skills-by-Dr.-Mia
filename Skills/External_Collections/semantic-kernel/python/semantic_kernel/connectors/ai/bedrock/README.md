@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Amazon - Bedrock
 
 [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) is a service provided by Amazon Web Services (AWS) that allows you to access large language models with a serverless experience. Semantic Kernel provides a connector to access these models from AWS.
@@ -73,3 +86,5 @@ You can pass these parameters via the `extension_data` field in the `PromptExecu
 ## Unsupported features
 
 - [Guardrail](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

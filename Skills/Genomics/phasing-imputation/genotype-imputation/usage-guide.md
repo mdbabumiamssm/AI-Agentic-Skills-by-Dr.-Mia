@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Genotype Imputation - Usage Guide
 
 ## Overview
@@ -171,3 +184,6 @@ plink2 --vcf imputed.vcf.gz dosage=DS \
 # Convert to hard calls if needed (loses uncertainty)
 bcftools +dosage2gt imputed.vcf.gz -Oz -o imputed_gt.vcf.gz
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

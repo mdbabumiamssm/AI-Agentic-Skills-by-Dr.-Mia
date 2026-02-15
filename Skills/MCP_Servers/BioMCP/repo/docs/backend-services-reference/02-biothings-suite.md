@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BioThings Suite API Reference
 
 The BioThings Suite provides unified access to biomedical annotations across genes, variants, diseases, and drugs through a consistent API interface.
@@ -479,3 +492,6 @@ def normalize_gene_symbol(symbol):
         return response.json()["hits"][0]["symbol"]
     return symbol
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

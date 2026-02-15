@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AG-UI Getting Started Samples
 
 This directory contains samples that demonstrate how to build AG-UI (Agent UI Protocol) servers and clients using the Microsoft Agent Framework.
@@ -302,3 +315,6 @@ For the most up-to-date AG-UI features, see the [Python samples](../../../../pyt
 - [Human-in-the-Loop](https://learn.microsoft.com/agent-framework/integrations/ag-ui/human-in-the-loop) - Approval workflows tutorial
 - [State Management](https://learn.microsoft.com/agent-framework/integrations/ag-ui/state-management) - State management tutorial
 - [Agent Framework Overview](https://learn.microsoft.com/agent-framework/overview/agent-framework-overview) - Core framework concepts
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

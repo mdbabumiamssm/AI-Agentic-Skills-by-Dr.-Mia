@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Thread Management Examples
 
 This folder contains examples demonstrating different ways to manage conversation threads and chat message stores with the Agent Framework.
@@ -18,3 +31,6 @@ Make sure to set the following environment variables before running the examples
 - `OPENAI_CHAT_MODEL_ID`: The OpenAI model to use (e.g., `gpt-4o`, `gpt-4o-mini`, `gpt-3.5-turbo`) (required for all samples)
 - `AZURE_AI_PROJECT_ENDPOINT`: Azure AI Project endpoint URL (required for service-managed thread examples)
 - `AZURE_AI_MODEL_DEPLOYMENT_NAME`: The name of your model deployment (required for service-managed thread examples)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

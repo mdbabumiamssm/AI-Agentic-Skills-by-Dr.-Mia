@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Differential Binding Analysis - Usage Guide
 
 ## Overview
@@ -52,3 +65,6 @@ Tell your AI agent what you want to do:
 - Positive fold change means gained in treatment, negative means lost
 - Check PCA plot to verify samples cluster by condition, not batch
 - If few peaks are significant, check replicate concordance and peak quality
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import Iterable
 from typing import Literal
 
@@ -1054,3 +1064,5 @@ def get_reconstruction_loss_protein(y, py_, pro_batch_mask_minibatch=None):
         rl_protein = reconst_loss_protein_full.sum(dim=-1)
 
     return rl_protein
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # cBioPortal Integration
 
 BioMCP integrates with [cBioPortal](https://www.cbioportal.org/), a comprehensive cancer genomics portal that provides visualization and analysis tools for large-scale cancer genomics datasets.
@@ -139,3 +152,6 @@ The integration handles various error scenarios:
 - Invalid gene symbols are validated before API calls
 - Network timeouts fall back to article-only results
 - API errors are logged but don't block search results
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

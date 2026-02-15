@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Optimization: Gradient Descent
 
 **Category:** Mathematics / Machine Learning
@@ -26,3 +39,6 @@ We know from calculus that the minimum is at $x = -2$. The script demonstrates h
 2.  **Epochs:** The number of iteration steps.
 3.  **Convexity:** This simple example uses a convex function (bowl shape), guaranteeing a global minimum. Neural networks involve non-convex functions.
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

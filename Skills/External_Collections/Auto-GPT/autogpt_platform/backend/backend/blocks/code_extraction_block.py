@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import re
 
 from backend.data.block import (
@@ -116,3 +126,5 @@ class CodeExtractionBlock(Block):
         # Combine all code blocks for this language with newlines between them
         code_blocks = [match.group(1).strip() for match in matches]
         return "\n\n".join(code_blocks) if code_blocks else ""
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

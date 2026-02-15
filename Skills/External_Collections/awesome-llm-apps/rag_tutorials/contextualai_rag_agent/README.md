@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contextual AI RAG Agent
 
 A Streamlit app that integrates Contextual AI's managed RAG platform. Create a datastore, ingest documents, spin up an agent, and chat grounded on your data.
@@ -60,3 +73,6 @@ streamlit run contextualai_rag_agent.py
 - If you're on a non-US cloud instance, set the Base URL in the sidebar (e.g., `http://api.contextual.ai/v1`). The app will use this base URL for all API calls, including readiness polling.
 - Retrieval visualization uses `agents.query.retrieval_info` to fetch base64 page images and displays them directly.
 - LMUnit evaluation uses `lmunit.create` to score the last answer against your rubric.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

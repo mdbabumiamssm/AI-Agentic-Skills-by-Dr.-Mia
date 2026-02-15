@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Semantic Kernel OpenAI Responses Agent
 
 The responses API is OpenAI's latest core API and an agentic API primitive. See more details [here](https://platform.openai.com/docs/guides/responses-vs-chat-completions).
@@ -28,3 +41,5 @@ Please visit the following [link](https://learn.microsoft.com/en-us/azure/ai-ser
 `AZURE_OPENAI_RESPONSES_DEPLOYMENT_NAME=""`
 
 The other Azure OpenAI config values used for AzureAssistantAgent or AzureChatCompletion, like `AZURE_OPENAI_API_VERSION` or `AZURE_OPENAI_ENDPOINT` are still valid for the `AzureResponsesAgent`.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

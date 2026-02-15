@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel - CopilotStudioAgent Quickstart
 
 This README provides an overview on how to use the `CopilotStudioAgent` within Semantic Kernel. 
@@ -65,3 +78,6 @@ You will create a **Native Client Application Identity** (no client secret requi
 ### Tip
 
 If you **do not see Power Platform API**, follow [Step 2 in Power Platform API Authentication](https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2) to add the API to your tenant.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

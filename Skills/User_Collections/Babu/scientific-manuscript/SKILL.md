@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: scientific-manuscript
 description: "High-impact scientific manuscript preparation for journals like Nature, Blood, Cell. Use when writing abstracts, introductions, methods, results, discussions, or figure legends. Includes citation management, statistical reporting standards, ICMJE guidelines, and journal-specific formatting for hematology/oncology publications."
@@ -163,3 +176,6 @@ Smith, J.A. & Jones, B.C. Title of article. Nature 620, 567–578 (2024).
 
 See `references/journal_templates.md` for specific formats.
 See `references/statistical_tests.md` for test selection guide.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

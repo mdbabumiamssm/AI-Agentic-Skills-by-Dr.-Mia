@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-atac-seq-differential-accessibility
 description: Find differentially accessible chromatin regions between conditions using DiffBind or DESeq2. Use when comparing chromatin accessibility between treatment groups, cell types, or developmental stages in ATAC-seq experiments.
 tool_type: r
 primary_tool: DiffBind
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Differential Accessibility
@@ -235,3 +252,6 @@ dba <- dba.analyze(dba)
 - differential-expression/deseq2-basics - DESeq2 methods
 - chip-seq/differential-binding - Similar DiffBind workflow
 - pathway-analysis/go-enrichment - Analyze differential genes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

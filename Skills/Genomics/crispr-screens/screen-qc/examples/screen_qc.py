@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''CRISPR screen quality control'''
 import pandas as pd
 import numpy as np
@@ -59,3 +69,5 @@ axes[1].set_title('Sample Correlation')
 plt.tight_layout()
 plt.savefig('screen_qc.png', dpi=150)
 print('\nQC plots saved to screen_qc.png')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

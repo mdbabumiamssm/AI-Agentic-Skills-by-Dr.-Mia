@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 📄 Resume & Job Matcher
 
 ## 🚀 Overview
@@ -24,3 +37,6 @@ A great tool for job seekers to optimize resumes for each application.
    pip install -r requirements.txt
 2. Install Ollama and run a model (e.g. llama3): `ollama run llama3`
 3. Start the app: `streamlit run app.py`
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

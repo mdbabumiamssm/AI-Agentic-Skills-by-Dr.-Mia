@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Ancestral Reconstruction - Usage Guide
 
 ## Overview
@@ -62,3 +75,6 @@ Tell your AI agent what you want to do:
 - **Tree quality** - Ancestral reconstruction depends on tree accuracy
 - **Gap handling** - IQ-TREE handles gaps better than PAML
 - **Branch length** - Long branches reduce confidence; add intermediate taxa if possible
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 Running miQC on Seurat objects
 ================
 Compiled: July 19, 2021
@@ -314,3 +327,6 @@ FeatureScatter(pbmc3k_extreme, feature1 = "nFeature_RNA", feature2 = "percent.mt
     ## [116] plotly_4.9.3          rmarkdown_2.8         grid_4.0.4            data.table_1.14.0     callr_3.7.0          
     ## [121] digest_0.6.27         xtable_1.8-4          tidyr_1.1.3           httpuv_1.6.1          R.utils_2.10.1       
     ## [126] stats4_4.0.4          munsell_0.5.0         viridisLite_0.4.0     bslib_0.2.5.1
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

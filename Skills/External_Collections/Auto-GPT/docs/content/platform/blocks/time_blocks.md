@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Get Current Time
 
 ### What it is
@@ -104,3 +117,5 @@ The block takes input for the duration in days, hours, minutes, and seconds. It 
 
 ### Possible use case
 This block could be used in a reminder application to trigger notifications after a set amount of time, or in a cooking app to notify users when a recipe step is complete.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

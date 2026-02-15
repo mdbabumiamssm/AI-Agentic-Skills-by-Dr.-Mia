@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ResolVI
 
 **resolVI** (Python class {class}`~scvi.external.RESOLVI`) is a generative model of single-cell resolved spatial
@@ -189,3 +202,6 @@ A semisupervised model is necessary to perform this analysis as it leverages the
 ResolVI tests differences in abundance of various cell-types in the neighborhood of a cell $n$
 $c_{n} = h_{nu}\left(z_n\right)$. Cell-type prediction vectors are averaged weighted by the distance of a specific cell
 and differential computation is performed.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

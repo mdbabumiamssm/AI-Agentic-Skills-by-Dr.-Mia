@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-population-genetics-plink-basics
 description: PLINK file formats, format conversion, and quality control filtering for population genetics. Convert between VCF, BED/BIM/FAM, and PED/MAP formats, apply MAF, genotyping rate, and HWE filters using PLINK 1.9 and 2.0. Use when working with PLINK format files or running QC.
 tool_type: cli
 primary_tool: plink
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # PLINK Basics
@@ -316,3 +333,6 @@ plink2 --bfile input --update-name update.txt --make-bed --out output
 - association-testing - GWAS with filtered data
 - population-structure - PCA after QC
 - variant-calling/vcf-basics - VCF format before conversion
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

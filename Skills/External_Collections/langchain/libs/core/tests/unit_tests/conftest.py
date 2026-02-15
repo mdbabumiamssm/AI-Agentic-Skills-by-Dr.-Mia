@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Configuration for unit tests."""
 
 from collections.abc import Iterator, Sequence
@@ -121,3 +131,5 @@ def deterministic_uuids(mocker: MockerFixture) -> MockerFixture:
         UUID(f"00000000-0000-4000-8000-{i:012}", version=4) for i in range(10000)
     )
     return mocker.patch("uuid.uuid4", side_effect=side_effect)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

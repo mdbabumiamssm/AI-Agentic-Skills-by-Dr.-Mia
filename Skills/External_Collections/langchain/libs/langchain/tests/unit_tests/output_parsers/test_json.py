@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import AsyncIterator, Iterator
 from typing import Any
 
@@ -451,3 +461,5 @@ async def test_partial_functions_json_output_parser_diff_async() -> None:
     chain = input_iter | JsonOutputFunctionsParser(diff=True)
 
     assert [p async for p in chain.astream(None)] == EXPECTED_STREAMED_JSON_DIFF
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

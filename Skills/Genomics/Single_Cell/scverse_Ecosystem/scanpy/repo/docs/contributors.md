@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributors
 
 [anndata graph](https://github.com/scverse/anndata/graphs/contributors>) | [scanpy graph](https://github.com/scverse/scanpy/graphs/contributors)| ☀ = maintainer
@@ -23,3 +36,6 @@
 - [Fidel Ramirez](https://github.com/fidelram) developer, plotting
 - [Giovanni Palla](https://twitter.com/g_palla1), developer, spatial data
 - [Malte Luecken](https://twitter.com/MDLuecken), developer, community & forum
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

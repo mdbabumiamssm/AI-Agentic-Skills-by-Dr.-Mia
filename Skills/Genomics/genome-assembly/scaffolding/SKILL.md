@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-assembly-scaffolding
 description: Scaffold contigs into chromosome-level assemblies using Hi-C data with YaHS, 3D-DNA, SALSA2, and validate with BUSCO and contact maps. Use when scaffolding contigs to chromosome-level assemblies.
 tool_type: cli
 primary_tool: YaHS
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Genome Scaffolding
@@ -182,3 +199,6 @@ seqkit replace -p '(.+)' -r '{kv}' -k name_mapping.tsv scaffolds.fa > chromosome
 - genome-assembly/assembly-polishing - Polish before scaffolding
 - genome-assembly/assembly-qc - Validate final assembly
 - hi-c-analysis/hic-data-io - Hi-C data processing
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

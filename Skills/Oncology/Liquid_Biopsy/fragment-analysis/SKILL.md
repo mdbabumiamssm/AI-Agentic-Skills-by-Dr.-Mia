@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-fragment-analysis
 description: Analyzes cfDNA fragment size distributions and fragmentomics features using FinaleToolkit or Griffin. Extracts nucleosome positioning patterns, fragment ratios, and DELFI-style fragmentation profiles for cancer detection. Use when leveraging fragment patterns for tumor detection or tissue-of-origin analysis.
 tool_type: python
 primary_tool: FinaleToolkit
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Fragment Analysis
@@ -194,3 +211,6 @@ def calculate_binned_profile(bam_path, bin_size=5_000_000, chromosomes=None):
 - cfdna-preprocessing - Preprocess before fragment analysis
 - tumor-fraction-estimation - Complement with CNV-based estimation
 - methylation-based-detection - Alternative detection approach
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

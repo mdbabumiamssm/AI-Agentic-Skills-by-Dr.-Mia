@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Module that contains tests for runnable.astream_events API."""
 
 import asyncio
@@ -2154,3 +2164,5 @@ async def test_sync_in_sync_lambdas() -> None:
 
     events = await _collect_events(add_one_proxy_.astream_events(1, version="v1"))
     _assert_events_equal_allow_superset_metadata(events, EXPECTED_EVENTS)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

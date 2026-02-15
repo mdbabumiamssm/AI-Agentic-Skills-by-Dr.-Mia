@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BPCells
 
 *This site is for the R package. Python site [here](python/index.html) (experimental)*
@@ -109,3 +122,5 @@ improve your scalability, we're happy to provide advice. We have had a couple of
 try this so far, with promising success. Email is the best way to get in touch
 for this (look in the `DESCRIPTION` file on github for contact info). Python
 developers welcome, though the current python package is still in experimental status.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

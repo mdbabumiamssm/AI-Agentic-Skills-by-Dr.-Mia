@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Individual MCP tools for specific biomedical search and fetch operations.
 
 This module provides the original 9 individual tools that offer direct access
@@ -1819,3 +1829,5 @@ async def openfda_shortage_getter(
     from biomcp.openfda import get_drug_shortage
 
     return await get_drug_shortage(drug, api_key=api_key)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

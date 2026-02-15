@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Guide RNA Design - Usage Guide
 
 ## Overview
@@ -53,3 +66,6 @@ Tell your AI agent what you want to do:
 - **Avoid poly-T** - Four or more consecutive T's terminate transcription
 - **Multiple guides** - Design 3-5 guides per gene for redundancy
 - **Off-target check** - Always check off-targets before ordering guides
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

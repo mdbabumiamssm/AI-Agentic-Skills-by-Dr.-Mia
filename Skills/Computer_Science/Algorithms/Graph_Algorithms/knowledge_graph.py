@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Knowledge Graph Implementation for Biomedical Relationships
 
@@ -198,3 +208,5 @@ if __name__ == "__main__":
     print("\n--- Neighborhood (BFS Depth 2) ---")
     for node, depth in kg.bfs_traversal("Imatinib", max_depth=2):
         print(f"Depth {depth}: {node} ({kg.nodes[node].type})")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

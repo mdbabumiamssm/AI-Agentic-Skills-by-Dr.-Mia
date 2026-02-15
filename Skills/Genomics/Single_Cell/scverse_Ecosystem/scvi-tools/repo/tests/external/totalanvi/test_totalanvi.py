@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 
 import numpy as np
@@ -347,3 +357,5 @@ def test_totalanvi_scarches_from_totalvi(save_path):
     adata5 = TOTALANVI.prepare_query_anndata(adata4, dir_path, inplace=False)
     TOTALANVI_query4 = TOTALANVI.load_query_data(adata5, dir_path)
     TOTALANVI_query4.train(1, train_size=0.5, plan_kwargs={"weight_decay": 0.0})
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

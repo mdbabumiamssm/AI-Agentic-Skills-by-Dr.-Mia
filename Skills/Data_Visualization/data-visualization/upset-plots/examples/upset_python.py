@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Create UpSet plots with upsetplot for set intersection visualization'''
 
 import matplotlib.pyplot as plt
@@ -95,3 +105,5 @@ print('UpSet plots saved: upset_basic.png, upset_customized.png, upset_with_boxp
 print('\nSet sizes:')
 for name, genes in gene_sets.items():
     print(f'  {name}: {len(genes)} genes')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

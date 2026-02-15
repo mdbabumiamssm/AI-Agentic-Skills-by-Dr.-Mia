@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎫 Customer Support Ticketing Agent with Structured Output
 
 A tutorial demonstrating how to implement a structured customer support ticketing system using Google's ADK (Agent Development Kit) framework. This example shows how to create type-safe, structured support tickets with priority levels, categories, and resolution estimates using Pydantic schemas and Gemini 3 Flash model.
@@ -113,3 +126,5 @@ This tutorial shows how Google ADK handles complex structured output:
 4. **Validation**: Ensures output matches the defined schema and business rules
 
 This approach demonstrates how to create reliable, business-ready structured responses in Google ADK applications. 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

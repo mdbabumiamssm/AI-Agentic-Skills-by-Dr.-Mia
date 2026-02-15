@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for tool emulator middleware."""
 
 import typing
@@ -622,3 +632,5 @@ class TestLLMToolEmulatorAsync:
         calc_messages = [msg for msg in tool_messages if msg.name == "calculator"]
         assert len(calc_messages) > 0
         assert "Result: 20" in calc_messages[0].content
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

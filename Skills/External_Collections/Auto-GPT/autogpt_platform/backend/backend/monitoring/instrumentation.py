@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Prometheus instrumentation for FastAPI services.
 
@@ -288,3 +298,5 @@ def record_graph_operation(operation: str, status: str):
 def record_user_operation(operation: str, status: str):
     """Record a user operation (login, register, etc.)."""
     USER_OPERATIONS.labels(operation=operation, status=status).inc()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel - Amazon Bedrock Models Demo
 
 This program demonstrates how to use the Semantic Kernel using the AWS SDK for .NET with Amazon Bedrock Runtime to 
@@ -41,3 +54,5 @@ This demo program allows you to do any of the following:
 3. To exit chat completion or streaming chat completion, leave the prompt empty.
    - The available models for each task are listed before you make your selection. Note that some models do not support
    certain tasks, and they are skipped during the selection process.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

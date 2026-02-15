@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Redis Context Provider Examples
 
 The Redis context provider enables persistent, searchable memory for your agents using Redis (RediSearch). It supports full‑text search and optional hybrid search with vector embeddings, letting agents remember and retrieve user context across sessions and threads.
@@ -111,3 +124,6 @@ You should see the agent responses and, when using embeddings, context retrieved
 - Ensure at least one of `application_id`, `agent_id`, `user_id`, or `thread_id` is set; the provider requires a scope.
 - If using embeddings, verify `OPENAI_API_KEY` is set and reachable.
 - Make sure Redis exposes RediSearch (Redis Stack image or managed service with search enabled).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

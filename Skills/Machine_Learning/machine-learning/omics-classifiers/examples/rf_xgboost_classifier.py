@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Train RandomForest and XGBoost classifiers on expression data'''
 
 import pandas as pd
@@ -55,3 +65,5 @@ importances = rf_pipe.named_steps['clf'].feature_importances_
 top_features = pd.Series(importances, index=X.columns).nlargest(20)
 top_features.to_csv('top_rf_features.csv')
 print(f'\nTop 20 RF features saved')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

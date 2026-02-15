@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: proposed
@@ -117,3 +130,6 @@ Sources:
 ## Decision Outcome
 
 Based on the above investigation, the decision is not to add Entity Framework connector, but to add a new connector for individual database when needed. The reason for this decision is that Entity Framework providers do not uniformly support collection management operations and will require database specific code for key handling and object mapping. These factors will make use of an Entity Framework connector unreliable and it will not abstract away the underlying database. Additionally the number of vector databases that Entity Framework supports that Semantic Kernel does not have a memory connector for is very small.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

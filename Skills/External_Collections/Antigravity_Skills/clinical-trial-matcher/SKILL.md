@@ -1,6 +1,23 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: 'clinical-trial-matcher'
 description: 'Matches patient profiles to open clinical trials using vector similarity and inclusion/exclusion criteria. Use when a user provides patient data and asks for relevant trials.'
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Clinical Trial Matcher
@@ -23,3 +40,6 @@ This skill matches a patient's clinical profile against a database of active cli
 4.  **Format Output:**
     -   Present matches in a structured list: Trial ID (`NCT number`), Title, Phase, and "Why it fits" (matching logic).
     -   Highlight any potential exclusion criteria that need verification.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

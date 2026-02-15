@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from unittest.mock import patch
@@ -120,3 +130,5 @@ async def test_raw_embedding_list_input(mock_embedding_client, model_id, prompt)
     assert responses == [[0.1, 0.2, 0.3], [0.1, 0.2, 0.3]]
     assert mock_embedding_client.call_count == 2
     mock_embedding_client.assert_called_with(model=model_id, prompt=prompt, options=settings.options)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

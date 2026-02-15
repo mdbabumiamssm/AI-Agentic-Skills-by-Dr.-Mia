@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Authentication and API Keys
 
 BioMCP integrates with multiple biomedical databases. While many features work without authentication, some advanced capabilities require API keys for enhanced functionality.
@@ -343,3 +356,6 @@ Now that you have API keys configured:
 2. Explore [How-to Guides](../how-to-guides/01-find-articles-and-cbioportal-data.md) for advanced features
 3. Set up [logging and monitoring](../how-to-guides/05-logging-and-monitoring-with-bigquery.md)
 4. Review [security policies](../policies.md) for your organization
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

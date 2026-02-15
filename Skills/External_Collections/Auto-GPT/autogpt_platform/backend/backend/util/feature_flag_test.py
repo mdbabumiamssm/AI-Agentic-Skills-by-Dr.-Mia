@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import pytest
 from fastapi import HTTPException
 from ldclient import LDClient
@@ -111,3 +121,5 @@ async def test_is_feature_enabled_with_flag_enum(mocker):
     assert result is True
     # Should call with the flag's string value
     mock_get_feature_flag_value.assert_called_once()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

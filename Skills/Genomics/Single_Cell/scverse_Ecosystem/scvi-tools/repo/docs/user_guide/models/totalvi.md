@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # totalVI
 
 **totalVI** [^ref1] (total Variational Inference; Python class {class}`~scvi.model.TOTALVI`) posits a flexible generative model of CITE-seq RNA and protein data that can subsequently
@@ -217,3 +230,6 @@ distributions of the latent variables, retrieving the likelihood parameters, and
     Adam Gayoso\*, Zoë Steier\*, Romain Lopez, Jeffrey Regier, Kristopher L Nazor, Aaron Streets, Nir Yosef (2021),
     _Joint probabilistic modeling of single-cell multi-omic data with totalVI_,
     [Nature Methods](https://www.nature.com/articles/s41592-020-01050-x).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

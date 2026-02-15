@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Sequential Thinking with the Think Tool
 
 ## CRITICAL: The Think Tool is MANDATORY
@@ -237,3 +250,6 @@ think(
 The think tool is not just a requirement—it's your research companion that ensures systematic, thorough, and reproducible biomedical research. By following sequential thinking patterns, you'll deliver comprehensive insights that address all aspects of complex biomedical queries.
 
 Remember: **Always think first, then search. Document your reasoning. Only mark thinking complete when your analysis is truly finished.**
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

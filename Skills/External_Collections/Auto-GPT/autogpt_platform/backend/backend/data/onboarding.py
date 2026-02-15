@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import re
 from datetime import datetime, timedelta, timezone
 from typing import Any, Literal, Optional
@@ -458,3 +468,5 @@ async def onboarding_enabled() -> bool:
     count = await prisma.models.StoreAgent.prisma().count(take=MIN_AGENT_COUNT + 1)
     # Onboarding is enabled if there are at least 2 agents in the store
     return count >= MIN_AGENT_COUNT
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

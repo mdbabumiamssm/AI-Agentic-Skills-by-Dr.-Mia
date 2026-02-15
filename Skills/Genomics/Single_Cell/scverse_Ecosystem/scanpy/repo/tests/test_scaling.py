@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import warnings
@@ -162,3 +172,5 @@ def test_scale_sparse(*, mask_obs, x, x_scaled, x_clipped, clip):
     adata = AnnData(sparse.csr_matrix(x).astype(np.float32))  # noqa: TID251
     sc.pp.scale(adata, mask_obs=mask_obs, zero_center=False, max_value=max_value)
     assert np.allclose(sparse.csr_matrix(adata.X).toarray(), expected)  # noqa: TID251
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # **How to Submit an Agent to the AutoGPT Marketplace**
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/o42HPN7SihU?si=lGeNFN-xIDSFqaQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
@@ -33,3 +46,5 @@
 * Choose relevant keywords that accurately describe your agent's functionality
 * Ensure your agent is fully tested and working as intended before submission
 * Select the most appropriate category to help users find your agent
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

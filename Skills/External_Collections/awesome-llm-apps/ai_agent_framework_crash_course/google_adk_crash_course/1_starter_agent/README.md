@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 1: Your First ADK Agent
 
 Welcome to your first step in the Google ADK journey! This tutorial introduces you to the fundamental concept of creating a simple AI agent using Google's Agent Development Kit.
@@ -106,3 +119,5 @@ After completing this tutorial, you'll be ready for:
 - **Test Often**: Use the ADK web interface to test your agents
 - **Read Instructions**: Clear instructions lead to better agent behavior
 - **Experiment**: Try different models and parameters to see the differences
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

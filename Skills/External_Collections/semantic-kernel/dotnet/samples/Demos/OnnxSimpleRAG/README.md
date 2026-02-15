@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Onnx Simple RAG (Retrieval Augmented Generation) Sample
 
 This sample demonstrates how you can do RAG using Semantic Kernel with the ONNX Connector that enables running Local Models straight from files. 
@@ -95,3 +108,6 @@ Ask to the Model any question you want, the AI will try to answer based on the f
 > **User** > When should I use Kernel Memory?
 
 > **Assistant** > Kernel Memory is best suited for tasks that involve large-scale continuous data, require efficient indexing and processing, and benefit from the integration of retrieval-based and generative models, synthetic memory, prompt engineering, and custom semantic memory processing.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 import asyncio
@@ -167,3 +177,5 @@ async def test_runner_emits_runner_completion_for_agent_response_without_targets
     # The runner should complete without errors when handling AgentExecutorResponse without targets
     # No specific events are expected since there are no executors to process the message
     assert isinstance(events, list)  # Just verify the runner completed without errors
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

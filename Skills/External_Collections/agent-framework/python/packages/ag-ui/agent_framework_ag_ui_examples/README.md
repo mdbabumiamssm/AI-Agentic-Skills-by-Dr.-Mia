@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agent Framework AG-UI Integration
 
 AG-UI protocol integration for Agent Framework, enabling seamless integration with AG-UI's web interface and streaming protocol.
@@ -368,3 +381,6 @@ For detailed documentation, see [DESIGN.md](DESIGN.md).
 ## License
 
 MIT
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

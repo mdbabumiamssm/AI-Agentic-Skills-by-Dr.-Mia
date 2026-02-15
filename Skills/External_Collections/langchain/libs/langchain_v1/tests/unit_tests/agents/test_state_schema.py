@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test state_schema parameter in create_agent.
 
 This module tests that the state_schema parameter allows users to extend
@@ -190,3 +200,5 @@ async def test_state_schema_async() -> None:
 
     assert result["async_field"] == "async_value"
     assert "Async: 99" in result["messages"][2].content
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

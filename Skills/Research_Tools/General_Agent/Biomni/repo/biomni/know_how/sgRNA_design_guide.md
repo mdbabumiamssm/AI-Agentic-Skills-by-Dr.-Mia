@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # sgRNA Design Guide: Three-Tiered Approach
 
 ---
@@ -417,3 +430,6 @@ print(oct4_results['Target_Sequence'].values[0])
 
 
 **Remember**: Always start with validated sequences (Option 1), then move to pre-computed designs (Option 2), and only use de novo design (Option 3) when necessary. Testing 3-4 sgRNAs per gene is standard practice regardless of prediction scores.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

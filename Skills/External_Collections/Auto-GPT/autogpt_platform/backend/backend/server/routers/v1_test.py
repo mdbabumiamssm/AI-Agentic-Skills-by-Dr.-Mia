@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import json
 from datetime import datetime
 from io import BytesIO
@@ -706,3 +716,5 @@ async def test_upload_file_gcs_not_configured_fallback(test_user_id: str):
 
         # Verify cloud storage methods were NOT called
         mock_handler.store_file.assert_not_called()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

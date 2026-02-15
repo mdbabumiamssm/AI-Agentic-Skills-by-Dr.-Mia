@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 from functools import partial
@@ -127,3 +137,5 @@ def test_paga_positions_reproducible():
 
     np.testing.assert_array_equal(a.uns["paga"]["pos"], b.uns["paga"]["pos"])
     assert a.uns["paga"]["pos"].tolist() != c.uns["paga"]["pos"].tolist()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

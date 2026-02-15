@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # JavaScript/TypeScript Quickstarts
 
 Welcome to the JavaScript/TypeScript section of the Gemini Cookbook!
@@ -22,3 +35,6 @@ Stay tuned, more JavaScript notebooks are on the way!
 | File API | Learn how to upload, use, retrieve, and delete files (text, image, audio, code) with the Gemini File API for multimodal prompts. | File upload, multimodal prompts, text/code/media files | [![Open in AI Studio](https://storage.googleapis.com/generativeai-downloads/images/Open_in_AIStudio.svg)](https://aistudio.google.com/apps/bundled/file_api?showPreview=true) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="20"/> [File_API.js](./File_API.js) |
 | Audio | Demonstrates how to use audio files with Gemini: upload, prompt, summarize, transcribe, and analyze audio and YouTube content. | Audio file upload, inline audio, transcription, YouTube analysis | [![Open in AI Studio](https://storage.googleapis.com/generativeai-downloads/images/Open_in_AIStudio.svg)](https://aistudio.google.com/apps/bundled/audio?showPreview=true) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="20"/> [Audio.js](./Audio.js) |
 | Get Started LearnLM | Explore LearnLM, an experimental model for AI tutoring, with examples of system instructions for test prep, concept teaching, learning activities, and homework help. | AI tutoring, system instructions, adaptive learning, education | [![Open in AI Studio](https://storage.googleapis.com/generativeai-downloads/images/Open_in_AIStudio.svg)](https://aistudio.google.com/apps/bundled/get_started_learnlm?showPreview=true) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="20"/> [Get_started_LearnLM.js](./Get_started_LearnLM.js) |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

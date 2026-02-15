@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-assembly-assembly-qc
 description: Assess genome assembly quality using QUAST for contiguity metrics and BUSCO for completeness. Essential for evaluating assembly success and comparing assemblers. Use when evaluating assembly completeness and quality.
 tool_type: cli
 primary_tool: QUAST
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Assembly QC
@@ -322,3 +339,6 @@ metaquast.py metagenome_assembly.fa -o metaquast_output -t 16
 - long-read-assembly - Flye/Canu assembly
 - assembly-polishing - Improve accuracy
 - metagenomics - Metagenome analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-comparative-genomics-ancestral-reconstruction
 description: Reconstruct ancestral sequences at phylogenetic nodes using PAML and IQ-TREE marginal likelihood methods. Infer ancient protein sequences and trace evolutionary trajectories through sequence history. Use when inferring ancestral states for protein resurrection or tracing evolutionary history.
 tool_type: mixed
 primary_tool: PAML
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Ancestral Sequence Reconstruction
@@ -290,3 +307,6 @@ def design_asr_construct(ancestral_seq, extant_reference, ambiguous_sites):
 - comparative-genomics/ortholog-inference - Identify orthologs for reconstruction
 - phylogenetics/modern-tree-inference - Generate trees for ASR
 - alignment/pairwise-alignment - Prepare MSA for reconstruction
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

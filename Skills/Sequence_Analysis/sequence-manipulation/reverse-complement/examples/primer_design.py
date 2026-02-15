@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Using reverse complement for primer design'''
 from Bio.Seq import Seq
 from Bio.SeqUtils import gc_fraction
@@ -37,3 +47,5 @@ print('\n=== Verification ===')
 print(f'Forward binds at 5\' end: {template[10:28]}')
 print(f'Reverse binds at 3\' end (shown as revcomp): {rev}')
 print(f'Match: {str(fwd) == str(template[10:28])}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

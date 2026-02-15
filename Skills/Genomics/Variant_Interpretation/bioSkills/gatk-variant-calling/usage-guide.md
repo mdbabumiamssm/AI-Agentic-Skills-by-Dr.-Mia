@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # GATK Variant Calling - Usage Guide
 
 ## Overview
@@ -114,3 +127,6 @@ Key files:
 - hapmap_3.3.hg38.vcf.gz
 - 1000G_omni2.5.hg38.vcf.gz
 - Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

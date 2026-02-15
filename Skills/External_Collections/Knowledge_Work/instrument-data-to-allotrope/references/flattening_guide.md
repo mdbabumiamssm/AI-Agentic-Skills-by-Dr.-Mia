@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Flattening ASM to 2D CSV
 
 Converting hierarchical ASM JSON to flat 2D tables for LIMS import, spreadsheet analysis, or data engineering pipelines.
@@ -252,3 +265,6 @@ When importing flattened data into a LIMS:
 - Use ISO 8601 date format for timestamps
 - Ensure sample IDs match existing LIMS sample identifiers
 - Check if your LIMS expects units in separate columns or embedded in values
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

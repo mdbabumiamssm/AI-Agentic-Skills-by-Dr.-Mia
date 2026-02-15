@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-long-read-sequencing-clair3-variants
 description: Deep learning-based variant calling from long reads using Clair3 for SNPs and small indels. Use when calling germline variants from ONT or PacBio alignments, particularly when high accuracy is needed for clinical or research applications.
 tool_type: cli
 primary_tool: Clair3
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Clair3 Variant Calling
@@ -232,3 +249,6 @@ singularity exec clair3.sif run_clair3.sh \
 - variant-calling/filtering-best-practices - Quality filtering
 - long-read-sequencing/long-read-qc - Input quality control
 - long-read-sequencing/long-read-alignment - Mapping with minimap2
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

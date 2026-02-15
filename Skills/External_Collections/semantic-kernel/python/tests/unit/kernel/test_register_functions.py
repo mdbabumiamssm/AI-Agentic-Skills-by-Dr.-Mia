@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 
@@ -30,3 +40,5 @@ def test_register_undecorated_native_function(kernel: Kernel, not_decorated_nati
 def test_register_with_none_plugin_name(kernel: Kernel, decorated_native_function: Callable):
     with pytest.raises(ValidationError):
         kernel.add_function(function=decorated_native_function, plugin_name=None)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

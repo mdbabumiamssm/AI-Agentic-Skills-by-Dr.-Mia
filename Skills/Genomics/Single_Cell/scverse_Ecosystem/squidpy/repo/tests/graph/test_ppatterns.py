@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 from typing import Any, Literal
@@ -171,3 +181,5 @@ def test_use_raw(dummy_adata: AnnData):
     df = spatial_autocorr(dummy_adata, use_raw=True, copy=True)
 
     np.testing.assert_equal(sorted(df.index), sorted(var_names))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

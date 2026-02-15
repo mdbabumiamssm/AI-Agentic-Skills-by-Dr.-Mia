@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Simple CoT Demo script (Mock)
 
 def build_cot_prompt(question, method="zero-shot"):
@@ -21,3 +31,5 @@ if __name__ == "__main__":
     print(build_cot_prompt(q, "zero-shot"))
     print("\n--- Few Shot Prompt ---")
     print(build_cot_prompt(q, "few-shot"))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

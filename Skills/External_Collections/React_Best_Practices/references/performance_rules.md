@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # React & Next.js Performance Rules
 
 ## 1. Eliminate Waterfalls
@@ -31,3 +44,6 @@
 ## 5. Prevent Unnecessary Re-renders
 *   **Rule**: Don't pass inline objects or arrow functions as props to memoized child components unless necessary.
 *   **Fix**: Use `useMemo` for objects/arrays and `useCallback` for functions *only if* the child component is wrapped in `React.memo` or is expensive to render. Premature optimization here adds overhead.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

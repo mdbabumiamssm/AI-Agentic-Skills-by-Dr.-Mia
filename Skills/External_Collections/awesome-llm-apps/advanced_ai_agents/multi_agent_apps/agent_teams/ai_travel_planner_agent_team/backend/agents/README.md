@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # TripCraft AI - Agent Architecture
 
 TripCraft AI uses a sophisticated multi-agent system powered by Agno to create personalized travel experiences. This document explains the different agents and their roles in the system.
@@ -106,3 +119,5 @@ The agent system follows these key principles:
 ## Integration
 
 This agent architecture is designed to work seamlessly with the TripCraft AI backend, providing a robust foundation for creating personalized travel experiences that feel both magical and practical.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

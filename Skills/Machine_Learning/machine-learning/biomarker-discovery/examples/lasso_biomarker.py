@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''LASSO feature selection with stability analysis'''
 
 import pandas as pd
@@ -60,3 +70,5 @@ stability_df = pd.DataFrame({
 print(f'Stable features (>60% selection): {stable_mask.sum()}')
 stability_df.to_csv('lasso_stability.csv', index=False)
 stability_df[stability_df['stable']].head(20)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

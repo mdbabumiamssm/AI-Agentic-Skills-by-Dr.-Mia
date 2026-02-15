@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 from itertools import product
@@ -32,3 +42,5 @@ def test_load_timepoints_from_anndata_list():
         adata.obsp["harmony_aff"].shape[0],
         adata.obsp["harmony_aff_aug"].shape[0],
     ]), "harmony_timeseries augmented affinity matrix Error!"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # A Platform-Agnostic Framework for Deploying Biomedical AI Skills Across Multiple Large Language Models
 
 **Authors:** [Your Name], [Co-Author Name]
@@ -91,3 +104,6 @@ We have introduced a robust framework for developing cross-platform biomedical A
 1. Wolf, F. A., et al. "Scanpy: large-scale single-cell gene expression data analysis." Genome biology (2018).
 2. Anthropic. "Model Context Protocol." (2024).
 3. OpenAI. "Assistants API and Function Calling." (2024).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

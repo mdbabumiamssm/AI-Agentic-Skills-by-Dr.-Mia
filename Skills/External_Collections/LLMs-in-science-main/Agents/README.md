@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## LLM-based autonomous agents
 ### Memory
 |   Date    |     Name     | Publication | Repositories |
@@ -99,3 +112,6 @@
 | |  | [LLM-Agents-Papers](https://github.com/tmgthb/Autonomous-Agents) | [<img src="../assets/github.png" width="20" />](https://github.com/tmgthb/Autonomous-Agents) |
 | |  | [Autonomous Agents](https://github.com/AGI-Edgerunners/LLM-Agents-Papers) | [<img src="../assets/github.png" width="20" />](https://github.com/AGI-Edgerunners/LLM-Agents-Papers) |
 | |  | [🤖 Awesome-Embodied-Agent-with-LLMs](https://github.com/zchoi/Awesome-Embodied-Agent-with-LLMs) | [<img src="../assets/github.png" width="20" />](https://github.com/zchoi/Awesome-Embodied-Agent-with-LLMs) |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

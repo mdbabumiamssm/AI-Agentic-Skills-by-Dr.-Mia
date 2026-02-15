@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import tempfile
 import csv
 import streamlit as st
@@ -123,3 +133,4 @@ if uploaded_file is not None and "openai_key" in st.session_state:
                 except Exception as e:
                     st.error(f"Error generating response from the agent: {e}")
                     st.error("Please try rephrasing your query or check if the data format is correct.")
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

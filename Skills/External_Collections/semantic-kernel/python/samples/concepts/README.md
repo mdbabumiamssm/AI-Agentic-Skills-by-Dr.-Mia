@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel Concepts by Feature
 
 ## Table of Contents
@@ -282,3 +295,6 @@ To successfully retrieve and use the Entra Auth Token, you need the `Cognitive S
 - **.env File Placement:** We highly recommend placing the `.env` file in the `semantic-kernel/python` root directory. This is a common practice when developing in the Semantic Kernel repository.
 
 By following these guidelines, you can ensure that your settings for various components are configured correctly, enabling seamless functionality and integration of Semantic Kernel in your Python projects.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

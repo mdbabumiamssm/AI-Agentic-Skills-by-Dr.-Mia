@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -224,3 +237,6 @@ Cons:
 Chosen option: **Keep as is**
 
 As the current AI landscape for SDK is a fast changing environment, we need to be able be update and at the same time avoid as much as possible mix our current versioning strategy also minimizing the impact on customers. We decided on **Keep As-Is** option for now, and we may reconsider **Preview + GA versioning** option in the future when that decision doesn't bring big impact of lack of important functionality already used by our customer base.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

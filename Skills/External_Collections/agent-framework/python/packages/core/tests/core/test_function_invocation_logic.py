@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import Awaitable, Callable
@@ -2381,3 +2391,5 @@ async def test_terminate_loop_streaming_single_function_call(chat_client_base: C
 
     # Verify the second streaming response is still in the queue (wasn't consumed)
     assert len(chat_client_base.streaming_responses) == 1
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

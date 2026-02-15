@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Random access to sequences using to_dict() and index()'''
 from Bio import SeqIO
 
@@ -21,3 +31,5 @@ records_dict = SeqIO.to_dict(SeqIO.parse('sample.fasta', 'fasta'))
 for seq_id in wanted_ids:
     if seq_id in records_dict:
         print(f'{seq_id}: {len(records_dict[seq_id].seq)} bp')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

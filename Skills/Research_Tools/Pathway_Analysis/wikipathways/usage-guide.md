@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # WikiPathways Enrichment - Usage Guide
 
 ## Overview
@@ -90,3 +103,6 @@ getPathwayInfo('WP554')
 - Community pathways include specialized disease and drug-related pathways
 - Use setReadable() to convert Entrez IDs to gene symbols in results
 - See enrichment-visualization skill for dotplot() and other plots
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

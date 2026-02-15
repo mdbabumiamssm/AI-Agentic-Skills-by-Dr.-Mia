@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Send Email
 
 ## What it is
@@ -33,3 +46,5 @@ The block takes the recipient's email address, subject, and body of the email as
 
 ## Possible use case
 This block could be used in an automated customer support system. When a customer submits a support ticket through a website, the Send Email block could automatically send a confirmation email to the customer, acknowledging receipt of their request and providing them with a ticket number for future reference.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,0 +1,30 @@
+# BioKernel Workflow Abstraction Layer (WAL) Configuration
+
+# Default Provider
+provider:
+  name: "gemini" # Options: gemini, local, openai
+  
+  # Provider Specific Configs
+  gemini:
+    model: "gemini-2.0-flash"
+    api_key_env: "GOOGLE_API_KEY"
+    temperature: 0.7
+    
+  local:
+    model: "llama-3-8b-quantized"
+    api_base: "http://localhost:11434" # Ollama default
+
+  openai:
+    model: "gpt-4o"
+    api_key_env: "OPENAI_API_KEY"
+
+# System Settings
+system:
+  log_level: "INFO"
+  max_concurrent_agents: 5
+  enable_event_bus: true
+  enable_medprompt: true
+
+# Plugin Registry (Paths to Python files to load dynamically)
+plugins:
+  - "Skills/User_Collections/Babu/custom_plugins.py"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Call TADs from Hi-C data'''
 
 import cooler
@@ -43,3 +53,5 @@ print('\nSaved to tads.bed and boundaries.bed')
 # Expected output: ~2000-4000 TADs genome-wide for human at 10kb resolution
 # Typical TAD sizes: 200kb-2Mb (median ~800kb), with most between 400kb-1.5Mb
 # Boundary strength: strong boundaries have values < -0.5 (more negative = stronger)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

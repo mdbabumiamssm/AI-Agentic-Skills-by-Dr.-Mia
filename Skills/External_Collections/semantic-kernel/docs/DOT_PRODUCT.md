@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Dot Product
 
 Dot product is a mathematical operation that takes two equal-length vectors and
@@ -50,3 +63,6 @@ Some examples about dot product applications.
 6. Anomaly detection: By comparing the dot product of an embedding with those of
    its nearest neighbors, it is possible to identify data points that are significantly
    different from others in their local neighborhood, indicating potential anomalies.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

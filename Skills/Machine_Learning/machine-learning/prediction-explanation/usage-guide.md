@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Model Interpretation Usage Guide
 
 ## Overview
@@ -56,3 +69,6 @@ Tell your AI agent what you want to do:
 - Beeswarm plots show both importance and direction of effect
 - For multi-class, SHAP values have an extra dimension for classes
 - SHAP values sum to the difference between prediction and expected value
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

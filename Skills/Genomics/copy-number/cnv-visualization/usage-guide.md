@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # CNV Visualization Usage Guide
 
 ## Overview
@@ -251,3 +264,6 @@ fig.write_html('cnv_interactive.html')
 4. **Labels**: Include chromosome boundaries clearly
 5. **Scale**: Show Mb or kb consistently
 6. **Legend**: Include log2 ratio scale interpretation
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

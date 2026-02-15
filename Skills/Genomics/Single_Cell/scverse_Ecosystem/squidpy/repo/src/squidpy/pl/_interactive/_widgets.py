@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # type: ignore
 from __future__ import annotations
 
@@ -371,3 +381,5 @@ class RangeSlider(QRangeSlider):
         self._colorbar.setOclim(self._layer.metadata["minmax"])
         self._colorbar.setClim((np.min(self._layer.properties["value"]), np.max(self._layer.properties["value"])))
         self._colorbar.update_color()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

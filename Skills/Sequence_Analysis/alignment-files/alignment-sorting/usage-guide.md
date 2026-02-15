@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Alignment Sorting - Usage Guide
 
 ## Overview
@@ -178,3 +191,6 @@ If sort is interrupted, output may be truncated. Re-run from original input.
 - Collate is faster than name sort when you just need pairs together
 - Lower compression (`-l 1`) speeds up sorting but increases file size
 - Keep original unsorted file until you verify the sorted output
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

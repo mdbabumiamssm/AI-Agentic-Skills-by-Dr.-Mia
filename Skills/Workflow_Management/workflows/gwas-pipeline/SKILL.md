@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-gwas-pipeline
 description: End-to-end GWAS workflow from VCF to association results. Covers PLINK QC, population structure correction, and association testing for case-control or quantitative traits. Use when running genome-wide association studies.
@@ -13,6 +26,10 @@ qc_checkpoints:
   - after_qc: "Sample/variant call rates >95%, HWE p>1e-6"
   - after_structure: "No population stratification bias"
   - after_association: "Lambda ~1.0, expected QQ plot"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # GWAS Pipeline
@@ -301,3 +318,6 @@ echo "Results: ${OUTDIR}/gwas.*.glm.*"
 - population-genetics/population-structure - PCA and admixture
 - population-genetics/association-testing - Statistical models
 - population-genetics/linkage-disequilibrium - LD concepts
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

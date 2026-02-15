@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 status: accepted
 contact: markwallace
@@ -55,3 +68,6 @@ The following version suffixes are used:
 
 - `preview` or `beta` - This suffix is used for packages which are close to release e.g. version `1.x.x-preview` will be used for a package which is close to it's version 1.x release. Packages will be feature complete and interfaces will be very close to the release version. The `preview` suffix is used with .Net releases and `beta` is used with Python releases.
 - `alpha` - This suffix is used for packages which are not feature complete and where the public interfaces are still under development and are expected to change.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

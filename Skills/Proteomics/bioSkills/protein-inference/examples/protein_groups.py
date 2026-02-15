@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Create protein groups from peptide-spectrum matches'''
 import pandas as pd
 from collections import defaultdict
@@ -55,3 +65,5 @@ print(f'\nProtein groups (>=2 peptides, >=1 unique): {len(confident)}')
 
 confident.to_csv('protein_groups.csv', index=False)
 print(f'Saved to protein_groups.csv')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

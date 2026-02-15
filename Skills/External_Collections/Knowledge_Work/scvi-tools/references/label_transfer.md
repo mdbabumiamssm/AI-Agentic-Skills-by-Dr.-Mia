@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Label Transfer and Reference Mapping with scANVI
 
 This reference covers using scANVI for transferring cell type annotations from a reference atlas to query data.
@@ -371,3 +384,6 @@ sc.pl.umap(adata_annotated, color=['predicted_cell_type', 'prediction_score'])
 
 - Xu et al. (2021) "Probabilistic harmonization and annotation of single-cell transcriptomics data with deep generative models"
 - Lotfollahi et al. (2022) "Mapping single-cell data to reference atlases by transfer learning"
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

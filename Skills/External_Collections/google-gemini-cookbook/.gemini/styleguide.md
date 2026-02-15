@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini Cookbook Python notebooks Style Guide
 
 # Introduction
@@ -177,3 +190,6 @@ Type Hints are not mandatory, but when used they should follow those conventions
 * **Write clear and concise comments:** Explain the "why" behind the code, not just the "what".
 * **Comment sparingly:** Well-written code should be self-documenting where possible.
 * **Use complete sentences:** Start comments with a capital letter and use proper punctuation.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

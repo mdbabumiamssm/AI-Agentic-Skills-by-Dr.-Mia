@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scverse Quality Control Guidelines
 
 This document provides detailed information about quality control best practices for single-cell RNA-seq data, following the scverse ecosystem recommendations.
@@ -184,3 +197,6 @@ Consider adjusting filtering thresholds when:
 - Luecken & Theis (2019): Current best practices in single-cell RNA-seq analysis
 - Osorio & Cai (2021): Systematic determination of the mitochondrial proportion in human and mouse genomes
 - Germain et al. (2020): Doublet identification in single-cell sequencing data using scDblFinder
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

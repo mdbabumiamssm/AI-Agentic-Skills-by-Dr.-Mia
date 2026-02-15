@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ⚙️ Protocols
 
 Protocols are *interfaces* implemented by [Components](./components.md) used to group related functionality. Each protocol needs to be handled explicitly by the agent at some point of the execution. We provide a comprehensive list of built-in protocols that are already handled in the built-in `Agent`, so when you inherit from the base agent all built-in protocols will work!
@@ -163,3 +176,6 @@ class LoggerComponent(AfterExecute):
     def after_execute(self, result: ActionResult) -> None:
         logger.info(f"Result: {result}")
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

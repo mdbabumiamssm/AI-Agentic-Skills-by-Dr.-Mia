@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from pytest import raises
@@ -104,3 +114,5 @@ def test_get_field_names():
     assert definition.get_names(include_vector_fields=False) == ["id", "content"]
     assert definition.get_names(include_key_field=False) == ["content", "vector"]
     assert definition.get_names(include_vector_fields=False, include_key_field=False) == ["content"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

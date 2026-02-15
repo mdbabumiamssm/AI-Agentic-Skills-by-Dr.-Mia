@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MCP Tools Reference
 
 BioMCP provides 35 specialized tools for biomedical research through the Model Context Protocol (MCP). This reference covers all available tools, their parameters, and usage patterns.
@@ -741,3 +754,6 @@ All tools include comprehensive error handling:
 - Review [Sequential Thinking](../concepts/03-sequential-thinking-with-the-think-tool.md) methodology
 - Explore [How-to Guides](../how-to-guides/01-find-articles-and-cbioportal-data.md) for complex workflows
 - Set up [API Keys](../getting-started/03-authentication-and-api-keys.md) for enhanced features
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

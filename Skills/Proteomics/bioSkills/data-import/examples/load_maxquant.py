@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Load and filter MaxQuant proteinGroups.txt output'''
 import pandas as pd
 import numpy as np
@@ -34,3 +44,5 @@ missing_pct = 100 * intensity_matrix[sample_cols].isna().sum().sum() / intensity
 print(f'Missing values: {missing_pct:.1f}%')
 
 intensity_matrix.to_csv('intensity_matrix.csv', index=False)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

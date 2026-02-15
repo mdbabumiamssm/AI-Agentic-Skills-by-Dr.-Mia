@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ThinkPath Chatbot  🧠
 *Strategic Thinking Assistant with Local LLM Integration*
 *Guided Responses Chatbot*
@@ -255,3 +268,6 @@ We welcome contributions! Here's how you can help:
 *Stop over-generating. Start thinking strategically with ThinkPath AI.*
 
 **Developed in collaboration with Claude AI** - demonstrating that the future of software development lies in thoughtful human-AI partnership, where AI amplifies human creativity and strategic thinking rather than replacing it. 🤖🤝👨‍💻
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

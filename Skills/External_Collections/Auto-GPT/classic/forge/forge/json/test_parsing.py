@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import json
 
 import pytest
@@ -91,3 +101,5 @@ def test_json_loads_fixable(fixable_json: tuple[str, str]):
 
 def test_json_loads_unfixable(unfixable_json: tuple[str, str]):
     assert json_loads(unfixable_json[0]) != json.loads(unfixable_json[1])
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

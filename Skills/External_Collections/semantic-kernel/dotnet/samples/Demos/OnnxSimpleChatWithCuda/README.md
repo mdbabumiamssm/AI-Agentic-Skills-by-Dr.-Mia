@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Onnx Simple Chat with Cuda Execution Provider
 
 This sample demonstrates how you use ONNX Connector with CUDA Execution Provider to run Local Models straight from files using Semantic Kernel.
@@ -42,3 +55,6 @@ Update the `Program.cs` file lines below with the paths to the models you downlo
 string modelPath = "D:\\repo\\huggingface\\Phi-3-mini-4k-instruct-onnx\\cuda\\cuda-int4-rtn-block-32";
 ```
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

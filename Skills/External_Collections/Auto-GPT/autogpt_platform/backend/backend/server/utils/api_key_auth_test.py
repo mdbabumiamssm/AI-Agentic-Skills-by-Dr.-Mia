@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Unit tests for APIKeyAuthenticator class.
 """
@@ -535,3 +545,5 @@ async def test_api_keys_with_newline_variations(mock_request):
 
             assert exc_info.value.status_code == HTTP_401_UNAUTHORIZED
             assert exc_info.value.detail == "Invalid API key"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

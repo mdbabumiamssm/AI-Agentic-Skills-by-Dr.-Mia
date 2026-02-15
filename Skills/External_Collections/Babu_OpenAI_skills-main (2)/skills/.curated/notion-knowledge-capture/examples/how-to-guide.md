@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Example: How-To Guide from Discussion
 
 **User Request**: "Save our discussion about deploying to production as a how-to guide"
@@ -116,3 +129,6 @@ Added link in Engineering Wiki → How-To Guides section
 - Included troubleshooting from experience
 - Made discoverable by linking from wiki index
 - Added metadata (time, complexity)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

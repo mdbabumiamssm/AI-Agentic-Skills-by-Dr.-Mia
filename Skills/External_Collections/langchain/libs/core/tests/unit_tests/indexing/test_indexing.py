@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import AsyncIterator, Iterable, Iterator, Sequence
 from datetime import datetime, timezone
 from typing import (
@@ -2940,3 +2950,5 @@ async def test_aindex_with_upsert_kwargs(
         # Check other arguments
         assert kwargs["batch_size"] == 100
         assert kwargs["vector_field"] == "embedding"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''DNA sequence property calculations'''
 from Bio.Seq import Seq
 from Bio.SeqUtils import gc_fraction, molecular_weight, MeltingTemp
@@ -38,3 +48,5 @@ tm_nn = MeltingTemp.Tm_NN(primer)
 print(f'Tm (Wallace rule): {tm_wallace:.1f} C')
 print(f'Tm (GC method): {tm_gc:.1f} C')
 print(f'Tm (Nearest neighbor): {tm_nn:.1f} C')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

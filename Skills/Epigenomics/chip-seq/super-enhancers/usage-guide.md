@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Super-Enhancers - Usage Guide
 
 ## Overview
@@ -110,3 +123,6 @@ se_b = pd.read_csv('conditionB_SuperEnhancers.txt', sep='\t')
 
 - [ROSE paper](https://www.cell.com/cell/fulltext/S0092-8674(13)00392-9)
 - [Super-enhancer review](https://www.nature.com/articles/nrg.2016.167)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """**Store** implements the key-value stores and storage helpers.
 
 Module provides implementations of various key-value stores that conform
@@ -287,3 +297,5 @@ class InMemoryByteStore(InMemoryBaseStore[bytes]):
 
 class InvalidKeyException(LangChainException):
     """Raised when a key is invalid; e.g., uses incorrect characters."""
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

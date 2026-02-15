@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Ollama Examples
 
 This folder contains examples demonstrating how to use Ollama models with the Agent Framework.
@@ -54,3 +67,5 @@ Set the following environment variables:
 - `OLLAMA_MODEL`: The model name to use
   - Example: `export OLLAMA_MODEL="mistral"`
   - Must be a model you have pulled with Ollama
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

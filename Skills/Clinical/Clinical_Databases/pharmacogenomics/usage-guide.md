@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Pharmacogenomics - Usage Guide
 
 ## Overview
@@ -67,3 +80,6 @@ Tell your AI agent:
 - **HLA alleles** require specific testing, not inferred from WGS
 - **Gene duplications** can increase activity score above 2
 - **PharmGKB levels** 1A/1B are highest evidence
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

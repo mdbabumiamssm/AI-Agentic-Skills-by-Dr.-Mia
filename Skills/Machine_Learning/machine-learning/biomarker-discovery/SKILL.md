@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-machine-learning-biomarker-discovery
 description: Selects informative features for biomarker discovery using Boruta all-relevant selection, mRMR minimum redundancy, and LASSO regularization. Use when identifying biomarkers from high-dimensional omics data.
 tool_type: python
 primary_tool: boruta
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Feature Selection for Biomarker Discovery
@@ -135,3 +152,6 @@ stable_features = X.columns[selection_counts / n_bootstrap > 0.6]
 - differential-expression/de-results - Pre-filter with DE genes
 - pathway-analysis/go-enrichment - Functional enrichment of selected features
 - machine-learning/omics-classifiers - Use selected features for prediction
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

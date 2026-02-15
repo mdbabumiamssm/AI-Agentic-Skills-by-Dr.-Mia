@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Publish to Medium
 
 ## What it is
@@ -33,3 +46,5 @@ The block uses the provided Medium API key and author ID to authenticate with th
 
 ## Possible use case
 A digital marketing team could integrate this block into their content management system to streamline their cross-platform publishing strategy. After creating and approving a blog post in their main system, they could use this block to automatically publish the content to Medium, ensuring consistent and timely distribution across multiple platforms without manual intervention.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

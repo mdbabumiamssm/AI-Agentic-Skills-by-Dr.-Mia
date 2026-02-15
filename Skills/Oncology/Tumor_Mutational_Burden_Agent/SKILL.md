@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: 'tumor-mutational-burden-agent'
 description: 'Calculates and harmonizes Tumor Mutational Burden (TMB) across platforms to predict immunotherapy response.'
@@ -8,6 +21,9 @@ keywords:
   - harmonization
   - oncology
 measurable_outcome: 'Harmonizes TMB scores across 5+ assay platforms with <5% variance from WES gold standard.'
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 
@@ -167,3 +183,6 @@ Conversion factors (example):
 ## Author
 
 AI Group - Biomedical AI Platform
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

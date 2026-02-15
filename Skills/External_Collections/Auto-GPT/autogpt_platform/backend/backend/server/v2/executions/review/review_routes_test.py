@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import datetime
 
 import fastapi
@@ -490,3 +500,5 @@ def test_process_review_action_invalid_node_exec_id(
     # Should be a 400 Bad Request, not 500 Internal Server Error
     assert response.status_code == 400
     assert "Invalid node execution ID format" in response.json()["detail"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

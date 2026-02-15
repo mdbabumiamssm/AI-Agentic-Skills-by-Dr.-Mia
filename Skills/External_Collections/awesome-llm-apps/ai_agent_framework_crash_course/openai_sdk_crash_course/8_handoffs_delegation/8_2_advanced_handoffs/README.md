@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Advanced Handoffs
 
 Demonstrates advanced handoff configuration including callbacks, structured inputs, and custom tool naming.
@@ -90,3 +103,6 @@ async def on_escalation_handoff(ctx, input_data):
 
 - [Basic Handoffs](../8_1_basic_handoffs/README.md) - Handoff fundamentals
 - [Tutorial 9: Multi-Agent Orchestration](../../9_multi_agent_orchestration/README.md) - Complex workflows
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

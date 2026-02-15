@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Alignment-Free Quantification - Usage Guide
 
 ## Overview
@@ -105,3 +118,6 @@ salmon index -t gentrome.fa -d decoys.txt -i salmon_index -p 8
 - Generate bootstraps (`-b 100`) if using sleuth for DE
 - Check mapping rates - should be >70%
 - Match transcriptome version to your GTF annotation
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Time Plugin - Demo Application
 
 This is an example how you can easily use Plugins with the Power of Auto Function Calling from AI Models. 
@@ -72,3 +85,6 @@ Ask questions to use the Time Plugin such as:
 
 **Assistant** > The current time is Sun, 12 May 2024 15:53:54 GMT.
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

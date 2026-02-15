@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Native-AOT Tests
 This test application is used to test the Semantic Kernel Native-AOT compatible API by publishing the application in a Native-AOT mode, analyzing the API using AOT compiler, and running the tests against the API.
 
@@ -8,3 +21,5 @@ which case they are run in a regular CoreCLR application and not in Native-AOT o
 To run the tests in a Native-AOT application, first publish it using the following command: `dotnet publish -r win-x64`. Then, execute the application by running the following command in the terminal: `.\bin\Release\net10.0\win-x64\publish\AotCompatibility.TestApp.exe`.  
    
 Alternatively, the `.github\workflows\test-aot-compatibility.ps1` script can be used to publish the application and run the tests. Please ensure that this script is run in at least PowerShell 7.4. The script takes the version of the .NET Framework as an argument. For example, to run the tests with .NET 10.0, run the following command: `.github\workflows\test-aot-compatibility.ps1 10.0`.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

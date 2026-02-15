@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-hi-c-analysis-tad-detection
 description: Call topologically associating domains (TADs) from Hi-C data using insulation score, HiCExplorer, and other methods. Identify domain boundaries and hierarchical domain structure. Use when calling TADs from Hi-C insulation scores.
 tool_type: mixed
 primary_tool: cooltools
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # TAD Detection
@@ -218,3 +235,6 @@ insulation[['chrom', 'start', 'end', 'log2_insulation_score_200000']].to_csv(
 - hic-data-io - Load Hi-C matrices
 - hic-visualization - Visualize TADs on contact matrices
 - compartment-analysis - Compartments operate at larger scale than TADs
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

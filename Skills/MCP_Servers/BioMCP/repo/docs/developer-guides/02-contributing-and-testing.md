@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing and Testing Guide
 
 This guide covers how to contribute to BioMCP and run the comprehensive test suite.
@@ -712,3 +725,6 @@ Your PR will be reviewed for:
 - **Documentation**: Check existing docs first
 
 Remember: Quality over speed. Take time to write good tests and clean code!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

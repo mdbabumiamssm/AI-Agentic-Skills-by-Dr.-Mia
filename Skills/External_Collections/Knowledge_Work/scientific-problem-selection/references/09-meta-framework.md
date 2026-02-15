@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SKILL 9: Meta-Framework - Complete Problem Selection Workflow
 
 ## Overview
@@ -502,3 +515,6 @@ Let's start with Skill 1. Are you ready to begin?
 
 *Remember: The highest-leverage work in science is choosing the right problem. This meta-framework ensures you spend your finite time wisely. The investment in systematic planning pays dividends for years.*
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

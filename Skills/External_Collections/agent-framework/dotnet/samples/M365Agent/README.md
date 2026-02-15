@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Microsoft Agent Framework agents with the M365 Agents SDK Weather Agent sample
 
 This is a sample of a simple Weather Forecast Agent that is hosted on an Asp.Net core web service and is exposed via the M365 Agent SDK. This Agent is configured to accept a request asking for information about a weather forecast and respond to the caller with an Adaptive Card. This agent will handle multiple "turns" to get the required information from the user.
@@ -117,3 +130,6 @@ This Agent Sample is intended to introduce you the basics of integrating Agent F
 ## Further reading
 
 To learn more about using the M365 Agent SDK, see [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

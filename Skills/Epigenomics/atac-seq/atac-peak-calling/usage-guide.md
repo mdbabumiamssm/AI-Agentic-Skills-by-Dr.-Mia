@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ATAC-seq Peak Calling - Usage Guide
 
 ## Overview
@@ -58,3 +71,6 @@ Tell your AI agent what you want to do:
 - Filter for NFR reads (<100bp) when looking for TF binding sites
 - Remove ENCODE blacklist regions to reduce false positives
 - For consensus peaks across samples, require presence in at least 2 samples
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

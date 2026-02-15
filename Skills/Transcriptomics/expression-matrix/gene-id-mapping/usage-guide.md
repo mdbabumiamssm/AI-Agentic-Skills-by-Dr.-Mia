@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gene ID Mapping - Usage Guide
 
 ## Overview
@@ -195,3 +208,6 @@ def validate_mapping(original_ids, mapping, expected_mapped_pct=0.8):
 - Use local databases (org.db packages) for faster lookups than API calls
 - Remove version numbers from Ensembl IDs before mapping (ENSG00000141510.15 -> ENSG00000141510)
 - Validate mapping rates - low rates often indicate wrong species or ID type
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

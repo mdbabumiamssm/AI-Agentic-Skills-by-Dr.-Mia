@@ -1,6 +1,22 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: agentd-drug-discovery
 description: Use the AgentD workflow to mine evidence, design molecules, and rank candidates with SAR plus ADMET annotations for early drug discovery tasks.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 ## At-a-Glance
@@ -31,3 +47,6 @@ description: Use the AgentD workflow to mine evidence, design molecules, and ran
 
 ## References
 - Detailed parameter tables and dependencies listed in `README.md`.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

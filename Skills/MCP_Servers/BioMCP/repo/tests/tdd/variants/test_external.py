@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for external variant data sources."""
 
 from unittest.mock import AsyncMock, patch
@@ -350,3 +360,5 @@ class TestFormatEnhancedAnnotations:
         assert "1000_genomes" not in result["external_annotations"]
         assert "errors" in result["external_annotations"]
         assert "thousand_genomes" in result["external_annotations"]["errors"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

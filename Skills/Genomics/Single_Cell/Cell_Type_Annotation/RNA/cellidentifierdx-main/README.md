@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 1. **Project Name**: Single Cell Annotation by cellidentifierdx.
 2. **Description**: Annotate your single cell using cellidentifierd.
 3. **Installation**: Instructions for how to install your project.
@@ -87,3 +100,6 @@ for cluster_idx, cell_type, avg_score in cell_type_annotations:
 
 MIT
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

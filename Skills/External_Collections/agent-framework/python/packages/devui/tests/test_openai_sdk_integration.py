@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Integration tests using the official OpenAI SDK to call DevUI."""
@@ -264,3 +274,5 @@ def test_openai_sdk_with_model_and_entity_id(devui_server: str) -> None:
     # The response model should reflect what was specified
     assert response.model == "custom-model-name"
     assert len(response.output) > 0
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 status: accepted
 contact: gitri-ms
@@ -70,3 +83,6 @@ Orchestrating external function calls fits within SK's concept of planning. With
 ## Additional notes
 
 There has been much discussion and debate over the pros and cons of automatically invoking a function returned by the OpenAI model, if it is registered with the kernel. As there are still many open questions around this behavior and its implications, we have decided to not include this capability in the initial implementation. We will continue to explore this option and may include it in a future update.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

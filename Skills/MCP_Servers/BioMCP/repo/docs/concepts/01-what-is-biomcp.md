@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # What is BioMCP?
 
 BioMCP is an open-source implementation of the Model Context Protocol (MCP) designed for biomedical research. It connects AI assistants to specialized biomedical databases, enabling natural language access to complex scientific data.
@@ -48,3 +61,6 @@ knowledge they need to deliver meaningful insights in complex domains.
 By open-sourcing BioMCP, we're inviting the community to build upon this
 foundation, creating more powerful and accessible tools for biomedical research
 and ultimately accelerating the pace of scientific discovery.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

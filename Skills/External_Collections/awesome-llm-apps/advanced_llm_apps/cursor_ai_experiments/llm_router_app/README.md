@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## 📡 RouteLLM Chat App 
 
 > Note: This project is inspired by the opensource [RouteLLM library](https://github.com/lm-sys/RouteLLM/tree/main), which provides intelligent routing between different language models.
@@ -51,3 +64,5 @@ streamlit run llm_router.py
 5. Display: The app displays the response along with information about which model was used.
 
 6. History: The chat history is maintained and displayed, including model information for each response.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

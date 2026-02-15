@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''scArches transfer learning for single-cell annotation'''
 
 import scvi
@@ -59,3 +69,5 @@ sc.pl.umap(adata_query, color=['predicted_cell_type', 'prediction_confidence'], 
 
 adata_query.write_h5ad('query_annotated.h5ad')
 print('\nSaved annotated query to query_annotated.h5ad')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

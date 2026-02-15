@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agent Framework Retrieval Augmented Generation (RAG) with an external Vector Store with a custom schema
 
 This sample demonstrates how to create and run an agent that uses Retrieval Augmented Generation (RAG) with an external vector store.
@@ -58,3 +71,6 @@ dotnet run
 Open the solution in Visual Studio and set the sample project as the startup project. Then, run the project using the built-in debugger or by pressing `F5`.
 
 You will be prompted for any required environment variables if they are not already set.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

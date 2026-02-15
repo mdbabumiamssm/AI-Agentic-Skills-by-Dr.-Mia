@@ -20,11 +20,15 @@
 
 ---
 
-## 🚀 Overview
+## 🚀 The "Best of Best" Biomedical Skills Collection
 
-This repository acts as a **Biomedical Operating System (BioOS)**, orchestrating a comprehensive library of **skills, agents, and mathematical foundations** for modern (2026) Artificial Intelligence. 
+**This repository represents the gold standard for Agentic AI in Biomedicine.**
 
-Unlike standard codebases, this project transforms static scripts into **Agentic Workflows**—where autonomous systems plan, execute, use tools, and correct themselves to solve complex scientific problems. It is designed to support high-impact research, clinical decision support, and automated lab operations.
+We have painstakingly cataloged, standardized, and optimized over **600+ specialized skills** covering the entire spectrum of modern biomedical science. From single-cell genomics to clinical decision support, every tool in this library has been upgraded to a unified **Agentic Standard**.
+
+This is not just a code dump; it is a **Biomedical Operating System (BioOS)** designed to orchestrate autonomous research.
+
+---
 
 ## 👤 Author & Maintainer
 
@@ -39,39 +43,55 @@ Desk phone:(212) 241-2764 (x42764)
 Mobile phone:(332) 256-3038
 Email: md.babu.mia@mssm.edu
 Specializing in Hemato-Oncology,and Machine Learning-LLM-AI.
- 
 
 ---
 
 ## 🌟 Major Updates (February 2026)
 
-We have significantly expanded the **Skills** directory to align with the 2026 roadmap, introducing the `SKILL.md` metadata standard and deploying high-performance agents across key domains.
+We have successfully migrated the entire codebase to the **Universal Skill Definition Language (USDL)** standard.
 
-### 🧬 Genomics & Bioinformatics
-*   **BioMaster:** `Skills/Genomics/Multi_Agent_Workflows/BioMaster` - A master orchestrator for RNA-seq, ChIP-seq, and Hi-C pipelines.
-*   **CellAgent:** `Skills/Genomics/Single_Cell/CellAgent` - Autonomous single-cell annotation and quality control.
-*   **CompBioAgent:** `Skills/Genomics/Single_Cell/CompBioAgent` - Interactive scRNA-seq explorer and visualization tool.
-*   **STAgent:** `Skills/Genomics/Spatial_Transcriptomics/STAgent` - Spatial transcriptomics analysis for Visium/Xenium data.
+### 📜 Standardized Skill Format (SKILL.md)
+Every one of the 600+ skills now adheres to a rigorous metadata schema, ensuring they are **discoverable, measurable, and safe** for autonomous execution.
 
-### 🏥 Clinical & Operations
-*   **ChatEHR:** `Skills/Clinical/EHR/ChatEHR` - Clinical assistant for summarizing patient records and answering queries.
-*   **TrialGPT:** `Skills/Clinical/Trial_Matching/TrialGPT` - Intelligent patient-to-trial matching and ranking.
-*   **RadGPT:** `Skills/Clinical/Radiology/RadGPT` - Radiology report summarizer and patient-friendly explainer.
-*   **Autonomous Oncology Agent:** Precision oncology treatment planning using multimodal data (H&E + Genomics).
+*   **Discoverable:** Indexed by keywords and domain.
+*   **Measurable:** Every skill defines a "Measurable Outcome" (e.g., "Analyze 10k cells in <5 mins").
+*   **Safe:** "Allowed Tools" restrict agent capabilities to prevent unintended side effects.
 
-### 🧪 Drug Discovery & Chemistry
-*   **MAGE:** `Skills/Drug_Discovery/Antibody_Design/MAGE` - Generative antibody design using protein language models.
-*   **CheMatAgent:** `Skills/Drug_Discovery/CheMatAgent` - Computational chemistry agent for molecule design and property prediction.
-*   **Biomni:** `Skills/Research_Tools/Biomni` - General-purpose biomedical research agent with access to 150+ tools.
+### 📚 The Catalog
+We have implemented a dynamic cataloging system. The entire library is indexed in `skills_catalog.json`.
 
-### 🔍 Knowledge & Research
-*   **KRAGEN:** `Skills/Research_Tools/Knowledge_Graphs/KRAGEN` - Knowledge Graph-Enhanced RAG for complex reasoning.
-*   **LEADS:** `Skills/Research_Tools/Literature_Mining/LEADS` - Automated systematic review and meta-analysis agent.
-*   **BioMCP:** `Skills/MCP_Servers/BioMCP` - Model Context Protocol server for connecting LLMs to PubMed, ClinicalTrials.gov, and more.
+**To generate the latest catalog:**
+```bash
+python3 platform/skills_catalog.py
+```
+
+### 🧬 Key Domain Highlights
+
+#### 1. Genomics & Bioinformatics
+*   **BioMaster:** Orchestrator for RNA-seq, ChIP-seq, and Hi-C pipelines.
+*   **CellAgent:** Autonomous single-cell annotation and quality control.
+*   **STAgent:** Spatial transcriptomics analysis for Visium/Xenium.
+*   **Genome Engineer:** CRISPR gRNA design and off-target prediction.
+
+#### 2. Clinical & Operations
+*   **ChatEHR:** Clinical assistant for patient records (FHIR integrated).
+*   **TrialGPT:** Intelligent patient-to-trial matching and ranking.
+*   **RadGPT:** Radiology report summarizer and explainer.
+*   **Precision Oncology:** Multimodal treatment planning (H&E + Genomics).
+
+#### 3. Drug Discovery
+*   **MAGE:** Generative antibody design using protein language models.
+*   **CheMatAgent:** Computational chemistry for molecule design.
+*   **Biomni:** General-purpose biomedical research agent (150+ tools).
+
+#### 4. Software Engineering (New!)
+*   **Codebase Investigator:** Autonomous repository mapping and analysis.
+*   **Technical Writing:** Automated generation of high-quality documentation.
+*   **Data Visualization:** Publication-ready scientific plotting agents.
 
 ## 📂 Directory Structure
 
-The repository is organized into domain-specific modules:
+The repository is organized into high-level domains:
 
 ```text
 Skills/
@@ -79,19 +99,13 @@ Skills/
 ├── Clinical/             # EHR, Radiology, Oncology, Trials
 ├── Drug_Discovery/       # Antibody Design, Small Molecules, Chemistry
 ├── Genomics/             # Single Cell, Spatial, CRISPR, Variant Interpretation
+├── Hematology/           # Bone Marrow, Flow Cytometry, MPN Analysis
+├── Immunology_Vaccines/  # CAR-T, TCR, Neoantigen Prediction
 ├── MCP_Servers/          # BioMCP and other protocol servers
 ├── Research_Tools/       # Biomni, Literature Mining, Knowledge Graphs
-├── Pharma/               # Regulatory Affairs, Pharmacovigilance
-└── Software_Engineering/ # Best Practices (React, Python, Pandas)
+├── Software_Engineering/ # Best Practices, Codebase Analysis, Tech Writing
+└── Writing_and_Productivity/ # Technical documentation and reporting
 ```
-
-## 📜 Standardized Skill Format
-
-All skills now adhere to the **SKILL.md** standard, making them discoverable and executable by the BioKernel. Each skill definition includes:
-*   **Description:** Concise summary of capabilities.
-*   **Keywords:** Core terms for indexing.
-*   **Measurable Outcome:** SMART goals (e.g., "Rank 5 trials in <3 mins").
-*   **Allowed Tools:** Security sandboxing for agent execution.
 
 ## 🛠️ Usage Examples
 

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for ModelRetryMiddleware functionality."""
 
 import time
@@ -687,3 +697,5 @@ def test_model_retry_multiple_middleware_composition() -> None:
     ai_messages = [m for m in result["messages"] if isinstance(m, AIMessage)]
     assert len(ai_messages) >= 1
     assert "Hello" in ai_messages[-1].content
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

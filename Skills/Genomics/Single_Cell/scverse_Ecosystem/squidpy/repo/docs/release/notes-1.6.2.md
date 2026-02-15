@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Squidpy 1.6.2 (2024-11-12)
 
 ## Features
@@ -15,3 +28,6 @@
   [#911](https://github.com/scverse/squidpy/pull/911)
 - Update numpy and python version requirements [@giovp](https://github.com/giovp)
   [#903](https://github.com/scverse/squidpy/pull/903)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

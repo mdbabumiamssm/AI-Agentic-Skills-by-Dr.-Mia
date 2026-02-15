@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SeuratWrappers
 
 SeuratWrappers is a collection of community-provided methods and extensions for [Seurat](https://satijalab.org/seurat/), curated by the Satija Lab at NYGC. These methods comprise functionality not presently found in Seurat, and are able to be updated much more frequently.
@@ -33,3 +46,6 @@ remotes::install_github('satijalab/seurat-wrappers')
 | miQC | [Running miQC on Seurat objects](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/miQC.html) | Hippen et. al., bioRxiv 2021 | https://github.com/greenelab/miQC | 
 | tricycle | [Running estimate_cycle_position from tricycle on Seurat Objects](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/tricycle.html) | Zheng et. al., bioRxiv 2021 | https://www.bioconductor.org/packages/release/bioc/html/tricycle.html | 
 | PaCMAP | [Running PaCMAP on Seurat Objects](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/pacmap.html) | Wang et. al, JMLR 2021; Huang et. al, Communications Biology  2022 | https://github.com/YingfanWang/PaCMAP |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

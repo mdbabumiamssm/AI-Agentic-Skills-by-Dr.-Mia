@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from ag_ui.core import CustomEvent, EventType
@@ -49,3 +59,5 @@ def test_state_context_only_when_new_user_turn() -> None:
     assert isinstance(message, ChatMessage)
     assert isinstance(message.contents[0], TextContent)
     assert "Current state of the application" in message.contents[0].text
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

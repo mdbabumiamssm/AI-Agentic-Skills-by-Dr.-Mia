@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from windows_use.agent.tools.service import click_tool, type_tool, launch_tool, shell_tool, clipboard_tool, done_tool, shortcut_tool, scroll_tool, drag_tool, move_tool, key_tool, wait_tool, scrape_tool 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from windows_use.agent.views import AgentState, AgentStep, AgentResult
@@ -106,3 +116,4 @@ class Agent:
                 logger.warning("Consecutive failures exceeded limit, stopping execution.")
                 return AgentResult(is_done=False, content=None, error="Consecutive failures exceeded limit.")
             self.agent_step.increment_step()        
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

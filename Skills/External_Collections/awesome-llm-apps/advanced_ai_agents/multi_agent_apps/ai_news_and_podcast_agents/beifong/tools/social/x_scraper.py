@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import time
 from tools.social.browser import create_browser_context
 from tools.social.x_post_extractor import x_post_extractor
@@ -86,3 +96,4 @@ def crawl_x_profile(profile_url, db_file="x_posts.db"):
             conn.close()
             return post_count
         return post_count
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

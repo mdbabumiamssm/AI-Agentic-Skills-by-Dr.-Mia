@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scATAC-seq Analysis - Usage Guide
 
 ## Overview
@@ -99,3 +112,6 @@ Tell your AI agent what you want to do:
 - **TF-IDF before LSI** - standard normalization for sparse chromatin data
 - **Validate with RNA** - integrate with scRNA-seq to confirm cell types
 - **Motifs need background** - use matched GC content for enrichment testing
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

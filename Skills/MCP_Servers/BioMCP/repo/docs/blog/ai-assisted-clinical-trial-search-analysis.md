@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AI-Assisted Clinical Trial Search: How BioMCP Transforms Research
 
 Finding the right clinical trial for a research project has traditionally been
@@ -75,3 +88,6 @@ represents a fundamental shift in how we interact with biomedical information.
 By bringing the power of natural language processing to specialized databases,
 BioMCP is helping to democratize access to critical health information and
 accelerate the research process.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

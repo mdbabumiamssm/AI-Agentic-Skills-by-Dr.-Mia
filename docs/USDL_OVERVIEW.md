@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Universal Skill Description Layer (USDL)
 
 USDL is the canonical, model-agnostic schema for defining a biomedical agent. A USDL spec describes **what** a skill does (inputs, outputs, safety, audit rules). The `platform/optimizer/usdl_transpiler.py` module then compiles that spec into provider-specific artifacts:
@@ -28,3 +41,6 @@ USDL is the canonical, model-agnostic schema for defining a biomedical agent. A 
 * **Single Source of Truth:** Define skill logic once; auto-generate prompts and schemas.
 * **Stack Alignment:** Ensures OpenAI and Anthropic stacks stay in sync.
 * **Auditability:** Safety + audit policies travel with each compiled artifact.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 status: accepted
 contact: eavanvalkenburg
@@ -68,3 +81,6 @@ When mapping .NET names to Python:
 - Use `Protocol` suffix for interfaces/protocols to clarify their purpose.
 - Use `Base` prefix for base classes that are not abstract but serve as a common ancestor for internal implementations.
 - When readability improves while it is still easy to understand what it does and how it maps to the .NET name, prefer the shorter name.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

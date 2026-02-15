@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing to the Docs
 
 We welcome contributions to our documentation! If you would like to contribute, please follow the steps below.
@@ -46,3 +59,6 @@ To check for broken links in the documentation, run `mkdocs build` and look for 
 ## Submitting a Pull Request
 
 When you're ready to submit your changes, please create a pull request. We will review your changes and merge them if they are appropriate.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

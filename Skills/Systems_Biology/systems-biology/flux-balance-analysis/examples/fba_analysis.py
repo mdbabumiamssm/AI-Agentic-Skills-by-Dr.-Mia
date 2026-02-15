@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Flux balance analysis with COBRApy'''
 
 import cobra
@@ -72,3 +82,5 @@ pfba_total = sum(abs(pfba_sol.fluxes))
 print(f'Standard FBA total flux: {fba_total:.1f} mmol/gDW/h')
 print(f'pFBA total flux: {pfba_total:.1f} mmol/gDW/h')
 print(f'Reduction: {(1 - pfba_total/fba_total)*100:.1f}%')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

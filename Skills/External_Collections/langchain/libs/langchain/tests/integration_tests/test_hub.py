@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 
 from langchain_core.prompts import ChatPromptTemplate
@@ -23,3 +33,5 @@ def test_hub_pull_private_prompt() -> None:
     assert private_prompt.metadata is not None
     assert private_prompt.metadata["lc_hub_owner"] == "-"
     assert private_prompt.metadata["lc_hub_repo"] == "integration-test"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

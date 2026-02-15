@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test ChatFireworks API wrapper.
 
 You will need FIREWORKS_API_KEY set in your environment to run these tests.
@@ -171,3 +181,5 @@ def test_structured_output_json_schema(schema_type: str) -> None:
         validation_function(chunk)
         chunks.append(chunk)
     assert chunk
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

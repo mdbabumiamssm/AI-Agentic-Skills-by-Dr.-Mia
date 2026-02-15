@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Generate genome browser track figures with pyGenomeTracks'''
 
 import subprocess
@@ -140,3 +150,5 @@ if __name__ == '__main__':
     print('Or use this script functions:')
     print('  generate_track_plot("chr1:1000000-2000000", "output.png")')
     print('  batch_generate_plots("regions.bed", "output_dir/")')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

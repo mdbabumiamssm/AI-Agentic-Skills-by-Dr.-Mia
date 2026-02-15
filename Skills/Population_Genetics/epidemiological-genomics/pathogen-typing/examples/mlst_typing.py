@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Multi-locus sequence typing for bacterial isolates'''
 
 import subprocess
@@ -153,3 +163,5 @@ if __name__ == '__main__':
     for cluster_id in sorted(clustered['cluster'].unique()):
         members = clustered[clustered['cluster'] == cluster_id]['file'].tolist()
         print(f'  Cluster {cluster_id}: {members}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

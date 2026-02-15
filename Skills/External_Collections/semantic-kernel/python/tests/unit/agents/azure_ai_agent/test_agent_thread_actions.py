@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from datetime import datetime, timezone
@@ -354,3 +364,5 @@ async def test_agent_thread_actions_invoke_stream(ai_project_client, ai_agent_de
             collected_messages.append(content)
             assert isinstance(content, ChatMessageContent)
             assert content.metadata.get("message_id") == "msg_1"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

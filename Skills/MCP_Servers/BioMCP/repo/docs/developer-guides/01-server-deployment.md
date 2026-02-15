@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Server Deployment Guide
 
 This guide covers various deployment options for BioMCP, from local development to production cloud deployments with authentication.
@@ -549,3 +562,6 @@ docker run -e BIOMCP_LOG_LEVEL=DEBUG biomcp:latest
 - Configure [authentication](../getting-started/03-authentication-and-api-keys.md)
 - Review [security policies](../policies.md)
 - Implement [CI/CD pipeline](02-contributing-and-testing.md)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

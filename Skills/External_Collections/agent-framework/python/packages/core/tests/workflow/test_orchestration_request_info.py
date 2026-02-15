@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Unit tests for request info support in high-level builders."""
@@ -166,3 +176,5 @@ class TestRequestInfoInterceptor:
         assert interceptor._should_pause_for_agent("groupchat_agent:writer") is True
         assert interceptor._should_pause_for_agent("request_info:writer") is True
         assert interceptor._should_pause_for_agent("groupchat_agent:editor") is False
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

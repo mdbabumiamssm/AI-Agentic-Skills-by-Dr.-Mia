@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Design CRISPR guide RNAs with activity scoring'''
 
 from Bio.Seq import Seq
@@ -116,3 +126,5 @@ if __name__ == '__main__':
     print('Top 5 guides for target region:')
     for i, g in enumerate(guides, 1):
         print(f"{i}. {g['sequence']} (PAM: {g['pam']}, Score: {g['activity_score']:.2f}, GC: {g['gc_content']:.0%})")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

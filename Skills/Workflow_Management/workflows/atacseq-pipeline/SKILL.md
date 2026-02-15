@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-atacseq-pipeline
 description: End-to-end ATAC-seq workflow from FASTQ files to differential accessibility and TF footprinting. Covers alignment, peak calling with MACS3, QC metrics, and optional TOBIAS footprinting. Use when running end-to-end ATAC-seq analysis from FASTQ to differential accessibility.
@@ -17,6 +30,10 @@ qc_checkpoints:
   - after_alignment: "Mapping rate >80%, mitochondrial <20%"
   - after_peaks: "FRiP >20%, TSS enrichment >5"
   - after_footprinting: "Motif enrichment validates TF activity"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # ATAC-seq Pipeline
@@ -340,3 +357,6 @@ echo "Pipeline complete. Peaks: ${OUTDIR}/peaks/consensus_peaks.narrowPeak"
 - atac-seq/differential-accessibility - DiffBind for ATAC
 - atac-seq/footprinting - TOBIAS and HINT details
 - chip-seq/peak-annotation - Annotate ATAC peaks to genes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflow-management-cwl-workflows
 description: Create portable, standards-based bioinformatics pipelines with Common Workflow Language (CWL). Use when building workflows that need maximum portability across execution platforms, sharing pipelines with collaborators using different systems, or contributing to community workflow registries.
 tool_type: cli
 primary_tool: cwltool
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # CWL Workflows
@@ -411,3 +428,6 @@ toil-cwl-runner workflow.cwl job.yaml
 - workflow-management/wdl-workflows - WDL alternative
 - workflow-management/snakemake-workflows - Python-based alternative
 - workflow-management/nextflow-pipelines - Groovy-based alternative
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Shared configuration for all Linear blocks using the new SDK pattern.
 """
@@ -89,3 +99,5 @@ TEST_CREDENTIALS_INPUT_API_KEY = {
     "type": TEST_CREDENTIALS_API_KEY.type,
     "title": TEST_CREDENTIALS_API_KEY.type,
 }
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

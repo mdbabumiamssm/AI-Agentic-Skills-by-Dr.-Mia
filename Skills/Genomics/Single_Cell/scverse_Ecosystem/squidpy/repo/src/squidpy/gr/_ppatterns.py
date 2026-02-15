@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Functions for point patterns spatial statistics."""
 
 from __future__ import annotations
@@ -536,3 +546,5 @@ def _g_moments(w: spmatrix | NDArrayA) -> tuple[float, float, float]:
     s2 = s2array.sum()
 
     return s0, s1, s2
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

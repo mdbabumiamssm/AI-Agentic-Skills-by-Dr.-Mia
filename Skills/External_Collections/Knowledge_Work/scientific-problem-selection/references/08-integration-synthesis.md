@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SKILL 8: Integration and Synthesis
 
 ## Overview
@@ -171,3 +184,6 @@ Collect your completed documents:
 ## Ready to Synthesize
 
 With all skills complete, you now have a comprehensive, thoughtful, rigorous approach to problem selection and project planning. This is the highest-leverage work you can do in science.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

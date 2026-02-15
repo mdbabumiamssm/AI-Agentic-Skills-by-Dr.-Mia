@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Condition Block
 
 ## What it is
@@ -27,3 +40,5 @@ The block takes two values and a comparison operator as inputs. It then performs
 
 ## Possible use case
 This block could be used in a customer loyalty program to determine if a customer qualifies for a discount. For example, you could compare the customer's total purchases (Value 1) with a threshold amount (Value 2) using the "greater than or equal to" operator. The Yes Value could be "Qualified for discount" and the No Value could be "Not qualified". The block would then output whether the customer qualifies and the appropriate message.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

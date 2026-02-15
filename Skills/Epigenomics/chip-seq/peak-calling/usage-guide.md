@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Peak Calling - Usage Guide
 
 ## Overview
@@ -57,3 +70,6 @@ Tell your AI agent what you want to do:
 - Default q-value threshold is 0.05; use `-q 0.01` for higher stringency
 - Use `--nomodel --extsize 200` if model building fails on small datasets
 - Check peak numbers: TFs typically have 1,000-50,000 peaks; broad marks can have fewer but larger regions
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

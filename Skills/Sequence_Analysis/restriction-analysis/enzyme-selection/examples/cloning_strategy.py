@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Find enzyme pairs for directional cloning'''
 
 from Bio import SeqIO
@@ -44,3 +54,5 @@ if five_prime and three_prime:
     print(f"\n\nSuggested pair for directional cloning:")
     print(f"  5' end: {e1} ({e1.site})")
     print(f"  3' end: {e2} ({e2.site})")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

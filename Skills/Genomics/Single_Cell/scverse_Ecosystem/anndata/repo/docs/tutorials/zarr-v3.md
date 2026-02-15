@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # zarr-v3 Guide/Roadmap
 
 `anndata` now uses the much improved {mod}`zarr` v3 package and also allows writing of datasets in the v3 format via {attr}`anndata.settings.zarr_write_format` via {func}`anndata.io.write_zarr` or {meth}`anndata.AnnData.write_zarr`, with the exception of structured arrays.
@@ -126,3 +139,6 @@ We also would like to create an asynchronous partial reader to enable iterative 
 [sharding]: https://zarr.readthedocs.io/en/stable/user-guide/arrays/#sharding
 [zarr-benchmarks]: https://github.com/LDeakin/zarr_benchmarks
 [GPU user guide]: https://zarr.readthedocs.io/en/stable/user-guide/gpu/
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Microbiome Pipeline Usage Guide
 
 ## Overview
@@ -135,3 +148,6 @@ Maximum expected errors:
 - **Replicates**: Microbiome studies typically need more replicates (n>=5) due to high variability
 - **Compositionality**: Use ALDEx2 or ANCOM-BC, not standard differential tests
 - **Reference database**: SILVA 138 or GTDB for taxonomy assignment
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

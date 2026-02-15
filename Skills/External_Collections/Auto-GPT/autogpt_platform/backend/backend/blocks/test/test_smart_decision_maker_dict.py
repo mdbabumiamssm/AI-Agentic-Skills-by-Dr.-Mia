@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from unittest.mock import Mock
 
 import pytest
@@ -144,3 +154,5 @@ async def test_create_dict_block_with_dynamic_values():
     assert result["dictionary"]["existing"] == "value"
     assert result["dictionary"]["name"] == "Alice"
     assert result["dictionary"]["age"] == 25
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

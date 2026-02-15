@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Integrating with IDEs and Clients
 
 BioMCP can be integrated into your development workflow through multiple approaches. This guide covers integration with IDEs, Python applications, and MCP-compatible clients.
@@ -576,3 +589,6 @@ server_params = StdioServerParameters(
 - Explore [tool-specific documentation](02-mcp-tools-reference.md)
 - Review [API authentication](../getting-started/03-authentication-and-api-keys.md)
 - Check [example workflows](../how-to-guides/01-find-articles-and-cbioportal-data.md) for your use case
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

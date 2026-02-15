@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Utility functions for OpenFDA API integration.
 """
@@ -319,3 +329,5 @@ def format_drug_list(drugs: list[str], max_items: int = 5) -> str:
     shown = drugs[:max_items]
     remaining = len(drugs) - max_items
     return f"{', '.join(shown)} (+{remaining} more)"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

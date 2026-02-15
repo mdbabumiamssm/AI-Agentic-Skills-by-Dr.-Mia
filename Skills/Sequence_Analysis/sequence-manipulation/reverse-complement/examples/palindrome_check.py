@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Check for palindromic sequences (restriction sites)'''
 from Bio.Seq import Seq
 
@@ -36,3 +46,5 @@ def find_palindromes(seq, length=6):
 test_seq = Seq('ATGCGAATTCGATGGATCCATG')
 for pos, pal in find_palindromes(test_seq, 6):
     print(f'Position {pos}: {pal}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

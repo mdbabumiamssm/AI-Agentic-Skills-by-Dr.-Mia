@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Fixtures for parametrized datasets."""
 
 from __future__ import annotations
@@ -107,3 +117,5 @@ def _prepare_pbmc_testdata(
     sc.pp.filter_genes(adata, min_cells=1)
     adata.X = sparsity_func(adata.X.astype(dtype))
     return adata
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

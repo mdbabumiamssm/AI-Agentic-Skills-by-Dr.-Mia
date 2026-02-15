@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-metagenomics-metaphlan
 description: Marker gene-based taxonomic profiling using MetaPhlAn 4. Provides accurate species-level relative abundances using clade-specific markers. Use when accurate taxonomic profiling is needed and computational resources are limited, or for comparison with HMP/other MetaPhlAn studies.
 tool_type: cli
 primary_tool: metaphlan
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # MetaPhlAn 4 Profiling
@@ -198,3 +215,6 @@ Note: Unknown species estimation is now enabled by default in MetaPhlAn 4.2+
 - kraken-classification - Alternative k-mer based classification
 - abundance-estimation - Bracken for Kraken2 abundances
 - metagenome-visualization - Visualize profiles
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

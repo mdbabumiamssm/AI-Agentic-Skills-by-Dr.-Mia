@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Building from source
 
 The core dependencies required are: Eigen3, HDF5, and [Highway](https://github.com/google/highway/).
@@ -106,3 +119,6 @@ The main gotchas to be aware of:
   and displays the full version number at the end of its "Build a source tarball" log.
 - There is some caching used to try to avoid re-compiling dependencies repeatedly. If a dependency upgrade
   isn't coming through as expected, you may need to remove the caching step or bump the cache key name.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

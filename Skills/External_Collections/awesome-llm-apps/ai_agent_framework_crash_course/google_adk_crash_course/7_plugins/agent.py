@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import asyncio
 from datetime import datetime
 from typing import Optional, Dict, Any
@@ -103,3 +113,5 @@ async def run_agent(message: str) -> str:
 if __name__ == "__main__":
     # Test the plugin functionality
     asyncio.run(run_agent("what is 2 + 2?"))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

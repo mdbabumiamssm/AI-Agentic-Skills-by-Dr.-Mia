@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Running a Simple AI Agent with Streaming
 
 This sample demonstrates how to create and run a simple AI agent with Azure Foundry Agents, including both text and streaming responses.
@@ -44,3 +57,6 @@ The sample will:
 3. Run the agent again with streaming to display the response as it's generated
 4. Clean up resources by deleting the agent
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

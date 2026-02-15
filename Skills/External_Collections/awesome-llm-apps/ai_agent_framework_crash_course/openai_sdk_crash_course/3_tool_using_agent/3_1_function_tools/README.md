@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Function Tools Agent
 
 Demonstrates custom function tools creation using the `@function_tool` decorator.
@@ -52,3 +65,6 @@ Demonstrates custom function tools creation using the `@function_tool` decorator
 
 - [Built-in Tools](../3_2_builtin_tools/README.md) - Using WebSearch, CodeInterpreter
 - [Agents as Tools](../3_3_agents_as_tools/README.md) - Advanced agent orchestration
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

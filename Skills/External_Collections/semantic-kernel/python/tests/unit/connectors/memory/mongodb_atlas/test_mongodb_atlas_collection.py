@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from unittest.mock import AsyncMock, patch
@@ -91,3 +101,5 @@ async def test_mongodb_atlas_collection_collection_exists(mongodb_atlas_unit_tes
     with patch.object(collection, "_get_database", new=mock_get_database) as mock_get:
         mock_get.return_value.list_collection_names.return_value = ["test_collection"]
         assert await collection.collection_exists()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

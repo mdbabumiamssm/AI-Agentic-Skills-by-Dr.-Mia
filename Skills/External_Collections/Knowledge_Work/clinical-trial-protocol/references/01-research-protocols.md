@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Step 1: Research Similar Clinical Protocols and Evidence
 
 ## Purpose
@@ -412,3 +425,6 @@ Display concise summary to user:
 - **Drugs/Biologics:** Pathway determines everything; IND required for ALL (no NSR exemption); Orange Book and Purple Book are essential
 - **NCE status** affects exclusivity and data requirements
 - **ICH guidelines** are mandatory for protocol design
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

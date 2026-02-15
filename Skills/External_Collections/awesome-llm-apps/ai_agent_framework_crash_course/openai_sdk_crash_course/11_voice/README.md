@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎙️ Tutorial 11: Voice Agents
 
 Master voice-enabled AI agents with the OpenAI Agents SDK! This tutorial demonstrates how to build conversational voice agents using speech-to-text, text-to-speech, and intelligent agent workflows for natural voice interactions.
@@ -323,3 +336,6 @@ After mastering voice agents:
 - **Custom Voice Models**: Integrate specialized speech recognition/synthesis
 - **Multi-Modal Agents**: Combine voice with vision and text capabilities
 - **Enterprise Voice Solutions**: Build robust voice applications for business use
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini JSON Capabilities
 
 This directory provides a collection of examples demonstrating how to leverage the Gemini API's powerful JSON capabilities for various text processing tasks. Each notebook focuses on a specific application, providing practical code and explanations to help you get started.
@@ -23,3 +36,6 @@ Each notebook provides step-by-step instructions and runnable code examples. Sim
 *   **Simplified Data Processing:** Streamline data extraction and analysis by working with structured data instead of raw text.
 
 This cookbook is designed to help you unlock the full potential of the Gemini API's JSON capabilities and build powerful text processing solutions. Happy coding!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

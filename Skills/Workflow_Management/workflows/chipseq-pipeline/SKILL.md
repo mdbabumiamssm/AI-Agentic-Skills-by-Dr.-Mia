@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-chipseq-pipeline
 description: End-to-end ChIP-seq workflow from FASTQ files to annotated peaks. Covers QC, alignment, peak calling with MACS3, and peak annotation with ChIPseeker. Use when processing ChIP-seq data from alignment through peak annotation.
@@ -15,6 +28,10 @@ qc_checkpoints:
   - after_qc: "Q30 >85%, adapter content <5%"
   - after_alignment: "Mapping rate >80%, unique mapping >70%"
   - after_peaks: "FRiP >1% (ideally >5%), peak count reasonable"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # ChIP-seq Pipeline
@@ -260,3 +277,6 @@ echo "Pipeline complete. Peaks: ${OUTDIR}/peaks/experiment_peaks.narrowPeak"
 - chip-seq/differential-binding - Compare conditions with DiffBind
 - chip-seq/chipseq-qc - Comprehensive QC metrics
 - chip-seq/motif-analysis - Find enriched motifs in peaks
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agent Examples
 
 This folder contains examples demonstrating how to create and use agents with different chat clients from the Agent Framework. Each sub-folder focuses on a specific provider and client type, showing various capabilities like function tools, code interpreter, thread management, structured outputs, image processing, web search, Model Context Protocol (MCP) integration, and more.
@@ -40,3 +53,6 @@ This folder contains examples demonstrating how to create and use agents with di
 | Folder | Description |
 |--------|-------------|
 | **[`custom/`](custom/)** | Create custom agents and chat clients by extending the base framework classes, showing complete control over agent behavior and backend integration |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

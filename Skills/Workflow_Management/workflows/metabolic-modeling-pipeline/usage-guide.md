@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Metabolic Modeling Pipeline - Usage Guide
 
 ## Overview
@@ -101,3 +114,6 @@ A well-curated model should have:
 - **Document changes**: Keep track of manual curation steps
 - **Constrain realistically**: Set uptake bounds based on experimental data
 - **Test edge cases**: Ensure model behaves correctly under different conditions
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

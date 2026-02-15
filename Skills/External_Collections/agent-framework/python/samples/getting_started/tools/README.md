@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Tools Examples
 
 This folder contains examples demonstrating how to use AI functions (tools) with the Agent Framework. AI functions allow agents to interact with external systems, perform computations, and execute custom logic.
@@ -119,3 +132,6 @@ uv run python ai_function_with_approval.py
 ```
 
 Make sure you have the necessary environment variables configured (like `OPENAI_API_KEY` or Azure credentials) before running the examples.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

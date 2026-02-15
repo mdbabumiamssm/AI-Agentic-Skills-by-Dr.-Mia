@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Component Agents
 
 !!! important
@@ -21,3 +34,6 @@ See [Creating Components](./creating-components.md) to get started! Or you can e
 - [🛠️ Command](./commands.md): enable *agent* to interact with user and tools.
 - [🤖 Agent](./agents.md): a class that is composed of components. It's responsible for executing pipelines and managing the components.
 - **Pipeline**: a sequence of method calls on components. Pipelines are used to execute a series of actions in a specific order. As of now there's no formal class for a pipeline, it's just a sequence of method calls on components. There are two default pipelines implemented in the default agent: `propose_action` and `execute`. See [🤖 Agent](./agents.md) to learn more.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

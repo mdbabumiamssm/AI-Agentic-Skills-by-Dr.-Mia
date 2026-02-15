@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Query dbSNP for rsID information and coordinate mapping'''
 
 import myvariant
@@ -76,3 +86,5 @@ test_coords = [
 for chrom, pos, ref, alt in test_coords:
     rsid = coords_to_rsid(chrom, pos, ref, alt)
     print(f'  chr{chrom}:{pos}{ref}>{alt} -> {rsid or "not found"}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

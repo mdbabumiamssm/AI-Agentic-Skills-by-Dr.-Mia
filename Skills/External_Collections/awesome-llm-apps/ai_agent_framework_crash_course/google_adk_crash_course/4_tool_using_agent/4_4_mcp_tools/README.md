@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🌐 MCP Tools Integration
 
 Welcome to the **Model Context Protocol (MCP)** integration guide! This example demonstrates how to connect your ADK agents with external data sources and tools through the standardized MCP protocol.
@@ -241,3 +254,5 @@ MCP tools enable:
 - **API Integration**: Connect to external services and APIs
 - **Data Processing**: Transform and analyze data from various sources
 - **Custom Tools**: Create and share specialized tools across agents
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-blast-searches
 description: Run remote BLAST searches against NCBI databases using Biopython Bio.Blast. Use when identifying unknown sequences, finding homologs, or searching for sequence similarity against NCBI's nr/nt databases.
 tool_type: python
 primary_tool: Bio.Blast.NCBIWWW
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # BLAST Searches
@@ -332,3 +349,6 @@ Need to BLAST a sequence?
 - local-blast - Run BLAST locally for faster, unlimited searches
 - entrez-fetch - Fetch full records for BLAST hits
 - sequence-io - Read query sequences from files
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

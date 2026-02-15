@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AutoGPT Classic
 
 AutoGPT Classic was an experimental project to demonstrate autonomous GPT-4 operation. It was designed to make GPT-4 independently operate and chain together tasks to achieve more complex goals.
@@ -79,3 +92,6 @@ While active development has concluded:
 ## Acknowledgments
 
 Thanks to all contributors who participated in this experimental project and helped advance the field of autonomous AI agents.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

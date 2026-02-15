@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Create a restriction map'''
 
 from Bio import SeqIO
@@ -41,3 +51,5 @@ if len(all_cuts) > 1:
     for i in range(len(positions) - 1):
         size = positions[i + 1] - positions[i]
         print(f'  {positions[i]} -> {positions[i + 1]}: {size} bp')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

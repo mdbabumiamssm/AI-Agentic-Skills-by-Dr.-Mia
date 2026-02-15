@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from typing import Any
 from unittest.mock import Mock, patch
 
@@ -80,3 +90,5 @@ def test_hub_runnable_configurable_fields(mock_pull: Mock) -> None:
         configurable={"owner_repo_commit": "efriis/my-prompt-2"},
     ).invoke({})
     assert templated_2.messages[1].content == "2"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

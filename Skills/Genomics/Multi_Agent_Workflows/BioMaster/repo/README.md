@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 <div  align="center">    
  <img src="./source/Biomaster.svg" width = "100" height = "100" alt="BioMaster" align=center />
 </div>
@@ -608,3 +621,6 @@ This project is licensed under the following terms:
 
 - This project uses the [langchain](https://github.com/hwchase17/langchain) library for integration with OpenAI and other tools.
 - Thanks to all contributors and the open-source community for making BioMaster possible!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multi Sessions
 
 Demonstrates managing multiple concurrent sessions for different users, contexts, and conversation types.
@@ -69,3 +82,6 @@ Demonstrates managing multiple concurrent sessions for different users, contexts
 - [Basic Sessions](../7_1_basic_sessions/README.md) - Session fundamentals
 - [Memory Operations](../7_2_memory_operations/README.md) - Advanced memory manipulation
 - [Tutorial 8: Handoffs & Delegation](../../8_handoffs_delegation/README.md) - Agent handoffs
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

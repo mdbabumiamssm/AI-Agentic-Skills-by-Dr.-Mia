@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Calculate Shannon entropy and information content'''
 
 from Bio import AlignIO
@@ -38,3 +48,5 @@ entropies = [shannon_entropy(alignment[:, i]) for i in range(alignment.get_align
 avg_entropy = sum(entropies) / len(entropies)
 print(f'\nAverage entropy: {avg_entropy:.3f} bits')
 print(f'Max possible entropy (DNA): {math.log2(4):.3f} bits')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

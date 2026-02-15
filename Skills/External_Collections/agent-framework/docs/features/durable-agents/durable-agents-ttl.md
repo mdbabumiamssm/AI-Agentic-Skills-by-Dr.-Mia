@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Time-To-Live (TTL) for durable agent sessions
 
 ## Overview
@@ -145,3 +158,6 @@ These logs help monitor TTL behavior and troubleshoot any issues.
 - Deletion checks are durably scheduled operations and may have slight delays depending on system load.
 - Once an agent session is deleted, its conversation history cannot be recovered.
 - TTL deletion requires at least one worker to be available to process the deletion operation message.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

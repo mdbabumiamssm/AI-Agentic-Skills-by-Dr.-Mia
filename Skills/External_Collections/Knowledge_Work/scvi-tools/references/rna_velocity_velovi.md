@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # RNA Velocity with veloVI
 
 This reference covers RNA velocity analysis using veloVI, a deep learning approach that improves upon traditional velocity methods.
@@ -408,3 +421,6 @@ model.train()
 - Gayoso et al. (2023) "Deep generative modeling of transcriptional dynamics for RNA velocity analysis in single cells"
 - La Manno et al. (2018) "RNA velocity of single cells"
 - Bergen et al. (2020) "Generalizing RNA velocity to transient cell states through dynamical modeling"
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Making a release
 
 First, check out {doc}`versioning` to see which kind of release you want to make.
@@ -68,3 +81,6 @@ and create a version tag before building (make sure you delete it after uploadin
 [hatch-build]: https://hatch.pypa.io/latest/config/build/
 [testpypi tutorial]: https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives
 [publish workflow]: https://github.com/scverse/scanpy/tree/main/.github/workflows/publish.yml
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

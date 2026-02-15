@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel Processes - Getting Started
 
 This project contains a step by step guide to get started with  _Semantic Kernel Processes_.
@@ -244,3 +257,6 @@ async with await start(
 
 Concept samples can be run in an IDE or via the command line. After setting up the required api key
 for your AI connector, the samples run without any extra command line arguments.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

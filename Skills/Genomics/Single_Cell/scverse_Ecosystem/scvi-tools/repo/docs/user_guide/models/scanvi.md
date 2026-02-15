@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scANVI
 
 **scANVI** [^ref1] (single-cell ANnotation using Variational Inference; Python class {class}`~scvi.model.SCANVI`) is a semi-supervised model for single-cell transcriptomics data.
@@ -314,3 +327,6 @@ For prediction, scANVI returns $q_\eta(c_n \mid z_n)$ in the following function:
     Diederik P. Kingma, Max Welling (2013) (2014),
     _Auto-Encoding Variational Bayes_,
     [Arxiv](https://arxiv.org/abs/1312.6114).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

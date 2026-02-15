@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-entrez-search
 description: Search NCBI databases using Biopython Bio.Entrez. Use when finding records by keyword, building complex search queries, discovering database structure, or getting global query counts across databases.
 tool_type: python
 primary_tool: Bio.Entrez
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Entrez Search
@@ -289,3 +306,6 @@ Need to search NCBI?
 - batch-downloads - Download large result sets efficiently
 - geo-data - Search GEO expression datasets (specialized search)
 - blast-searches - Search by sequence similarity instead of keywords
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

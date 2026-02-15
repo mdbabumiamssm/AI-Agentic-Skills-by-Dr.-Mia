@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Flow Cytometry Pipeline Usage Guide
 
 ## Overview
@@ -177,3 +190,6 @@ Best for: Well-defined populations, lower dimensions
 - CATALYST: doi:10.1101/218826
 - diffcyt: doi:10.1038/s41467-017-00707-4
 - FlowSOM: doi:10.1002/cyto.a.22625
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

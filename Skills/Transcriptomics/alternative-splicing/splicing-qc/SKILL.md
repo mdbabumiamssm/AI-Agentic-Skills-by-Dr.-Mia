@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-splicing-qc
 description: Assesses RNA-seq data quality for splicing analysis including junction saturation curves, splice site strength scoring, and junction coverage metrics using RSeQC. Use when evaluating data suitability for splicing analysis or troubleshooting low event detection.
 tool_type: python
 primary_tool: RSeQC
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Splicing Quality Control
@@ -157,3 +174,6 @@ print(f'Junctions >= 20 reads: {sum(1 for c in counts if c >= 20)}')
 - splicing-quantification - Quantify after QC passes
 - read-alignment/star-alignment - Alignment quality affects junctions
 - read-qc/quality-reports - General sequencing QC
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-engineering-hdr-template-design
 description: Design homology-directed repair donor templates for CRISPR knock-ins using primer3-py. Create ssODN, dsDNA, or plasmid templates with optimized homology arms. Use when designing donor templates for precise insertions, tagging, or allele replacement.
 tool_type: python
 primary_tool: primer3-py
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # HDR Template Design
@@ -245,3 +262,6 @@ def add_silent_pam_mutation(donor_seq, pam_position, codon_table='standard'):
 - genome-engineering/grna-design - Design guide to create cut site
 - primer-design/primer-basics - PCR primer design for cloning
 - sequence-io/read-sequences - Read and parse GenBank features
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

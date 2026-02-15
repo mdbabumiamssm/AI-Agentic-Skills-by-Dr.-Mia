@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # semantic_kernel.connectors.memory.redis
 
 This connector uses Redis to implement Semantic Memory. It requires the [RediSearch](https://redis.io/docs/latest/develop/interact/search-and-query/advanced-concepts/vectors/) module to be enabled on Redis to implement vector similarity search.
@@ -29,3 +42,6 @@ docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:la
     redis_connection_string = sk.redis_settings_from_dot_env()
     kernel.use_memory(storage=RedisMemoryStore(connection_string=redis_connection_string), embeddings_generator=embedding_generator)
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

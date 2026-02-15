@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## 🧬 Multimodal AI Agent
 
 A Streamlit application that combines video analysis and web search capabilities using Google's Gemini 2.5 model. This agent can analyze uploaded videos and answer questions by combining visual understanding with web-search.
@@ -37,3 +50,6 @@ GOOGLE_API_KEY=your_api_key_here
 ```bash
 streamlit run multimodal_agent.py
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

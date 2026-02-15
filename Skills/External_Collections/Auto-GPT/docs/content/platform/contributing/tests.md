@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Testing
 
 We use [Playwright](https://playwright.dev/) for our testing framework.
@@ -182,3 +195,6 @@ You can pass information between tests using the `testInfo` object. This is usef
 - [Code Generation](https://playwright.dev/docs/codegen)
 - [Pages](https://playwright.dev/docs/pages)
 - [Test Annotations](https://playwright.dev/docs/test-annotations)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

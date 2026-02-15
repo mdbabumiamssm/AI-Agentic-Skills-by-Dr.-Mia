@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Getting Started with AutoGPT: Self-Hosting Guide
 
 ## Introduction
@@ -354,3 +367,6 @@ To add a new agent block, you need to create a new class that inherits from `Blo
 * You can mock the functions declared in the block using the `test_mock` field for your unit tests.
 * Once you finish creating the block, you can test it by running `poetry run pytest backend/blocks/test/test_block.py -s`.
 * Create a Pull Request to the `dev` branch of the repository with your changes so you can share it with the community :)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

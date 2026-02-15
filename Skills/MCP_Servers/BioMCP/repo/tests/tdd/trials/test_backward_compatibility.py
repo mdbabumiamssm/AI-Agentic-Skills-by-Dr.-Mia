@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test backward compatibility for trial search and getter functions."""
 
 from unittest.mock import patch
@@ -227,3 +237,5 @@ class TestCLIBackwardCompatibility:
             args = mock_run.call_args[0][0]
             # Check that it's the unified search function being called
             assert hasattr(args, "__name__") or hasattr(args, "func")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

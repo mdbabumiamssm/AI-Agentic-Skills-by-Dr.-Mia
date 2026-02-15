@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from agno.agent import Agent
 from agno.models.google import Gemini
 from agno.media import Image as AgnoImage
@@ -280,3 +290,4 @@ st.markdown("""
         <p>Share your recovery journey with #BreakupRecoverySquad</p>
     </div>
 """, unsafe_allow_html=True)
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

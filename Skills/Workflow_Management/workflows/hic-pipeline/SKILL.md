@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-hic-pipeline
 description: End-to-end Hi-C analysis workflow from contact pairs to compartments, TADs, and loops. Covers cooler matrices, cooltools analysis, and visualization. Use when processing Hi-C data to compartments and TADs.
@@ -16,6 +29,10 @@ qc_checkpoints:
   - after_pairs: "Valid pairs >50%, cis >70%"
   - after_matrix: "Coverage uniform, no artifacts"
   - after_analysis: "Compartments correlate with expression"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Hi-C Pipeline
@@ -282,3 +299,6 @@ print(f'Results saved to {outdir}/')
 - hi-c-analysis/tad-detection - TAD calling methods
 - hi-c-analysis/loop-calling - Loop detection
 - hi-c-analysis/hic-visualization - Plotting matrices
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

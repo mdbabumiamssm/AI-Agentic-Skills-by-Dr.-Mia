@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Calculate FDR and filter PSMs using target-decoy approach'''
 import pandas as pd
 import numpy as np
@@ -32,3 +42,5 @@ unique_peptides = psms_filtered['peptide'].nunique()
 print(f'Unique peptides: {unique_peptides}')
 
 psms_filtered.to_csv('psms_1pct_fdr.tsv', sep='\t', index=False)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

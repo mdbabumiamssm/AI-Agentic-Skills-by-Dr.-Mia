@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import pathlib
 import re
 
@@ -69,3 +79,5 @@ def test_filecallback(tmp_path: pathlib.Path) -> None:
     with FileCallbackHandler(str(log3)) as handler_cm:
         chain_test.invoke({"foo": "bar"}, {"callbacks": [handler_cm]})
     assert "Entering new FakeChain chain" in strip_ansi(log3.read_text())
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

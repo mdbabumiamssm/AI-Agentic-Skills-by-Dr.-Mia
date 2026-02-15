@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Azure AI Search Context Provider Examples
 
 Azure AI Search context provider enables Retrieval Augmented Generation (RAG) with your agents by retrieving relevant documents from Azure AI Search indexes. It supports two search modes optimized for different use cases.
@@ -262,3 +275,6 @@ async with ChatAgent(
 - [Semantic Search in Azure AI Search](https://learn.microsoft.com/azure/search/semantic-search-overview)
 - [Knowledge Bases in Azure AI Search](https://learn.microsoft.com/azure/search/knowledge-store-concept-intro)
 - [Agentic Retrieval Blog Post](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-iq-boost-response-relevance-by-36-with-agentic-retrieval/4470720)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

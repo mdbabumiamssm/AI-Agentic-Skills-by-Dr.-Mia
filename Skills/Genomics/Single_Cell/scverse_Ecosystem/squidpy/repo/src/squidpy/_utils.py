@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Spatial tools general utility functions."""
 
 from __future__ import annotations
@@ -387,3 +397,5 @@ def _ensure_dim_order(img_da: xr.DataArray, order: Literal["cyx", "yxc"] = "yxc"
         img_da = img_da.expand_dims({"c": [0]})
     # After possible expand, just transpose to target
     return img_da.transpose(*tuple(order))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 #!/usr/bin/env python3
 """
 NCBI Utilities for GEO/SRA Data Access
@@ -806,3 +816,5 @@ def format_sample_groups_table(groups: Dict[str, Dict]) -> str:
     lines.append(f"{'TOTAL':<20} {total_runs:>6} {'':<10} {'':<25} {format_file_size(total_size):>12}")
 
     return '\n'.join(lines)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

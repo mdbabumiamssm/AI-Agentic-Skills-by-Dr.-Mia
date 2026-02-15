@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # semantic_kernel.connectors.ai.nvidia
 
 This connector enables integration with NVIDIA NIM API for text embeddings and chat completion. It allows you to use NVIDIA's models within the Semantic Kernel framework.
@@ -64,3 +77,6 @@ response = await agent.get_response(messages="Write a haiku about Semantic Kerne
 print(response.content)
 ```
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

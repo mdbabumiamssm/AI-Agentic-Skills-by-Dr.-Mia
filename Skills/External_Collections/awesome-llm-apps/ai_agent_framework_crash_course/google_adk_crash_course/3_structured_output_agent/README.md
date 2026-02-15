@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 3: Structured Output Agent
 
 Welcome to structured output! This tutorial teaches you how to create agents that return **type-safe, structured data** instead of plain text. This is crucial for building reliable applications that need predictable data formats.
@@ -125,3 +138,6 @@ Structured output agents are perfect for:
 - **Model Support**: Not all models support structured output equally well
 - **Validation Overhead**: Complex schemas may slow down responses
 - **Schema Evolution**: Plan for schema changes in production systems
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

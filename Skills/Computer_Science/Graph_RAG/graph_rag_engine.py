@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 GraphRAG Engine (2026 Skills)
 
@@ -89,3 +99,5 @@ if __name__ == "__main__":
     print("\n[LLM Context Augmentation]")
     context = rag.get_subgraph_context("mTOR")
     print(f"mTOR Local Knowledge:\n{context}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

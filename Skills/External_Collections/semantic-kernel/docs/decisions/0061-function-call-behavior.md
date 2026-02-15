@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -378,3 +391,6 @@ There were a few decisions taken during the ADR review:
 - It was decided to postpone the implementation of the inheritance mechanism that allows a service to inherit the parent function choice behavior configuration.
 - It was decided that the Breaking Glass support is out of scope for now, but it may be included later if necessary.
 - Option 2.5, which presumes supplying function call choices and function invocation configurations via prompt execution settings, was preferred over the other options due to its simplicity, absence of breaking changes, and familiar developer experience.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

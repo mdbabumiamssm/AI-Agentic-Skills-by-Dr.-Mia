@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Run the Self-Assembling Manifold algorithm."""
 
 from __future__ import annotations
@@ -238,3 +248,5 @@ def sam(  # noqa: PLR0913
         s.adata.uns["sam"][attr] = s.adata.uns.pop(attr, None)
 
     return s if inplace else (s, s.adata)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

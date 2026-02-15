@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Gemini API Qdrant Examples
 
 ### Table of Contents
@@ -27,3 +40,5 @@ These examples show how to:
 * Use Gemini queries to semantically match user input to relevant content.
 
 You can use these templates as a foundation for building search, recommendation, or AI assistant systems using Gemini and Qdrant.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

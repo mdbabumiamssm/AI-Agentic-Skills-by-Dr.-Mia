@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 from queue import Queue
 from typing import cast
@@ -562,3 +572,5 @@ def test_scoped_event_from_kernel_process_creates_scoped_event(mocked_process_st
     assert local_event.namespace == "my_step_123"
     assert local_event.inner_event == kpe
     assert local_event.inner_event is kpe
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

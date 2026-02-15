@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """BasePlot for dotplot, matrixplot and stacked_violin."""
 
 from __future__ import annotations
@@ -934,3 +944,5 @@ def _var_groups(
         msg = "No valid var_names were passed."
         raise ValueError(msg)
     return var_names_seq, VarGroups(var_group_labels, var_group_positions)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

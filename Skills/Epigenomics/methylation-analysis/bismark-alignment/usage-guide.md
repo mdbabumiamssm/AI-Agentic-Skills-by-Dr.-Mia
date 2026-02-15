@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Bismark Alignment - Usage Guide
 
 ## Overview
@@ -59,3 +72,6 @@ Tell your AI agent what you want to do:
 - For PBAT libraries, use --pbat flag
 - If mapping rate is low, try relaxing alignment with -N 1
 - Use --parallel for multi-core processing instead of running multiple instances
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

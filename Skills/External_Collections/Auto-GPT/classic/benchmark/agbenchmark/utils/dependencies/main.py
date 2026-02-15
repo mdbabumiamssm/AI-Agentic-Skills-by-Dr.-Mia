@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 A module to manage dependencies between pytest tests.
 
@@ -253,3 +263,5 @@ class DependencyManager(object):
         """Get a list of missing dependencies for a test."""
         nodeid = clean_nodeid(item.nodeid)
         return self.dependencies[nodeid].unresolved
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

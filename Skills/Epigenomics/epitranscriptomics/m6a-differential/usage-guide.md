@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Differential m6A Analysis - Usage Guide
 
 ## Overview
@@ -45,3 +58,6 @@ BiocManager::install(c('exomePeak2', 'QNB'))
 - **padj < 0.05** - Standard FDR threshold
 - **|log2FC| > 1** - Require 2-fold change
 - **Gene-level summary** - Aggregate site-level to gene-level for pathway analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

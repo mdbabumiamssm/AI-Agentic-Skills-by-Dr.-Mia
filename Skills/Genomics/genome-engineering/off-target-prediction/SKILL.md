@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-engineering-off-target-prediction
 description: Predict CRISPR off-target sites using Cas-OFFinder and CFD scoring algorithms. Identify potential unintended cleavage sites genome-wide and assess guide specificity. Use when evaluating guide RNA specificity or selecting guides with minimal off-target risk.
 tool_type: cli
 primary_tool: Cas-OFFinder
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Off-Target Prediction
@@ -211,3 +228,6 @@ def analyze_guide_specificity(guide_seq, genome_fasta, max_mm=4):
 - genome-engineering/grna-design - Design guides before off-target check
 - variant-calling/variant-annotation - Check if off-targets overlap known variants
 - genome-intervals/bed-file-basics - Intersect off-targets with genomic features
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

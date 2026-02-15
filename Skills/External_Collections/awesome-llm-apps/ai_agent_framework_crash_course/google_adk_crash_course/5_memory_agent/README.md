@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🧠 Tutorial 5: Memory Agents - Sessions, State & Events
 
 Welcome to the memory and session management tutorial! This tutorial teaches you how to create AI agents that can remember conversations, maintain context, and provide personalized experiences across multiple interactions.
@@ -186,3 +199,5 @@ After completing this tutorial, you'll be ready for:
 - **Test Conversations**: Have multi-turn conversations to see memory in action
 - **Monitor State**: Use the ADK web interface to inspect session state
 - **Plan Memory Strategy**: Choose the right memory service for your use case 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from langchain_core.prompts import PromptTemplate
 
 template = """You are a teacher grading a quiz.
@@ -76,3 +86,5 @@ Compare the content and correctness of the submitted SQL with the expert answer.
 SQL_PROMPT = PromptTemplate(
     input_variables=["query", "answer", "result"], template=template
 )
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

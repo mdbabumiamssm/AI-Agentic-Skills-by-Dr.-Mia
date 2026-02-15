@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # GSEA - Usage Guide
 
 ## Overview
@@ -79,3 +92,6 @@ Tell your AI agent what you want to do:
 - The signed p-value statistic (-log10(p) * sign(FC)) often works best
 - See enrichment-visualization skill for gseaplot2(), ridgeplot(), and dotplot()
 - If no enriched terms, try a different ranking statistic or increase pvalueCutoff
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

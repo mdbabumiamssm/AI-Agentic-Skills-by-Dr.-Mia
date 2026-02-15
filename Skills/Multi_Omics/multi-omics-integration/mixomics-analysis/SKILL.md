@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-multi-omics-mixomics-analysis
 description: Supervised and unsupervised multi-omics integration with mixOmics. Includes sPLS for pairwise integration and DIABLO for multi-block discriminant analysis. Use when performing supervised multi-omics integration or identifying features that discriminate between groups.
 tool_type: r
 primary_tool: mixOmics
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # mixOmics Multi-Omics Analysis
@@ -174,3 +191,6 @@ auc_diablo <- auroc(diablo, roc.block = 'RNA', roc.comp = 1)
 - data-harmonization - Preprocess before integration
 - differential-expression/de-results - Single-omics analysis
 - pathway-analysis/go-enrichment - Interpret selected features
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

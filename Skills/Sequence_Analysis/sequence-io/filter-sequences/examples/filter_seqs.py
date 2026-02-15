@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 #!/usr/bin/env python3
 '''Filter sequences by various criteria'''
 
@@ -50,3 +60,5 @@ if __name__ == '__main__':
     input_path = sys.argv[1] if len(sys.argv) > 1 else 'input.fastq.gz'
     output_path = sys.argv[2] if len(sys.argv) > 2 else 'filtered.fastq.gz'
     filter_fastq(input_path, output_path)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

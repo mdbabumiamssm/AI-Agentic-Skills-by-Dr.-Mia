@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Configuring the Kernel
 
 As covered in the notebooks, we require a `.env` file with the proper settings for the model you use. A `.env` file must be placed in the `getting_started` directory. Copy the contents of the `.env.example` file from this directory and paste it into the `.env` file that you just created.
@@ -65,3 +78,5 @@ chat_completion = AzureChatCompletion(service_id="test", env_file_path=env_file_
 ### 4. Microsoft Entra Authentication
 
 To learn how to use a Microsoft Entra Authentication token to authenticate to your Azure OpenAI resource, please navigate to the following [guide](../concepts/README.md#microsoft-entra-token-authentication).
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

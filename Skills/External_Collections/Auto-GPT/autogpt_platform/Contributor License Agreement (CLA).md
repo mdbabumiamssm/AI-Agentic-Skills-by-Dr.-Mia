@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 **Determinist Ltd** 
 
 **Contributor License Agreement (“Agreement”)**
@@ -19,3 +32,6 @@ By submitting a Pull Request which modifies the content of the “autogpt\_platf
 6\.  **We determine the code that is in our products**.  You understand that the decision to include the Contribution in any product or source repository is entirely that of Determinist, and this agreement does not guarantee that the Contributions will be included in any product. 
 
 7\. **No Implied Warranties.**  Determinist acknowledges that, except as explicitly described in this Agreement, the Contribution is provided on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT   LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.    
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

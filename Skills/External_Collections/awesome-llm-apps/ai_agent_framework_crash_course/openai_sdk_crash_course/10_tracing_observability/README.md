@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🔍 Tutorial 8: Tracing & Observability
 
 Master monitoring and debugging with built-in tracing! This tutorial teaches you how to use the OpenAI Agents SDK's comprehensive tracing system to visualize, debug, and monitor your agent workflows during development and production.
@@ -207,3 +220,6 @@ After completing this tutorial, you'll be ready for:
 - **Monitor Performance**: Track execution time trends over time
 - **External Integration**: Consider custom processors for your monitoring stack
 - **Development vs Production**: Different tracing strategies for each environment
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

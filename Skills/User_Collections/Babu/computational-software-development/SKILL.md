@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: computational-software-development
 description: "Full-stack computational software development for biomedical and life science applications. Use when building AI-powered research platforms, clinical decision support systems, multi-LLM ensemble architectures, RAG pipelines, single-cell analysis tools, or biomedical web applications. Includes production-ready patterns for PyTorch deep learning, Flask web apps, citation verification systems, and scientific software distribution."
@@ -655,3 +668,6 @@ biomedai = "biomedai.cli:main"
 
 See `references/architecture_patterns.md` for detailed system design documentation.
 See `references/deployment_guide.md` for production deployment procedures.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

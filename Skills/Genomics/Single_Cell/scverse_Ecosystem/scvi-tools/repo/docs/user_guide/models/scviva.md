@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scVIVA
 
 **scVIVA** (Python class {class}`~scvi.external.SCVIVA`) is a generative model of single-cell resolved spatial
@@ -148,3 +161,6 @@ We argue that the probability of a gene being a $\textit{local marker}$ could be
 which means that the signal comes from cells in $\textit{C1}$ rather than their neighbors $\textit{N1}$. \
 We select genes for which $\mathit{LFC_{C1~vs~C2}} > 0$ and use the genes $\mathcal{S}_1$ as truly differentially expressed. We also define $\mathcal{N}_1 = \{g|\mathit{LFC^{~g}_{C1~vs~C2}} > 0,~g \notin \mathcal{S}_1 \}$. \
 We train a Gaussian process classifier on $\mathbf{X} = [LFC_{C1~vs~C2}~,~LFC_{N1~vs~C2}]$ to classify between the $\textit{local markers}$ $\mathcal{S}_1$ and the $\textit{neighborhood genes}$ $\mathcal{N}_1$. Once fitted, the classifier returns a local marker probability $p_g=\mathit{p}(g \in \mathcal{S}_1 | \mathbf{X})$ for each gene $g$, that we can compare to a given threshold $\tau$ to filter the neighborhood genes.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

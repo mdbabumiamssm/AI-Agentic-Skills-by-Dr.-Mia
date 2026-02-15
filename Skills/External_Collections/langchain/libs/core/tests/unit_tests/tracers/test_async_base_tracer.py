@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test Tracer classes."""
 
 from __future__ import annotations
@@ -596,3 +606,5 @@ async def test_tracer_nested_runs_on_error() -> None:
     assert len(tracer.runs) == 3
     for run in tracer.runs:
         _compare_run_with_error(run, compare_run)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

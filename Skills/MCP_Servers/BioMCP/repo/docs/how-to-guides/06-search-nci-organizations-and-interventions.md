@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # How to Search NCI Organizations and Interventions
 
 This guide demonstrates how to use BioMCP's NCI-specific tools to search for cancer research organizations, interventions (drugs, devices, procedures), and biomarkers.
@@ -682,3 +695,6 @@ async def verify_org_id(org_id: str):
 - Explore [trial search with biomarkers](02-find-trials-with-nci-and-biothings.md)
 - Learn about [variant effect prediction](04-predict-variant-effects-with-alphagenome.md)
 - Set up [API authentication](../getting-started/03-authentication-and-api-keys.md)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

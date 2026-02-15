@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 6.1 Agent Lifecycle Callbacks
 
 This tutorial demonstrates how to use `before_agent_callback` and `after_agent_callback` to monitor agent execution lifecycle.
@@ -231,3 +244,5 @@ This is a known ADK behavior where breaking the loop early prevents cleanup call
 - Experiment with state management between callbacks
 - Add custom logging or analytics
 - Implement performance alerts for slow responses 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from math import ceil, floor
 
 import numpy as np
@@ -153,3 +163,5 @@ def test_batchdistributedsampler_indices(
     # check that all indices are covered
     covered_indices = np.concatenate([np.array(list(indices)) for indices in sampler_indices])
     assert len(covered_indices) == len(dataset)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

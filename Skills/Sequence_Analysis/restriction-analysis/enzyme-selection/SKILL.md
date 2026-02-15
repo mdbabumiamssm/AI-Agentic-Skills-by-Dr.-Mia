@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-restriction-enzyme-selection
 description: Select restriction enzymes by criteria using Biopython Bio.Restriction. Find enzymes that cut once, don't cut, produce specific overhangs, are commercially available, or have compatible ends for cloning. Use when selecting restriction enzymes for cloning or analysis.
 tool_type: python
 primary_tool: Bio.Restriction
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Enzyme Selection
@@ -320,3 +337,6 @@ print(f'Defined: {EcoRI.is_defined()}')
 - restriction-sites - Find where selected enzymes cut
 - restriction-mapping - Map selected enzyme sites
 - fragment-analysis - Predict fragments from selected enzymes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

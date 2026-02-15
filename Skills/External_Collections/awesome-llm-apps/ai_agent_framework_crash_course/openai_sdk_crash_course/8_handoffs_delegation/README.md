@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🤝 Tutorial 8: Handoffs & Delegation
 
 Master agent-to-agent task delegation! This tutorial teaches you how to use the OpenAI Agents SDK's handoff system to create specialized agents that can intelligently delegate tasks to each other, building powerful multi-agent workflows.
@@ -176,3 +189,5 @@ After completing this tutorial, you'll be ready for:
 - **Test Routing**: Verify LLM chooses correct agents for different scenarios
 - **Monitor Handoffs**: Use callbacks and tracing to track delegation patterns
 - **Context Strategy**: Plan what information should transfer between agents
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

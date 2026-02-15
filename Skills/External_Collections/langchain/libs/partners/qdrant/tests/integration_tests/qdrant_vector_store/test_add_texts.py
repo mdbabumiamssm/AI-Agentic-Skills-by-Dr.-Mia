@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import uuid
@@ -141,3 +151,5 @@ def test_qdrant_add_texts_stores_ids(
     stored_ids = [point.id for point in vec_store.client.scroll(collection_name)[0]]
     assert set(ids) == set(stored_ids)
     assert len(vec_store.get_by_ids(ids)) == 3
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-data-visualization-volcano-customization
 description: Create publication-ready volcano plots with custom thresholds, gene labels, and highlighting using ggplot2, EnhancedVolcano, or matplotlib. Use when visualizing differential expression or association results with gene annotations.
 tool_type: mixed
 primary_tool: ggplot2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Volcano Plot Customization
@@ -211,3 +228,6 @@ plt.savefig('volcano.png', dpi=300, bbox_inches='tight')
 - differential-expression/de-visualization - DE-specific plots
 - data-visualization/ggplot2-fundamentals - General ggplot2
 - data-visualization/color-palettes - Color selection
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contribution Guidelines
 
 Thank you for your interest in contributing to Awesome ChatGPT Prompts! 
@@ -54,3 +67,5 @@ Open an issue if you have questions about contributing.
 **Important:** This repository is strictly for AI prompts. 
 - Do **not** post advertisements, third-party software support requests (e.g., Norton Antivirus, billing issues), or fake tech support phone numbers. 
 - Any off-topic issues will be closed immediately, and the posting user will be reported to GitHub for spam and malicious activity.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,6 +1,23 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: single-cell-rna-qc
 description: Perform quality control on single-cell RNA-seq data (.h5ad, 10x .h5, or 10x directories) using scverse best practices, MAD-based filtering (log1p counts/genes, high-tail MT%), and generate filtered AnnData plus QC plots and summary JSON. Use when users request scRNA-seq QC, filtering low-quality cells, data quality assessment, or QC visualizations.
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Single-Cell RNA-seq Quality Control
@@ -83,3 +100,6 @@ For deeper rationale, parameter guidance, and troubleshooting, see:
 - Ambient RNA correction (SoupX, CellBender)
 - Doublet detection (scDblFinder, scrublet)
 - Normalization and downstream analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Video Scripts: Part 3 (Videos 7-8)
 ## Universal Biomedical Skills Platform Tutorial Series
 
@@ -697,3 +710,6 @@ Define these when first used:
 - **SOAP** - Subjective, Objective, Assessment, Plan (clinical notes)
 - **AnnData/h5ad** - Data format for single-cell analysis
 - **scverse** - Python ecosystem for single-cell biology
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

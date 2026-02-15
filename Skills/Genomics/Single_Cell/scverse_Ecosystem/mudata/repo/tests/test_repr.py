@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import numpy as np
 import pytest
 from anndata import AnnData
@@ -42,3 +52,5 @@ class TestMuData:
             mdata.mod.__repr__()
             == f"MuData\n├─ mod1 AnnData ({N} x {D1})\n└─ mod2 MuData [shared obs and var] ({N} × 20)\n   ├─ mod21 AnnData ({N} x {D2})\n   └─ mod22 AnnData ({N} x {D2})"
         )
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

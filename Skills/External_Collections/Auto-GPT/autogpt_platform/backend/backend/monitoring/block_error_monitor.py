@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Block error rate monitoring module."""
 
 import logging
@@ -290,3 +300,5 @@ def report_block_error_rates(include_top_blocks: int | None = None):
     """Check block error rates and send Discord alerts if thresholds are exceeded."""
     monitor = BlockErrorMonitor(include_top_blocks=include_top_blocks)
     return monitor.check_block_error_rates()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

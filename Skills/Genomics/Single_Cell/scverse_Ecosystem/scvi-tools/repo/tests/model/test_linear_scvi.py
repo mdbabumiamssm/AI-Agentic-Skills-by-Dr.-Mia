@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 import pickle
 
@@ -155,3 +165,5 @@ def test_linear_scvi_with_minification(save_path):
     assert model.adata.raw is None
     minified_model_path = os.path.join(save_path, "linear_scvi_minified")
     model.save(minified_model_path, save_anndata=True, overwrite=True)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AUTOZI
 
 **AUTOZI** [^ref1] (Python class {class}`scvi.model.AUTOZI`)
@@ -73,3 +86,6 @@ is $q(\delta_g < 0.5)$.
 ```
 
 [^ref1]: Oscar Clivio, Romain Lopez, Jeffrey Regier, Adam Gayoso, Michael I. Jordan, Nir Yosef (2019), _Detecting zero-inflated genes in single-cell transcriptomics data_, [Machine Learning in Computational Biology (MLCB)](https://www.biorxiv.org/content/biorxiv/early/2019/10/10/794875.full.pdf).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

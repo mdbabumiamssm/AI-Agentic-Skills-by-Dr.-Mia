@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 Running estimate\_cycle\_position from tricycle on Seurat Objects
 ================
 Compiled: July 09, 2021
@@ -189,3 +202,6 @@ plot_ccposition_den(neurosphere_example$tricyclePosition, neurosphere_example$sa
 More information about constructing your own reference, other usages and
 running tricycle outside of the Seurat environment can be found at
 [tricycle](https://www.bioconductor.org/packages/release/bioc/html/tricycle.html).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

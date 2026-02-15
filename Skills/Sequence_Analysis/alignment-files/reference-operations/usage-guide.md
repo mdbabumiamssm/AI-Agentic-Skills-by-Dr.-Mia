@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Reference Operations - Usage Guide
 
 ## Overview
@@ -249,3 +262,6 @@ samtools faidx "$REF" chr1:1-100 > /dev/null && echo "Fetch: OK" || echo "Fetch:
 - Chromosome names must match exactly between reference and BAM files
 - For CRAM files, always provide the reference with `-T` flag
 - Store chromosome sizes file for bedtools and UCSC tools
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

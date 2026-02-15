@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Query myvariant.info for variant annotations from multiple databases'''
 
 import myvariant
@@ -57,3 +67,5 @@ print(f'\nFound {search_results["total"]} pathogenic BRCA1 variants in ClinVar')
 for hit in search_results['hits'][:3]:
     hgvs = hit.get('clinvar', {}).get('hgvs', {}).get('coding', 'N/A')
     print(f'  {hgvs}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

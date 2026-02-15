@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test Chroma functionality."""
 
 import tempfile
@@ -869,3 +879,5 @@ def test_chroma_handles_none_page_content_with_vectors() -> None:
     assert docs_and_vectors[1][0].id == "id3"
     assert docs_and_vectors[0][1] == [0.1, 0.2]
     assert docs_and_vectors[1][1] == [0.5, 0.6]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,38 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
+---
+name: computational-pathology-agent
+description: Analyze Whole Slide Images (WSI) for digital pathology, including tissue segmentation and feature extraction.
+keywords:
+  - wsi
+  - digital-pathology
+  - deep-learning
+  - resnet
+  - openslide
+measurable_outcome: Preprocess and extract tissue patches from a 1GB+ .svs slide within 15 minutes for downstream ML tasks.
+license: MIT
+metadata:
+  author: MD BABU MIA, PhD
+  version: "1.0.0"
+compatibility:
+  - system: python 3.9+
+allowed-tools:
+  - run_shell_command
+  - read_file
+  - write_file
+---
+
 # Computational Pathology Agent
 
 **Version:** 1.0.0
@@ -33,3 +68,5 @@ path_agent.extract_patches(patch_size=256, level=1)
 *   opencv-python
 *   pytorch
 *   scikit-image
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

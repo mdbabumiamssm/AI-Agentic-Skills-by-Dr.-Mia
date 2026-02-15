@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Complete single-cell RNA-seq workflow with Scanpy
 
 import scanpy as sc
@@ -143,3 +153,5 @@ print(f'Clusters: {adata.obs["leiden"].nunique()}')
 print(f'Results saved to: {output_dir}')
 print('\nTop 3 markers per cluster:')
 print(markers.groupby('group').head(3)[['group', 'names', 'logfoldchanges', 'pvals_adj']])
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

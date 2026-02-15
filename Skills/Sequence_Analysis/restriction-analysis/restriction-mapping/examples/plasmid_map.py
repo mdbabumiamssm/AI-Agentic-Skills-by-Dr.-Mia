@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Create restriction map for a circular plasmid with feature overlap analysis'''
 
 from Bio import SeqIO
@@ -50,3 +60,5 @@ if len(all_cuts) >= 2:
         else:
             size = (seq_len - pos1) + pos2
         print(f'  {enzymes_at_pos[pos1]}({pos1}) -> {enzymes_at_pos[pos2]}({pos2}): {size} bp')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

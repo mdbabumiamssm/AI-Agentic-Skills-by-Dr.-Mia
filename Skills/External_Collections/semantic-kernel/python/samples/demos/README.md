@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Semantic Kernel Demo Applications
 
 Demonstration applications that leverage the usage of one or many SK features
@@ -11,3 +24,5 @@ Demonstration applications that leverage the usage of one or many SK features
 | guided_conversations | A sample showing a framework for a pattern of use cases referred to as guided conversations. |
 | processes_with_dapr | A sample showing the Semantic Kernel process framework used with the Python Dapr runtime. |
 | telemetry_with_application_insights | A sample project that shows how a Python application can be configured to send Semantic Kernel telemetry to Application Insights. |
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

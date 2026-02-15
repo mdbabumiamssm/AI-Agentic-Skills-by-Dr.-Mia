@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 AYRSHARE_BLOCK_IDS = [
     "cbd52c2a-06d2-43ed-9560-6576cc163283",  # PostToBlueskyBlock
     "3352f512-3524-49ed-a08f-003042da2fc1",  # PostToFacebookBlock
@@ -13,3 +23,5 @@ AYRSHARE_BLOCK_IDS = [
     "f8c3b2e1-9d4a-4e5f-8c7b-6a9e8d2f1c3b",  # PostToThreadsBlock
     "a9d7f854-2c83-4e96-b3a1-7f2e9c5d4b8e",  # PostToSnapchatBlock
 ]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

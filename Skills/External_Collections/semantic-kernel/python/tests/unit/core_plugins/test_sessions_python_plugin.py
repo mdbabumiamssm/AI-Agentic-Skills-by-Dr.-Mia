@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from unittest.mock import mock_open, patch
@@ -646,3 +656,5 @@ async def test_auth_token_fail(aca_python_sessions_unit_test_env):
 def test_full_path(filename, expected_full_path):
     metadata = SessionsRemoteFileMetadata(filename=filename, size_in_bytes=123)
     assert metadata.full_path == expected_full_path
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

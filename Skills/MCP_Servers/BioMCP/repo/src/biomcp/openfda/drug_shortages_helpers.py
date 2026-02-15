@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Helper functions for drug shortage search to reduce complexity.
 """
@@ -111,3 +121,5 @@ def format_cache_timestamp(data: dict[str, Any]) -> str | None:
         return f"*Data Updated: {updated_dt.strftime('%Y-%m-%d %H:%M')}*\n"
     except (ValueError, TypeError):
         return None
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

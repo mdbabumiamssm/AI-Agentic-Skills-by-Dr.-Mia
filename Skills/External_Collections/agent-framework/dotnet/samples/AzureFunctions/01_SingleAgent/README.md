@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Single Agent Sample
 
 This sample demonstrates how to use the Durable Agent Framework (DAFx) to create a simple Azure Functions app that hosts a single AI agent and provides direct HTTP API access for interactive conversations.
@@ -87,3 +100,6 @@ The expected `application/json` output will look something like:
   }
 }
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

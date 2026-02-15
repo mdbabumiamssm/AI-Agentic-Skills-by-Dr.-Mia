@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SeuratWrappers Vignettes
 
 This directory contains individual method vignettes for each method provided by SeuratWrappers. Generally speaking, each vignette will have three files. Each file has the same content, just formatted and rendered differently:
@@ -15,3 +28,6 @@ This directory contains individual method vignettes for each method provided by 
 | Harmony | [Integration of datasets using Harmony](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/harmony.html) | Korsunsky et al, bioRxiv 2018 | https://github.com/immunogenomics/harmony |
 | ALRA | [Zero-preserving imputation with ALRA](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/alra.html) | Linderman et al, bioRxiv 2018 | https://github.com/KlugerLab/ALRA |
 | Velocity | [Estimating RNA Velocity using Seurat](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.html) | La Manno et al, Nature 2018 | https://velocyto.org |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import langchain_core
 from langchain_core.callbacks.manager import _get_debug
 from langchain_core.globals import get_debug, set_debug
@@ -28,3 +38,5 @@ def test_debug_is_settable_via_setter() -> None:
         # Make sure we don't alter global state, even if the test fails.
         # Always reset `debug` to the value it had before.
         set_debug(previous_value)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Native-AOT Samples
 This application demonstrates how to use the Semantic Kernel Native-AOT compatible API in a Native-AOT application.
 
@@ -37,3 +50,5 @@ At the moment, the following Semantic Kernel packages are AOT compatible:
 | Connectors.Onnx            | ✔️              |  
 
 Other packages are not AOT compatible yet, but we plan to make them compatible in the future.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

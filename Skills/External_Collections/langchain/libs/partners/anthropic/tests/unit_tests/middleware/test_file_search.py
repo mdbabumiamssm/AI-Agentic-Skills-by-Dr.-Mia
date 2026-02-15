@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for file search middleware."""
 
 from langchain_anthropic.middleware.anthropic_tools import AnthropicToolsState
@@ -547,3 +557,5 @@ class TestSearchWithDifferentBackends:
         assert isinstance(result, str)
         assert "/src/main.py" in result
         assert "/memories/notes.txt" not in result
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-small-rna-seq-mirdeep2-analysis
 description: Discover novel miRNAs and quantify known miRNAs using miRDeep2 de novo prediction from small RNA-seq data. Use when identifying new miRNAs or performing comprehensive miRNA profiling with discovery.
 tool_type: cli
 primary_tool: miRDeep2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # miRDeep2 Analysis
@@ -158,3 +175,6 @@ def parse_quantifier_output(csv_path):
 - smrna-preprocessing - Prepare reads for miRDeep2
 - mirge3-analysis - Faster quantification alternative
 - differential-mirna - DE analysis of miRNA counts
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

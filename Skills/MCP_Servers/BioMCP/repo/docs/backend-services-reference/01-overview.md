@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Backend Services Reference Overview
 
 BioMCP integrates with multiple biomedical databases and services to provide comprehensive research capabilities. This reference documents the underlying APIs and their capabilities.
@@ -197,3 +210,6 @@ AlphaGenome → Predictions
 - **BioThings**: [Documentation](https://docs.biothings.io/)
 - **cBioPortal**: [User Guide](https://docs.cbioportal.org/)
 - **NCI**: [API Support](https://api.cancer.gov/support)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

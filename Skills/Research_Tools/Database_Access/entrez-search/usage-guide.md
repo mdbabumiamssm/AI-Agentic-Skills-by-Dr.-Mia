@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Entrez Search - Usage Guide
 
 ## Overview
@@ -60,3 +73,6 @@ Tell your AI agent what you want to do:
 - Specify date ranges when searching for recent publications
 - Ask about available fields if you're unsure how to narrow your search
 - For very large result sets, mention you need batch downloading
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

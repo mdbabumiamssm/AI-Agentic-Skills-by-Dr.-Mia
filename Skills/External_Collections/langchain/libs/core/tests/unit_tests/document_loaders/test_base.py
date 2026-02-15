@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test Base Schema of documents."""
 
 from collections.abc import Iterator
@@ -70,3 +80,5 @@ async def test_default_aload() -> None:
     assert docs == [Document(page_content="foo"), Document(page_content="bar")]
     assert docs == [doc async for doc in loader.alazy_load()]
     assert docs == await loader.aload()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

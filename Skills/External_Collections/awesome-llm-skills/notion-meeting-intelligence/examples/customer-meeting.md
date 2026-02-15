@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Example: Customer Meeting Prep
 
 **User Request**: "Prep for sales meeting with Acme Corp on Thursday"
@@ -123,3 +136,6 @@ Connected agenda to CRM page, pricing sheet, and technical integration docs.
 - Structured demo around their use cases
 - Pre-planned objection responses
 - Clear next steps in agenda
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

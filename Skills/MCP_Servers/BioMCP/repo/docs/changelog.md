@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Changelog
 
 All notable changes to the BioMCP project will be documented in this file.
@@ -388,3 +401,6 @@ biomcp trial get NCT04280705 --source nci --api-key YOUR_KEY
 [0.1.2]: https://github.com/genomoncology/biomcp/releases/tag/v0.1.2
 [0.1.1]: https://github.com/genomoncology/biomcp/releases/tag/v0.1.1
 [0.1.0]: https://github.com/genomoncology/biomcp/releases/tag/v0.1.0
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

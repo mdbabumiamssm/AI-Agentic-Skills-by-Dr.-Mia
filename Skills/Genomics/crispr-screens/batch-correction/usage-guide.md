@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Batch Correction - Usage Guide
 
 ## Overview
@@ -86,3 +99,6 @@ Tell your AI agent what you want to do:
 - MAGeCK batch correction: doi:10.1186/s13059-015-0843-6
 - ComBat: doi:10.1093/biostatistics/kxj037
 - Screen normalization: doi:10.1038/nmeth.3935
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

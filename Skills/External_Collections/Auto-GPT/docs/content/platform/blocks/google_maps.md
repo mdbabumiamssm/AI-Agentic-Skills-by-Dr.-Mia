@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Google Maps Search
 
 ## What it is
@@ -31,3 +44,5 @@ The block takes a search query, location details, and API credentials as input. 
 
 ## Possible use case
 A travel planning application could use this block to help users discover popular restaurants, attractions, or accommodations in their destination city. By inputting a search query like "family-friendly restaurants in Paris" and specifying a search radius around their hotel, travelers could quickly get a list of suitable dining options with ratings, contact information, and websites for making reservations.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

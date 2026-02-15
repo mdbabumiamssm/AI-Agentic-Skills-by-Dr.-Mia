@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-biomarker-pipeline
 description: End-to-end biomarker discovery workflow from expression data to validated biomarker panels. Covers feature selection with Boruta/LASSO, classifier training with nested CV, and SHAP interpretation. Use when building and validating diagnostic or prognostic biomarker signatures from omics data.
@@ -13,6 +26,10 @@ qc_checkpoints:
   - after_selection: "Selected features >5 and <200, stability >0.6"
   - after_cv: "Nested CV AUC >0.7, fold variance <0.1"
   - after_interpretation: "Top 20 SHAP features: >50% overlap with selected features"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Biomarker Discovery Pipeline
@@ -250,3 +267,6 @@ joblib.dump(scaler, 'feature_scaler.joblib')
 - machine-learning/prediction-explanation - SHAP and LIME interpretation
 - differential-expression/de-results - Pre-filter with DE genes
 - pathway-analysis/go-enrichment - Functional enrichment of biomarkers
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

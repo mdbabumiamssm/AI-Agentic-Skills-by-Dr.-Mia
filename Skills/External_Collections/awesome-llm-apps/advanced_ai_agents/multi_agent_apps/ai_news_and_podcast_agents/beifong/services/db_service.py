@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 from typing import Dict, List, Any, Tuple, Union
 from fastapi import HTTPException
@@ -73,3 +83,5 @@ tracking_db = DatabaseService(db_name="tracking_db")
 podcasts_db = DatabaseService(db_name="podcasts_db")
 tasks_db = DatabaseService(db_name="tasks_db")
 social_media_db = DatabaseService(db_name="social_media_db")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

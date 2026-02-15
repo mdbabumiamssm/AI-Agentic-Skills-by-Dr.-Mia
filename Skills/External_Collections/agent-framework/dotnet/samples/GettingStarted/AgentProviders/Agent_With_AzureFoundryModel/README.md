@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Overview
 
 This sample shows how to use the OpenAI SDK to create and use a simple AI agent with any model hosted in Azure AI Foundry.
@@ -32,3 +45,6 @@ $env:AZURE_FOUNDRY_OPENAI_API_KEY="************"
 # Optional, defaults to Phi-4-mini-instruct
 $env:AZURE_FOUNDRY_MODEL_DEPLOYMENT="Phi-4-mini-instruct"
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

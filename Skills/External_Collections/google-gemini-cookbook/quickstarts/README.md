@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini API Tutorials
 
 This folder contains guides to help you explore all Gemini API features using complete end-to-end code examples.
@@ -73,3 +86,6 @@ These guides will walk you through the various use cases of the Gemini API:
 | [Embeddings](./Embeddings.ipynb) | Create high quality and task-specific embeddings. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-gemini/cookbook/blob.ipynb) |
 | [Video](./Video_understanding.ipynb) | Upload a video to the Gemini API and use it in your prompt. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Video_understanding.ipynb) |
 | [AI Tutors with LearnLM](./Get_started_LearnLM.ipynb) | Demonstrates how to craft AI tutoring experiences using system instructions aligned with learning science principles. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started_LearnLM.ipynb) |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

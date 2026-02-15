@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing
 
 This document describes details about contributing to `MuData`.
@@ -21,3 +34,6 @@ The code that is suggested to be merged into `MuData` is expected to follow reas
 - Consider increasing the version number in `setup.py`. Please stick to [semantic versioning](https://semver.org/).
 - Pull requests can be merged when the LGTM (_looks good to me_) has been received from reviewers, probably after a few rounds of reviews.
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

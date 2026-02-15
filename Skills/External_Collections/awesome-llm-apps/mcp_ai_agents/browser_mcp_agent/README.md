@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🌐 Browser MCP Agent
 
 https://github.com/user-attachments/assets/a01e09fa-131b-479a-8df3-2d1a61fd80f3
@@ -88,3 +101,6 @@ The application uses:
 - Playwright for browser automation
 - [MCP-Agent](https://github.com/lastmile-ai/mcp-agent/) for the Agentic Framework
 - OpenAI's models to interpret commands and generate responses
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

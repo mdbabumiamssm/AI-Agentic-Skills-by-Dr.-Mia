@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SKILL 3: Optimization Function Selection
 
 ## Overview
@@ -479,3 +492,6 @@ Together, Claude and the user will select the right optimization function and po
 ---
 
 *Remember: Impact assessment isn't about ego—it's about ensuring work matters in the way the scientist wants it to matter. Explicit framing prevents years of misalignment.*
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

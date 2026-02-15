@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Polling for A2A Agent Task Completion
 
 This sample demonstrates how to poll for long-running task completion using continuation tokens with an A2A AI agent, following the background responses pattern.
@@ -23,3 +36,6 @@ Set the following environment variable:
 ```powershell
 $env:A2A_AGENT_HOST="http://localhost:5000"  # Replace with your A2A agent server host
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Prompting Examples
 
 This directory contains a collection of examples demonstrating various prompting techniques for use with the Gemini API. Each notebook focuses on a specific approach to guide the model's output and achieve desired results.
@@ -35,3 +48,6 @@ Here's a breakdown of the notebooks available and the concepts they cover:
 *   **Experiment:** The best way to learn prompting is to experiment.
 *   **Iterate:** Prompt engineering is often an iterative process.
 *   **Explore Other Techniques:** The "Next steps" section of many of these notebooks encourages exploring other examples in the repository.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

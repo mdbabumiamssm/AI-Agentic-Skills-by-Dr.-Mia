@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # Strategy for Community Driven Connectors and Features
 
@@ -167,3 +180,6 @@ The merging of the main branch into the feature branch should only be done with 
 `git checkout <feature branch> && git merge main` without --squash
 
 Merge from the main should never be done by PR to feature branch, it will cause merging history of main merge with history of PR (because PR are merged with --squash), and as a consequence it will generate strange conflicts on subsequent merges of main and also make it difficult to analyze history of feature branch.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

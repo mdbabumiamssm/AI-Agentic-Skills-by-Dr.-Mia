@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Read CSV
 
 ## What it is
@@ -29,3 +42,5 @@ The Read CSV block takes the contents of a CSV file and splits it into rows and 
 
 ## Possible use case
 This block could be used in a data analysis pipeline to import and process customer information from a CSV file. The individual rows could be used for real-time processing, while the complete dataset could be used for batch analysis or reporting.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

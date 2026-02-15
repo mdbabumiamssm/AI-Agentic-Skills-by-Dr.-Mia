@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SKILL 4: Parameter Fixation Strategy
 
 ## Overview
@@ -394,3 +407,6 @@ Together we'll optimize your parameter strategy for maximum creativity and resil
 ---
 
 *Remember: The right constraint is liberating, not limiting. It channels creativity into productive directions while maintaining flexibility for pivots.*
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

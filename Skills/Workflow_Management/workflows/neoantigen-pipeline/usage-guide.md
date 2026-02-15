@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Neoantigen Pipeline - Usage Guide
 
 ## Overview
@@ -83,3 +96,6 @@ Tell your AI agent what you want to do:
 - **Consider Class II**: CD4+ T cell help improves vaccine efficacy
 - **Clonal mutations first**: Prioritize high-VAF variants for broader tumor coverage
 - **Validate HLA typing**: Clinical-grade HLA typing is more reliable than computational
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

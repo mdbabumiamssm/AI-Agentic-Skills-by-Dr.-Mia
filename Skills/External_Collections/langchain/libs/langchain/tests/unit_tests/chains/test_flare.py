@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for FlareChain.from_llm preserving supplied ChatOpenAI instance."""
 
 from typing import cast
@@ -49,3 +59,5 @@ def test_from_llm_uses_supplied_chatopenai(monkeypatch: pytest.MonkeyPatch) -> N
 
     llm_in_chain = cast("RunnableSequence", chain.question_generator_chain).steps[1]
     assert llm_in_chain is supplied
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

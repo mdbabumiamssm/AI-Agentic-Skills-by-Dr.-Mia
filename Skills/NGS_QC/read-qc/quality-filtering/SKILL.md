@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-read-qc-quality-filtering
 description: Filter reads by quality scores, length, and N content using Trimmomatic and fastp. Apply sliding window trimming, remove low-quality bases from read ends, and discard reads below thresholds. Use when reads have poor quality tails or require minimum quality for downstream analysis.
 tool_type: cli
 primary_tool: trimmomatic
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Quality Filtering
@@ -215,3 +232,6 @@ fastp -i in.fq -o out.fq --disable_trim_poly_g
 - adapter-trimming - Remove adapters before quality filtering
 - quality-reports - Check quality before/after filtering
 - fastp-workflow - All-in-one preprocessing
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

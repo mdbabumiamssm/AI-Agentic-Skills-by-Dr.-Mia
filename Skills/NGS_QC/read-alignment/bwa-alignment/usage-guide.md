@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BWA-MEM2 Alignment - Usage Guide
 
 ## Overview
@@ -89,3 +102,6 @@ samtools flagstat ${SAMPLE}.markdup.bam > ${SAMPLE}.flagstat.txt
 - Reduce threads (-t)
 - Reduce batch size (-K 10000000)
 - Use original BWA-MEM as fallback
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

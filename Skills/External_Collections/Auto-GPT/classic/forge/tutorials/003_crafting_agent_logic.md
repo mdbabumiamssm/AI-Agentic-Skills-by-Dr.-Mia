@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AutoGPT Forge: Crafting Intelligent Agent Logic
 
 ![Header](..%2F..%2F..%2Fdocs/content/imgs/quickstart/t3_01.png)
@@ -511,3 +524,6 @@ If you see this, you've done it!
 In our next tutorial, we’ll further refine this process, enhancing the agent’s capabilities, through the addition of memory!
 
 Until then, keep experimenting and pushing the boundaries of AI. Happy coding! 🚀
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

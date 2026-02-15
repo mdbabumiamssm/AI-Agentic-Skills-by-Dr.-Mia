@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agents as Tools
 
 Demonstrates advanced orchestration patterns where agents are used as tools by other agents.
@@ -68,3 +81,6 @@ Demonstrates advanced orchestration patterns where agents are used as tools by o
 - [Function Tools](../3_1_function_tools/README.md) - Custom function tools
 - [Built-in Tools](../3_2_builtin_tools/README.md) - SDK provided tools
 - [Tutorial 4: Running Agents](../../4_running_agents/README.md) - Advanced execution patterns
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

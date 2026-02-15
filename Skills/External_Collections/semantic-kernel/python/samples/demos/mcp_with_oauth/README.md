@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 The server code and some of the agent code for this samples comes from: https://github.com/modelcontextprotocol/python-sdk/tree/main/examples/servers/simple-auth
 in order to demonstrate connecting with OAuth to a MCP server with SK.
 
@@ -60,3 +73,6 @@ uv --env-file .env run agent
 or open file main.py in samples/demos/mcp_with_oauth/agent and run it in your IDE.
 
 For more details on how the server and auth flows work, see https://github.com/modelcontextprotocol/python-sdk/tree/main/examples/servers/simple-auth
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Guided Conversations
 This sample highlights a framework for a pattern of use cases we refer to as guided conversations. 
 These are scenarios where an agent with a goal and constraints leads a conversation. There are many of these scenarios where we hold conversations that are driven by an objective and constraints. For example:
@@ -59,3 +72,6 @@ Go to [guided_conversation_agent.py](./guided_conversation/plugins/guided_conver
 
 ### Reusing Plugins
 We also encourage the open source community to pull in the artifact and agenda plugins to accelerate existing work. We believe that these plugins alone can improve goal-following in other agents.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-small-rna-seq-smrna-preprocessing
 description: Preprocess small RNA sequencing data with adapter trimming and size selection optimized for miRNA, piRNA, and other small RNAs. Use when preparing small RNA-seq reads for downstream quantification or discovery analysis.
 tool_type: cli
 primary_tool: cutadapt
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Small RNA Preprocessing
@@ -152,3 +169,6 @@ def plot_length_distribution(fastq_path):
 - mirdeep2-analysis - Novel miRNA discovery
 - mirge3-analysis - Fast miRNA quantification
 - read-qc/adapter-trimming - General adapter trimming
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

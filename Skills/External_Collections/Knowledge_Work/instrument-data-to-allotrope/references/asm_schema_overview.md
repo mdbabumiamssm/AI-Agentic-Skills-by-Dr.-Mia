@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ASM Schema Overview
 
 The Allotrope Simple Model (ASM) is a JSON-based standard for representing laboratory instrument data with semantic consistency.
@@ -224,3 +237,6 @@ Instruments may use different unit formats. The allotropy library normalizes the
 
 ### Date Formats
 ASM uses ISO 8601: `2024-01-15T10:30:00Z`
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

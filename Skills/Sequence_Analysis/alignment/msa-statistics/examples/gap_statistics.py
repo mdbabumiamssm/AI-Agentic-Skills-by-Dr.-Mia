@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Analyze gap distribution in alignment'''
 
 from Bio import AlignIO
@@ -38,3 +48,5 @@ if any(g > 0 for g in gaps_per_col):
         print(f'\nColumns with >50% gaps: {len(gappy_cols)}')
         for i, g in gappy_cols[:10]:
             print(f'  Column {i}: {g}/{num_seqs} gaps')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

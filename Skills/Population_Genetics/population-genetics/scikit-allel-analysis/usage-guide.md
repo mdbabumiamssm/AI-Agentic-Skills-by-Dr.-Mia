@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scikit-allel Analysis - Usage Guide
 
 ## Overview
@@ -109,3 +122,6 @@ callset = zarr.open('data.zarr', mode='r')
 - [scikit-allel Documentation](https://scikit-allel.readthedocs.io/)
 - [scikit-allel GitHub](https://github.com/cggh/scikit-allel)
 - [sgkit (successor)](https://github.com/sgkit-dev/sgkit)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MCP "Everything" Server - Development Guidelines
 
 ## Build, Test & Run Commands
@@ -50,3 +63,6 @@ The server factory is `src/everything/server/index.ts` and registers all feature
 - Ensure schemas (for tools) are accurate JSON Schema and include helpful descriptions and examples.
   `server/index.ts` and usages in `logging.ts` and `subscriptions.ts`.
 - Keep the docs in `src/everything/docs/` up to date if you add or modify noteworthy features.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

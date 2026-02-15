@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-somatic-variant-pipeline
 description: End-to-end somatic variant calling from tumor-normal paired samples using Mutect2 or Strelka2. Covers preprocessing, variant calling, filtering, and annotation for cancer genomics. Use when calling somatic mutations from tumor-normal pairs.
 tool_type: cli
 primary_tool: GATK Mutect2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Somatic Variant Pipeline
@@ -291,3 +308,6 @@ bcftools query -f '%AF\n' somatic_final.vcf.gz | \
 - variant-calling/variant-annotation - VEP/SnpEff annotation
 - copy-number/cnvkit-analysis - Somatic CNV calling
 - variant-calling/variant-annotation - Germline pipeline
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

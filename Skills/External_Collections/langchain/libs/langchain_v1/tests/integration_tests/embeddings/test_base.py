@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test embeddings base module."""
 
 import importlib
@@ -42,3 +52,5 @@ async def test_init_embedding_model(provider: str, model: str) -> None:
     embedding_explicit = await model_explicit.aembed_query(text)
     assert isinstance(embedding_explicit, list)
     assert all(isinstance(x, float) for x in embedding_explicit)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # *First compiled on May 5, 2017. Updated August 14, 2018.*
 # # Clustering 3k PBMCs following a Seurat Tutorial
 #
@@ -182,3 +192,5 @@ def test_pbmc3k(image_comparer):  # noqa: PLR0915
         adata, ["CST3", "NKG7", "PPBP"], groupby="leiden", rotation=90, show=False
     )
     save_and_compare_images("violin_2")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

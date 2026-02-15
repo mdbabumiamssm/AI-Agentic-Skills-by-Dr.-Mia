@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-data-visualization-upset-plots
 description: Create UpSet plots to visualize set intersections as an alternative to Venn diagrams using UpSetR or upsetplot. Use when comparing overlapping gene sets, peak sets, or sample groups with more than 3 sets.
 tool_type: mixed
 primary_tool: UpSetR
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # UpSet Plots
@@ -206,3 +223,6 @@ plt.savefig('upset.png', dpi=300, bbox_inches='tight')
 - data-visualization/heatmaps-clustering - Alternative for smaller sets
 - pathway-analysis/enrichment-visualization - Gene set overlaps
 - differential-expression/de-results - DE gene set comparisons
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

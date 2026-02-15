@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from enum import Enum
@@ -203,3 +213,5 @@ def test_on_function_result(function_name, expected_function_name):
     assert isinstance(edge_builder, ProcessStepEdgeBuilder)
     assert edge_builder.source == step_builder
     assert edge_builder.event_id == f"{step_builder.event_namespace}.{expected_function_name}.OnResult"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

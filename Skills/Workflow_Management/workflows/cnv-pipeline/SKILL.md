@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-cnv-pipeline
 description: End-to-end copy number variant detection workflow from BAM files. Covers CNVkit analysis for exome/targeted sequencing with visualization and annotation. Use when detecting copy number alterations from sequencing data.
@@ -12,6 +25,10 @@ qc_checkpoints:
   - after_coverage: "Uniform coverage across targets"
   - after_calling: "Reasonable CNV count, expected ploidy"
   - after_annotation: "Known CNVs detected if present"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # CNV Pipeline
@@ -302,3 +319,6 @@ echo "Pipeline complete. Results in ${OUTDIR}/"
 - copy-number/cnv-visualization - Plotting options
 - copy-number/cnv-annotation - Gene annotations
 - copy-number/gatk-cnv - GATK alternative
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

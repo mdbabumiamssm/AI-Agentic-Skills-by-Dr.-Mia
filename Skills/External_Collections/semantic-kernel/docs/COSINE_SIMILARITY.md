@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Cosine Similarity
 
 Cosine similarity is a measure of the degree of similarity between two vectors in
@@ -58,3 +71,6 @@ Some examples about cosine similarity applications.
 6. Anomaly Detection: Cosine similarity can be used to identify anomalies in a dataset
    by finding data points that have a low cosine similarity with other data points in
    the dataset.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # OpenAI Health Stack (2026)
 
 **Focus:** Translating the public "OpenAI for Healthcare" and "ChatGPT Health" initiatives into concrete, runnable skills in this repository.
@@ -42,3 +55,6 @@ Each script prints the JSON payload that would be sent to the OpenAI-aligned rou
 * Use the USDL spec files (e.g., `Skills/USDL_SPEC_PRIOR_AUTH.json`) with `platform/optimizer/usdl_transpiler.py` to auto-generate the OpenAI artifacts shown above.
 
 This stack keeps the repo feature-parity with the initiatives described in the public "OpenAI for Healthcare" brief. It also serves as the staging area for future HIPAA-compliant deployments.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-population-genetics-linkage-disequilibrium
 description: Calculate linkage disequilibrium statistics (r², D'), perform LD pruning for population structure analysis, identify haplotype blocks, and visualize LD patterns using PLINK, scikit-allel, and LDBlockShow. Use when calculating LD or pruning variants.
 tool_type: mixed
 primary_tool: plink2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Linkage Disequilibrium
@@ -238,3 +255,6 @@ plink --bfile data --r2 dprime --chr 6 --from-mb 28 --to-mb 34 --out mhc_ld
 - population-structure - Use pruned data for PCA
 - association-testing - LD clumping for GWAS
 - selection-statistics - LD affects EHH statistics
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 def quantify_cell_cycle_phases_from_microscopy(image_paths, output_dir="./results"):
     """Quantify the percentage of cells in each cell cycle phase using Calcofluor white stained microscopy images.
 
@@ -740,3 +750,5 @@ def analyze_mitochondrial_morphology_and_potential(morphology_image_path, potent
     log.append("\nAnalysis complete.")
 
     return "\n".join(log)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

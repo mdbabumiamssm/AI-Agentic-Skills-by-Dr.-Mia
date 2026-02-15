@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Load 10X Genomics data with Scanpy - multiple formats'''
 
 import scanpy as sc
@@ -24,3 +34,5 @@ print(f'Raw: {adata_raw.n_obs} cells, Filtered: {adata_filtered.n_obs} cells')
 # Save to h5ad format (Scanpy native)
 adata.write_h5ad('pbmc.h5ad')
 print('Saved to pbmc.h5ad')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

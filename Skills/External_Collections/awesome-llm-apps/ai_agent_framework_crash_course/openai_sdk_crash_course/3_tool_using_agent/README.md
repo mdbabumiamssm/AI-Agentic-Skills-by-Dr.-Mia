@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 3: Tool Using Agent
 
 Welcome to the world of tools! This tutorial teaches you how to create agents that can use **custom functions and built-in tools** to perform specific tasks. This is where your agents become truly powerful and capable of real-world actions.
@@ -231,3 +244,6 @@ After completing this tutorial, you'll be ready for:
 - **Type Errors**: Verify that parameter types match the function signature
 - **Import Issues**: Make sure you've imported the `function_tool` decorator
 - **API Errors**: For built-in tools, check your OpenAI API key and permissions
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

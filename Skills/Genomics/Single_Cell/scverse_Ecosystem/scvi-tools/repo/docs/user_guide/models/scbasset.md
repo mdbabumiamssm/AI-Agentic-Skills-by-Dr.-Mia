@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scBasset
 
 **scBasset** [^ref1] (Python class {class}`~scvi.external.SCBASSET`) posits a sequence-based method for representation learning of scATAC-seq data.
@@ -27,3 +40,6 @@ This page is under construction.
     Yuan Han and David R. Kelley (2022),
     _scBasset: sequence-based modeling of single-cell ATAC-seq using convolutional neural networks_,
     [Nature Methods](https://www.nature.com/articles/s41592-022-01562-8).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

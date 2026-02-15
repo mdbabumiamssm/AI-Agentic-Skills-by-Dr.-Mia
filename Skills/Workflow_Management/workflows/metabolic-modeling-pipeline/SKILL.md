@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-metabolic-modeling-pipeline
 description: End-to-end genome-scale metabolic modeling from genome sequence to flux predictions. Covers automated reconstruction with CarveMe, model validation with memote, FBA/FVA analysis, and gene essentiality prediction. Use when building metabolic models or predicting metabolic phenotypes from genomic data.
@@ -15,6 +28,10 @@ qc_checkpoints:
   - after_curation: "Memote score >50%, <5% orphan reactions"
   - after_fba: "Realistic growth rate, major pathways active"
   - after_essentiality: "Core essential genes match literature >70%"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Metabolic Modeling Pipeline
@@ -386,3 +403,6 @@ builder.save_html('flux_map.html')
 - systems-biology/flux-balance-analysis - FBA, FVA, pFBA
 - systems-biology/gene-essentiality - Single/double knockouts
 - systems-biology/context-specific-models - Tissue-specific models
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

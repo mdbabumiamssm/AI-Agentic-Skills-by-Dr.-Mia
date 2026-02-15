@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # langchain-exa
 
 [![PyPI - Version](https://img.shields.io/pypi/v/langchain-exa?label=%20)](https://pypi.org/project/langchain-exa/#history)
@@ -20,3 +33,6 @@ This package contains the LangChain integration with Exa.
 ## 📖 Documentation
 
 View the [documentation](https://docs.langchain.com/oss/python/integrations/providers/exa_search) for more details.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

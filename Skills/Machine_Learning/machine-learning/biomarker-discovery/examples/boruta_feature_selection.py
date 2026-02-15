@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Boruta all-relevant feature selection for biomarker discovery'''
 
 import pandas as pd
@@ -48,3 +58,5 @@ print(f'Rejected: {len(results) - len(selected) - len(tentative)} features')
 results.to_csv('boruta_results.csv', index=False)
 print('\nTop 20 selected features:')
 results[results['selected']].head(20)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

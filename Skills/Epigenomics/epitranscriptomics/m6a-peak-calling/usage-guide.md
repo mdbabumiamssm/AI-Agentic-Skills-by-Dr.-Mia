@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # m6A Peak Calling - Usage Guide
 
 ## Overview
@@ -49,3 +62,6 @@ conda install -c bioconda macs3
 - **Replicates** - Use at least 2 per condition
 - **FDR < 0.05** - Standard significance threshold
 - **DRACH motif** - m6A occurs at DRACH consensus (D=A/G/U, R=A/G, H=A/C/U)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

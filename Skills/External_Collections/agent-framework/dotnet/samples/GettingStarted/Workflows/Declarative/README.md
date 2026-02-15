@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Summary
 
 These samples showcases the ability to parse a declarative Foundry Workflow file (YAML) 
@@ -97,3 +110,5 @@ To run the sampes from the command line:
     dotnet run c:/myworkflows/Marketing.yaml
     ```
    >  The sample will allow for interactive input in the absence of an input argument.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

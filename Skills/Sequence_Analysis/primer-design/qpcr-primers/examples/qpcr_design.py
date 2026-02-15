@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Design qPCR primers and TaqMan probe'''
 
 import primer3
@@ -37,3 +47,5 @@ for i in range(num_returned):
     print(f'  Probe: {result[f"PRIMER_INTERNAL_{i}_SEQUENCE"]}')
     print(f'    Tm: {result[f"PRIMER_INTERNAL_{i}_TM"]:.1f}C')
     print(f'  Product: {result[f"PRIMER_PAIR_{i}_PRODUCT_SIZE"]}bp\n')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

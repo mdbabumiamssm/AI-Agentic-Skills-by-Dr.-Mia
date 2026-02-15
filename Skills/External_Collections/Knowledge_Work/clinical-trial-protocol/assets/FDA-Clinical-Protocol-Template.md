@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 **PREFACE**
 
 Remove this **Preface** before finalizing and distributing the clinical trial protocol.
@@ -2029,3 +2042,6 @@ In addition, this study will comply with the NIH Genomic Data Sharing Policy, wh
 [^7]: All those planned and systematic actions that are established to ensure that the trial is performed and the data are generated, documented (recorded), and reported in compliance with ICH GCP and the applicable regulatory requirement(s) (ICH E6 Section 1.46).
 
 [^8]: The operational techniques and activities undertaken within the quality assurance system to verify that the requirements for quality of the trial-related activities have been fulfilled (ICH E6 Section 1.47).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

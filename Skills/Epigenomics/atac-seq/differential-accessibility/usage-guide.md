@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Differential Accessibility - Usage Guide
 
 ## Overview
@@ -72,3 +85,6 @@ treat_rep2,treated,2,treat_rep2.bam,treat_rep2_peaks.narrowPeak,macs
 - Use design formula (~Batch + Condition) to correct for known batch effects
 - Opened regions (positive fold change) often indicate activated regulatory elements
 - Follow up with motif analysis to identify TFs driving accessibility changes
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

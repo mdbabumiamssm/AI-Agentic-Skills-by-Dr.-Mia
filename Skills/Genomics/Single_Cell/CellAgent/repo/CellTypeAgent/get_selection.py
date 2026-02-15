@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 import numpy as np
 import pandas as pd
@@ -610,3 +620,5 @@ if __name__ == "__main__":
         os.makedirs(dir_to_merged_data)
     merged_df = pd.concat(all_data, ignore_index=True)
     merged_df.to_csv(os.path.join(saved_prediction_dir, "All", "Results", f"merged_top_{top_n}_max_{max_markers}.csv"), index=False)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

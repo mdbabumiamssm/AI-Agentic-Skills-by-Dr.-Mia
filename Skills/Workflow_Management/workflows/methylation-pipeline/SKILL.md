@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-methylation-pipeline
 description: End-to-end bisulfite sequencing workflow from FASTQ to differentially methylated regions. Covers Bismark alignment, methylation calling, and DMR detection with methylKit. Use when analyzing bisulfite sequencing data.
@@ -14,6 +27,10 @@ qc_checkpoints:
   - after_qc: "Q30 >80%, adapter content removed"
   - after_alignment: "Mapping efficiency >50%, bisulfite conversion >99%"
   - after_calling: "Coverage distribution reasonable, no biased positions"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Methylation Pipeline
@@ -252,3 +269,6 @@ echo "Pipeline complete. Run R script for DMR analysis."
 - methylation-analysis/methylation-calling - Calling details
 - methylation-analysis/methylkit-analysis - methylKit functions
 - methylation-analysis/dmr-detection - DMR algorithms
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

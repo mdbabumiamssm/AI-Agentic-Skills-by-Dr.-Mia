@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Python wrapper for local BLAST operations'''
 import subprocess
 import os
@@ -90,3 +100,5 @@ if __name__ == '__main__':
     print("\nTop 5 hits:")
     for hit in sorted(hits, key=lambda x: x['evalue'])[:5]:
         print(f"  {hit['qseqid']} -> {hit['sseqid']}: {hit['pident']:.1f}%, E={hit['evalue']:.2e}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

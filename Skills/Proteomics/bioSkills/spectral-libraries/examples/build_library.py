@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Build and validate a spectral library from search results'''
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -58,3 +68,5 @@ axes[2].set_title('m/z Distribution')
 plt.tight_layout()
 plt.savefig('library_qc.png', dpi=150)
 print('Library QC plot saved to library_qc.png')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

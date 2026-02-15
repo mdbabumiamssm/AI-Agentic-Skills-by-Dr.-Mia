@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Class for a conversation memory buffer with older messages stored in a vectorstore .
 
 This implements a conversation memory in which the messages are stored in a memory
@@ -181,3 +191,5 @@ class ConversationVectorStoreTokenBufferMemory(ConversationTokenBufferMemory):
     def _split_long_ai_text(self, text: str) -> list[str]:
         splitter = RecursiveCharacterTextSplitter(chunk_size=self.split_chunk_size)
         return [chunk.page_content for chunk in splitter.create_documents([text])]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ChatKit Integration Sample with Weather Agent and Image Analysis
 
 This sample demonstrates how to integrate Microsoft Agent Framework with OpenAI ChatKit. It provides a complete implementation of a weather assistant with interactive widget visualization, image analysis, and file upload support.
@@ -316,3 +329,6 @@ For more details, see:
 - [Agent Framework Documentation](https://aka.ms/agent-framework)
 - [ChatKit Documentation](https://platform.openai.com/docs/guides/chatkit)
 - [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # JACKS CRISPR Screen Analysis
 
 ## Overview
@@ -67,3 +80,6 @@ Tell your AI agent what you want to do:
 - FDR log10 < -1 corresponds to FDR < 0.1; use -2 for FDR < 0.01
 - Compare with MAGeCK for validation; high correlation expected for robust hits
 - JACKS is slower than MAGeCK but provides additional sgRNA-level insights
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

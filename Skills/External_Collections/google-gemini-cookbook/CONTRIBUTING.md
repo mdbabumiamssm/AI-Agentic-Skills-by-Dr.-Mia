@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing to the Gemini API Cookbook
 
 We would love to accept your patches and contributions to the Gemini API Cookbook. We are excited that you are considering donating some of your time, and this guide will help us be respectful of that time.
@@ -199,3 +212,6 @@ If you have authored a new guide from scratch, you are welcome to include a byli
     2.  Make your changes in Colab.
     3.  Use Colab's "File" -> "Save a copy in GitHub" menu option to save it back to the same branch.
 * For Pull Requests (PRs), it's helpful to include a direct Colab link to the notebook version in the PR head for easier review: `https://colab.research.google.com/github/{USER}/{REPO}/blob/{BRANCH}/{PATH}.ipynb`
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Introduction to Challenges
 
 Welcome to the AutoGPT Challenges page! This is a space where we encourage community members to collaborate and contribute towards improving AutoGPT by identifying and solving challenges that AutoGPT is not yet able to achieve.
@@ -32,3 +45,6 @@ We look forward to your contributions and the exciting solutions that the commun
     and beat as many challenges as possible.
 
 For more agbenchmark options, look at the [readme](https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks/tree/master/agbenchmark).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

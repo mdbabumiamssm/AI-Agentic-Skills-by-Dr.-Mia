@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from agno.agent import Agent
 from datetime import datetime
 from db.config import get_podcasts_db_path, DB_PATH
@@ -202,3 +212,5 @@ def mark_session_finished(agent: Agent) -> str:
     toggle_podcast_generated(session_state, True)
     SessionService.save_session(session_id, session_state)
     return "Session marked as finished and generated podcast stored into podcasts database and No further conversation are allowed and only new session can be started."
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

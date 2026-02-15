@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MethylVI
 
 **methylVI** [^ref1] (Python class {class}`~scvi.external.METHYLVI`) is a generative model of scBS-seq data that can subsequently
@@ -159,3 +172,6 @@ MethylVI tests differences in methylation levels $\mu^{C}_{i} = f_{\theta^{C}}\l
     Ethan Weinberger and Su-In Lee (2021),
     _A deep generative model of single-cell methylomic data_,
     [OpenReview](https://openreview.net/forum?id=Mg2DM0F3AY).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

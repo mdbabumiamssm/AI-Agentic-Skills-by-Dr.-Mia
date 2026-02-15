@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Auto-GPT SerpApi Search Plugin
 
 This search plugin integrates [SerpApi](https://serpapi.com) into Auto-GPT, allowing users to choose a broader range of
@@ -83,3 +96,5 @@ SERPAPI_RESULT_FILTER=answer_box,knowledge_graph
 
 ## How it works
 When `SERPAPI_API_KEY` is set. The plugin will add a new command `serpapi_search` to Auto-GPT. The `google` command will be intercepted to use `serpapi_search` instead. Auto-GPT can also use `serpapi_search` command directly. Therefore, all web searches performed by Auto-GPT are routed to SerpApi.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

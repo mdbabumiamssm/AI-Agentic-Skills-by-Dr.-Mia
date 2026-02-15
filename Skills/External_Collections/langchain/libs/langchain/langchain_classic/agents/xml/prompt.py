@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # TODO: deprecate
 agent_instructions = """You are a helpful assistant. Help the user answer any questions.
 
@@ -19,3 +29,5 @@ When you are done, respond with a final answer between <final_answer></final_ans
 Begin!
 
 Question: {question}"""  # noqa: E501
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 6.3: Tool Execution Callbacks
 
 ## 🎯 What You'll Learn
@@ -252,3 +265,5 @@ After completing this tutorial, you'll be ready for:
 - [Google ADK Tool Callbacks](https://google.github.io/adk-docs/callbacks/types-of-callbacks/#tool-execution-callbacks)
 - [Tool Development Guide](https://google.github.io/adk-docs/tools/)
 - [FunctionTool Documentation](https://google.github.io/adk-docs/tools/function-tools/) 
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

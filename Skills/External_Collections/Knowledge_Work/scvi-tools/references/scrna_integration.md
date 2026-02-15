@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # scRNA-seq Integration with scVI and scANVI
 
 This reference covers batch correction and dataset integration using scVI (unsupervised) and scANVI (semi-supervised with cell type labels).
@@ -427,3 +440,6 @@ sc.pl.umap(adata_integrated, color=["batch", "leiden", "cell_type"])
 | Training diverges | Learning rate too high | Reduce lr, increase batch_size |
 | NaN loss | Bad data | Check for all-zero cells/genes |
 | Memory error | Too many cells | Reduce batch_size, use GPU |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

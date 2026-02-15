@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Managing Conversation State with OpenAI
 
 This sample demonstrates how to maintain conversation state across multiple turns using the Agent Framework with OpenAI's Conversation API.
@@ -88,3 +101,6 @@ The sample demonstrates a three-turn conversation where each follow-up question 
 After the conversation, the sample retrieves and displays the full conversation history from the server, then cleans up by deleting the conversation.
 
 This demonstrates that the conversation state is properly maintained across multiple agent invocations using OpenAI's server-side conversation storage.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

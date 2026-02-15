@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Root a tree using an outgroup or midpoint'''
 
 from Bio import Phylo
@@ -17,3 +27,5 @@ tree2 = Phylo.read(StringIO(tree_string), 'newick')
 tree2.root_at_midpoint()
 print('\nRooted at midpoint:')
 Phylo.draw_ascii(tree2)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

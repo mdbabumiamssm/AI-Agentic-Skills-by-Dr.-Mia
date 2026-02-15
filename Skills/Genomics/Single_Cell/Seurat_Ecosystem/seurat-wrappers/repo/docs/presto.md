@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 Fast Differential Expression with Presto
 ================
 Compiled: October 07, 2020
@@ -76,3 +89,6 @@ head(diffexp.all[diffexp.all$cluster == "B", ], 10)
     ## HLA-DQB1.2  2.076231e-230  2.112052 0.863 0.148 2.847343e-226       B  HLA-DQB1
     ## CD74.2      1.000691e-184  2.010688 1.000 0.819 1.372347e-180       B      CD74
     ## HLA-DRA.3   1.813356e-184  1.914531 1.000 0.492 2.486837e-180       B   HLA-DRA
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

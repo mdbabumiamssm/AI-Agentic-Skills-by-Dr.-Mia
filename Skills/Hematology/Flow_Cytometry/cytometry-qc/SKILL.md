@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-flow-cytometry-cytometry-qc
 description: Comprehensive quality control for flow cytometry and CyTOF data. Covers flow rate stability, signal drift, margin events, dead cell exclusion, and batch QC. Use when assessing acquisition quality or identifying problematic samples before analysis.
 tool_type: r
 primary_tool: flowAI
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Cytometry QC
@@ -363,3 +380,6 @@ Workflow order: cytometry-qc → doublet-detection → bead-normalization → cl
 - doublet-detection - Run after QC: remove doublet events
 - bead-normalization - Run after doublet removal: correct signal drift
 - clustering-phenotyping - Analysis after all preprocessing
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

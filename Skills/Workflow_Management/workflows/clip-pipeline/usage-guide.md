@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # CLIP-seq Pipeline - Usage Guide
 
 ## Overview
@@ -48,3 +61,6 @@ conda install -c bioconda umi_tools cutadapt star clipper bedtools homer
 - **Crosslink sites** - Expect enrichment at specific nucleotides
 - **DRACH/RBP motifs** - Known motif should be enriched
 - **Replicate overlap** - Use peaks present in 2+ replicates
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

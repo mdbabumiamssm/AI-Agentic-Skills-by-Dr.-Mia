@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Connection pool manager with proper event loop lifecycle management.
 
 This module provides HTTP connection pooling that is properly integrated
@@ -167,3 +177,5 @@ async def get_connection_pool(
 async def close_all_pools():
     """Close all connection pools."""
     await _pool_manager.close_all()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

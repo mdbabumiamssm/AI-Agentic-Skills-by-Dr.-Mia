@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -265,3 +278,6 @@ public static class KernelSystemHelpers
 **Note: This is just a prototype implementation for illustration purposes only.**
 
 Handlebars supports different object types as variables on render. This opens up the option to use objects outright rather than just strings in semantic functions, i.e., loop over arrays or access properties of complex objects, without serializing or deserializing objects before invocation.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

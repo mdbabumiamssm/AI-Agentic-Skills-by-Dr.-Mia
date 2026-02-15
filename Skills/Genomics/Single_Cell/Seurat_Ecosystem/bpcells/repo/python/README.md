@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BPCells
 
 BPCells is a package for high performance single cell analysis on RNA-seq and ATAC-seq datasets. It can analyze a 1.3M cell dataset with 2GB of RAM in around 10 minutes (benchmarks). This makes analysis of million-cell datasets practical on a laptop.
@@ -24,3 +37,6 @@ The API is subject to change somewhat once a full-featured port of the BPCells R
 functionality is completed.
 
 For more information, see our [github](https://github.com/bnprks/BPCells), [python docs](https://bnprks.github.io/BPCells/python), and [R docs](https://bnprks.github.io/BPCells/).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

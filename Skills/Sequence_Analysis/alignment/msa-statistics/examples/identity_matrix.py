@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Calculate pairwise identity matrix for alignment'''
 
 from Bio import AlignIO
@@ -27,3 +37,5 @@ for i, row in enumerate(matrix):
 
 avg_identity = (matrix.sum() - n) / (n * (n - 1))
 print(f'\nAverage pairwise identity: {avg_identity*100:.1f}%')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

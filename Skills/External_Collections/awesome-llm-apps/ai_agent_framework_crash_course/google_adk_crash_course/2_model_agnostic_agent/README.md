@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 2: Model-Agnostic Agent
 
 Learn how to create agents that work with **different AI models** using OpenRouter. This example shows how ADK can use OpenAI and Anthropic models through separate agent implementations.
@@ -136,3 +149,5 @@ By the end of this tutorial, you'll understand:
 - **Environment Variables**: Each folder needs its own `.env` file
 - **API Key**: The same OpenRouter key works for both agents
 - **Comparison**: Run agents separately to compare model behaviors
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

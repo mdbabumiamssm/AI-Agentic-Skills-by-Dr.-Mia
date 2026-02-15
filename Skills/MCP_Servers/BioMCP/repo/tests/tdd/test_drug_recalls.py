@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for FDA drug recalls module."""
 
 import json
@@ -234,3 +244,5 @@ class TestDrugRecalls:
             params = call_args[0][1]  # params is 2nd positional arg
             assert "recall_initiation_date" in params["search"]
             assert "[2023-06-15 TO *]" in params["search"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

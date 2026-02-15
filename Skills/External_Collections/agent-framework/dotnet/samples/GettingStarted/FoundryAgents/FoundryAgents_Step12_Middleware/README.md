@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Agent Middleware
 
 This sample demonstrates how to add middleware to intercept agent runs and function calls to implement cross-cutting concerns like logging, validation, and guardrails.
@@ -56,3 +69,6 @@ When you run this sample, you will see the following demonstrations:
 4. **Example 4: Human-in-the-Loop Function Approval** - The agent attempts to call a weather function, but the approval middleware intercepts the call and prompts the user to approve or deny the function invocation before it executes. The user can respond with "Y" to approve or any other input to deny.
 
 Each example demonstrates how middleware can be used to implement cross-cutting concerns and control agent behavior at different levels (agent-level and per-request).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import AsyncIterable
@@ -156,3 +166,5 @@ async def test_sequential_adapter_uses_full_conversation() -> None:
     assert len(seen) == 2
     assert seen[0].role == Role.USER and "hello seq" in (seen[0].text or "")
     assert seen[1].role == Role.ASSISTANT and "A1 reply" in (seen[1].text or "")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

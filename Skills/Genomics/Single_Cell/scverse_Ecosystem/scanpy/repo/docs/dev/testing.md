@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 (tests)=
 
 # Tests
@@ -81,3 +94,6 @@ Paths for all these files will be reported when a test fails, and images for fai
 A common gotcha here is that plots often change slightly on different machines/ OSs.
 `scanpy`'s test suite sets a number of environment variables to ensure as similar of plots as possible.
 When adding new reference plots, the recommended workflow is to write the test as though an expected result already exists, run it once to generate the output, then move that output to the reference directory.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

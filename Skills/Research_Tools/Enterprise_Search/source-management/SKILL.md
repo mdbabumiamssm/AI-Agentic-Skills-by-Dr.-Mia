@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: source-management
 description: Manages connected MCP sources for enterprise search. Detects available sources, guides users to connect new ones, handles source priority ordering, and manages rate limiting awareness.
@@ -8,6 +21,9 @@ keywords:
   - priority
   - rate-limiting
 measurable_outcome: Accurately detects connected MCP tools and routes queries to appropriate sources based on query intent.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Source Management
@@ -177,3 +193,6 @@ To add a new source:
 1. Add the MCP server configuration to `.mcp.json`
 2. Authenticate if required
 3. The source will be included in subsequent searches automatically
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

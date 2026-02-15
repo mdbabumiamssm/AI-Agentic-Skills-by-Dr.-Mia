@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests related to awkward arrays"""
 
 from __future__ import annotations
@@ -412,3 +422,5 @@ def test_concat_mixed_types(key, arrays, expected, join):
         result_adata = anndata.concat(to_concat, axis=axis, join=join)
         result = getattr(result_adata, key).get("test", None)
         assert_equal(expected, result, exact=True)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

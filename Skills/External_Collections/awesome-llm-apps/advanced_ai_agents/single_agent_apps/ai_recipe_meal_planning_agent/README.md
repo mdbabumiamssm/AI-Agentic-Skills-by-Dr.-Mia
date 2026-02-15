@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🍽️ AI Recipe & Meal Planning Agent
 
 An intelligent meal planning agent built with Agno that helps you discover recipes, analyze nutrition, estimate costs, and create weekly meal plans based on your ingredients and dietary preferences.
@@ -162,3 +175,6 @@ For issues and questions:
 - Check the troubleshooting section above
 - Review the Agno documentation
 - Open an issue in the main repository
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

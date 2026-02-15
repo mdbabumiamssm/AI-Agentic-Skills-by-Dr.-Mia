@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 # Placeholder for quantum libraries - in a real env these would be installed
 # import pennylane as qml
@@ -48,3 +58,5 @@ if __name__ == "__main__":
     agent = QuantumDocker()
     affinity = agent.dock("target_receptor.pdb", "CC(=O)OC1=CC=CC=C1C(=O)O") # Aspirin
     print(f"Calculated Quantum Binding Affinity: {affinity} kcal/mol")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

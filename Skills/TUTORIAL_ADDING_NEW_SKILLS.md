@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Tutorial: Adding New Skills (The SKILL.md Standard)
 
 This project adopts the `SKILL.md` standard to make agent capabilities discoverable, self-documenting, and executable by AI systems.
@@ -81,3 +94,6 @@ python3 path/to/script.py --arg "value"
 *   **Discoverable**: Use clear names and descriptions.
 *   **Safe**: Define `allowed-tools` to limit scope.
 *   **Contextual**: Provide `references/` for complex rules or knowledge bases.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

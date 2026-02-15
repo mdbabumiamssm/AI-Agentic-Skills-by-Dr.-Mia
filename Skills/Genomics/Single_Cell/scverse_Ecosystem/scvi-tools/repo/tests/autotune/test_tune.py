@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import pytest
 
 from scvi import settings
@@ -300,3 +310,5 @@ def test_run_autotune_scvi_with_scib_ext_indices(metric: str, save_path: str):
     assert isinstance(experiment, AutotuneExperiment)
     assert hasattr(experiment, "result_grid")
     assert isinstance(experiment.result_grid, ResultGrid)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

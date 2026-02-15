@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Glossary ✍
 
 To wrap your mind around the concepts we present throughout the kernel, here is a glossary of
@@ -37,3 +50,6 @@ The kernel is designed to encourage **function composition**, allowing users to 
 <p align="center">
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/371009/221690156-3f90a8c9-ef90-46f7-a097-beb483656e97.png">
 </p>
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

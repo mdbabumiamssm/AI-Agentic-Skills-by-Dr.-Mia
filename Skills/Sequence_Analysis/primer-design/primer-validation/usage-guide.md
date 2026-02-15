@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Primer Validation - Usage Guide
 
 ## Overview
@@ -55,3 +68,6 @@ Ask your AI agent:
 - **3' end** - Should have 1-2 G/C bases for specificity without being too stable
 - **Tm matching** - Primer pairs should have Tms within 2C of each other
 - **dG values** - More negative dG means more stable (problematic) structure
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

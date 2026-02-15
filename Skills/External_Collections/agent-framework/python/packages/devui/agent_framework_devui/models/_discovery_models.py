@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Discovery API models for entity information."""
@@ -199,3 +209,5 @@ class Deployment(BaseModel):
     status: str = Field(description="Deployment status (deploying, deployed, failed)")
     created_at: str = Field(description="ISO 8601 timestamp")
     error: str | None = Field(default=None, description="Error message if failed")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

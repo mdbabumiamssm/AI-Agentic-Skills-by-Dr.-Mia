@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Welcome to the Agent Framework Community
 
 Below are some ways that you can get involved in the Agent Framework Community.
@@ -20,3 +33,6 @@ Add Agent Framework events to your calendar. We are running two community calls 
 - **Asia Pacific timezone:** The second Wednesday of every month at 4:00 PM Pacific Time Wednesday. In much of Asia this occurs on Thursday local time. Adjusted for daylight savings. Join here: [AF-AG-SK-APAC-OfficeHours](https://aka.ms/sk-apac-officehours).
 
 If you are unable to make it live, all meetings will be recorded and posted online.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

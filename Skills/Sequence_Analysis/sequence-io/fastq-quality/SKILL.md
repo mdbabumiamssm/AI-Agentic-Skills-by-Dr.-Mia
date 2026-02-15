@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-fastq-quality
 description: Work with FASTQ quality scores using Biopython. Use when analyzing read quality, filtering by quality, trimming low-quality bases, or generating quality reports.
 tool_type: python
 primary_tool: Bio.SeqIO
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # FASTQ Quality Scores
@@ -248,3 +265,6 @@ def detect_quality_encoding(filepath, sample_size=1000):
 - paired-end-fastq - Handle R1/R2 paired quality filtering
 - sequence-statistics - Generate summary statistics including quality
 - alignment-files - After filtering, align reads with bwa/bowtie2; quality scores in BAM
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

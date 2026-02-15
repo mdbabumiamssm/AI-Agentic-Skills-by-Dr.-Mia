@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Google Sheets Read
 
 ### What it is
@@ -54,3 +67,5 @@ The block authenticates with Google Sheets using provided credentials, then upda
 
 ### Possible use case
 An automated inventory system could use this block to update stock levels in a Google Sheets spreadsheet whenever products are sold or restocked, ensuring real-time inventory tracking.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

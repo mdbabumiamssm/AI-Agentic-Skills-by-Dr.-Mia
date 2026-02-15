@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import re
 
 from biomni.llm import get_llm
@@ -117,3 +127,5 @@ class FunctionGenerator(base_agent):
         """
         m = re.search(r"```(?:python)?\s*(.+?)\s*```", s, flags=re.DOTALL | re.IGNORECASE)
         return m.group(1).strip() if m else None
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

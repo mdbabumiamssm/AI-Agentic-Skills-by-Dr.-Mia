@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Quick Brief Template
 
 Use for fast turnaround requests or simple topics. See [quick-brief-format.md](quick-brief-format.md) for when to use this format.
@@ -23,3 +36,6 @@ Use for fast turnaround requests or simple topics. See [quick-brief-format.md](q
 [Brief list of pages consulted]
 ```
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

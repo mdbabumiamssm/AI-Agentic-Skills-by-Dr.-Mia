@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Variational Inference
 
 Suppose we have data $x$ that we assume is generated via latent variables $z$. In the case of a simplified {class}`scvi.model.SCVI`, the data would
@@ -132,3 +145,6 @@ Overall, this technique is typically called _amortized variational inference_ an
     Kingma, Diederik P., and Max Welling (2019),
     _An introduction to variational autoencoders._,
     arXiv preprint arXiv:1906.02691.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

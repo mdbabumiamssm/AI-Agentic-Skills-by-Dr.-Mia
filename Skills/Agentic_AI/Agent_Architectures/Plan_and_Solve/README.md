@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Plan-and-Solve Agent
 
 Implementation of the **Plan-and-Solve Prompting** strategy (Wang et al., 2023), which improves zero-shot reasoning in Large Language Models by explicitly splitting the task into a planning phase and an execution phase.
@@ -21,3 +34,6 @@ from planner import PlanAndSolveAgent, LLMAdapter
 agent = PlanAndSolveAgent(LLMAdapter())
 result = agent.run("Design a new protocol for CRISPR off-target analysis")
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

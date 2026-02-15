@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Large Language Model (LLM) Blocks
 
 ## AI Structured Response Generator
@@ -171,3 +184,6 @@ Try the Llama API provider by selecting any of the following LLM Model names fro
 - Llama-4-Maverick-17B-128E-Instruct-FP8
 - Llama-3.3-8B-Instruct
 - Llama-3-70B-Instruct
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

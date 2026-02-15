@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Data Sampling
 
 ## What it is
@@ -29,3 +42,5 @@ The block processes the input data and applies the chosen sampling method to sel
 
 ## Possible use case
 A data scientist working with a large customer dataset wants to create a representative sample for analysis. They could use this Data Sampling block to select a smaller subset of customers using stratified sampling, ensuring that the sample maintains the same proportions of different customer segments as the full dataset.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

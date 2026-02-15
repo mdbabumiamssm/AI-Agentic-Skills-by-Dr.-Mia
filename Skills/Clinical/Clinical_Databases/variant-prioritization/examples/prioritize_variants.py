@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Prioritize variants for rare disease analysis'''
 
 import myvariant
@@ -123,3 +133,5 @@ print(df[['variant', 'priority', 'is_rare', 'clinvar_path', 'cadd_high']].to_str
 df = assign_tiers(df)
 print('\nClinical tiers:')
 print(df[['variant', 'tier', 'priority']].to_string(index=False))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

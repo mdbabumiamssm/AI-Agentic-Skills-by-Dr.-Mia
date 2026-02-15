@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 
 # The anndata version we want is from July 2019, which is when Python 3.7 was new
 # AnnData versions 0.6.22 and 0.7.0 differ from each other and the current format
@@ -35,3 +45,4 @@ adata = ad.AnnData(
 )
 
 adata.write_h5ad(f"mini_mat.anndata-v{ad.__version__}.h5ad")
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

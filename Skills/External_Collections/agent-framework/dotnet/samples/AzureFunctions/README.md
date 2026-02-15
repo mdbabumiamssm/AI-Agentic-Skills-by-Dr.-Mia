@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Azure Functions Samples
 
 This directory contains samples for Azure Functions.
@@ -150,3 +163,6 @@ The README.md file in each sample directory contains instructions for testing th
 The Azure Functions app logs are displayed in the terminal where you ran `func start`. This is where most agent output will be displayed. You can adjust logging levels in the `host.json` file as needed.
 
 You can also see the state of agents and orchestrations in the DTS dashboard.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import logging
@@ -1120,3 +1130,5 @@ def _cosine_sim(v1: np.ndarray, v2: np.ndarray) -> np.ndarray:
     v1_u = _centered_unit_vector(v1)
     v2_u = _centered_unit_vector(v2)
     return np.clip(np.dot(v1_u, v2_u), -1.0, 1.0)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

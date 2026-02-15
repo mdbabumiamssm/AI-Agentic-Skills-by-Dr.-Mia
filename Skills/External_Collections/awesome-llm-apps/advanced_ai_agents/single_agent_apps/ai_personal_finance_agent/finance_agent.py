@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from textwrap import dedent
 from agno.agent import Agent
 from agno.run.agent import RunOutput
@@ -66,3 +76,5 @@ if openai_api_key and serp_api_key:
             # Get the response from the assistant
             response: RunOutput = planner.run(f"Financial goals: {financial_goals}, Current situation: {current_situation}", stream=False)
             st.write(response.content)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

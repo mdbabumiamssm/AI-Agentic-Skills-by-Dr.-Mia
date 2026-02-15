@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Label-free quantification normalization'''
 import pandas as pd
 import numpy as np
@@ -43,3 +53,5 @@ corr_matrix = imputed.corr()
 print(f'Mean pairwise correlation: {corr_matrix.values[np.triu_indices_from(corr_matrix, k=1)].mean():.3f}')
 
 imputed.to_csv('normalized_imputed.csv')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test Anthropic API wrapper."""
 
 from collections.abc import Generator
@@ -76,3 +86,5 @@ async def test_anthropic_async_streaming_callback() -> None:
     result = await llm.agenerate(["How many toes do dogs have?"])
     assert callback_handler.llm_streams > 1
     assert isinstance(result, LLMResult)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

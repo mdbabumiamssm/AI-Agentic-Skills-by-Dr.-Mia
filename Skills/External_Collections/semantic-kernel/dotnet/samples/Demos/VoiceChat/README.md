@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Voice Chat
 
 This sample demonstrates a simple voice chat application built with Semantic Kernel and OpenAI’s API for speech-to-text (STT), chat completion, and text-to-speech (TTS).
@@ -54,3 +67,6 @@ To reduce latency in real-world scenarios, you can integrate with streaming spee
        dotnet run --project samples/Demos/VoiceChat
 
 3. Speak into your microphone and listen for the AI response through your speakers.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

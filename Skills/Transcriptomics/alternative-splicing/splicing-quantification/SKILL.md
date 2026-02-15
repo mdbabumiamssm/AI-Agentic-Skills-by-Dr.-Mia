@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-splicing-quantification
 description: Quantifies alternative splicing events (PSI/percent spliced in) from RNA-seq using SUPPA2 from transcript TPM or rMATS-turbo from BAM files. Calculates inclusion levels for skipped exons, alternative splice sites, mutually exclusive exons, and retained introns. Use when measuring splice site usage or isoform ratios from RNA-seq data.
 tool_type: python
 primary_tool: SUPPA2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Splicing Quantification
@@ -120,3 +137,6 @@ PSI values range from 0 to 1:
 - differential-splicing - Compare PSI between conditions
 - rna-quantification/alignment-free-quant - Generate transcript TPM for SUPPA2
 - read-alignment/star-alignment - Align reads with junction detection
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

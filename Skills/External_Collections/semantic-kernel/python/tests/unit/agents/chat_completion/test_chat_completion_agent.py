@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import AsyncGenerator, Callable
@@ -466,3 +476,5 @@ async def test_prepare_agent_chat_history_without_formatted_instructions():
         mock_format_instructions.assert_awaited_once_with(dummy_kernel, dummy_args)
         assert len(result_history.messages) == 1
         assert result_history.messages[0] == user_message
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

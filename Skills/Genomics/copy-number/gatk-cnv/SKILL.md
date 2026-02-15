@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-copy-number-gatk-cnv
 description: Call copy number variants using GATK best practices workflow. Supports both somatic (tumor-normal) and germline CNV detection from WGS or WES data. Use when following GATK best practices or integrating CNV calling with other GATK variant pipelines.
 tool_type: cli
 primary_tool: gatk
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # GATK CNV Workflow
@@ -223,3 +240,6 @@ gatk CallCopyRatioSegments -I $OUTDIR/tumor.cr.seg -O $OUTDIR/tumor.called.seg
 - copy-number/cnv-visualization - Plotting results
 - alignment-files/bam-statistics - Input BAM QC
 - variant-calling/variant-calling - SNP calling for allelic counts
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

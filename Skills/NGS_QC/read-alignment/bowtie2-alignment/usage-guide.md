@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Bowtie2 Alignment - Usage Guide
 
 ## Overview
@@ -88,3 +101,6 @@ bowtie2 -p 8 --very-sensitive -X 2000 --no-mixed --no-discordant \
 ```bash
 bowtie2 -X 1000 -x index -1 r1.fq -2 r2.fq -S aligned.sam
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

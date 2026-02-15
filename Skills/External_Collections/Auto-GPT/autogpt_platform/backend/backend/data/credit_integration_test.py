@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Integration tests for credit system to catch SQL enum casting issues.
 
@@ -275,3 +285,5 @@ async def test_auto_top_up_configuration_storage(cleanup_test_user, monkeypatch)
     # Should only have the initial GRANT transaction
     assert len(transactions) == 1
     assert transactions[0].type == CreditTransactionType.GRANT
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from collections.abc import Iterable, Sequence
 
 import numpy as np
@@ -181,3 +191,5 @@ class DecipherPyroModule(PyroBaseModuleClass):
 
         log_z = torch.logsumexp(torch.tensor(log_weights) - np.log(n_samples), 0)
         return log_z.item()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

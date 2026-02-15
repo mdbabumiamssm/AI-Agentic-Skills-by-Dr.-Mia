@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 import json
 import asyncio
@@ -16,12 +26,16 @@ except ImportError:
     bus = None
     MedPromptEngine = None
 
+# Workflow Abstraction Layer (WAL) Imports
+from platform.adapters.factory import LLMFactory
+from platform.schema.io_types import LLMRequest, LLMResponse
+
 app = FastAPI(title="BioKernel Enterprise", version="2026.3.0-PRO")
 
 class AgentRequest(BaseModel):
     query: str
     context: Optional[Dict[str, Any]] = {}
-    model_preference: str = "auto"
+    model_preference: str = "auto" # 'auto', 'gemini', 'local', 'gpt4'
 
 class AgentResponse(BaseModel):
     response: str
@@ -33,6 +47,22 @@ class BioKernel:
     def __init__(self):
         self.skills_registry = {}
         self.medprompt = MedPromptEngine() if MedPromptEngine else None
+        
+        # Initialize WAL Provider (Default to Gemini, fallback to Local)
+        # In production, this config would come from a YAML file or ENV
+        self.provider_config = {
+            "api_key": os.getenv("GOOGLE_API_KEY"),
+            "model": "gemini-2.0-flash"
+        }
+        
+        # Try to load primary provider, fallback to local if key missing
+        if self.provider_config["api_key"]:
+            print("🔌 [BioKernel] Loading Primary Provider: Gemini")
+            self.llm = LLMFactory.create_provider("gemini", self.provider_config)
+        else:
+            print("🔌 [BioKernel] Loading Fallback Provider: Local (No API Key found)")
+            self.llm = LLMFactory.create_provider("local", {})
+
         self._discover_skills()
         self._discover_antigravity_skills()
 
@@ -140,34 +170,39 @@ class BioKernel:
 
         response_text = ""
         tools = []
-        model = "claude-3-5-sonnet"
+        model_used = "unknown"
 
         # 2. Execution Logic
         skill_meta = self.skills_registry.get(skill_id)
         
-        if skill_meta and skill_meta.get("type") == "antigravity":
-            # Antigravity Execution: Return the prompt/instructions for the agent to follow
-            model = "gemini-3-pro-antigravity" # Hypothetical model
-            response_text = f"Activated Skill: {skill_meta['name']}\n\n" \
-                            f"Description: {skill_meta['description']}\n" \
-                            f"--- INSTRUCTIONS ---\n" \
-                            f"{skill_meta['content']}\n" \
-                            f"--- END INSTRUCTIONS ---\n\n" \
-                            f"Context: {query}"
-            tools = ["mcp_browser", "mcp_filesystem"]
+        # Define available tools (in a real system, these would be dynamic)
+        available_tools = [
+            {"name": "literature_search", "description": "Search biomedical literature"},
+            {"name": "clinical_trial_match", "description": "Find matching clinical trials"},
+            {"name": "molecule_generator", "description": "Generate small molecules for a target"}
+        ]
 
-        elif "evolution" in skill_id:
-            response_text = "🧬 Evolution Complete: Generated 50 variants. Top candidate (Score: 0.98) binds to Target X."
-            tools = ["genetic_algorithm", "docking_oracle"]
-        elif "recruitment" in skill_id:
-            response_text = "📋 Trial Match: Found 12 eligible patients from EHR. 3 High-priority matches."
-            tools = ["vector_db_search", "fhir_parser"]
-        elif "prior_auth" in skill_id:
-            response_text = "✅ APPROVED: Meets criteria 2.1 (Conservative Therapy Failed)."
-            tools = ["policy_engine"]
+        print(f"  🧠 [BioKernel] Reasoning via WAL...")
+        
+        # If it's an Antigravity skill, we pass its instructions to the Provider
+        if skill_meta and skill_meta.get("type") == "antigravity":
+            system_instr = f"Act as the following agent:\nName: {skill_meta['name']}\nDescription: {skill_meta['description']}\nInstructions: {skill_meta['content']}"
+            
+            req = LLMRequest(
+                query=query, 
+                system_instruction=system_instr,
+                tools=available_tools # WAL supports tools
+            )
+            llm_resp = await self.llm.generate(req)
+            response_text = llm_resp.text
+            model_used = llm_resp.model
+            tools = ["antigravity_engine"]
         else:
-            response_text = f"Processed request using {skill_id}: {query[:50]}..."
-            model = "gpt-4o"
+            # Use general reasoning loop via WAL
+            # The provider (Gemini/Local) handles the specific prompt engineering
+            response_text = await self.llm.run_reasoning_loop(query, available_tools)
+            model_used = "reasoning_engine"
+            tools = ["reasoning_engine"]
 
         # 3. Event Bus Notification
         if bus:
@@ -181,7 +216,7 @@ class BioKernel:
             response=response_text,
             tools_used=tools,
             execution_time=time.time() - start_time,
-            model_used=model
+            model_used=model_used
         )
 
 kernel = BioKernel()
@@ -195,3 +230,5 @@ async def run_agent(request: AgentRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

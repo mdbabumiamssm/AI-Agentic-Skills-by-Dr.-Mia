@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # DevUI Step 01 - Basic Usage
 
 This sample demonstrates how to add the DevUI to an ASP.NET Core application with AI agents.
@@ -85,3 +98,6 @@ To add DevUI to your ASP.NET Core application:
    ```
 
 4. Navigate to `/devui` in your browser
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

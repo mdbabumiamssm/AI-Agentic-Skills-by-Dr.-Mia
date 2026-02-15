@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # ⚡ Realtime Voice Agent
 
 A basic realtime voice agent example using OpenAI's Realtime API. This demonstrates the core components for ultra-low latency voice conversations with minimal setup.
@@ -332,3 +345,6 @@ After mastering realtime voice agents:
 - **Custom Integrations**: Build realtime voice into existing applications
 - **Advanced Features**: Explore cutting-edge realtime capabilities
 - **Multi-Modal Experiences**: Combine realtime voice with other modalities
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

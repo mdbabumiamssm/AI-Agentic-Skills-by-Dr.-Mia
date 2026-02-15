@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Cell phenotyping from IMC data'''
 import anndata as ad
 import scanpy as sc
@@ -53,3 +63,5 @@ print(adata.obs['cell_type'].value_counts())
 # Save
 adata.write('imc_phenotyped.h5ad')
 print('\nSaved to imc_phenotyped.h5ad')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

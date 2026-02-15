@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # How to Find Trials with NCI and BioThings
 
 This guide demonstrates how to search for clinical trials using BioMCP's dual data sources and automatic disease synonym expansion.
@@ -429,3 +442,6 @@ trials = await trial_searcher(
 - Learn about [variant annotations](03-get-comprehensive-variant-annotations.md)
 - Explore [AlphaGenome predictions](04-predict-variant-effects-with-alphagenome.md)
 - Set up [monitoring and logging](05-logging-and-monitoring-with-bigquery.md)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

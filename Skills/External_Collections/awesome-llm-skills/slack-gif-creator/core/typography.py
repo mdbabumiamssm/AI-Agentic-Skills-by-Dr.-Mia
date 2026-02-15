@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 #!/usr/bin/env python3
 """
 Typography System - Professional text rendering with outlines, shadows, and effects.
@@ -355,3 +365,4 @@ def scale_font_for_frame(base_size: int, frame_width: int, frame_height: int) ->
     base_dimension = 480  # Reference dimension
     scale_factor = avg_dimension / base_dimension
     return max(10, int(base_size * scale_factor))
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

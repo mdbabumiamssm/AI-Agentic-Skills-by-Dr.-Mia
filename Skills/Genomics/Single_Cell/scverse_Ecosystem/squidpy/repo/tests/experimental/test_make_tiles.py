@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 import spatialdata_plot as sdp
@@ -121,3 +131,5 @@ def test_make_tiles_copies_image_transformations(sdata_hne):
     assert "custom_cs" in img_tfs and "custom_cs" in tile_tfs
     assert isinstance(img_tfs["custom_cs"], Identity)
     assert isinstance(tile_tfs["custom_cs"], Identity)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

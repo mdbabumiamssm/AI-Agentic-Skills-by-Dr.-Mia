@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test yamlOutputParser."""
 
 from enum import Enum
@@ -94,3 +104,5 @@ def test_yaml_output_parser_output_type() -> None:
     """Test YamlOutputParser OutputType."""
     yaml_parser = YamlOutputParser[TestModel](pydantic_object=TestModel)
     assert yaml_parser.OutputType is TestModel
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

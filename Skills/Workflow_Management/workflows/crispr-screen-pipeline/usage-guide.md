@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # CRISPR Screen Pipeline Usage Guide
 
 ## Overview
@@ -131,3 +144,6 @@ Guides targeting resistance genes become enriched.
 - MAGeCK: doi:10.1186/s13059-014-0554-4
 - MAGeCKFlute: doi:10.1038/s41596-018-0113-7
 - BAGEL2: doi:10.1186/s13073-019-0698-6
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

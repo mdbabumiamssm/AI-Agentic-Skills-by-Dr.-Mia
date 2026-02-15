@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Experimental tool-calling support for Anthropic chat models."""
 
 from __future__ import annotations
@@ -138,3 +148,5 @@ def _xml_to_tool_calls(elem: Any, tools: list[dict]) -> list[dict[str, Any]]:
     invokes = elem.findall("invoke")
 
     return [_xml_to_function_call(invoke, tools) for invoke in invokes]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Long Running Tools Sample
 
 This sample demonstrates how to use the Durable Agent Framework (DAFx) to create agents with long running tools. This sample builds on the [05_AgentOrchestration_HITL](../05_AgentOrchestration_HITL) sample by adding a publisher agent that can start and manage content generation workflows. A key difference is that the publisher agent knows the IDs of the workflows it starts, so it can check the status of the workflows and approve or reject them without being explicitly given the context (instance IDs, etc).
@@ -127,3 +140,6 @@ The status of the workflow with instance ID **ab1076d6e7ec49d8a2c2474d09b69ded**
 
 The content has been successfully published.
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

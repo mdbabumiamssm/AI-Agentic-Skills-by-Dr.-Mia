@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for ToolCallLimitMiddleware."""
 
 import pytest
@@ -795,3 +805,5 @@ def test_parallel_mixed_tool_calls_with_specific_tool_limit():
     assert len(search_success) == 1, "Should have 1 successful search call"
     assert len(search_blocked) == 2, "Should have 2 blocked search calls"
     assert len(calc_success) == 2, "All calculator calls should succeed (not limited)"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

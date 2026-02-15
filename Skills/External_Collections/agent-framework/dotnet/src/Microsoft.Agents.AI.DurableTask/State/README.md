@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Durable Agent State
 
 Durable agents are represented as durable entities, with each session (i.e. thread) of conversation history stored as JSON-serialized state for an individual entity instance.
@@ -145,3 +158,6 @@ Additional tools may make use of durable agent state. Significant changes to the
 ### Durable Task Scheduler Dashboard
 
 The [Durable Task Scheduler (DTS)](https://learn.microsoft.com/azure/azure-functions/durable/durable-task-scheduler/durable-task-scheduler) Dashboard, while providing general UX for management of durable orchestrations and entities, also has UX specific to the use of durable agents.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

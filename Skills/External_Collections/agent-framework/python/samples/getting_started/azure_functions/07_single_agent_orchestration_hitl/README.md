@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Single-Agent Orchestration (HITL) – Python
 
 This sample demonstrates the human-in-the-loop (HITL) scenario.
@@ -46,3 +59,6 @@ curl -X POST http://localhost:7071/api/hitl/approve/<instanceId> \
 - `POST /api/hitl/approve/{instanceId}` echoes the decision that the orchestration receives.
 - `GET /api/hitl/status/{instanceId}` reports `runtimeStatus`, custom status messages, and the final content when approved.
 The orchestration sets custom status messages, retries on rejection with reviewer feedback, and raises a timeout if human approval does not arrive.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

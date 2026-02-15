@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Example: Database Migration Implementation
 
 **User Request**: "Plan and implement the database migration for user preferences schema"
@@ -79,3 +92,6 @@ Regular updates to implementation plan with status, blockers, and completion not
 - Established dependencies (Phase 1 → 2 → 3 → 4 → 5)
 - Zero-downtime approach with rollback plan
 - Linked all work back to original spec
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

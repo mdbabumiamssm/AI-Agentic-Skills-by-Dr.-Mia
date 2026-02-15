@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from typing import Literal
 
 from langchain_core.documents import Document
@@ -63,3 +73,5 @@ def test_hashing_custom_key_encoder() -> None:
     hashed_document = _get_document_with_hash(document, key_encoder=custom_key_encoder)
     assert hashed_document.id == "quack-like a duck"
     assert isinstance(hashed_document.id, str)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

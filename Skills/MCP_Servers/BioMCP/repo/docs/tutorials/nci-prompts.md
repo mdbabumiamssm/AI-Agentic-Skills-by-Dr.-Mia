@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # NCI Tools Example Prompts
 
 This guide provides example prompts for AI assistants to effectively use the NCI (National Cancer Institute) Clinical Trials Search API tools in BioMCP.
@@ -310,3 +323,6 @@ Common errors and solutions:
    - **Prevention**: Always use city AND state together for location searches
    - Add organization name (even partial) to narrow results
    - Avoid searching by state alone or organization type alone
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

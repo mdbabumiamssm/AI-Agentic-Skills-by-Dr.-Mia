@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-immunoinformatics-neoantigen-prediction
 description: Identify tumor neoantigens from somatic mutations using pVACtools for personalized cancer immunotherapy. Predict mutant peptides that bind patient HLA and may elicit T-cell responses. Use when identifying vaccine targets or checkpoint inhibitor response biomarkers from tumor sequencing data.
 tool_type: python
 primary_tool: pVACtools
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Neoantigen Prediction
@@ -233,3 +250,6 @@ def assess_neoantigen_quality(neoantigen):
 - immunoinformatics/mhc-binding-prediction - MHC binding details
 - immunoinformatics/immunogenicity-scoring - Prioritization
 - variant-calling/variant-calling - Input somatic mutations
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

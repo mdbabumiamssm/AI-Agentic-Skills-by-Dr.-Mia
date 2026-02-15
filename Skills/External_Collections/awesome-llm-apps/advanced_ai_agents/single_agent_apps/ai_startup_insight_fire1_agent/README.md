@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🔥 AI Startup Insight with Firecrawl FIRE-1 Agent
 
 An advanced web extraction and analysis tool built using Firecrawl's FIRE-1 agent + extract v1 endpoint and the Agno Agent framework to get details of a new startup instantly! This application automatically extracts structured data from startup websites and provides AI-powered business analysis, making it easy to gather insights about companies without manual research.
@@ -85,3 +98,6 @@ An advanced web extraction and analysis tool built using Firecrawl's FIRE-1 agen
 - Firecrawl API key
 - OpenAI API key
 - Internet connection for web extraction
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

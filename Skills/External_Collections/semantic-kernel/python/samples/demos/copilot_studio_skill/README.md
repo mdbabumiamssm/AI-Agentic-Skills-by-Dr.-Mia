@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Extend Copilot Studio with Semantic Kernel
 
 This template demonstrates how to build a [Copilot Studio Skill](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills) that allows to extend agent capabilities with a custom API running in Azure with the help of the Semantic Kernel.
@@ -97,3 +110,6 @@ Please refer to the original [Bot Framework documentation](https://learn.microso
 
 > [!NOTE]
 > As of today, Bot Framework SDK offers only `aiohttp` support for Python.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

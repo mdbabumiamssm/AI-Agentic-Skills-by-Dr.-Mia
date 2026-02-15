@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from unittest.mock import patch
 
 import pytest
@@ -891,3 +901,5 @@ def test_summarization_middleware_cutoff_at_start_of_tool_sequence() -> None:
     # Index 2 is an AIMessage (safe cutoff point), so no adjustment needed
     cutoff = middleware._find_safe_cutoff(messages, messages_to_keep=4)
     assert cutoff == 2
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

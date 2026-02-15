@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Tests for backing using the `.file` and `.isbacked` attributes."""
 
 from __future__ import annotations
@@ -495,3 +505,5 @@ def test_safe_fancy_index_h5py_function(h5py_test_data, indices, description):
     np.testing.assert_array_equal(
         result, expected, err_msg=f"Failed for test case: {description}"
     )
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

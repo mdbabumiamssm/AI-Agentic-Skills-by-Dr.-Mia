@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import os
 import pickle
 
@@ -730,3 +740,5 @@ def test_scanvi_interpretability_shap(unlabeled_cat: str):
     # # select the label we want to understand (usually the '1' class)
     shap_top_features_test = model.get_ranked_features(attrs=shap_values_test[:, :, 1]).head(5)
     print(shap_top_features_test)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

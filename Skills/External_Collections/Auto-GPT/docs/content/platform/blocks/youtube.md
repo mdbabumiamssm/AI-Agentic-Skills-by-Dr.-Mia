@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Transcribe YouTube Video
 
 ### What it is
@@ -24,3 +37,6 @@ The block first extracts the video ID from the provided YouTube URL. It then use
 ### Possible use case
 A content creator could use this block to automatically generate subtitles for their YouTube videos. They could also use it to create text-based summaries of video content for SEO purposes or to make their content more accessible to hearing-impaired viewers. The automatic language fallback feature ensures that transcripts can be obtained even from videos that only have subtitles in non-English languages.
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

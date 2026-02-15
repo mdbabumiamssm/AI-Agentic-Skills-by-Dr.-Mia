@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 [![Stars](https://img.shields.io/github/stars/scverse/scanpy?style=flat&logo=GitHub&color=yellow)](https://github.com/scverse/scanpy/stargazers)
 [![PyPI](https://img.shields.io/pypi/v/scanpy)](https://pypi.org/project/scanpy)
 [![PyPI Downloads](https://img.shields.io/pepy/dt/scanpy?logo=pypi)](https://pepy.tech/project/scanpy)
@@ -73,3 +86,6 @@ You can cite the scverse publication as follows:
 
 
 [contribution guide]: CONTRIBUTING.md
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

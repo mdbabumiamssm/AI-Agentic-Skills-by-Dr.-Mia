@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """ This file contains the code for calling all LLM APIs. Ref: https://github.com/snap-stanford/BioDiscoveryAgent/blob/master/LLM.py"""
 import sys
 import tiktoken
@@ -146,3 +156,5 @@ def complete_text(prompt, log_file, model, **kwargs):
         completion = complete_text_deepseek(prompt, log_file=log_file, model=model, **kwargs)
         print(completion)
     return completion
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

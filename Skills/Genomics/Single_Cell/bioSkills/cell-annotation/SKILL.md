@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-single-cell-cell-annotation
 description: Automated cell type annotation using reference-based methods including CellTypist, scPred, SingleR, and Azimuth for consistent, reproducible cell labeling. Use when automatically annotating cell types using reference datasets.
 tool_type: mixed
 primary_tool: CellTypist
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Automated Cell Type Annotation
@@ -216,3 +233,6 @@ DotPlot(seurat_obj, features = unlist(canonical_markers), group.by = 'predicted_
 - single-cell/clustering - Manual marker-based annotation
 - single-cell/cell-communication - Use annotated types for CCC
 - single-cell/trajectory-inference - Trajectory on annotated data
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

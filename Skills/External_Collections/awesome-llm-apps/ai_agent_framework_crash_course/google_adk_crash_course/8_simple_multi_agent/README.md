@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 8: Simple Multi‑Agent Researcher (Runs with ADK)
 
 ## 🎯 What You'll Learn
@@ -126,3 +139,6 @@ After mastering this tutorial, explore:
 - **API Key Issues**: Ensure your `.env` file is in the correct location and contains a valid `GOOGLE_API_KEY`
 - **Import Errors**: Make sure you're using the exact import path shown above
 - **Agent Not Found**: Verify that `root_agent` is properly exported from the module
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

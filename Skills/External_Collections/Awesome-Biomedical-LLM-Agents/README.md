@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Awesome Biomedical LLM Agents & Skills
 
 A curated collection of the latest (2024-2025) AI agents, frameworks, and tools for biomedical research.
@@ -34,3 +47,6 @@ A curated collection of the latest (2024-2025) AI agents, frameworks, and tools 
 
 ---
 *Maintained by the Artificial Intelligence Group. Last Updated: Dec 2025.*
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

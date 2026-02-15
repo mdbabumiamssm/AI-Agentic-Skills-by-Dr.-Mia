@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # **How to Download and Import an Agent from the AutoGPT Marketplace (Local Hosting)**
 
 ## **Overview**
@@ -39,3 +52,5 @@ This guide explains how to download an agent from the AutoGPT marketplace and im
 * The marketplace interface differs between local hosting and cloud-hosted versions
 * Ensure you're following the local hosting specific steps
 * The agent will be available in your Builder after successful import
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

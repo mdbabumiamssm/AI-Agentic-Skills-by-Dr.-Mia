@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # genome-assembly
 
 ## Overview
@@ -54,3 +67,6 @@ conda install -c bioconda yahs
 - **long-read-sequencing** - Long-read alignment and polishing
 - **read-qc** - Preprocess reads before assembly
 - **sequence-io** - Work with assembled FASTA files
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

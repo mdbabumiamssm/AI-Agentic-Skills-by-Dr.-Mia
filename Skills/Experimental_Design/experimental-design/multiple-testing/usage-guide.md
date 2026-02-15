@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multiple Testing Correction Usage Guide
 
 ## Overview
@@ -57,3 +70,6 @@ Tell your AI agent what you want to do:
 - FDR 0.05 means 5% of significant calls are expected to be false
 - For exploratory work, FDR 0.10 is acceptable
 - GWAS uses genome-wide threshold of 5e-8 (Bonferroni for ~1M tests)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

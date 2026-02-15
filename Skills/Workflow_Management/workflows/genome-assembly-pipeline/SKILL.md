@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-genome-assembly-pipeline
 description: End-to-end genome assembly workflow from reads to polished assembly with QC. Supports short reads (SPAdes), long reads (Flye), and hybrid approaches. Use when assembling genomes from raw reads.
@@ -14,6 +27,10 @@ qc_checkpoints:
   - after_assembly: "N50 reasonable, total length matches expected"
   - after_polishing: "Error rate reduced, QV improved"
   - after_busco: "Complete BUSCOs >90%"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Genome Assembly Pipeline
@@ -268,3 +285,6 @@ cat ${OUTDIR}/quast/report.txt
 - genome-assembly/long-read-assembly - Flye, Canu, Hifiasm
 - genome-assembly/assembly-polishing - Pilon, medaka, Racon
 - genome-assembly/assembly-qc - QUAST, BUSCO metrics
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

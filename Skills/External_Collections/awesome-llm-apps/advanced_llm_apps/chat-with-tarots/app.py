@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from langchain.prompts import PromptTemplate
 import pandas as pd
 from langchain_core.runnables import RunnableParallel, RunnableLambda # Import necessary for LCEL
@@ -137,3 +147,4 @@ if st.button("✨ Light your path: Draw and Analyze the Cards."):
 
 st.markdown("---")
 st.info("Remember, the cards offer insights and reflections; your future is in your hands.")
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

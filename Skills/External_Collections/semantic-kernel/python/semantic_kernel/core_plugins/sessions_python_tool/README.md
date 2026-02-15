@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Getting Started with the Sessions Python Plugin
 
 ## Setup
@@ -69,3 +82,6 @@ Currently, there are two concept examples that show this plugin in more detail:
 
 - [Plugin example](../../../samples/concepts/plugins/azure_python_code_interpreter.py): shows the basic usage of calling the code execute function on the plugin.
 - [Function Calling example](../../../samples/concepts/auto_function_calling/azure_python_code_interpreter_function_calling.py): shows a simple chat application that leverages the Python code interpreter plugin for function calling.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

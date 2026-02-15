@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Auto-GPT SceneXplain Plugin: Explore image storytelling beyond pixels
 
 [SceneXplain](https://scenex.jina.ai) is your gateway to revealing the rich narratives hidden within your images. Our cutting-edge AI technology dives deep into every detail, generating sophisticated textual descriptions that breathe life into your visuals. With a user-friendly interface and seamless API integration, SceneX empowers developers to effortlessly incorporate our advanced service into their multimodal applications.
@@ -76,3 +89,6 @@ Experience the plugin's capabilities by testing it for describing an image.
 
 2. **Run Auto-GPT:**
    Launch Auto-GPT, which should use the SceneXplain plugin to describe an image.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

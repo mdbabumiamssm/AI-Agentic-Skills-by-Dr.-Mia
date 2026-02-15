@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from unittest.mock import patch
@@ -80,3 +90,5 @@ async def test_azure_text_to_audio_get_audio_contents(mock_speech_create, azure_
     audio_contents = await openai_audio_to_text.get_audio_contents("Hello World!")
     assert len(audio_contents) == 1
     assert audio_contents[0].ai_model_id == azure_openai_unit_test_env["AZURE_OPENAI_TEXT_TO_AUDIO_DEPLOYMENT_NAME"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

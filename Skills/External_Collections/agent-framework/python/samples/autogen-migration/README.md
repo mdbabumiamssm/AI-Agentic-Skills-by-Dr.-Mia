@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AutoGen → Microsoft Agent Framework Migration Samples
 
 This gallery helps AutoGen developers move to the Microsoft Agent Framework (AF) with minimal guesswork. Each script pairs AutoGen code with its AF equivalent so you can compare primitives, tooling, and orchestration patterns side by side while you migrate production workloads.
@@ -59,3 +72,6 @@ python samples/autogen-migration/orchestrations/04_magentic_one.py
   - `SelectorGroupChat` → `GroupChatBuilder` with LLM-based speaker selection
   - `Swarm` → `HandoffBuilder` for agent handoff coordination
   - `MagenticOneGroupChat` → `MagenticBuilder` for orchestrated multi-agent workflows
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

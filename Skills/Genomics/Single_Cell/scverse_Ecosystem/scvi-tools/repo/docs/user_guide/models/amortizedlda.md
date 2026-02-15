@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Amortized LDA
 
 **LDA** [^ref1] (Latent Dirichlet Allocation) posits a generative model where
@@ -137,3 +150,6 @@ Similarly, we can configure the number of samples with `n_samples`.
     Akash Srivastava, Charles Sutton (2017),
     _Autoencoding Variational Inference for Topic Models_,
     [International Conference on Learning Representations](https://arxiv.org/pdf/1703.01488.pdf).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

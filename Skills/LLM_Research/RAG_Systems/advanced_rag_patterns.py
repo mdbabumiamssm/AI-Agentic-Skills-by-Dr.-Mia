@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Advanced RAG Patterns: HyDE and Contextual Reranking
 
@@ -196,3 +206,5 @@ if __name__ == "__main__":
     final_docs = reranker.rerank(query, initial_docs, top_n=2)
     for i, doc in enumerate(final_docs):
         print(f"Rank {i+1}: {doc['id']} - {doc['content']}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

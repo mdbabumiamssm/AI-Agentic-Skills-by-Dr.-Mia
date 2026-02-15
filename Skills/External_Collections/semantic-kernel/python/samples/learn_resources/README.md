@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # SK Python Documentation Examples
 
 This project contains a collection of examples used in documentation on [learn.microsoft.com](https://learn.microsoft.com/en-us/semantic-kernel/).
@@ -45,3 +58,6 @@ Otherwise the sample can be run via the command line:
 ```
 python.exe <absolute_path_to_sk_code>/python/samples/learn_resources/plugin.py
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

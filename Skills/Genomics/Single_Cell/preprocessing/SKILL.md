@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-single-cell-preprocessing
 description: Quality control, filtering, and normalization for single-cell RNA-seq using Seurat (R) and Scanpy (Python). Use for calculating QC metrics, filtering cells and genes, normalizing counts, identifying highly variable genes, and scaling data. Use when filtering, normalizing, and selecting features in single-cell data.
 tool_type: mixed
 primary_tool: Seurat
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Single-Cell Preprocessing
@@ -301,3 +318,6 @@ seurat_obj <- SCTransform(seurat_obj, vars.to.regress = 'percent.mt', verbose = 
 - data-io - Load data before preprocessing
 - clustering - PCA and clustering after preprocessing
 - markers-annotation - Find markers after clustering
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

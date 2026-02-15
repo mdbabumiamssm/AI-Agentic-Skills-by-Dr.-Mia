@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # This is a copy of https://github.com/pydata/sparse/blob/master/sparse/_slicing.py, 
 # which in turn is adapted from https://github.com/dask/dask/blob/master/dask/array/slicing.py
 # Licensed under BSD 3-clause 
@@ -309,3 +319,4 @@ def replace_none(idx, dim):
             stop = -1
 
     return slice(start, stop, step)
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

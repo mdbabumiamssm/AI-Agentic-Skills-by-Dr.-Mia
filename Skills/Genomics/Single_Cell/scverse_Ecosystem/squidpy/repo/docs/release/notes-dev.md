@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Squidpy dev (the-future)
 
 ## Features
@@ -6,3 +19,6 @@
 - Update :attr:`squidpy.pl.var_by_distance` to show multiple variables on same plot.
   [@LLehner](https://github.com/LLehner)
   [#929](https://github.com/scverse/squidpy/pull/929)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

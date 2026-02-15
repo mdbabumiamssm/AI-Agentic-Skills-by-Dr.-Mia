@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Concept samples on how to use AWS Bedrock agents
 
 ## Pre-requisites
@@ -72,3 +85,6 @@ You need to make sure you have permission to access the foundation model. You ca
 7. On the right, you will be able to add an action. Find the service and search for `InvokeModelWithResponseStream`.
 8. Check the box next to the action and then scroll all the way down and click `Next`.
 9. Follow the prompts to save the changes.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

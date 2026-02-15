@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for the Constitutional AI chain."""
 
 from langchain_classic.chains.constitutional_ai.base import ConstitutionalChain
@@ -25,3 +35,5 @@ def test_critique_parsing() -> None:
         assert critique.strip() == "This text is bad.", (
             f"Failed on {text} with {critique}"
         )
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

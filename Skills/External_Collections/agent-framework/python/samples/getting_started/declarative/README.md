@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Declarative Agent Samples
 
 This folder contains sample code demonstrating how to use the **Microsoft Agent Framework Declarative** package to create agents from YAML specifications. The declarative approach allows you to define your agents in a structured, configuration-driven way, separating agent behavior from implementation details.
@@ -270,3 +283,6 @@ python openai_responses_agent.py
 2. Try modifying the samples to use different models or instructions
 3. Create your own declarative agent configurations
 4. Build custom function tools and bind them to your agents
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

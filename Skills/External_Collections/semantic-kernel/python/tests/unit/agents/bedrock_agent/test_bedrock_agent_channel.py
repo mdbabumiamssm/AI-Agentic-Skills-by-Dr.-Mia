@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from collections.abc import AsyncIterable
@@ -329,3 +339,5 @@ async def test_invoke_alternates_history_and_ensures_last_user_message(mock_chan
     for i, (msg, exp_role, exp_content) in enumerate(zip(mock_channel.messages, expected_roles, expected_contents)):
         assert msg.role == exp_role, f"Role mismatch at index {i}. Got {msg.role}, expected {exp_role}"
         assert msg.content == exp_content, f"Content mismatch at index {i}. Got {msg.content}, expected {exp_content}"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

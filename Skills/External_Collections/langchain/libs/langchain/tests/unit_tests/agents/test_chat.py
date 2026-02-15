@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unittests for langchain.agents.chat package."""
 
 from langchain_core.agents import AgentAction
@@ -44,3 +54,5 @@ def test_parse_without_language() -> None:
     action, action_input = get_action_and_input(llm_output)
     assert action == "foo"
     assert action_input == "bar"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

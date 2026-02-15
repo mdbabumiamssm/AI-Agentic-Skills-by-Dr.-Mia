@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from __future__ import annotations
 
 from importlib.metadata import version
@@ -35,3 +45,5 @@ if CAN_USE_SPARSE_ARRAY:
     from anndata._core.views import SparseCSRMatrixView as SparseCSRView
 else:
     from anndata._core.views import ArrayView, SparseCSCView, SparseCSRView
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

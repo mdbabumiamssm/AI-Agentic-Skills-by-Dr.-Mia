@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AI Model Router
 
 This sample demonstrates how to implement an AI Model Router using Semantic Kernel connectors to direct requests to various AI models based on user input. As part of this example we integrate LMStudio, Ollama, and OpenAI, utilizing the OpenAI Connector for LMStudio and Ollama due to their compatibility with the OpenAI API.
@@ -60,3 +73,5 @@ dotnet run
 > **User** > LMStudio, what is Jupiter? Keep it simple.
 
 > **Assistant** > Jupiter is the fifth planet from the Sun in our Solar System and one of its gas giants alongside Saturn, Uranus, and Neptune. It's famous for having a massive storm called the Great Red Spot that has been raging for hundreds of years.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

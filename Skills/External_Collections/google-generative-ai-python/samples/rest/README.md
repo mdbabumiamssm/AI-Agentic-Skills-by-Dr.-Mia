@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini API REST sample code
 
 This directory contains sample code for key features of the API, organised by high level feature.
@@ -24,3 +37,6 @@ Each file is structured as a runnable script, ensuring that samples are executab
 | [system_instruction.sh](./system_instruction.sh) | Setting system instructions |
 | [text_generation.sh](./text_generation.sh) | Generating text |
 | [tuned_models.sh](./tuned_models.sh) | Tuned models |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

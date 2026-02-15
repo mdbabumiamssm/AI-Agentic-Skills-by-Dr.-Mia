@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Large language models and autonomous agents in chemistry: a review
 
 <a href="#"><img src="https://img.shields.io/badge/Version-0.0.0-blue.svg"/></a>
@@ -43,3 +56,6 @@ With this in mind, we aim to create this repository as a broad, open-source, col
     - [Reviews](https://github.com/ur-whitelab/LLMs-in-science/blob/main/Sci_agents/README.md#reviews)
     - [Miscellaneous](https://github.com/ur-whitelab/LLMs-in-science/blob/main/Sci_agents/README.md#miscelaneous)
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

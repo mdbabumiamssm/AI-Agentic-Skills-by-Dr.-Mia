@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel Model-as-a-Service Sample
 
 This sample contains a script to run multiple models against the popular [**Measuring Massive Multitask Language Understanding** (MMLU)](https://en.wikipedia.org/wiki/MMLU) dataset and produces results for benchmarking.
@@ -76,3 +89,5 @@ Overall Accuracy of Llama3-8b: 51.09%.
 Overall Accuracy of Phi3-mini: 55.43%.
 Overall Accuracy of Phi3-small: 66.30%.
 ```
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

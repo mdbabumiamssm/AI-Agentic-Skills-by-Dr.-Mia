@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test steps for search_pubmed feature."""
 
 from __future__ import annotations
@@ -50,3 +60,5 @@ def step_check_abstract(result: list[dict], pmid: int, phrase: str):
             ), f"Phrase '{phrase}' not found in article {pmid}'s abstract"
             return
     raise AssertionError(f"Article {pmid} not found or has no abstract")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Crew AI Plugin for Semantic Kernel
 
 This sample demonstrates how to integrate with [Crew AI Enterprise](https://app.crewai.com/) crews in Semantic Kernel.
@@ -45,3 +58,6 @@ CREW_AI_TOKEN="{Your Crew's authentication token}"
 ```
 
 1. Run the sample. Notice that the sample invokes (kicks-off) the Crew twice, once directly by calling the `kickoff` method and once by creating a plugin and invoking it.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

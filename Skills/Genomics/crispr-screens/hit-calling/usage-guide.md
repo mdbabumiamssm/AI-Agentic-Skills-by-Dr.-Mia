@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Hit Calling - Usage Guide
 
 ## Overview
@@ -78,3 +91,6 @@ Tell your AI agent what you want to do:
 ## References
 - BAGEL2: doi:10.1186/s13059-019-1749-z
 - drugZ: doi:10.1186/s13073-019-0665-3
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

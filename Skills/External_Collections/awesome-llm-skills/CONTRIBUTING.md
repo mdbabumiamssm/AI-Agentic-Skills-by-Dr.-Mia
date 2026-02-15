@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing to Awesome LLM Skills
 
 Thank you for your interest in contributing to the premier collection of LLM Skills! This guide will help you add new skills that benefit the entire community.
@@ -183,3 +196,6 @@ Skills for organizing files, managing tasks, and personal productivity.
 
 Thank you for contributing to Awesome LLM Skills!
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

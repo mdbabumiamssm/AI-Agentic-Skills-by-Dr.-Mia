@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-uniprot-access
 description: Access UniProt protein database for sequences, annotations, and functional information. Use when retrieving protein data, GO terms, domain annotations, or protein-protein interactions.
 tool_type: python
 primary_tool: requests
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # UniProt Access
@@ -217,3 +234,6 @@ print(record.id, len(record.seq))
 - database-access/blast-searches - BLAST against UniProt
 - structural-biology/structure-io - Download PDB structures
 - structural-biology/alphafold-predictions - AlphaFold structures
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

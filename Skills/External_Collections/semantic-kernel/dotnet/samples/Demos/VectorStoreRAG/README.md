@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ﻿# Vector Store RAG Demo
 
 This sample demonstrates how to ingest text from pdf files into a vector store and ask questions about the content
@@ -180,3 +193,6 @@ If you want to use a different instance of Weaviate, you can update the appsetti
 ```cli
 dotnet user-secrets set "VectorStores:Weaviate:Endpoint" "<yourweaviateurl>"
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

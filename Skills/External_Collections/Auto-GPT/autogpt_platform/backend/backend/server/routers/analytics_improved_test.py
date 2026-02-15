@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Example of analytics tests with improved error handling and assertions."""
 
 import json
@@ -148,3 +158,5 @@ def test_log_raw_metric_type_validation_improved(
             test_case["expected_error"] in error_text
             or test_case["expected_error"].lower() in error_text.lower()
         ), f"Expected error '{test_case['expected_error']}' not found in: {error_text}"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # FASTQ to Variants - Usage Guide
 
 ## Overview
@@ -75,3 +88,6 @@ Tell your AI agent what you want to do:
 - **Depth**: Check coverage before variant calling (aim for 30x WGS, 100x exome)
 - **Joint calling**: Improves sensitivity, especially for rare variants
 - **Filtering**: Start with default filters, adjust based on Ti/Tv ratio and known site overlap
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

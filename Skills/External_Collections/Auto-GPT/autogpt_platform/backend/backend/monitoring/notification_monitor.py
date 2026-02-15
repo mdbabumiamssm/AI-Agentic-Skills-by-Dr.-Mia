@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Notification processing monitoring module."""
 
 import logging
@@ -36,3 +46,5 @@ def process_weekly_summary(**kwargs):
         get_notification_manager_client().queue_weekly_summary()
     except Exception as e:
         logger.exception(f"Error processing weekly summary: {e}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

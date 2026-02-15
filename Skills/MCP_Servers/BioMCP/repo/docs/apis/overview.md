@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # API Reference Overview
 
 BioMCP provides multiple interfaces for programmatic access to biomedical data. This reference covers the Python SDK, MCP protocol implementation, and HTTP API endpoints.
@@ -110,3 +123,6 @@ All APIs support multiple response formats:
 - [MCP Tools Reference](../user-guides/02-mcp-tools-reference.md) - MCP implementation details
 - [Transport Protocol Guide](../developer-guides/04-transport-protocol.md) - REST endpoint documentation
 - [Error Codes Reference](error-codes.md) - Complete error code listing
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

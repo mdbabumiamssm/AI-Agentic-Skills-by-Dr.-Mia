@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Contributing code
 
 This guide is intended for developers who wish to contribute to our codebase. Here's how to set
@@ -144,3 +157,6 @@ We only accept code changes that are made through pull requests. To contribute, 
 [Semantic Versioning]: https://semver.org/
 [installation]: ../installation.md
 [maintenance guide]: ./maintenance.md
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

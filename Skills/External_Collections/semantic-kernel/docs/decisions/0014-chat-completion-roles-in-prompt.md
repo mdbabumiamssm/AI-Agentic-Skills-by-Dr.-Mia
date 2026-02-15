@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -163,3 +176,6 @@ Cons:
 It was agreed not to limit ourselves to only one possible option because it may not be feasible to apply that option to new template engines we might need to support in the future. Instead, each time a new template engine is added, every option should be considered, and the optimal one should be preferred for that particular template engine.
 
 It was also agreed that, at the moment, we will go with the "3. Message/role tags are applied on top of the prompt template engine" option to support the message/role prompt syntax in SK, which currently uses the `BasicPromptTemplateEngine` engine.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

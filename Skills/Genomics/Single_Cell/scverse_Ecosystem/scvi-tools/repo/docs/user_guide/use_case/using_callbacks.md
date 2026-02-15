@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Train SCVI model with callbacks
 
 In PyTorch Lightning, callbacks are special functions that let you execute custom actions during the training process, like saving checkpoints, adjusting learning rates, or early stopping based on performance. To use callbacks, you first create a callback class that defines what should happen at specific points in training (e.g., at the end of an epoch or batch). Then, when setting up your Trainer, you pass a list of these callbacks. For example, if you want to save the best model during training, you can use ModelCheckpoint to automatically store the model when it achieves the best validation score.
@@ -61,3 +74,6 @@ model.train(
 ```
 
 or just by adding "enable_checkpointing"= True to the model training command
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

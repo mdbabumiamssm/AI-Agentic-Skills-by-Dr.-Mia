@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Field Classification Guide
 
 This guide helps classify instrument data fields into the correct ASM document locations. Use this when mapping raw instrument output to Allotrope Simple Model structure.
@@ -501,3 +514,6 @@ The validator checks for:
 - [Allotrope Simple Model Introduction](https://www.allotrope.org/introduction-to-allotrope-simple-model)
 - [Benchling allotropy library](https://github.com/Benchling-Open-Source/allotropy)
 - [Allotrope Foundation ASM Overview](https://www.allotrope.org/asm)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

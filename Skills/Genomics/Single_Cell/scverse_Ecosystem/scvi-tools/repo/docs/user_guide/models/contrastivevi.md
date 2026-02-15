@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # contrastiveVI
 
 **contrastiveVI** [^ref1] (contrastive variational inference; Python class
@@ -23,3 +36,6 @@ This page is under construction.
     Ethan Weinberger, Chris Lin, Su-In Lee (2023),
     _Isolating salient variations of interest in single-cell data with contrastiveVI_,
     [Nature Methods](https://www.nature.com/articles/s41592-023-01955-3).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

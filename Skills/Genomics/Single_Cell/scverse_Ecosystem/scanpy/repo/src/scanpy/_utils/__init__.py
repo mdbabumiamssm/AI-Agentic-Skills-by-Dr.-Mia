@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Utility functions and classes.
 
 This file largely consists of the old _utils.py file. Over time, these functions
@@ -986,3 +996,5 @@ def raise_not_implemented_error_if_backed_type(x: object, method_name: str, /) -
     if is_backed_type(x):
         msg = f"{method_name} is not implemented for matrices of type {type(x)}"
         raise NotImplementedError(msg)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

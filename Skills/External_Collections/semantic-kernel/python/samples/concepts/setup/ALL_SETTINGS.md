@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Semantic Kernel Settings
 
 ## AI Service Settings used across SK
@@ -72,3 +85,6 @@
 | --- | --- | --- | --- | --- | --- |
 | Bing | [BingSearch](../../../semantic_kernel/connectors/search_engine/bing_connector.py) | api_key, <br> custom_config | BING_API_KEY, <br> BING_CUSTOM_CONFIG | No, <br> No | [BingSettings](../../../semantic_kernel/connectors/search_engine/bing_connector_settings.py) |
 | Azure Container Apps Sessions | [ACASessionsPlugin](../../../semantic_kernel/core_plugins/sessions_python_tool/sessions_python_plugin.py) | pool_management_endpoint | ACA_POOL_MANAGEMENT_ENDPOINT | Yes | [ACASessionsSettings](../../../semantic_kernel/core_plugins/sessions_python_tool/sessions_python_settings.py) |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

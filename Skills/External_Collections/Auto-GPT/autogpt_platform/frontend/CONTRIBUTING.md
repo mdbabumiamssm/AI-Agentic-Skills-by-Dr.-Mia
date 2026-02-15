@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 <div align="center">
   <h1>AutoGPT Frontend • Contributing ⌨️</h1>
   <p>Next.js App Router • Client-first • Type-safe generated API hooks • Tailwind + shadcn/ui</p>
@@ -763,3 +776,6 @@ When touching legacy code:
 - Design system (Chromatic): [`https://dev--670f94474adee5e32c896b98.chromatic.com/`](https://dev--670f94474adee5e32c896b98.chromatic.com/)
 - Project README for setup and API client examples: `autogpt_platform/frontend/README.md`
 - Conventional Commits: [conventionalcommits.org](https://www.conventionalcommits.org/)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

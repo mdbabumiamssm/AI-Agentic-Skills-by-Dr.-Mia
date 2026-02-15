@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-virtual-screening
 description: Performs structure-based virtual screening using AutoDock Vina 1.2 for molecular docking. Prepares receptor PDBQT files, generates ligand conformers, defines binding site boxes, and ranks compounds by predicted binding affinity. Use when screening chemical libraries against a protein structure to find potential binders.
 tool_type: python
 primary_tool: vina
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Virtual Screening
@@ -228,3 +245,6 @@ def find_binding_site(receptor_pdb, ligand_pdb=None, padding=5.0):
 - admet-prediction - Filter before docking
 - structural-biology/structure-io - Protein structure handling
 - structural-biology/modern-structure-prediction - Generate targets
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

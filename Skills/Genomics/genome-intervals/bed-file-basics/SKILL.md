@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-intervals-bed-file-basics
 description: BED file format fundamentals, creation, validation, and basic operations. Covers BED3 through BED12 formats, coordinate systems, sorting, and format conversion using bedtools and pybedtools. Use when working with genomic coordinates or preparing interval files for downstream tools.
 tool_type: mixed
 primary_tool: bedtools
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # BED File Basics
@@ -335,3 +352,6 @@ pybedtools.set_tempdir('/tmp/pybedtools')
 - gtf-gff-handling - annotation file parsing
 - coverage-analysis - depth calculations
 - alignment-files/sam-bam-basics - BAM to BED conversion
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

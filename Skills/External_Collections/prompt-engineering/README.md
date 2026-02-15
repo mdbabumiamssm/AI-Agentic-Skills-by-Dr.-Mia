@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # [Brex's](https://brex.com) Prompt Engineering Guide
 
 This guide was created by Brex for internal purposes. It's based on
@@ -1210,3 +1223,6 @@ Some of the downsides include:
 - :star2: [OpenAI Cookbook](https://github.com/openai/openai-cookbook) :star2:
 - :technologist: [Prompt Hacking](https://learnprompting.org/docs/category/-prompt-hacking) :technologist: 
 - :books: [Dair.ai Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) :books: 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

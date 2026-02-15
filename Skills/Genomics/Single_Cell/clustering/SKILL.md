@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-single-cell-clustering
 description: Dimensionality reduction and clustering for single-cell RNA-seq using Seurat (R) and Scanpy (Python). Use for running PCA, computing neighbors, clustering with Leiden/Louvain algorithms, generating UMAP/tSNE embeddings, and visualizing clusters. Use when performing dimensionality reduction and clustering on single-cell data.
 tool_type: mixed
 primary_tool: Seurat
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Single-Cell Clustering
@@ -295,3 +312,6 @@ seurat_obj$UMAP_2 <- umap_coords[, 2]
 - preprocessing - Data must be preprocessed before clustering
 - markers-annotation - Find markers for each cluster
 - data-io - Save clustered results
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

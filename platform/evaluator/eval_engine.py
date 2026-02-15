@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """
 Evaluation Engine: Automated Testing & Benchmarking for Biomedical Skills
 
@@ -569,3 +579,5 @@ if __name__ == "__main__":
         if generate_html:
             html_path = engine.generate_html_report(report, f"./reports/{platform}_report.html")
             print(f"\nHTML Report: {html_path}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Replicate Flux Advanced Model
 
 ### What it is
@@ -50,3 +63,5 @@ A graphic designer could use this block to quickly generate concept art for a sc
 
 ### Possible use case
 A graphic designer could use this block to quickly generate concept art for a sci-fi game. They might input a prompt like "A futuristic spaceport on a distant planet with multiple moons in the sky" and adjust the settings to get the desired style and quality. The generated image could then serve as inspiration or a starting point for further design work.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

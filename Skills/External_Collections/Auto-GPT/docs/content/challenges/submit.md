@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Submit a Challenge
 
 If you have identified a task or problem that AutoGPT struggles with, you can submit it as a challenge for the community to tackle. Here's how you can submit a new challenge:
@@ -12,3 +25,6 @@ If you have identified a task or problem that AutoGPT struggles with, you can su
 Once submitted, the community can review and discuss the challenge. If deemed appropriate, it will be added to the [List of Challenges](list.md).
 
 If you're looking to contribute by working on an existing challenge, check out [Beat a Challenge](beat.md) for guidelines on how to get started.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

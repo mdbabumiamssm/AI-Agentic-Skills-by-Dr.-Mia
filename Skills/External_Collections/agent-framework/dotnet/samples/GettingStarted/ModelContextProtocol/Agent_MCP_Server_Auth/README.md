@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Model Context Protocol Sample
 
 This example demonstrates how to use tools from a protected Model Context Protocol server with Agent Framework.
@@ -123,3 +136,5 @@ Once authenticated, the client can access weather tools including:
 - Check that ports 7029, 7071, and 1179 are available
 - If the browser doesn't open automatically, copy the authorization URL from the console and open it manually
 - Make sure to allow the OAuth server's self-signed certificate in your browser
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

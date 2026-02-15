@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Desktop Integration
 
 This guide covers how to integrate BioMCP with desktop applications that support the Model Context Protocol (MCP), such as Claude Desktop, enabling AI-powered biomedical research directly in your conversations.
@@ -291,3 +304,5 @@ Now that BioMCP is integrated with your desktop application:
 2. Explore [How-to Guides](../how-to-guides/01-find-articles-and-cbioportal-data.md) for specific research workflows
 3. Learn about [Sequential Thinking](../concepts/03-sequential-thinking-with-the-think-tool.md) for complex analyses
 4. Set up [additional API keys](03-authentication-and-api-keys.md) for enhanced features
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

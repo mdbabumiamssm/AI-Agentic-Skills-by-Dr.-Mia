@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from unittest.mock import AsyncMock, MagicMock
@@ -226,3 +236,5 @@ async def test_summarization_reducer_private_summarize(mock_service):
     actual_summary = await reducer._summarize(chat_messages)
     assert actual_summary is not None, "We should get a summary message back."
     assert actual_summary.content == "Mock Summary", "We expect the mock summary content."
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

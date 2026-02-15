@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Module to test base parser implementations."""
 
 from typing_extensions import override
@@ -91,3 +101,5 @@ def test_base_transform_output_parser() -> None:
     # inputs to models are ignored, response is hard-coded in model definition
     chunks = list(chain.stream(""))
     assert chunks == ["HELLO", " ", "WORLD"]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

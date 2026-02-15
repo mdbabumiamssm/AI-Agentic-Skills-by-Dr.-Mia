@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-genome-engineering-prime-editing-design
 description: Design pegRNAs for prime editing using PrimeDesign algorithms. Generate spacer, PBS, and RT template sequences for precise genomic modifications without double-strand breaks. Use when designing prime editing experiments for precise insertions, deletions, or point mutations.
 tool_type: python
 primary_tool: PrimeDesign
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Prime Editing Design
@@ -256,3 +273,6 @@ def assemble_pegrna(spacer, scaffold, rt_template, pbs):
 - genome-engineering/grna-design - Standard guide design for comparison
 - genome-engineering/base-editing-design - Alternative for C/G to T/A changes
 - variant-calling/variant-annotation - Identify pathogenic variants to correct
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

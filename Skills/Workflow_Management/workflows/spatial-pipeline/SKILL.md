@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-spatial-pipeline
 description: End-to-end spatial transcriptomics workflow for Visium/Xenium data. Covers data loading, preprocessing, spatial analysis, domain detection, and visualization with Squidpy. Use when analyzing spatial transcriptomics data.
@@ -15,6 +28,10 @@ qc_checkpoints:
   - after_loading: "Spots/cells detected, image aligned"
   - after_qc: "Low-quality spots filtered, genes detected"
   - after_clustering: "Spatial domains correspond to tissue regions"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Spatial Transcriptomics Pipeline
@@ -245,3 +262,6 @@ print(f'Results saved to {output_dir}/')
 - spatial-transcriptomics/spatial-statistics - Moran's I, co-occurrence
 - spatial-transcriptomics/spatial-domains - Domain detection methods
 - spatial-transcriptomics/spatial-deconvolution - Cell type estimation
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

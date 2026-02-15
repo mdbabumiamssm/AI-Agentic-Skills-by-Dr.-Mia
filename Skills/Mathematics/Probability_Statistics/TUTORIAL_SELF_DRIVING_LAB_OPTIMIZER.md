@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Tutorial: Self-Driving Labs with Bayesian Optimization
 
 **Level:** Advanced
@@ -76,3 +89,6 @@ Standard "Grid Search" (trying every combination) would take 1000s of experiment
 ## Assignments
 1.  Modify `synthetic_experiment` in `bayesian_optimization.py` to be a 2D function (like the protein yield example above).
 2.  Tune the `kappa` parameter. What happens if you make it 10.0? (Hint: The AI becomes more curious/exploratory).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

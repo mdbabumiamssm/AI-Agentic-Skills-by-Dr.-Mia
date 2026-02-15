@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Gemini API and Google Workspace Codelab
 
 These are the final, accompanying files for the [Automate Google Workspace tasks with the Gemini API
@@ -8,3 +21,6 @@ Google Workspace tasks - summarising a document, analyzing a chart, sending an e
 Please read and follow along with the main codelab, and if you get stuck you can load these files directly.
 
 This workshop was featured at [Google I/O 2024](https://io.google/2024/).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

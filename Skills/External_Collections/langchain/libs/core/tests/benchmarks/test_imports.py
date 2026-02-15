@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import subprocess
 import sys
 
@@ -52,3 +62,5 @@ def test_import_time(benchmark: BenchmarkFixture, import_path: str) -> None:
     @benchmark  # type: ignore[misc]
     def import_in_subprocess() -> None:
         subprocess.run([sys.executable, "-c", import_path], check=True)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

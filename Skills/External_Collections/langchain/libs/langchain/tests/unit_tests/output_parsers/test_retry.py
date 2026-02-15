@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 from datetime import datetime as dt
 from datetime import timezone
 from typing import Any, TypeVar
@@ -318,3 +328,5 @@ async def test_retry_with_error_output_parser_aparse_with_prompt_with_retry_chai
         legacy=False,
     )
     assert (await parser.aparse_with_prompt(completion, prompt)) == expected
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

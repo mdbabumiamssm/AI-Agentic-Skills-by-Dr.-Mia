@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Packages
 
 > [!IMPORTANT]
@@ -30,3 +43,6 @@ The `partners/` directory contains a small subset of third-party provider integr
 Most integrations have been moved to their own repositories for improved versioning, dependency management, collaboration, and testing. This includes packages from popular providers such as [Google](https://github.com/langchain-ai/langchain-google) and [AWS](https://github.com/langchain-ai/langchain-aws). Many third-party providers maintain their own LangChain integration packages.
 
 For a full list of all LangChain integrations, please refer to the [LangChain Integrations documentation](https://docs.langchain.com/oss/python/integrations/providers).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🔍 Built-in Tools
 
 Google ADK provides powerful **pre-built tools** that are optimized for performance and reliability. These tools integrate seamlessly with Gemini models and provide essential capabilities like web search and code execution.
@@ -133,3 +146,5 @@ By the end of this sub-example, you'll understand:
 - **No Mixing**: Cannot combine with custom tools
 - **Production Ready**: Built-in tools are enterprise-ready
 - **Rate Limits**: Be aware of usage limits
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

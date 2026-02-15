@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BioMCP Architecture Diagrams
 
 This page describes BioMCP's architecture, data flows, and workflows.
@@ -215,3 +228,6 @@ See also: [Quick Architecture Reference](quick-architecture.md)
 - View the [Quick Architecture Guide](quick-architecture.md) for a concise overview
 - Check [Developer Guides](../developer-guides/01-server-deployment.md) for implementation details
 - See [API Reference](../apis/overview.md) for detailed specifications
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

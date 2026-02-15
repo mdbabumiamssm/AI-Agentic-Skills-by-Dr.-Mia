@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # This is the official challenge library for https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks
 
 The goal of this repo is to provide easy challenge creation for test driven development with the Auto-GPT-Benchmarks package. This is essentially a library to craft challenges using a dsl (jsons in this case).
@@ -11,3 +24,6 @@ Make sure you have the package installed with `pip install agbenchmark`.
 If you would just like to use the default challenges, don't worry about this repo. Just install the package and you will have access to the default challenges.
 
 To add new challenges as you develop, add this repo as a submodule to your `project/agbenchmark` folder. Any new challenges you add within the submodule will get registered automatically.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

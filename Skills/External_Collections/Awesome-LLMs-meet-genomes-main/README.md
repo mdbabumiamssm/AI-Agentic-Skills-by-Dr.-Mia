@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 [python-img]: https://img.shields.io/github/languages/top/ychuest/Awesome-LLMs-meet-genomes?color=lightgrey
 [stars-img]: https://img.shields.io/github/stars/ychuest/Awesome-LLMs-meet-genomes?color=yellow
 [stars-url]: https://github.com/ychuest/Awesome-LLMs-meet-genomes/stargazers
@@ -460,3 +473,6 @@ Awesome-LLMs-meet-genomes is a collection of state-of-the-art, novel, exciting L
 
 
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

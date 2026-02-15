@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BioMCP Deep Researcher Persona
 
 With the release of BioMCP v0.1.2, users can now access a specialized
@@ -151,3 +164,6 @@ accurate, and useful biomedical research briefs than ever before.
 Have a complex biomedical research question? Give the BioMCP Researcher Persona
 a try and experience the difference a structured, tool-powered approach can
 make!
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

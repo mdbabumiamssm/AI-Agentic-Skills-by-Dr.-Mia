@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test text splitting functionality using NLTK and Spacy based sentence splitters."""
 
 import re
@@ -121,3 +131,5 @@ def test_nltk_text_splitter_with_add_start_index() -> None:
     for chunk in chunks:
         s_i = chunk.metadata["start_index"]
         assert chunk.page_content == txt[s_i : s_i + len(chunk.page_content)]
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Data lake dictionary with detailed descriptions
 data_lake_dict = {
     "affinity_capture-ms.parquet": "Protein-protein interactions detected via affinity capture and mass spectrometry.",
@@ -219,3 +229,5 @@ library_content_dict = {
     "autosite": "[CLI Tool] A binding site detection tool used to identify potential ligand binding pockets on protein structures for molecular docking.",
     "PyLabRobot": "[Python Package] A Python package for controlling liquid-handling robots and other lab automation equipment.",
 }
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

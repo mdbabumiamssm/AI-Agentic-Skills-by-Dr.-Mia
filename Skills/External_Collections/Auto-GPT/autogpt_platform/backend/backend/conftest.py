@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import logging
 import os
 
@@ -51,3 +61,5 @@ async def graph_cleanup(server):
                 resp = await server.agent_server.test_delete_graph(graph_id, user_id)
                 num_deleted = resp["version_counts"]
                 assert num_deleted > 0, f"Graph {graph_id} was not deleted."
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

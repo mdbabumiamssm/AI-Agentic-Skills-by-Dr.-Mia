@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Global pairwise alignment examples with different scoring schemes'''
 
 from Bio.Align import PairwiseAligner, substitution_matrices
@@ -48,3 +58,5 @@ aligner.open_gap_score = -5
 aligner.extend_gap_score = -5
 linear_alignments = aligner.align(prot_seq1, prot_seq2)
 print(f'Affine gap score: {affine_alignments[0].score}, Linear gap score: {linear_alignments[0].score}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

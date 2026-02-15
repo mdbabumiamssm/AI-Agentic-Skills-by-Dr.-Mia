@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Ideogram Model
 
 ## What it is
@@ -31,3 +44,5 @@ The block takes a text prompt and several optional parameters as input. It then 
 
 ## Possible use case
 A marketing team needs unique visuals for a new product campaign. They can use the Ideogram Model block to quickly generate custom images based on their product descriptions and brand guidelines, exploring different styles and aspect ratios without the need for a professional designer.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

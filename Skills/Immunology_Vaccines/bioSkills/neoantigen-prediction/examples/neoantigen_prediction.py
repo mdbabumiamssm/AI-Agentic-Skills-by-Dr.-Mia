@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Identify tumor neoantigens from somatic mutations'''
 
 import pandas as pd
@@ -153,3 +163,5 @@ if __name__ == '__main__':
     print('\nTop neoantigen candidates:')
     cols = ['Gene Name', 'Mutation', 'Median MT Score', 'agretopicity', 'priority_score']
     print(prioritized[cols].head(5).to_string(index=False))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

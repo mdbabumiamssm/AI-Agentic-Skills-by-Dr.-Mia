@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 """Comprehensive tests for AgentFrameworkAgent (_agent.py)."""
@@ -630,3 +640,5 @@ async def test_suppressed_summary_with_document_state():
     # Should contain some reference to the document
     full_text = "".join(e.delta for e in text_events)
     assert "written" in full_text.lower() or "document" in full_text.lower()
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

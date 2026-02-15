@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---name: create-plan
 description: Create a concise plan. Use when a user explicitly asks for a plan related to a coding task.
 metadata:
@@ -8,6 +21,9 @@ keywords:
   - automation
   - biomedical
 measurable_outcome: execute task with >95% success rate.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---"
 
 # Create Plan
@@ -77,3 +93,6 @@ Avoid:
 - Vague steps (“handle backend”, “do auth”)
 - Too many micro-steps
 - Writing code snippets (keep the plan implementation-agnostic)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

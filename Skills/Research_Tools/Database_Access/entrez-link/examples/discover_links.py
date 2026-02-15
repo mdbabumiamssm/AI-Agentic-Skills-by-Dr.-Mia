@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Discover available links from a database record'''
 from Bio import Entrez
 
@@ -31,3 +41,5 @@ print('\n=== Available Links from Protein ===')
 links = discover_all_links('protein', '119395733')
 for link in links[:15]:
     print(f"  {link['name']:40} -> {link['target']}")
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

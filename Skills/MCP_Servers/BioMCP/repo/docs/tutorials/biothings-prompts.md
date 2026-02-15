@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # BioThings Integration Example Prompts
 
 This guide provides example prompts for AI assistants to effectively use the BioThings suite integration in BioMCP.
@@ -360,3 +373,6 @@ If a gene/disease is not found:
 - Try searching with partial names
 - Use official symbols for genes (e.g., "TP53" not "p53 gene")
 - For diseases, try both common and medical names
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

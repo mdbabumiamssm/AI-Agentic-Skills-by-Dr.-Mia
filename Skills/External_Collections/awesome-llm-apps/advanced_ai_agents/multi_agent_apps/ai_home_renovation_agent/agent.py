@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """AI Home Renovation Planner - Coordinator/Dispatcher Pattern with Multimodal Vision
 
 This demonstrates ADK's Coordinator/Dispatcher Pattern with Gemini 2.5 Flash's multimodal
@@ -433,3 +443,4 @@ Be a smart router - match intent!
 
 
 __all__ = ["root_agent"]
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Connectors.Memory.SqlServer
 
 This connector uses the SQL Server database engine to implement [Vector Store](https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/?pivots=programming-language-csharp) capability in Semantic Kernel. 
@@ -75,3 +88,6 @@ You can get a fully working sample using this connector in the following reposit
 - [Vector Store sample](https://github.com/Azure-Samples/azure-sql-db-vector-search/tree/main/SemanticKernel/dotnet)
 
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

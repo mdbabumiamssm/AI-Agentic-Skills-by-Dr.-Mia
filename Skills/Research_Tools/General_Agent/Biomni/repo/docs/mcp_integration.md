@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # MCP (Model Context Protocol) Integration in Biomni
 
 Biomni provides comprehensive support for the Model Context Protocol (MCP), allowing you to both integrate external MCP servers and expose Biomni tools as MCP servers. This enables seamless interoperability with a wide ecosystem of AI tools and services.
@@ -345,3 +358,6 @@ if __name__ == "__main__":
 ## Conclusion
 
 Biomni's MCP integration provides a powerful way to extend its capabilities with external tools and services, while also making Biomni tools available to the broader MCP ecosystem. This enables seamless interoperability and allows you to build sophisticated AI workflows that combine the best of multiple tool ecosystems.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

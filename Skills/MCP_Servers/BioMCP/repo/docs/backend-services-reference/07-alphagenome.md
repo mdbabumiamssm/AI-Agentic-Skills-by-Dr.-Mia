@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AlphaGenome API Reference
 
 Google DeepMind's AlphaGenome provides AI-powered predictions of variant effects on gene regulation, chromatin accessibility, and splicing.
@@ -464,3 +477,6 @@ def get_cached_prediction(chr, pos, ref, alt, interval):
 - **Paper**: [Nature Publication](https://www.nature.com/alphagenome)
 - **Support**: Via GitHub issues
 - **Terms**: Non-commercial research use only
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

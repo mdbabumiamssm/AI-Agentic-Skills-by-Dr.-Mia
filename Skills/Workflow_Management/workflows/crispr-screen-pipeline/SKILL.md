@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-crispr-screen-pipeline
 description: End-to-end CRISPR screen analysis from FASTQ to hit genes. Orchestrates guide counting, QC, statistical analysis with MAGeCK, and hit calling with multiple methods. Use when analyzing pooled CRISPR screens from count data to hit calling.
@@ -10,6 +23,10 @@ depends_on:
   - crispr-screens/hit-calling
   - crispr-screens/library-design
   - crispr-screens/batch-correction
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # CRISPR Screen Pipeline
@@ -256,3 +273,6 @@ mageck test -k counts.txt -t Treated -c Control -n crispri_screen
 - crispr-screens/library-design - sgRNA selection and library design
 - crispr-screens/batch-correction - Multi-batch normalization
 - pathway-analysis/go-enrichment - Pathway enrichment of hits
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

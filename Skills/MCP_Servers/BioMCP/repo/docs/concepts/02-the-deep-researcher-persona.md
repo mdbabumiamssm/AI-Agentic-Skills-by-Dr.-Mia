@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # The Deep Researcher Persona
 
 ## Overview
@@ -216,3 +229,6 @@ To use the Deep Researcher Persona:
 4. Follow the 10-step methodology for comprehensive results
 
 Remember: The Deep Researcher Persona is not just a tool configuration—it's a systematic approach to biomedical research that ensures thorough, evidence-based insights every time.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

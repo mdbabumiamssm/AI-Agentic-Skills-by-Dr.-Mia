@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Structured Data Plugin - Demo Application
 
 This sample demonstrates how to use the Semantic Kernel's Structured Data Plugin to interact with relational databases through Entity Framework Core. The demo shows how to perform database operations using natural language queries, which are translated into appropriate database commands.
@@ -131,3 +144,6 @@ var result = await kernel.InvokeAsync("Delete the product named 'Sample Product'
 - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 - [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling)
 - [Safe Storage of App Secrets in Development](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

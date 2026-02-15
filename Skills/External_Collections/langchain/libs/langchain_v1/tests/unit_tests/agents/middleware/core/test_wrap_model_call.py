@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Unit tests for wrap_model_call hook and @wrap_model_call decorator.
 
 This module tests the wrap_model_call functionality in three forms:
@@ -1269,3 +1279,5 @@ class TestEdgeCases:
 
         assert attempts == ["first-attempt", "retry-attempt"]
         assert result["messages"][1].content == "Success"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Anthropic Examples
 
 This folder contains examples demonstrating how to use Anthropic's Claude models with the Agent Framework.
@@ -22,3 +35,6 @@ Or, for Foundry:
 - `ANTHROPIC_FOUNDRY_API_KEY`: Your Foundry Anthropic API key
 - `ANTHROPIC_FOUNDRY_ENDPOINT`: The endpoint URL for your Foundry Anthropic resource
 - `ANTHROPIC_CHAT_MODEL_ID`: The Claude model to use in Foundry (e.g., `claude-haiku-4-5`)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

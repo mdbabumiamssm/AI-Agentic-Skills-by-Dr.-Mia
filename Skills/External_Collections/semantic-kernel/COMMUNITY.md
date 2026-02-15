@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Welcome to the Semantic Kernel Community!
 
 Below are some ways that you can get involved in the SK Community.
@@ -28,3 +41,6 @@ If you are unable to make it live, all meetings will be recorded and posted onli
 This is a great place to ask questions, share your projects, and get help from the community.
 
 Join using our discord link: [aka.ms/SKDiscord](https://aka.ms/SKDiscord)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

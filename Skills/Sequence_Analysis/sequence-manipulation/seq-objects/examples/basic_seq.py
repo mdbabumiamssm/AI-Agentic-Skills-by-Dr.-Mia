@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''Basic examples of creating and using Seq objects'''
 from Bio.Seq import Seq, MutableSeq
 from Bio.SeqRecord import SeqRecord
@@ -34,3 +44,5 @@ record = SeqRecord(Seq('ATGCGATCGATCG'), id='gene1', description='Example gene s
 print(f'ID: {record.id}')
 print(f'Description: {record.description}')
 print(f'Sequence: {record.seq}')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

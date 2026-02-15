@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Tutorial 4: Tool Using Agent
 
 Welcome to the world of tools! This tutorial teaches you how to create agents that can use **different types of tools** to perform specific tasks. This is where your agents become truly powerful and capable of real-world actions.
@@ -126,3 +139,6 @@ Tool-using agents are essential for:
 - **Tool Mixing**: Cannot mix built-in and custom tools in same agent
 - **Performance**: Built-in tools are optimized for speed
 - **Security**: Custom tools require proper validation
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

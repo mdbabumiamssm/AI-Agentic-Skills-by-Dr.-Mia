@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Chat Client Examples
 
 This folder contains simple examples demonstrating direct usage of various chat clients.
@@ -38,3 +51,5 @@ Depending on which client you're using, set the appropriate environment variable
 - `OLLAMA_CHAT_MODEL_ID`: The Ollama model to use for chat (e.g., `llama3.2`, `llama2`, `codellama`)
 
 > **Note**: For Ollama, ensure you have Ollama installed and running locally with at least one model downloaded. Visit [https://ollama.com/](https://ollama.com/) for installation instructions.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

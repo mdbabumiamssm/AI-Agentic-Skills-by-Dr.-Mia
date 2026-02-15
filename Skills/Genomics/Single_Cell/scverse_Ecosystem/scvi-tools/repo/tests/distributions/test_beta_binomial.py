@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import pytest
 import torch
 
@@ -43,3 +53,5 @@ def test_beta_binomial_distribution():
     # Should fail without a complete parameterization 1 or 2
     with pytest.raises(ValueError):
         BetaBinomial(total_count=total_count, alpha=alpha, gamma=gamma)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

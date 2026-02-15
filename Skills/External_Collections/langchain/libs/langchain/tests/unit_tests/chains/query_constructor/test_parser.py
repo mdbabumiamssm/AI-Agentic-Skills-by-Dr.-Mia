@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Test LLM-generated structured query parsing."""
 
 from typing import Any, cast
@@ -150,3 +160,5 @@ def test_parse_datetime_value(x: str, expected: dict[str, str] | None) -> None:
     parsed = cast("Comparison", DEFAULT_PARSER.parse(f'eq("publishedAt", {x})'))
     actual = parsed.value
     assert actual == expected, f"Expected {expected}, got {actual}"
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

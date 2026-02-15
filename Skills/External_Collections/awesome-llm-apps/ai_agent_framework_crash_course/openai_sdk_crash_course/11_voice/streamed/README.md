@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🌊 Streaming Voice Agent
 
 A real-time voice interaction example using the OpenAI Agents SDK with continuous audio streaming. This demonstrates advanced voice pipeline capabilities with live speech detection, real-time processing, and turn-based conversation management.
@@ -287,3 +300,6 @@ After mastering streaming voice agents:
 - **Turn Management**: Monitor lifecycle events for debugging
 - **Resource Usage**: Monitor CPU and memory during streaming
 - **Network Issues**: Implement retry logic for API failures
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

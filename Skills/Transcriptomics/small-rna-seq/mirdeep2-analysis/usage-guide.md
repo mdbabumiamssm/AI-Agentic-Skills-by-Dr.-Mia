@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # miRDeep2 Analysis - Usage Guide
 
 ## Overview
@@ -63,3 +76,6 @@ Tell your AI agent:
 - **Check randfold p-value** - low p indicates stable hairpin structure
 - **Use species-specific miRBase** - improves known miRNA mapping
 - **Run time** - can take hours for large datasets; use multiple cores
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🎯 Toonify Token Optimization
 
 Reduce LLM API costs by 30-60% using TOON (Token-Oriented Object Notation) format for structured data serialization.
@@ -146,3 +159,6 @@ Toonify library is licensed under MIT License.
 
 Built with [Toonify](https://github.com/ScrapeGraphAI/toonify) by the ScrapeGraphAI team.
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

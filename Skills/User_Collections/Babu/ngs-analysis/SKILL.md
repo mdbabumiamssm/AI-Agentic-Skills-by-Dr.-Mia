@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: ngs-analysis
 description: "Next-generation sequencing data analysis pipelines including bulk RNA-seq, scRNA-seq preprocessing, variant calling, and quality control. Use when working with FASTQ files, alignment (STAR, BWA), quantification (featureCounts, Salmon), DESeq2/edgeR analysis, or building NGS pipelines. Supports GEO/SRA data retrieval."
@@ -165,3 +178,6 @@ def run_pipeline(fastq_dir, output_dir, genome_index):
 
 See `references/conda_envs.md` for environment setup.
 See `scripts/batch_pipeline.py` for parallel processing.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

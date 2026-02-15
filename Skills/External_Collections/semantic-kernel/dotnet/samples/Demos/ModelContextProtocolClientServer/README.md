@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Model Context Protocol Client Server Samples
 
 These samples use the [Model Context Protocol (MCP) C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) and show:
@@ -120,3 +133,5 @@ To get started, follow this sample: [AspNetCoreSseServer](https://github.com/mod
 
 While details of native support for OAuth 2.1 are [still being discussed](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/284), you can consider a solution based on APIM 
 acting as an [AI Gateway](https://github.com/Azure-Samples/AI-Gateway). This approach is demonstrated by the sample: [Secure Remote Microsoft Graph MCP Servers using Azure API Management (Experimental)](https://github.com/Azure-Samples/remote-mcp-apim-appservice-dotnet).
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

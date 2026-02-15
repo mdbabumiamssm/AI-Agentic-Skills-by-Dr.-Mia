@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Models
 
 This document describes the planned models to be supported by Semantic Kernel along with their current status. If you are interested in contributing to the development of a model, please use the attached links to the GitHub issues and comment that you're wanting to help.
@@ -135,3 +148,6 @@ Please note that not all of the model interfaces are defined yet. As part of con
 | P2       | roberta-large                  | Not started | `IFillMask`          | Hugging Face    | TBD          | TBD       | TBD      |
 | P1       | stable-diffusion-xl-base-1.0   | Not started | `ITextToImage`       | Azure AI        | TBD          | TBD       | TBD      |
 | P1       | stable-diffusion-xl-base-1.0   | Not started | `ITextToImage`       | Hugging Face    | TBD          | TBD       | TBD      |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

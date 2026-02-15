@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ## Purpose
 The purpose of the arrayIO design is to allow for code sharing fragment/matrix
 data across 3 different storage formats:
@@ -45,3 +58,5 @@ provided in the `array_interfaces.h` header file, but this is the high-level sum
 - `ReaderBuilder` and `WriterBuilder` are interfaces to handle reading+writing a set of related UInt and String arrays.
   So e.g. for fragments stored in an hdf5 file, the ReaderBuilder and WriterBuilder would be responsible for opening
   the correct HDF5 DataSet for reading/writing.
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

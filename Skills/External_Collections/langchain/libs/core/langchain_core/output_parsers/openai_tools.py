@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Parse tools for OpenAI tools output."""
 
 import copy
@@ -365,3 +375,5 @@ class PydanticToolsParser(JsonOutputToolsParser):
         if self.first_tool_only:
             return pydantic_objects[0] if pydantic_objects else None
         return pydantic_objects
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

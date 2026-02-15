@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AI Condition Block
 
 ## What it is
@@ -77,3 +90,5 @@ The block uses a Large Language Model (LLM) to evaluate the condition by:
 - **Cost**: Each evaluation consumes LLM tokens, which has associated costs
 - **Reliability**: AI responses may occasionally be inconsistent, so critical logic should include fallback handling
 - **Network Dependency**: Requires internet connectivity to access the LLM API
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

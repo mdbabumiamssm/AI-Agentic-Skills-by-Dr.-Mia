@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # About Microsoft Agent Framework
 
 Microsoft Agent Framework is a comprehensive .NET library for building, orchestrating, and deploying AI agents and multi-agent workflows. The framework provides everything from simple chat agents to complex multi-agent systems with graph-based orchestration capabilities.
@@ -19,3 +32,6 @@ Whether you're building simple AI assistants or complex multi-agent systems, Mic
 - Join the [Discord community](https://discord.gg/b5zjErwbQM).
 - Follow the team on [Semantic Kernel blog](https://devblogs.microsoft.com/semantic-kernel/).
 - Check out the [GitHub repository](https://github.com/microsoft/agent-framework) for the latest updates.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

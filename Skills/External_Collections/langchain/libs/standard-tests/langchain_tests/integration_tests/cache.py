@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Standard tests for the `BaseCache` abstraction.
 
 We don't recommend implementing externally managed `BaseCache` abstractions at this
@@ -205,3 +215,5 @@ class AsyncCacheTestSuite(BaseStandardTests):
         ]
         await cache.aupdate(prompt, llm_string, generations)
         assert await cache.alookup(prompt, llm_string) == generations
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

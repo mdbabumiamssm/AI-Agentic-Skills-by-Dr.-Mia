@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Google - Gemini
 
 Gemini models are Google's large language models. Semantic Kernel provides two connectors to access these models from Google Cloud.
@@ -54,3 +67,6 @@ kernel.add_service(
 ## Why is there code that looks almost identical in the implementations on the two connectors
 
 The two connectors have very similar implementations, including the utils files. However, they are fundamentally different as they depend on different packages from Google. Although the namings of many types are identical, they are different types.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

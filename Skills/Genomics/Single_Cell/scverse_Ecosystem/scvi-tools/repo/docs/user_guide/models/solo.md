@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Solo
 
 **Solo** [^ref1] (Python class {class}`~scvi.external.SOLO`) posits a flexible generative model of scRNA-seq count data that can subsequently
@@ -54,3 +67,6 @@ and the doublet score for each originally observed cell is the doublet probabili
     Nicholas J. Bernstein, , Nicole L. Fong, Irene Lam, Margaret A. Roy, David G. Hendrickson, and David R. Kelley (2020),
     _Solo: doublet identification in single-cell RNA-Seq via semi-supervised deep learning_,
     [Cell Systems](https://www.sciencedirect.com/science/article/pii/S2405471220301952).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

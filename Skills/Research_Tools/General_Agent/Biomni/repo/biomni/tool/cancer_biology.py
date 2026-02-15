@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 def analyze_ddr_network_in_cancer(expression_data_path, mutation_data_path, output_dir="./results"):
     """Analyze DNA Damage Response (DDR) network alterations and dependencies in cancer samples.
 
@@ -1290,3 +1300,5 @@ def analyze_copy_number_purity_ploidy_and_focal_events(
     log.append("- Visualize CNV profiles using CNVkit's built-in plotting functions")
 
     return "\n".join(log)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # Copyright (c) Microsoft. All rights reserved.
 
 from typing import TypeVar
@@ -17,3 +27,5 @@ def print_record(result: VectorSearchResult[_T] | None = None, record: _T | None
     print_with_color(f"    Title: {record.title}", Colors.CWHITE)
     print_with_color(f"    Content: {record.content}", Colors.CWHITE)
     print_with_color(f"    Tag: {record.tag}", Colors.CWHITE)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

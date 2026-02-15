@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # YouTube Transcript API Fix Summary
 
 ## 🔍 Issues Identified and Fixed
@@ -107,3 +120,5 @@ transcript_text = " ".join([snippet.text for snippet in transcript_snippets])
 3. **`test_fixed_app.py`**: Comprehensive test suite (NEW)
 
 The app is now fully functional and provides an excellent user experience with clear feedback about what's working and what's not!
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

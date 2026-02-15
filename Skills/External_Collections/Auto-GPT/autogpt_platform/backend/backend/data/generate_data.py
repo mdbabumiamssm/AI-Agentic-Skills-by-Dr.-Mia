@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import logging
 from collections import defaultdict
 from datetime import datetime
@@ -107,3 +117,5 @@ async def get_user_execution_summary_data(
     except Exception as e:
         logger.error(f"Failed to get user summary data: {e}")
         raise DatabaseError(f"Failed to get user summary data: {e}") from e
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

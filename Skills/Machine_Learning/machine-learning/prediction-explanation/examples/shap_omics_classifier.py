@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 '''SHAP interpretation for omics classifiers (v0.47+ API)'''
 
 import pandas as pd
@@ -54,3 +64,5 @@ feature_importance = pd.DataFrame({
 feature_importance.to_csv('shap_feature_importance.csv', index=False)
 print('\nTop 20 features by SHAP importance:')
 feature_importance.head(20)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

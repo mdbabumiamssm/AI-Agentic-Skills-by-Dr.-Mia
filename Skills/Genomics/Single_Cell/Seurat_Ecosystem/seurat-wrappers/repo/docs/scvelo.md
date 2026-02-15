@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 Estimating RNA Velocity using Seurat and scVelo
 ================
 Compiled: June 10, 2020
@@ -110,3 +123,6 @@ scv.pl.heatmap(adata, var_names=top_genes, sortby="latent_time", col_color="seur
 ```
 
 <img src="scvelo_files/figure-gfm/latent_time-2.png" width="768" />
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-imaging-mass-cytometry-phenotyping
 description: Cell type assignment from marker expression in IMC data. Covers manual gating, clustering, and automated classification approaches. Use when assigning cell types to segmented IMC cells based on protein marker expression or when phenotyping cells in multiplexed imaging data.
 tool_type: python
 primary_tool: scanpy
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Cell Phenotyping for IMC
@@ -211,3 +228,6 @@ adata.obs[['cell_id', 'cell_type', 'centroid_x', 'centroid_y']].to_csv('cell_phe
 - cell-segmentation - Generate single-cell data
 - spatial-analysis - Analyze spatial patterns of cell types
 - single-cell/cell-annotation - Similar annotation concepts
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

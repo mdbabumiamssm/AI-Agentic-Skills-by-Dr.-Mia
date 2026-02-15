@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # 🚀 Google ADK Crash Course
 
 A comprehensive tutorial series for learning Google's Agent Development Kit (ADK) from basics to advanced concepts. This crash course is designed to take you from zero to hero in building AI agents with Google ADK.
@@ -114,3 +127,6 @@ Feel free to contribute improvements, bug fixes, or additional tutorials. Each t
 - Include clear documentation
 - Follow the established structure
 - Use minimal, understandable code
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

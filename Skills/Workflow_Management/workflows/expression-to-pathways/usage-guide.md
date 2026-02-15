@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Expression to Pathways - Usage Guide
 
 ## Overview
@@ -70,3 +83,6 @@ Tell your AI agent what you want to do:
 - **GSEA ranking**: Use stat or log2FC, not p-value
 - **Simplify**: Use simplify() to reduce redundant GO terms
 - **Multiple testing**: Check adjusted p-values, not raw
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

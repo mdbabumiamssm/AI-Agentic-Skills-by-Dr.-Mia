@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 """Utilities to render tools."""
 
 from __future__ import annotations
@@ -65,3 +75,5 @@ def render_text_description_and_args(tools: list[BaseTool]) -> str:
             description = f"{tool.name} - {tool.description}"
         tool_strings.append(f"{description}, args: {args_schema}")
     return "\n".join(tool_strings)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

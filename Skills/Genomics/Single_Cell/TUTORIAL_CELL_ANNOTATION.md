@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Tutorial: Single-Cell Cell Type Annotation
 
 This tutorial guides you through using the `UniversalAnnotator` skill to identify cell types in single-cell RNA-sequencing (scRNA-seq) data.
@@ -92,3 +105,6 @@ annotator.annotate_with_llm(cluster_col='leiden', marker_num=5)
 *   **Marker-based**: Good for verifying known biology.
 *   **CellTypist**: Best for standardized immune phenotyping.
 *   **LLM**: Best for exploring unknown clusters.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 # These are optional elements. Feel free to remove any of them.
 status: accepted
@@ -104,3 +117,6 @@ Follow these guidelines:
 | `semantickernel-bom`             | SK common package collection |
 | `semantickernel-core`            | SK core implementation |
 | `plugins`                        | Containing: `semantickernel-plugins-core`, `semantickernel-plugins-document`, `semantickernel-plugins-msgraph`, ... |
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

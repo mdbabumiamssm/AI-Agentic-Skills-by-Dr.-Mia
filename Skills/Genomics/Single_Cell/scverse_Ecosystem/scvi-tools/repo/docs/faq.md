@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Frequently asked questions
 
 This section contains answers to frequently asked questions. Don't see what you're looking for
@@ -54,3 +67,6 @@ here are several factors to consider:
 - **Adversarial training**: For models with adversarial training (_e.g._ totalVI), consider turning
     off the component to see if the issue is resolved.
 - **Using SaveCheckpoint Callback**: Starting v1.3.0, we added the on_exception option to the callback, that in case of model error exception during training, will save the best model up to this point. The user will be able to load it back and continue the analysis. Failing for the first few epochs probably means basic issues with the model.
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

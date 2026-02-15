@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # dbSNP Queries - Usage Guide
 
 ## Overview
@@ -59,3 +72,6 @@ Tell your AI agent:
 - **dbSNP includes all variants** - not just clinically relevant ones
 - **Use SPDI notation** for precise allele representation
 - **Check both hg19 and hg38** coordinates - many rsIDs have both
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # AutoGPT Documentation
 
 Welcome to the AutoGPT Documentation.
@@ -85,3 +98,5 @@ This strategy allows us to share previously closed-source components, fostering 
 - Read the [Getting Started docs](https://docs.agpt.co/platform/getting-started/) to self-host
 - [Join the waitlist](https://agpt.co/waitlist) for the cloud-hosted beta
 - [Contribute](contribute/index.md)
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

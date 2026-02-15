@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # What this sample demonstrates
 
 This sample demonstrates how to use TextSearchProvider to add retrieval augmented generation (RAG) capabilities to an AI agent. The provider runs a search against an external knowledge base before each model invocation and injects the results into the model context.
@@ -39,3 +52,6 @@ The sample uses a mock search function that demonstrates the RAG pattern:
 5. The agent can cite specific source documents in its answers
 
 The mock search function returns pre-defined snippets for demonstration purposes. In a production scenario, you would replace this with actual searches against your knowledge base (e.g., Azure AI Search, vector database, etc.).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

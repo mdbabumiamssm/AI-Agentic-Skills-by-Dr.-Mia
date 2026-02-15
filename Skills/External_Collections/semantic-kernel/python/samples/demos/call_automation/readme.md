@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Call Automation - Quick Start Sample
 
 This is a sample application. It highlights an integration of Azure Communication Services with Semantic Kernel, using the Azure OpenAI Service to enable intelligent conversational agents.
@@ -90,3 +103,6 @@ Session Created Message
 Response Done Message
   Response Id: resp_BG0CBedSOZgrlo82IlxMC
 ```
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # alternative-splicing
 
 ## Overview
@@ -36,3 +49,6 @@ BiocManager::install(c('IsoformSwitchAnalyzeR', 'leafcutter'))
 - **read-alignment** - STAR 2-pass mode for junction detection
 - **differential-expression** - Compare gene-level vs splicing changes
 - **rna-quantification** - Transcript TPM for SUPPA2
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

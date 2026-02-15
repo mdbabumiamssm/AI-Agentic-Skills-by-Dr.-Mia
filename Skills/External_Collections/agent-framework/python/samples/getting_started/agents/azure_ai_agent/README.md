@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Azure AI Agent Examples
 
 This folder contains examples demonstrating different ways to create and use agents with the Azure AI chat client from the `agent_framework.azure` package. These examples use the `AzureAIAgentClient` with the `azure-ai-agents` 1.x (V1) API surface. For updated V2 (`azure-ai-projects` 2.x) samples, see the [Azure AI V2 examples folder](../azure_ai/).
@@ -86,3 +99,6 @@ export BING_CUSTOM_INSTANCE_NAME="your-bing-custom-instance-name"
 - `BING_CONNECTION_ID`: Your Bing connection ID (required for `azure_ai_with_bing_grounding.py` and `azure_ai_with_multiple_tools.py`)
 - `BING_CUSTOM_CONNECTION_ID`: Your Bing Custom Search connection ID (required for `azure_ai_with_bing_custom_search.py`)
 - `BING_CUSTOM_INSTANCE_NAME`: Your Bing Custom Search instance name (required for `azure_ai_with_bing_custom_search.py`)
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

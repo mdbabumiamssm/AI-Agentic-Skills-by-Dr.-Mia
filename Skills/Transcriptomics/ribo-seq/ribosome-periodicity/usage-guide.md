@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Ribosome Periodicity - Usage Guide
 
 ## Overview
@@ -59,3 +72,6 @@ Tell your AI agent:
 - **12-13 nt offset** is typical for 28-30 nt footprints
 - **Weak periodicity** may indicate poor digestion or library issues
 - **Use annotated CDS** for metagene analysis
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

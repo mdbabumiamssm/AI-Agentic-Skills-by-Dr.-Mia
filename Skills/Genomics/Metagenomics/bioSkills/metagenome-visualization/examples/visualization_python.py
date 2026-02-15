@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -50,3 +60,5 @@ plt.savefig('pca.png', dpi=300)
 plt.close()
 
 print('Visualizations saved: stacked_bar.png, heatmap.png, pca.png')
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

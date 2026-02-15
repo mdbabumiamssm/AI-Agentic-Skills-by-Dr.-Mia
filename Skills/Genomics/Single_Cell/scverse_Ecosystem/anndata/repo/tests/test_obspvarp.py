@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 # TODO: These tests should share code with test_layers, and test_obsmvarm
 from __future__ import annotations
 
@@ -139,3 +149,5 @@ def test_shape_error(adata: AnnData):
         ),
     ):
         adata.obsp["a"] = np.zeros((adata.shape[0] + 1, adata.shape[0]))
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

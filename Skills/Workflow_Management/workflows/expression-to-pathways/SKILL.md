@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-workflows-expression-to-pathways
 description: Workflow from differential expression results to functional enrichment analysis. Covers GO, KEGG, Reactome enrichment with clusterProfiler and visualization. Use when taking DE results to pathway enrichment.
@@ -13,6 +26,10 @@ depends_on:
 qc_checkpoints:
   - input_validation: "Valid gene IDs, sufficient DE genes"
   - enrichment_qc: "Reasonable number of terms, p-values not all significant"
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Expression to Pathways Workflow
@@ -307,3 +324,6 @@ cat('Reactome pathways:', nrow(as.data.frame(reactome)), '\n')
 - pathway-analysis/reactome-pathways - Reactome analysis
 - pathway-analysis/gsea - GSEA methods
 - pathway-analysis/enrichment-visualization - Visualization options
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

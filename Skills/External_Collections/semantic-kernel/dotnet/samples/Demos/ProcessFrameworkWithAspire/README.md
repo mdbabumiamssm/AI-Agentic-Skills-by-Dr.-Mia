@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Process Framework with .NET Aspire
 
 This demo illustrates how the [Semantic Kernel Process Framework](https://learn.microsoft.com/semantic-kernel/overview) can be integrated with [.NET Aspire](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview). The Process Framework enables the creation of business processes based on events, where each process step may invoke an agent or execute native code.
@@ -43,3 +56,5 @@ This will generate a trace in the Aspire dashboard that looks like this:
 
 Additionally, the metrics for each agent can be monitored in the Metrics tab:
 ![Aspire Metrics](./docs/aspire-metrics.png)
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

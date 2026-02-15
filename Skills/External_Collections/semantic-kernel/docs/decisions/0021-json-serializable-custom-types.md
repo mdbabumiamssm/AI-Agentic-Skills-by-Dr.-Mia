@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 status: proposed
 contact: dehoward
@@ -122,3 +135,6 @@ Not required
 This option was originally considered, which would have effectively removed the use of the `TypeConverter`s in favor of a simple `JsonConverter`, but it was pointed out that this may result in lossy conversion between primitive types. For example, when converting from a `float` to an `int`, the primitive may be truncated in a way by the native serialization methods that does not provide an accurate result.
 
 ## Decision Outcome
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

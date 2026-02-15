@@ -1,8 +1,25 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 ---
 name: bio-phylo-modern-tree-inference
 description: Build maximum likelihood phylogenetic trees using IQ-TREE2 and RAxML-ng. Use when inferring publication-quality trees with model selection, ultrafast bootstrap, or partitioned analyses from sequence alignments.
 tool_type: cli
 primary_tool: IQ-TREE2
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
 # Modern ML Tree Inference
@@ -252,3 +269,6 @@ raxml-ng --msa alignment.fasta --model GTR+G --seed 12345 --bs-trees 100
 - tree-visualization - Visualize trees with bootstrap support
 - distance-calculations - Compare with distance-based methods
 - alignment/alignment-io - Prepare alignments for tree inference
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

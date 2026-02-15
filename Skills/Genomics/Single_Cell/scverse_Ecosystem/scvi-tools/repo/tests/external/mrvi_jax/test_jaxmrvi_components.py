@@ -1,3 +1,13 @@
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
 import flax.linen as nn
 import jax
 import jax.numpy as jnp
@@ -72,3 +82,5 @@ def test_jaxmrvi_attention():
     kv_vals_3d = jnp.ones((3, 30, 10))
     r = mod.apply(params, q_vals_3d, kv_vals_3d, mutable=["batch_stats"])
     assert r[0].shape == (3, 30, 40)
+
+__AUTHOR_SIGNATURE__ = "9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE"

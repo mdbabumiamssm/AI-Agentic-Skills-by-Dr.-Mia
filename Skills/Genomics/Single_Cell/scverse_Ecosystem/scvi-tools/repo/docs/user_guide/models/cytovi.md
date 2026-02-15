@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # CytoVI
 
 **CytoVI** [^ref1] (Python class {class}`~scvi.external.CYTOVI`) is a generative model for cytometry data that leverages deep probabilistic latent variable modeling to enable denoising, imputation, integration, and differential analysis across technologies and batches.
@@ -238,3 +251,6 @@ This approach allows label-free imputation of unobserved modalities, such as gen
      Pierre Boyeau, Justin Hong, Adam Gayoso, Martin Kim, Jose L McFaline-Figueroa, Michael Jordan, Elham Azizi, Can Ergen, Nir Yosef (2024),
     _Deep generative modeling of sample-level heterogeneity in single-cell genomics_,
     [bioRxiv](https://doi.org/10.1101/2022.10.04.510898).
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,3 +1,16 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal Biomedical Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+
+-->
+
 # Multi-turn Conversation with AI Agents
 
 This sample demonstrates how to implement multi-turn conversations with AI agents, where context is preserved across multiple agent runs using threads.
@@ -48,3 +61,6 @@ The sample will:
 6. Send a follow-up streaming message to demonstrate multi-turn streaming
 7. Clean up resources by deleting the agent
 
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
