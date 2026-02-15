@@ -52,12 +52,6 @@ We have organized 600+ skills into specialized domains targeting the most critic
 *   **DevOps & CI/CD:** Autonomous agents that monitor pipelines, auto-fix linting errors, and generate infrastructure-as-code (Terraform/Pulumi).
 *   **Key Skills:** `Software_Engineering`, `Computer_Science`, `Workflow_Management`.
 
-### 💰 For Finance & Quant Professionals
-*   **Market Swarms:** Multi-agent systems that aggregate news, sentiment, and technical indicators to signal market shifts in real-time.
-*   **Automated Compliance:** Agents that audit transactions against regulatory frameworks (SOX, GDPR) and generate risk reports.
-*   **Portfolio Management:** `Finance_Agent_Team` capable of rebalancing portfolios and simulating stress tests based on macro-economic scenarios.
-*   **Key Skills:** `Data_Science`, `Mathematics`, `External_Collections/ai_finance_agent`.
-
 ### 🔬 For Scientists & Physicists
 *   **Quantum Biotech:** Bridge the gap between physics and biology with agents for molecular dynamics simulations and quantum docking.
 *   **Lab Automation:** "Self-Driving Lab" agents that design experiments, control robotic liquid handlers (Opentrons), and analyze results loops.
@@ -87,6 +81,12 @@ At the heart of this system is the **BioKernel**, a high-performance runtime env
     *   *Need Reasoning?* Use **OpenAI o3** or **Claude 3.7**.
     *   *Need Privacy?* Use **Local Llama 3**.
 *   **Universal Skill Definition (USDL):** All skills are defined in a standardized JSON/YAML schema, making them portable across any LLM framework (LangChain, Semantic Kernel, AutoGen).
+
+### 💰 For Finance & Quant Professionals
+*   **Market Swarms:** Multi-agent systems that aggregate news, sentiment, and technical indicators to signal market shifts in real-time.
+*   **Automated Compliance:** Agents that audit transactions against regulatory frameworks (SOX, GDPR) and generate risk reports.
+*   **Portfolio Management:** `Finance_Agent_Team` capable of rebalancing portfolios and simulating stress tests based on macro-economic scenarios.
+*   **Key Skills:** `Data_Science`, `Mathematics`, `External_Collections/ai_finance_agent`
 
 ---
 
