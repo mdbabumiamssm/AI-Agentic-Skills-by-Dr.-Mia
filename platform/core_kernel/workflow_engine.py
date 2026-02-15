@@ -43,7 +43,7 @@ except ImportError as e:
     SafetyOfficerAgent = None
     TrialMatchingAgent = None
 
-app = FastAPI(title="BioKernel Enterprise", version="2026.3.0-PRO")
+app = FastAPI(title="CoreKernel Enterprise", version="2026.3.0-PRO")
 
 class AgentRequest(BaseModel):
     query: str
@@ -56,7 +56,7 @@ class PatientProfile(BaseModel):
     status: str
     ecog_score: int
 
-class BioKernel:
+class CoreKernel:
     def __init__(self):
         self.miner = LiteratureMiningAgent() if LiteratureMiningAgent else None
         self.chemist = MoleculeEvolutionAgent() if MoleculeEvolutionAgent else None
@@ -97,11 +97,11 @@ class BioKernel:
         matches = self.matcher.match_patient(patient)
         return {"patient_id": patient.get("id"), "matches": matches}
 
-kernel = BioKernel()
+kernel = CoreKernel()
 
 @app.get("/")
 async def health_check():
-    return {"status": "active", "system": "BioKernel OS"}
+    return {"status": "active", "system": "CoreKernel OS"}
 
 @app.post("/v1/workflow/discovery")
 async def run_discovery(request: AgentRequest):

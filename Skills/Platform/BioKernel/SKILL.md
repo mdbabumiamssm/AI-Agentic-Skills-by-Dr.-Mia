@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -13,7 +13,7 @@
 
 ---
 name: biokernel
-description: Biomedical OS Core & MCP Server
+description: AI Agentic Platform Core & MCP Server
 keywords:
   - kernel
   - os
@@ -23,7 +23,7 @@ keywords:
 measurable_outcome: Routes 100% of API requests to correct sub-agent with <200ms latency.
 license: MIT
 metadata:
-  author: Biomedical OS Team
+  author: AI Agentic Skills Team
   version: "1.0.0"
 compatibility:
   - system: Python 3.10+
@@ -32,14 +32,14 @@ allowed-tools:
   - read_file
 ---
 
-# BioKernel
+# CoreKernel
 
-The BioKernel is the central orchestration layer of the Biomedical OS, managing context, routing tasks to specialized agents via MCP (Model Context Protocol), and handling system resources.
+The CoreKernel is the central orchestration layer of the AI Agentic Platform, managing context, routing tasks to specialized agents via MCP (Model Context Protocol), and handling system resources.
 
 ## When to Use This Skill
 
 *   **System Internal**: This is primarily a background skill for routing.
-*   When initializing the Biomedical OS environment.
+*   When initializing the AI Agentic Platform environment.
 *   When managing state across multiple agent interactions.
 
 ## Core Capabilities
@@ -50,11 +50,11 @@ The BioKernel is the central orchestration layer of the Biomedical OS, managing 
 
 ## Example Usage
 
-**User**: "Start the BioKernel server."
+**User**: "Start the CoreKernel server."
 
 **Agent Action**:
 ```bash
-python3 platform/biokernel/server.py --port 8000
+python3 platform/core_kernel/server.py --port 8000
 ```
 
 

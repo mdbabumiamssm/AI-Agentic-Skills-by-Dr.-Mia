@@ -64,7 +64,7 @@ class USDLGenerator:
                 "capabilities": capabilities,
                 "metadata": {
                     "created": "2026-01-12",
-                    "author": "BioKernel Auto-Generator"
+                    "author": "CoreKernel Auto-Generator"
                 }
             }
         }

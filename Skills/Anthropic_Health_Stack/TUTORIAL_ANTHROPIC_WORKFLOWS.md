@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -155,7 +155,7 @@ All coworkers emit structured traces for auditing:
 <decision>Final determination with rationale...</decision>
 ```
 
-## Integration with BioKernel
+## Integration with CoreKernel
 
 Register coworkers as MCP tools:
 

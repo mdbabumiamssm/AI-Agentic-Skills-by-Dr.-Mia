@@ -24,7 +24,7 @@ from pathlib import Path
 # Import Real Implementations
 try:
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from platform.biokernel.server import app, kernel
+    from platform.core_kernel.server import app, kernel
     from platform.optimizer.meta_prompter import PromptOptimizer, ModelTarget
 except ImportError as e:
     print(f"Import Error: {e}")
@@ -32,10 +32,10 @@ except ImportError as e:
     pass
 
 def serve_command(args):
-    """Start the BioKernel Runtime Server."""
+    """Start the CoreKernel Runtime Server."""
     import uvicorn
-    print(f"Starting BioKernel on port {args.port}...")
-    uvicorn.run("platform.biokernel.server:app", host="0.0.0.0", port=int(args.port), reload=True)
+    print(f"Starting CoreKernel on port {args.port}...")
+    uvicorn.run("platform.core_kernel.server:app", host="0.0.0.0", port=int(args.port), reload=True)
     return 0
 
 def optimize_command(args):
@@ -65,7 +65,7 @@ def optimize_command(args):
     return 0
 
 def run_agent_command(args):
-    """Run a specific agent via the BioKernel."""
+    """Run a specific agent via the CoreKernel."""
     # This is a CLI wrapper around the Kernel's logic
     import asyncio
     
@@ -85,7 +85,7 @@ def main():
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
 
     # serve
-    serve_parser = subparsers.add_parser('serve', help='Start BioKernel Server')
+    serve_parser = subparsers.add_parser('serve', help='Start CoreKernel Server')
     serve_parser.add_argument('--port', default='8000')
 
     # optimize

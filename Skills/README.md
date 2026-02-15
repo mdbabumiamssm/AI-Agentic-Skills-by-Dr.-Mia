@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -42,7 +42,7 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 
 ### 🔌 Model Context Protocol (MCP) & Platform
 *   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools.
-*   **BioKernel Engine:** `../platform/biokernel/workflow_engine.py` orchestrates enterprise-grade agent workflows (Mining -> Design -> Safety) via FastAPI.
+*   **CoreKernel Engine:** `../platform/core_kernel/workflow_engine.py` orchestrates enterprise-grade agent workflows (Mining -> Design -> Safety) via FastAPI.
 *   **Runtime Adapter:** `../platform/adapters/runtime_adapter.py` provides a unified execution layer, supporting intelligent mock simulations and real API calls.
 
 ### 🏥 Clinical & Operations (New!)
@@ -81,7 +81,7 @@ We have aligned this codebase with the **State of the Art (SOTA) for 2026**, int
 *   **Care Copilot:** `Consumer_Health/wearable_copilot_openai.py` + `Consumer_Health/Wearable_Analysis/health_copilot.py` translate wearable JSON into schema-validated action plans.
 *   **Clinical Ops Automator:** `Clinical/openai_clinical_ops_automator.py` emits ICD-10/CPT suggestions, SOAP notes, and prior auth packets with local JSON validation.
 *   **Lab Automation Bridge:** `Lab_Automation/openai_lab_automation_bridge.py` wraps Experiment Designer outputs in payloads.
-*   **Documentation:** See [OpenAI_Health_STACK.md](OpenAI_Health_STACK.md) for workflows, CLI usage, and BioKernel integration.
+*   **Documentation:** See [OpenAI_Health_STACK.md](OpenAI_Health_STACK.md) for workflows, CLI usage, and CoreKernel integration.
 
 ### Co-Worker Stack
 *   **Inbox Router:** `Clinical/anthropic_inbox_router.py` fans work items into coworkers via the Event Bus.

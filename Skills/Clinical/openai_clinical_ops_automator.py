@@ -32,7 +32,7 @@ class ClinicalOpsAutomator:
         self.allowed_sections = {"subjective", "objective", "assessment", "plan"}
 
     def draft_encounter_package(self, note: str, vitals: Dict[str, Any]) -> Dict[str, Any]:
-        """Main entry point consumed by BioKernel / CLI."""
+        """Main entry point consumed by CoreKernel / CLI."""
         package = {
             "generated_at": datetime.utcnow().isoformat(),
             "coding": {

@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -13,7 +13,7 @@
 
 # Video Tutorial Run Sheet & Script
 
-**Project:** Universal Biomedical Skills Platform
+**Project:** Universal AI Agentic Skills Platform
 **Total Estimated Duration:** 15-20 Minutes (Combined)
 
 ---
@@ -25,7 +25,7 @@
 |------|--------|--------|---------------------|
 | 0:00 | Face/Camera | Talking Head | "Hi, I'm [Name]. Today I'm sharing a solution to a huge problem in Biomedical AI: Fragmentation." |
 | 0:30 | Slide 1.3 | Screen | "We have Claude, Gemini, GPT-4. Rewriting skills for each is a waste of time." |
-| 1:00 | Slide 1.5 | Screen | **"Introducing the Universal Biomedical Skills Platform."** Explain the diagram: One Skill, Every LLM. |
+| 1:00 | Slide 1.5 | Screen | **"Introducing the Universal AI Agentic Skills Platform."** Explain the diagram: One Skill, Every LLM. |
 | 1:30 | Slide 1.9 | Screen | "Everything I'm showing today is Open Source. Let's dive in." |
 
 ---

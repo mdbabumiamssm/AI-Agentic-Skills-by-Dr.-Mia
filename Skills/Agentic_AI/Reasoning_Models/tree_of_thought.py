@@ -144,7 +144,7 @@ class LLMGenerator(Generator):
 
 class TreeOfThoughtSolver:
     """
-    Generic Tree of Thought solver using BioKernel Runtime.
+    Generic Tree of Thought solver using CoreKernel Runtime.
     """
     
     def __init__(
@@ -300,7 +300,7 @@ class TreeOfThoughtSolver:
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Tree of Thought Solver (BioKernel Edition)")
+    print("Tree of Thought Solver (CoreKernel Edition)")
     print("=" * 60)
     
     solver = TreeOfThoughtSolver(

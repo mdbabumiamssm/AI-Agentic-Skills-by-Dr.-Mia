@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -23,7 +23,7 @@ keywords:
 measurable_outcome: Successfully plans valid synthesis routes for 90% of target small molecules.
 license: MIT
 metadata:
-  author: Biomedical OS Team
+  author: AI Agentic Skills Team
   version: "1.0.0"
 compatibility:
   - system: Python 3.10+

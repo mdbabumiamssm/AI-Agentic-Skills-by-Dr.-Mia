@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -12,7 +12,7 @@
 -->
 
 # Video Scripts: Part 2 (Videos 4-6)
-## Universal Biomedical Skills Platform Tutorial Series
+## Universal AI Agentic Skills Platform Tutorial Series
 
 ---
 
@@ -282,7 +282,7 @@ tests:
 
 > **Portability** - Same skill, same results, any platform.
 
-> In the next video, I'll show you the complete platform prototype SDK - including the BioKernel runtime and the AI-powered optimizer.
+> In the next video, I'll show you the complete platform prototype SDK - including the CoreKernel runtime and the AI-powered optimizer.
 
 > The USDL specification is in the platform_prototype/schema folder if you want to explore it further.
 
@@ -382,7 +382,7 @@ python cli.py optimize examples/single_cell_qc.yaml --platform gemini
 python cli.py test examples/single_cell_qc.yaml
 ```
 
-> **serve** - Start the BioKernel runtime
+> **serve** - Start the CoreKernel runtime
 
 ```bash
 python cli.py serve
@@ -402,7 +402,7 @@ python cli.py compare examples/single_cell_qc.yaml
 **[VISUAL: Open biokernel/server.py]**
 
 **SCRIPT:**
-> "BioKernel is the unified runtime that powers everything. Let me show you what makes it special.
+> "CoreKernel is the unified runtime that powers everything. Let me show you what makes it special.
 
 ```bash
 cat biokernel/server.py
@@ -410,11 +410,11 @@ cat biokernel/server.py
 
 **[VISUAL: Show key sections of code]**
 
-> "BioKernel does three things:
+> "CoreKernel does three things:
 
 **[VISUAL: Diagram - Intelligent Routing]**
 
-> "First: **Intelligent Routing**. Not all tasks need the most powerful model. BioKernel analyzes each request and routes it optimally.
+> "First: **Intelligent Routing**. Not all tasks need the most powerful model. CoreKernel analyzes each request and routes it optimally.
 
 ```python
 # Routing logic (simplified)
@@ -432,7 +432,7 @@ else:
 
 **[VISUAL: Show code execution capability]**
 
-> "Second: **Code Execution**. BioKernel can execute Python, R, and shell commands in a sandboxed environment.
+> "Second: **Code Execution**. CoreKernel can execute Python, R, and shell commands in a sandboxed environment.
 
 ```python
 # Execute skill code
@@ -447,7 +447,7 @@ result = biokernel.execute(
 
 **[VISUAL: Show API endpoints]**
 
-> "Third: **Dual API Support**. BioKernel exposes both MCP-compatible and OpenAI-compatible endpoints.
+> "Third: **Dual API Support**. CoreKernel exposes both MCP-compatible and OpenAI-compatible endpoints.
 
 ```
 POST /mcp/tools        # MCP format
@@ -464,7 +464,7 @@ python biokernel/server.py
 
 **[VISUAL: Show server starting]**
 
-> "BioKernel is now running on localhost:8080, ready to handle skill requests."
+> "CoreKernel is now running on localhost:8080, ready to handle skill requests."
 
 ---
 
@@ -614,7 +614,7 @@ python cli.py test my_new_skill.yaml
 > "The Platform Prototype SDK gives you:
 
 > - **CLI** for all operations
-> - **BioKernel** for intelligent routing and execution
+> - **CoreKernel** for intelligent routing and execution
 > - **Optimizer** for AI-powered prompt tuning
 > - **Evaluator** for cross-platform testing
 
@@ -643,7 +643,7 @@ python cli.py test my_new_skill.yaml
 **SCRIPT:**
 > "We've covered the platform and the architecture. Now let's look at what you can actually do with it.
 
-> The Universal Biomedical Skills Platform includes six production-ready skills across three domains:
+> The Universal AI Agentic Skills Platform includes six production-ready skills across three domains:
 
 > - Clinical Informatics
 > - Genomics
@@ -1054,7 +1054,7 @@ Recommendation: CANDIDATE-001 suggested for docking studies.
 
 > And this is just the beginning. The library is designed to grow. In Video 8, I'll show you how to contribute your own skills.
 
-> In the next video, I'll present the research paper that formalizes this work - the science behind Universal Biomedical Skills.
+> In the next video, I'll present the research paper that formalizes this work - the science behind Universal AI Agentic Skills.
 
 > All skills are in the Skills folder on GitHub.
 

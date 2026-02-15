@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -13,7 +13,7 @@
 
 # Test & Demonstration Suite
 
-**Purpose:** Validation and demonstration of Universal Biomedical Skills
+**Purpose:** Validation and demonstration of Universal AI Agentic Skills
 
 ---
 

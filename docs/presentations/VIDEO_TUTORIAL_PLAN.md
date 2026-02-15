@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -11,10 +11,10 @@
 
 -->
 
-# Universal Biomedical Skills - Video Tutorial Production Plan
+# Universal AI Agentic Skills - Video Tutorial Production Plan
 
 ## 1. Executive Summary
-This document outlines the production strategy for a comprehensive video tutorial series (or single long-form walkthrough) showcasing the **Universal Biomedical Skills Platform**. The goal is to demonstrate novelty, technical robustness (live demo), and community value (GitHub sharing).
+This document outlines the production strategy for a comprehensive video tutorial series (or single long-form walkthrough) showcasing the **Universal AI Agentic Skills Platform**. The goal is to demonstrate novelty, technical robustness (live demo), and community value (GitHub sharing).
 
 **Target Audience:** Researchers, Bioinformaticians, and LLM Developers.
 **Key Message:** "Write once, deploy everywhere" - a unified standard for biomedical AI.
@@ -28,7 +28,7 @@ This document outlines the production strategy for a comprehensive video tutoria
 
 ### Core Narrative Arc
 1.  **The Hook:** The problem of platform fragmentation.
-2.  **The Solution:** USDL & BioKernel.
+2.  **The Solution:** USDL & CoreKernel.
 3.  **The Proof:** Live demo on real data (scRNA-seq).
 4.  **The Depth:** Research paper & validation.
 5.  **The Ask:** Contribute on GitHub.

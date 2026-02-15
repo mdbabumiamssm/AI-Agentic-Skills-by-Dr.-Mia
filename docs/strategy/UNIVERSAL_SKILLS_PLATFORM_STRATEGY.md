@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -66,7 +66,7 @@ skill:
   category: "genomics/single_cell"
 
   metadata:
-    author: "Universal Biomedical Skills"
+    author: "Universal AI Agentic Skills"
     license: "MIT"
     tags: ["scRNA-seq", "QC", "scanpy", "bioinformatics"]
     citations: ["doi:10.1038/s41592-021-01102-w"]

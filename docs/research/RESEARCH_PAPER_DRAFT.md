@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -20,7 +20,7 @@
 
 ## Abstract
 
-The rapid proliferation of Large Language Models (LLMs) such as Claude 3.5, GPT-4o, and Gemini 1.5 Pro has created a fragmentation challenge in biomedical software development. Currently, specialized "skills" or "agents"—such as those for clinical note summarization, genomic quality control, or drug discovery—must be re-implemented for each platform's unique API and prompt format. We present the **Universal Biomedical Skills Platform**, a novel framework introducing the **Universal Skill Definition Language (USDL)**. USDL allows researchers to define biomedical AI capabilities once in a standardized schema, which our **BioKernel** engine then automatically adapts to the optimal runtime environment (MCP, OpenAI Assistants, or Gemini Tools). We validate this framework using a suite of six production-ready skills, demonstrating 94% semantic consistency across platforms while reducing development time by approx. 70%.
+The rapid proliferation of Large Language Models (LLMs) such as Claude 3.5, GPT-4o, and Gemini 1.5 Pro has created a fragmentation challenge in biomedical software development. Currently, specialized "skills" or "agents"—such as those for clinical note summarization, genomic quality control, or drug discovery—must be re-implemented for each platform's unique API and prompt format. We present the **Universal AI Agentic Skills Platform**, a novel framework introducing the **Universal Skill Definition Language (USDL)**. USDL allows researchers to define biomedical AI capabilities once in a standardized schema, which our **CoreKernel** engine then automatically adapts to the optimal runtime environment (MCP, OpenAI Assistants, or Gemini Tools). We validate this framework using a suite of six production-ready skills, demonstrating 94% semantic consistency across platforms while reducing development time by approx. 70%.
 
 ## 1. Introduction
 
@@ -45,9 +45,9 @@ USDL is a YAML-based specification that separates *intent* from *implementation*
 *   **Prompts:** Platform-neutral instruction templates.
 *   **Tools:** Bindings to executable Python code or external APIs.
 
-### 2.2 The BioKernel Runtime
+### 2.2 The CoreKernel Runtime
 
-The BioKernel acts as the orchestration layer. It performs three functions:
+The CoreKernel acts as the orchestration layer. It performs three functions:
 1.  **Validation:** Ensures skills adhere to the USDL schema.
 2.  **Transpilation:** Converts USDL into platform-specific artifacts (e.g., `manifest.json` for MCP, `actions.json` for GPTs).
 3.  **Routing:** (In active runtime mode) Directs queries to the most cost-effective or capable model based on task complexity.
@@ -93,7 +93,7 @@ In all cases, the underlying Python code (`qc_core.py`) remains identical, ensur
 
 ## 5. Discussion
 
-The Universal Biomedical Skills Platform represents a step towards "Model-Independent Science." By treating LLMs as interchangeable inference engines rather than walled gardens, we empower researchers to focus on biological questions rather than prompt engineering quirks. Future work includes expanding USDL to support multi-agent orchestrations and local model deployment (Llama 3).
+The Universal AI Agentic Skills Platform represents a step towards "Model-Independent Science." By treating LLMs as interchangeable inference engines rather than walled gardens, we empower researchers to focus on biological questions rather than prompt engineering quirks. Future work includes expanding USDL to support multi-agent orchestrations and local model deployment (Llama 3).
 
 ## 6. Conclusion
 

@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -12,12 +12,12 @@
 -->
 
 # Video Scripts: Part 1 (Videos 1-3)
-## Universal Biomedical Skills Platform Tutorial Series
+## Universal AI Agentic Skills Platform Tutorial Series
 
 ---
 
 # VIDEO 1: Introduction & Vision
-## "Universal Biomedical Skills: One Skill, Every LLM"
+## "Universal AI Agentic Skills: One Skill, Every LLM"
 ### Duration: 8-10 minutes
 
 ---
@@ -30,7 +30,7 @@
 
 > No more rewriting prompts. No more platform lock-in. No more duplicated effort.
 
-> Welcome to the Universal Biomedical Skills Platform."
+> Welcome to the Universal AI Agentic Skills Platform."
 
 **[VISUAL: Animated logo reveal]**
 
@@ -66,7 +66,7 @@
 **[VISUAL: Architecture diagram animation]**
 
 **SCRIPT:**
-> "Today, I'm introducing our solution: the Universal Biomedical Skills Platform.
+> "Today, I'm introducing our solution: the Universal AI Agentic Skills Platform.
 
 > The core idea is simple but powerful: **Write your skill once in a universal format, and our platform automatically converts it for any LLM.**
 
@@ -84,7 +84,7 @@
 
 > "But we didn't stop there. We also built:
 
-> **BioKernel** - a runtime that intelligently routes requests to the optimal LLM. Simple tasks go to fast, cheap models. Complex reasoning goes to powerful models. You don't have to manage this manually.
+> **CoreKernel** - a runtime that intelligently routes requests to the optimal LLM. Simple tasks go to fast, cheap models. Complex reasoning goes to powerful models. You don't have to manage this manually.
 
 > **An Optimizer** - that uses AI to tune your prompts for each platform automatically.
 
@@ -279,7 +279,7 @@ ls test_demonstration/
 ls platform_prototype/
 ```
 
-> "Adapters for different platforms, the BioKernel runtime, the USDL schema, and more. We'll cover this in detail in Video 5.
+> "Adapters for different platforms, the CoreKernel runtime, the USDL schema, and more. We'll cover this in detail in Video 5.
 
 **[VISUAL: Highlight documentation files]**
 
@@ -616,7 +616,7 @@ ls -la qc_results/
 > I demonstrated with Claude, but the same USDL skill definition can be converted to:
 > - OpenAI's GPT-4
 > - Google's Gemini
-> - A local LLM through our BioKernel
+> - A local LLM through our CoreKernel
 
 > The prompts adapt. The output format adjusts. But the science stays the same.
 

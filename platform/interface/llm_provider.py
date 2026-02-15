@@ -15,7 +15,7 @@ from platform.schema.io_types import LLMRequest, LLMResponse
 class LLMProvider(ABC):
     """
     Abstract Base Class for all LLM providers (Gemini, OpenAI, Anthropic, Local).
-    Enforces a standardized interface for the BioKernel.
+    Enforces a standardized interface for the CoreKernel.
     """
 
     @abstractmethod

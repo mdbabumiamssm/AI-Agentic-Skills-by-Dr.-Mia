@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -12,7 +12,7 @@
 -->
 
 # Recording Checklist & Cue Cards
-## Universal Biomedical Skills Video Tutorial Series
+## Universal AI Agentic Skills Video Tutorial Series
 
 ---
 
@@ -114,7 +114,7 @@ and have it work on Claude, ChatGPT, Gemini, AND your local LLM?"
 
 #### Key Points to Hit
 1. The fragmentation problem (4-8 hours to rewrite skills)
-2. Three innovations: USDL, Adapters, BioKernel
+2. Three innovations: USDL, Adapters, CoreKernel
 3. Demo teaser (show QC plots briefly)
 4. Six skills across three domains
 5. Call to action: GitHub URL
@@ -258,13 +258,13 @@ python cli.py validate examples/single_cell_qc.yaml
 # Build
 python cli.py build --platform claude examples/single_cell_qc.yaml
 
-# Show BioKernel
+# Show CoreKernel
 cat biokernel/server.py | head -40
 ```
 
 #### Key Points to Hit
 1. Six CLI commands: validate, build, optimize, test, serve, compare
-2. BioKernel: intelligent routing, code execution, dual API
+2. CoreKernel: intelligent routing, code execution, dual API
 3. Optimizer: AI-powered prompt tuning
 4. Evaluator: cross-platform testing
 5. Creating a new skill from template
@@ -306,7 +306,7 @@ And the collection is growing. Contributions welcome!"
 #### Key Sections
 1. Abstract (2 min)
 2. Problem statement (2 min)
-3. Methods: USDL, Adapters, BioKernel (3 min)
+3. Methods: USDL, Adapters, CoreKernel (3 min)
 4. Results: cross-platform validation (3 min)
 5. Discussion: implications, limitations (2 min)
 6. Conclusion (1 min)
@@ -399,7 +399,7 @@ See you on GitHub."
 - [ ] Add captions (recommended)
 
 ### Upload
-- [ ] Write title (include "Universal Biomedical Skills")
+- [ ] Write title (include "Universal AI Agentic Skills")
 - [ ] Write description with timestamps
 - [ ] Add tags: bioinformatics, AI, LLM, scRNA-seq, etc.
 - [ ] Create custom thumbnail

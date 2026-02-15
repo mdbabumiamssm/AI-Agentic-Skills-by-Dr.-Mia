@@ -1,4 +1,4 @@
-# Universal AI Agentic Skills & Bio-OS (2026)
+# Universal AI Agentic Skills & Agentic OS (2026)
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![Architecture](https://img.shields.io/badge/Architecture-Universal%20Agentic%20OS-blueviolet)
@@ -7,7 +7,7 @@
 
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -69,9 +69,9 @@ We have organized 600+ skills into specialized domains targeting the most critic
 
 ---
 
-## 🌟 Architecture: The "Bio-OS" Kernel
+## 🌟 Architecture: The "Agentic OS" Kernel
 
-At the heart of this system is the **BioKernel**, a high-performance runtime environment.
+At the heart of this system is the **CoreKernel**, a high-performance runtime environment.
 
 *   **Workflow Abstraction Layer (WAL):** A plugin-based system that allows you to swap the "brain" of the agent. 
     *   *Need Speed?* Use **Gemini 2.0 Flash**.
@@ -113,7 +113,7 @@ provider:
 Initialize the kernel to load the 600+ skills into active memory.
 
 ```bash
-python3 platform/biokernel/server.py
+python3 platform/core_kernel/server.py
 ```
 
 ### 3. Command Your Army

@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -49,7 +49,7 @@ Deploy and operate the BioMCP server so MCP-compatible clients (Claude Desktop, 
 ## Deployment Workflow
 1. **Install deps:** `cd repo && uv sync` (preferred) or `pip install .`.
 2. **Run server:** `python -m biomcp.server` or `make run`; Docker Compose provided.
-3. **Configure client:** Add command/args snippet from `README.md` into MCP client config (Claude Desktop, BioKernel, etc.).
+3. **Configure client:** Add command/args snippet from `README.md` into MCP client config (Claude Desktop, CoreKernel, etc.).
 4. **Test tools:** Invoke PubMed + ClinicalTrials + variant endpoints to ensure connectivity.
 5. **Monitor:** Capture logs, rate-limit statuses, and data-source versions for audit.
 

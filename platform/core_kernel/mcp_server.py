@@ -18,7 +18,7 @@ import os
 # Add project root to path to import server
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from platform.biokernel.server import kernel, AgentRequest
+from platform.core_kernel.server import kernel, AgentRequest
 from platform.optimizer.usdl_transpiler import USDLTranspiler, USDLSpec, Provider
 
 # Setup logging (stderr so it doesn't break JSON-RPC on stdout)
@@ -29,7 +29,7 @@ class MCPServer:
     def __init__(self):
         self.kernel = kernel
         self.transpiler = USDLTranspiler()
-        self.name = "biokernel-enterprise"
+        self.name = "corekernel-enterprise"
         self.version = "2026.3.0"
 
     async def handle_message(self, message: Dict[str, Any]):
@@ -61,8 +61,8 @@ class MCPServer:
             tools = []
             # Tool 1: Execute Agent
             tools.append({
-                "name": "run_bio_agent",
-                "description": "Executes a biomedical agent skill (e.g., Clinical Trial Matcher, CRISPR Designer).",
+                "name": "run_agent",
+                "description": "Executes an AI agent skill (e.g., Clinical Trial Matcher, CRISPR Designer).",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -105,7 +105,7 @@ class MCPServer:
             name = params.get("name")
             args = params.get("arguments", {})
 
-            if name == "run_bio_agent":
+            if name == "run_agent":
                 query = args.get("query")
                 skill_id = args.get("skill_id")
                 
@@ -208,7 +208,7 @@ class MCPServer:
         await asyncio.get_running_loop().connect_read_pipe(lambda: protocol, sys.stdin)
         w_transport, w_protocol = await asyncio.get_running_loop().connect_write_pipe(asyncio.BaseProtocol, sys.stdout)
 
-        logger.info("BioKernel MCP Server running on stdio...")
+        logger.info("CoreKernel MCP Server running on stdio...")
         
         while True:
             try:

@@ -12,7 +12,7 @@ import time
 import random
 
 # Simple CLI Dashboard to visualize the "Wild West" Ecosystem
-# Simulates a Frontend application connecting to BioKernel
+# Simulates a Frontend application connecting to CoreKernel
 
 def main():
     print("\n" + "="*50)

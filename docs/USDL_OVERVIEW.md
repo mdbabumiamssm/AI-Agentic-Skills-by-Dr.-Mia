@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -34,7 +34,7 @@ USDL is the canonical, model-agnostic schema for defining a biomedical agent. A 
    openai_payload = bridge.compile(spec, Provider.OPENAI)
    anthropic_payload = bridge.compile(spec, Provider.ANTHROPIC)
    ```
-3. Wire the provider payloads into BioKernel router profiles so the same skill runs on any LLM.
+3. Wire the provider payloads into CoreKernel router profiles so the same skill runs on any LLM.
 
 ## Benefits
 

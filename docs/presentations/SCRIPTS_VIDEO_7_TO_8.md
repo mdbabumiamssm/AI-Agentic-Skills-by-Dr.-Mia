@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -12,12 +12,12 @@
 -->
 
 # Video Scripts: Part 3 (Videos 7-8)
-## Universal Biomedical Skills Platform Tutorial Series
+## Universal AI Agentic Skills Platform Tutorial Series
 
 ---
 
 # VIDEO 7: Research Paper Presentation
-## "The Science Behind Universal Biomedical Skills"
+## "The Science Behind Universal AI Agentic Skills"
 ### Duration: 12-15 minutes
 
 ---
@@ -30,11 +30,11 @@
 
 > In this video, I'll present our work as a research paper - the motivation, methods, results, and implications for the field.
 
-> This is the science behind Universal Biomedical Skills."
+> This is the science behind Universal AI Agentic Skills."
 
 **[VISUAL: Paper title card]**
 
-> "**Universal Biomedical Skills: A Platform-Agnostic Framework for Deploying AI Assistants Across Multiple Large Language Models**"
+> "**Universal AI Agentic Skills: A Platform-Agnostic Framework for Deploying AI Assistants Across Multiple Large Language Models**"
 
 ---
 
@@ -46,7 +46,7 @@
 
 > **Background:** The rapid proliferation of large language models has created a fragmented ecosystem for biomedical AI applications. Researchers and clinicians who develop AI-assisted workflows face a significant challenge: skills developed for one platform cannot be easily transferred to another, leading to duplicated effort and platform lock-in.
 
-> **Methods:** We present the Universal Biomedical Skills Platform, featuring USDL (Universal Skill Definition Language), a standardized schema for defining biomedical AI skills; platform-specific adapters for automatic conversion to Claude, GPT, Gemini, and local models; and BioKernel, an intelligent runtime for optimal model routing.
+> **Methods:** We present the Universal AI Agentic Skills Platform, featuring USDL (Universal Skill Definition Language), a standardized schema for defining biomedical AI skills; platform-specific adapters for automatic conversion to Claude, GPT, Gemini, and local models; and CoreKernel, an intelligent runtime for optimal model routing.
 
 > **Results:** We demonstrate six production-ready skills across clinical informatics, genomics, and drug discovery domains. Cross-platform validation shows consistent performance with accuracy differences under 5% across all tested platforms.
 
@@ -97,7 +97,7 @@
 **SCRIPT:**
 > "Section two: Methods.
 
-> Our approach centers on three innovations: USDL, the adapter system, and BioKernel.
+> Our approach centers on three innovations: USDL, the adapter system, and CoreKernel.
 
 **[VISUAL: USDL schema structure]**
 
@@ -157,11 +157,11 @@
 
 > Critically, adapters preserve semantic equivalence while optimizing for platform conventions.
 
-**[VISUAL: BioKernel architecture]**
+**[VISUAL: CoreKernel architecture]**
 
-> "**BioKernel Runtime**
+> "**CoreKernel Runtime**
 
-> BioKernel serves as the execution layer, providing:
+> CoreKernel serves as the execution layer, providing:
 
 > 1. **Intelligent Routing** - Task analysis determines optimal model selection
 > 2. **Code Execution** - Sandboxed Python/R execution for computational skills
@@ -296,7 +296,7 @@ AgentD Pipeline      88.4%    85.9%     82.3%
 **SCRIPT:**
 > "Section five: Conclusion.
 
-> The Universal Biomedical Skills Platform represents a step toward a more unified biomedical AI ecosystem. By abstracting platform-specific details behind a standardized interface, we enable researchers and clinicians to focus on what matters: the science.
+> The Universal AI Agentic Skills Platform represents a step toward a more unified biomedical AI ecosystem. By abstracting platform-specific details behind a standardized interface, we enable researchers and clinicians to focus on what matters: the science.
 
 **[VISUAL: Impact statement]**
 
@@ -347,7 +347,7 @@ AgentD Pipeline      88.4%    85.9%     82.3%
 **[VISUAL: GitHub community illustration]**
 
 **SCRIPT:**
-> "Welcome to the final video in this series. I've shown you what the Universal Biomedical Skills Platform can do. Now I want to show you how you can be part of it.
+> "Welcome to the final video in this series. I've shown you what the Universal AI Agentic Skills Platform can do. Now I want to show you how you can be part of it.
 
 > This project is open source, and it's built for community contribution. Whether you want to use existing skills, create new ones, or improve the platform itself - there's a place for you."
 
@@ -555,7 +555,7 @@ python platform_prototype/cli.py validate Skills/YourDomain/your_skill.yaml
 
 > "**Code Improvements**
 > - Add platform adapters for new LLMs
-> - Improve BioKernel performance
+> - Improve CoreKernel performance
 > - Enhance the CLI tool
 > - Add visualization features
 
@@ -634,7 +634,7 @@ python platform_prototype/cli.py validate Skills/YourDomain/your_skill.yaml
 
 > Together, we can build something that truly serves the research community.
 
-> I'm [Your Name], and this has been the Universal Biomedical Skills Platform tutorial series.
+> I'm [Your Name], and this has been the Universal AI Agentic Skills Platform tutorial series.
 
 > See you on GitHub."
 
@@ -703,7 +703,7 @@ Use these throughout the videos for impact:
 Define these when first used:
 
 - **USDL** - Universal Skill Definition Language
-- **BioKernel** - Unified runtime for skill execution
+- **CoreKernel** - Unified runtime for skill execution
 - **MAD** - Median Absolute Deviation (statistical method)
 - **scRNA-seq** - Single-cell RNA sequencing
 - **MCP** - Model Context Protocol (Claude's tool format)

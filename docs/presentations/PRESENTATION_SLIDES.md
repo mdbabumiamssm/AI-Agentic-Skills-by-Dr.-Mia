@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -12,7 +12,7 @@
 -->
 
 # Presentation Slides
-## Universal Biomedical Skills Platform
+## Universal AI Agentic Skills Platform
 ### Slide-by-Slide Content for All Videos
 
 ---
@@ -265,7 +265,7 @@ Coming up: Repository Tour →
 GITHUB REPOSITORY TOUR
 ━━━━━━━━━━━━━━━━━━━━━━
 
-Navigating the Universal Biomedical Skills Platform
+Navigating the Universal AI Agentic Skills Platform
 
 [GITHUB ICON + FOLDER ICON]
 
@@ -842,7 +842,7 @@ validate    ✓  Check skill against USDL schema
 build       →  Generate platform-specific artifacts
 optimize    ★  AI-tune prompts for platforms
 test        ◉  Run evaluation suite
-serve       ▶  Start BioKernel runtime
+serve       ▶  Start CoreKernel runtime
 compare     ≡  Cross-platform performance comparison
 
 [EXAMPLE]
@@ -851,7 +851,7 @@ python cli.py build --platform claude examples/skill.yaml
 
 ---
 
-## SLIDE 5.4 - BioKernel Architecture
+## SLIDE 5.4 - CoreKernel Architecture
 
 ```
 BIOKERNEL: INTELLIGENT RUNTIME
@@ -892,7 +892,7 @@ Task Type            | Routed To      | Why
 ---------------------|----------------|-------------------
 Simple lookup        | Gemini Flash   | Fast, low cost
 Complex reasoning    | Claude Opus    | Best reasoning
-Code execution       | BioKernel      | Sandboxed runtime
+Code execution       | CoreKernel      | Sandboxed runtime
 Multi-step pipeline  | Claude Sonnet  | Good balance
 Privacy-sensitive    | Local model    | No data leaves
 
@@ -1479,7 +1479,7 @@ KEY CONTRIBUTIONS:
 JOIN THE COMMUNITY
 ━━━━━━━━━━━━━━━━━━
 
-Contributing to Universal Biomedical Skills
+Contributing to Universal AI Agentic Skills
 
 [COMMUNITY ICON: Multiple people]
 
@@ -1590,7 +1590,7 @@ OTHER WAYS TO CONTRIBUTE
 │     CODE       │    TESTING     │
 │ [Code Icon]    │ [Test Icon]    │
 │ New adapters   │ Validate skills│
-│ BioKernel perf │ on platforms   │
+│ CoreKernel perf │ on platforms   │
 ├────────────────┼────────────────┤
 │    IDEAS       │    OUTREACH    │
 │ [Bulb Icon]    │ [Share Icon]   │
@@ -1660,7 +1660,7 @@ THANK YOU
 
 [CENTERED]
 
-Universal Biomedical Skills Platform
+Universal AI Agentic Skills Platform
 
 Making biomedical AI accessible to everyone,
 regardless of platform choice.
@@ -1715,7 +1715,7 @@ Watch all videos: [YouTube Playlist URL]
 ## Diagrams to Create
 - USDL architecture flow
 - Adapter conversion diagram
-- BioKernel routing flowchart
+- CoreKernel routing flowchart
 - Skill pipeline visualizations
 
 ## Screenshots to Capture

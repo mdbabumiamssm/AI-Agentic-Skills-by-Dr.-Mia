@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -13,7 +13,7 @@
 
 # Anthropic Health & Life Sciences Stack (2026)
 
-**Focus:** Operationalizing Anthropic's "Claude for Healthcare" vision inside the Universal Biomedical Skills Platform. This stack emphasizes asynchronous coworker agents, MCP-native tooling, and regulatory-grade audit trails.
+**Focus:** Operationalizing Anthropic's "Claude for Healthcare" vision inside the Universal AI Agentic Skills Platform. This stack emphasizes asynchronous coworker agents, MCP-native tooling, and regulatory-grade audit trails.
 
 Based on: [Anthropic Healthcare & Life Sciences Announcement](https://www.anthropic.com/news/healthcare-life-sciences)
 
@@ -78,7 +78,7 @@ python3 Skills/Clinical/Prior_Authorization/anthropic_coworker.py examples/mri_c
 python3 Skills/Clinical/anthropic_inbox_router.py examples/inbox.json
 ```
 
-Each module prints the structured payload using Claude's XML-style tags (`<thinking>`, `<analysis>`, `<decision>`) along with JSON representations for BioKernel integration.
+Each module prints the structured payload using Claude's XML-style tags (`<thinking>`, `<analysis>`, `<decision>`) along with JSON representations for CoreKernel integration.
 
 ## Integration Notes
 

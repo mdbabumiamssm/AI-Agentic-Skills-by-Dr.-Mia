@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -54,17 +54,17 @@ We cannot claim a skill is "optimized" without metrics.
 
 ---
 
-## 2. The Universal Runtime ("BioKernel")
+## 2. The Universal Runtime ("CoreKernel")
 
-Static files (JSON/YAML) are hard to manage for end-users. We propose a lightweight local server, **BioKernel**.
+Static files (JSON/YAML) are hard to manage for end-users. We propose a lightweight local server, **CoreKernel**.
 
 *   **Architecture**: A Python/Rust local server that implements the **Model Context Protocol (MCP)** and **OpenAI API** natively.
 *   **Dynamic Routing**:
     *   User asks: "Analyze this DNA sequence."
-    *   BioKernel Config: "Routing Strategy = Cost/Performance Hybrid"
-    *   BioKernel Decision: "This is a complex reasoning task -> Route to **Claude 3.5 Sonnet**."
+    *   CoreKernel Config: "Routing Strategy = Cost/Performance Hybrid"
+    *   CoreKernel Decision: "This is a complex reasoning task -> Route to **Claude 3.5 Sonnet**."
     *   *Next Request*: "Summarize this short abstract."
-    *   BioKernel Decision: "This is a simple summary -> Route to **Gemini Flash** (Cheaper/Faster)."
+    *   CoreKernel Decision: "This is a simple summary -> Route to **Gemini Flash** (Cheaper/Faster)."
 *   **Benefit**: The user installs *one* piece of software. They don't need to manually upload files to OpenAI or Claude. The Kernel handles the connections.
 
 ---
@@ -81,10 +81,10 @@ Static files (JSON/YAML) are hard to manage for end-users. We propose a lightwei
 *   [ ] Build `bioskills test` runner.
 *   [ ] Generate HTML reports comparing model performance per skill.
 
-### Phase 3: The BioKernel Runtime (Month 4-6)
+### Phase 3: The CoreKernel Runtime (Month 4-6)
 *   [ ] Build a local MCP server that can load *any* USDL skill.
 *   [ ] Implement the "Router" logic.
-*   [ ] Expose a unified API (OpenAI-compatible) so other apps can use BioKernel.
+*   [ ] Expose a unified API (OpenAI-compatible) so other apps can use CoreKernel.
 
 ---
 
@@ -92,7 +92,7 @@ Static files (JSON/YAML) are hard to manage for end-users. We propose a lightwei
 
 ```mermaid
 graph TD
-    User[User / Client App] -->|Unified API / MCP| Kernel[BioKernel Runtime]
+    User[User / Client App] -->|Unified API / MCP| Kernel[CoreKernel Runtime]
     
     subgraph "The Intelligence Layer"
         Kernel -->|Route| Router[Model Router]

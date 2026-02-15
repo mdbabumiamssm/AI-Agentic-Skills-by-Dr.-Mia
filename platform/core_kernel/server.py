@@ -30,7 +30,7 @@ except ImportError:
 from platform.adapters.factory import LLMFactory
 from platform.schema.io_types import LLMRequest, LLMResponse
 
-app = FastAPI(title="BioKernel Enterprise", version="2026.3.0-PRO")
+app = FastAPI(title="CoreKernel Enterprise", version="2026.3.0-PRO")
 
 class AgentRequest(BaseModel):
     query: str
@@ -43,7 +43,7 @@ class AgentResponse(BaseModel):
     execution_time: float
     model_used: str
 
-class BioKernel:
+class CoreKernel:
     def __init__(self):
         self.skills_registry = {}
         self.medprompt = MedPromptEngine() if MedPromptEngine else None
@@ -57,10 +57,10 @@ class BioKernel:
         
         # Try to load primary provider, fallback to local if key missing
         if self.provider_config["api_key"]:
-            print("🔌 [BioKernel] Loading Primary Provider: Gemini")
+            print("🔌 [CoreKernel] Loading Primary Provider: Gemini")
             self.llm = LLMFactory.create_provider("gemini", self.provider_config)
         else:
-            print("🔌 [BioKernel] Loading Fallback Provider: Local (No API Key found)")
+            print("🔌 [CoreKernel] Loading Fallback Provider: Local (No API Key found)")
             self.llm = LLMFactory.create_provider("local", {})
 
         self._discover_skills()
@@ -74,7 +74,7 @@ class BioKernel:
         if not os.path.exists(base_dir):
             return
 
-        print(f"🚀 [BioKernel] Scanning {base_dir} for active agents...")
+        print(f"🚀 [CoreKernel] Scanning {base_dir} for active agents...")
         for root, _, files in os.walk(base_dir):
             for file in files:
                 if file.endswith("_agent.py") or file == "agent.py":
@@ -94,7 +94,7 @@ class BioKernel:
         Antigravity Mode: Scans for SKILL.md files.
         """
         search_dirs = ["skill collections/Antigravity_Skills", "Skills"]
-        print(f"🚀 [BioKernel] Scanning for Antigravity SKILL.md files...")
+        print(f"🚀 [CoreKernel] Scanning for Antigravity SKILL.md files...")
         
         for base_dir in search_dirs:
             if not os.path.exists(base_dir):
@@ -138,7 +138,7 @@ class BioKernel:
         query_lower = request.query.lower()
         
         if bus:
-            await bus.publish("kernel_routing", {"query": request.query}, "BioKernel")
+            await bus.publish("kernel_routing", {"query": request.query}, "CoreKernel")
 
         # 1. Check Antigravity Skills first (Direct Match)
         for skill_id, meta in self.skills_registry.items():
@@ -165,7 +165,7 @@ class BioKernel:
         
         # 1. MedPrompt Injection for Clinical Queries
         if self.medprompt and ("patient" in query.lower() or "diagnosis" in query.lower()):
-            print("  ⚕️ [BioKernel] Injecting MedPrompt Strategy...")
+            print("  ⚕️ [CoreKernel] Injecting MedPrompt Strategy...")
             query = self.medprompt.generate_prompt(query)
 
         response_text = ""
@@ -182,7 +182,7 @@ class BioKernel:
             {"name": "molecule_generator", "description": "Generate small molecules for a target"}
         ]
 
-        print(f"  🧠 [BioKernel] Reasoning via WAL...")
+        print(f"  🧠 [CoreKernel] Reasoning via WAL...")
         
         # If it's an Antigravity skill, we pass its instructions to the Provider
         if skill_meta and skill_meta.get("type") == "antigravity":
@@ -210,7 +210,7 @@ class BioKernel:
                 "skill": skill_id, 
                 "status": "success",
                 "duration": time.time() - start_time
-            }, "BioKernel")
+            }, "CoreKernel")
 
         return AgentResponse(
             response=response_text,
@@ -219,7 +219,7 @@ class BioKernel:
             model_used=model_used
         )
 
-kernel = BioKernel()
+kernel = CoreKernel()
 
 @app.post("/v1/agent/run", response_model=AgentResponse)
 async def run_agent(request: AgentRequest):

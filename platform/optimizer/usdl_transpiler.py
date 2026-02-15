@@ -52,7 +52,7 @@ class USDLSpec:
             inputs=[FieldSpec(**field) for field in payload.get("inputs", [])],
             outputs=[FieldSpec(**field) for field in payload.get("outputs", [])],
             safety_checks=payload.get("safety_checks", []),
-            audit_policy=payload.get("audit_policy", "Log decisions to BioKernel event bus."),
+            audit_policy=payload.get("audit_policy", "Log decisions to CoreKernel event bus."),
             instructions_body=payload.get("instructions_body", "")
         )
 

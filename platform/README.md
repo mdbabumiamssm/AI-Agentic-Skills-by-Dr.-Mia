@@ -1,6 +1,6 @@
 <!--
 # COPYRIGHT NOTICE
-# This file is part of the "Universal Biomedical Skills" project.
+# This file is part of the "Universal AI Agentic Skills" project.
 # Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
 # All Rights Reserved.
 #
@@ -11,7 +11,7 @@
 
 -->
 
-# Universal Biomedical Skills Platform - Prototype
+# Universal AI Agentic Skills Platform - Prototype
 
 This directory contains the prototype implementation for a **platform-agnostic biomedical skills system** that can deploy to Claude, ChatGPT, Gemini, and other LLMs.
 
@@ -99,14 +99,14 @@ The Universal Skill Definition Language (USDL) provides:
 
 ## Development Roadmap
 
-See [STRATEGY_IMPROVEMENT_PLAN.md](STRATEGY_IMPROVEMENT_PLAN.md) for the evolved strategy focusing on **AI-driven Optimization**, **Evaluation Loops**, and the **BioKernel Runtime**.
+See [STRATEGY_IMPROVEMENT_PLAN.md](STRATEGY_IMPROVEMENT_PLAN.md) for the evolved strategy focusing on **AI-driven Optimization**, **Evaluation Loops**, and the **CoreKernel Runtime**.
 
 - [x] USDL Schema v1.0
 - [x] Claude Adapter
 - [x] OpenAI Adapter
 - [ ] **Prompt Optimizer (Meta-Prompter)**
 - [ ] **Automated Evaluation Engine**
-- [ ] **BioKernel Runtime (Local Server)**
+- [ ] **CoreKernel Runtime (Local Server)**
 - [ ] Gemini Adapter
 - [ ] CLI Tool (`bioskills`)
 - [ ] Web Dashboard

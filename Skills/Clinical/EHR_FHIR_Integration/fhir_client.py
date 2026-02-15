@@ -12,7 +12,7 @@
 fhir_client.py
 
 A command-line tool and Python library for interacting with HL7 FHIR servers.
-Part of the Biomedical OS Skills Library.
+Part of the AI Agentic Platform Skills Library.
 """
 
 import argparse
@@ -68,7 +68,7 @@ def search_resource(
         return []
 
 def main():
-    parser = argparse.ArgumentParser(description="FHIR Client for Biomedical OS")
+    parser = argparse.ArgumentParser(description="FHIR Client for AI Agentic Platform")
     parser.add_argument("--server", required=True, help="FHIR server base URL")
     parser.add_argument("--resource", required=True, help="FHIR resource type (e.g., Patient, Observation)")
     parser.add_argument("--search", help="Search parameters (key=value&key2=val2)")

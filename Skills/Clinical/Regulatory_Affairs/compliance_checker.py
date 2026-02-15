@@ -12,7 +12,7 @@
 Regulatory Compliance Checker
 -----------------------------
 A new skill for 2026 that scans documents against specific regulatory frameworks (FDA, EMA).
-It utilizes the BioKernel's Meta-Prompter to switch between strict "Auditor Mode" (OpenAI)
+It utilizes the CoreKernel's Meta-Prompter to switch between strict "Auditor Mode" (OpenAI)
 and explanatory "Consultant Mode" (Claude).
 """
 
