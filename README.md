@@ -33,17 +33,6 @@ Whether you need to refactor a 100k-line codebase, audit regulatory compliance, 
 
 We have organized 600+ skills into specialized domains targeting the most critical needs of the modern workforce.
 
-### 💰 For Finance & Quant Professionals
-*   **FinRobot:** An autonomous finance agent for market analysis, report generation, and portfolio optimization.
-*   **Algorithmic Trading:** Agents that backtest, risk-manage, and execute trading strategies.
-*   **Automated Compliance:** Agents that audit transactions against regulatory frameworks (SOX, GDPR) and generate risk reports.
-*   **Key Skills:** `Finance/FinRobot_Agent`, `Finance/Algorithmic_Trading`, `Legal/Compliance_Agent`.
-
-### ⚖️ For Legal & Compliance Teams
-*   **Contract Review:** Autonomous agents that extract clauses, flag risks, and redline contracts.
-*   **Regulatory Monitoring:** Agents that track SEC/FDA updates and map them to internal policies.
-*   **Key Skills:** `Legal/Contract_Review_Agent`, `Legal/Compliance_Agent`.
-
 ### 💻 For Software Engineers & Architects
 *   **GitHub Agentic Workflows:** "Continuous AI" agents that triage issues, auto-fix linting errors, and review PRs.
 *   **Legacy Code Migration:** Agents specialized in refactoring COBOL/Java 8 to modern stacks with 100% test coverage.
@@ -66,6 +55,16 @@ We have organized 600+ skills into specialized domains targeting the most critic
 *   **Clinical:** Decision support systems, automated prior authorization, and "ChatEHR" for patient data interaction.
 *   **Pharma:** Generative antibody design (MAGE), small molecule evolution, and regulatory submission drafting.
 *   **Key Skills:** `Genomics`, `Clinical`, `Drug_Discovery`.
+### 💰 For Finance & Quant Professionals
+*   **FinRobot:** An autonomous finance agent for market analysis, report generation, and portfolio optimization.
+*   **Algorithmic Trading:** Agents that backtest, risk-manage, and execute trading strategies.
+*   **Automated Compliance:** Agents that audit transactions against regulatory frameworks (SOX, GDPR) and generate risk reports.
+*   **Key Skills:** `Finance/FinRobot_Agent`, `Finance/Algorithmic_Trading`, `Legal/Compliance_Agent`.
+
+### ⚖️ For Legal & Compliance Teams
+*   **Contract Review:** Autonomous agents that extract clauses, flag risks, and redline contracts.
+*   **Regulatory Monitoring:** Agents that track SEC/FDA updates and map them to internal policies.
+*   **Key Skills:** `Legal/Contract_Review_Agent`, `Legal/Compliance_Agent`.
 
 ---
 
