@@ -14,11 +14,11 @@
 
 - [🚀 Overview](#-overview)
 - [📂 Global Skill Categories](#-global-skill-categories)
-  - [💰 Finance & Business](#-finance--business)
-  - [⚖️ Legal & Compliance](#-legal--compliance)
   - [💻 Software Engineering](#-software-engineering)
   - [🧬 Biomedical & Life Sciences](#-biomedical--life-sciences)
   - [🤖 Agentic AI & Reasoning](#-agentic-ai--reasoning)
+  - [💰 Finance & Business](#-finance--business)
+  - [⚖️ Legal & Compliance](#-legal--compliance)
 - [✨ Recent Additions](#-recent-additions)
 - [🛠️ Installation & Usage](#-installation--usage)
 - [🤝 Contributing](#-contributing)
