@@ -48,23 +48,31 @@ class CoreKernel:
         self.skills_registry = {}
         self.medprompt = MedPromptEngine() if MedPromptEngine else None
         
-        # Initialize WAL Provider (Default to Gemini, fallback to Local)
-        # In production, this config would come from a YAML file or ENV
-        self.provider_config = {
-            "api_key": os.getenv("GOOGLE_API_KEY"),
-            "model": "gemini-2.0-flash"
-        }
-        
-        # Try to load primary provider, fallback to local if key missing
-        if self.provider_config["api_key"]:
-            print("🔌 [CoreKernel] Loading Primary Provider: Gemini")
-            self.llm = LLMFactory.create_provider("gemini", self.provider_config)
-        else:
-            print("🔌 [CoreKernel] Loading Fallback Provider: Local (No API Key found)")
-            self.llm = LLMFactory.create_provider("local", {})
+        # Initialize WAL Providers
+        self.providers = {}
+        self._init_providers()
 
         self._discover_skills()
         self._discover_antigravity_skills()
+
+    def _init_providers(self):
+        # 1. Gemini 2.0 (Primary for speed/multimodal)
+        gemini_key = os.getenv("GOOGLE_API_KEY")
+        if gemini_key:
+            self.providers["gemini"] = LLMFactory.create_provider("gemini", {"api_key": gemini_key, "model": "gemini-2.0-flash"})
+            print("🔌 [CoreKernel] Loaded Provider: Gemini 2.0 Flash")
+
+        # 2. Claude 3.7 (Primary for reasoning/thinking)
+        anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+        if anthropic_key:
+            self.providers["anthropic"] = LLMFactory.create_provider("anthropic", {"api_key": anthropic_key})
+            print("🔌 [CoreKernel] Loaded Provider: Claude 3.7 Sonnet")
+
+        # 3. Fallback
+        self.providers["local"] = LLMFactory.create_provider("local", {})
+        
+        # Default LLM
+        self.llm = self.providers.get("gemini") or self.providers.get("anthropic") or self.providers["local"]
 
     def _discover_skills(self):
         """
@@ -163,6 +171,14 @@ class CoreKernel:
     async def execute(self, skill_id: str, query: str, context: Dict) -> AgentResponse:
         start_time = time.time()
         
+        # Determine Provider based on preference or complexity
+        pref = context.get("model_preference", "auto")
+        llm = self.providers.get(pref, self.llm)
+        
+        # Use Claude 3.7 for explicit 'thinking' requests
+        if pref == "auto" and ("complex" in query.lower() or "design" in query.lower()):
+            llm = self.providers.get("anthropic", self.llm)
+
         # 1. MedPrompt Injection for Clinical Queries
         if self.medprompt and ("patient" in query.lower() or "diagnosis" in query.lower()):
             print("  ⚕️ [CoreKernel] Injecting MedPrompt Strategy...")
@@ -175,33 +191,35 @@ class CoreKernel:
         # 2. Execution Logic
         skill_meta = self.skills_registry.get(skill_id)
         
-        # Define available tools (in a real system, these would be dynamic)
         available_tools = [
             {"name": "literature_search", "description": "Search biomedical literature"},
-            {"name": "clinical_trial_match", "description": "Find matching clinical trials"},
-            {"name": "molecule_generator", "description": "Generate small molecules for a target"}
+            {"name": "mcp_github_tool", "description": "Interact with GitHub via MCP"},
+            {"name": "mcp_filesystem_tool", "description": "Interact with local files via MCP"}
         ]
 
-        print(f"  🧠 [CoreKernel] Reasoning via WAL...")
+        print(f"  🧠 [CoreKernel] Reasoning via WAL (Provider: {getattr(llm, 'model', 'local')})...")
         
         # If it's an Antigravity skill, we pass its instructions to the Provider
         if skill_meta and skill_meta.get("type") == "antigravity":
             system_instr = f"Act as the following agent:\nName: {skill_meta['name']}\nDescription: {skill_meta['description']}\nInstructions: {skill_meta['content']}"
             
+            # Pass reasoning budget if using Claude 3.7
+            thinking_budget = context.get("thinking_budget", 4000) if "claude-3-7" in str(getattr(llm, 'model', '')) else 0
+
             req = LLMRequest(
                 query=query, 
                 system_instruction=system_instr,
-                tools=available_tools # WAL supports tools
+                tools=available_tools,
+                max_tokens=thinking_budget + 4000 if thinking_budget > 0 else 4000
             )
-            llm_resp = await self.llm.generate(req)
+            llm_resp = await llm.generate(req)
             response_text = llm_resp.text
             model_used = llm_resp.model
             tools = ["antigravity_engine"]
         else:
             # Use general reasoning loop via WAL
-            # The provider (Gemini/Local) handles the specific prompt engineering
-            response_text = await self.llm.run_reasoning_loop(query, available_tools)
-            model_used = "reasoning_engine"
+            response_text = await llm.run_reasoning_loop(query, available_tools)
+            model_used = str(getattr(llm, 'model', 'reasoning_engine'))
             tools = ["reasoning_engine"]
 
         # 3. Event Bus Notification

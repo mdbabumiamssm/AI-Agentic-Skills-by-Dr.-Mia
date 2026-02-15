@@ -80,6 +80,18 @@ class RuntimeLLMAdapter:
                 return "CRITICAL ALERT: Dangerous content detected. The input references known toxins. Request REJECTED."
             return "Safety Review: PASSED. No harmful compounds, PII, or hallucinated medical claims detected."
 
+        # --- DeepSeek R1 Reasoning ---
+        if "deepseek" in p_lower or "proof" in p_lower or "logic" in p_lower:
+            return """
+<think>
+1. Identify the logical constraints of the problem.
+2. Formulate a sequence of deductive steps.
+3. Validate each step against known principles.
+4. Conclude the proof.
+</think>
+The final conclusion is that the theorem holds for all n > 0.
+"""
+
         # --- Clinical Trial Scenarios ---
         if "trial" in p_lower or "match" in p_lower:
             return "Patient matches Trial NCT04561234 (Phase 3). Inclusion criteria met: Age > 18, Histology confirmed. Exclusion criteria cleared."

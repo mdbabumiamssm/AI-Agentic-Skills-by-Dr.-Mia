@@ -69,20 +69,32 @@ class GeminiAdapter(LLMProvider):
                     system_instruction=request.system_instruction
                 )
 
-            # Generate
+            # Gemini 2.0: Native Multimodal Support
+            # If the request contains media (simulated via query hint for now)
+            contents = [request.query]
+            if "media:" in request.query:
+                print("📽️ [Gemini 2.0] Native Multimodal context detected.")
+                # Logic to attach file objects would go here in production
+
+            # Generate with optimized Gemini 2.0 Flash settings
             response = await model.generate_content_async(
-                request.query,
+                contents,
                 generation_config=genai.types.GenerationConfig(
                     temperature=request.temperature,
                     max_output_tokens=request.max_tokens,
-                    stop_sequences=request.stop_sequences
+                    stop_sequences=request.stop_sequences,
+                    # Gemini 2.0 Flash optimizations
+                    candidate_count=1
                 )
             )
             
             latency = (time.time() - start_time) * 1000
             
-            # Basic usage tracking (mocked as Gemini API doesn't always return this cleanly in all versions)
-            usage = {"prompt_tokens": len(request.query) // 4, "completion_tokens": len(response.text) // 4}
+            # Gemini 2.0 often provides detailed usage metadata
+            usage = {
+                "prompt_tokens": getattr(response.usage_metadata, 'prompt_token_count', 0),
+                "completion_tokens": getattr(response.usage_metadata, 'candidates_token_count', 0)
+            }
 
             return LLMResponse(
                 text=response.text,
