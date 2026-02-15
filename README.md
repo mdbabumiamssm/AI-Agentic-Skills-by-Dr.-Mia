@@ -1,83 +1,87 @@
-# Universal AI Agentic Skills & Agentic OS (2026)
+# Universal AI Agentic Skills Collection (2026)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![Status](https://img.shields.io/badge/Status-Active-green)](https://github.com/mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia)
-[![Architecture](https://img.shields.io/badge/Architecture-Agentic%20OS-blueviolet)](https://github.com/mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia)
-[![Frontier Models](https://img.shields.io/badge/Models-Claude%203.7%20%7C%20DeepSeek%20R1%20%7C%20Gemini%202.0-orange)](https://github.com/mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia)
+![Status](https://img.shields.io/badge/Status-Active-green)
+![Domain](https://img.shields.io/badge/Collection-Universal%20Skills-blue)
+![Category](https://img.shields.io/badge/Focus-Finance%20%7C%20Bio%20%7C%20Coding%20%7C%20Legal-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-> **The Universal Operating System for Autonomous AI Agents.**  
-> One Platform. Infinite Skills. Zero Limits.
+> **A comprehensive repository of 600+ autonomous AI skills and agentic workflows.**  
+> Designed for professionals in Finance, Law, Science, Software Engineering, and Healthcare.
 
 ---
 
 ## 📖 Table of Contents
 
 - [🚀 Overview](#-overview)
-- [✨ Key Features](#-key-features)
-- [🧠 Frontier Agentic Skills (New!)](#-frontier-agentic-skills-new)
-- [🏗️ Architecture: The Agentic OS](#-architecture-the-agentic-os)
-- [🛠️ Installation & Quick Start](#-installation--quick-start)
-- [📂 Capability Map](#-global-capability-map)
+- [📂 Global Skill Categories](#-global-skill-categories)
+  - [💰 Finance & Business](#-finance--business)
+  - [⚖️ Legal & Compliance](#-legal--compliance)
+  - [💻 Software Engineering](#-software-engineering)
+  - [🧬 Biomedical & Life Sciences](#-biomedical--life-sciences)
+  - [🤖 Agentic AI & Reasoning](#-agentic-ai--reasoning)
+- [✨ Recent Additions](#-recent-additions)
+- [🛠️ Installation & Usage](#-installation--usage)
 - [🤝 Contributing](#-contributing)
-- [📄 License & Authors](#-license)
+- [📄 License](#-license)
 
 ---
 
 ## 🚀 Overview
 
-**Universal AI Agentic Skills** is not just a collection of scripts; it is a comprehensive **Agentic Operating System (Agentic OS)** designed to empower professionals across Finance, Legal, Coding, Research, and Science. 
+This repository serves as a **Universal Skills Library** for AI agents. Just as a human learns skills (coding, trading, diagnosing), this collection provides modular, executable skill definitions that can be loaded into any LLM-based agent (using LangChain, Semantic Kernel, AutoGen, or our custom CoreKernel).
 
-By abstracting the "Brain" (LLM) from the "Body" (Tools/MCP), we allow you to deploy state-of-the-art autonomous agents instantly. Whether you need to refactor a 100k-line codebase, audit regulatory compliance, simulate quantum docking, or automate web tasks, this platform has a specialized agent ready for you.
-
----
-
-## ✨ Key Features
-
-*   **Universal Skill Definition (USDL):** A standardized schema making agents portable across frameworks (LangChain, Semantic Kernel, AutoGen).
-*   **Model Agnostic:** Seamlessly switch between **Claude 3.7**, **Gemini 2.0**, **DeepSeek R1**, and **OpenAI o3**.
-*   **MCP Integration:** Native support for the **Model Context Protocol**, allowing agents to connect to GitHub, Postgres, Slack, and your local filesystem safely.
-*   **Privacy First:** Run local agents (OpenClaw, Llama 3) that keep your data on your machine.
+Whether you need an agent to **audit a smart contract**, **design a CRISPR experiment**, **backtest a trading strategy**, or **automate web tasks**, you will find the skill here.
 
 ---
 
-## 🧠 Frontier Agentic Skills (New!)
+## 📂 Global Skill Categories
 
-We have integrated the absolute latest advancements in AI (Feb 2026):
+We have organized skills into specialized domains targeting critical professional needs.
 
-### 1. 🤖 Claude 3.7 Reasoning Agent
-*   **Specialty:** Complex Coding & Architecture.
-*   **Features:** "Extended Thinking" mode for deep problem solving and "Computer Use" readiness.
-*   **Location:** `Skills/Agentic_AI/Frontier_Models/Claude_3_7_Agent`
+### 💰 Finance & Business
+*   **FinRobot:** Autonomous market analysis, report generation, and portfolio optimization.
+*   **Algorithmic Trading:** Skills for backtesting, risk management, and strategy execution.
+*   **Market Research:** Competitive intelligence and trend analysis agents.
+*   **Key Paths:** `Skills/Finance`, `Skills/Data_Science`
 
-### 2. 🐳 DeepSeek R1 Open Agent
-*   **Specialty:** Math, Logic, & Transparency.
-*   **Features:** Returns full "Chain-of-Thought" `<think>` tags, allowing you to see the agent's internal monologue.
-*   **Location:** `Skills/Agentic_AI/Frontier_Models/DeepSeek_R1_Agent`
+### ⚖️ Legal & Compliance
+*   **Contract Review:** Automated clause extraction, risk flagging, and redlining.
+*   **Regulatory Monitoring:** Tracking SEC/FDA updates and mapping them to internal policies.
+*   **Compliance Audit:** GDPR, HIPAA, and SOX compliance checking skills.
+*   **Key Paths:** `Skills/Legal`, `Skills/Governance`
 
-### 3. ✨ Gemini 2.0 Multimodal Agent
-*   **Specialty:** Video, Audio, & Speed.
-*   **Features:** Native multimodal understanding with sub-second latency for real-time video analysis.
-*   **Location:** `Skills/Agentic_AI/Frontier_Models/Gemini_2_0_Flash_Agent`
+### 💻 Software Engineering
+*   **Codebase Analysis:** Agents that map, document, and refactor complex legacy repositories.
+*   **GitHub Operations:** "Continuous AI" workflows for issue triaging and PR reviews.
+*   **Legacy Migration:** Specialized skills for COBOL/Java to Python/Rust migration.
+*   **Key Paths:** `Skills/Software_Engineering`, `Skills/Computer_Science`
 
-### 4. 🦞 OpenClaw AI Agent
-*   **Specialty:** Local Web Automation.
-*   **Features:** A "Conversation-First" OS that controls your browser to perform tasks like "Find the cheapest flight to Tokyo".
-*   **Location:** `Skills/Agentic_AI/Web_Agents/OpenClaw_Agent`
+### 🧬 Biomedical & Life Sciences
+*   **Genomics:** Pipelines for Single-Cell RNA-seq, Variant Calling, and CRISPR design.
+*   **Clinical Ops:** Prior authorization automation, clinical trial matching, and EHR summarization.
+*   **Drug Discovery:** Generative chemistry, protein folding (AlphaFold), and toxicology prediction.
+*   **Key Paths:** `Skills/Genomics`, `Skills/Clinical`, `Skills/Drug_Discovery`
+
+### 🤖 Agentic AI & Reasoning
+*   **Web Automation:** **OpenClaw** skills for headless browser control and task execution.
+*   **Advanced Reasoning:** Chain-of-Thought (CoT) and "Extended Thinking" workflows.
+*   **Multi-Agent Swarms:** Templates for "Plan-and-Solve" and "Debate" architectures.
+*   **Key Paths:** `Skills/Agentic_AI`, `Skills/Agentic_AI/Web_Agents`
 
 ---
 
-## 🏗️ Architecture: The Agentic OS
+## ✨ Recent Additions
 
-At the heart of the system is the **CoreKernel**, a high-performance runtime environment.
+We continuously expand the dataset with frontier capabilities:
 
-*   **CoreKernel:** Orchestrates agent execution, manages context, and routes queries.
-*   **WAL (Workflow Abstraction Layer):** A plugin-based system that abstracts the underlying LLM provider.
-*   **MCP Registry:** Acts as a service mesh, connecting agents to data sources dynamically.
+*   **OpenClaw Web Agent:** A privacy-first local agent for browser automation and OS-level tasks (`Skills/Agentic_AI/Web_Agents/OpenClaw_Agent`).
+*   **Advanced Reasoning Skills:** New workflows demonstrating "System 2" thinking patterns for complex logic puzzles (`Skills/Agentic_AI/Frontier_Models`).
+*   **Multimodal Analysis:** High-speed video and audio processing skills using the latest model capabilities.
+*   **MCP Integration:** Native skills for the **Model Context Protocol**, connecting agents to GitHub, Postgres, and Slack.
 
 ---
 
-## 🛠️ Installation & Quick Start
+## 🛠️ Installation & Usage
 
 ### 1. Clone the Repository
 ```bash
@@ -85,44 +89,44 @@ git clone https://github.com/mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia.git
 cd AI-Agentic-Skills-by-Dr.-Mia
 ```
 
-### 2. Configure Environment
-Create a `.env` file with your API keys:
+### 2. Install Dependencies
 ```bash
-GOOGLE_API_KEY=your_gemini_key
-ANTHROPIC_API_KEY=your_claude_key
-# ... other keys
+pip install -r requirements.txt
 ```
 
-### 3. Boot the OS
-Initialize the kernel to load the 600+ skills into active memory.
+### 3. Run a Skill
+You can execute skills using the provided `server.py` or directly via the skill wrappers.
 
+**Example: Running a Web Automation Skill**
+```python
+from Skills.Agentic_AI.Web_Agents.OpenClaw_Agent.openclaw_wrapper import OpenClaw
+
+agent = OpenClaw(headless=True)
+result = agent.run_task("Find the top trending Python repositories on GitHub")
+print(result)
+```
+
+**Example: Running a Clinical Analysis Skill**
 ```bash
 python3 platform/core_kernel/server.py
-```
-
-### 4. Run an Agent
-Send a command to the Universal Agent:
-
-**"Analyze this legacy Java codebase and plan a migration to Kotlin:"**
-```bash
-curl -X POST "http://localhost:8000/v1/agent/run" \
-     -d '{"query": "Analyze ./legacy_src and propose a Kotlin migration plan.", "model_preference": "anthropic"}'
+# Post a request to localhost:8000/v1/agent/run
 ```
 
 ---
 
-## 📂 Global Capability Map
+## 📂 Repository Structure
 
 ```text
 Skills/
-├── Agentic_AI/           # 🧠 The Brains: Frontier Models, OpenClaw, MCP
-├── Finance/              # 💰 The Markets: FinRobot, Algo Trading
-├── Legal/                # ⚖️ The Law: Contract Review, Compliance
-├── Software_Engineering/ # 💻 The Code: GitHub Agents, Legacy Migration
-├── Science/              # 🧪 The Lab: Material Discovery, Automation
-├── Clinical/             # 🏥 The Hospital: EHR, Diagnosis, Trials
-├── Genomics/             # 🧬 The Bio: Sequencing, CRISPR, Single-Cell
-└── Drug_Discovery/       # 💊 The Cure: Chemistry, Antibodies, Pharma
+├── Agentic_AI/           # 🧠 Reasoning, Web Agents, Swarms, Memory
+├── Finance/              # 💰 Algorithmic Trading, Analysis, Reporting
+├── Legal/                # ⚖️ Contract Review, Compliance, Research
+├── Software_Engineering/ # 💻 Code Gen, Refactoring, GitHub Ops
+├── Science/              # 🧪 Material Science, Lab Automation
+├── Clinical/             # 🏥 EHR, Diagnostics, Trials, Radiology
+├── Genomics/             # 🧬 Sequencing, CRISPR, Single-Cell
+├── Drug_Discovery/       # 💊 Chemistry, Pharma, Molecular Design
+└── User_Collections/     # 👤 Community contributed skill sets
 ```
 
 ---
@@ -132,10 +136,11 @@ Skills/
 We welcome contributions! Whether you're adding a new skill, fixing a bug, or improving documentation, please submit a Pull Request.
 
 1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/AmazingSkill`).
-3.  Commit your changes (`git commit -m 'Add AmazingSkill'`).
-4.  Push to the branch (`git push origin feature/AmazingSkill`).
-5.  Open a Pull Request.
+2.  Create your feature branch (`git checkout -b skill/AmazingNewSkill`).
+3.  Add your skill definition (`SKILL.md`) and implementation (`.py`).
+4.  Commit your changes (`git commit -m 'Add AmazingNewSkill'`).
+5.  Push to the branch (`git push origin skill/AmazingNewSkill`).
+6.  Open a Pull Request.
 
 ---
 
