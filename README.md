@@ -38,18 +38,6 @@ Whether you need an agent to **audit a smart contract**, **design a CRISPR exper
 
 We have organized skills into specialized domains targeting critical professional needs.
 
-### 💰 Finance & Business
-*   **FinRobot:** Autonomous market analysis, report generation, and portfolio optimization.
-*   **Algorithmic Trading:** Skills for backtesting, risk management, and strategy execution.
-*   **Market Research:** Competitive intelligence and trend analysis agents.
-*   **Key Paths:** `Skills/Finance`, `Skills/Data_Science`
-
-### ⚖️ Legal & Compliance
-*   **Contract Review:** Automated clause extraction, risk flagging, and redlining.
-*   **Regulatory Monitoring:** Tracking SEC/FDA updates and mapping them to internal policies.
-*   **Compliance Audit:** GDPR, HIPAA, and SOX compliance checking skills.
-*   **Key Paths:** `Skills/Legal`, `Skills/Governance`
-
 ### 💻 Software Engineering
 *   **Codebase Analysis:** Agents that map, document, and refactor complex legacy repositories.
 *   **GitHub Operations:** "Continuous AI" workflows for issue triaging and PR reviews.
@@ -67,6 +55,18 @@ We have organized skills into specialized domains targeting critical professiona
 *   **Advanced Reasoning:** Chain-of-Thought (CoT) and "Extended Thinking" workflows.
 *   **Multi-Agent Swarms:** Templates for "Plan-and-Solve" and "Debate" architectures.
 *   **Key Paths:** `Skills/Agentic_AI`, `Skills/Agentic_AI/Web_Agents`
+
+### 💰 Finance & Business
+*   **FinRobot:** Autonomous market analysis, report generation, and portfolio optimization.
+*   **Algorithmic Trading:** Skills for backtesting, risk management, and strategy execution.
+*   **Market Research:** Competitive intelligence and trend analysis agents.
+*   **Key Paths:** `Skills/Finance`, `Skills/Data_Science`
+
+### ⚖️ Legal & Compliance
+*   **Contract Review:** Automated clause extraction, risk flagging, and redlining.
+*   **Regulatory Monitoring:** Tracking SEC/FDA updates and mapping them to internal policies.
+*   **Compliance Audit:** GDPR, HIPAA, and SOX compliance checking skills.
+*   **Key Paths:** `Skills/Legal`, `Skills/Governance`
 
 ---
 
