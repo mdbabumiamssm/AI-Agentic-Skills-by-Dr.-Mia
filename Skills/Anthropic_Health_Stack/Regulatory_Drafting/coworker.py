@@ -67,7 +67,10 @@ class RegulatoryDrafter:
         self.model = model
         self.optimizer = PromptOptimizer()
         self.adapter = adapter
-        self.corrector = SelfCorrectionAgent()
+        if SelfCorrectionAgent:
+            self.corrector = SelfCorrectionAgent()
+        else:
+            self.corrector = None
 
     def set_adapter(self, adapter):
         """Inject a real LLM adapter (e.g. from platform.adapters)."""
@@ -130,7 +133,15 @@ class RegulatoryDrafter:
         # Here, SelfCorrectionAgent runs a simulation if no LLM is wired, 
         # or we can rely on its internal mock if adapter is missing.
         
-        result = self.corrector.run_cycle(task, criteria, max_iterations=2)
+        if self.corrector:
+            result = self.corrector.run_cycle(task, criteria, max_iterations=2)
+        else:
+            print("Warning: SelfCorrectionAgent unavailable. Returning simulated draft.")
+            result = {
+                "final_output": f"Simulated draft for '{section_name}' based on {clinical_data}.",
+                "iterations": 0,
+                "history": []
+            }
 
         return {
             "status": "success",
