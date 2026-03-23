@@ -1,0 +1,85 @@
+---
+title: "Models"
+---
+
+```{r setup}
+library(tidyverse)
+library(modelr)
+library(broom)
+
+# Import wages here
+
+# Fall back in case you cannot load wages
+# wages <- heights %>%
+#   filter(income > 0) %>%
+#   mutate(marital = as.character(marital),
+#          sex = as.character(sex))
+```
+
+## Your Turn 1
+
+* Change the working directory to `04-Models`. 
+* Then import `wages.xlsx` as wages and *copy the code to your setup chunk*.
+* Be sure to set NA: to NA.
+
+## Your Turn 2
+
+Fit the model on the slide and then examine the output. What does it look like?
+
+```{r}
+
+```
+
+## Your Turn 3
+
+Use a pipe to model `log(income)` against `height`. Then use broom and dplyr functions to extract:
+
+1. The **coefficient estimates** and their related statistics 
+2. The **adj.r.squared** and **p.value** for the overall model
+
+```{r}
+
+```
+
+
+## Your Turn 4
+
+Model `log(income)` against `education` and `height` and `sex`. Can you interpret the coefficients?
+
+```{r}
+
+```
+
+## Your Turn 5
+
+Add `+ geom_smooth(method = lm)` to the code below. What happens?
+
+```{r}
+wages %>%
+     ggplot(aes(x = height, y = log(income))) +
+     geom_point(alpha = 0.1)
+```
+
+
+## Your Turn 6
+
+Use `add_predictions` to make the plot below.
+
+```{r warning = FALSE, message = FALSE}
+
+# In case you haven't made the ehs model
+mod_ehs <- wages %>% lm(log(income) ~ education + height + sex, data = .)
+
+# Make plot here
+
+```
+
+***
+
+# Take Aways
+
+* Use `glance()`, `tidy()`, and `augment()` from the **broom** package to return model values in a data frame.
+
+* Use `add_predictions()` or `gather_predictions()` or `spread_predictions()` from the **modelr** package to visualize predictions.
+
+* Use `add_residuals()` or `gather_residuals()` or `spread_residuals()` from the **modelr** package to visualize residuals.

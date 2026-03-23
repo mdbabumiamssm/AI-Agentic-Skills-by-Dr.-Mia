@@ -1,0 +1,9 @@
+# For the tutorials
+numpy
+scipy
+pooch  # for scipy.datasets
+matplotlib
+pandas
+imageio
+# For supporting .md-based notebooks
+jupytext
