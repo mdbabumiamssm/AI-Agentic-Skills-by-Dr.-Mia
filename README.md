@@ -1,154 +1,109 @@
-# Universal AI Agentic Skills Collection (2026)
+# AI-Agentic-Skills-by-Dr.-Mia
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
-![Domain](https://img.shields.io/badge/Collection-Universal%20Skills-blue)
-![Category](https://img.shields.io/badge/Focus-Finance%20%7C%20Bio%20%7C%20Coding%20%7C%20Legal-orange)
+![Domain](https://img.shields.io/badge/Collection-AI%20Agentic%20Skills-blue)
+![Focus](https://img.shields.io/badge/Focus-Biomed%20%7C%20AI%20%7C%20Coding%20%7C%20Analytics-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-> **A comprehensive repository of 600+ autonomous AI skills and agentic workflows.**  
-> Designed for professionals in Finance, Law, Science, Software Engineering, and Healthcare.
+A large repository of agentic AI skills, workflows, platform components, reference material, and practical tutorial assets spanning biomedical research, clinical and health AI, software engineering, data analysis, automation, and domain-specific reasoning.
 
----
+## Overview
 
-## 📖 Table of Contents
+This repository is organized as a working skill library for LLM-based and multi-agent systems. It includes:
 
-- [🚀 Overview](#-overview)
-- [📂 Global Skill Categories](#-global-skill-categories)
-  - [💻 Software Engineering](#-software-engineering)
-  - [🧬 Biomedical & Life Sciences](#-biomedical--life-sciences)
-  - [🤖 Agentic AI & Reasoning](#-agentic-ai--reasoning)
-  - [💰 Finance & Business](#-finance--business)
-  - [⚖️ Legal & Compliance](#-legal--compliance)
-- [✨ Recent Additions](#-recent-additions)
-- [🛠️ Installation & Usage](#-installation--usage)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- modular skill directories under `Skills/`
+- platform and orchestration code under `platform/` and `src/`
+- documentation, research notes, and presentation material under `docs/`
+- tests and demonstrations under `tests/` and `test_demonstration/`
+- curated tutorial and reference material for analytics workflows under `Skills/Research_Tools/Data_Analysis/tutorials/`
 
----
+The collection is intended to support practical agent workflows such as scientific analysis, biomedical reasoning, research automation, code generation and review, web and tool orchestration, reporting, and education.
 
-## 🚀 Overview
+## Repository Structure
 
-This repository serves as a **Universal Skills Library** for AI agents. Just as a human learns skills (coding, trading, diagnosing), this collection provides modular, executable skill definitions that can be loaded into any LLM-based agent (using LangChain, Semantic Kernel, AutoGen, or our custom CoreKernel).
+```text
+AIAGENTICSKILLS/
+|-- Skills/                # Primary skill library across AI, science, medicine, law, finance, and engineering
+|-- platform/              # Core platform code, adapters, kernel, reports, schema, and utilities
+|-- src/                   # Supporting source code for chemistry and research agents
+|-- docs/                  # Research, strategy, and presentation documents
+|-- tests/                 # Test assets and analysis fixtures
+|-- test_demonstration/    # Demonstration workflows and outputs
+|-- archive/               # Archived material and historical backups
+|-- figures/               # Figures and visual assets
+|-- cache/                 # Cached project artifacts
+`-- README.md
+```
 
-Whether you need an agent to **audit a smart contract**, **design a CRISPR experiment**, **backtest a trading strategy**, or **automate web tasks**, you will find the skill here.
+## Skills Coverage
 
----
+The `Skills/` tree contains a broad set of domains, including:
 
-## 📂 Global Skill Categories
+- `Skills/Agentic_AI`
+- `Skills/AI_Providers`
+- `Skills/Software_Engineering`
+- `Skills/Research_Tools`
+- `Skills/Clinical`
+- `Skills/Genomics`
+- `Skills/Drug_Discovery`
+- `Skills/Finance`
+- `Skills/Legal`
+- `Skills/Science`
+- `Skills/User_Collections`
 
-We have organized skills into specialized domains targeting critical professional needs.
+Additional specialized areas include oncology, pathology AI, radiology AI, protein science, structural biology, synthetic biology, metabolomics, microbiome, precision medicine, workflow management, and more.
 
-### 💻 Software Engineering
-*   **Codebase Analysis:** Agents that map, document, and refactor complex legacy repositories.
-*   **GitHub Operations:** "Continuous AI" workflows for issue triaging and PR reviews.
-*   **Legacy Migration:** Specialized skills for COBOL/Java to Python/Rust migration.
-*   **Key Paths:** `Skills/Software_Engineering`, `Skills/Computer_Science`
+## Data Analysis Tutorials
 
-### 🧬 Biomedical & Life Sciences
-*   **Genomics:** Pipelines for Single-Cell RNA-seq, Variant Calling, and CRISPR design.
-*   **Clinical Ops:** Prior authorization automation, clinical trial matching, and EHR summarization.
-*   **Drug Discovery:** Generative chemistry, protein folding (AlphaFold), and toxicology prediction.
-*   **Key Paths:** `Skills/Genomics`, `Skills/Clinical`, `Skills/Drug_Discovery`
+The repository now tracks tutorial collections under `Skills/Research_Tools/Data_Analysis/tutorials/` directly in the parent repository.
 
-### 🤖 Agentic AI & Reasoning
-*   **Web Automation:** **OpenClaw** skills for headless browser control and task execution.
-*   **Advanced Reasoning:** Chain-of-Thought (CoT) and "Extended Thinking" workflows.
-*   **Multi-Agent Swarms:** Templates for "Plan-and-Solve" and "Debate" architectures.
-*   **Key Paths:** `Skills/Agentic_AI`, `Skills/Agentic_AI/Web_Agents`
+These tutorial collections cover:
 
-### 💰 Finance & Business
-*   **FinRobot:** Autonomous market analysis, report generation, and portfolio optimization.
-*   **Algorithmic Trading:** Skills for backtesting, risk management, and strategy execution.
-*   **Market Research:** Competitive intelligence and trend analysis agents.
-*   **Key Paths:** `Skills/Finance`, `Skills/Data_Science`
+- Python analytics tutorials
+- R tidyverse training material
+- SQL learning and practice datasets
+- visualization, Tableau, and Power BI learning assets
 
-### ⚖️ Legal & Compliance
-*   **Contract Review:** Automated clause extraction, risk flagging, and redlining.
-*   **Regulatory Monitoring:** Tracking SEC/FDA updates and mapping them to internal policies.
-*   **Compliance Audit:** GDPR, HIPAA, and SOX compliance checking skills.
-*   **Key Paths:** `Skills/Legal`, `Skills/Governance`
+Those directories were converted from nested git repositories into normal tracked directories so they can be versioned, reviewed, and shipped directly with this repository.
 
----
+## Getting Started
 
-## ✨ Recent Additions
+Clone the repository:
 
-We continuously expand the dataset with frontier capabilities:
-
-*   **OpenClaw Web Agent:** A privacy-first local agent for browser automation and OS-level tasks (`Skills/Agentic_AI/Web_Agents/OpenClaw_Agent`).
-*   **Advanced Reasoning Skills:** New workflows demonstrating "System 2" thinking patterns for complex logic puzzles (`Skills/Agentic_AI/Frontier_Models`).
-*   **Multimodal Analysis:** High-speed video and audio processing skills using the latest model capabilities.
-*   **MCP Integration:** Native skills for the **Model Context Protocol**, connecting agents to GitHub, Postgres, and Slack.
-
----
-
-## 🛠️ Installation & Usage
-
-### 1. Clone the Repository
 ```bash
 git clone https://github.com/mdbabumiamssm/AI-Agentic-Skills-by-Dr.-Mia.git
 cd AI-Agentic-Skills-by-Dr.-Mia
 ```
 
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+If you are working with Python tooling in this repository, create or activate an environment and install project-specific dependencies as needed for the component you are using. This repository contains multiple independent skill and platform areas rather than a single universal runtime.
 
-### 3. Run a Skill
-You can execute skills using the provided `server.py` or directly via the skill wrappers.
+## Typical Usage
 
-**Example: Running a Web Automation Skill**
-```python
-from Skills.Agentic_AI.Web_Agents.OpenClaw_Agent.openclaw_wrapper import OpenClaw
+Common ways to work with this repository:
 
-agent = OpenClaw(headless=True)
-result = agent.run_task("Find the top trending Python repositories on GitHub")
-print(result)
-```
+- browse `Skills/` to find reusable `SKILL.md` definitions and implementation assets
+- use `platform/` for orchestration, evaluation, reporting, and kernel components
+- use `src/` for supporting agent code
+- use `tests/` and `test_demonstration/` to inspect examples and validation material
+- use `docs/` for supporting documentation and strategy references
 
-**Example: Running a Clinical Analysis Skill**
-```bash
-python3 platform/core_kernel/server.py
-# Post a request to localhost:8000/v1/agent/run
-```
+## Contributing
 
----
+Contributions should preserve repository structure and keep skill assets self-contained.
 
-## 📂 Repository Structure
+Recommended practice:
 
-```text
-Skills/
-├── Agentic_AI/           # 🧠 Reasoning, Web Agents, Swarms, Memory
-├── Finance/              # 💰 Algorithmic Trading, Analysis, Reporting
-├── Legal/                # ⚖️ Contract Review, Compliance, Research
-├── Software_Engineering/ # 💻 Code Gen, Refactoring, GitHub Ops
-├── Science/              # 🧪 Material Science, Lab Automation
-├── Clinical/             # 🏥 EHR, Diagnostics, Trials, Radiology
-├── Genomics/             # 🧬 Sequencing, CRISPR, Single-Cell
-├── Drug_Discovery/       # 💊 Chemistry, Pharma, Molecular Design
-└── User_Collections/     # 👤 Community contributed skill sets
-```
+1. create a feature branch
+2. update the relevant skill or platform directory
+3. keep documentation aligned with structural changes
+4. run any relevant validation or tests for the area you changed
+5. open a pull request with a concise change summary
 
----
+## License
 
-## 🤝 Contributing
-
-We welcome contributions! Whether you're adding a new skill, fixing a bug, or improving documentation, please submit a Pull Request.
-
-1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b skill/AmazingNewSkill`).
-3.  Add your skill definition (`SKILL.md`) and implementation (`.py`).
-4.  Commit your changes (`git commit -m 'Add AmazingNewSkill'`).
-5.  Push to the branch (`git push origin skill/AmazingNewSkill`).
-6.  Open a Pull Request.
-
----
-
-## 📄 License
-
-**Copyright (c) 2026 MD BABU MIA, PhD.**  
+Copyright (c) 2026 MD BABU MIA, PhD.
 All rights reserved.
 
-This project is licensed under the MIT License for open-source components, but the unique architectural design and agentic workflows are the intellectual property of the author. **Attribution is mandatory.**
+This project includes open-source components and reference material under their respective licenses. Repository-specific architecture, curation, and workflow organization remain attributable to the author.
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
