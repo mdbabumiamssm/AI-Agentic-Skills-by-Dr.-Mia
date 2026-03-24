@@ -9,6 +9,19 @@
 
 A curated, multi-domain repository of agentic AI skills, workflow definitions, platform components, research utilities, and applied tutorial assets for building real-world AI systems in biomedical science, healthcare, software engineering, analytics, automation, and decision support.
 
+⚠️ IMPORTANT DISCLAIMER & COPYRIGHT NOTICE
+
+This repository, its architecture, agent designs, and specific implementations are the intellectual property of MD BABU MIA, PhD.
+
+While open-source components are licensed under MIT, the unique curation, architecture, and agentic workflows are proprietary to the author.
+
+If you fork, clone, or copy this repository for public use, you MUST:
+
+Retain this copyright notice.
+Explicitly credit MD BABU MIA, PhD as the original author.
+Link back to the original repository.
+Plagiarism or uncredited redistribution is strictly prohibited.
+
 ## Why this repository exists
 
 Most AI repositories are either model demos, narrow toolkits, or disconnected prompt libraries. This repository is structured differently: it is a working skill system.
