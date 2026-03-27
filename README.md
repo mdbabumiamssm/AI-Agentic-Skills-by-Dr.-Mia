@@ -142,6 +142,11 @@ Typical workflow:
 3. use `platform/` if you need orchestration, evaluation, or kernel support
 4. validate with the relevant test or demonstration material
 
+Automation:
+
+- use `bash scripts/run_codex_repo_refresh.sh` for a Codex-driven provider/framework refresh workflow
+- see `automation/CODEX_REPO_REFRESH.md` for run modes, prerequisites, and publication options
+
 ## Design principles
 
 This repository is organized around practical reuse.
