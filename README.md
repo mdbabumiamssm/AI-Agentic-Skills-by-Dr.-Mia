@@ -58,6 +58,19 @@ Representative areas include:
 
 Additional specialized coverage spans pathology AI, radiology AI, oncology, precision medicine, protein science, structural biology, synthetic biology, metabolomics, microbiome, workflow management, and more.
 
+Current first-party AI platform coverage includes dedicated 2026 operational skills for:
+
+- OpenAI
+- Anthropic
+- Google Gemini
+- Amazon Bedrock
+- Azure AI Foundry
+- Cohere
+- Mistral
+- DeepSeek
+- xAI Grok
+- provider and framework GitHub maintenance audits
+
 ### 2. Platform and orchestration code
 The repository is not documentation-only. It also includes platform code for kernels, adapters, evaluators, reports, schemas, and utilities under `platform/`, plus supporting code under `src/`.
 

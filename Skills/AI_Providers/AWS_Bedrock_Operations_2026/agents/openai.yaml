@@ -1,0 +1,3 @@
+interface:
+  display_name: "AWS Bedrock Operations 2026"
+  short_description: "Operate Amazon Bedrock workloads and upgrades"

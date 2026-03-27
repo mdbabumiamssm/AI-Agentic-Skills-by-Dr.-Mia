@@ -11,7 +11,7 @@
 
 -->
 
-# Official or Primary Repositories (checked February 7, 2026)
+# Official or Primary Repositories (checked March 27, 2026)
 
 - OpenAI Python SDK: https://github.com/openai/openai-python
 - OpenAI JavaScript SDK: https://github.com/openai/openai-node
@@ -20,12 +20,19 @@
 - Google GenAI Python SDK: https://github.com/googleapis/python-genai
 - Google GenAI JavaScript SDK: https://github.com/googleapis/js-genai
 - AWS Bedrock samples: https://github.com/aws-samples/amazon-bedrock-samples
+- Boto3: https://github.com/boto/boto3
+- AWS SDK for JavaScript v3: https://github.com/aws/aws-sdk-js-v3
 - Azure SDK for Python: https://github.com/Azure/azure-sdk-for-python
+- Azure SDK for JavaScript: https://github.com/Azure/azure-sdk-for-js
 - Meta Llama models: https://github.com/meta-llama/llama-models
 - Mistral Python SDK: https://github.com/mistralai/client-python
+- Mistral TypeScript SDK: https://github.com/mistralai/client-ts
 - Cohere Python SDK: https://github.com/cohere-ai/cohere-python
-- xAI Python SDK: https://github.com/xai-org/xai-python
+- Cohere TypeScript SDK: https://github.com/cohere-ai/cohere-typescript
+- xAI cookbook: https://github.com/xai-org/xai-cookbook
+- xAI Grok prompts: https://github.com/xai-org/grok-prompts
 - DeepSeek org: https://github.com/deepseek-ai
+- DeepSeek integrations: https://github.com/deepseek-ai/awesome-deepseek-integration
 - MCP servers reference: https://github.com/modelcontextprotocol/servers
 
 

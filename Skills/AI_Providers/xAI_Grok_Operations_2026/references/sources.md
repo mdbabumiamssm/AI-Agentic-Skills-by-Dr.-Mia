@@ -13,14 +13,6 @@
 
 # Sources (checked March 27, 2026)
 
-- Meta Llama organization: https://github.com/meta-llama
-- Meta Llama models repo: https://github.com/meta-llama/llama-models
-- Mistral docs: https://docs.mistral.ai/
-- Mistral Python client: https://github.com/mistralai/client-python
-- Mistral TypeScript client: https://github.com/mistralai/client-ts
-- DeepSeek API docs: https://api-docs.deepseek.com/
-- DeepSeek GitHub org: https://github.com/deepseek-ai
-- DeepSeek integrations: https://github.com/deepseek-ai/awesome-deepseek-integration
 - xAI docs: https://docs.x.ai/
 - xAI cookbook: https://github.com/xai-org/xai-cookbook
 - Grok prompts repo: https://github.com/xai-org/grok-prompts
