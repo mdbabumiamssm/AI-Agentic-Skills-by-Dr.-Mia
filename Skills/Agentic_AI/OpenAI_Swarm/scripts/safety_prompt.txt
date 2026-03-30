@@ -1,0 +1,1 @@
+Audit prior JSON summary. Cross-check against boxed warnings and lab thresholds. Output JSON {"clear": bool, "violations": [], "next_steps": []}.

@@ -46,6 +46,7 @@ This collection now incorporates the latest industry shifts:
 ### 🧠 Agentic AI (The Brain)
 *   **Self-Correction:** `Agentic_AI/Agent_Architectures/Self_Correction/self_correction_agent.py` implements a Reflexion pattern for iterative improvement.
 *   **Orchestrated Swarms:** `Agentic_AI/Multi_Agent_Systems/orchestrator.py` implements a Supervisor pattern that delegates tasks to specialized sub-agents.
+*   **OpenAI Swarm:** `Agentic_AI/OpenAI_Swarm/` packages OpenAI's lightweight handoff framework with runnable demos and blueprint stubs for regulated workflows.
 *   **Plan-and-Solve:** `Agentic_AI/Agent_Architectures/Plan_and_Solve/` breaks down complex user queries into Directed Acyclic Graphs (DAGs).
 *   **Async Runtime:** `Computer_Science/Distributed_Systems/agent_concurrency.py` provides a Ray-like async runtime for parallel agents.
 
@@ -53,6 +54,10 @@ This collection now incorporates the latest industry shifts:
 *   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools.
 *   **CoreKernel Engine:** `../platform/core_kernel/workflow_engine.py` orchestrates enterprise-grade agent workflows (Mining -> Design -> Safety) via FastAPI.
 *   **Runtime Adapter:** `../platform/adapters/runtime_adapter.py` provides a unified execution layer, supporting intelligent mock simulations and real API calls.
+*   **OpenAI Agents SDK Stack:** `AI_Providers/OpenAI_Agents_SDK_2026/` captures Responses API patterns, AgentKit guardrails, and ChatKit UX blueprints for regulated deployments.
+
+### 📈 Observability & Ops (New!)
+*   **LangSmith Observability Toolkit:** `Research_Tools/LangSmith_Observability/` standardizes tracing, evals, and incident response using LangSmith + OpenTelemetry exporters plus ready-to-run evalsets and runbooks.
 
 ### 🏥 Clinical & Operations (New!)
 *   **Trial Matching:** `Clinical/Trial_Matching/trial_matching_agent.py` matches patient profiles to clinical trials using intelligent criteria mapping (LLM-driven).

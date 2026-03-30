@@ -1,0 +1,21 @@
+# Baseline evalset for ACS triage agents
+metadata:
+  project: Clinical-Ops-Agent
+  description: Baseline prompts + references for ACS triage flows
+examples:
+  - id: acs_case_001
+    input: "55M, chest pain, diaphoresis, hx HTN"
+    reference:
+      diagnosis: "NSTEMI risk"
+      actions:
+        - order: "ECG"
+        - order: "troponin"
+        - note: "initiate MONA"
+  - id: acs_case_002
+    input: "68F, atypical pain, hx DM"
+    reference:
+      diagnosis: "Rule out ACS"
+      actions:
+        - order: "ECG"
+        - order: "serial troponins"
+        - order: "CXR"

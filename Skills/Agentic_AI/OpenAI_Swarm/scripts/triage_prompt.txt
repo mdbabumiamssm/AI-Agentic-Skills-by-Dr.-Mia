@@ -1,0 +1,1 @@
+Collect vitals, labs, meds, and allergies. Summarize as JSON with keys: vitals, labs, meds, risk_flags, summary. Add "red_flag" to summary if ACS suspected.
