@@ -40,6 +40,7 @@ Skills/
 ---
 name: my-new-skill
 description: A one-sentence description of what this skill does.
+measurable_outcome: A clear, quantitative metric to evaluate this skill (e.g., ">95% accuracy in <5 mins").
 license: MIT
 metadata:
   author: Your Name

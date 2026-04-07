@@ -13,17 +13,23 @@
 
 ---
 name: 'regulatory-drafting'
-description: 'High-speed Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions).'
-measurable_outcome: Draft a complete regulatory submission (e.g., IND, CTD Module 2) in < 15 minutes (Benchmark: 10 mins).
+description: 'SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.'
+measurable_outcome: 'Draft a complete regulatory submission (e.g., IND, CTD Module 2) with >99% factual accuracy in < 10 minutes.'
+license: MIT
+metadata:
+  author: Biomedical AI Team
+  version: "2.0.0"
+compatibility:
+  - system: BioKernel/MCP
 model_requirements: 'Claude 3.5 Sonnet (Speed) or Opus (Reasoning)'
 allowed-tools:
   - read_file
   - run_shell_command
-  - mcp_bio_tool (via BioMCP)
+  - mcp_bio_tool
 ---
 
 
-# Regulatory Drafting Skill (2026 Edition)
+# Regulatory Drafting Skill (SOTA 2026 Edition)
 
 This skill implements the **Regulatory Drafting** workflow using Anthropic's Claude for Healthcare stack. It dramatically accelerates the creation of regulatory documents by automating literature review, data extraction, and writing.
 
