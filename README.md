@@ -71,6 +71,23 @@ Current first-party AI platform coverage includes dedicated 2026 operational ski
 - xAI Grok
 - provider and framework GitHub maintenance audits
 
+Current agent-framework and interoperability coverage now includes dedicated 2026 skills for:
+
+- LangGraph production patterns
+- PydanticAI
+- Google Agent Development Kit (ADK)
+- Microsoft Agent Framework
+- Agno operations
+- CrewAI production patterns
+- Mastra production patterns
+- LlamaIndex workflows
+- smolagents
+- DSPy optimization workflows
+- Agent2Agent (A2A) protocol
+- OpenAI Agents SDK
+- Model Context Protocol (MCP) registry and server patterns
+- Browser Use for browser-native agent execution
+
 ### 2. Platform and orchestration code
 The repository is not documentation-only. It also includes platform code for kernels, adapters, evaluators, reports, schemas, and utilities under `platform/`, plus supporting code under `src/`.
 
@@ -123,6 +140,19 @@ This repository is useful if you are building or curating AI systems for:
 - software engineering agents and code workflows
 - data analysis, reporting, and dashboard generation
 - agentic orchestration across tools, providers, and execution environments
+
+## Current curation priorities
+
+As of April 13, 2026, the highest-priority repository upgrades are:
+
+- first-party provider operations grounded in official docs
+- maintained agent frameworks rather than stale demo stacks
+- secondary frameworks that are still active, but are documented with clear fit and non-fit guidance
+- specialist layers such as DSPy for evaluation-first optimization and Browser Use for browser-native execution
+- protocol interoperability through MCP and A2A
+- evaluation, tracing, and observability as first-class design constraints
+- strategy documents that explain which framework to choose and why
+- a curated agentic resource map tying official docs, repositories, and benchmark papers together
 
 ## Quick start
 

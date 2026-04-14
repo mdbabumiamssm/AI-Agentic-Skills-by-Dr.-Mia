@@ -1,6 +1,6 @@
 # Codex Repo Refresh
 
-This repository now includes a runnable automation wrapper for Codex so you can repeat the same workflow used in the manual provider/framework refresh.
+This repository includes a runnable automation wrapper for Codex so you can repeat the same workflow used in the manual provider/framework refresh.
 
 ## What it does
 
@@ -66,19 +66,33 @@ bash scripts/run_codex_repo_refresh.sh --open-pr
 - uses a fresh timestamped branch
 - refuses to fast-forward `main` if `origin/main` moved during the run
 
+## Current refresh scope
+
+The prompt is now tuned to keep these areas current:
+
+- `README.md`
+- `Skills/README.md`
+- `Skills/Agentic_AI`
+- `Skills/AI_Providers`
+- `docs/strategy`
+
+Priority topics:
+
+- first-party provider operations
+- maintained agent frameworks
+- clearly documented strong-secondary frameworks such as Agno, CrewAI, Mastra, smolagents, and LlamaIndex Workflows when justified
+- interoperability protocols (`MCP`, `A2A`)
+- evals, tracing, and observability paths
+- curated source lists anchored to official documentation and official GitHub repositories
+
 ## Customization
 
 Edit the prompt template if you want Codex to refresh a different area of the repository:
 
 - `automation/prompts/refresh_provider_framework_skills.prompt.md`
 
-The current prompt is tuned for:
-
-- `Skills/AI_Providers`
-- `Skills/Agentic_AI`
-- `README.md`
-
 ## Notes
 
 - The validator only checks changed `SKILL.md` files for required frontmatter fields.
 - The wrapper handles git publication. The Codex prompt explicitly tells the agent not to push or merge on its own.
+- For framework refreshes, prefer official documentation and official GitHub repositories over blog aggregation sites.

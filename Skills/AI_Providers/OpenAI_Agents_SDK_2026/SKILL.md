@@ -11,89 +11,37 @@
 -->
 
 ---
-name: 'openai-agents-sdk-2026'
-description: 'Implements OpenAI\'s Responses API + Agents SDK + AgentKit guardrails for production agent workloads.'
-keywords:
-  - openai
-  - agents-sdk
-  - responses-api
-  - agentkit
-  - chatkit
-measurable_outcome: Stand up multi-agent workflows with tracing + evals + UI embeds in <1 day using OpenAI AgentKit.
+name: openai-agents-sdk-2026
+description: Build production agents on OpenAI using the Responses API, Agents SDK, guardrails, built-in tools, tracing, and evals. Use when OpenAI is the primary runtime and you need a modern agent stack rather than legacy Assistants-era patterns.
+measurable_outcome: Select an OpenAI agent runtime pattern, tool surface, guardrail path, and validation plan for a concrete workload within 30 minutes.
 allowed-tools:
   - read_file
   - run_shell_command
-  - python
 ---
 
-# OpenAI Agents SDK (2026) Skill
+# OpenAI Agents SDK (2026)
 
-OpenAI\'s AgentKit combines the **Responses API**, the **Agents SDK**, **Agent Builder**, **ChatKit**, **Connector Registry**, and **Evals** so teams can design, deploy, and monitor agents without stitching disparate services. [^platform] [^agentkit]
+## Workflow
 
-## When to use
+1. Read `references/sources.md` and confirm the current OpenAI agent platform surfaces before implementation.
+2. Choose the runtime path deliberately: Responses-only, full Agents SDK orchestration, ChatKit UI integration, or Agent Builder/hosted workflows.
+3. Define the tool surface first: built-in tools, MCP-backed tools, custom function tools, or a mixed design.
+4. Add guardrails, tracing, and evals before broadening agent autonomy or adding side effects.
+5. Run a smoke test that covers one streamed turn, one tool call, one guarded path, and one evaluation check.
 
-* Migrating Assistants API workloads to the Responses API with MCP, file search, computer use, or background mode. [^responses]
-* Need type-safe orchestration with Python/TypeScript SDKs (handoffs, streaming, traces). [^sdk]
-* Enterprise governance—Connector Registry + Guardrails to control data paths & PII. [^agentkit]
-* Building co-pilot UIs quickly with ChatKit and surfacing trace/eval insights. [^platform]
+## When to Use
 
-## Architecture Blueprint
+- OpenAI is the primary provider and first-party agent tooling matters.
+- You need built-in tools such as web search, file search, computer use, or MCP-backed integrations.
+- The workflow needs first-party tracing, evals, background execution, or UI embedding.
+- You are migrating from older Assistants-era patterns and want the current OpenAI stack.
 
-```mermaid
-graph TD
-    User -->|UI| ChatKit
-    ChatKit --> ResponsesAPI
-    subgraph OpenAI Platform
-        ResponsesAPI --> AgentsSDK
-        AgentsSDK -->|Tool Calls| BuiltInTools
-        AgentsSDK -->|Trace| LangSmith
-        AgentsSDK -->|Deploy| AgentBuilder
-    end
-    BuiltInTools -->|Web Search / File Search / Computer Use| ExternalSystems
-    AgentsSDK -->|Connector Registry| EnterpriseData
-```
+## Output Requirements
 
-## Quickstart (Python)
+- Return the chosen OpenAI runtime pattern and why it fits.
+- State which tool surface is primary and whether MCP is involved.
+- Include one guardrail or approval boundary.
+- Include one tracing or evaluation note for rollout safety.
 
-```bash
-pip install --upgrade openai-agents-sdk openai
-export OPENAI_API_KEY=sk-...
-```
-
-```python
-from openai import OpenAI
-from openai.agents import Agent, Handoff
-
-client = OpenAI()
-workflow = Agent(
-    name="ClinicalCopilot",
-    instructions="Triage + request labs, call file_search, summarize",
-    tools=["web_search", "file_search", "computer_use"],
-)
-
-response = client.responses.create(
-    agent=workflow,
-    input=[{"role": "user", "content": "Prepare ACS workup"}],
-    metadata={"mission_id": "ACS-2026-03"},
-    stream=True,
-)
-for event in response:
-    print(event.output_text, end="", flush=True)
-```
-
-## Implementation Tasks
-
-1. **SDK Templates** – add `notebooks/openai_agents_sdk_quickstarts.ipynb` with Python + TypeScript parity.
-2. **Guardrails** – connect AgentKit guardrails to `platform/adapters/security_monitor.py` for PHI scrubbing.
-3. **Migration Guide** – under `docs/`, write `Assistants_v1_to_AgentsSDK.md` referencing OpenAI\'s deprecation timeline. [^assistants]
-4. **UI Embed** – embed mission IDs via ChatKit widget inside `docs/demos/openai_agentkit_demo.md`.
-
-## Key References
-
-[^sdk]: [OpenAI Agents SDK documentation](https://platform.openai.com/docs/guides/agents-sdk/) describing installation + type-safe APIs. 【turn0search0】
-[^agentkit]: [Introducing AgentKit](https://openai.com/index/introducing-agentkit/) detailing Agent Builder, Connector Registry, Guardrails, ChatKit, and eval upgrades. 【turn0search1】
-[^responses]: [New tools and features in the Responses API](https://openai.com/index/new-tools-and-features-in-the-responses-api/) covering MCP support, background mode, reasoning summaries, and encrypted reasoning items. 【turn0search2】
-[^platform]: [Build every step of agents on one platform](https://openai.com/agent-platform/) summarizing AgentKit metrics (70% faster iteration, ChatKit, Evals). 【turn0search5】
-[^assistants]: [Assistants API v2 FAQ](https://help.openai.com/en/articles/8550641-assistants-api-v2-faq) clarifying migration timeline + parity. 【turn0search4】
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

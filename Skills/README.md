@@ -13,211 +13,116 @@
 
 # Skills Repository (2026 Edition)
 
-> **The "Microservices Moment" for Biomedical AI Agents.**
+> **A production-focused repository for biomedical, clinical, and agentic AI systems.**
 
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![Agents](https://img.shields.io/badge/Agents-Orchestrated-blue)
 ![Domain](https://img.shields.io/badge/Domain-Biotech%20%7C%20Clinical%20%7C%20Genomics-purple)
-![Tech](https://img.shields.io/badge/Tech-MCP%20%7C%20DeepSeek%20%7C%20Gemini-orange)
+![Tech](https://img.shields.io/badge/Tech-MCP%20%7C%20A2A%20%7C%20Frameworks-orange)
 
-## 🚀 Overview
+## Overview
 
-This repository is a comprehensive library of **skills, agents, and mathematical foundations** for modern (2026) Artificial Intelligence. Unlike standard chatbot repos, this project focuses on **Agentic Workflows**—where autonomous systems plan, execute, use tools, and correct themselves to solve complex scientific problems.
+This repository is a comprehensive library of skills, agents, framework operations, mathematical foundations, and domain workflows for modern (2026) AI systems. Unlike standard chatbot repos, this project is organized around agentic workflows that plan, execute, use tools, maintain state, and coordinate across specialized components.
 
-We have aligned this codebase with the **State of the Art (SOTA) for 2026**, integrating Agentic patterns, Model Context Protocol (MCP), and rigorous scientific simulations.
+The current curation standard is practical rather than hype-driven:
 
-## ✨ New Trends 2026 (Updated Feb 24)
+* use official docs and official GitHub repositories for operational facts
+* favor maintained frameworks over abandoned demos
+* separate protocol interoperability from provider-specific abstractions
+* keep domain workflows adjacent to the framework guidance needed to run them
 
-> **See full report:** [Skills/Healthcare_Trends_2026.md](Healthcare_Trends_2026.md)
+## Current Agentic AI Focus (checked April 7, 2026)
 
-This collection now incorporates the latest industry shifts:
-*   **OpenAI for Healthcare:** Integration with **GPT-5.2** (Reasoning) and **OpenClaw** (Local Jarvis) for clinical workflows.
-*   **Anthropic Health Stack:** Updated benchmarks for **Regulatory Drafting** (12 weeks → **10 minutes**) using Claude 3.5 Sonnet/Opus.
-*   **Digital Teammates:** Implementation of "Human-in-the-loop" co-pilots for complex medical decision support.
+This collection now emphasizes the stacks that are most relevant for production-oriented agent development:
 
-## 🌟 Key Capabilities (New for 2026)
+* **OpenAI Agent Platform:** Responses API, Agents SDK, AgentKit, built-in tools, evals, and deployment patterns.
+* **LangGraph + LangSmith:** Durable execution, stateful graphs, interrupts, and observability for long-running agents.
+* **PydanticAI + Logfire:** Typed Python agents, schema-first outputs, provider portability, and operational tracing.
+* **Google ADK + A2A:** Code-first Google agent development with explicit multi-agent interoperability paths.
+* **Microsoft Agent Framework:** Unified Python/.NET path for teams consolidating prior AutoGen and Semantic Kernel estates.
+* **Agno:** Unified Python runtime for agents, teams, workflows, knowledge, and production serving.
+* **CrewAI:** Role-based agent crews plus event-driven flows with first-party tracing.
+* **MCP + A2A:** Clear separation between tool/resource interoperability and agent-to-agent interoperability.
 
-### 🧬 Genomics & Single Cell (New!)
-*   **Universal Annotator:** `Genomics/Single_Cell/Cell_Type_Annotation/RNA/universal_annotator.py` wraps Marker-based, Deep Learning (CellTypist), and LLM-based annotation strategies.
-*   **Pathway Scoring:** `Genomics/Single_Cell/Pathway_Analysis/sc_pathway_scorer.py` implements AUCell-like scoring for functional enrichment.
-*   **Cell-Cell Comms:** `Genomics/Single_Cell/Cell_Cell_Communication/interaction_inference.py` infers Ligand-Receptor networks.
-*   **Database:** A curated [Tool Database](Genomics/Single_Cell/Tool_Database.md) of 2026 single-cell tools (MultiKano, scPS, etc.).
+## Key Capabilities
 
-### 🧠 Agentic AI (The Brain)
-*   **Self-Correction:** `Agentic_AI/Agent_Architectures/Self_Correction/self_correction_agent.py` implements a Reflexion pattern for iterative improvement.
-*   **Orchestrated Swarms:** `Agentic_AI/Multi_Agent_Systems/orchestrator.py` implements a Supervisor pattern that delegates tasks to specialized sub-agents.
-*   **OpenAI Swarm:** `Agentic_AI/OpenAI_Swarm/` packages OpenAI's lightweight handoff framework with runnable demos and blueprint stubs for regulated workflows.
-*   **Plan-and-Solve:** `Agentic_AI/Agent_Architectures/Plan_and_Solve/` breaks down complex user queries into Directed Acyclic Graphs (DAGs).
-*   **Async Runtime:** `Computer_Science/Distributed_Systems/agent_concurrency.py` provides a Ray-like async runtime for parallel agents.
+### Agentic AI
 
-### 🔌 Model Context Protocol (MCP) & Platform
-*   **BioMCP Server:** `MCP_Servers/BioMCP/bio_mcp_server.py` implements a compliant MCP server exposing bio-tools.
-*   **CoreKernel Engine:** `../platform/core_kernel/workflow_engine.py` orchestrates enterprise-grade agent workflows (Mining -> Design -> Safety) via FastAPI.
-*   **Runtime Adapter:** `../platform/adapters/runtime_adapter.py` provides a unified execution layer, supporting intelligent mock simulations and real API calls.
-*   **OpenAI Agents SDK Stack:** `AI_Providers/OpenAI_Agents_SDK_2026/` captures Responses API patterns, AgentKit guardrails, and ChatKit UX blueprints for regulated deployments.
+* **Framework Selection:** `Agentic_AI/AI_Framework_GitHub_Maintainers_2026/` tracks official docs and repos for maintained framework choices.
+* **LangGraph Operations:** `Agentic_AI/LangGraph_Production_2026/` focuses on checkpoints, interrupts, human review, and durable orchestration.
+* **PydanticAI Operations:** `Agentic_AI/PydanticAI_2026/` focuses on typed agents, structured outputs, tool schemas, and UI/event streaming.
+* **Google ADK:** `Agentic_AI/Google_ADK_2026/` captures ADK quickstarts, evaluation, deployment, and A2A-aware design.
+* **Microsoft Agent Framework:** `Agentic_AI/Microsoft_Agent_Framework_2026/` covers graph workflows, memory, and migration direction.
+* **Agno:** `Agentic_AI/Agno_Operations_2026/` covers agents, teams, workflows, knowledge, approvals, and AgentOS deployment.
+* **CrewAI:** `Agentic_AI/CrewAI_Production_2026/` covers crews, flows, memory, and tracing.
+* **A2A Protocol:** `Agentic_AI/A2A_Protocol_2026/` documents how independently hosted agents should interoperate.
+* **MCP Tool Surfaces:** `Agentic_AI/MCP_Registry/` documents tool discovery and shared server patterns.
+* **Architecture Patterns:** `Agentic_AI/Agent_Architectures/`, `Agentic_AI/Multi_Agent_Systems/`, and `Agentic_AI/Memory_Systems/` keep reusable coordination patterns close to the framework layer.
 
-### 📈 Observability & Ops (New!)
-*   **LangSmith Observability Toolkit:** `Research_Tools/LangSmith_Observability/` standardizes tracing, evals, and incident response using LangSmith + OpenTelemetry exporters plus ready-to-run evalsets and runbooks.
+### AI Providers
 
-### 🏥 Clinical & Operations (New!)
-*   **Trial Matching:** `Clinical/Trial_Matching/trial_matching_agent.py` matches patient profiles to clinical trials using intelligent criteria mapping (LLM-driven).
-*   **Prior Auth Appeals:** `Clinical/Prior_Authorization/appeals_agent.py` uses self-correction to iteratively refine arguments for overturning insurance denials.
-*   **EHR/FHIR Integration:** `Clinical/EHR_FHIR_Integration/fhir_client.py` provides tools to search and retrieve patient data from FHIR R4 servers.
-*   **Clinical NLP:** `Clinical/Clinical_NLP/entity_extractor.py` extracts medical entities (Diseases, Meds) from unstructured text.
-*   **Opentrons Agent:** `Lab_Automation/Opentrons_Agent/opentrons_generator.py` generates liquid handling protocols from high-level intent.
+Current first-party AI platform coverage includes dedicated 2026 operational skills for:
 
-### 💊 Drug Discovery & Genomics (Updated)
-*   **Literature Mining:** `Research_Tools/Literature_Mining/mining_agent.py` uses the Runtime Adapter to extract novel targets from (simulated) texts.
-*   **Molecule Evolution:** `Drug_Discovery/Molecule_Design/evolution_agent.py` designs de novo drugs with 'medicinal chemist' feedback loop.
-*   **Safety Officer:** `Clinical/Safety/safety_agent.py` audits outputs for compliance and toxicity using semantic analysis.
-*   **Variant Interpretation:** `Genomics/Variant_Interpretation/acmg_classifier.py` classifies genetic variants and generates AI-powered clinical reports.
-*   **ChemCrow Tools:** `Drug_Discovery/ChemCrow_Tools/chem_tools.py` enables agents to calculate molecular properties (LogP, TPSA) and screen for toxicity.
-*   **CRISPR Design:** `Genomics/CRISPR_Design_Agent/crispr_designer.py` automates gRNA selection and efficiency scoring for gene editing.
-*   **Protein Structure:** `Drug_Discovery/Protein_Structure/esmfold_client.py` mocks ESMFold/AF3 inference for 3D structure prediction.
+* OpenAI
+* Anthropic
+* Google Gemini
+* Amazon Bedrock
+* Azure AI Foundry
+* Cohere
+* Mistral
+* DeepSeek
+* xAI Grok
+* provider and framework GitHub maintenance audits
 
-### 🧪 Clinical Simulators & Research
-*   **Adaptive Clinical Trials:** `Clinical/Clinical_Trials/Adaptive_Trial_Design_Agent/adaptive_trial_sim.py` runs Bayesian MAMS simulations.
-*   **MedPrompt:** `LLM_Research/Prompt_Engineering/medprompt.py` implements Microsoft's SOTA clinical reasoning strategy.
-*   **Self-Driving Labs:** `Mathematics/Probability_Statistics/bayesian_optimization.py` enables autonomous experiment selection using Gaussian Processes.
+### Domain Skill Libraries
 
-### 📐 Math & CS (The Foundation)
-*   **Tensor Operations:** `Mathematics/Linear_Algebra/tensor_operations.py` breaks down the math behind Attention mechanisms.
-*   **Graph RAG:** `Computer_Science/Graph_Algorithms/knowledge_graph.py` provides traversal for Drug-Target-Disease interactions.
+The broader `Skills/` tree continues to cover:
 
-### 💻 Software Engineering (New!)
-*   **React & Next.js Best Practices:** `Software_Engineering/Web_Development/` contains standardized rules (`SKILL.md`) for building modern, performant web UIs.
-*   **Data Science Standards:** `Software_Engineering/Data_Science/Python_Pandas_Best_Practices/` provides guidelines for vectorized, memory-efficient data manipulation.
-*   **Core Python:** `Software_Engineering/Core_Python_Best_Practices/` enforces modern typing and idiomatic Python 3.10+ patterns.
+* clinical and healthcare automation
+* genomics, transcriptomics, epigenomics, and multi-omics
+* drug discovery and structural biology
+* lab automation and self-driving labs
+* software engineering and analytics
+* finance, legal, and cross-domain productivity workflows
 
-## 🤝 Dual Health Stacks (New)
-
-### OpenAI Health Stack
-*   **Care Copilot:** `Consumer_Health/wearable_copilot_openai.py` + `Consumer_Health/Wearable_Analysis/health_copilot.py` translate wearable JSON into schema-validated action plans.
-*   **Clinical Ops Automator:** `Clinical/openai_clinical_ops_automator.py` emits ICD-10/CPT suggestions, SOAP notes, and prior auth packets with local JSON validation.
-*   **Lab Automation Bridge:** `Lab_Automation/openai_lab_automation_bridge.py` wraps Experiment Designer outputs in payloads.
-*   **Documentation:** See [OpenAI_Health_STACK.md](OpenAI_Health_STACK.md) for workflows, CLI usage, and CoreKernel integration.
-
-### Co-Worker Stack
-*   **Inbox Router:** `Clinical/anthropic_inbox_router.py` fans work items into coworkers via the Event Bus.
-*   **Prior Auth Coworker:** `Clinical/Prior_Authorization/appeals_agent.py` mirrors reasoning traces.
-*   **Regulatory Coworker:** `Pharma/Regulatory_Affairs/anthropic_regulatory_coworker.py` drafts CTD responses with citations.
-*   **Pharmacovigilance Monitor:** `Clinical/Safety/pharmacovigilance_monitor.py` triages safety signals and emits audit-ready traces.
-*   **Regulatory Drafter:** `Anthropic_Health_Stack/regulatory_drafter.py` drafts regulatory submissions with audit trails.
-
-## 📂 Directory Structure
+## Directory Structure
 
 ```text
 Skills/
-├── 3D_Genomics/          # Hi-C analysis, chromatin conformation
-├── Agentic_AI/           # Architectures (ReAct, Plan&Solve, Orchestrators)
-├── Anthropic_Health_Stack/ # Regulatory drafting, care coordination
-├── Clinical/             # MedPrompt, Note Summarization, Adaptive Trials, Clinical Databases
-├── Computer_Science/     # Graph Algo, Distributed Systems (Async)
-├── Consumer_Health/      # Wearable analysis, symptom checking
-├── Data_Visualization/   # Heatmaps, volcano plots, circos, genome tracks
-├── Drug_Discovery/       # ChemCrow, Self-Driving Labs, Chemoinformatics
-├── Epigenomics/          # ChIP-seq, ATAC-seq, methylation, epitranscriptomics
-├── Experimental_Design/  # Power analysis, sample size, batch design
-├── External_Collections/ # Consolidated external skill libraries (see below)
-├── Foundation_Models/    # AlphaFold3 Wrapper, BiomedGPT
-├── Gene_Therapy/         # AAV vector design
-├── Genomics/             # Single Cell, Spatial, CRISPR, Variant Calling, Assembly
-├── Hematology/           # AML, MPN, Flow Cytometry, Coagulation
-├── Imaging_Analysis/     # Imaging mass cytometry, spatial analysis
-├── Immunology_Vaccines/  # CAR-T, TCR/BCR analysis, epitope prediction
-├── Lab_Automation/       # Opentrons, PyLabRobot, self-driving labs
-├── LLM_Research/         # RAG, Fine-Tuning, Prompt Engineering
-├── Longevity_Aging/      # Biological age clocks, senescence
-├── Machine_Learning/     # Biomarker discovery, survival analysis, model interpretation
-├── Mathematics/          # Bayesian Opt, Linear Algebra, Probability
-├── MCP_Servers/          # BioMCP Implementation
-├── Metabolomics/         # Peak detection, annotation, pathway mapping
-├── Microbiome/           # 16S/ITS amplicon, diversity, differential abundance
-├── Multi_Omics/          # Cross-modality integration, factor analysis
-├── NGS_QC/               # Read QC, alignment, trimming
-├── Oncology/             # ctDNA, Liquid Biopsy, Radiomics, Pathomics
-├── Pathology_AI/         # Digital pathology, computational pathology
-├── Pharma/               # Drug interactions, regulatory affairs
-├── Population_Genetics/  # GWAS, phylogenetics, epidemiological genomics
-├── Precision_Medicine/   # Pharmacogenomics, polygenic risk scores
-├── Protein_Science/      # AlphaFold3, ESM3, protein design
-├── Proteomics/           # Mass spec, deep visual proteomics
-├── Quantum_Biotech/      # Quantum docking, molecular simulation
-├── Radiology_AI/         # Chest X-ray, CT analysis, report generation
-├── Research_Tools/       # Literature mining, database access, reporting, pathway analysis
-├── RNA_Therapeutics/     # ASO, siRNA, mRNA vaccine, LNP design
-├── Self_Driving_Labs/    # Autonomous lab control, Bayesian experiment design
-├── Sequence_Analysis/    # Alignment, SAM/BAM, FASTA/FASTQ, primer design
-├── Software_Engineering/ # Web Dev (React/Next.js), Data Science (Pandas), Core Python
-├── Structural_Biology/   # CryoEM, protein structure prediction
-├── Synthetic_Biology/    # Genetic circuits, metabolic pathways
-├── Systems_Biology/      # Flux balance analysis, metabolic reconstruction
-├── Transcriptomics/      # Differential expression, RNA quantification, splicing
-├── Variant_Interpretation/ # ACMG classification, clinical interpretation
-└── Workflow_Management/  # Snakemake, Nextflow, CWL pipelines
-
+├── Agentic_AI/           # Framework operations, protocols, orchestration patterns, memory, web agents
+├── AI_Providers/         # First-party provider operations and provider maintenance guidance
+├── Clinical/             # Clinical workflows, trial matching, prior auth, pathology, radiology
+├── Drug_Discovery/       # Molecular design, structure, tox, chemistry tools
+├── Genomics/             # Single cell, spatial, CRISPR, variant analysis, long-read workflows
+├── Research_Tools/       # Literature, observability, reporting, search, pathway analysis
+├── Software_Engineering/ # Core Python, web development, codebase investigation
+└── ...                   # Additional domain libraries across science, medicine, finance, and engineering
 ```
 
-### External_Collections
-Consolidated third-party skill libraries and frameworks:
-- **Auto-GPT** / **Auto-GPT-Plugins**: Autonomous GPT frameworks
-- **awesome-llm-skills**: Community-curated LLM skills
-- **semantic-kernel**: Microsoft's AI orchestration SDK
-- **langchain**: LangChain framework components
-- **google-gemini-cookbook**: Google Gemini examples
-- **mcp-servers-reference**: MCP server implementations
-- **Antigravity_Skills**: Universal SKILL.md agents
-- **Awesome-Biomedical-LLM-Agents**: Biomedical agent resources
-- **life-sciences_Claudeai-main**: Life sciences Claude integrations
+## How to Start
 
-### bioSkills Integration (New Feb 2026!)
-Comprehensive bioinformatics skills from the bioSkills collection (388 skills):
-- **Sequence_Analysis/**: FASTA/FASTQ handling, alignment, primer design
-- **NGS_QC/**: FastQC, read trimming, short-read alignment
-- **Transcriptomics/**: DESeq2, edgeR, alternative splicing, Ribo-seq
-- **Epigenomics/**: ChIP-seq, ATAC-seq, methylation, CLIP-seq
-- **3D_Genomics/**: Hi-C contact matrices, TADs, compartments
-- **Population_Genetics/**: GWAS, phylogenetics, pathogen genomics
-- **Data_Visualization/**: Publication-quality plots
-- **Machine_Learning/**: Biomarker discovery, survival analysis
-- **Multi_Omics/**: MOFA, SNF, cross-modality integration
-- **Workflow_Management/**: Snakemake, Nextflow, 35+ ready pipelines
-- **Systems_Biology/**: Flux balance analysis, metabolic modeling
+If your entry point is agentic AI rather than a scientific domain:
 
-## 🛠️ Usage Examples
+1. read `Agentic_AI/AI_Framework_GitHub_Maintainers_2026/`
+2. choose the framework skill that matches your constraints
+3. decide whether you need MCP, A2A, or both
+4. only then move into the domain skill directories
 
-**1. Run the Multi-Agent Orchestrator:**
-```bash
-python3 Agentic_AI/Multi_Agent_Systems/orchestrator.py
-# Tutorial: Agentic_AI/Multi_Agent_Systems/TUTORIAL_BUILDING_A_SWARM.md
-```
+For a curated map of the current official docs, repos, and benchmark papers that should anchor future refreshes, read `docs/strategy/AGENTIC_AI_RESOURCE_MAP_2026_04.md`.
 
-**2. Transpile a Universal Skill:**
-```bash
-python3 ../platform/optimizer/usdl_transpiler.py --file ../platform/optimizer/my_skill.json
-# Tutorial: ../platform/optimizer/TUTORIAL_USDL_TRANSPILER.md
-```
+This prevents starting from the wrong orchestration stack and then forcing domain workflows to fit it later.
 
-**3. Run a Self-Driving Lab Simulation:**
-```bash
-python3 Mathematics/Probability_Statistics/bayesian_optimization.py
-# Tutorial: Mathematics/Probability_Statistics/TUTORIAL_SELF_DRIVING_LAB_OPTIMIZER.md
-```
+## Roadmap Direction
 
-**4. Annotate Single-Cell Data:**
-```bash
-python3 Skills/Genomics/Single_Cell/Cell_Type_Annotation/RNA/universal_annotator.py
-# Tutorial: Skills/Genomics/Single_Cell/TUTORIAL_CELL_ANNOTATION.md
-```
+The repository's current direction is to strengthen:
 
+* durable framework guidance
+* protocol interoperability
+* operational observability and evals
+* framework selection logic for domain teams
+* reusable skill formats that stay current as provider ecosystems evolve
 
-## 📈 Roadmap (2026)
-*   [x] **Phase 1:** Core Architectures (Orchestrator, Async Runtime) - *Completed Jan 2026*
-*   [x] **Phase 2:** Math Foundations (Bayesian Opt, Graph Theory) - *Completed Jan 2026*
-*   [x] **Phase 3:** Single Cell & Clinical Simulators - *Completed Jan 2026*
-*   [x] **Phase 4:** Initial MCP Server Integration - *Completed Jan 2026*
-*   [x] **Phase 5:** Dual Health Stacks (OpenAI/Anthropic) & USDL - *Completed Jan 2026*
-*   [ ] **Phase 6:** Deployment to FHIR Servers & Real Lab Integration
+The repository should no longer present older agent patterns as if they are sufficient by themselves for production use.
 
 ---
 *Maintained by the Artificial Intelligence Group.*
