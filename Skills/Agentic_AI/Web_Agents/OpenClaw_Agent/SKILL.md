@@ -1,36 +1,32 @@
 ---
-name: OpenClaw_AI_Agent
-description: Autonomous local AI agent ("The Personal AI OS") capable of controlling browsers, sending emails, and executing complex workflows via TypeScript/Python bridges.
-version: 1.0.0
-category: Agentic_AI
-author: AI Agentic Skills Team
-input:
-  task: Natural language command (e.g., "Find the cheapest flight to Tokyo and email me the summary").
-  mode: "headless" or "ui" (interactive).
-output:
-  result: Execution log or summary.
-  artifacts: Generated files or screenshots.
+name: openclaw-agent-operations
+description: Operate OpenClaw as a local AI assistant and agent OS with explicit security boundaries. Use when local system automation, browser work, and provider-pluggable execution need to stay on the operator's machine rather than moving to a hosted browser agent surface.
+measurable_outcome: Select an OpenClaw execution mode, provider path, and security boundary for a concrete local automation workflow within 30 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
-# OpenClaw AI Agent
+# OpenClaw Agent Operations
 
-**OpenClaw AI** (formerly Clawdbot/Moltbot) is a conversation-first, autonomous agent that runs locally on your machine. It bridges the gap between LLMs and your local operating system, allowing for secure, private, and powerful automation.
+## Workflow
 
-## Capabilities
-1.  **Browser Control:** Uses Playwright/Puppeteer protocols to navigate websites, click buttons, and scrape dynamic content.
-2.  **System Integration:** Can write files, execute shell commands, and interact with local applications.
-3.  **Vision Support:** Analyzes UI elements using vision-capable models (e.g., GPT-4o, Claude 3.5 Sonnet) to "see" the screen.
-4.  **Privacy First:** All data stays local (SQLite) unless explicitly sent to an external LLM provider.
+1. Read `references/sources.md` and confirm the current OpenClaw repository and release state before implementation.
+2. Decide whether the workload is truly local-first. If browser execution is the main requirement, compare against `Browser_Use_2026` first.
+3. Define the security boundary explicitly: allowed directories, credentials, browser or session scope, and approval gates for shell or file actions.
+4. Keep provider configuration and model selection separate from task routing.
+5. Run one safe end-to-end task in a sandbox before broadening permissions.
 
-## Usage (Python Wrapper)
+## When to Use
 
-```python
-from Skills.Agentic_AI.Web_Agents.OpenClaw_Agent.openclaw_wrapper import OpenClaw
+- The system should run on the operator's machine.
+- Browser work is only one part of a larger local automation surface.
+- You need explicit control of local files, local tools, or local sessions.
+- Privacy or operator control is more important than managed cloud browser infrastructure.
 
-claw = OpenClaw(headless=False)
-result = claw.run_task("Go to github.com/trending and list the top 3 python repos.")
-print(result)
-```
+## Output Requirements
 
-## Security Note
-⚠️ **Warning:** OpenClaw executes real commands on your machine. Ensure you run it in a sandboxed environment (Docker/VM) if testing untrusted prompts.
+- State why OpenClaw is a better fit than Browser Use for the workload.
+- State the primary provider path and one local security boundary.
+- Include one sandbox or approval recommendation.
+- Include one rollback or kill-switch note.

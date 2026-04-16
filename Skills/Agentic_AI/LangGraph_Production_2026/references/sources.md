@@ -1,23 +1,8 @@
-<!--
-# COPYRIGHT NOTICE
-# This file is part of the "Universal AI Agentic Skills" project.
-# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
-# All Rights Reserved.
-#
-# This code is proprietary and confidential.
-# Unauthorized copying of this file, via any medium is strictly prohibited.
-#
-# Provenance: Authenticated by MD BABU MIA
-
--->
-
-# Sources (checked April 7, 2026)
+# Sources (checked April 16, 2026)
 
 - LangGraph overview: https://docs.langchain.com/oss/python/langgraph/overview
-- LangChain human-in-the-loop middleware: https://docs.langchain.com/oss/javascript/langchain/human-in-the-loop
-- LangSmith observability docs: https://docs.langchain.com/langsmith/observability
 - LangGraph repository: https://github.com/langchain-ai/langgraph
+- LangGraph releases: https://github.com/langchain-ai/langgraph/releases
+- LangSmith observability docs: https://docs.langchain.com/langsmith/observability
+- LangSmith evaluation docs: https://docs.langchain.com/langsmith/evaluation
 - Deep Agents frontend patterns: https://docs.langchain.com/oss/python/deepagents/frontend/overview
-
-
-<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

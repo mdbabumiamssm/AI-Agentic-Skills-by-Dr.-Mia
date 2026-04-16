@@ -1,17 +1,25 @@
-# Multi-Agent Swarm Coordinator Skill
+---
+name: swarm-coordinator-pattern
+description: Design a supervisor-worker or debate-style multi-agent coordinator with explicit delegation and synthesis boundaries. Use when a task genuinely benefits from controlled specialization rather than a single-agent loop.
+measurable_outcome: Define a coordinator pattern, delegation boundary, and synthesis path for a concrete multi-agent workflow within 20 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
+---
 
-**Domain:** Agentic AI / Multi-Agent Systems
-**Status:** Active
-**Trend Context:** 2026 state-of-the-art (Inspired by CrewAI, AutoGen, and MetaGPT)
+# Swarm Coordinator Pattern
 
-## Overview
-The Swarm Coordinator skill provides an architectural framework for managing fleets of autonomous AI agents working in parallel. It supports "Plan-and-Solve" and "Debate" architectures where a master orchestrator breaks down complex tasks, delegates them to specialized sub-agents, and synthesizes the final output.
+## Workflow
 
-## Capabilities
-- `register_agent(name, system_prompt)`: Instantiates a virtual sub-agent.
-- `run_swarm(task)`: Orchestrates the parallel execution of the task across the registered agents and returns a synthesized result.
+1. Start from the parent `Multi_Agent_Systems/` guidance before adding more agents.
+2. Prove that the workload needs multiple specialists rather than a single agent with tools.
+3. Define agent roles, handoff boundaries, and the final synthesis contract explicitly.
+4. Add guardrails for duplicate work, deadlocks, and conflicting outputs.
+5. Keep the coordinator observable: each delegation should be traceable and reviewable.
 
-## Implementation Details
-- **Language:** Python
-- **Dependencies:** Standard library
-- **Main Class:** `SwarmCoordinator`
+## Output Requirements
+
+- Return the chosen multi-agent pattern and why it is justified.
+- State the coordinator responsibilities and worker boundaries.
+- Include one conflict-resolution rule.
+- Include one observability or evaluation note.

@@ -1,23 +1,8 @@
-<!--
-# COPYRIGHT NOTICE
-# This file is part of the "Universal AI Agentic Skills" project.
-# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
-# All Rights Reserved.
-#
-# This code is proprietary and confidential.
-# Unauthorized copying of this file, via any medium is strictly prohibited.
-#
-# Provenance: Authenticated by MD BABU MIA
-
--->
-
-# Sources (checked February 7, 2026)
+# Sources (checked April 16, 2026)
 
 - Anthropic docs: https://docs.anthropic.com/
+- Anthropic models overview: https://docs.anthropic.com/en/docs/about-claude/models/overview
 - Anthropic model deprecations: https://docs.anthropic.com/en/docs/resources/model-deprecations
-- Anthropic release notes: https://docs.anthropic.com/en/release-notes/api
+- Anthropic release notes overview: https://docs.anthropic.com/en/release-notes/overview
 - Anthropic Python SDK: https://github.com/anthropics/anthropic-sdk-python
 - Anthropic TypeScript SDK: https://github.com/anthropics/anthropic-sdk-typescript
-
-
-<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -2,14 +2,14 @@
 set -euo pipefail
 
 usage() {
-  cat <<'EOF'
+  cat <<'HELP'
 Usage:
   bash scripts/run_codex_repo_refresh.sh [options]
 
 Purpose:
   Run Codex non-interactively to refresh this repository's current AI provider and
-  framework skill coverage, validate changed SKILL.md files, commit the result,
-  and optionally publish it.
+  framework skill coverage, validate changed SKILL.md files, perform a repo-wide
+  agentic/provider skill audit, commit the result, and optionally publish it.
 
 Options:
   --base-branch <name>     Base branch to refresh from. Default: main
@@ -27,7 +27,7 @@ Examples:
   bash scripts/run_codex_repo_refresh.sh --publish main
   bash scripts/run_codex_repo_refresh.sh --model gpt-5.4 --open-pr
   bash scripts/run_codex_repo_refresh.sh --publish none
-EOF
+HELP
 }
 
 require_cmd() {
@@ -200,6 +200,11 @@ if (( ${#CHANGED_SKILLS[@]} > 0 )); then
   python3 "${VALIDATOR}" "${ABS_SKILLS[@]}"
 fi
 
+echo "==> Running repo-wide skill audit for Agentic_AI and AI_Providers"
+python3 "${VALIDATOR}" \
+  "${REPO_ROOT}/Skills/Agentic_AI" \
+  "${REPO_ROOT}/Skills/AI_Providers"
+
 echo "==> Staging and committing changes"
 git -C "${REPO_ROOT}" add .
 git -C "${REPO_ROOT}" commit -m "${COMMIT_MESSAGE}"
@@ -238,5 +243,3 @@ fi
 git -C "${REPO_ROOT}" checkout "${BASE_BRANCH}"
 git -C "${REPO_ROOT}" merge --ff-only "${BRANCH_NAME}"
 git -C "${REPO_ROOT}" push origin "${BASE_BRANCH}"
-
-echo "==> Done. ${BASE_BRANCH} is updated on origin"

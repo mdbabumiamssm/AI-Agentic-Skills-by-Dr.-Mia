@@ -1,20 +1,16 @@
-# OpenAI Swarm Playbook (2026)
+# OpenAI Swarm Transition Note
 
-| Component | Purpose | File |
-|---|---|---|
-| Skill definition | Usage, outcomes, guardrails | `SKILL.md` |
-| Blueprint templates | Reusable agent instructions & tools | `playbooks/swarm_blueprints.md` |
-| Demo runner | CLI entry point that wires Swarm into in-repo toolchains | `scripts/run_swarm_demo.py` |
+This directory is retained as a lightweight transition reference, not as a first-choice production runtime.
 
-## Architecture Snapshot
+Use it only when one of these conditions is true:
 
-1. **Agents** – YAML/JSON definitions with `instructions`, `functions`, `context_variables`.
-2. **Handoffs** – Tools return `Agent` objects. Each handoff is auditable for clinical workflows.
-3. **Routines** – Pre-packaged sequences (triage → labs → safety) triggered by `swarm.routines`.
-4. **Upgrade Path** – Export stable Swarm missions to OpenAI Agents SDK using shared instruction files.
+- you are maintaining an existing Swarm prototype
+- you need a minimal educational example of explicit agent handoffs
+- you are translating older Swarm concepts into the OpenAI Agents SDK
 
-## Backlog
+For new OpenAI agent work, start with:
 
-- [ ] Add `swarm_blueprints.md` with templated agent JSON for hematology, oncology, and self-driving lab orchestration.
-- [ ] Implement `scripts/run_swarm_demo.py` bridging Swarm with `platform/adapters/runtime_adapter.py`.
-- [ ] Wire Swarm traces into LangSmith via OTel exporters (see `Research_Tools/LangSmith_Observability`).
+- `Skills/AI_Providers/OpenAI_Agents_SDK_2026/`
+- `Skills/AI_Providers/OpenAI_Platform_Operations_2026/`
+
+The official OpenAI Swarm repository now states that Swarm has been replaced by the OpenAI Agents SDK and recommends migrating production use cases.

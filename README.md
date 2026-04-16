@@ -34,6 +34,7 @@ It brings together:
 - validation material under `tests/` and `test_demonstration/`
 - documentation and strategy material under `docs/`
 - directly tracked analytics tutorial collections under `Skills/Research_Tools/Data_Analysis/tutorials/`
+- repository-local research snapshots under `sources/` when a refresh depends on current upstream verification
 
 The result is a practical foundation for teams building AI agents that need domain knowledge, repeatable workflows, implementation scaffolding, and real reference assets in one place.
 
@@ -60,8 +61,9 @@ Additional specialized coverage spans pathology AI, radiology AI, oncology, prec
 
 Current first-party AI platform coverage includes dedicated 2026 operational skills for:
 
-- OpenAI
-- Anthropic
+- OpenAI platform operations
+- OpenAI Agents SDK
+- Anthropic Claude
 - Google Gemini
 - Amazon Bedrock
 - Azure AI Foundry
@@ -84,9 +86,9 @@ Current agent-framework and interoperability coverage now includes dedicated 202
 - smolagents
 - DSPy optimization workflows
 - Agent2Agent (A2A) protocol
-- OpenAI Agents SDK
 - Model Context Protocol (MCP) registry and server patterns
-- Browser Use for browser-native agent execution
+- Browser Use for browser-native execution
+- agent evals and observability
 
 ### 2. Platform and orchestration code
 The repository is not documentation-only. It also includes platform code for kernels, adapters, evaluators, reports, schemas, and utilities under `platform/`, plus supporting code under `src/`.
@@ -99,7 +101,7 @@ The repository includes reference material and tutorial assets for practical lea
 - SQL datasets and learning assets
 - Tableau and Power BI visualization content
 
-These tutorial directories are now tracked directly inside the parent repository, which makes the repository easier to version, review, and distribute.
+These tutorial directories are tracked directly inside the parent repository, which makes the repository easier to version, review, and distribute.
 
 ## Best entry points
 
@@ -108,11 +110,13 @@ If you are new to the repository, start here:
 | Goal | Where to start |
 |---|---|
 | Explore domain skills | `Skills/` |
-| Work on orchestration or kernel logic | `platform/` |
-| Inspect supporting agent code | `src/` |
+| Choose a production agent stack | `Skills/Agentic_AI/AI_Framework_GitHub_Maintainers_2026/` |
+| Choose a provider runtime | `Skills/AI_Providers/` |
+| Review current official source maps | `docs/strategy/AGENTIC_AI_RESOURCE_MAP_2026_04.md` |
+| Review upstream maintenance notes | `docs/strategy/AGENTIC_AI_UPSTREAM_HEALTH_2026_04.md` |
+| Inspect supporting code | `platform/`, `src/` |
 | Review tests and sample outputs | `tests/`, `test_demonstration/` |
-| Browse research and planning material | `docs/` |
-| Use tutorial/reference datasets | `Skills/Research_Tools/Data_Analysis/tutorials/` |
+| Inspect saved refresh research | `sources/` |
 
 ## Repository structure
 
@@ -122,6 +126,7 @@ AIAGENTICSKILLS/
 |-- platform/              # Kernel, adapters, evaluator, reports, schema, examples, utilities
 |-- src/                   # Supporting source code for research and chemistry agents
 |-- docs/                  # Research notes, strategy docs, presentations
+|-- sources/               # Saved current-source research snapshots used during refreshes
 |-- tests/                 # Validation assets and test material
 |-- test_demonstration/    # Demonstration workflows and outputs
 |-- archive/               # Archived material and prior snapshots
@@ -143,16 +148,16 @@ This repository is useful if you are building or curating AI systems for:
 
 ## Current curation priorities
 
-As of April 13, 2026, the highest-priority repository upgrades are:
+As of April 16, 2026, the highest-priority repository upgrades are:
 
 - first-party provider operations grounded in official docs
 - maintained agent frameworks rather than stale demo stacks
-- secondary frameworks that are still active, but are documented with clear fit and non-fit guidance
-- specialist layers such as DSPy for evaluation-first optimization and Browser Use for browser-native execution
+- explicit transition labeling for legacy patterns such as OpenAI Swarm and model-pinned frontier examples
+- browser-native and local-first agent execution documented as distinct choices
 - protocol interoperability through MCP and A2A
 - evaluation, tracing, and observability as first-class design constraints
+- source maps and research snapshots that make refreshes reproducible
 - strategy documents that explain which framework to choose and why
-- a curated agentic resource map tying official docs, repositories, and benchmark papers together
 
 ## Quick start
 
@@ -171,10 +176,11 @@ Typical workflow:
 2. inspect the related `SKILL.md` and implementation assets
 3. use `platform/` if you need orchestration, evaluation, or kernel support
 4. validate with the relevant test or demonstration material
+5. consult `docs/strategy/` and `sources/` when the work depends on current provider or framework state
 
 Automation:
 
-- use `bash scripts/run_codex_repo_refresh.sh` for a Codex-driven provider/framework refresh workflow
+- use `bash scripts/run_codex_repo_refresh.sh` for a Codex-driven provider and framework refresh workflow
 - see `automation/CODEX_REPO_REFRESH.md` for run modes, prerequisites, and publication options
 
 ## Design principles
@@ -182,20 +188,21 @@ Automation:
 This repository is organized around practical reuse.
 
 - skills are grouped by domain rather than by model vendor alone
-- research assets and implementation assets coexist to reduce context switching
+- official docs and official repositories are the primary operational anchors
+- transition material is kept, but it is labeled clearly so it does not masquerade as a default recommendation
 - platform code is separated from skill content to keep orchestration maintainable
-- tutorial collections are kept inside the repository when they are needed as first-class reference material
+- repository-local research snapshots are saved when current upstream verification affects curation decisions
 
 ## Contributing
 
-Contributions should keep the repository navigable and self-contained.
+Contributions should keep the repository navigable and current.
 
 Recommended practice:
 
 1. create a focused feature branch
 2. update the relevant skill, platform, or documentation area
-3. keep `README.md` and related docs aligned with structural changes
-4. run any relevant validation for the component you changed
+3. keep `README.md`, `Skills/README.md`, and strategy docs aligned with structural changes
+4. run the repository refresh validation on changed or affected skills
 5. open a pull request with a concise technical summary
 
 ## License

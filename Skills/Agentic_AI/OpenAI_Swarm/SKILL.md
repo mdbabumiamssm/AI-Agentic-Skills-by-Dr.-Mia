@@ -1,86 +1,31 @@
-<!--
-# COPYRIGHT NOTICE
-# This file is part of the "Universal AI Agentic Skills" project.
-# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
-# All Rights Reserved.
-#
-# This code is proprietary and confidential.
-# Unauthorized copying of this file, via any medium is strictly prohibited.
-#
-# Provenance: Authenticated by MD BABU MIA
--->
-
 ---
-name: 'openai-swarm-orchestrator'
-description: 'Lightweight agent swarms built on OpenAI\'s Swarm framework (agents, handoffs, routines).'
-keywords:
-  - openai
-  - swarm
-  - handoffs
-  - routines
-  - lightweight-multi-agent
-measurable_outcome: Enables agent teams with orchestrated handoffs that solve end-to-end biomedical investigations with <60 s orchestration overhead.
+name: openai-swarm-transition
+description: Study OpenAI Swarm as a lightweight historical handoff pattern and migration reference. Use when maintaining an existing Swarm prototype or when you need to translate a small handoff demo into the modern OpenAI Agents SDK.
+measurable_outcome: Identify whether a Swarm workflow should be retained for education only or migrated to the OpenAI Agents SDK, with one concrete migration note.
 allowed-tools:
   - read_file
   - run_shell_command
-  - python
 ---
 
-# OpenAI Swarm Skill
+# OpenAI Swarm Transition Reference
 
-OpenAI Swarm is a minimalist multi-agent framework centered on **explicit handoffs** between constrained, tool-calling agents. Agents encapsulate instructions + Python tool lists, and any tool can hand off execution by returning another `Agent` definition. This keeps multi-agent reasoning transparent and debuggable versus monolithic prompts.
+## Workflow
 
-* Core primitives ([openai/swarm](https://github.com/openai/swarm) overview, SourcePulse analysis). [^sourcepulse]
-* Production guardrails & deploy patterns (Lexogrine 2026 Swarm field guide). [^lexogrine]
+1. Read `references/sources.md` before using this directory.
+2. Treat Swarm as transition material first, not as the default runtime for new production builds.
+3. Identify the core handoff pattern that still matters: explicit agents, explicit tools, and explicit transfer boundaries.
+4. Map the retained behavior to the modern OpenAI path in `Skills/AI_Providers/OpenAI_Agents_SDK_2026/`.
+5. Keep any surviving Swarm usage limited to education, quick local demos, or migration bridges.
 
-## When to use this skill
+## When to Use
 
-* You need rapid experiments with handoffs before migrating to the OpenAI Agents SDK.
-* Regulatory workflows that demand deterministic routing + audit logs.
-* Tool-heavy biomedical assistants where each expert agent maps 1:1 to a validated SOP.
+- You inherited a small Swarm proof of concept.
+- You want to preserve explicit handoff concepts while migrating to the Agents SDK.
+- You need a minimal educational example of agent-to-agent handoff without introducing a full runtime.
 
-## Quickstart
+## Output Requirements
 
-```bash
-pip install --upgrade openai swarm
-export OPENAI_API_KEY=sk-...
-```
-
-```python
-from swarm import Agent, Swarm
-
-triage = Agent(
-    name="ClinicalTriage",
-    instructions="Collect vitals + labs, produce triage_summary JSON.",
-)
-
-safety = Agent(
-    name="SafetyOfficer",
-    instructions="Check outputs against boxed warnings, escalate if needed.",
-)
-
-def handoff_to_safety(state):
-    return safety  # explicit handoff once triage finds red flags
-
-triage.functions = [handoff_to_safety]
-result = Swarm().run(agent=triage, messages=[{"role": "user", "content": "Patient chest pain"}])
-```
-
-## Operational patterns
-
-1. **Routines for expensive loops** – reuse `swarm.routines` to schedule repeated lab lookups.
-2. **Context injection** – pass `context_variables` so downstream agents know patient_id/mission_id.
-3. **Eval bridge** – wrap Swarm runs with `platform/evaluators/swarm_eval.py` to verify SOP compliance.
-4. **Upgrade path** – once workflows stabilize, migrate to Agents SDK (see `AI_Providers/OpenAI_Agents_SDK_2026`).
-
-## Deliverables
-
-* `playbooks/swarm_blueprints.md` – canonical agent templates (triage, safety, automation) for internal review.
-* `scripts/run_swarm_demo.py` – runnable example connecting Swarm to in-repo bioscience tools.
-
-## References
-
-[^sourcepulse]: SourcePulse project summary for [openai/swarm](https://www.sourcepulse.org/projects/1832643) highlighting agent primitives and handoffs.
-[^lexogrine]: Lexogrine (Feb 16, 2026) "OpenAI Swarm Multi-Agent Framework in 2026: What It Is, How It Works, and How to Use It" explaining handoffs, approval gates, and upgrade guidance.
-
-<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
+- State whether the workload should migrate immediately or remain a local educational demo.
+- Name one Swarm pattern worth preserving.
+- Name one Agents SDK replacement path for that pattern.
+- Include one reason not to use Swarm for new production builds.

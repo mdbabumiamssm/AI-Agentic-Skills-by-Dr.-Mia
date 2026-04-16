@@ -68,6 +68,38 @@ def iter_skill_files(inputs: list[str]) -> list[Path]:
     return paths
 
 
+def validate_skill_file(path: Path) -> list[str]:
+    errors: list[str] = []
+    text = path.read_text(encoding="utf-8")
+    metadata = parse_frontmatter(text)
+    if metadata is None:
+        return [f"{path}: missing frontmatter"]
+
+    for field in REQUIRED_FIELDS:
+        if field not in metadata:
+            errors.append(f"{path}: missing required field '{field}'")
+
+    allowed_tools = metadata.get("allowed-tools")
+    if allowed_tools is not None and not isinstance(allowed_tools, list):
+        errors.append(f"{path}: 'allowed-tools' must be a YAML list")
+
+    if "references/sources.md" in text:
+        reference_file = path.parent / "references" / "sources.md"
+        if not reference_file.exists():
+            errors.append(f"{path}: references/sources.md is referenced but missing")
+        else:
+            ref_text = reference_file.read_text(encoding="utf-8", errors="ignore")
+            if "http" not in ref_text:
+                errors.append(f"{reference_file}: expected at least one source URL")
+
+    if "agents/openai.yaml" in text or "openai.yaml" in text:
+        ui_file = path.parent / "agents" / "openai.yaml"
+        if not ui_file.exists():
+            errors.append(f"{path}: agents/openai.yaml is referenced but missing")
+
+    return errors
+
+
 def main() -> int:
     if len(sys.argv) < 2:
         print("usage: python3 automation/validate_skill_frontmatter.py <SKILL.md or directory> [...]", file=sys.stderr)
@@ -84,21 +116,8 @@ def main() -> int:
         return 0
 
     errors: list[str] = []
-
     for path in skill_files:
-        text = path.read_text(encoding="utf-8")
-        metadata = parse_frontmatter(text)
-        if metadata is None:
-            errors.append(f"{path}: missing frontmatter")
-            continue
-
-        for field in REQUIRED_FIELDS:
-            if field not in metadata:
-                errors.append(f"{path}: missing required field '{field}'")
-
-        allowed_tools = metadata.get("allowed-tools")
-        if allowed_tools is not None and not isinstance(allowed_tools, list):
-            errors.append(f"{path}: 'allowed-tools' must be a YAML list")
+        errors.extend(validate_skill_file(path))
 
     if errors:
         print("frontmatter validation failed:")

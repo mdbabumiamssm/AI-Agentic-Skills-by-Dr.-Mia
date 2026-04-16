@@ -1,34 +1,25 @@
 ---
-name: Claude_3_7_Reasoning_Agent
-description: Advanced reasoning and coding agent utilizing Anthropic's Claude 3.7 Sonnet model.
-version: 1.0.0
-category: Agentic_AI
-author: AI Agentic Skills Team
-input:
-  query: Complex coding task, architectural design, or logical puzzle.
-  computer_use: Boolean flag to enable computer control capabilities.
-output:
-  response: Detailed solution with reasoning trace.
-  artifacts: Generated code files or diagrams.
+name: claude-reasoning-transition-agent
+description: Reference older Anthropic model-specific reasoning patterns and migrate them to the current Anthropic operations skill. Use when maintaining a legacy Claude 3.7-specific example or translating it to current Claude model selection guidance.
+measurable_outcome: Convert a model-pinned Claude reasoning example into a provider-current implementation plan with one migration note.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
-# Claude 3.7 Reasoning Agent
+# Claude Reasoning Transition Agent
 
-This agent leverages the frontier **Claude 3.7 Sonnet** model, known for its hybrid "thinking" capability that balances instantaneous responses with deep, extended reasoning steps.
+This directory is retained as a model-specific reference example. It should not be the primary starting point for current Anthropic integration work.
 
-## Capabilities
-1.  **Extended Thinking:** Can spend compute cycles "thinking" to solve complex math, physics, or architectural problems before responding.
-2.  **Computer Use:** (Experimental) Can execute tool calls to control mouse/keyboard interaction via Dockerized containers (if configured).
-3.  **Coding Mastery:** State-of-the-art performance on SWE-bench for refactoring and new feature implementation.
+## Workflow
 
-## Usage
-```python
-from Skills.Agentic_AI.Frontier_Models.Claude_3_7_Agent.claude_agent import ClaudeAgent
+1. Use `Skills/AI_Providers/Anthropic_Claude_Operations_2026/` for active model and deprecation guidance.
+2. Keep the useful pattern, not the pinned model assumption: long-form reasoning, coding assistance, and tool-aware analysis.
+3. Remove any hard dependency on a single Claude model line before production rollout.
+4. Validate the migrated workflow against the current Anthropic model overview and release notes.
 
-agent = ClaudeAgent(api_key="sk-ant-...")
-result = agent.run(
-    query="Refactor this legacy Python class to use Pydantic v2 and add async support.",
-    thinking_budget_tokens=16000
-)
-print(result)
-```
+## Output Requirements
+
+- State the current Anthropic skill that should replace this model-pinned reference.
+- Keep one useful reasoning pattern from the example.
+- Include one migration note about model pinning, tool use, or latency.

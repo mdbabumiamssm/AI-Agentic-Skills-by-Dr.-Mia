@@ -1,32 +1,25 @@
 ---
-name: Gemini_2_0_Multimodal_Agent
-description: High-speed multimodal agent capable of processing video, audio, and large context windows instantly.
-version: 2.0.0
-category: Agentic_AI
-author: AI Agentic Skills Team
-input:
-  query: Prompt or question.
-  media_path: Path to video/audio file (optional).
-output:
-  response: Multimodal analysis result.
+name: gemini-flash-multimodal-transition-agent
+description: Reference older Gemini Flash multimodal examples and migrate them to current Gemini operations guidance. Use when a pinned Gemini 2.0 example needs to be translated into the active Google GenAI SDK and model-selection path.
+measurable_outcome: Translate a Gemini Flash example into a current multimodal implementation plan with one compatibility note.
+allowed-tools:
+  - read_file
+  - run_shell_command
 ---
 
-# Gemini 2.0 Multimodal Agent
+# Gemini Flash Multimodal Transition Agent
 
-Built on **Gemini 2.0 Flash**, this agent is designed for speed and "native multimodal" understanding. It doesn't just see frames; it understands temporal dynamics in video and nuance in audio natively.
+This directory is a model-specific reference example, not the main operational entry point.
 
-## Capabilities
-1.  **1M+ Context Window:** Can ingest entire codebases or long videos.
-2.  **Native Audio/Video:** Process meeting recordings or lab videos in real-time.
-3.  **Sub-second Latency:** Optimized for interactive agentic loops.
+## Workflow
 
-## Usage
-```python
-from Skills.Agentic_AI.Frontier_Models.Gemini_2_0_Flash_Agent.gemini_agent import GeminiAgent
+1. Use `Skills/AI_Providers/Google_Gemini_Operations_2026/` for current Gemini model and SDK guidance.
+2. Preserve the useful multimodal pattern: low-latency text, image, audio, or video handling.
+3. Replace version-pinned assumptions with current model and SDK choices before shipping.
+4. Run one text path and one multimodal path after migration.
 
-agent = GeminiAgent()
-result = agent.analyze_video(
-    video_path="./lab_experiment.mp4",
-    prompt="Identify the exact timestamp where the chemical reaction changes color."
-)
-```
+## Output Requirements
+
+- State which provider-current Gemini skill should anchor the implementation.
+- Keep one useful multimodal pattern from the example.
+- Include one compatibility note for moving from pinned examples to current SDK usage.

@@ -1,16 +1,4 @@
-<!--
-# COPYRIGHT NOTICE
-# This file is part of the "Universal AI Agentic Skills" project.
-# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
-# All Rights Reserved.
-#
-# This code is proprietary and confidential.
-# Unauthorized copying of this file, via any medium is strictly prohibited.
-#
-# Provenance: Authenticated by MD BABU MIA
--->
-
-# Agentic AI Resource Map (April 13, 2026)
+# Agentic AI Resource Map (April 16, 2026)
 
 This document is the high-signal source map for keeping the repository current. It is intentionally opinionated: official docs and official repositories come first, and benchmark papers are included only where they still help explain why a pattern matters.
 
@@ -18,7 +6,8 @@ This document is the high-signal source map for keeping the repository current. 
 
 Use these as the default research starting points for greenfield agent builds:
 
-- OpenAI Agents SDK: https://platform.openai.com/docs/guides/agents-sdk
+- OpenAI building agents guide: https://platform.openai.com/docs/guides/agents
+- OpenAI Agents SDK guide: https://platform.openai.com/docs/guides/agents-sdk
 - OpenAI Agents SDK repo: https://github.com/openai/openai-agents-python
 - LangGraph overview: https://docs.langchain.com/oss/python/langgraph/overview
 - LangGraph repo: https://github.com/langchain-ai/langgraph
@@ -46,13 +35,27 @@ These are active and worth learning, but should be chosen for fit rather than ha
 - DSPy docs: https://dspy.ai/
 - DSPy repo: https://github.com/stanfordnlp/dspy
 
-## Specialized browser and computer-use references
+## Evaluation and observability anchors
 
-Use these when real browser or computer execution is central to the workload rather than incidental:
+These should sit next to framework docs because they determine whether a workflow is deployable:
+
+- OpenAI evals guide: https://platform.openai.com/docs/guides/evals
+- OpenAI Agents SDK tracing docs: https://openai.github.io/openai-agents-python/tracing/
+- LangSmith observability docs: https://docs.langchain.com/langsmith/observability
+- LangSmith evaluation docs: https://docs.langchain.com/langsmith/evaluation
+- Pydantic Logfire docs: https://logfire.pydantic.dev/
+- CrewAI observability docs: https://docs.crewai.com/en/observability
+
+## Specialized browser and local execution references
+
+Use these when real browser or local machine execution is central to the workload rather than incidental:
 
 - Browser Use docs: https://docs.browser-use.com/cloud/quickstart
 - Browser Use workspaces docs: https://docs.browser-use.com/cloud/agent/workspaces
 - Browser Use repo: https://github.com/browser-use/browser-use
+- OpenClaw site: https://openclaw.ai
+- OpenClaw org: https://github.com/openclaw
+- OpenClaw repo: https://github.com/openclaw/openclaw
 - OSWorld benchmark: https://os-world.github.io/
 
 ## Interoperability standards
@@ -72,8 +75,11 @@ These should anchor repository guidance whenever tools and remote agents must re
 Use official provider docs and SDK repos before blog summaries or community wrappers:
 
 - OpenAI docs: https://platform.openai.com/docs/
+- OpenAI deprecations: https://platform.openai.com/docs/deprecations
 - OpenAI Python SDK: https://github.com/openai/openai-python
+- OpenAI JavaScript SDK: https://github.com/openai/openai-node
 - Anthropic docs: https://docs.anthropic.com/
+- Anthropic model overview: https://docs.anthropic.com/en/docs/about-claude/models/overview
 - Anthropic Python SDK: https://github.com/anthropics/anthropic-sdk-python
 - Google Gemini docs: https://ai.google.dev/gemini-api/docs
 - Google GenAI Python SDK: https://github.com/googleapis/python-genai
@@ -88,7 +94,15 @@ Use official provider docs and SDK repos before blog summaries or community wrap
 - DeepSeek docs: https://api-docs.deepseek.com/
 - DeepSeek org: https://github.com/deepseek-ai
 - xAI docs: https://docs.x.ai/
+- xAI Python SDK: https://github.com/xai-org/xai-sdk-python
 - xAI cookbook: https://github.com/xai-org/xai-cookbook
+
+## Transition material references
+
+These should not be treated as first-choice stacks, but they still matter for migration and historical context:
+
+- OpenAI Swarm repo: https://github.com/openai/swarm
+- OpenAI Agents SDK repo: https://github.com/openai/openai-agents-python
 
 ## Foundational and benchmark papers
 
@@ -112,7 +126,4 @@ Keep these close to the framework docs so implementation choices stay grounded i
 - Prefer official docs and official repos for current operational facts.
 - Add benchmark papers when they clarify why a framework pattern matters, not to make the repo look academic.
 - Mark older but still-active frameworks as transition material when they are no longer the best default.
-- Refresh index files whenever a new first-tier or strong-secondary framework skill is introduced.
-
-
-<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
+- Refresh index files whenever a new first-tier, observability, or execution-surface skill is introduced.
