@@ -56,6 +56,32 @@ This note captures the current upstream health signals that matter most for repo
 - Current release notes explicitly mention forward-compatibility work for GPT-5 family models, which is a useful signal that OpenClaw remains active as a local automation surface.
 - OpenClaw should be treated as local-first automation, not as a replacement for managed browser infrastructure.
 
+## Coding-agent and app-builder surfaces
+
+### OpenAI Codex
+
+- The official Codex docs now expose a broad operational surface: app, IDE extension, CLI, web, integrations, AGENTS.md, MCP, plugins, skills, subagents, SDK, app server, MCP server, and GitHub Action.
+- The current OpenAI models catalog recommends GPT-5.4 as the default starting point for complex reasoning and coding, with GPT-5.4 mini explicitly positioned for coding, computer use, and subagents.
+- Repository guidance should treat Codex as a first-class coding-agent surface, not as a hidden footnote under general OpenAI API operations.
+
+### Claude Code
+
+- The official overview positions Claude Code as Anthropic's terminal-native coding tool and now highlights multiple Claude Code agents, the Agent SDK, GitHub Actions, GitLab CI/CD, channels, routines, and Chrome debugging.
+- The official `anthropics/claude-code` repository currently deprecates npm installation in favor of install scripts, Homebrew, and Windows-native installers, which is operationally important enough to capture explicitly in skill guidance.
+- The official `anthropics/claude-code-action` repository remains the primary automation surface for GitHub-native repository workflows.
+
+### Gemini CLI
+
+- The official `google-gemini/gemini-cli` repository is highly active and currently shows `v0.38.2` released on April 17, 2026.
+- The repository positions Gemini CLI as an open-source terminal AI agent with MCP integration, Google Search grounding, checkpointing, headless scripting, GitHub integration, and `GEMINI.md` context files.
+- Weekly stable and preview release channels plus nightly builds make release cadence itself a relevant operational signal for curation.
+
+### OpenAI Apps SDK
+
+- The official Apps SDK docs now define a full ChatGPT app lifecycle around MCP apps, server setup, UI widgets, metadata optimization, deployment, testing, submission, and reference material.
+- The Apps SDK home page still states that the current public distribution path is submission-based, while approved apps appear in the ChatGPT apps store and OpenAI creates a plugin for Codex distribution.
+- The official examples repository remains the best starting point for combining MCP servers, structured tool results, and widget UI metadata.
+
 ## Interoperability standards
 
 ### MCP
@@ -81,4 +107,5 @@ This note captures the current upstream health signals that matter most for repo
 2. Preserve legacy or model-pinned examples only when they are clearly marked as transition material.
 3. Add observability and evaluation guidance as a first-class repository skill instead of burying it inside framework notes.
 4. Track security-sensitive browser and local automation stacks through official release pages, not blog summaries.
-5. Keep resource maps opinionated: fewer stronger anchors are better than many overlapping references.
+5. Keep coding-agent and ChatGPT app-builder surfaces as first-class provider skills rather than burying them in generic framework documentation.
+6. Keep resource maps opinionated: fewer stronger anchors are better than many overlapping references.

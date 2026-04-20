@@ -97,6 +97,26 @@ Use official provider docs and SDK repos before blog summaries or community wrap
 - xAI Python SDK: https://github.com/xai-org/xai-sdk-python
 - xAI cookbook: https://github.com/xai-org/xai-cookbook
 
+## Coding-agent and ChatGPT app-builder surfaces
+
+Use these when the main requirement is repository automation, terminal-native coding, or ChatGPT-native app delivery rather than a generic application runtime:
+
+- OpenAI Codex docs: https://developers.openai.com/codex
+- OpenAI code generation guide: https://platform.openai.com/docs/guides/code-generation
+- OpenAI models catalog: https://developers.openai.com/api/docs/models
+- OpenAI Docs MCP guide: https://platform.openai.com/docs/docs-mcp
+- Claude Code overview: https://docs.anthropic.com/en/docs/claude-code/overview
+- Claude Code GitHub Actions docs: https://docs.anthropic.com/en/docs/claude-code/github-actions
+- Claude Code repo: https://github.com/anthropics/claude-code
+- Claude Code action repo: https://github.com/anthropics/claude-code-action
+- Gemini CLI repo: https://github.com/google-gemini/gemini-cli
+- Gemini CLI docs: https://www.geminicli.com/
+- OpenAI Apps SDK docs: https://developers.openai.com/apps-sdk
+- OpenAI Apps SDK quickstart: https://developers.openai.com/apps-sdk/quickstart
+- MCP apps in ChatGPT: https://developers.openai.com/apps-sdk/mcp-apps-in-chatgpt
+- OpenAI Apps SDK reference: https://developers.openai.com/apps-sdk/reference
+- OpenAI Apps SDK examples repo: https://github.com/openai/openai-apps-sdk-examples
+
 ## Transition material references
 
 These should not be treated as first-choice stacks, but they still matter for migration and historical context:
@@ -126,4 +146,5 @@ Keep these close to the framework docs so implementation choices stay grounded i
 - Prefer official docs and official repos for current operational facts.
 - Add benchmark papers when they clarify why a framework pattern matters, not to make the repo look academic.
 - Mark older but still-active frameworks as transition material when they are no longer the best default.
+- Keep coding-agent and app-builder surfaces separate from generic framework guidance so runtime choice stays explicit.
 - Refresh index files whenever a new first-tier, observability, or execution-surface skill is introduced.

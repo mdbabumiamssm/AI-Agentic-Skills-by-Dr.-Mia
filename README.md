@@ -63,8 +63,12 @@ Current first-party AI platform coverage includes dedicated 2026 operational ski
 
 - OpenAI platform operations
 - OpenAI Agents SDK
+- OpenAI Codex operations
+- OpenAI Apps SDK
 - Anthropic Claude
+- Claude Code
 - Google Gemini
+- Gemini CLI
 - Amazon Bedrock
 - Azure AI Foundry
 - Cohere
@@ -112,6 +116,7 @@ If you are new to the repository, start here:
 | Explore domain skills | `Skills/` |
 | Choose a production agent stack | `Skills/Agentic_AI/AI_Framework_GitHub_Maintainers_2026/` |
 | Choose a provider runtime | `Skills/AI_Providers/` |
+| Review coding-agent and app-builder surfaces | `Skills/AI_Providers/README.md` |
 | Review current official source maps | `docs/strategy/AGENTIC_AI_RESOURCE_MAP_2026_04.md` |
 | Review upstream maintenance notes | `docs/strategy/AGENTIC_AI_UPSTREAM_HEALTH_2026_04.md` |
 | Inspect supporting code | `platform/`, `src/` |
@@ -148,10 +153,11 @@ This repository is useful if you are building or curating AI systems for:
 
 ## Current curation priorities
 
-As of April 16, 2026, the highest-priority repository upgrades are:
+As of April 20, 2026, the highest-priority repository upgrades are:
 
 - first-party provider operations grounded in official docs
 - maintained agent frameworks rather than stale demo stacks
+- coding-agent and ChatGPT app-builder surfaces such as Codex, Claude Code, Gemini CLI, and Apps SDK
 - explicit transition labeling for legacy patterns such as OpenAI Swarm and model-pinned frontier examples
 - browser-native and local-first agent execution documented as distinct choices
 - protocol interoperability through MCP and A2A

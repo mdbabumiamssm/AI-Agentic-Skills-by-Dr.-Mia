@@ -19,7 +19,7 @@ The current curation standard is practical rather than hype-driven:
 - keep domain workflows adjacent to the framework guidance needed to run them
 - preserve legacy material only when it is clearly marked as transition guidance
 
-## Current Agentic AI Focus (checked April 16, 2026)
+## Current Agentic AI Focus (checked April 20, 2026)
 
 This collection emphasizes the stacks that are most relevant for production-oriented agent development:
 
@@ -33,6 +33,8 @@ This collection emphasizes the stacks that are most relevant for production-orie
 - **MCP + A2A:** Clear separation between tool or resource interoperability and agent-to-agent interoperability.
 - **Browser Use and OpenClaw:** Explicit separation between browser-native execution and local-first automation.
 - **Agent Evals and Observability:** Regression loops, rollout gates, and live trace review as first-class design constraints.
+- **Coding-Agent Surfaces:** OpenAI Codex, Claude Code, and Gemini CLI as first-class developer operating surfaces rather than side notes.
+- **ChatGPT App Surfaces:** OpenAI Apps SDK for MCP-backed ChatGPT apps, widgets, metadata, and submission-ready integrations.
 
 ## Key Capabilities
 
@@ -57,8 +59,12 @@ Current first-party AI platform coverage includes dedicated 2026 operational ski
 
 - OpenAI platform operations
 - OpenAI Agents SDK
+- OpenAI Codex
+- OpenAI Apps SDK
 - Anthropic Claude
+- Claude Code
 - Google Gemini
+- Gemini CLI
 - Amazon Bedrock
 - Azure AI Foundry
 - Cohere
@@ -97,10 +103,11 @@ Skills/
 If your entry point is agentic AI rather than a scientific domain:
 
 1. read `Agentic_AI/AI_Framework_GitHub_Maintainers_2026/`
-2. choose the framework skill that matches your constraints
-3. decide whether you need MCP, A2A, browser-native execution, local-first automation, or some combination
-4. add evaluation and observability requirements before broadening autonomy
-5. only then move into the domain skill directories
+2. review `AI_Providers/README.md` if your main need is a coding agent, ChatGPT app, or provider delivery surface
+3. choose the framework skill that matches your constraints
+4. decide whether you need MCP, A2A, browser-native execution, local-first automation, or some combination
+5. add evaluation and observability requirements before broadening autonomy
+6. only then move into the domain skill directories
 
 For a curated map of the current official docs, repos, and benchmark papers that should anchor future refreshes, read `docs/strategy/AGENTIC_AI_RESOURCE_MAP_2026_04.md`.
 
@@ -111,6 +118,7 @@ For current upstream maintenance notes captured during the April 16 refresh, rea
 The repository's current direction is to strengthen:
 
 - durable framework guidance
+- coding-agent and ChatGPT app-builder operations grounded in official docs
 - protocol interoperability
 - operational observability and evals
 - framework selection logic for domain teams

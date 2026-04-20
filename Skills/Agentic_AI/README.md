@@ -30,7 +30,18 @@ Use these when their fit is deliberate rather than assumed:
 
 These are not standalone reasons to choose a whole runtime. They are layers that help make the chosen runtime reliable.
 
-### 4. Protocol Interoperability
+### 4. Coding-Agent and App Surfaces
+
+The repository now treats coding agents and ChatGPT app-builder surfaces as a separate provider-layer concern rather than burying them inside framework docs:
+
+- see `../AI_Providers/OpenAI_Codex_Operations_2026/`
+- see `../AI_Providers/Claude_Code_Operations_2026/`
+- see `../AI_Providers/Gemini_CLI_Operations_2026/`
+- see `../AI_Providers/OpenAI_Apps_SDK_2026/`
+
+These are execution and delivery surfaces. They are useful when the main job is code automation, CI integration, or ChatGPT-native UI delivery. They should complement, not replace, deliberate framework selection.
+
+### 5. Protocol Interoperability
 
 - `A2A_Protocol_2026/` for agent-to-agent interoperability across framework boundaries.
 - `MCP_Registry/` for Model Context Protocol discovery, tool exposure, and shared tool surfaces.
@@ -40,21 +51,21 @@ These solve different problems:
 - **MCP** standardizes agent-to-tool and agent-to-resource access.
 - **A2A** standardizes communication between remote agents as networked services.
 
-### 5. Browser and Local Execution
+### 6. Browser and Local Execution
 
 - `Web_Agents/Browser_Use_2026/` for browser-native execution when live web work, persistent browser workspaces, and managed infrastructure are core to the system.
 - `Web_Agents/OpenClaw_Agent/` for local-first automation when browser work is only one part of a broader machine-local execution surface.
 
 Browser execution should usually be treated as a substrate under a larger orchestrator, not as a replacement for framework selection.
 
-### 6. Reusable Architecture Patterns
+### 7. Reusable Architecture Patterns
 
 - `Multi_Agent_Systems/` for supervisor-worker orchestration and debate patterns.
 - `Agent_Architectures/` for ReAct, plan-and-solve, and self-correction references.
 - `Memory_Systems/` for short-term, episodic, and persistent memory patterns.
 - `Frontier_Models/` for transition references, not default operational guidance.
 
-### 7. Transition and Legacy Material
+### 8. Transition and Legacy Material
 
 - `OpenAI_Swarm/` remains useful only as a lightweight historical reference and migration bridge.
 - `Frontier_Models/` contains model-pinned examples that should be translated into current provider skills before real deployment.
