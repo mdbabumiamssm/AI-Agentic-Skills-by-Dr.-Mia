@@ -35,6 +35,11 @@ allowed-tools:
 - State the selected DeepSeek model and endpoint path.
 - State the SDK compatibility approach being used.
 - Include one operational guardrail for retries, fallback, or release risk.
+- For on-premises clinical diagnosis use cases, flag the model-size/diagnostic-accuracy tradeoff: distilled DeepSeek-R1 open-source variants underperformed expectations vs. larger closed models in a comparative study (Zhong et al., J Med Syst, May 2026). Recommend rigorous local evaluation before any clinical deployment.
+
+## References
+
+- Zhong W, Fu Y, Peng D, Liu Y, Liu Y. Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance. J Med Syst, 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42062641/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

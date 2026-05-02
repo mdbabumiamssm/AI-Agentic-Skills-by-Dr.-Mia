@@ -36,6 +36,7 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 1.  **NER (Named Entity Recognition)**: Extracts Problems, Drugs, Procedures.
 2.  **Negation Detection**: (Basic) Checks if a finding is denied ("No fever").
 3.  **Structuring**: Returns JSON format compatible with FHIR/USDL.
+4.  **Incidentaloma Identification**: Detect incidental imaging findings requiring follow-up across multiple anatomies in radiology reports. Park et al. (J Biomed Inform, Apr 2026, PMID 42061667) compare LLM-based vs supervised approaches — useful exemplar when scoping radiology-report NLP pipelines.
 
 ## Workflow
 
@@ -55,5 +56,9 @@ python3 Skills/Clinical/Clinical_NLP/entity_extractor.py \
 ```
 
 ```
+
+## References
+
+- Park N, Ahmed F, Sun Z, Lybarger K, Breinhorst E. Automated identification of incidentalomas requiring follow-up: A multi-anatomy evaluation of LLM-based and supervised approaches. J Biomed Inform, 2026 Apr 28. https://pubmed.ncbi.nlm.nih.gov/42061667/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

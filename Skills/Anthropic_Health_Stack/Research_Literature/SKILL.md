@@ -31,5 +31,12 @@ This skill implements the Research Literature workflow using Anthropic's Claude.
 python3 Skills/Anthropic_Health_Stack/Research_Literature/coworker.py
 ```
 
+## Core Capabilities
+
+- Reference Brodeur et al., "Performance of a large language model on the reasoning tasks of a physician" (Science, Apr 2026, PMID 42060751) as a benchmark for clinician-grade reasoning evaluation of frontier LLMs when defining evaluation criteria for clinical reasoning agents.
+
+## References
+
+- https://pubmed.ncbi.nlm.nih.gov/42060751/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

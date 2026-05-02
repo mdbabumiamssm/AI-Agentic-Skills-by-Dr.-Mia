@@ -43,6 +43,7 @@ This skill activates a multi-agent system where a central "Overmind" routes task
 1.  **Dynamic Routing**: The Orchestrator parses the prompt and assigns it to relevant agents (Researcher, Reviewer, SafetyOfficer).
 2.  **Parallel Execution**: Agents work concurrently using `asyncio`.
 3.  **Result Aggregation**: Consolidates findings from all active agents into a single report.
+4.  **Long-Horizon Harness Reference**: ByteDance `deer-flow` (64k+ stars) is an open-source SuperAgent harness combining sandboxes, memories, tools, skills, subagents, and a message gateway to handle research/coding/creation tasks spanning minutes to hours. Useful comparison point alongside CrewAI / LangGraph / Mastra when the workload is long-horizon multi-agent orchestration rather than short-burst routing.
 
 ## Workflow
 
@@ -64,6 +65,10 @@ python3 Skills/Agentic_AI/Multi_Agent_Systems/orchestrator.py --mission "Investi
 *   **Researcher**: Searches literature (Mock PubMed).
 *   **Reviewer**: Validates findings against known mechanisms.
 *   **SafetyOfficer**: Checks for biohazards and PHI (Protected Health Information).
+
+## References
+
+*   ByteDance deer-flow — long-horizon SuperAgent harness: https://github.com/bytedance/deer-flow
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

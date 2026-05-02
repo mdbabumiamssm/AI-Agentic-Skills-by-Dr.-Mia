@@ -31,3 +31,11 @@ allowed-tools:
 - State the primary trace sink and the minimum metadata that must be captured.
 - Include one offline eval path and one online monitoring path.
 - Include one rollout gate and one rollback trigger.
+
+## Core Capabilities
+
+- Reference governance control plane for AI coding agents: validate agent changes, enforce policy-as-code, track findings, and wire observability and compliance hooks. See controlkeel (Phoenix/Elixir) as a pattern when auditing agent-generated code changes in regulated environments.
+
+## References
+
+- controlkeel — control plane for governed AI coding: https://github.com/aryaminus/controlkeel

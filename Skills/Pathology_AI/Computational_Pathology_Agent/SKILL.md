@@ -48,6 +48,7 @@ This agent specializes in the analysis of Whole Slide Images (WSIs) for digital 
 3.  **Patch Extraction:** Automated generation of patches for ML training/inference.
 4.  **Nuclei Segmentation:** Integration with StarDist/HoverNet for cellular analysis.
 5.  **Feature Extraction:** Generating feature vectors for slide-level clustering.
+6.  **MMR/MSI Status Prediction:** Predict mismatch-repair (dMMR) status from colorectal cancer histopathology. Per Petäinen et al. (Comput Methods Programs Biomed, Jun 2026, PMID 41875848), leverage non-tumor regions and low-magnification whole-slide context — not only tumor tiles — to boost dMMR prediction accuracy.
 
 ## Usage
 ```python
@@ -68,5 +69,8 @@ path_agent.extract_patches(patch_size=256, level=1)
 *   opencv-python
 *   pytorch
 *   scikit-image
+
+## References
+- Petäinen L, Väyrynen JP, Böhm J, Ruusuvuori P, Ahtiainen M. dMMR prediction from colorectal cancer histopathology: Leveraging non-tumor and low-magnification regions. Comput Methods Programs Biomed. 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41875848/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
