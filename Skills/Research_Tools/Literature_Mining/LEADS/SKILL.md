@@ -47,7 +47,7 @@ A specialized LLM agent for automating systematic reviews and meta-analyses, cap
 1.  **Study Selection**: Automated screening based on PICO criteria.
 2.  **Data Extraction**: Structured extraction of study characteristics and results.
 3.  **Quality Assessment**: Risk of bias evaluation.
-4.  **Methodological Evolution Graphs (Intern-Atlas)**: Complement document-centric LEADS mining with a queryable causal network of method-level entities, lineage relationships, and transition bottlenecks. Built from 1,030,314 AI papers and yielding 9,410,201 semantically typed edges grounded in verbatim source evidence, the graph is traversed via a self-guided temporal tree-search algorithm to construct method evolution chains. Use it alongside literature mining to support downstream idea evaluation and automated idea generation.
+4.  **Methodological Evolution Graphs (Intern-Atlas)**: Extend document-centric LEADS mining beyond citation graphs by extracting method entities, typed lineage edges, bottleneck rationales, and temporal evolution chains for AI scientist workflows. Built from 1,030,314 AI papers and yielding 9,410,201 semantically typed edges grounded in verbatim source evidence, the graph is traversed via a self-guided temporal tree-search algorithm to support downstream idea evaluation and automated idea generation.
 
 ## Workflow
 

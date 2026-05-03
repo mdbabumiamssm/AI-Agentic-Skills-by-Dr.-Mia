@@ -49,6 +49,8 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 2.  **Hallucination Detection**: Cross-references generated claims against trusted knowledge bases.
 3.  **Bias Scanning**: Checks for demographic or socioeconomic bias in clinical reasoning.
 4.  **Contraindication Check**: Verifies treatment recommendations against patient allergies/conditions.
+5.  **Clinician Override Preference Auditing**: Treats clinician overrides of clinical AI recommendations as implicit preference signals by categorizing override types, separating execution capability from alignment capability, avoiding suppression bias against correct-but-difficult recommendations, and tying reward-model updates to longitudinal outcomes in value-based care.
+6.  **AI-Transformed Patient-Centered Documentation Safeguards**: Applies a pre/post error taxonomy for transformed patient-centered notes, checks for contradictions against the clinician-authored source, detects omitted clinically meaningful details, triggers clinician review for unsafe or meaning-altering changes, and treats mental health documentation with heightened sensitivity to tone, attribution, and patient meaning.
 
 ## Workflow
 
@@ -65,6 +67,11 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 ```bash
 python3 Skills/Clinical/Safety/AI_Safety_Auditor/audit_output.py --input discharge_summary.txt --checks "all"
 ```
+
+## References
+
+*   http://arxiv.org/abs/2604.28010v1
+*   https://pubmed.ncbi.nlm.nih.gov/42054574/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

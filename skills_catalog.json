@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-03T04:02:55.763082+00:00",
+  "generated_at": "2026-05-03T16:35:23.326058+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 658,
-  "total_errors": 22,
+  "total_skills": 666,
+  "total_errors": 21,
   "skills": [
     {
       "name": "bio-hi-c-analysis-compartment-analysis",
@@ -622,6 +622,29 @@
       ]
     },
     {
+      "name": "agent-sandbox-checkpoint-restore",
+      "description": "Plan turn-aware, host-side checkpoint/restore for sandboxed agents by classifying OS-visible side effects and recovery-relevant state.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/AgentSandboxCheckpointRestore_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/AgentSandboxCheckpointRestore_Agent/SKILL.md",
+      "last_modified": "2026-05-03T14:50:15.491579+00:00",
+      "body_length": 3688,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "plan-and-solve-agent",
       "description": "Breaks down complex queries into a step-by-step plan before execution, improving performance on multi-hop reasoning tasks.",
       "tool_type": "",
@@ -654,8 +677,8 @@
       ],
       "file_path": "Skills/Agentic_AI/Agent_Evals_Observability_2026/SKILL.md",
       "relative_path": "Agentic_AI/Agent_Evals_Observability_2026/SKILL.md",
-      "last_modified": "2026-05-03T04:01:48.630007+00:00",
-      "body_length": 4049,
+      "last_modified": "2026-05-03T14:51:04.102337+00:00",
+      "body_length": 4089,
       "capabilities": [
         "Workflow",
         "When to Use",
@@ -682,6 +705,29 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "collaborative-agent-reasoning-engineering",
+      "description": "Design domain AI agents through CARE stage gates with SMEs, developers, helper agents, reviewable specs, reasoning policies, tools, and evaluations.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/CollaborativeAgentReasoningEngineering_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/CollaborativeAgentReasoningEngineering_Agent/SKILL.md",
+      "last_modified": "2026-05-03T14:54:15.850480+00:00",
+      "body_length": 4188,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -743,6 +789,29 @@
         "When to Use This Skill",
         "Core Capabilities",
         "Example Usage"
+      ]
+    },
+    {
+      "name": "deer-flow-superagent-harness",
+      "description": "Use Deer Flow, ByteDance''s open-source long-horizon SuperAgent harness, to research, code, and create with sandboxes, memories, tools, skills, subagents, and a message gateway.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DeerFlowSuperagentHarness_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DeerFlowSuperagentHarness_Agent/SKILL.md",
+      "last_modified": "2026-05-03T15:04:01.908302+00:00",
+      "body_length": 3442,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -855,7 +924,7 @@
       ],
       "file_path": "Skills/Agentic_AI/LatentAdversarialMultiturnDetector_Agent/SKILL.md",
       "relative_path": "Agentic_AI/LatentAdversarialMultiturnDetector_Agent/SKILL.md",
-      "last_modified": "2026-05-03T03:59:47.155630+00:00",
+      "last_modified": "2026-05-03T04:02:56.943658+00:00",
       "body_length": 4535,
       "capabilities": [
         "Overview",
@@ -883,6 +952,29 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "llm-rl-posttraining-optimization",
+      "description": "Optimize LLM RL post-training for efficient reasoning with GRPO variants, latent constraints, advantage estimation, cost controls, and verification gates.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/LlmRlPosttrainingOptimization_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/LlmRlPosttrainingOptimization_Agent/SKILL.md",
+      "last_modified": "2026-05-03T14:58:19.836657+00:00",
+      "body_length": 4558,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1097,6 +1189,29 @@
       ]
     },
     {
+      "name": "reward-hypothesis-verification",
+      "description": "Verify and deploy LLM-generated reward hypotheses using competence-aware short-horizon forks and phase-aware RL training decisions.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/RewardHypothesisVerification_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/RewardHypothesisVerification_Agent/SKILL.md",
+      "last_modified": "2026-05-03T14:52:06.232028+00:00",
+      "body_length": 4471,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "rl-exploration-hacking-safety-agent",
       "description": "Detect and mitigate exploration hacking, where LLMs strategically suppress exploration during RL post-training to resist capability elicitation and influence training outcomes.",
       "tool_type": "",
@@ -1109,7 +1224,7 @@
       ],
       "file_path": "Skills/Agentic_AI/RlExplorationHackingSafetyAgent_Agent/SKILL.md",
       "relative_path": "Agentic_AI/RlExplorationHackingSafetyAgent_Agent/SKILL.md",
-      "last_modified": "2026-05-03T04:00:22.296450+00:00",
+      "last_modified": "2026-05-03T04:02:56.943658+00:00",
       "body_length": 4942,
       "capabilities": [
         "Overview",
@@ -1152,7 +1267,7 @@
       ],
       "file_path": "Skills/Agentic_AI/SyntheticComputersLongHorizonTraining_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SyntheticComputersLongHorizonTraining_Agent/SKILL.md",
-      "last_modified": "2026-05-03T04:00:48.055318+00:00",
+      "last_modified": "2026-05-03T04:02:56.943658+00:00",
       "body_length": 3999,
       "capabilities": [
         "Overview",
@@ -1868,13 +1983,14 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.205933+00:00",
-      "body_length": 1995,
+      "last_modified": "2026-05-03T14:59:00.924504+00:00",
+      "body_length": 2902,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
         "Workflow",
-        "Example Usage"
+        "Example Usage",
+        "References"
       ]
     },
     {
@@ -2023,6 +2139,27 @@
         "Workflow",
         "Example Usage",
         "Guardrails"
+      ]
+    },
+    {
+      "name": "sql-generation-agent",
+      "description": "Generates and evaluates grounded Text-to-SQL queries using schema context, production monitoring, and constrained decoding patterns.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Generate schema-grounded SQL and evaluate production Text-to-SQL outputs with documented semantic checks.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command"
+      ],
+      "file_path": "Skills/Data_Science/SQL_Generation_Agent/SKILL.md",
+      "relative_path": "Data_Science/SQL_Generation_Agent/SKILL.md",
+      "last_modified": "2026-05-03T16:34:39.514799+00:00",
+      "body_length": 1948,
+      "capabilities": [
+        "Overview",
+        "Capabilities",
+        "Implementation Details",
+        "References"
       ]
     },
     {
@@ -2689,7 +2826,7 @@
       ],
       "file_path": "Skills/Drug_Discovery/DeepsemsOceanBiosyntheticLlmAgent_Agent/SKILL.md",
       "relative_path": "Drug_Discovery/DeepsemsOceanBiosyntheticLlmAgent_Agent/SKILL.md",
-      "last_modified": "2026-05-03T03:57:27.326350+00:00",
+      "last_modified": "2026-05-03T04:02:56.943658+00:00",
       "body_length": 4618,
       "capabilities": [
         "Overview",
@@ -2806,7 +2943,7 @@
       ],
       "file_path": "Skills/Drug_Discovery/PolymerAgentLlmDesign_Agent/SKILL.md",
       "relative_path": "Drug_Discovery/PolymerAgentLlmDesign_Agent/SKILL.md",
-      "last_modified": "2026-05-03T03:58:31.377020+00:00",
+      "last_modified": "2026-05-03T04:02:56.944658+00:00",
       "body_length": 3821,
       "capabilities": [
         "Overview",
@@ -5947,7 +6084,7 @@
       ],
       "file_path": "Skills/Foundation_Models/StackSingleCellIclAgent_Agent/SKILL.md",
       "relative_path": "Foundation_Models/StackSingleCellIclAgent_Agent/SKILL.md",
-      "last_modified": "2026-05-03T03:56:26.780663+00:00",
+      "last_modified": "2026-05-03T04:02:56.944658+00:00",
       "body_length": 4715,
       "capabilities": [
         "Overview",
@@ -6607,7 +6744,7 @@
       ],
       "file_path": "Skills/Genomics/Scprint2FoundationModelAgent_Agent/SKILL.md",
       "relative_path": "Genomics/Scprint2FoundationModelAgent_Agent/SKILL.md",
-      "last_modified": "2026-05-03T03:55:32.749943+00:00",
+      "last_modified": "2026-05-03T04:02:56.944658+00:00",
       "body_length": 4913,
       "capabilities": [
         "Overview",
@@ -6652,7 +6789,7 @@
       ],
       "file_path": "Skills/Genomics/Single_Cell/Cell_Type_Annotation/RNA/SKILL.md",
       "relative_path": "Genomics/Single_Cell/Cell_Type_Annotation/RNA/SKILL.md",
-      "last_modified": "2026-05-03T04:02:40.425742+00:00",
+      "last_modified": "2026-05-03T04:02:56.944658+00:00",
       "body_length": 2713,
       "capabilities": [
         "When to Use This Skill",
@@ -10120,7 +10257,7 @@
       ],
       "file_path": "Skills/Genomics/scFoundation_Model_Agent/SKILL.md",
       "relative_path": "Genomics/scFoundation_Model_Agent/SKILL.md",
-      "last_modified": "2026-05-03T04:02:06.005919+00:00",
+      "last_modified": "2026-05-03T04:02:56.944658+00:00",
       "body_length": 7501,
       "capabilities": [
         "When to Use This Skill",
@@ -11326,6 +11463,31 @@
         "Core Capabilities",
         "Workflow",
         "Example Usage"
+      ]
+    },
+    {
+      "name": "mutual-information-fairness-auditor",
+      "description": "Audit and mitigate intersectional, multiclass model fairness by estimating mutual information between prediction-derived variables and sensitive attributes.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Legal/MutualInformationFairnessAuditor_Agent/SKILL.md",
+      "relative_path": "Legal/MutualInformationFairnessAuditor_Agent/SKILL.md",
+      "last_modified": "2026-05-03T14:56:22.750072+00:00",
+      "body_length": 4629,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
+        "References"
       ]
     },
     {
@@ -14849,8 +15011,8 @@
       ],
       "file_path": "Skills/Research_Tools/Literature_Mining/LEADS/SKILL.md",
       "relative_path": "Research_Tools/Literature_Mining/LEADS/SKILL.md",
-      "last_modified": "2026-05-03T04:01:11.547197+00:00",
-      "body_length": 2226,
+      "last_modified": "2026-05-03T14:48:36.235072+00:00",
+      "body_length": 2197,
       "capabilities": [
         "When to Use",
         "Core Capabilities",
@@ -19385,6 +19547,29 @@
       ]
     },
     {
+      "name": "officecli-agent-office-automation",
+      "description": "Use OfficeCLI to read, edit, and automate Word, Excel, and PowerPoint files through a single agent-friendly CLI without requiring Microsoft Office.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
+      "relative_path": "Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
+      "last_modified": "2026-05-03T15:02:45.452619+00:00",
+      "body_length": 3486,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "technical-writing-expert",
       "description": "Create comprehensive, clear, and structured technical documentation, reports, and whitepapers.",
       "tool_type": "",
@@ -19409,10 +19594,6 @@
     }
   ],
   "errors": [
-    {
-      "path": "/media/drdx/mystorage/ARTIFICIALINTELLIGENCEGROUP/AIAGENTICSKILLS/Skills/Data_Science/SQL_Generation_Agent/SKILL.md",
-      "error": "missing frontmatter name"
-    },
     {
       "path": "/media/drdx/mystorage/ARTIFICIALINTELLIGENCEGROUP/AIAGENTICSKILLS/Skills/External_Collections/Babu_OpenAI_skills-main (2)/skills/.curated/gh-address-comments/SKILL.md",
       "error": "missing frontmatter name"
