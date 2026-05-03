@@ -47,6 +47,15 @@ The **scFoundation Model Agent** provides a unified interface to leverage state-
 
 6. **Multi-Model Ensemble**: Combine predictions from multiple foundation models.
 
+7. **Phenotype-Associated Subpopulation Identification**: Use a transfer-learned single-cell foundation model to project phenotype labels (e.g., disease status, treatment response) onto cells, then combine with statistical ensemble learning to robustly discover phenotype-associated subpopulations across heterogeneous datasets.
+
+   **Workflow**:
+   1. Fine-tune / transfer a foundation-model backbone on phenotype-labeled bulk or pseudobulk data.
+   2. Project per-cell phenotype scores onto the single-cell embedding space.
+   3. Run statistical ensemble learning (bootstrap aggregation across resamples / model heads) to derive subpopulation membership probabilities.
+   4. Aggregate ensemble votes and call stable phenotype-associated subpopulations with confidence intervals.
+   5. Output: cell-level phenotype scores, subpopulation cluster labels, and ensemble stability metrics.
+
 ## Supported Foundation Models
 
 | Model | Parameters | Training Data | Strengths |
@@ -201,6 +210,10 @@ python3 foundation_predict.py \
 | Weighted Average | Confidence-weighted | Leverages uncertainty |
 | Stacking | Meta-model | Learns model strengths |
 | Attention Fusion | Cross-model attention | Deep integration |
+
+## References
+
+- Zhao Y, Pan X, Luo Z, Liu Q. Single-cell phenotype-associated subpopulation identification via transfer foundation model and statistical ensemble learning. BMC Biol. 2026 Apr 29. https://pubmed.ncbi.nlm.nih.gov/42050525/
 
 ## Author
 

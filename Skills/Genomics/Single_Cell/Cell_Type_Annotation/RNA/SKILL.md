@@ -36,6 +36,7 @@ This skill wraps multiple cell type annotation strategies into a single Python c
 1.  **Marker-Based Scoring**: Scores cells based on provided gene lists (e.g., "T-cell": ["CD3D", "CD3E"]).
 2.  **Deep Learning Reference**: Wraps `celltypist` to transfer labels from massive atlases.
 3.  **LLM Reasoning**: Extracts top markers per cluster and constructs prompts for LLM interpretation.
+4.  **Context-Aware Self-Training**: Semi-supervised marker-gene-based annotation that iteratively pseudo-labels unlabeled cells using marker-gene priors and contextual cell embeddings. Use as an alternative to CellTypist/SingleR/Azimuth when reference labels are scarce or partial — the framework refines a classifier across self-training rounds while keeping marker-gene constraints in the loop.
 
 ## Workflow
 
@@ -68,5 +69,9 @@ annotator.annotate_marker_based(markers)
 # Results in adata.obs['predicted_cell_type']
 ```
 
+
+## References
+
+- Chen H, Lu Y, Rao Y. Context-Aware Self-Training Framework for Cell Type Annotation Using Marker Genes. IEEE Trans Comput Biol Bioinform, 2026 Apr 28. https://pubmed.ncbi.nlm.nih.gov/42048220/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
