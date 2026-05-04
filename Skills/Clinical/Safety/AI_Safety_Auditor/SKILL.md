@@ -51,6 +51,10 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 4.  **Contraindication Check**: Verifies treatment recommendations against patient allergies/conditions.
 5.  **Clinician Override Preference Auditing**: Treats clinician overrides of clinical AI recommendations as implicit preference signals by categorizing override types, separating execution capability from alignment capability, avoiding suppression bias against correct-but-difficult recommendations, and tying reward-model updates to longitudinal outcomes in value-based care.
 6.  **AI-Transformed Patient-Centered Documentation Safeguards**: Applies a pre/post error taxonomy for transformed patient-centered notes, checks for contradictions against the clinician-authored source, detects omitted clinically meaningful details, triggers clinician review for unsafe or meaning-altering changes, and treats mental health documentation with heightened sensitivity to tone, attribution, and patient meaning.
+7.  **Distilled Open-Source Reasoning Model Deployment Audits**: Evaluates on-premises clinical diagnosis workflows using distilled open-source reasoning models such as DeepSeek-R1 derivatives by requiring local deployment risk review, comparative validation against existing approved workflows, calibration checks, hallucination testing, PHI control verification, and human review gates before clinical use.
+8.  **Clinical Practice Guideline Drafting Evaluation**: Audits LLM-assisted real-time guideline development workflows with a checklist for citation traceability, PICO framing, conflict resolution, evidence grading, expert adjudication, and audit logs across drafting and review steps.
+9.  **Fine-Grained Medical Q&A Dataset Evaluation**: Reviews domain-specific medical Q&A datasets for trustworthy medical LLM evaluation by checking domain coverage, ambiguity labeling, omission detection, harm severity scoring, and dataset-level bias or drift indicators.
+10. **Test-Time Knowledge Acquisition Safety Pattern**: Requires medical decision support agents to retrieve relevant evidence before reasoning, vet source quality, surface and handle contradictions, abstain when evidence is weak, and keep retrieved evidence clearly separated from model-generated inference.
 
 ## Workflow
 
@@ -72,6 +76,10 @@ python3 Skills/Clinical/Safety/AI_Safety_Auditor/audit_output.py --input dischar
 
 *   http://arxiv.org/abs/2604.28010v1
 *   https://pubmed.ncbi.nlm.nih.gov/42054574/
+*   https://pubmed.ncbi.nlm.nih.gov/42062641/
+*   https://pubmed.ncbi.nlm.nih.gov/42042855/
+*   https://pubmed.ncbi.nlm.nih.gov/42039929/
+*   https://pubmed.ncbi.nlm.nih.gov/41953846/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 669 skills across 45 categories. Last refresh: 2026-05-04T16:41:05.591517+00:00._
+_Auto-generated index. 671 skills across 45 categories. Last refresh: 2026-05-04T16:56:54.396131+00:00._
 
 ### 3D_Genomics (8)
 
@@ -257,7 +257,7 @@ _Auto-generated index. 669 skills across 45 categories. Last refresh: 2026-05-04
 - **openai-platform-operations-2026** — Operate and integrate OpenAI APIs with current model, modality, and migration workflows. Use when building or updating OpenAI-based chat,...
 - **xai-grok-operations-2026** — Integrate and operate xAI Grok APIs with current documentation and SDK guidance. Use when implementing xAI model calls, selecting Grok va...
 
-### Agentic_AI (37)
+### Agentic_AI (38)
 
 - **a2a-protocol-2026** — Design interoperable agent services using the Agent2Agent protocol. Use when independently hosted agents need to discover each other, exc...
 - **agent-evals-observability-2026** — Evaluate and observe agent systems with traced runs, curated datasets, rollout gates, and regression loops. Use when an agent workflow is...
@@ -291,6 +291,7 @@ _Auto-generated index. 669 skills across 45 categories. Last refresh: 2026-05-04
 - **pydanticai-2026** — Build schema-first Python agents with typed tools, structured outputs, provider portability, and observability. Use when application code...
 - **reward-hypothesis-verification** — Verify and deploy LLM-generated reward hypotheses using competence-aware short-horizon forks and phase-aware RL training decisions.
 - **rl-exploration-hacking-safety-agent** — Detect and mitigate exploration hacking, where LLMs strategically suppress exploration during RL post-training to resist capability elici...
+- **security-agent-operations** — Operate security-focused coding agents with scoped authorization, lab isolation, adversarial workflows, tool boundaries, and defensive va...
 - **smolagents-2026** — Build lightweight code-first or tool-calling agents with Hugging Face smolagents. Use when minimal abstractions, code agents, sandboxed e...
 - **swarm-coordinator-pattern** — Design a supervisor-worker or debate-style multi-agent coordinator with explicit delegation and synthesis boundaries. Use when a task gen...
 - **swarm-orchestrator** — Run Agent Swarms
@@ -306,7 +307,7 @@ _Auto-generated index. 669 skills across 45 categories. Last refresh: 2026-05-04
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (26)
+### Clinical (27)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -329,6 +330,7 @@ _Auto-generated index. 669 skills across 45 categories. Last refresh: 2026-05-04
 - **multimodal-radpath-fusion-agent** — AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data ...
 - **precision-oncology-agent** — Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.
 - **prior-auth-coworker** — SOTA Prior Auth Review Agent aligned with Anthropic and OpenAI healthcare initiatives.
+- **psychiatry-knowledge-fused-reasoning** — Guides psychiatry-specific LLM support using PKFAR-style knowledge fusion and augmented reasoning for diagnosis, risk, medications, and c...
 - **radgpt-radiology-reporter** — Radiology Reporter
 - **safety-monitor** — Safety Monitor
 - **trial-eligibility-agent** — Parse trial protocols and patient data to produce criterion-level MET/NOT/UNKNOWN determinations with evidence and gaps for clinical tria...

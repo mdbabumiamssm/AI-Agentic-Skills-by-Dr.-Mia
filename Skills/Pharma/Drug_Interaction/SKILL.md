@@ -36,7 +36,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 1.  **Interaction Detection**: Identifies pairs of drugs with known interactions.
 2.  **Severity Grading**: Classifies interactions as Minor, Moderate, or Major.
 3.  **Clinical Recommendations**: Provides actionable advice (e.g., "Monitor K+ levels").
-4.  **Authoritative Source Comparison Protocol**: When evaluating LLM-generated DDI outputs, compare each interaction, mechanism, recommendation, and severity/category label against authoritative references such as Lexicomp and Drugs.com. Harmonize differing severity/category schemes before comparing outputs, document antiseizure medication examples separately when present, treat iterative prompting as a risk for changed or overfit answers, and require pharmacist review before using any LLM-generated DDI assessment in clinical decision support.
+4.  **Authoritative Source Comparison Protocol**: When evaluating LLM-generated DDI outputs, compare each interaction, mechanism, recommendation, and severity/category label against authoritative references such as Lexicomp and Drugs.com. For antiseizure medication DDI benchmarking, treat Lexicomp as the primary comparator/reference hierarchy and Drugs.com as an additional comparator, harmonize differing severity/category schemes before comparing outputs, identify high-risk interaction classes from source-defined contraindication/major/severe categories, document antiseizure medication examples separately when present, treat iterative prompting as a risk for changed or overfit answers, cite the authoritative DDI references used, and require pharmacist review before using any LLM-only DDI assessment in clinical decision support.
 
 ## Workflow
 

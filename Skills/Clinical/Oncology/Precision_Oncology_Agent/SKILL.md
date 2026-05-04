@@ -14,6 +14,7 @@
 ---
 name: precision-oncology-agent
 description: Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.
+measurable_outcome: Deliver a ranked therapy list with OncoKB and NCCN citations plus a data-gap checklist for every case within 10 minutes of receiving inputs.
 allowed-tools:
   - read_file
   - run_shell_command
@@ -34,6 +35,9 @@ allowed-tools:
 2. Variant interpretation table (pathogenicity, tier, therapy linkage).
 3. Biomarker summary (TMB, MSI, PD-L1 if provided) and missing-test checklist.
 
+## Core Capabilities
+- For GI cancer cases, synthesize AI-assisted management evidence across imaging, pathology, genomics, trial eligibility, toxicity monitoring, and tumor board review; explicitly state that outputs are evidence-organizing support and must be reconciled with current guideline-concordant oncology recommendations, clinician judgment, patient preferences, and local trial availability.
+
 ## Workflow
 1. **Ingest & normalize:** Harmonize gene symbols, genome build, and variant effects.
 2. **Annotate:** Query OncoKB/NCCN + internal knowledge for actionability tiers.
@@ -48,6 +52,7 @@ allowed-tools:
 
 ## References
 - See `README.md` for detailed workflow plus cited Nature Cancer study.
+- Harnessing Artificial Intelligence for the Management of Patients With GI Cancers. PubMed PMID: 42044465. https://pubmed.ncbi.nlm.nih.gov/42044465/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

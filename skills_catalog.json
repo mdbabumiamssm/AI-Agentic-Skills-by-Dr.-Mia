@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T16:41:05.591517+00:00",
+  "generated_at": "2026-05-04T16:56:54.396131+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 669,
+  "total_skills": 671,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-04T16:36:04.652735+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 1583,
       "capabilities": [
         "Core Capabilities",
@@ -343,7 +343,7 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-04T16:39:47.518976+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 1992,
       "capabilities": [
         "Workflow",
@@ -747,7 +747,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:36:53.661568+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 3893,
       "capabilities": []
     },
@@ -905,7 +905,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:38:00.199342+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 3579,
       "capabilities": [
         "Overview",
@@ -1094,7 +1094,7 @@
       ],
       "file_path": "Skills/Agentic_AI/MoaiSpecFirstAgenticDevkit_Agent/SKILL.md",
       "relative_path": "Agentic_AI/MoaiSpecFirstAgenticDevkit_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:41:01.607724+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 4127,
       "capabilities": [
         "Overview",
@@ -1293,6 +1293,29 @@
       "relative_path": "Agentic_AI/RlExplorationHackingSafetyAgent_Agent/SKILL.md",
       "last_modified": "2026-05-03T04:02:56.943658+00:00",
       "body_length": 4942,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "security-agent-operations",
+      "description": "Operate security-focused coding agents with scoped authorization, lab isolation, adversarial workflows, tool boundaries, and defensive validation inspired by Raptor.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
+      "last_modified": "2026-05-04T16:53:25.022861+00:00",
+      "body_length": 4289,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1798,19 +1821,20 @@
       "description": "Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the provided prompt + usage script.",
       "tool_type": "",
       "primary_tool": "",
-      "measurable_outcome": "",
+      "measurable_outcome": "Produce SOAP markdown and JSON outputs covering all four sections with at least 95% note coverage and explicit missing information within 2 minutes per note.",
       "allowed-tools": [
         "read_file",
         "run_shell_command"
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.203933+00:00",
-      "body_length": 1901,
+      "last_modified": "2026-05-04T16:55:50.001146+00:00",
+      "body_length": 2316,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
         "Outputs",
+        "Core Capabilities",
         "Workflow",
         "Guardrails",
         "References"
@@ -1975,19 +1999,20 @@
       "description": "Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.",
       "tool_type": "",
       "primary_tool": "",
-      "measurable_outcome": "",
+      "measurable_outcome": "Deliver a ranked therapy list with OncoKB and NCCN citations plus a data-gap checklist for every case within 10 minutes of receiving inputs.",
       "allowed-tools": [
         "read_file",
         "run_shell_command"
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.203933+00:00",
-      "body_length": 1924,
+      "last_modified": "2026-05-04T16:56:42.630898+00:00",
+      "body_length": 2480,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
         "Outputs",
+        "Core Capabilities",
         "Workflow",
         "Guardrails",
         "References"
@@ -2014,6 +2039,29 @@
         "Workflow",
         "Example Usage",
         "Supported Policies",
+        "References"
+      ]
+    },
+    {
+      "name": "psychiatry-knowledge-fused-reasoning",
+      "description": "Guides psychiatry-specific LLM support using PKFAR-style knowledge fusion and augmented reasoning for diagnosis, risk, medications, and care planning.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
+      "relative_path": "Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
+      "last_modified": "2026-05-04T16:50:55.261661+00:00",
+      "body_length": 4695,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },
@@ -2050,8 +2098,8 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-03T16:36:22.787517+00:00",
-      "body_length": 2902,
+      "last_modified": "2026-05-04T16:51:46.809378+00:00",
+      "body_length": 4363,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2116,9 +2164,10 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.204933+00:00",
-      "body_length": 1897,
+      "last_modified": "2026-05-04T16:49:40.169956+00:00",
+      "body_length": 2296,
       "capabilities": [
+        "Core Capabilities",
         "Inputs",
         "Outputs",
         "Workflow",
@@ -2638,7 +2687,7 @@
       ],
       "file_path": "Skills/Drug_Discovery/BiomedMultiAlignmentFoundationModel_Agent/SKILL.md",
       "relative_path": "Drug_Discovery/BiomedMultiAlignmentFoundationModel_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:38:40.858203+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 4683,
       "capabilities": [
         "Overview",
@@ -13384,8 +13433,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-04T16:34:24.256077+00:00",
-      "body_length": 1974,
+      "last_modified": "2026-05-04T16:50:04.285873+00:00",
+      "body_length": 2263,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -19627,7 +19676,7 @@
       ],
       "file_path": "Skills/Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
       "relative_path": "Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:37:23.950465+00:00",
+      "last_modified": "2026-05-04T16:41:06.867706+00:00",
       "body_length": 3939,
       "capabilities": [
         "Overview",
