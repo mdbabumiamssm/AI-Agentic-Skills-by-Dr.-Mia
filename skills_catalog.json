@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-03T16:35:23.326058+00:00",
+  "generated_at": "2026-05-04T16:41:05.591517+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 666,
+  "total_skills": 669,
   "total_errors": 21,
   "skills": [
     {
@@ -284,11 +284,13 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-03-27T15:38:10.697810+00:00",
-      "body_length": 1169,
+      "last_modified": "2026-05-04T16:36:04.652735+00:00",
+      "body_length": 1583,
       "capabilities": [
+        "Core Capabilities",
         "Workflow",
-        "Output Requirements"
+        "Output Requirements",
+        "References"
       ]
     },
     {
@@ -331,7 +333,7 @@
     },
     {
       "name": "claude-code-operations-2026",
-      "description": "Operate Anthropic Claude Code across terminal use, agent teams, Agent SDK, GitHub Actions, and CI-based repository automation. Use when the main task is coding-agent execution, developer workflow acceleration, or repository-native automation with Anthropic tooling.",
+      "description": "Operate Anthropic Claude Code across terminal use, agent teams, Agent SDK, GitHub Actions, plugins, and CI-based repository automation. Use when the main task is coding-agent execution, developer workflow acceleration, or repository-native automation with Anthropic tooling.",
       "tool_type": "",
       "primary_tool": "",
       "measurable_outcome": "Select and configure a Claude Code operating path with explicit install, instruction-file, and automation choices within 20 minutes.",
@@ -341,12 +343,14 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-04-20T13:50:36.254506+00:00",
-      "body_length": 1670,
+      "last_modified": "2026-05-04T16:39:47.518976+00:00",
+      "body_length": 1992,
       "capabilities": [
         "Workflow",
+        "Core Capabilities",
         "When to Use",
-        "Output Requirements"
+        "Output Requirements",
+        "References"
       ]
     },
     {
@@ -634,7 +638,7 @@
       ],
       "file_path": "Skills/Agentic_AI/AgentSandboxCheckpointRestore_Agent/SKILL.md",
       "relative_path": "Agentic_AI/AgentSandboxCheckpointRestore_Agent/SKILL.md",
-      "last_modified": "2026-05-03T14:50:15.491579+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 3688,
       "capabilities": [
         "Overview",
@@ -677,7 +681,7 @@
       ],
       "file_path": "Skills/Agentic_AI/Agent_Evals_Observability_2026/SKILL.md",
       "relative_path": "Agentic_AI/Agent_Evals_Observability_2026/SKILL.md",
-      "last_modified": "2026-05-03T14:51:04.102337+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 4089,
       "capabilities": [
         "Workflow",
@@ -720,7 +724,7 @@
       ],
       "file_path": "Skills/Agentic_AI/CollaborativeAgentReasoningEngineering_Agent/SKILL.md",
       "relative_path": "Agentic_AI/CollaborativeAgentReasoningEngineering_Agent/SKILL.md",
-      "last_modified": "2026-05-03T14:54:15.850480+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 4188,
       "capabilities": [
         "Overview",
@@ -729,6 +733,23 @@
         "Inputs / Outputs",
         "References"
       ]
+    },
+    {
+      "name": "context-window-optimization-agents",
+      "description": "Optimize AI coding-agent context by sandboxing verbose tool output, preserving useful summaries, and managing transcript hygiene across agent runtimes.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
+      "last_modified": "2026-05-04T16:36:53.661568+00:00",
+      "body_length": 3893,
+      "capabilities": []
     },
     {
       "name": "crewai-production-2026",
@@ -804,7 +825,7 @@
       ],
       "file_path": "Skills/Agentic_AI/DeerFlowSuperagentHarness_Agent/SKILL.md",
       "relative_path": "Agentic_AI/DeerFlowSuperagentHarness_Agent/SKILL.md",
-      "last_modified": "2026-05-03T15:04:01.908302+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 3442,
       "capabilities": [
         "Overview",
@@ -869,6 +890,29 @@
       "capabilities": [
         "Workflow",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "gitagent-protocol",
+      "description": "Use GitAgent Protocol to define, inspect, and package framework-agnostic, git-native AI agent specifications for repository-based agent workflows.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
+      "last_modified": "2026-05-04T16:38:00.199342+00:00",
+      "body_length": 3579,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -967,7 +1011,7 @@
       ],
       "file_path": "Skills/Agentic_AI/LlmRlPosttrainingOptimization_Agent/SKILL.md",
       "relative_path": "Agentic_AI/LlmRlPosttrainingOptimization_Agent/SKILL.md",
-      "last_modified": "2026-05-03T14:58:19.836657+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 4558,
       "capabilities": [
         "Overview",
@@ -1035,6 +1079,29 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "moai-spec-first-agentic-devkit",
+      "description": "Use MOAI ADK SPEC-first agentic workflows to turn requirements into specs, TDD checks, DDD models, agent-team plans, and multilingual delivery.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/MoaiSpecFirstAgenticDevkit_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/MoaiSpecFirstAgenticDevkit_Agent/SKILL.md",
+      "last_modified": "2026-05-04T16:41:01.607724+00:00",
+      "body_length": 4127,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1201,7 +1268,7 @@
       ],
       "file_path": "Skills/Agentic_AI/RewardHypothesisVerification_Agent/SKILL.md",
       "relative_path": "Agentic_AI/RewardHypothesisVerification_Agent/SKILL.md",
-      "last_modified": "2026-05-03T14:52:06.232028+00:00",
+      "last_modified": "2026-05-03T16:36:22.786517+00:00",
       "body_length": 4471,
       "capabilities": [
         "Overview",
@@ -1983,7 +2050,7 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-03T14:59:00.924504+00:00",
+      "last_modified": "2026-05-03T16:36:22.787517+00:00",
       "body_length": 2902,
       "capabilities": [
         "When to Use This Skill",
@@ -2153,7 +2220,7 @@
       ],
       "file_path": "Skills/Data_Science/SQL_Generation_Agent/SKILL.md",
       "relative_path": "Data_Science/SQL_Generation_Agent/SKILL.md",
-      "last_modified": "2026-05-03T16:34:39.514799+00:00",
+      "last_modified": "2026-05-03T16:36:22.787517+00:00",
       "body_length": 1948,
       "capabilities": [
         "Overview",
@@ -2571,8 +2638,8 @@
       ],
       "file_path": "Skills/Drug_Discovery/BiomedMultiAlignmentFoundationModel_Agent/SKILL.md",
       "relative_path": "Drug_Discovery/BiomedMultiAlignmentFoundationModel_Agent/SKILL.md",
-      "last_modified": "2026-05-02T22:52:37.006786+00:00",
-      "body_length": 4223,
+      "last_modified": "2026-05-04T16:38:40.858203+00:00",
+      "body_length": 4683,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -11478,7 +11545,7 @@
       ],
       "file_path": "Skills/Legal/MutualInformationFairnessAuditor_Agent/SKILL.md",
       "relative_path": "Legal/MutualInformationFairnessAuditor_Agent/SKILL.md",
-      "last_modified": "2026-05-03T14:56:22.750072+00:00",
+      "last_modified": "2026-05-03T16:36:22.787517+00:00",
       "body_length": 4629,
       "capabilities": [
         "Overview",
@@ -13317,13 +13384,14 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.206933+00:00",
-      "body_length": 1360,
+      "last_modified": "2026-05-04T16:34:24.256077+00:00",
+      "body_length": 1974,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
         "Workflow",
-        "Example Usage"
+        "Example Usage",
+        "References"
       ]
     },
     {
@@ -15011,7 +15079,7 @@
       ],
       "file_path": "Skills/Research_Tools/Literature_Mining/LEADS/SKILL.md",
       "relative_path": "Research_Tools/Literature_Mining/LEADS/SKILL.md",
-      "last_modified": "2026-05-03T14:48:36.235072+00:00",
+      "last_modified": "2026-05-03T16:36:22.787517+00:00",
       "body_length": 2197,
       "capabilities": [
         "When to Use",
@@ -19559,8 +19627,8 @@
       ],
       "file_path": "Skills/Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
       "relative_path": "Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
-      "last_modified": "2026-05-03T15:02:45.452619+00:00",
-      "body_length": 3486,
+      "last_modified": "2026-05-04T16:37:23.950465+00:00",
+      "body_length": 3939,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

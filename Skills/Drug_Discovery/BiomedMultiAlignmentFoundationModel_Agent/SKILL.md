@@ -47,6 +47,7 @@ This skill operationalizes IBM's `biomed.omics.bl.sm.ma-ted-458m` foundation mod
 4. **Task-prompt inference** — Use prompt-based task specification (the model is trained as a sequence-to-sequence learner over typed tokens) to run downstream tasks such as DTI, property prediction, or sequence labeling without retraining.
 5. **Fine-tuning hooks** — Attach lightweight task heads (LoRA / adapter / linear probe) on top of frozen encoder representations for new datasets.
 6. **Batch inference & caching** — Stream long candidate libraries (e.g., ChEMBL, UniProt subsets) through the model with embedding caches to keep cost bounded.
+7. **Repository-backed Ma-TED workflow** — Use the `BiomedSciAI/biomed-multi-alignment` repository as the setup reference for `ibm/biomed.omics.bl.sm.ma-ted-458m`; expect notebook-oriented examples and dependency setup before extracting cross-modal embeddings for proteins, small molecules, and single-cell gene data in drug-discovery workflows such as target-ligand retrieval, molecule ranking against biological context, and single-cell signature alignment.
 
 ## Inputs / Outputs
 

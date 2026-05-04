@@ -47,7 +47,8 @@ OfficeCLI is especially relevant for mixed Office workflows because it is descri
 3. **Unified document reading**: Extract or inspect document content, workbook structure, sheets, slides, metadata, and other CLI-supported representations for agent analysis.
 4. **CLI-supported editing**: Apply OfficeCLI-supported edits to documents while preserving the original inputs unless the user explicitly authorizes in-place mutation.
 5. **Mixed-format automation**: Coordinate Word, Excel, and PowerPoint operations in one repeatable shell workflow for reports, analyses, decks, and accompanying spreadsheets.
-6. **Validation and handoff**: Re-read or inspect outputs after edits, capture command failures, and return produced file paths plus a concise summary of changes.
+6. **Safe batch editing**: For multi-file operations, enumerate targets first, write to copies or a dedicated output directory by default, avoid in-place mutation without explicit authorization, and keep per-file command results for rollback or review.
+7. **Fidelity validation and handoff**: Re-read or inspect outputs after edits, confirm files remain openable and structurally intact, compare key document features such as Word text coverage, Excel sheets/ranges, or PowerPoint slide counts against the intended changes, capture command failures, and return produced file paths plus a concise summary of changes.
 
 ## Inputs / Outputs
 

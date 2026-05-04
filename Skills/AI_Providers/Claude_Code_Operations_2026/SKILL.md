@@ -13,7 +13,7 @@
 
 ---
 name: claude-code-operations-2026
-description: Operate Anthropic Claude Code across terminal use, agent teams, Agent SDK, GitHub Actions, and CI-based repository automation. Use when the main task is coding-agent execution, developer workflow acceleration, or repository-native automation with Anthropic tooling.
+description: Operate Anthropic Claude Code across terminal use, agent teams, Agent SDK, GitHub Actions, plugins, and CI-based repository automation. Use when the main task is coding-agent execution, developer workflow acceleration, or repository-native automation with Anthropic tooling.
 measurable_outcome: Select and configure a Claude Code operating path with explicit install, instruction-file, and automation choices within 20 minutes.
 allowed-tools:
   - read_file
@@ -30,6 +30,10 @@ allowed-tools:
 4. Prefer the official GitHub Action for repository automation and the Agent SDK only when you need custom orchestration beyond the built-in product flow.
 5. Validate with one local coding task or one CI-triggered repository task.
 
+## Core Capabilities
+
+- Use Anthropic's official Claude Code plugins directory as a trusted source for plugin discovery, installation risk review, version pinning, and compatibility checks alongside existing hooks, MCP, and GitHub Actions guidance.
+
 ## When to Use
 
 - You need Anthropic's coding agent rather than the general Claude API.
@@ -43,6 +47,10 @@ allowed-tools:
 - State the required install or execution path.
 - State the repo-local instruction and permission boundary.
 - Include a minimal smoke-test plan covering one interactive or CI-triggered task.
+
+## References
+
+- https://github.com/anthropics/claude-plugins-official
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

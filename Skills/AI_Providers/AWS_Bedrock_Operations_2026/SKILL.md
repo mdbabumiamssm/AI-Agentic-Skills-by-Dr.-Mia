@@ -22,6 +22,10 @@ allowed-tools:
 
 # AWS Bedrock Operations (2026)
 
+## Core Capabilities
+
+- Evaluate AgentCore + Strands reference architectures for Bedrock agent workloads, including AgentCore deployment patterns, A2A/MCP interoperability, browser automation boundaries, voice/chat assistant topology, IAM guardrails, and whether the TypeScript sample shape fits the target production workflow.
+
 ## Workflow
 
 1. Confirm regional model availability, access grants, and service limits from `references/sources.md`.
@@ -35,6 +39,10 @@ allowed-tools:
 - State the selected Bedrock model or service path and why.
 - State the IAM and network pattern being used.
 - Include one operational guardrail for reliability or cost control.
+
+## References
+
+- https://github.com/aws-samples/sample-strands-agent-with-agentcore
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
