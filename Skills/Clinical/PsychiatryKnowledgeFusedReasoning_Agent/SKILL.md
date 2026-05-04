@@ -61,6 +61,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 6. **Clinical communication**  
    Produce structured outputs for clinicians, including concise assessment, problem representation, next questions, evidence gaps, and suggested care-planning considerations.
 
+7. **PKFAR-style knowledge fusion checks**  
+   Retrieve curated psychiatry knowledge when available, structure diagnostic reasoning around case evidence, cross-check medication and risk considerations, report uncertainty explicitly, and guard against unsupported psychiatric conclusions.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T16:56:54.396131+00:00",
+  "generated_at": "2026-05-04T17:07:36.037826+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 671,
   "total_errors": 21,
@@ -1314,7 +1314,7 @@
       ],
       "file_path": "Skills/Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:53:25.022861+00:00",
+      "last_modified": "2026-05-04T16:57:34.327659+00:00",
       "body_length": 4289,
       "capabilities": [
         "Overview",
@@ -1828,7 +1828,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-05-04T16:55:50.001146+00:00",
+      "last_modified": "2026-05-04T16:57:34.327659+00:00",
       "body_length": 2316,
       "capabilities": [
         "At-a-Glance",
@@ -2006,8 +2006,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:56:42.630898+00:00",
-      "body_length": 2480,
+      "last_modified": "2026-05-04T17:04:00.757991+00:00",
+      "body_length": 2620,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2055,8 +2055,8 @@
       ],
       "file_path": "Skills/Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
       "relative_path": "Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:50:55.261661+00:00",
-      "body_length": 4695,
+      "last_modified": "2026-05-04T17:06:31.343379+00:00",
+      "body_length": 4985,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2098,7 +2098,7 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-04T16:51:46.809378+00:00",
+      "last_modified": "2026-05-04T16:57:34.327659+00:00",
       "body_length": 4363,
       "capabilities": [
         "When to Use This Skill",
@@ -2164,8 +2164,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-04T16:49:40.169956+00:00",
-      "body_length": 2296,
+      "last_modified": "2026-05-04T17:05:46.012562+00:00",
+      "body_length": 2367,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
@@ -13433,7 +13433,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-04T16:50:04.285873+00:00",
+      "last_modified": "2026-05-04T16:57:34.327659+00:00",
       "body_length": 2263,
       "capabilities": [
         "When to Use This Skill",
