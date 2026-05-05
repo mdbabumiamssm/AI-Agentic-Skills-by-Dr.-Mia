@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 673 skills across 46 categories. Last refresh: 2026-05-05T17:12:53.751602+00:00._
+_Auto-generated index. 674 skills across 46 categories. Last refresh: 2026-05-05T17:22:20.559191+00:00._
 
 ### 3D_Genomics (8)
 
@@ -308,7 +308,7 @@ _Auto-generated index. 673 skills across 46 categories. Last refresh: 2026-05-05
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (27)
+### Clinical (28)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -327,6 +327,7 @@ _Auto-generated index. 673 skills across 46 categories. Last refresh: 2026-05-05
 - **clinical-note-summarization** — Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the ...
 - **digital-twin-clinical-agent** — AI-powered patient digital twin creation for clinical trial simulation, treatment outcome prediction, and personalized medicine using rea...
 - **ehr-fhir-integration** — Provides comprehensive tools for working with Electronic Health Records (EHR) using the HL7 FHIR standard.
+- **microsoft-prior-auth-multi-agent-accelerator** — Guide payer-side prior authorization review using Microsoft Azure multi-agent patterns, Foundry-hosted agents, MCP healthcare data access...
 - **multimodal-medical-imaging** — Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.
 - **multimodal-radpath-fusion-agent** — AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data ...
 - **precision-oncology-agent** — Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.

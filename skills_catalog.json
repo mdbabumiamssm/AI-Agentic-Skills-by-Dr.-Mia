@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-05T17:12:53.751602+00:00",
+  "generated_at": "2026-05-05T17:22:20.559191+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 673,
+  "total_skills": 674,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-05T17:08:56.494813+00:00",
+      "last_modified": "2026-05-05T17:12:55.185140+00:00",
       "body_length": 1625,
       "capabilities": [
         "Core Capabilities",
@@ -343,7 +343,7 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-05T17:12:51.323151+00:00",
+      "last_modified": "2026-05-05T17:12:55.185140+00:00",
       "body_length": 2182,
       "capabilities": [
         "Workflow",
@@ -423,11 +423,13 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.092934+00:00",
-      "body_length": 973,
+      "last_modified": "2026-05-05T17:17:12.039422+00:00",
+      "body_length": 1380,
       "capabilities": [
+        "Core Capabilities",
         "Workflow",
-        "Output Requirements"
+        "Output Requirements",
+        "References"
       ]
     },
     {
@@ -1357,7 +1359,7 @@
       ],
       "file_path": "Skills/Agentic_AI/SwarmclawSelfHostedAgentRuntime_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SwarmclawSelfHostedAgentRuntime_Agent/SKILL.md",
-      "last_modified": "2026-05-05T17:10:41.063518+00:00",
+      "last_modified": "2026-05-05T17:12:55.186140+00:00",
       "body_length": 3654,
       "capabilities": [
         "Overview",
@@ -1960,6 +1962,29 @@
         "Core Capabilities",
         "Workflow",
         "Example Usage"
+      ]
+    },
+    {
+      "name": "microsoft-prior-auth-multi-agent-accelerator",
+      "description": "Guide payer-side prior authorization review using Microsoft Azure multi-agent patterns, Foundry-hosted agents, MCP healthcare data access, audit trails, and human oversight.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/MicrosoftPriorAuthMultiAgentAccelerator_Agent/SKILL.md",
+      "relative_path": "Clinical/MicrosoftPriorAuthMultiAgentAccelerator_Agent/SKILL.md",
+      "last_modified": "2026-05-05T17:22:18.098570+00:00",
+      "body_length": 3982,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -13456,8 +13481,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-04T16:57:34.327659+00:00",
-      "body_length": 2263,
+      "last_modified": "2026-05-05T17:20:03.296945+00:00",
+      "body_length": 2305,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -16933,7 +16958,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-05T17:09:53.782651+00:00",
+      "last_modified": "2026-05-05T17:12:55.186140+00:00",
       "body_length": 6142,
       "capabilities": [
         "Overview",
