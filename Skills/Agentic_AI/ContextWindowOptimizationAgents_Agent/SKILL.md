@@ -50,6 +50,7 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 5. **Cross-agent handoff packaging**: Produce compact state bundles that include objective, constraints, current files, decisions made, open risks, and next steps.
 6. **Platform-aware adaptation**: Adjust the workflow for agent runtimes that support hooks, plugins, MCP servers, CLI wrappers, or local transcript storage.
 7. **Verification preservation**: Keep enough raw anchors, command names, exit states, and file references for another agent or human to audit the summary.
+8. **Context-mode pattern checks**: Sandbox verbose tool output, preserve compressed summaries with decision-critical evidence, verify coverage across supported agent platforms, and measure context-token reduction without dropping actionable signals.
 
 **Inputs / Outputs**
 

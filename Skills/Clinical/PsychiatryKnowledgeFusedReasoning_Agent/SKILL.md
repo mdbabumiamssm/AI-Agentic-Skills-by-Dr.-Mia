@@ -62,7 +62,7 @@ The skill is intended for clinician-facing support, chart review, education, and
    Produce structured outputs for clinicians, including concise assessment, problem representation, next questions, evidence gaps, and suggested care-planning considerations.
 
 7. **PKFAR-style knowledge fusion checks**  
-   Retrieve curated psychiatry knowledge when available, structure diagnostic reasoning around case evidence, cross-check medication and risk considerations, report uncertainty explicitly, and guard against unsupported psychiatric conclusions.
+   Retrieve curated psychiatric knowledge bases when available, use augmented reasoning steps around case evidence, run safety checks for diagnosis, medication, and risk assessment, report uncertainty explicitly, and limit outputs to clinician-overseen support rather than standalone psychiatric authority.
 
 ## Inputs / Outputs
 

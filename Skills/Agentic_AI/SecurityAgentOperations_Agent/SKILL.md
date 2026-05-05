@@ -56,6 +56,8 @@ This skill guides safe operation of AI agents configured for security research, 
 
 8. Safety stop conditions: Pause when encountering out-of-scope systems, live secrets, personal data, destructive side effects, unclear authorization, persistence mechanisms, or requests to evade monitoring.
 
+9. Raptor-style security-agent operation: Frame adversarial tasks only inside scoped authorization and isolated labs, bind agents to explicit tool allowlists, log actions and reasoning, and require defensive validation before applying any workflow to real-world systems.
+
 ## Inputs / Outputs
 
 Inputs:

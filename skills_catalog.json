@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-05T17:22:20.559191+00:00",
+  "generated_at": "2026-05-05T18:23:56.639122+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 674,
+  "total_skills": 675,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-05T17:12:55.185140+00:00",
-      "body_length": 1625,
+      "last_modified": "2026-05-05T18:21:41.782421+00:00",
+      "body_length": 1589,
       "capabilities": [
         "Core Capabilities",
         "Workflow",
@@ -343,8 +343,8 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-05T17:12:55.185140+00:00",
-      "body_length": 2182,
+      "last_modified": "2026-05-05T18:23:50.195018+00:00",
+      "body_length": 2235,
       "capabilities": [
         "Workflow",
         "Core Capabilities",
@@ -423,7 +423,7 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-05T17:17:12.039422+00:00",
+      "last_modified": "2026-05-05T17:22:21.963560+00:00",
       "body_length": 1380,
       "capabilities": [
         "Core Capabilities",
@@ -749,8 +749,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:41:06.867706+00:00",
-      "body_length": 3893,
+      "last_modified": "2026-05-05T18:22:49.247208+00:00",
+      "body_length": 4144,
       "capabilities": []
     },
     {
@@ -1316,8 +1316,8 @@
       ],
       "file_path": "Skills/Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
-      "last_modified": "2026-05-04T16:57:34.327659+00:00",
-      "body_length": 4289,
+      "last_modified": "2026-05-05T18:22:22.876291+00:00",
+      "body_length": 4561,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1977,7 +1977,7 @@
       ],
       "file_path": "Skills/Clinical/MicrosoftPriorAuthMultiAgentAccelerator_Agent/SKILL.md",
       "relative_path": "Clinical/MicrosoftPriorAuthMultiAgentAccelerator_Agent/SKILL.md",
-      "last_modified": "2026-05-05T17:22:18.098570+00:00",
+      "last_modified": "2026-05-05T17:22:21.963560+00:00",
       "body_length": 3982,
       "capabilities": [
         "Overview",
@@ -2103,8 +2103,8 @@
       ],
       "file_path": "Skills/Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
       "relative_path": "Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
-      "last_modified": "2026-05-04T17:07:37.297115+00:00",
-      "body_length": 4985,
+      "last_modified": "2026-05-05T18:19:02.780932+00:00",
+      "body_length": 5048,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2212,8 +2212,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-04T17:07:37.297115+00:00",
-      "body_length": 2367,
+      "last_modified": "2026-05-05T18:18:02.247132+00:00",
+      "body_length": 2692,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
@@ -13481,8 +13481,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-05T17:20:03.296945+00:00",
-      "body_length": 2305,
+      "last_modified": "2026-05-05T18:18:38.807011+00:00",
+      "body_length": 2398,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -16958,8 +16958,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-05T17:12:55.186140+00:00",
-      "body_length": 6142,
+      "last_modified": "2026-05-05T18:22:03.828351+00:00",
+      "body_length": 6476,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -16967,6 +16967,29 @@
         "Inputs / Outputs",
         "Recommended Workflow",
         "Review Checklist",
+        "References"
+      ]
+    },
+    {
+      "name": "open-design-agentic-prototyping",
+      "description": "Use Open Design to plan safe local-first agentic workflows for design systems, prototypes, previews, and HTML/PDF/PPTX/MP4 exports.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/OpenDesignAgenticPrototyping_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/OpenDesignAgenticPrototyping_Agent/SKILL.md",
+      "last_modified": "2026-05-05T18:23:31.699075+00:00",
+      "body_length": 3488,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },

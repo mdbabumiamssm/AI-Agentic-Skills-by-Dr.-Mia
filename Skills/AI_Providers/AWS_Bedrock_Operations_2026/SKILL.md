@@ -24,7 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
-- Evaluate Strands Agents on Amazon Bedrock AgentCore reference architectures for Bedrock agent workloads, including AgentCore deployment patterns, A2A/MCP interoperability, browser automation boundaries, voice/chat assistant topology, IAM guardrails, production deployment checks, and whether the TypeScript sample shape fits the target workflow.
+- Evaluate Strands Agents plus Amazon Bedrock AgentCore reference architectures for Bedrock agent workloads, including A2A/MCP interoperability, browser automation boundaries, voice/chatbot patterns, IAM boundaries, production deployment checks, and whether the TypeScript sample shape fits the target workflow.
 
 ## Workflow
 

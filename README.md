@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 674 skills across 46 categories. Last refresh: 2026-05-05T17:22:20.559191+00:00._
+_Auto-generated index. 675 skills across 46 categories. Last refresh: 2026-05-05T18:23:56.639122+00:00._
 
 ### 3D_Genomics (8)
 
@@ -841,9 +841,10 @@ _Auto-generated index. 674 skills across 46 categories. Last refresh: 2026-05-05
 - **bio-transcription-translation** — Transcribe DNA to RNA and translate to protein using Biopython. Use when converting between DNA, RNA, and protein sequences, finding ORFs...
 - **bio-write-sequences** — Write biological sequences to files (FASTA, FASTQ, GenBank, EMBL) using Biopython Bio.SeqIO. Use when saving sequences, creating new sequ...
 
-### Skills_Automation (1)
+### Skills_Automation (2)
 
 - **claude-code-skill-marketplace-ops** — Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependen...
+- **open-design-agentic-prototyping** — Use Open Design to plan safe local-first agentic workflows for design systems, prototypes, previews, and HTML/PDF/PPTX/MP4 exports.
 
 ### Software_Engineering (5)
 

@@ -47,19 +47,22 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 1. **Marketplace discovery**
    Search marketplace metadata, repository indexes, package descriptions, topics, and README files to identify candidate Claude Code skills, plugins, and agents that match the requested task.
 
-2. **Trust and provenance review**
+2. **ccpi/tonsofskills large-catalog operations**
+   Review ccpi-managed tonsofskills marketplace catalogs, including the reported 425 plugins, 2,810 skills, and 200 agents, using discovery heuristics, trust scoring, dependency and prompt-injection review, conflict detection, install hygiene, and rollback planning before adoption.
+
+3. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 
-3. **Dependency and tool-risk inspection**
+4. **Dependency and tool-risk inspection**
    Review package files, scripts, MCP declarations, shell commands, network calls, and requested tool permissions before installation. Flag broad filesystem access, credential handling, destructive commands, hidden downloads, or unpinned dependencies.
 
-4. **Namespace and trigger conflict analysis**
+5. **Namespace and trigger conflict analysis**
    Compare candidate names, descriptions, commands, MCP server IDs, and skill trigger wording against the local skill/plugin registry to prevent ambiguous activation or accidental override of trusted internal workflows.
 
-5. **Installation hygiene**
+6. **Installation hygiene**
    Prefer isolated evaluation first. Install into a scratch or staging environment when possible, avoid bulk importing entire catalogs, pin versions or commit SHAs when supported, and keep a rollback path for every adopted package.
 
-6. **Adoption decision record**
+7. **Adoption decision record**
    Produce a concise recommendation: adopt, adopt with restrictions, defer, or reject. Include rationale, risks, required mitigations, owner-reviewed files, and any post-install validation steps.
 
 ## Inputs / Outputs
