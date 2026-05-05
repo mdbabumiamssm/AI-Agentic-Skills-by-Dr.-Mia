@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T17:07:36.037826+00:00",
+  "generated_at": "2026-05-05T17:12:53.751602+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 671,
+  "total_skills": 673,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-04T16:41:06.867706+00:00",
-      "body_length": 1583,
+      "last_modified": "2026-05-05T17:08:56.494813+00:00",
+      "body_length": 1625,
       "capabilities": [
         "Core Capabilities",
         "Workflow",
@@ -343,8 +343,8 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-04T16:41:06.867706+00:00",
-      "body_length": 1992,
+      "last_modified": "2026-05-05T17:12:51.323151+00:00",
+      "body_length": 2182,
       "capabilities": [
         "Workflow",
         "Core Capabilities",
@@ -1345,6 +1345,29 @@
       ]
     },
     {
+      "name": "swarmclaw-self-hosted-agent-runtime",
+      "description": "Deploy and operate SwarmClaw as a self-hosted multi-agent AI runtime with MCP servers, memory, skills, schedules, and multi-provider LLM routing.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/SwarmclawSelfHostedAgentRuntime_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/SwarmclawSelfHostedAgentRuntime_Agent/SKILL.md",
+      "last_modified": "2026-05-05T17:10:41.063518+00:00",
+      "body_length": 3654,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "synthetic-computers-long-horizon-training",
       "description": "Generate persona-conditioned synthetic computer environments and run multi-thousand-turn long-horizon productivity simulations to produce experiential training data for agent self-improvement.",
       "tool_type": "",
@@ -2006,7 +2029,7 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-05-04T17:04:00.757991+00:00",
+      "last_modified": "2026-05-04T17:07:37.297115+00:00",
       "body_length": 2620,
       "capabilities": [
         "At-a-Glance",
@@ -2055,7 +2078,7 @@
       ],
       "file_path": "Skills/Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
       "relative_path": "Clinical/PsychiatryKnowledgeFusedReasoning_Agent/SKILL.md",
-      "last_modified": "2026-05-04T17:06:31.343379+00:00",
+      "last_modified": "2026-05-04T17:07:37.297115+00:00",
       "body_length": 4985,
       "capabilities": [
         "Overview",
@@ -2164,7 +2187,7 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-04T17:05:46.012562+00:00",
+      "last_modified": "2026-05-04T17:07:37.297115+00:00",
       "body_length": 2367,
       "capabilities": [
         "Core Capabilities",
@@ -16895,6 +16918,31 @@
         "Common Errors",
         "Decision Tree",
         "Related Skills"
+      ]
+    },
+    {
+      "name": "claude-code-skill-marketplace-ops",
+      "description": "Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependencies, conflicts, and installation hygiene.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
+      "last_modified": "2026-05-05T17:09:53.782651+00:00",
+      "body_length": 6142,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Recommended Workflow",
+        "Review Checklist",
+        "References"
       ]
     },
     {
