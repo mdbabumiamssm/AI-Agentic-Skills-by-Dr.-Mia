@@ -50,19 +50,22 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 2. **ccpi/tonsofskills large-catalog operations**
    Review ccpi-managed tonsofskills marketplace catalogs, including the reported 425 plugins, 2,810 skills, and 200 agents, using discovery heuristics, trust scoring, dependency and prompt-injection review, conflict detection, install hygiene, and rollback planning before adoption.
 
-3. **Trust and provenance review**
+3. **Official Claude plugin directory adoption**
+   Prioritize Anthropic-managed plugin sources such as the official claude-plugins-official directory when they satisfy the use case. Verify plugin provenance, inspect requested permissions and MCP surfaces before adoption, check for conflicts with local skills or plugins, and document rollback paths for every installed plugin.
+
+4. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 
-4. **Dependency and tool-risk inspection**
+5. **Dependency and tool-risk inspection**
    Review package files, scripts, MCP declarations, shell commands, network calls, and requested tool permissions before installation. Flag broad filesystem access, credential handling, destructive commands, hidden downloads, or unpinned dependencies.
 
-5. **Namespace and trigger conflict analysis**
+6. **Namespace and trigger conflict analysis**
    Compare candidate names, descriptions, commands, MCP server IDs, and skill trigger wording against the local skill/plugin registry to prevent ambiguous activation or accidental override of trusted internal workflows.
 
-6. **Installation hygiene**
+7. **Installation hygiene**
    Prefer isolated evaluation first. Install into a scratch or staging environment when possible, avoid bulk importing entire catalogs, pin versions or commit SHAs when supported, and keep a rollback path for every adopted package.
 
-7. **Adoption decision record**
+8. **Adoption decision record**
    Produce a concise recommendation: adopt, adopt with restrictions, defer, or reject. Include rationale, risks, required mitigations, owner-reviewed files, and any post-install validation steps.
 
 ## Inputs / Outputs
@@ -118,3 +121,4 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 ## References
 
 - Source finding: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
+- Source finding: https://github.com/anthropics/claude-plugins-official

@@ -49,6 +49,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 4. **Skill and tool inventory**: Summarize the agent's expected skills, allowed tools, runtime dependencies, and repository access requirements.
 5. **Interoperability mapping**: Translate agent intent into portable concepts that can be adapted for Codex, Claude Code, OpenClaw, or other compatible harnesses.
 6. **Validation guidance**: Produce a concise checklist for confirming that an agent definition is readable, complete, deterministic enough to execute, and safe to share.
+7. **Git-native specification migration**: Handle framework-agnostic GitAgent Protocol definitions by checking repository packaging conventions, validation boundaries, interoperability limits, and migration needs when converting from tool-specific skill formats.
 
 ## Inputs / Outputs
 
