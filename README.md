@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 675 skills across 46 categories. Last refresh: 2026-05-08T13:57:19.519056+00:00._
+_Auto-generated index. 676 skills across 46 categories. Last refresh: 2026-05-08T14:12:20.399330+00:00._
 
 ### 3D_Genomics (8)
 
@@ -386,7 +386,7 @@ _Auto-generated index. 675 skills across 46 categories. Last refresh: 2026-05-08
 - **protein-structure-prediction** — Predicts 3D protein structures from amino acid sequences using ESMFold or AlphaFold3 (mock).
 - **tpd-ternary-complex-agent** — AI-powered ternary complex prediction for targeted protein degradation, modeling POI-degrader-E3 ligase assemblies to optimize PROTAC and...
 
-### Epigenomics (27)
+### Epigenomics (28)
 
 - **bio-atac-seq-atac-peak-calling** — Call accessible chromatin regions from ATAC-seq data using MACS3 with ATAC-specific parameters. Use when identifying open chromatin regio...
 - **bio-atac-seq-atac-qc** — Quality control metrics for ATAC-seq data including fragment size distribution, TSS enrichment, FRiP, and library complexity. Use when as...
@@ -415,6 +415,7 @@ _Auto-generated index. 675 skills across 46 categories. Last refresh: 2026-05-08
 - **bio-methylation-calling** — Extract methylation calls from Bismark BAM files using bismark_methylation_extractor. Generates per-cytosine reports for CpG, CHG, and CH...
 - **bio-methylation-dmr-detection** — Differentially methylated region (DMR) detection using methylKit tiles, bsseq BSmooth, and DMRcate. Use when identifying contiguous genom...
 - **bio-methylation-methylkit** — DNA methylation analysis with methylKit in R. Import Bismark coverage files, filter by coverage, normalize samples, and perform statistic...
+- **chromfound-scatac-foundation-model** — Apply ChromFound, a genome-wide foundation model for single-cell chromatin accessibility, to scATAC embedding, annotation, regulatory dis...
 
 ### Experimental_Design (4)
 

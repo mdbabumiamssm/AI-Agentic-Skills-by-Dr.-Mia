@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-08T13:57:19.519056+00:00",
+  "generated_at": "2026-05-08T14:12:20.399330+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 675,
+  "total_skills": 676,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-08T13:54:38.383535+00:00",
-      "body_length": 1611,
+      "last_modified": "2026-05-08T14:11:21.341722+00:00",
+      "body_length": 1655,
       "capabilities": [
         "Core Capabilities",
         "Workflow",
@@ -749,7 +749,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:55:38.978251+00:00",
+      "last_modified": "2026-05-08T13:57:21.081770+00:00",
       "body_length": 4448,
       "capabilities": []
     },
@@ -907,7 +907,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:55:57.318165+00:00",
+      "last_modified": "2026-05-08T13:57:21.081770+00:00",
       "body_length": 3842,
       "capabilities": [
         "Overview",
@@ -1316,7 +1316,7 @@
       ],
       "file_path": "Skills/Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:55:17.822351+00:00",
+      "last_modified": "2026-05-08T13:57:21.081770+00:00",
       "body_length": 4601,
       "capabilities": [
         "Overview",
@@ -3172,6 +3172,29 @@
         "Design Implications",
         "Quality Control",
         "Author"
+      ]
+    },
+    {
+      "name": "chromfound-scatac-foundation-model",
+      "description": "Apply ChromFound, a genome-wide foundation model for single-cell chromatin accessibility, to scATAC embedding, annotation, regulatory discovery, and validation.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Epigenomics/ChromfoundScatacFoundationModel_Agent/SKILL.md",
+      "relative_path": "Epigenomics/ChromfoundScatacFoundationModel_Agent/SKILL.md",
+      "last_modified": "2026-05-08T14:12:14.502463+00:00",
+      "body_length": 6181,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -16958,7 +16981,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:57:10.256821+00:00",
+      "last_modified": "2026-05-08T13:57:21.081770+00:00",
       "body_length": 6928,
       "capabilities": [
         "Overview",
