@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T14:12:20.399330+00:00",
+  "generated_at": "2026-05-11T17:00:17.268241+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 676,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-08T14:11:21.341722+00:00",
-      "body_length": 1655,
+      "last_modified": "2026-05-11T16:59:43.481296+00:00",
+      "body_length": 2100,
       "capabilities": [
         "Core Capabilities",
         "Workflow",
@@ -2146,12 +2146,13 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-04T16:57:34.327659+00:00",
-      "body_length": 4363,
+      "last_modified": "2026-05-11T16:54:41.208263+00:00",
+      "body_length": 5166,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
         "Workflow",
+        "On-Prem Clinical LLM Deployment Evaluation",
         "Example Usage",
         "References"
       ]
@@ -3187,7 +3188,7 @@
       ],
       "file_path": "Skills/Epigenomics/ChromfoundScatacFoundationModel_Agent/SKILL.md",
       "relative_path": "Epigenomics/ChromfoundScatacFoundationModel_Agent/SKILL.md",
-      "last_modified": "2026-05-08T14:12:14.502463+00:00",
+      "last_modified": "2026-05-08T14:12:21.761428+00:00",
       "body_length": 6181,
       "capabilities": [
         "Overview",
@@ -13504,8 +13505,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-05T18:23:58.032994+00:00",
-      "body_length": 2398,
+      "last_modified": "2026-05-11T16:56:29.884917+00:00",
+      "body_length": 2928,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -16981,8 +16982,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:57:21.081770+00:00",
-      "body_length": 6928,
+      "last_modified": "2026-05-11T17:00:09.031213+00:00",
+      "body_length": 7067,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
