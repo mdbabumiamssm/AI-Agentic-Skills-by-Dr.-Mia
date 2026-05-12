@@ -51,7 +51,8 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 6. **Platform-aware adaptation**: Adjust the workflow for agent runtimes that support hooks, plugins, MCP servers, CLI wrappers, or local transcript storage.
 7. **Verification preservation**: Keep enough raw anchors, command names, exit states, and file references for another agent or human to audit the summary.
 8. **Context-mode pattern checks**: Sandbox verbose tool output, preserve compressed summaries with decision-critical evidence, verify coverage across supported agent platforms, and measure context-token reduction without dropping actionable signals.
-9. **Raw-log promotion rules**: Measure token reduction after sandboxing verbose output, keep compact summaries in active context, and promote raw logs back into working context when summaries omit error evidence, stack traces, failing commands, reproduction details, or other decision-critical signals.
+9. **Concrete implementation reference**: Use `mksglu/context-mode` as a TypeScript reference for coding-agent transcript hygiene: sandbox tool output, keep compact summaries active, adapt hooks/plugins/MCP integrations across supported platforms, document failure modes such as omitted error evidence or stale summaries, and preserve raw logs when stack traces, failing commands, reproduction details, or audit requirements matter more than compression.
+10. **Raw-log promotion rules**: Measure token reduction after sandboxing verbose output, keep compact summaries in active context, and promote raw logs back into working context when summaries omit error evidence, stack traces, failing commands, reproduction details, or other decision-critical signals.
 
 **Inputs / Outputs**
 

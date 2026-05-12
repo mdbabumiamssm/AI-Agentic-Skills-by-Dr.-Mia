@@ -51,7 +51,7 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
    Review ccpi-managed tonsofskills marketplace catalogs, including the reported 425 plugins, 2,810 skills, and 200 agents, using discovery heuristics, trust scoring, dependency and prompt-injection review, conflict detection, install hygiene, and rollback planning before adoption.
 
 3. **Official Claude plugin directory adoption**
-   Treat Anthropic-managed plugin sources such as the official claude-plugins-official directory as a high-trust source tier when they satisfy the use case. Prefer official plugins over third-party marketplace alternatives when capabilities overlap, verify plugin provenance, inspect requested permissions and MCP surfaces before adoption, check for conflicts with local skills or plugins, and record the adoption decision and rollback path for every installed plugin.
+   Treat Anthropic's official claude-plugins-official directory as the preferred trust tier for Claude Code plugin discovery when it satisfies the use case. When an official plugin overlaps with a community marketplace option, compare provenance, capability scope, dependency footprint, requested permissions, MCP surfaces, and maintenance signals before selecting the install source. Review dependency risk before adoption, stage installs when possible, pin the selected version or commit when supported, track update hygiene, and keep rollback notes for every installed plugin.
 
 4. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
