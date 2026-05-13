@@ -24,7 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
-- Evaluate Strands Agents plus Amazon Bedrock AgentCore reference architectures for production Bedrock agentic chatbots, including AgentCore runtime boundaries and deployment topology, A2A and MCP integration, browser automation and voice assistant surfaces, IAM isolation and least privilege, observability hooks, production chatbot guardrails, evaluation gates, and deployment caveats such as service limits and whether the TypeScript sample shape fits the target workflow.
+- Evaluate Strands Agents plus Amazon Bedrock AgentCore reference architectures for production Bedrock agentic chatbots, including AgentCore runtime boundaries and deployment topology, A2A and MCP integration, browser automation and voice/chat channel surfaces, IAM isolation and least privilege, observability hooks, production chatbot guardrails, evaluation gates, and deployment caveats such as service limits and whether the TypeScript sample shape fits the target workflow.
 - Use the `aws-samples/sample-strands-agent-with-agentcore` architecture as a reference point for MCP tool integration, agent-to-agent patterns, browser automation and voice assistant components, IAM boundary reviews, and deployment topology planning; treat its TypeScript sample code as non-production scaffolding until service limits, security controls, observability, tests, and operational runbooks are validated for the target environment.
 
 ## Workflow

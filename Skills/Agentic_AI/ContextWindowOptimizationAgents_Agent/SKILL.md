@@ -53,6 +53,7 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 8. **Context-mode pattern checks**: Sandbox verbose tool output, preserve compressed summaries with decision-critical evidence, verify coverage across supported agent platforms, and measure context-token reduction without dropping actionable signals.
 9. **Concrete implementation reference**: Use `mksglu/context-mode` as a TypeScript reference for coding-agent transcript hygiene: sandbox tool output, keep compact summaries active, adapt hooks/plugins/MCP integrations across supported platforms, document failure modes such as omitted error evidence or stale summaries, and preserve raw logs when stack traces, failing commands, reproduction details, or audit requirements matter more than compression.
 10. **Raw-log promotion rules**: Measure token reduction after sandboxing verbose output, keep compact summaries in active context, and promote raw logs back into working context when summaries omit error evidence, stack traces, failing commands, reproduction details, or other decision-critical signals.
+11. **Sandbox replay pointers**: Isolate verbose logs behind replay pointers while preserving compact summaries, compare observed token savings with the source-reported 98% reduction claim, and recover raw output when debugging requires full command output, stack traces, failing test logs, or audit evidence.
 
 **Inputs / Outputs**
 

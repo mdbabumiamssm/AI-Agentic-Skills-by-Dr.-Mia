@@ -26,6 +26,13 @@ allowed-tools:
 
 - Clinical deployment caution for distilled DeepSeek-R1 and open-source reasoning models: evaluate against medical diagnosis tasks before any clinical use, weigh on-premises deployment tradeoffs, require calibration and safety checks, and do not treat model distillation alone as sufficient evidence of clinical readiness.
 - On-premises clinical diagnosis deployments require diagnosis-specific benchmarking, clinical safety gates, privacy controls, and model provenance checks; PubMed 42062641 reports that small distilled DeepSeek-R1-style open-source models may underperform or behave inconsistently in medical diagnosis workflows.
+- Distilled open-source reasoning models for on-prem clinical use require explicit comparison against proprietary diagnostic baselines, documented assessment of diagnostic benchmark degradation, privacy/local-hosting tradeoff review, clinical guardrails, and post-deployment monitoring before use in patient-facing workflows.
+
+## Clinical On-Prem Deployment: Distilled Reasoning Models
+
+- Treat local hosting as a privacy and data-residency advantage, not as evidence of diagnostic readiness.
+- Before clinical use, validate distilled open-source reasoning models against proprietary model baselines and local diagnostic tasks; document any diagnostic benchmark degradation without inventing unsupported benchmark names or thresholds.
+- Require clinical safety guardrails, escalation paths, human review, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
 
 ## Workflow
 

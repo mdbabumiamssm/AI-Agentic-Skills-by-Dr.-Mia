@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T10:52:18.356065+00:00",
+  "generated_at": "2026-05-13T10:43:10.474875+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 676,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-12T10:48:32.732919+00:00",
-      "body_length": 2198,
+      "last_modified": "2026-05-13T10:40:41.589610+00:00",
+      "body_length": 2201,
       "capabilities": [
         "Core Capabilities",
         "Workflow",
@@ -423,10 +423,11 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-12T10:37:28.585346+00:00",
-      "body_length": 1692,
+      "last_modified": "2026-05-13T10:34:20.372471+00:00",
+      "body_length": 2576,
       "capabilities": [
         "Core Capabilities",
+        "Clinical On-Prem Deployment: Distilled Reasoning Models",
         "Workflow",
         "Output Requirements",
         "References"
@@ -749,8 +750,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-12T10:49:43.202565+00:00",
-      "body_length": 4904,
+      "last_modified": "2026-05-13T10:42:14.427158+00:00",
+      "body_length": 5214,
       "capabilities": []
     },
     {
@@ -1316,8 +1317,8 @@
       ],
       "file_path": "Skills/Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SecurityAgentOperations_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:57:21.081770+00:00",
-      "body_length": 4601,
+      "last_modified": "2026-05-13T10:41:32.465362+00:00",
+      "body_length": 4592,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1821,7 +1822,7 @@
     },
     {
       "name": "clinical-nlp-extractor",
-      "description": "Extracts medical entities (Diseases, Medications, Procedures) from unstructured clinical text using regex and simple rules (or LLM wrappers).",
+      "description": "Extracts medical entities (Diseases, Medications, Procedures) and patient outcome mentions with temporal anchoring from unstructured clinical text using regex and simple rules (or LLM wrappers).",
       "tool_type": "",
       "primary_tool": "",
       "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
@@ -1831,8 +1832,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-05-02T22:52:37.006786+00:00",
-      "body_length": 2113,
+      "last_modified": "2026-05-13T10:39:05.114079+00:00",
+      "body_length": 2522,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -16982,8 +16983,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-12T10:52:03.485866+00:00",
-      "body_length": 7178,
+      "last_modified": "2026-05-13T10:43:01.783929+00:00",
+      "body_length": 7243,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
