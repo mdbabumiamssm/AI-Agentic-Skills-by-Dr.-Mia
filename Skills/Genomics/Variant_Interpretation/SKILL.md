@@ -36,6 +36,7 @@ The **Variant Interpretation Skill** automates the classification of genetic var
 1.  **Rule Scoring**: Applies codes like PVS1 (Null variant), PM2 (Rare), PP3 (In silico).
 2.  **Classification**: Combines scores to reach a verdict (Pathogenic, Likely Pathogenic, VUS, etc.).
 3.  **Explanation**: Provides the logic/evidence used for the classification.
+4.  **Evidence-grounded Summarization**: Uses Precision Grounding-style evidence database augmentation for genetic variant summaries, requiring ClinVar/gnomAD/OMIM-style source grounding, provenance links, stale evidence checks, and ACMG-aware uncertainty statements.
 
 ## Workflow
 
@@ -53,6 +54,8 @@ python3 Skills/Genomics/Variant_Interpretation/acmg_classifier.py \
     --evidence "PVS1,PM2"
 ```
 
+## References
 
+- https://pubmed.ncbi.nlm.nih.gov/41950627/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

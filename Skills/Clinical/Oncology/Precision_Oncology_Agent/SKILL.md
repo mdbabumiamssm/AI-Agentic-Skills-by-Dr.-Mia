@@ -36,7 +36,7 @@ allowed-tools:
 3. Biomarker summary (TMB, MSI, PD-L1 if provided) and missing-test checklist.
 
 ## Core Capabilities
-- For GI cancer cases, synthesize multimodal AI-assisted management evidence across endoscopy, pathology, radiology, genomics, trial eligibility, treatment sequencing, toxicity monitoring, surveillance planning, and tumor board review; explicitly route therapy recommendations through human oncology review gates and state that outputs are evidence-organizing support that must be reconciled with current guideline-concordant oncology recommendations, clinician judgment, patient preferences, and local trial availability.
+- For GI cancer cases, use AI-assisted management as a specialty example by synthesizing evidence across imaging (endoscopy/radiology), pathology, genomics, trial matching/eligibility, treatment planning/sequencing, toxicity monitoring, surveillance planning, and tumor board review; keep treatment selection and recommendation finalization inside explicit oncologist review boundaries and state that outputs are evidence-organizing support that must be reconciled with current guideline-concordant oncology recommendations, clinician judgment, patient preferences, and local trial availability.
 
 ## Workflow
 1. **Ingest & normalize:** Harmonize gene symbols, genome build, and variant effects.

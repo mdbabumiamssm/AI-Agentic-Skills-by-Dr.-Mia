@@ -36,6 +36,7 @@ allowed-tools:
 
 ## Core Capabilities
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
+- Apply benchmark-driven quality evaluation for AI-generated notes across correctness, omissions, factual consistency, note completeness, risk-of-harm scoring, and human review rubric selection.
 
 ## Workflow
 1. **Load system prompt:** `prompt.md` enforces no hallucinations + data gap surfacing.
