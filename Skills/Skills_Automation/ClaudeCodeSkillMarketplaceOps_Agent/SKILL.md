@@ -50,22 +50,25 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 2. **ccpi/tonsofskills large-catalog operations**
    Review ccpi-managed tonsofskills marketplace catalogs, including the reported 425 plugins, 2,810 skills, and 200 agents, using discovery heuristics, trust scoring, dependency and prompt-injection review, conflict detection, install hygiene, and rollback planning before adoption.
 
-3. **Official Claude plugin directory adoption**
-   Treat Anthropic's official claude-plugins-official directory as the preferred high-trust source for Claude Code plugin discovery when it satisfies the use case. When an official plugin overlaps with a community marketplace option, compare provenance, capability scope, plugin manifest, dependency footprint, requested permissions, MCP surfaces, and maintenance signals before selecting the install source. Inspect manifests and dependencies before adoption, test selected plugins in isolated repos when possible, pin the selected version or commit when supported, track update hygiene, and document rollback paths for every installed plugin.
+3. **ctx-scale catalog review**
+   Evaluate large skill, MCP, and harness catalogs such as ctx with capped recommendations, provenance checks, duplicate detection, dependency and execution-surface review, and conflict scoring before importing catalog-derived skills into curated repositories.
 
-4. **Trust and provenance review**
+4. **Official Claude plugin directory adoption**
+   Treat Anthropic's official claude-plugins-official directory as the preferred trust tier for Claude Code plugin discovery when it satisfies the use case. When an official plugin overlaps with a community marketplace option, compare provenance, capability scope, plugin manifest, dependency footprint, requested permissions, MCP surfaces, and maintenance signals before selecting the install source. Inspect manifests and dependencies before adoption, test selected plugins in isolated repos when possible, pin the selected version or commit before installation when supported, track update hygiene, and document rollback paths for every installed plugin.
+
+5. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 
-5. **Dependency and tool-risk inspection**
+6. **Dependency and tool-risk inspection**
    Review package files, scripts, MCP declarations, shell commands, network calls, and requested tool permissions before installation. Flag broad filesystem access, credential handling, destructive commands, hidden downloads, or unpinned dependencies.
 
-6. **Namespace and trigger conflict analysis**
+7. **Namespace and trigger conflict analysis**
    Compare candidate names, descriptions, commands, MCP server IDs, and skill trigger wording against the local skill/plugin registry to prevent ambiguous activation or accidental override of trusted internal workflows.
 
-7. **Installation hygiene**
+8. **Installation hygiene**
    Prefer isolated evaluation first. Install into a scratch or staging environment when possible, avoid bulk importing entire catalogs, pin versions or commit SHAs when supported, and keep a rollback path for every adopted package.
 
-8. **Adoption decision record**
+9. **Adoption decision record**
    Produce a concise recommendation: adopt, adopt with restrictions, defer, or reject. Include rationale, risks, required mitigations, owner-reviewed files, and any post-install validation steps.
 
 ## Inputs / Outputs
@@ -122,3 +125,4 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 
 - Source finding: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
 - Source finding: https://github.com/anthropics/claude-plugins-official
+- Source finding: https://github.com/stevesolun/ctx
