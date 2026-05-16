@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T10:42:56.477710+00:00",
+  "generated_at": "2026-05-16T10:39:19.575015+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 678,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-15T10:40:37.271517+00:00",
+      "last_modified": "2026-05-15T10:42:57.866870+00:00",
       "body_length": 2222,
       "capabilities": [
         "Core Capabilities",
@@ -423,7 +423,7 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-15T10:33:45.016493+00:00",
+      "last_modified": "2026-05-15T10:42:57.866870+00:00",
       "body_length": 3315,
       "capabilities": [
         "Core Capabilities",
@@ -727,7 +727,7 @@
       ],
       "file_path": "Skills/Agentic_AI/CherryStudioAgentWorkbench_Agent/SKILL.md",
       "relative_path": "Agentic_AI/CherryStudioAgentWorkbench_Agent/SKILL.md",
-      "last_modified": "2026-05-15T10:41:25.790292+00:00",
+      "last_modified": "2026-05-15T10:42:57.866870+00:00",
       "body_length": 3991,
       "capabilities": [
         "Overview",
@@ -17032,7 +17032,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-15T10:42:49.860907+00:00",
+      "last_modified": "2026-05-15T10:42:57.866870+00:00",
       "body_length": 7602,
       "capabilities": [
         "Overview",
