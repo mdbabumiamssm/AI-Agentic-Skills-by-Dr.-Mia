@@ -55,6 +55,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 8.  **Clinical Practice Guideline Drafting Evaluation**: Audits LLM-assisted real-time guideline development workflows with a checklist for citation traceability, PICO framing, conflict resolution, evidence grading, expert adjudication, and audit logs across drafting and review steps.
 9.  **Fine-Grained Medical Q&A Dataset Evaluation**: Reviews domain-specific medical Q&A datasets for trustworthy medical LLM evaluation by checking domain coverage, ambiguity labeling, omission detection, harm severity scoring, and dataset-level bias or drift indicators.
 10. **Test-Time Knowledge Acquisition Safety Pattern**: Requires medical decision support agents to retrieve relevant evidence before reasoning, vet source quality, surface and handle contradictions, abstain when evidence is weak, and keep retrieved evidence clearly separated from model-generated inference.
+11. **Medical Decision Support Retrieval Safety Gates**: Audits test-time knowledge acquisition by requiring explicit retrieval provenance, source freshness checks, contradiction handling, predefined abstention criteria, and post-retrieval clinical safety review before recommendations.
 
 ## Workflow
 
