@@ -59,19 +59,22 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 - **Official directory trust decisions**
   Prefer Anthropic-managed provenance when available, pin plugin versions or commits, inspect permissions and dependencies, test in a sandbox, document the trust decision, and compare official plugins against community marketplace alternatives before rollout.
 
-5. **Trust and provenance review**
+5. **Agent package-manager evaluation**
+   Evaluate agent skill managers and package managers such as AKM by reviewing the trust model, dependency pinning support, manifest schema, cross-agent compatibility, uninstall hygiene, namespace conflict handling, and reproducible install behavior before adopting them for shared skill, command, tool, or knowledge distribution.
+
+6. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 
-6. **Dependency and tool-risk inspection**
+7. **Dependency and tool-risk inspection**
    Review package files, scripts, MCP declarations, shell commands, network calls, and requested tool permissions before installation. Flag broad filesystem access, credential handling, destructive commands, hidden downloads, or unpinned dependencies.
 
-7. **Namespace and trigger conflict analysis**
+8. **Namespace and trigger conflict analysis**
    Compare candidate names, descriptions, commands, MCP server IDs, and skill trigger wording against the local skill/plugin registry to prevent ambiguous activation or accidental override of trusted internal workflows.
 
-8. **Installation hygiene**
+9. **Installation hygiene**
    Prefer isolated evaluation first. Install into a scratch or staging environment when possible, avoid bulk importing entire catalogs, pin versions or commit SHAs when supported, and keep a rollback path for every adopted package.
 
-9. **Adoption decision record**
+10. **Adoption decision record**
    Produce a concise recommendation: adopt, adopt with restrictions, defer, or reject. Include rationale, risks, required mitigations, owner-reviewed files, and any post-install validation steps.
 
 ## Inputs / Outputs
@@ -129,3 +132,4 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 - Source finding: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
 - Source finding: https://github.com/anthropics/claude-plugins-official
 - Source finding: https://github.com/stevesolun/ctx
+- Source finding: https://github.com/itlackey/akm

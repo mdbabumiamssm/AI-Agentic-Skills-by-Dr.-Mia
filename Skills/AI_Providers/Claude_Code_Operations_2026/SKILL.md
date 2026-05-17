@@ -32,7 +32,7 @@ allowed-tools:
 
 ## Core Capabilities
 
-- Use Anthropic's official Claude Code plugins directory as an Anthropic-managed, high quality source for plugin discovery; verify plugin manifests, requested permissions, MCP server exposure, skills interaction, and automation side effects before installing; install only from trusted official sources, pin plugin versions where reproducibility matters, and keep official plugins separate from community marketplace assets in organization allowlists and documentation.
+- Use Anthropic's official Claude Code plugins directory as the preferred Anthropic-managed source for vetted plugin discovery; verify plugin manifests, requested permissions, MCP server exposure, skills interaction, and automation side effects before installing; install only from trusted official sources, pin plugin versions where reproducibility matters, keep official plugins separate from community marketplace assets in organization allowlists and documentation, and migrate away from unverified marketplaces when an official plugin covers the need.
 
 ## When to Use
 
