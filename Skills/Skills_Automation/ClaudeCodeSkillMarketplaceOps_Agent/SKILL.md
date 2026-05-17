@@ -56,6 +56,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 4. **Official Claude plugin directory adoption**
    Treat Anthropic's official claude-plugins-official directory as the preferred trust tier for Claude Code plugin discovery when it satisfies the use case. When an official plugin overlaps with a community marketplace option, compare provenance, capability scope, plugin manifest, dependency footprint, requested permissions, MCP surfaces, and maintenance signals before selecting the install source. Inspect manifests and dependencies before adoption, test selected plugins in isolated repos when possible, pin the selected version or commit before installation when supported, track update hygiene, and document rollback paths for every installed plugin.
 
+- **Official directory trust decisions**
+  Prefer Anthropic-managed provenance when available, pin plugin versions or commits, inspect permissions and dependencies, test in a sandbox, document the trust decision, and compare official plugins against community marketplace alternatives before rollout.
+
 5. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 

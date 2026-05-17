@@ -26,6 +26,15 @@ allowed-tools:
 
 - Use Strands Agents plus Amazon Bedrock AgentCore reference architectures as an implementation pattern for managed Bedrock agentic chatbots, including AgentCore runtime boundaries and deployment topology, A2A and MCP integration, browser automation and voice/chat channel surfaces, IAM isolation and least privilege, observability hooks, production chatbot guardrails, evaluation gates, and deployment caveats such as service limits and whether the TypeScript sample shape fits the target workflow.
 - Use the `aws-samples/sample-strands-agent-with-agentcore` architecture as a reference point for MCP tool integration, agent-to-agent patterns, browser automation and voice assistant components, IAM boundary reviews, and deployment topology planning; treat its TypeScript sample code as non-production scaffolding until service limits, security controls, observability, tests, and operational runbooks are validated for the target environment.
+- Evaluate AgentCore chatbot designs against the Strands Agents, Amazon Bedrock, A2A protocol, MCP, browser automation, and voice assistant patterns demonstrated by `aws-samples/sample-strands-agent-with-agentcore`.
+
+## AgentCore Reference Architecture
+
+- Start from Strands Agents on Amazon Bedrock when the chatbot needs managed Bedrock agent workflows with explicit AgentCore runtime and deployment boundaries.
+- Review A2A and MCP integration points before adding tools, multi-agent handoffs, browser automation, or voice assistant channels.
+- Define IAM boundaries for each agent, tool, browser automation path, and channel surface before deployment.
+- Apply guardrails, observability hooks, tests, and operational runbooks before treating the TypeScript sample architecture as production-ready.
+- Check regional model availability, service limits, deployment topology, and rollback criteria for the target environment.
 
 ## Workflow
 

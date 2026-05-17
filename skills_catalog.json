@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T10:39:19.575015+00:00",
+  "generated_at": "2026-05-17T10:43:16.551977+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 678,
   "total_errors": 21,
@@ -284,10 +284,11 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-15T10:42:57.866870+00:00",
-      "body_length": 2222,
+      "last_modified": "2026-05-17T10:38:23.287354+00:00",
+      "body_length": 3147,
       "capabilities": [
         "Core Capabilities",
+        "AgentCore Reference Architecture",
         "Workflow",
         "Output Requirements",
         "References"
@@ -773,8 +774,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-13T10:43:11.951882+00:00",
-      "body_length": 5214,
+      "last_modified": "2026-05-17T10:39:07.451150+00:00",
+      "body_length": 5611,
       "capabilities": []
     },
     {
@@ -931,8 +932,8 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-05-08T13:57:21.081770+00:00",
-      "body_length": 3842,
+      "last_modified": "2026-05-17T10:39:47.432966+00:00",
+      "body_length": 4075,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -17032,8 +17033,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-15T10:42:57.866870+00:00",
-      "body_length": 7602,
+      "last_modified": "2026-05-17T10:42:58.884096+00:00",
+      "body_length": 7904,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
