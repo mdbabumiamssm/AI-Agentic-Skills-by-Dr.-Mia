@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T10:43:19.542503+00:00",
+  "generated_at": "2026-05-18T13:07:18.364929+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 681,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-18T10:42:39.264924+00:00",
+      "last_modified": "2026-05-18T10:43:20.904750+00:00",
       "body_length": 4782,
       "capabilities": [
         "Core Capabilities",
@@ -2102,8 +2102,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-05-17T16:07:43.967967+00:00",
-      "body_length": 2656,
+      "last_modified": "2026-05-18T12:58:35.041268+00:00",
+      "body_length": 3067,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2194,8 +2194,8 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-18T10:36:00.882597+00:00",
-      "body_length": 6126,
+      "last_modified": "2026-05-18T13:05:17.030911+00:00",
+      "body_length": 6809,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2261,8 +2261,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-14T10:47:09.621771+00:00",
-      "body_length": 2735,
+      "last_modified": "2026-05-18T13:02:48.416513+00:00",
+      "body_length": 2730,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
@@ -13579,8 +13579,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-17T16:07:43.967967+00:00",
-      "body_length": 2773,
+      "last_modified": "2026-05-18T13:03:37.847414+00:00",
+      "body_length": 3163,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17079,7 +17079,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-18T10:43:13.904779+00:00",
+      "last_modified": "2026-05-18T10:43:20.904750+00:00",
       "body_length": 9314,
       "capabilities": [
         "Overview",
