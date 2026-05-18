@@ -51,6 +51,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 6. **Validation guidance**: Produce a concise checklist for confirming that an agent definition is readable, complete, deterministic enough to execute, and safe to share.
 7. **Git-native specification migration**: Handle framework-agnostic GitAgent Protocol definitions by checking repository packaging conventions, validation boundaries, interoperability limits, and migration needs when converting from tool-specific skill formats.
 8. **Framework-agnostic GitAgent specification guidance**: Review repository layout, manifest validation, skill and tool declarations, compatibility checks, versioning, packaging, and migration notes for existing agent repositories.
+9. **Protocol-first agent specification pattern**: Prefer GitAgent Protocol definitions when the agent needs portable repository layout conventions, packaging, and portability checks across runtimes; keep runtime-specific configs for harness-only execution details.
 
 ## Inputs / Outputs
 

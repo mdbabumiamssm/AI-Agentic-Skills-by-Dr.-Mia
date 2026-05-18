@@ -55,6 +55,7 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 10. **Raw-log promotion rules**: Measure token reduction after sandboxing verbose output, keep compact summaries in active context, and promote raw logs back into working context when summaries omit error evidence, stack traces, failing commands, reproduction details, or other decision-critical signals.
 11. **Sandbox replay pointers**: Isolate verbose logs behind replay pointers while preserving compact summaries, compare observed token savings with the source-reported 98% reduction claim, and recover raw output when debugging requires full command output, stack traces, failing test logs, or audit evidence.
 12. **Cross-runtime context-mode integration**: Apply context-mode patterns for Codex, Claude Code, Cursor, Copilot, and MCP servers by sandboxing verbose tool output, keeping concise summaries and artifacts in active context, measuring token reduction, and defining hidden-output failure modes such as missing stack traces, failed command context, stale summaries, or unavailable raw-log replay.
+13. **High-signal context-mode hygiene pattern**: Treat `mksglu/context-mode` as a coding-agent pattern for sandboxing tool output, compacting transcripts, supporting many agent platforms, tracking the source-reported 98% token reduction, and explicitly guarding against hidden diagnostically important output.
 
 **Inputs / Outputs**
 

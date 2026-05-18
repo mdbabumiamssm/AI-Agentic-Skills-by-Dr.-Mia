@@ -62,6 +62,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 - **Official source-tier separation**
   Treat `anthropics/claude-plugins-official` as a higher-trust discovery tier when a matching plugin exists, while keeping official plugin adoption separate from third-party marketplace ingestion. Prefer official or clearly maintained plugins, record provenance, review manifests, dependencies, permissions, and MCP surfaces, then compare community marketplace options only after the official path has been evaluated.
 
+- **Official trusted-source lane**
+  Use Anthropic's official Claude Code plugins directory as a trusted-source lane for plugin selection: verify provenance against the official repository, inspect install instructions, manifests, dependencies, permissions, and MCP surfaces before installation, check for plugin-skill name, trigger, command, and tool conflicts, and allow official plugins to supersede community marketplace packages when they provide the same capability and pass local review.
+
 - **Anthropic-managed plugin provenance**
   Use the official Anthropic-managed Claude Code plugins directory as the first review source for matching plugin needs before third-party marketplaces. Record the official repository provenance, pin the selected version or commit when supported, inspect dependency and permission changes, check for namespace, command, MCP, and trigger conflicts, and fall back to community marketplaces only when the official directory lacks the required capability or fails the local review criteria.
 

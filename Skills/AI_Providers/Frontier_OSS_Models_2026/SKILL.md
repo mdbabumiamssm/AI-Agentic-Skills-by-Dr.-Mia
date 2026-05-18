@@ -25,6 +25,7 @@ allowed-tools:
 ## Core Capabilities
 
 - Clinical deployment caution for distilled DeepSeek-R1 and open-source reasoning models: evaluate against medical diagnosis tasks before any clinical use, weigh on-premises deployment tradeoffs, require calibration and safety checks, and do not treat model distillation alone as sufficient evidence of clinical readiness.
+- Distilled DeepSeek-R1/open-source medical diagnosis models need on-prem validation, calibration against local clinical tasks, local governance approval, and failure-mode review before self-hosted clinical deployment.
 - On-premises clinical diagnosis deployments require diagnosis-specific benchmarking, clinical safety gates, privacy controls, and model provenance checks; PubMed 42062641 reports performance challenges for distilled DeepSeek-R1-style open-source LLMs in medical diagnosis workflows.
 - Distilled open-source reasoning models for on-prem clinical use require explicit comparison against proprietary diagnostic baselines, documented assessment of diagnostic benchmark degradation, privacy/local-hosting tradeoff review, clinical guardrails, and post-deployment monitoring before use in patient-facing workflows.
 - Clinical on-premises deployment caution for distilled DeepSeek-R1 and other open models: validate against local diagnostic tasks, set calibration and abstention thresholds, enforce privacy and IAM constraints, document hardware and latency tradeoffs, and red-team against commercial models before clinical use.
@@ -39,6 +40,7 @@ allowed-tools:
 - Route clinical workloads to governed provider workflows or human-reviewed pathways when raw local model outputs have not passed on-prem diagnostic performance validation, safety benchmarking, and privacy governance review.
 - Red-team distilled DeepSeek-R1 and other open models against commercial model baselines before using them in clinical workflows.
 - Require clinical safety guardrails, escalation paths, human review, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
+- Record local governance sign-off and known diagnostic failure modes before enabling self-hosted use.
 
 ## Workflow
 
