@@ -37,6 +37,7 @@ The **Variant Interpretation Skill** automates the classification of genetic var
 2.  **Classification**: Combines scores to reach a verdict (Pathogenic, Likely Pathogenic, VUS, etc.).
 3.  **Explanation**: Provides the logic/evidence used for the classification.
 4.  **Evidence-grounded Summarization**: Uses Precision Grounding-style evidence database augmentation for genetic variant summaries, requiring ClinVar/gnomAD/OMIM-style source grounding, provenance links, stale evidence checks, and ACMG-aware uncertainty statements.
+5.  **Precision-grounded Variant Summarization**: Requires evidence-backed retrieval from ClinVar, gnomAD, and ACMG/AMP sources; preserves provenance in automated summaries; flags conflicting evidence; and keeps automated summaries separate from final clinical interpretation.
 
 ## Workflow
 

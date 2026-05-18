@@ -35,6 +35,7 @@ allowed-tools:
 Run the locally checked-out TrialGPT pipeline to retrieve, rank, and explain candidate trials for a patient before deeper eligibility review.
 
 ## Core Capabilities
+- Apply neuro-symbolic multi-agent oncology trial matching with ontology/knowledge-graph grounding, criterion-level reasoning, eligibility conflict resolution, prospective patient-scale evaluation tracking, and human review workflows for ambiguous or high-impact matches.
 - Support neuro-symbolic multi-agent oncology trial matching patterns by grounding matches in an oncology-specific knowledge graph, applying criterion-level symbolic checks, assigning multi-agent review roles, prospectively evaluating matching behavior against patient cohorts, and emitting auditable MET/NOT/UNKNOWN rationales while escalating ambiguous inclusion/exclusion criteria for expert review.
 - Incorporate patterns from the 2026 prospective 3,804-patient oncology trial matching evaluation: parse eligibility with knowledge-graph support, retain criterion-level reasoning and evidence, track prospective evaluation metrics at patient scale, preserve auditable patient-scale decision trails, and route ambiguous criteria through explicit escalation rules.
 

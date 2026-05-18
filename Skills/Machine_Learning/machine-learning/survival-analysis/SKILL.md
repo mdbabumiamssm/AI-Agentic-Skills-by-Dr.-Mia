@@ -24,6 +24,10 @@ allowed-tools:
 
 # Survival Prediction with lifelines
 
+## Core Capabilities
+
+- For cancer survival prediction from initial oncology consultation documents, compare zero-shot LLM extraction/risk scoring with fine-tuned models; prevent leakage from future outcomes, follow-up, event dates, or post-consultation information; and validate with calibration plus censoring-aware time-to-event metrics.
+
 ## Kaplan-Meier Curves
 
 ```python
@@ -171,6 +175,10 @@ sig_genes = results_df[results_df['p'] < 0.05].sort_values('p')
 - clinical-databases/variant-prioritization - Clinical variant interpretation
 - differential-expression/de-results - Find DE genes for survival model
 - machine-learning/biomarker-discovery - Select predictive features
+
+## References
+
+- https://pubmed.ncbi.nlm.nih.gov/42004490/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

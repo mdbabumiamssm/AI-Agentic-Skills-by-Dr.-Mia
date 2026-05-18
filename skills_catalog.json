@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-18T13:24:14.539650+00:00",
+  "generated_at": "2026-05-18T14:24:45.274861+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 681,
+  "total_skills": 682,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-18T13:18:51.874592+00:00",
+      "last_modified": "2026-05-18T13:24:15.938807+00:00",
       "body_length": 5133,
       "capabilities": [
         "Core Capabilities",
@@ -424,8 +424,8 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-18T13:13:36.400361+00:00",
-      "body_length": 4140,
+      "last_modified": "2026-05-18T14:05:36.587741+00:00",
+      "body_length": 4454,
       "capabilities": [
         "Core Capabilities",
         "Clinical On-Prem Deployment: Distilled Reasoning Models",
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-18T13:19:54.095441+00:00",
+      "last_modified": "2026-05-18T13:24:15.938807+00:00",
       "body_length": 5922,
       "capabilities": []
     },
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-05-18T13:21:28.118213+00:00",
+      "last_modified": "2026-05-18T13:24:15.938807+00:00",
       "body_length": 4341,
       "capabilities": [
         "Overview",
@@ -1879,8 +1879,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-05-13T10:43:11.951882+00:00",
-      "body_length": 2522,
+      "last_modified": "2026-05-18T14:22:19.088016+00:00",
+      "body_length": 3365,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -1901,8 +1901,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-05-14T10:47:09.620771+00:00",
-      "body_length": 2511,
+      "last_modified": "2026-05-18T14:17:28.976582+00:00",
+      "body_length": 2719,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2102,8 +2102,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-05-18T13:07:19.920398+00:00",
-      "body_length": 3067,
+      "last_modified": "2026-05-18T14:07:23.153697+00:00",
+      "body_length": 3085,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2194,8 +2194,8 @@
       ],
       "file_path": "Skills/Clinical/Safety/AI_Safety_Auditor/SKILL.md",
       "relative_path": "Clinical/Safety/AI_Safety_Auditor/SKILL.md",
-      "last_modified": "2026-05-18T13:07:19.920398+00:00",
-      "body_length": 6809,
+      "last_modified": "2026-05-18T14:18:54.998476+00:00",
+      "body_length": 7248,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2261,8 +2261,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-18T13:07:19.920398+00:00",
-      "body_length": 2730,
+      "last_modified": "2026-05-18T14:14:23.708936+00:00",
+      "body_length": 3002,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
@@ -8503,8 +8503,8 @@
       ],
       "file_path": "Skills/Genomics/Variant_Interpretation/SKILL.md",
       "relative_path": "Genomics/Variant_Interpretation/SKILL.md",
-      "last_modified": "2026-05-14T10:47:09.621771+00:00",
-      "body_length": 1920,
+      "last_modified": "2026-05-18T14:20:47.944284+00:00",
+      "body_length": 2197,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -11963,9 +11963,10 @@
       ],
       "file_path": "Skills/Machine_Learning/machine-learning/survival-analysis/SKILL.md",
       "relative_path": "Machine_Learning/machine-learning/survival-analysis/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.203933+00:00",
-      "body_length": 4296,
+      "last_modified": "2026-05-18T14:12:38.955335+00:00",
+      "body_length": 4699,
       "capabilities": [
+        "Core Capabilities",
         "Kaplan-Meier Curves",
         "Compare Groups with Log-Rank Test",
         "Cox Proportional Hazards Regression",
@@ -11974,7 +11975,8 @@
         "Check Proportional Hazards Assumption",
         "Survival at Specific Time",
         "Feature Selection for Survival",
-        "Related Skills"
+        "Related Skills",
+        "References"
       ]
     },
     {
@@ -13579,8 +13581,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-18T13:07:19.920398+00:00",
-      "body_length": 3163,
+      "last_modified": "2026-05-18T14:15:55.346729+00:00",
+      "body_length": 3587,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17079,7 +17081,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-18T13:24:03.293837+00:00",
+      "last_modified": "2026-05-18T13:24:15.938807+00:00",
       "body_length": 9810,
       "capabilities": [
         "Overview",
@@ -17088,6 +17090,29 @@
         "Inputs / Outputs",
         "Recommended Workflow",
         "Review Checklist",
+        "References"
+      ]
+    },
+    {
+      "name": "claude-official-plugins-operations",
+      "description": "Use Anthropic-managed claude-plugins-official for vetted Claude Code plugin discovery, trust review, installation hygiene, dependency assessment, and migration planning.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
+      "last_modified": "2026-05-18T14:24:34.754700+00:00",
+      "body_length": 3924,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },
@@ -19916,7 +19941,7 @@
       ],
       "file_path": "Skills/Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
       "relative_path": "Writing_and_Productivity/OfficecliAgentOfficeAutomation_Agent/SKILL.md",
-      "last_modified": "2026-05-18T13:20:46.173315+00:00",
+      "last_modified": "2026-05-18T13:24:15.938807+00:00",
       "body_length": 4172,
       "capabilities": [
         "Overview",

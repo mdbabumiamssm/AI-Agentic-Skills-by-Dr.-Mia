@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 681 skills across 46 categories. Last refresh: 2026-05-18T13:24:14.539650+00:00._
+_Auto-generated index. 682 skills across 46 categories. Last refresh: 2026-05-18T14:24:45.274861+00:00._
 
 ### 3D_Genomics (8)
 
@@ -845,10 +845,11 @@ _Auto-generated index. 681 skills across 46 categories. Last refresh: 2026-05-18
 - **bio-transcription-translation** — Transcribe DNA to RNA and translate to protein using Biopython. Use when converting between DNA, RNA, and protein sequences, finding ORFs...
 - **bio-write-sequences** — Write biological sequences to files (FASTA, FASTQ, GenBank, EMBL) using Biopython Bio.SeqIO. Use when saving sequences, creating new sequ...
 
-### Skills_Automation (4)
+### Skills_Automation (5)
 
 - **agent-skill-catalog-graph** — Use graph-backed catalogs such as ctx to discover, compare, and recommend skills, agents, MCPs, and harnesses for LLM automation workflows.
 - **claude-code-skill-marketplace-ops** — Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependen...
+- **claude-official-plugins-operations** — Use Anthropic-managed claude-plugins-official for vetted Claude Code plugin discovery, trust review, installation hygiene, dependency ass...
 - **open-design-agentic-prototyping** — Use Open Design to plan safe local-first agentic workflows for design systems, prototypes, previews, and HTML/PDF/PPTX/MP4 exports.
 - **refero-design-research-skill** — Research-first UI design skill for using Refero MCP to study real app screens and flows before making product design decisions.
 

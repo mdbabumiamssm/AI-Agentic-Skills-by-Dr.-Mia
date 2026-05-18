@@ -38,6 +38,8 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 3.  **Structuring**: Returns JSON format compatible with FHIR/USDL.
 4.  **Incidentaloma Identification**: Detect incidental imaging findings requiring follow-up across multiple anatomies in radiology reports. Park et al. (J Biomed Inform, Apr 2026, PMID 42061667) compare LLM-based vs supervised approaches — useful exemplar when scoping radiology-report NLP pipelines.
 5.  **Outcome Identification with Temporal Anchoring**: Detect outcome mentions in clinician notes, normalize timing, distinguish documented events from speculation, and return evidence spans for audit.
+6.  **Clinician-Note Outcome Timing Extraction**: Extract patient outcomes from longitudinal clinician notes with event-time anchoring, negation/uncertainty handling, reconciliation across note dates, and structured validation against chart-reviewed labels.
+7.  **Rare-Neoplasm Oncology RWD Extraction**: For clinician-note abstraction in rare neoplasms, use registry variable dictionaries, tumor-specific entity normalization, temporal anchoring, explicit missingness flags, evidence spans for human abstraction audit, and structured export for oncology real-world data studies.
 
 ## Workflow
 
@@ -60,5 +62,6 @@ python3 Skills/Clinical/Clinical_NLP/entity_extractor.py \
 
 - Park N, Ahmed F, Sun Z, Lybarger K, Breinhorst E. Automated identification of incidentalomas requiring follow-up: A multi-anatomy evaluation of LLM-based and supervised approaches. J Biomed Inform, 2026 Apr 28. https://pubmed.ncbi.nlm.nih.gov/42061667/
 - Abdullahi T, Hamzeh A, Sears I, Abadi N, Singh R. Identifying and timing patient outcomes in clinician notes using large language models. Artif Intell Med, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41886942/
+- Teterycz P, Rynkun S, Szostakowski B, Wągrodzki M, Rutkowski P. Accelerating real-world data collection using large language models in rare neoplasms: a bone sarcoma example. ESMO Real World Data Digit Oncol, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/42021926/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
