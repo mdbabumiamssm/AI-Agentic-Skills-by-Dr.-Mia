@@ -62,6 +62,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 - **Official source-tier separation**
   Treat `anthropics/claude-plugins-official` as a higher-trust discovery tier when a matching plugin exists, while keeping official plugin adoption separate from third-party marketplace ingestion. Prefer official or clearly maintained plugins, record provenance, review manifests, dependencies, permissions, and MCP surfaces, then compare community marketplace options only after the official path has been evaluated.
 
+- **Anthropic-managed plugin provenance**
+  Use the official Anthropic-managed Claude Code plugins directory as the first review source for matching plugin needs before third-party marketplaces. Record the official repository provenance, pin the selected version or commit when supported, inspect dependency and permission changes, check for namespace, command, MCP, and trigger conflicts, and fall back to community marketplaces only when the official directory lacks the required capability or fails the local review criteria.
+
 5. **Agent package-manager evaluation**
    Evaluate agent skill managers and package managers such as AKM by reviewing the trust model, dependency pinning support, manifest schema, cross-agent compatibility, uninstall hygiene, namespace conflict handling, and reproducible install behavior before adopting them for shared skill, command, tool, or knowledge distribution.
 

@@ -52,10 +52,11 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 5.  **Clinician Override Preference Auditing**: Treats clinician overrides of clinical AI recommendations as implicit preference signals by categorizing override types, separating execution capability from alignment capability, avoiding suppression bias against correct-but-difficult recommendations, and tying reward-model updates to longitudinal outcomes in value-based care.
 6.  **AI-Transformed Patient-Centered Documentation Safeguards**: Applies a pre/post error taxonomy for transformed patient-centered notes, checks for contradictions against the clinician-authored source, detects omitted clinically meaningful details, triggers clinician review for unsafe or meaning-altering changes, and treats mental health documentation with heightened sensitivity to tone, attribution, and patient meaning.
 7.  **On-Prem Clinical LLM Deployment Audits**: Evaluates locally hosted clinical diagnosis workflows using distilled open-source reasoning models such as DeepSeek-R1 variants by checking benchmark drift versus parent models, diagnostic task stratification, infrastructure and privacy constraints, human oversight gates, and failure modes unique to on-premises clinical diagnosis systems.
-8.  **Clinical Practice Guideline Drafting Evaluation**: Audits LLM-assisted real-time guideline development workflows with a checklist for citation traceability, PICO framing, conflict resolution, evidence grading, expert adjudication, and audit logs across drafting and review steps.
-9.  **Fine-Grained Medical Q&A Dataset Evaluation**: Reviews domain-specific medical Q&A datasets for trustworthy medical LLM evaluation by checking domain coverage, ambiguity labeling, omission detection, harm severity scoring, and dataset-level bias or drift indicators.
-10. **Test-Time Knowledge Acquisition Safety Pattern**: Requires medical decision support agents to retrieve relevant evidence before reasoning, vet source quality, surface and handle contradictions, abstain when evidence is weak, and keep retrieved evidence clearly separated from model-generated inference.
-11. **Medical Decision Support Retrieval Safety Gates**: Audits test-time knowledge acquisition by requiring explicit retrieval provenance, source freshness checks, contradiction handling, predefined abstention criteria, and post-retrieval clinical safety review before recommendations.
+8.  **Distilled Open Reasoning Model Deployment Checklist**: Requires on-premises clinical diagnosis deployments to document diagnosis benchmark selection, model-size/performance tradeoffs, calibration and refusal behavior, privacy constraints, and comparison against curated clinical references before clinical use.
+9.  **Clinical Practice Guideline Drafting Evaluation**: Audits LLM-assisted real-time guideline development workflows with a checklist for citation traceability, PICO framing, conflict resolution, evidence grading, expert adjudication, and audit logs across drafting and review steps.
+10. **Fine-Grained Medical Q&A Dataset Evaluation**: Reviews domain-specific medical Q&A datasets before trusting medical LLM outputs by designing rubrics for correctness, omissions, unsafe advice, hallucinated citations, and dataset coverage.
+11. **Test-Time Knowledge Acquisition Safety Pattern**: Requires medical decision support agents to retrieve relevant evidence before reasoning, vet source quality, surface and handle contradictions, abstain when evidence is weak, and keep retrieved evidence clearly separated from model-generated inference.
+12. **Medical Decision Support Retrieval Safety Gates**: Audits test-time knowledge acquisition by requiring explicit retrieval provenance, source freshness checks, contradiction handling, predefined abstention criteria, and post-retrieval clinical safety review before recommendations.
 
 ## Workflow
 
@@ -69,9 +70,11 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 For distilled open reasoning models used in local medical diagnosis systems, audit deployment readiness by:
 
 *   Comparing diagnostic performance against the parent model and approved clinical workflow to detect benchmark drift before clinical release.
-*   Stratifying evaluation by diagnostic task type so broad aggregate scores do not hide task-specific failures.
-*   Verifying local infrastructure, access control, logging, update, and PHI handling constraints required for on-premises use.
-*   Requiring clinician oversight gates for diagnostic suggestions, escalation, abstention, and high-risk or uncertain cases.
+*   Selecting diagnosis benchmarks that match intended clinical diagnosis tasks and stratifying evaluation so broad aggregate scores do not hide task-specific failures.
+*   Comparing model-size/performance tradeoffs before selecting a distilled model for local deployment.
+*   Verifying calibration, uncertainty handling, and refusal or abstention behavior for unsafe, unsupported, or out-of-scope diagnostic requests.
+*   Verifying local infrastructure, access control, logging, update, privacy, and PHI handling constraints required for on-premises use.
+*   Requiring comparison against curated clinical references and clinician oversight gates before clinical use of diagnostic suggestions, escalation, abstention, and high-risk or uncertain cases.
 *   Recording failure modes observed during local diagnosis testing, with special attention to deployment-specific risks created by locally hosted models.
 
 ## Example Usage
