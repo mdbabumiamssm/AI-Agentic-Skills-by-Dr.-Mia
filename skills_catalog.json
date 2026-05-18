@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T18:11:57.373955+00:00",
+  "generated_at": "2026-05-18T01:58:50.220632+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 681,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-17T18:10:22.585844+00:00",
-      "body_length": 4096,
+      "last_modified": "2026-05-18T01:57:51.411538+00:00",
+      "body_length": 4433,
       "capabilities": [
         "Core Capabilities",
         "AgentCore Reference Architecture",
@@ -344,7 +344,7 @@
       ],
       "file_path": "Skills/AI_Providers/Claude_Code_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/Claude_Code_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-17T18:11:47.344874+00:00",
+      "last_modified": "2026-05-17T18:11:59.162240+00:00",
       "body_length": 2322,
       "capabilities": [
         "Workflow",
@@ -17079,8 +17079,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-05-17T18:11:09.937832+00:00",
-      "body_length": 8327,
+      "last_modified": "2026-05-18T01:58:37.715548+00:00",
+      "body_length": 8784,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
