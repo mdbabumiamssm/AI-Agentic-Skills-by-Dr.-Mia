@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 682 skills across 46 categories. Last refresh: 2026-05-19T10:56:29.926753+00:00._
+_Auto-generated index. 683 skills across 46 categories. Last refresh: 2026-05-19T12:47:34.960374+00:00._
 
 ### 3D_Genomics (8)
 
@@ -310,7 +310,7 @@ _Auto-generated index. 682 skills across 46 categories. Last refresh: 2026-05-19
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (28)
+### Clinical (29)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -325,6 +325,7 @@ _Auto-generated index. 682 skills across 46 categories. Last refresh: 2026-05-19
 - **bio-clinical-databases-tumor-mutational-burden** — Calculate tumor mutational burden from panel or WES data with proper normalization and clinical thresholds. Use when assessing immunother...
 - **bio-clinical-databases-variant-prioritization** — Filter and prioritize variants by pathogenicity, population frequency, and clinical evidence for rare disease analysis. Use when identify...
 - **chatehr-clinician-assistant** — EHR Chat Assistant
+- **clinical-llm-evaluation-benchmarking** — Design and run rigorous clinical LLM evaluation workflows grounded in systematic review evidence on AI-generated clinical note quality me...
 - **clinical-nlp-extractor** — Extracts medical entities (Diseases, Medications, Procedures) and patient outcome mentions with temporal anchoring from unstructured clin...
 - **clinical-note-summarization** — Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the ...
 - **digital-twin-clinical-agent** — AI-powered patient digital twin creation for clinical trial simulation, treatment outcome prediction, and personalized medicine using rea...
