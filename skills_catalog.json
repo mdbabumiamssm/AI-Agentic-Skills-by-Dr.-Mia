@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T02:23:11.608394+00:00",
+  "generated_at": "2026-05-19T10:42:15.591348+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 682,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-19T02:23:05.925657+00:00",
-      "body_length": 5571,
+      "last_modified": "2026-05-19T10:42:06.550239+00:00",
+      "body_length": 5949,
       "capabilities": [
         "Core Capabilities",
         "AgentCore Reference Architecture",
@@ -424,8 +424,8 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-18T14:24:47.006675+00:00",
-      "body_length": 4454,
+      "last_modified": "2026-05-19T10:34:14.916874+00:00",
+      "body_length": 4906,
       "capabilities": [
         "Core Capabilities",
         "Clinical On-Prem Deployment: Distilled Reasoning Models",
