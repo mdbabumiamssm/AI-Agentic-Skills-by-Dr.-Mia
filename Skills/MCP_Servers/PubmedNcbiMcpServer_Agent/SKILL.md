@@ -46,6 +46,7 @@ This skill wires an AI agent into the cyanheads `pubmed-mcp-server`, a TypeScrip
 6. **Related-article discovery (ELink)** — Surface PubMed-related neighbors of a given PMID to expand or seed a corpus.
 7. **Article-ID conversion** — Translate between PMID, PMCID, and DOI to stitch records across NCBI and publisher systems.
 8. **Dual transport** — Run as a local STDIO MCP server for desktop clients (Claude Desktop, IDEs) or as a Streamable HTTP server for shared/remote agent access.
+9. **Server selection boundary** — Prefer this simpler NCBI-focused server when the workflow depends on PubMed/NCBI E-utilities, MeSH, PMID/PMCID/DOI conversion, and low-overhead STDIO or HTTP integration; consider a broader biomedical literature research MCP such as `u9401066/pubmed-search-mcp` when the task needs combined PubMed, Europe PMC, CORE, and OpenAlex search with full-text lookup, citation networks, and PICO extraction in one server.
 
 ## Inputs / Outputs
 **Inputs**
@@ -69,3 +70,4 @@ This skill wires an AI agent into the cyanheads `pubmed-mcp-server`, a TypeScrip
 - MeSH (Medical Subject Headings): https://www.nlm.nih.gov/mesh/meshhome.html
 - Unpaywall API: https://unpaywall.org/products/api
 - Model Context Protocol specification: https://modelcontextprotocol.io
+- Broader biomedical literature MCP comparison source: https://github.com/u9401066/pubmed-search-mcp

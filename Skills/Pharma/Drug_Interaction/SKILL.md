@@ -42,6 +42,11 @@ This skill analyzes a list of medications to identify known interactions, focusi
 7.  **Authoritative ASM DDI Review**: When evaluating antiseizure medication DDIs, classify interaction severity from authoritative references such as Lexicomp, cite the evidence source used for each clinically relevant interaction, apply iterative prompting only as a bounded safeguard to improve LLM output, and require pharmacist review before recommendations are used for patient care.
 8.  **ASM DDI Benchmarking Guidance**: When benchmarking antiseizure medication DDI checks, compare outputs against authoritative references such as Lexicomp and Drugs.com, audit severity agreement and missing interactions, treat iterative prompting as a risk surface that may change answers without proving correctness, and require pharmacist review for unresolved, missing, or clinically significant interaction findings.
 9.  **ASM DDI Benchmark Source Priority**: For antiseizure medication DDI benchmarking against Lexicomp and Drugs.com, treat curated references as higher priority than LLM outputs, define the iterative prompting cap before review, reconcile severity discrepancies explicitly, and warn users whenever an LLM answer conflicts with curated reference findings.
+10. **LLM-Based DDI Benchmark Caution**: For LLM-based DDI checks, use antiseizure medication interactions as a high-risk benchmark example; require source grounding against authoritative references such as Lexicomp or product labeling, reproducible iterative prompt checks, severity classification, and pharmacist review before clinical use.
+
+## Benchmark Caution: LLM-Based DDI Checks
+
+LLM-generated DDI findings are screening drafts, not standalone clinical evidence. For antiseizure medication interaction checks, ground each claimed interaction in authoritative references such as Lexicomp or product labeling, document prompts and iterations so another reviewer can reproduce the result, classify severity explicitly, and route outputs to pharmacist review before use in patient care.
 
 ## Workflow
 

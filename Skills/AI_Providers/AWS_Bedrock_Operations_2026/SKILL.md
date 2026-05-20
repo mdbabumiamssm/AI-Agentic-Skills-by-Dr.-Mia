@@ -36,6 +36,7 @@ allowed-tools:
 - For Strands Agents with Amazon Bedrock AgentCore chatbot designs based on `aws-samples/sample-strands-agent-with-agentcore`, document MCP tool contracts, A2A handoff paths, browser or voice-assistant surfaces, per-agent and tool IAM boundaries, observability signals, and sample-app caveats before promoting the architecture beyond reference use.
 - Evaluate AgentCore chatbot designs against the Strands Agents, Amazon Bedrock, A2A protocol, MCP, browser automation, and voice assistant patterns demonstrated by `aws-samples/sample-strands-agent-with-agentcore`.
 - Use `aws-samples/sample-strands-agent-with-agentcore` as source-backed guidance for Strands Agents plus Amazon Bedrock AgentCore chatbot and voice-agent deployments: define MCP integration points, keep browser automation behind explicit permission and network boundaries, separate agent and tool IAM roles, instrument agent handoffs and tool/channel flows, and require guardrails, tests, rollback criteria, and operational review before production use.
+- For multi-agent chatbots using Strands Agents plus Amazon Bedrock AgentCore, use `aws-samples/sample-strands-agent-with-agentcore` as reference-architecture input when choosing the AgentCore runtime shape, defining per-agent and tool IAM boundaries, integrating MCP tools, isolating browser or voice assistant components, mapping deployment topology, and setting production guardrails before adapting the TypeScript sample.
 
 ## Strands Agents + AgentCore Reference Architecture
 

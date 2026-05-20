@@ -50,29 +50,38 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 2. **Dataset provenance and governance review**  
    Record source systems, cohort criteria, date ranges, de-identification method, annotation status, specialty mix, inclusion and exclusion criteria, and patient privacy constraints.
 
-3. **Metric selection**  
+3. **Fine-grained medical Q&A dataset evaluation**  
+   For domain-specific medical Q&A benchmarks, document item-level error taxonomies, omission and hallucination labels, specialty stratification, prompt sensitivity checks, and dataset documentation needed to support trustworthy model comparisons.
+
+4. **Systematic clinical-note evaluation methods**  
+   For AI-generated clinical note benchmarks, combine factual consistency checks, omission detection, risk-of-harm labels, note completeness scoring, and inter-rater reliability reporting; design benchmark datasets so automated evaluation methods can be experimentally compared with clinician scoring rather than assumed equivalent.
+
+5. **Metric selection**  
    Match the evaluation target to metric families such as factual consistency, clinical completeness, omission detection, guideline concordance, readability, usefulness, calibration, and safety risk. Treat lexical similarity and embedding similarity as supporting signals rather than standalone clinical quality measures.
 
-4. **Clinician adjudication design**  
+6. **Clinician adjudication design**  
    Define reviewer qualifications, rating rubrics, blinded review procedures, disagreement resolution, inter-rater agreement reporting, escalation criteria, and examples for each label.
 
-5. **Omission and harm scoring**  
+7. **Omission and harm scoring**  
    Score missing critical information separately from incorrect additions, and classify likely harm severity using task-specific clinical risk categories.
 
-6. **Safety and bias labeling**  
+8. **Safety and bias labeling**  
    Label hallucinations, unsupported claims, contradictions, unsafe triage, medication errors, delayed-care risk, inappropriate certainty, protected-class bias, and patient comprehension risks.
 
-7. **Experimental benchmark execution**  
+9. **Experimental benchmark execution**  
    Compare candidate systems under controlled prompts, fixed input sets, reproducible model settings, documented retrieval sources, and consistent post-processing.
 
-8. **Regression gates and release criteria**  
+10. **Regression gates and release criteria**  
    Convert evaluation results into pass/fail thresholds for deployment, including minimum clinician approval, maximum critical-error rate, no unresolved severe harm findings, and no regression on sentinel cases.
 
-9. **Result interpretation**  
+11. **Result interpretation**  
    Summarize quantitative scores with confidence intervals where appropriate, describe representative failures, separate clinical risk from style preference, and document limits of generalization.
 
-10. **Evaluation artifact packaging**  
-    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
+12. **Evaluation artifact packaging**  
+   Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
+
+13. **On-prem diagnosis deployment evaluation**  
+   For open-source or distilled DeepSeek-R1-style models proposed for diagnosis tasks, evaluate tradeoffs between local hardware constraints and privacy benefits, check for benchmark drift and calibration gaps, document safety failure modes, and require governance review before clinical use.
 
 ## Inputs / Outputs
 
@@ -97,3 +106,5 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 ## References
 
 - PubMed: Dahlberg A, Käenniemi T, Winther-Jensen T, Tapiola O, Luisto R. "Measuring the quality of AI-generated clinical notes: A systematic review and experimental benchmark of evaluation methods." *Artificial Intelligence in Medicine*. 2026 Jul. https://pubmed.ncbi.nlm.nih.gov/41955894/
+- PubMed: Zhong W, Fu Y, Peng D, Liu Y, Liu Y. "Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance." *Journal of Medical Systems*. 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42062641/
+- PubMed: Fonseca RDC, Rios RA, Castaldoni R, Carvalho AA, Lopes TJS. "Fine-grained evaluation of a domain-specific Q&A dataset to support trustworthy medical language models." *Health Inf Sci Syst*. 2026 Dec. https://pubmed.ncbi.nlm.nih.gov/42039929/

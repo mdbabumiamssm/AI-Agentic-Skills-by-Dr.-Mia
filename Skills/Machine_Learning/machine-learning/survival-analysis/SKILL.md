@@ -26,7 +26,7 @@ allowed-tools:
 
 ## Core Capabilities
 
-- For cancer survival prediction from initial oncology consultation documents, compare zero-shot LLM extraction/risk scoring with fine-tuned models; prevent leakage from future outcomes, follow-up, event dates, or post-consultation information; and validate with calibration plus censoring-aware time-to-event metrics.
+- For cancer survival prediction from initial oncology consultation documents, compare zero-shot LLM extraction/risk scoring, fine-tuned document models, and classical survival models built from explainable consultation-text features; prevent leakage from future outcomes, follow-up, event dates, or post-consultation information; handle censoring explicitly; and validate calibration plus censoring-aware time-to-event performance internally and on external cohorts when available.
 
 ## Kaplan-Meier Curves
 

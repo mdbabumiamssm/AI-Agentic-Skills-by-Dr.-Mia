@@ -17,6 +17,7 @@ description: Parse trial protocols and patient data to produce criterion-level M
 allowed-tools:
   - read_file
   - run_shell_command
+measurable_outcome: 'Produce a MET/NOT/UNKNOWN matrix with supporting citations for ≥90% of inclusion/exclusion criteria within 5 minutes per trial request.'
 ---
 
 ## At-a-Glance
@@ -40,6 +41,7 @@ allowed-tools:
 3. **Extract patient facts:** Map narrative + FHIR data into canonical features (age, labs, ECOG, biomarkers).
 4. **Evaluate:** Assign MET/NOT/UNKNOWN with cited evidence for each criterion, flag missing context explicitly.
 5. **Summarize:** Present recommendation and highlight gating unknowns plus next-best actions.
+- **Oncology neuro-symbolic matching:** For oncology trial screening, extract eligibility at the criterion level, ground oncology entities and rules in an oncology-specific knowledge graph, separate agent roles for protocol parsing, patient fact extraction, rule evaluation, and conflict review, track prospective evaluation metrics without inventing unsupported benchmarks, preserve patient-level audit trails, and require human review for eligibility conflicts or uncertain criteria.
 
 ## Guardrails
 - Never claim enrollment decisions; mark outputs as advisory.
@@ -49,6 +51,9 @@ allowed-tools:
 ## Tooling & References
 - Use `README.md` for API snippets (FHIR parsing, JSON schema) and dependency versions.
 - Pair with `Clinical/Trial_Matching/TrialGPT` when retrieval/ranking is also needed.
+
+## References
+- PubMed PMID 42004487: https://pubmed.ncbi.nlm.nih.gov/42004487/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -38,8 +38,8 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 3.  **Structuring**: Returns JSON format compatible with FHIR/USDL.
 4.  **Incidentaloma Identification**: Detect incidental imaging findings requiring follow-up across multiple anatomies in radiology reports. Park et al. (J Biomed Inform, Apr 2026, PMID 42061667) compare LLM-based vs supervised approaches — useful exemplar when scoping radiology-report NLP pipelines.
 5.  **Outcome Identification with Temporal Anchoring**: Detect outcome mentions in clinician notes, normalize timing, distinguish documented events from speculation, and return evidence spans for audit.
-6.  **Clinician-Note Outcome Timing Extraction**: Extract patient outcomes from longitudinal clinician notes with event-time anchoring, negation/uncertainty handling, reconciliation across note dates, and structured validation against chart-reviewed labels.
-7.  **Rare-Neoplasm Oncology RWD Extraction**: For clinician-note abstraction in rare neoplasms, use registry variable dictionaries, tumor-specific entity normalization, temporal anchoring, explicit missingness flags, evidence spans for human abstraction audit, and structured export for oncology real-world data studies.
+6.  **Clinician-Note Outcome Timing Extraction**: Identify patient outcome mentions in clinician notes, normalize event timing, distinguish historical/current/future events, link extracted spans to structured variables, and validate against adjudicated chart-review labels.
+7.  **Rare-Neoplasm Oncology RWD Extraction**: For bone sarcoma-style rare-neoplasm registries, define structured oncology variables, require source-span evidence, separate missing from negative findings, validate LLM outputs against manual abstraction, and track temporal provenance from clinician notes for oncology real-world data studies.
 
 ## Workflow
 
