@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T13:04:41.758209+00:00",
+  "generated_at": "2026-05-20T21:28:32.755418+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 683,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-20T13:04:30.338581+00:00",
-      "body_length": 7937,
+      "last_modified": "2026-05-20T21:28:21.695521+00:00",
+      "body_length": 8303,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
