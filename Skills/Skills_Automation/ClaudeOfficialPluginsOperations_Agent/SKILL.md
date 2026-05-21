@@ -44,6 +44,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 4. Installation hygiene: Produce conservative preflight steps, backup guidance, install commands, environment-variable handling, validation checks, and rollback notes without assuming plugins are safe merely because they are discoverable.
 5. Migration planning: Map current skills, MCP servers, or plugins to official Claude Code plugin options, identifying overlaps, gaps, compatibility risks, and staged adoption steps.
 6. Operational reporting: Return concise findings that separate evidence, recommendation, residual risk, and next actions so users can make adoption decisions quickly.
+7. Vetted-directory review: Use the official GitHub directory metadata, plugin trust signals, install hygiene checks, compatibility testing, and migration guidance to move from unofficial marketplaces or community catalogs toward official Anthropic-managed Claude Code plugins.
 
 ## Inputs / Outputs
 Inputs:
