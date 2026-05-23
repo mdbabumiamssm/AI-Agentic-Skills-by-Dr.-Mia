@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T10:54:56.442156+00:00",
+  "generated_at": "2026-05-23T10:41:55.468912+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 683,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-22T10:54:01.871209+00:00",
+      "last_modified": "2026-05-22T10:54:57.893949+00:00",
       "body_length": 2706,
       "capabilities": [
         "Core Capabilities",
