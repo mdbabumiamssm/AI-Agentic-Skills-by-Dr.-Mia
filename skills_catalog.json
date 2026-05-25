@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T10:42:21.680193+00:00",
+  "generated_at": "2026-05-25T10:45:07.534783+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 683,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-22T10:54:57.893949+00:00",
-      "body_length": 2706,
+      "last_modified": "2026-05-25T10:44:05.563915+00:00",
+      "body_length": 2712,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -2285,8 +2285,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-19T10:56:31.473731+00:00",
-      "body_length": 3295,
+      "last_modified": "2026-05-25T10:39:34.404153+00:00",
+      "body_length": 3652,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
