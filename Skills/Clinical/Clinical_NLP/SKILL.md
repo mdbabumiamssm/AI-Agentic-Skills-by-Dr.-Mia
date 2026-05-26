@@ -39,7 +39,8 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 4.  **Incidentaloma Identification**: Detect incidental imaging findings requiring follow-up across multiple anatomies in radiology reports. Park et al. (J Biomed Inform, Apr 2026, PMID 42061667) compare LLM-based vs supervised approaches — useful exemplar when scoping radiology-report NLP pipelines.
 5.  **Outcome Identification with Temporal Anchoring**: Detect outcome mentions in clinician notes, normalize timing, distinguish documented events from speculation, and return evidence spans for audit.
 6.  **Clinician-Note Outcome Timing Extraction**: Identify patient outcome mentions in clinician notes, normalize event timing, distinguish historical/current/future events, link extracted spans to structured variables, and validate against adjudicated chart-review labels.
-7.  **Rare-Neoplasm Oncology RWD Extraction**: For bone sarcoma-style rare-neoplasm registries, define structured oncology variables, require source-span evidence, separate missing from negative findings, validate LLM outputs against manual abstraction, and track temporal provenance from clinician notes for oncology real-world data studies.
+7.  **Rare-Neoplasm Oncology RWD Extraction**: For low-prevalence cancer cohorts such as bone sarcoma, define registry-oriented extraction schemas, capture provenance to source notes and evidence spans, support temporal outcomes, separate missing from negative findings, and require clinician validation of LLM-assisted real-world data abstraction.
+8.  **Oncology Consultation-Document Survival Modeling**: For prognostic modeling from initial oncology consultation documents, compare zero-shot prompting with task-specific fine-tuning before selecting an approach; use censoring-aware survival labels, leakage checks for post-baseline or outcome-revealing text, held-out calibration assessment, and clear limits that outputs are investigational decision-support signals rather than direct clinical-use recommendations.
 
 ## Workflow
 
@@ -63,5 +64,6 @@ python3 Skills/Clinical/Clinical_NLP/entity_extractor.py \
 - Park N, Ahmed F, Sun Z, Lybarger K, Breinhorst E. Automated identification of incidentalomas requiring follow-up: A multi-anatomy evaluation of LLM-based and supervised approaches. J Biomed Inform, 2026 Apr 28. https://pubmed.ncbi.nlm.nih.gov/42061667/
 - Abdullahi T, Hamzeh A, Sears I, Abadi N, Singh R. Identifying and timing patient outcomes in clinician notes using large language models. Artif Intell Med, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41886942/
 - Teterycz P, Rynkun S, Szostakowski B, Wągrodzki M, Rutkowski P. Accelerating real-world data collection using large language models in rare neoplasms: a bone sarcoma example. ESMO Real World Data Digit Oncol, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/42021926/
+- Phaterpekar T, Zeng Z, Mali Y, Leung B, Ho C. Investigating fine-tuning versus zero-shot learning for general large language models when predicting cancer survival from initial oncology consultation documents. ESMO Real World Data Digit Oncol, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/42004490/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

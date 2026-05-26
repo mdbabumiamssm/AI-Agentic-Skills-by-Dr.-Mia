@@ -60,6 +60,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 13. **Medical Decision Support Retrieval Safety Gates**: Audits test-time knowledge acquisition by requiring explicit retrieval provenance, source freshness checks, contradiction handling, predefined abstention criteria, and post-retrieval clinical safety review before recommendations.
 14. **Test-Time Knowledge Acquisition Decision-Support Checks**: Validates medical decision support workflows that acquire knowledge at inference time by requiring retrieval/source validation, knowledge freshness checks, contradiction escalation, evidence provenance, and fail-closed abstention or clinician review when supporting evidence is weak.
 15. **Pre-Reasoning Test-Time Knowledge Acquisition Audit**: Requires clinical agents to retrieve current vetted references before medical reasoning, log source provenance, compare pre- and post-retrieval answer changes, and escalate uncertainty when retrieved evidence conflicts.
+16. **Knowledge-Augmented Recommendation Release Gate**: Before allowing test-time knowledge-augmented clinical decision-support recommendations, requires source vetting, retrieval provenance, conflict detection, hallucination checks, and evaluation against no-retrieval baselines.
 
 ## Workflow
 

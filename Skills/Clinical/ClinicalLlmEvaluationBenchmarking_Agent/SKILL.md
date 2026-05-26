@@ -80,8 +80,8 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 12. **Evaluation artifact packaging**  
    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
 
-13. **On-prem diagnosis deployment evaluation**  
-   For open-source or distilled DeepSeek-R1-style models proposed for diagnosis tasks, evaluate tradeoffs between local hardware constraints and privacy benefits, check for benchmark drift and calibration gaps, document safety failure modes, and require governance review before clinical use.
+13. **On-premises diagnosis deployment evaluation**  
+   For open-source DeepSeek-R1 distilled models proposed for diagnosis tasks, compare diagnostic performance, latency, privacy posture, local hardware constraints, calibration, and failure modes against hosted frontier models before clinical use, and require governance review before deployment.
 
 ## Inputs / Outputs
 

@@ -24,14 +24,16 @@ allowed-tools:
 
 ## Core Capabilities
 
-- Use the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` TypeScript reference architecture as a source-backed pattern for AWS-native agentic chatbots with Strands Agents and Amazon Bedrock AgentCore; map agent-to-agent (A2A)/MCP integration, browser automation, voice-assistant surfaces, IAM boundaries, deployment topology, observability hooks, and production guardrails before adapting it.
+- Use the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` TypeScript reference architecture as a source-backed pattern for AWS-native agentic chatbots with Strands Agents and Amazon Bedrock AgentCore; map chatbot structure, agent-to-agent (A2A)/MCP integration, browser automation, voice-assistant surfaces, IAM boundaries, deployment topology, observability hooks, and production guardrails before adapting it.
 
 ## Strands Agents + AgentCore Reference Architecture
 
-- Start from Strands Agents on Amazon Bedrock when the chatbot needs managed Bedrock agent workflows with explicit AgentCore runtime, deployment topology, and rollback boundaries.
+- Treat the sample as a TypeScript chatbot reference: keep chat or channel entrypoints, Strands agent orchestration, AgentCore runtime binding, Bedrock access, and tool adapters as explicit boundaries.
 - Review MCP tool contracts and A2A handoff paths before adding tools, multi-agent routing, browser automation, or voice assistant channels.
+- For browser automation or voice assistant tools, document the invocation path, permission boundary, and channel-specific failure handling before enabling them in an agent flow.
 - Keep browser automation and voice assistant patterns behind explicit permission, network, and channel-handling boundaries.
 - Define least-privilege IAM boundaries for each agent, tool, browser automation path, and channel surface before deployment.
+- Document the deployment topology across chatbot ingress, Strands agent code, AgentCore runtime, Bedrock model access, MCP/browser/voice integrations, logs, metrics, and rollback units.
 - Add observability hooks for inference calls, agent handoffs, MCP tool calls, browser automation steps, voice assistant flows, errors, retries, and throttling.
 - Production checklist: confirm regional model availability, service limits, guardrails, tests, evaluation gates, security review, operational runbooks, and rollback criteria before treating the TypeScript sample architecture as deployable.
 
