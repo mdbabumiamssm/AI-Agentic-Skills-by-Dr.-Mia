@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T10:42:43.546419+00:00",
+  "generated_at": "2026-05-30T10:42:55.440282+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 684,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-05-27T10:42:50.358082+00:00",
-      "body_length": 3486,
+      "last_modified": "2026-05-30T10:42:49.181405+00:00",
+      "body_length": 3525,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -424,7 +424,7 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-05-29T10:34:05.466069+00:00",
+      "last_modified": "2026-05-29T10:42:45.083858+00:00",
       "body_length": 5219,
       "capabilities": [
         "Core Capabilities",
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-05-29T10:41:45.570113+00:00",
+      "last_modified": "2026-05-29T10:42:45.084858+00:00",
       "body_length": 6551,
       "capabilities": []
     },
@@ -13628,7 +13628,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-29T10:37:17.129257+00:00",
+      "last_modified": "2026-05-29T10:42:45.084858+00:00",
       "body_length": 6122,
       "capabilities": [
         "When to Use This Skill",
