@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-31T10:43:23.383163+00:00",
+  "generated_at": "2026-06-01T10:42:19.404772+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 684,
+  "total_skills": 685,
   "total_errors": 21,
   "skills": [
     {
@@ -2308,7 +2308,7 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-31T10:36:51.008554+00:00",
+      "last_modified": "2026-05-31T10:43:25.044596+00:00",
       "body_length": 4294,
       "capabilities": [
         "Core Capabilities",
@@ -6951,6 +6951,29 @@
         "Special Considerations",
         "Clinical Integration",
         "Author"
+      ]
+    },
+    {
+      "name": "precision-grounded-variant-summarization",
+      "description": "Summarize genetic variants with LLM assistance grounded in evidence databases, provenance, conflicts, and hallucination controls.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
+      "relative_path": "Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
+      "last_modified": "2026-06-01T10:39:53.014558+00:00",
+      "body_length": 5199,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -13628,7 +13651,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-31T10:38:15.637133+00:00",
+      "last_modified": "2026-05-31T10:43:25.045596+00:00",
       "body_length": 6620,
       "capabilities": [
         "When to Use This Skill",

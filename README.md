@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 684 skills across 46 categories. Last refresh: 2026-05-31T10:43:23.383163+00:00._
+_Auto-generated index. 685 skills across 46 categories. Last refresh: 2026-06-01T10:42:19.404772+00:00._
 
 ### 3D_Genomics (8)
 
@@ -504,7 +504,7 @@ _Auto-generated index. 684 skills across 46 categories. Last refresh: 2026-05-31
 
 - **aav-vector-design-agent** — AI-powered adeno-associated virus (AAV) vector design for gene therapy including capsid engineering, promoter selection, and tropism opti...
 
-### Genomics (127)
+### Genomics (128)
 
 - **bio-basecalling** — Convert raw Nanopore signal data (FAST5/POD5) to nucleotide sequences using Dorado basecaller. Covers model selection, GPU acceleration, ...
 - **bio-bedgraph-handling** — Create, manipulate, and convert bedGraph files for genome browser visualization. Covers bedGraph format, conversion to/from bigWig, norma...
@@ -566,7 +566,7 @@ _Auto-generated index. 684 skills across 46 categories. Last refresh: 2026-05-31
 - **bio-single-cell-cell-communication** — Infer cell-cell communication networks from scRNA-seq data using CellChat, NicheNet, and LIANA for ligand-receptor interaction analysis. ...
 - **bio-single-cell-cell-communication** — Infer cell-cell communication networks from scRNA-seq data using CellChat, NicheNet, and LIANA for ligand-receptor interaction analysis. ...
 - **bio-single-cell-clustering** — scRNA-seq clustering analysis
-- _... and 67 more in `Skills/Genomics/`_
+- _... and 68 more in `Skills/Genomics/`_
 
 ### Hematology (15)
 
