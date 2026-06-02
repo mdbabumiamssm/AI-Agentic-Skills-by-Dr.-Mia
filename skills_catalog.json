@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T10:42:19.404772+00:00",
+  "generated_at": "2026-06-02T10:41:27.487856+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 685,
   "total_errors": 21,
@@ -6966,7 +6966,7 @@
       ],
       "file_path": "Skills/Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
       "relative_path": "Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
-      "last_modified": "2026-06-01T10:39:53.014558+00:00",
+      "last_modified": "2026-06-01T10:42:20.897958+00:00",
       "body_length": 5199,
       "capabilities": [
         "Overview",
