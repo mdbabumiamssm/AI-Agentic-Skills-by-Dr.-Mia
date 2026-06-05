@@ -36,6 +36,7 @@ The **Multimodal Medical Imaging Analysis Skill** leverages state-of-the-art Vis
 1.  **Anomaly Detection**: Identify potential pathologies in X-rays, CTs, etc.
 2.  **Report Generation**: Draft radiology reports in standard formats.
 3.  **VQA (Visual Question Answering)**: Answer specific questions about an image (e.g., "Is there a fracture in the left femur?").
+4.  **Dermatology and Dermoscopy Review**: For suspected basal cell carcinoma and common mimickers in clinical or dermoscopic images, first gate image quality for focus, lighting, scale, lesion completeness, and artifacts or occlusion; frame findings as a differential diagnosis rather than a definitive diagnosis; compare outputs across requested multimodal models when available without assuming superiority; and require dermatologist review before clinical use.
 
 ## Workflow
 
@@ -55,5 +56,9 @@ python3 Skills/Clinical/Medical_Imaging/Multimodal_Analysis/multimodal_agent.py 
 ```
 
 
+
+## References
+
+- https://pubmed.ncbi.nlm.nih.gov/41952838/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

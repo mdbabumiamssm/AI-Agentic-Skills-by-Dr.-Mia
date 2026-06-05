@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-04T10:41:49.765594+00:00",
+  "generated_at": "2026-06-05T10:53:18.161971+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 685,
+  "total_skills": 687,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-04T10:41:41.644150+00:00",
+      "last_modified": "2026-06-04T10:41:51.299104+00:00",
       "body_length": 3510,
       "capabilities": [
         "Core Capabilities",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-05-26T10:48:13.050422+00:00",
-      "body_length": 7263,
+      "last_modified": "2026-06-05T10:38:01.866451+00:00",
+      "body_length": 7400,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1925,8 +1925,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-05-26T10:48:13.050422+00:00",
-      "body_length": 4177,
+      "last_modified": "2026-06-05T10:40:29.567863+00:00",
+      "body_length": 4338,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2049,13 +2049,14 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.205933+00:00",
-      "body_length": 1742,
+      "last_modified": "2026-06-05T10:47:42.162153+00:00",
+      "body_length": 2268,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
         "Workflow",
-        "Example Usage"
+        "Example Usage",
+        "References"
       ]
     },
     {
@@ -2148,8 +2149,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-05-19T10:56:31.473731+00:00",
-      "body_length": 3391,
+      "last_modified": "2026-06-05T10:36:26.471833+00:00",
+      "body_length": 3725,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2219,13 +2220,14 @@
       ],
       "file_path": "Skills/Clinical/Radiology/RadGPT/SKILL.md",
       "relative_path": "Clinical/Radiology/RadGPT/SKILL.md",
-      "last_modified": "2026-02-15T16:08:58.204933+00:00",
-      "body_length": 1444,
+      "last_modified": "2026-06-05T10:49:07.095819+00:00",
+      "body_length": 1848,
       "capabilities": [
         "When to Use",
         "Core Capabilities",
         "Workflow",
-        "Example Usage"
+        "Example Usage",
+        "References"
       ]
     },
     {
@@ -2273,6 +2275,29 @@
       ]
     },
     {
+      "name": "test-time-knowledge-clinical-llm",
+      "description": "Use test-time knowledge acquisition to retrieve, vet, inject, and cite current clinical evidence for LLM-assisted medical decision support without fine-tuning.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
+      "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
+      "last_modified": "2026-06-05T10:47:06.529294+00:00",
+      "body_length": 5297,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "trial-eligibility-agent",
       "description": "Parse trial protocols and patient data to produce criterion-level MET/NOT/UNKNOWN determinations with evidence and gaps for clinical trial screening tasks.",
       "tool_type": "",
@@ -2308,8 +2333,8 @@
       ],
       "file_path": "Skills/Clinical/Trial_Matching/TrialGPT/SKILL.md",
       "relative_path": "Clinical/Trial_Matching/TrialGPT/SKILL.md",
-      "last_modified": "2026-05-31T10:43:25.044596+00:00",
-      "body_length": 4294,
+      "last_modified": "2026-06-05T10:42:55.952283+00:00",
+      "body_length": 4604,
       "capabilities": [
         "Core Capabilities",
         "Inputs",
@@ -13339,6 +13364,29 @@
       ]
     },
     {
+      "name": "oncology-consult-survival-llm",
+      "description": "Guide zero-shot or fine-tuned LLM workflows for predicting cancer survival from initial oncology consultation documents with leakage control and cautious reporting.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
+      "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
+      "last_modified": "2026-06-05T10:42:18.217432+00:00",
+      "body_length": 5135,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "organoid-drug-response-agent",
       "description": "AI-powered analysis of patient-derived organoid (PDO) drug screening for personalized oncology treatment selection and biomarker discovery.",
       "tool_type": "",
@@ -13651,8 +13699,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-05-31T10:43:25.045596+00:00",
-      "body_length": 6620,
+      "last_modified": "2026-06-05T10:44:35.090891+00:00",
+      "body_length": 7041,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",

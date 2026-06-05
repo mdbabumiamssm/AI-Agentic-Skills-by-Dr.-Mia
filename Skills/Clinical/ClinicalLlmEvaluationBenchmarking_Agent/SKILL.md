@@ -51,7 +51,7 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    Record source systems, cohort criteria, date ranges, de-identification method, annotation status, specialty mix, inclusion and exclusion criteria, and patient privacy constraints.
 
 3. **Fine-grained medical Q&A dataset evaluation**  
-   For domain-specific medical Q&A benchmarks, document item-level error taxonomies, omission and hallucination labels, specialty stratification, prompt sensitivity checks, and dataset documentation needed to support trustworthy model comparisons.
+   For domain-specific medical Q&A benchmarks, document question quality, answer validity, clinical risk, domain coverage, item-level error taxonomies, omission and hallucination labels, leakage checks, prompt sensitivity checks, and trustworthy reporting templates needed to support model comparisons.
 
 4. **Systematic clinical-note evaluation methods**  
    For AI-generated clinical note benchmarks, combine factual consistency checks, omission detection, risk-of-harm labels, note completeness scoring, and inter-rater reliability reporting; design benchmark datasets so automated evaluation methods can be experimentally compared with clinician scoring rather than assumed equivalent.
@@ -81,7 +81,7 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
 
 13. **On-premises diagnosis deployment evaluation**  
-   For open-source DeepSeek-R1 distilled models proposed for diagnosis tasks, compare diagnostic performance, latency, privacy posture, local hardware constraints, calibration, and failure modes against hosted frontier models before clinical use, and require governance review before deployment.
+   For open-source and distilled reasoning LLMs proposed for clinical diagnosis, design controlled benchmarks that compare diagnostic performance, latency, privacy tradeoffs, local hardware and deployment constraints, calibration, and failure modes against appropriate baselines; require safety review, governance approval, and performance/regression gates before clinical use.
 
 ## Inputs / Outputs
 
