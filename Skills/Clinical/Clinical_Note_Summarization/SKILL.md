@@ -38,6 +38,7 @@ allowed-tools:
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
 - Apply benchmark-driven quality evaluation for AI-generated notes across correctness, omissions, factual consistency, note completeness, risk-of-harm scoring, and human review rubric selection.
 - Compare automated note-quality checks against clinician review in benchmark-style evaluation across factual consistency, omission detection, note completeness, safety/harm review, and rubric-based scoring.
+- Support human-reviewed AI drafting and summarization for urologic documentation, including consultation, procedure, and follow-up notes, while requiring verification before record entry.
 
 ## Workflow
 1. **Load system prompt:** `prompt.md` enforces no hallucinations + data gap surfacing.
@@ -51,9 +52,18 @@ allowed-tools:
 - Mark outputs as documentation support only—not clinical decisions.
 - Strip/re-mask PHI before storing prompts/responses.
 
+## Human Oversight Before Record Entry
+- **Factual verification:** Compare symptoms, history, examination findings, test results, diagnoses, medications, procedures, and dates against the source documentation.
+- **Unsupported additions:** Remove or explicitly flag statements, inferred negatives, or recommendations that are not supported by the source.
+- **Coding implications:** Require clinician or qualified coding review of diagnosis and procedure wording and any resulting coding implications.
+- **Privacy:** Confirm that PHI handling, storage, transmission, and access follow applicable organizational privacy controls.
+- **Clinician attestation:** Require the responsible clinician to review, edit as needed, and attest the final documentation.
+- **Failure handling:** Withhold the generated note from the record when verification fails, source data are unavailable, or the system errors; route the case to manual documentation and correction.
+
 ## References
 - For detailed schema, guardrails, and integration snippets see `README.md`, `prompt.md`, and `usage.py`.
 - PubMed PMID 41955894: https://pubmed.ncbi.nlm.nih.gov/41955894/
+- PubMed PMID 42067659: https://pubmed.ncbi.nlm.nih.gov/42067659/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -23,7 +23,6 @@ keywords:
 measurable_outcome: Generate a patient-friendly explanation of a radiology report with <1% hallucination rate within 30 seconds.
 license: MIT
 metadata:
-  author: Stanford Medicine
   version: "1.0.0"
 compatibility:
   - system: Python 3.9+
@@ -47,7 +46,7 @@ An LLM-based agent designed to summarize and explain complex radiology reports f
 1.  **Simplification**: Translates "bilateral opacity" to "cloudiness in both lungs".
 2.  **Entity Extraction**: Identifies key anatomical structures and pathologies.
 3.  **Q&A**: Answers follow-up questions about the report.
-4.  **MRI Report Patient Education**: Interprets MRI reports for personalized patient education by translating findings into lay language, explicitly handling uncertainty, comparing explanations against expert interpretation when available, checking for contraindicated reassurance, and requiring clinician approval before patient delivery.
+4.  **MRI Report Patient Education**: Translates MRI reports into plain language while preserving uncertainty, laterality, severity, follow-up recommendations, and red flags; compares the explanation against the source report and requires clinician-reviewed patient communication before delivery.
 
 ## Workflow
 

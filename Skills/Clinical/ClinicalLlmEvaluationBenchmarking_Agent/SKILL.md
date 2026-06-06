@@ -51,7 +51,7 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    Record source systems, cohort criteria, date ranges, de-identification method, annotation status, specialty mix, inclusion and exclusion criteria, and patient privacy constraints.
 
 3. **Fine-grained medical Q&A dataset evaluation**  
-   For domain-specific medical Q&A benchmarks, document question quality, answer validity, clinical risk, domain coverage, item-level error taxonomies, omission and hallucination labels, leakage checks, prompt sensitivity checks, and trustworthy reporting templates needed to support model comparisons.
+   For domain-specific medical Q&A benchmarks, apply an item-level error taxonomy; check ambiguity, answerability, answer validity, clinical risk, and domain coverage; evaluate clinically relevant subgroup slices; verify answer alignment with supporting evidence; define and report reliability thresholds; and document dataset provenance, annotation decisions, omissions, hallucinations, leakage checks, prompt sensitivity, limitations, and trustworthy-use boundaries.
 
 4. **Systematic clinical-note evaluation methods**  
    For AI-generated clinical note benchmarks, combine factual consistency checks, omission detection, risk-of-harm labels, note completeness scoring, and inter-rater reliability reporting; design benchmark datasets so automated evaluation methods can be experimentally compared with clinician scoring rather than assumed equivalent.
@@ -83,6 +83,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 13. **On-premises diagnosis deployment evaluation**  
    For open-source and distilled reasoning LLMs proposed for clinical diagnosis, design controlled benchmarks that compare diagnostic performance, latency, privacy tradeoffs, local hardware and deployment constraints, calibration, and failure modes against appropriate baselines; require safety review, governance approval, and performance/regression gates before clinical use.
 
+14. **ICU nursing QA evaluation profile**  
+   Construct specialty-specific intensive care nursing question sets and run blinded comparisons across proprietary and open reasoning models; evaluate factual accuracy, clinical relevance, and clinically important omissions separately, and define escalation requirements for uncertain, unsafe, or high-risk answers.
+
+15. **Clinical response correctness and harm evaluation**  
+   Evaluate correctness, clinically important omission, and risk of harm as separate dimensions using clinician adjudication, severity-weighted scoring, and confidence intervals; report explicit examples of unsafe answers rather than relying on aggregate accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -108,3 +114,5 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 - PubMed: Dahlberg A, Käenniemi T, Winther-Jensen T, Tapiola O, Luisto R. "Measuring the quality of AI-generated clinical notes: A systematic review and experimental benchmark of evaluation methods." *Artificial Intelligence in Medicine*. 2026 Jul. https://pubmed.ncbi.nlm.nih.gov/41955894/
 - PubMed: Zhong W, Fu Y, Peng D, Liu Y, Liu Y. "Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance." *Journal of Medical Systems*. 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42062641/
 - PubMed: Fonseca RDC, Rios RA, Castaldoni R, Carvalho AA, Lopes TJS. "Fine-grained evaluation of a domain-specific Q&A dataset to support trustworthy medical language models." *Health Inf Sci Syst*. 2026 Dec. https://pubmed.ncbi.nlm.nih.gov/42039929/
+- PubMed: Gülhan Güner S, Tan Z, Gülpınar S. "Comparative performance of artificial intelligence models in intensive care nursing questions: an evaluation of ChatGPT, DeepSeek, and Google Gemini." *BMC Nursing*. 2026 May 2. https://pubmed.ncbi.nlm.nih.gov/42069581/
+- PubMed: Chen JL, Lu AJ, Verma R, Wang L, Koch DD. "Assessment of Correctness, Content Omission, and Risk of Harm in Large Language Model Responses to Ophthalmology Continuing Medical Education Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41908501/

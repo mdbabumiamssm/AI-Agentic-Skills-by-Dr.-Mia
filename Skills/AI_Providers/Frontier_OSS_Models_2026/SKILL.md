@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Compact DeepSeek-R1 derivatives considered for on-premises clinical diagnosis require independent diagnostic benchmarking, calibration, hardware profiling, privacy review, and explicit comparison with hosted frontier models before adoption.
 - Clinical deployment caution for distilled DeepSeek-R1 and open-source reasoning models: evaluate against medical diagnosis tasks before any clinical use, weigh on-premises deployment tradeoffs, require calibration and safety checks, and do not treat model distillation alone as sufficient evidence of clinical readiness.
 - Distilled DeepSeek-R1/open-source reasoning models proposed for diagnostic use require local diagnostic benchmarks, documented model and version provenance, privacy plus on-prem infrastructure controls, hallucination and risk-of-harm evaluation, and clinician review gates before any diagnostic output is used.
 - Distilled DeepSeek-R1/open-source medical diagnosis models need on-prem validation, calibration against local clinical tasks, local governance approval, and failure-mode review before self-hosted clinical deployment.

@@ -74,6 +74,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 5. **Agent package-manager evaluation**
    Evaluate agent skill managers and package managers such as AKM by reviewing the trust model, dependency pinning support, manifest schema, cross-agent compatibility, uninstall hygiene, namespace conflict handling, and reproducible install behavior before adopting them for shared skill, command, tool, or knowledge distribution.
 
+- **AKM-style cross-agent kit management**
+  Evaluate manifests, dependency resolution, lockfiles, provenance, namespace collisions, update policies, reproducible installation, and trust checks when packaging or installing cross-agent bundles of skills, commands, tools, and knowledge.
+
 6. **Trust and provenance review**
    Record source URL, maintainer identity, repository age, release cadence, stars, issues, license, commit activity, and whether installation instructions are traceable to the upstream project.
 
