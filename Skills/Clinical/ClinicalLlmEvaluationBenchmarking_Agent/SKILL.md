@@ -89,6 +89,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 15. **Clinical response correctness and harm evaluation**  
    Evaluate correctness, clinically important omission, and risk of harm as separate dimensions using clinician adjudication, severity-weighted scoring, and confidence intervals; report explicit examples of unsafe answers rather than relying on aggregate accuracy alone.
 
+16. **Fine-grained domain Q&A adjudication**  
+   Evaluate domain-specific clinical Q&A at the item level using clinically meaningful error taxonomies, separate omission and harm labels, clinically relevant subgroup analysis, evidence-grounding checks, and calibration assessment; adjudicate individual answers and failure modes rather than relying on aggregate accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**

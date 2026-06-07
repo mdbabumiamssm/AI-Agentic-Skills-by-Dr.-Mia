@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Clinical on-premises assessment for distilled models: measure diagnostic quality loss from distillation and quantization, benchmark on representative diagnostic tasks, profile hardware and latency tradeoffs, enforce privacy controls and calibration, and require human review of every output before clinical use.
 - Compact DeepSeek-R1 derivatives considered for on-premises clinical diagnosis require independent diagnostic benchmarking, calibration, hardware profiling, privacy review, and explicit comparison with hosted frontier models before adoption.
 - Clinical deployment caution for distilled DeepSeek-R1 and open-source reasoning models: evaluate against medical diagnosis tasks before any clinical use, weigh on-premises deployment tradeoffs, require calibration and safety checks, and do not treat model distillation alone as sufficient evidence of clinical readiness.
 - Distilled DeepSeek-R1/open-source reasoning models proposed for diagnostic use require local diagnostic benchmarks, documented model and version provenance, privacy plus on-prem infrastructure controls, hallucination and risk-of-harm evaluation, and clinician review gates before any diagnostic output is used.
@@ -39,11 +40,12 @@ allowed-tools:
 
 - Treat local hosting as a privacy and data-residency advantage, not as evidence of diagnostic readiness.
 - Before clinical use, validate distilled open-source reasoning models against proprietary model baselines and local diagnostic tasks; document any diagnostic benchmark degradation without inventing unsupported benchmark names or thresholds.
+- Evaluate each quantization configuration separately, recording any diagnostic quality loss alongside its memory, compute, and latency tradeoffs on the intended on-premises hardware.
 - Define calibration and abstention thresholds before deployment, including conditions that route cases to human review instead of returning a diagnosis.
 - Review privacy, identity and access management, hardware capacity, and latency constraints as part of the on-premises deployment decision.
 - Route clinical workloads to governed provider workflows or human-reviewed pathways when raw local model outputs have not passed on-prem diagnostic performance validation, safety benchmarking, and privacy governance review.
 - Red-team distilled DeepSeek-R1 and other open models against commercial model baselines before using them in clinical workflows.
-- Require clinical safety guardrails, escalation paths, human review, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
+- Require clinical safety guardrails, escalation paths, mandatory human review of every model output before clinical use, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
 - Record local governance sign-off and known diagnostic failure modes before enabling self-hosted use.
 
 ## Workflow
