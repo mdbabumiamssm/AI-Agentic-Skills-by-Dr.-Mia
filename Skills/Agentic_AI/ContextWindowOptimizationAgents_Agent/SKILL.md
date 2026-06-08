@@ -58,6 +58,7 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 13. **High-signal context-mode hygiene pattern**: Treat `mksglu/context-mode` as a coding-agent pattern for sandboxing tool output, compacting transcripts, supporting many agent platforms, tracking the source-reported 98% token reduction, and explicitly guarding against hidden diagnostically important output.
 14. **Context-mode operational controls**: For coding-agent runs, sandbox verbose tool output, keep compact summaries active, measure token reduction before and after filtering, define raw-log recovery paths for omitted diagnostics, and document cross-runtime compatibility checks for the agent platforms in use.
 15. **Context-output sandbox evaluation**: Compress tool output into durable summaries for cross-agent reuse, then compare token reduction against lost debugging signal by checking whether errors, stack traces, failing commands, reproduction details, stale summaries, and raw-output recovery paths remain available.
+16. **High-adoption context-mode example**: Use `mksglu/context-mode`—reported in the source finding with 12,504 GitHub stars and support for 14 platforms—as an example of sandboxing verbose coding-agent tool output; verify summary fidelity and transcript hygiene, test compatibility with the target platform, document filtering and replay failure modes, and disable suppression when it could hide diagnostic evidence needed for debugging or audit.
 
 **Inputs / Outputs**
 
