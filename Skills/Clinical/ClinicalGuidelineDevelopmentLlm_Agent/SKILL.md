@@ -47,9 +47,10 @@ Use this skill to support clinical practice guideline development with an LLM wh
 3. **Recommendation drafting**: Generate guideline-ready recommendation text with rationale, caveats, implementation considerations, and review status.
 4. **Recommendation grading support**: Organize certainty of evidence, balance of benefits and harms, patient values, feasibility, equity, and resource considerations for panel judgment.
 5. **Real-time expert review workflow**: Present draft outputs in reviewable units, capture expert corrections, and revise only within approved evidence boundaries.
-6. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
-7. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
-8. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
+6. **Real-time evaluation protocol**: Require concurrent expert review of LLM outputs, trace each statement to its supporting evidence, classify detected errors, grade recommendations, adjudicate disagreements or uncertain content, and prevent any unreviewed LLM-generated text from entering the guideline.
+7. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
+8. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
+9. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
 
 ## Inputs / Outputs
 

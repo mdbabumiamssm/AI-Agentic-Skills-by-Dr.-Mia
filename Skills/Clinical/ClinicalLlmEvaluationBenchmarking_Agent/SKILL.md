@@ -56,41 +56,47 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 4. **Systematic clinical-note evaluation methods**  
    For AI-generated clinical note benchmarks, combine factual consistency checks, omission detection, risk-of-harm labels, note completeness scoring, and inter-rater reliability reporting; design benchmark datasets so automated evaluation methods can be experimentally compared with clinician scoring rather than assumed equivalent.
 
-5. **Metric selection**  
+5. **Clinical-note quality measure taxonomy and validity**  
+   Organize clinical-note quality measures into factuality, completeness, structure, readability, harmfulness, and clinician preference; report automated metrics separately from blinded human review, and assess benchmark validity by matching each measure to its intended quality dimension and experimentally checking whether automated results align with blinded clinical judgments.
+
+6. **Metric selection**  
    Match the evaluation target to metric families such as factual consistency, clinical completeness, omission detection, guideline concordance, readability, usefulness, calibration, and safety risk. Treat lexical similarity and embedding similarity as supporting signals rather than standalone clinical quality measures.
 
-6. **Clinician adjudication design**  
+7. **Clinician adjudication design**  
    Define reviewer qualifications, rating rubrics, blinded review procedures, disagreement resolution, inter-rater agreement reporting, escalation criteria, and examples for each label.
 
-7. **Omission and harm scoring**  
+8. **Omission and harm scoring**  
    Score missing critical information separately from incorrect additions, and classify likely harm severity using task-specific clinical risk categories.
 
-8. **Safety and bias labeling**  
+9. **Safety and bias labeling**  
    Label hallucinations, unsupported claims, contradictions, unsafe triage, medication errors, delayed-care risk, inappropriate certainty, protected-class bias, and patient comprehension risks.
 
-9. **Experimental benchmark execution**  
+10. **Experimental benchmark execution**  
    Compare candidate systems under controlled prompts, fixed input sets, reproducible model settings, documented retrieval sources, and consistent post-processing.
 
-10. **Regression gates and release criteria**  
+11. **Regression gates and release criteria**  
    Convert evaluation results into pass/fail thresholds for deployment, including minimum clinician approval, maximum critical-error rate, no unresolved severe harm findings, and no regression on sentinel cases.
 
-11. **Result interpretation**  
+12. **Result interpretation**  
    Summarize quantitative scores with confidence intervals where appropriate, describe representative failures, separate clinical risk from style preference, and document limits of generalization.
 
-12. **Evaluation artifact packaging**  
+13. **Evaluation artifact packaging**  
    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
 
-13. **On-premises diagnosis deployment evaluation**  
-   For open-source and distilled reasoning LLMs proposed for clinical diagnosis, design controlled benchmarks that compare diagnostic performance, latency, privacy tradeoffs, local hardware and deployment constraints, calibration, and failure modes against appropriate baselines; require safety review, governance approval, and performance/regression gates before clinical use.
+14. **On-premises diagnosis deployment evaluation**  
+   For open-source distilled reasoning LLMs proposed for on-premises clinical diagnosis, design controlled evaluations of diagnostic accuracy, calibration, latency, privacy, failure modes, quantization effects, and local hardware constraints against appropriate baselines; define task-specific deployment go/no-go thresholds and require safety review, governance approval, and regression gates before clinical use.
 
-14. **ICU nursing QA evaluation profile**  
+15. **ICU nursing QA evaluation profile**  
    Construct specialty-specific intensive care nursing question sets and run blinded comparisons across proprietary and open reasoning models; evaluate factual accuracy, clinical relevance, and clinically important omissions separately, and define escalation requirements for uncertain, unsafe, or high-risk answers.
 
-15. **Clinical response correctness and harm evaluation**  
+16. **Clinical response correctness and harm evaluation**  
    Evaluate correctness, clinically important omission, and risk of harm as separate dimensions using clinician adjudication, severity-weighted scoring, and confidence intervals; report explicit examples of unsafe answers rather than relying on aggregate accuracy alone.
 
-16. **Fine-grained domain Q&A adjudication**  
+17. **Fine-grained domain Q&A adjudication**  
    Evaluate domain-specific clinical Q&A at the item level using clinically meaningful error taxonomies, separate omission and harm labels, clinically relevant subgroup analysis, evidence-grounding checks, and calibration assessment; adjudicate individual answers and failure modes rather than relying on aggregate accuracy alone.
+
+18. **Trustworthy domain-specific Q&A dataset auditing**  
+   Audit each benchmark item for ambiguity, evidence sufficiency, omissions, harmfulness, subgroup difficulty, and potential contamination; report these findings transparently alongside benchmark limitations and trustworthy-use boundaries.
 
 ## Inputs / Outputs
 

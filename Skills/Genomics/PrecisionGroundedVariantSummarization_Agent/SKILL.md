@@ -48,6 +48,7 @@ This skill helps produce trustworthy narrative summaries for genetic variants by
 5. **Narrative summarization with provenance** - Generate a concise summary that cites the evidence basis for pathogenicity, benignity, therapeutic relevance, phenotype association, functional effect, or lack of evidence.
 6. **Hallucination controls** - Do not fill missing fields from memory, do not infer clinical significance from gene function alone, and label absent evidence as not found in the consulted sources rather than as evidence of absence.
 7. **Audit-ready output review** - Check that every clinically meaningful statement maps to a cited source and that limitations, database disagreements, and required human review are explicit.
+8. **Precision Grounding architecture and evaluation** - Route each variant question and claim to the appropriate evidence database, attach claim-level provenance and freshness metadata, preserve conflicting classifications with their source contexts, detect and flag unsupported claims, and require expert review of the grounded summary and unresolved conflicts.
 
 ## Inputs / Outputs
 
