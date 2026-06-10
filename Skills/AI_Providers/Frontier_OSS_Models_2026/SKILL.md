@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Clinical on-premises evaluation for distilled reasoning models: compare diagnostic quality with hosted models, profile compute, memory, and latency requirements, assess each quantization configuration, rerun safety regression tests after model or deployment changes, and validate privacy controls before clinical use.
 - Clinical on-premises assessment for distilled models: measure diagnostic quality loss from distillation and quantization, benchmark on representative diagnostic tasks, profile hardware and latency tradeoffs, enforce privacy controls and calibration, and require human review of every output before clinical use.
 - Compact DeepSeek-R1 derivatives considered for on-premises clinical diagnosis require independent diagnostic benchmarking, calibration, hardware profiling, privacy review, and explicit comparison with hosted frontier models before adoption.
 - Clinical deployment caution for distilled DeepSeek-R1 and open-source reasoning models: evaluate against medical diagnosis tasks before any clinical use, weigh on-premises deployment tradeoffs, require calibration and safety checks, and do not treat model distillation alone as sufficient evidence of clinical readiness.
@@ -45,7 +46,7 @@ allowed-tools:
 - Review privacy, identity and access management, hardware capacity, and latency constraints as part of the on-premises deployment decision.
 - Route clinical workloads to governed provider workflows or human-reviewed pathways when raw local model outputs have not passed on-prem diagnostic performance validation, safety benchmarking, and privacy governance review.
 - Red-team distilled DeepSeek-R1 and other open models against commercial model baselines before using them in clinical workflows.
-- Require clinical safety guardrails, escalation paths, mandatory human review of every model output before clinical use, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
+- Maintain a repeatable safety regression suite and rerun it after model, quantization, prompt, or serving changes; require clinical guardrails, escalation paths, mandatory human review of every output before clinical use, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
 - Record local governance sign-off and known diagnostic failure modes before enabling self-hosted use.
 
 ## Workflow
