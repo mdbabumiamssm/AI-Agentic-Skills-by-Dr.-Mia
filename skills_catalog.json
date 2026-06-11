@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:36:18.788631+00:00",
+  "generated_at": "2026-06-11T10:39:09.789796+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 688,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-10T10:36:08.844934+00:00",
-      "body_length": 3465,
+      "last_modified": "2026-06-11T10:38:59.355858+00:00",
+      "body_length": 3468,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -424,8 +424,8 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-06-10T10:33:11.586782+00:00",
-      "body_length": 6433,
+      "last_modified": "2026-06-11T10:33:00.653098+00:00",
+      "body_length": 6825,
       "capabilities": [
         "Core Capabilities",
         "Clinical On-Prem Deployment: Distilled Reasoning Models",
@@ -13725,7 +13725,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-10T10:34:08.047507+00:00",
+      "last_modified": "2026-06-10T10:36:20.260881+00:00",
       "body_length": 8721,
       "capabilities": [
         "When to Use This Skill",
