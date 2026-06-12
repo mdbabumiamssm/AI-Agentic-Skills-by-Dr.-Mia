@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T10:39:09.789796+00:00",
+  "generated_at": "2026-06-12T10:39:16.777464+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 688,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-11T10:38:59.355858+00:00",
+      "last_modified": "2026-06-11T10:39:11.354817+00:00",
       "body_length": 3468,
       "capabilities": [
         "Core Capabilities",
@@ -424,7 +424,7 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-06-11T10:33:00.653098+00:00",
+      "last_modified": "2026-06-11T10:39:11.354817+00:00",
       "body_length": 6825,
       "capabilities": [
         "Core Capabilities",
