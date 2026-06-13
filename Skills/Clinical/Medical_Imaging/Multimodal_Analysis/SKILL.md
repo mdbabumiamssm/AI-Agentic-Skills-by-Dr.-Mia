@@ -36,7 +36,7 @@ The **Multimodal Medical Imaging Analysis Skill** leverages state-of-the-art Vis
 1.  **Anomaly Detection**: Identify potential pathologies in X-rays, CTs, etc.
 2.  **Report Generation**: Draft radiology reports in standard formats.
 3.  **VQA (Visual Question Answering)**: Answer specific questions about an image (e.g., "Is there a fracture in the left femur?").
-4.  **Dermoscopic Oncology Evaluation Profile**: For suspected basal cell carcinoma and common mimickers in clinical or dermoscopic images, first gate image quality for focus, lighting, scale, lesion completeness, and artifacts or occlusion; record available lesion metadata; output a ranked differential diagnosis with calibrated confidence rather than a definitive diagnosis; abstain when image quality or confidence is insufficient; compare requested multimodal models without assuming superiority; analyze errors at the lesion level, including confusion among mimickers; and require dermatologist review before clinical use.
+4.  **Dermatology and Dermoscopy Evaluation Profile**: For suspected basal cell carcinoma and common mimickers, evaluate paired clinical and dermoscopic images when available; first gate image quality for focus, lighting, scale, lesion completeness, and artifacts or occlusion; record available lesion metadata; output a ranked lesion-level differential diagnosis with calibrated confidence rather than a definitive diagnosis; abstain when image quality or confidence is insufficient; report sensitivity and specificity for evaluation datasets; analyze lesion-level errors, including confusion among mimickers; and require dermatologist review before clinical use.
 
 ## Workflow
 

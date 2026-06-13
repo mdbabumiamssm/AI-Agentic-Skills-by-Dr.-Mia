@@ -84,10 +84,10 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
 
 14. **On-premises diagnosis deployment evaluation**  
-   For open-source distilled reasoning LLMs proposed for on-premises clinical diagnosis, design controlled evaluations of diagnostic accuracy, calibration, latency, privacy, failure modes, quantization effects, and local hardware constraints against appropriate baselines; define task-specific deployment go/no-go thresholds and require safety review, governance approval, and regression gates before clinical use.
+   For open-source distilled reasoning LLMs proposed for on-premises clinical diagnosis, design controlled evaluations of diagnostic accuracy, calibration, quantization and distillation degradation, local hardware constraints, privacy benefits, latency, and failure modes against appropriate baselines; define deployment-specific safety gates and task-specific go/no-go thresholds, and require safety review, governance approval, and regression testing before clinical use.
 
-15. **ICU nursing QA evaluation profile**  
-   Construct specialty-specific intensive care nursing question sets and run blinded comparisons across proprietary and open reasoning models; evaluate factual accuracy, clinical relevance, and clinically important omissions separately, and define escalation requirements for uncertain, unsafe, or high-risk answers.
+15. **Specialty-stratified cross-provider ICU nursing QA benchmarking**  
+   Construct specialty-specific intensive care nursing question sets and run blinded comparisons across providers such as ChatGPT, DeepSeek, and Google Gemini using expert-reference scoring; apply appropriate statistical model comparisons, report uncertainty, evaluate factual accuracy, clinical relevance, and clinically important omissions separately, and define escalation requirements for uncertain, unsafe, or high-risk answers. Treat exam-question performance as task-specific evidence and do not generalize it to bedside safety without prospective clinical workflow validation.
 
 16. **Clinical response correctness and harm evaluation**  
    Evaluate correctness, clinically important omission, and risk of harm as separate dimensions using clinician adjudication, severity-weighted scoring, and confidence intervals; report explicit examples of unsafe answers rather than relying on aggregate accuracy alone.
@@ -97,6 +97,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 
 18. **Trustworthy domain-specific Q&A dataset auditing**  
    Audit each benchmark item for ambiguity, evidence sufficiency, omissions, harmfulness, subgroup difficulty, and potential contamination; report these findings transparently alongside benchmark limitations and trustworthy-use boundaries.
+
+19. **Fine-grained domain Q&A audit controls**  
+   Audit domain-specific Q&A datasets with an item taxonomy, ambiguity and answerability checks, clinician adjudication, separate omission and harmfulness labels, subgroup analysis, and controls against benchmark contamination.
+
+20. **Blinded specialist adjudication of correctness, omission, and harm**  
+   Evaluate correctness, clinically important omission, and risk of harm as separate endpoints; require blinded specialist adjudication with a prespecified process for resolving disagreements; weight errors by clinical severity; and separately analyze unsafe answers stated with confidence.
 
 ## Inputs / Outputs
 
