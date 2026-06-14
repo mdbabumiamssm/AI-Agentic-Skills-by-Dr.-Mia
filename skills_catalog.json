@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T10:44:30.491815+00:00",
+  "generated_at": "2026-06-14T10:35:29.260913+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 688,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-13T10:41:42.335346+00:00",
-      "body_length": 3453,
+      "last_modified": "2026-06-14T10:35:18.829253+00:00",
+      "body_length": 3842,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -424,8 +424,8 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-06-11T10:39:11.354817+00:00",
-      "body_length": 6825,
+      "last_modified": "2026-06-14T10:32:33.583976+00:00",
+      "body_length": 7718,
       "capabilities": [
         "Core Capabilities",
         "Clinical On-Prem Deployment: Distilled Reasoning Models",
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-06-13T10:43:11.754999+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 8144,
       "capabilities": []
     },
@@ -1629,7 +1629,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-13T10:39:40.946821+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 10968,
       "capabilities": [
         "Overview",
@@ -1925,7 +1925,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-13T10:36:22.660611+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 5502,
       "capabilities": [
         "When to Use This Skill",
@@ -2050,7 +2050,7 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-06-13T10:38:28.939106+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 2468,
       "capabilities": [
         "When to Use This Skill",
@@ -2221,7 +2221,7 @@
       ],
       "file_path": "Skills/Clinical/Radiology/RadGPT/SKILL.md",
       "relative_path": "Clinical/Radiology/RadGPT/SKILL.md",
-      "last_modified": "2026-06-13T10:40:46.976562+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 2105,
       "capabilities": [
         "When to Use",
@@ -13725,7 +13725,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-13T10:37:28.341348+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 9173,
       "capabilities": [
         "When to Use This Skill",
@@ -17226,7 +17226,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-06-13T10:43:42.534879+00:00",
+      "last_modified": "2026-06-13T10:44:32.176688+00:00",
       "body_length": 10696,
       "capabilities": [
         "Overview",

@@ -25,6 +25,7 @@ allowed-tools:
 ## Core Capabilities
 
 - Use the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` TypeScript reference architecture as an implementation example for AWS-native agentic chatbots with Strands Agents and Amazon Bedrock AgentCore; map MCP and A2A interoperability, browser and voice tools, identity and session boundaries, least-privilege IAM, TypeScript deployment topology, AgentCore-hosted runtime, observability hooks, and production hardening of the sample before adapting it.
+- Adapt the Strands Agents on Bedrock AgentCore sample by defining MCP and A2A trust boundaries, workload identity and least-privilege IAM, isolated browser and voice tool runtimes, observable agent and tool paths, explicit session-state ownership and retention, deployment and rollback topology, human approval gates for consequential actions, and production hardening before deployment.
 
 ## Strands Agents + AgentCore Reference Architecture
 

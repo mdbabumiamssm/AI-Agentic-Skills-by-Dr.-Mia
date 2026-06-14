@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Clinical on-premises decision-making for distilled reasoning models: balance local privacy benefits and easier hosting against diagnostic accuracy losses from distillation or quantization, intended-hardware constraints, calibration quality, and observed failure modes; reject smaller distilled models when they do not pass representative diagnostic validation despite their deployment advantages.
 - Clinical on-premises deployment of distilled reasoning models: treat local data control as a privacy benefit, independently benchmark diagnostic performance and quantify distillation and quantization regressions for each configuration, document hardware, memory, and latency tradeoffs, calibrate confidence and abstention behavior, and require clinical safety validation before deployment.
 - Clinical on-premises evaluation for distilled reasoning models: compare diagnostic quality with hosted models, profile compute, memory, and latency requirements, assess each quantization configuration, rerun safety regression tests after model or deployment changes, and validate privacy controls before clinical use.
 - Clinical on-premises assessment for distilled models: measure diagnostic quality loss from distillation and quantization, benchmark on representative diagnostic tasks, profile hardware and latency tradeoffs, enforce privacy controls and calibration, and require human review of every output before clinical use.
@@ -48,6 +49,8 @@ allowed-tools:
 - Route clinical workloads to governed provider workflows or human-reviewed pathways when raw local model outputs have not passed on-prem diagnostic performance validation, safety benchmarking, and privacy governance review.
 - Red-team distilled DeepSeek-R1 and other open models against commercial model baselines before using them in clinical workflows.
 - Maintain a repeatable safety regression suite and rerun it after model, quantization, prompt, or serving changes; require clinical guardrails, escalation paths, mandatory human review of every output before clinical use, and monitoring for drift, failure modes, and inconsistent diagnostic behavior.
+- Perform case-level failure analysis across incorrect, inconsistent, overconfident, and abstained diagnostic outputs, then use the findings to define exclusion criteria, escalation paths, and deployment limits.
+- Reject a smaller distilled or more aggressively quantized model when representative diagnostic validation shows unacceptable accuracy loss, poor calibration, unsafe failure patterns, or hardware-driven compromises that cannot be mitigated, even when it is easier to host locally.
 - Record local governance sign-off and known diagnostic failure modes before enabling self-hosted use.
 
 ## Workflow
