@@ -104,6 +104,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 20. **Blinded specialist adjudication of correctness, omission, and harm**  
    Evaluate correctness, clinically important omission, and risk of harm as separate endpoints; require blinded specialist adjudication with a prespecified process for resolving disagreements; weight errors by clinical severity; and separately analyze unsafe answers stated with confidence.
 
+21. **Atomic scoring for fine-grained domain Q&A evaluation**
+   Score domain-specific Q&A outputs at the atomic item or answer-component level for correctness, completeness, evidence support, uncertainty, harmful omissions, and subgroup performance; audit dataset quality alongside model performance, and use aggregate accuracy only as a secondary summary rather than the sole evaluation criterion.
+
+22. **Systematic clinical-note quality measurement and reporting**
+   Separate clinical-note quality measures into factuality, omission, structure, usability, safety, and downstream task utility; report evaluator reliability, assess agreement between human judgments and automated metrics, and use benchmark reporting templates that document each measure, evaluator, comparison method, and result.
+
 ## Inputs / Outputs
 
 **Inputs**

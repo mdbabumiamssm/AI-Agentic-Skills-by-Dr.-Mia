@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T10:35:29.260913+00:00",
+  "generated_at": "2026-06-15T10:47:59.592469+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 688,
+  "total_skills": 690,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-14T10:35:18.829253+00:00",
+      "last_modified": "2026-06-14T10:35:30.752201+00:00",
       "body_length": 3842,
       "capabilities": [
         "Core Capabilities",
@@ -424,8 +424,8 @@
       ],
       "file_path": "Skills/AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
       "relative_path": "AI_Providers/Frontier_OSS_Models_2026/SKILL.md",
-      "last_modified": "2026-06-14T10:32:33.583976+00:00",
-      "body_length": 7718,
+      "last_modified": "2026-06-15T10:32:45.324699+00:00",
+      "body_length": 8020,
       "capabilities": [
         "Core Capabilities",
         "Clinical On-Prem Deployment: Distilled Reasoning Models",
@@ -1606,8 +1606,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
-      "last_modified": "2026-06-09T10:44:06.098893+00:00",
-      "body_length": 4276,
+      "last_modified": "2026-06-15T10:33:54.634428+00:00",
+      "body_length": 4601,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1629,13 +1629,38 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-13T10:44:32.176688+00:00",
-      "body_length": 10968,
+      "last_modified": "2026-06-15T10:40:33.967871+00:00",
+      "body_length": 11768,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
         "Core Capabilities",
         "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "clinical-llm-patient-education",
+      "description": "Translate radiology reports and clinical documents into personalized patient education while preserving meaning, uncertainty, next steps, and clinician review requirements.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
+      "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
+      "last_modified": "2026-06-15T10:45:14.775742+00:00",
+      "body_length": 6872,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
         "References"
       ]
     },
@@ -1925,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-13T10:44:32.176688+00:00",
-      "body_length": 5502,
+      "last_modified": "2026-06-15T10:43:56.852081+00:00",
+      "body_length": 5971,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2288,8 +2313,8 @@
       ],
       "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
       "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
-      "last_modified": "2026-06-09T10:44:06.099893+00:00",
-      "body_length": 6216,
+      "last_modified": "2026-06-15T10:41:47.142586+00:00",
+      "body_length": 6765,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -6992,8 +7017,8 @@
       ],
       "file_path": "Skills/Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
       "relative_path": "Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
-      "last_modified": "2026-06-09T10:44:06.099893+00:00",
-      "body_length": 5563,
+      "last_modified": "2026-06-15T10:43:05.942279+00:00",
+      "body_length": 5672,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13377,8 +13402,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-06-05T10:53:19.697603+00:00",
-      "body_length": 5135,
+      "last_modified": "2026-06-15T10:37:29.684589+00:00",
+      "body_length": 5493,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13400,8 +13425,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-06-06T10:44:55.836490+00:00",
-      "body_length": 4900,
+      "last_modified": "2026-06-15T10:38:25.400372+00:00",
+      "body_length": 5257,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13701,8 +13726,8 @@
       ],
       "file_path": "Skills/Pathology_AI/DmmrCrcHistopathologyAgent_Agent/SKILL.md",
       "relative_path": "Pathology_AI/DmmrCrcHistopathologyAgent_Agent/SKILL.md",
-      "last_modified": "2026-05-14T10:47:09.621771+00:00",
-      "body_length": 4089,
+      "last_modified": "2026-06-15T10:46:29.630387+00:00",
+      "body_length": 4510,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13725,8 +13750,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-13T10:44:32.176688+00:00",
-      "body_length": 9173,
+      "last_modified": "2026-06-15T10:39:35.131100+00:00",
+      "body_length": 9583,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17210,6 +17235,31 @@
         "When to Use This Skill",
         "Core Capabilities",
         "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "agent-skill-package-management",
+      "description": "Install and manage versioned AI agent skills, commands, tools, and knowledge bundles reproducibly with manifests, trust checks, lockfiles, updates, rollback, and safe removal.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
+      "last_modified": "2026-06-15T10:47:54.723993+00:00",
+      "body_length": 6601,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
         "References"
       ]
     },

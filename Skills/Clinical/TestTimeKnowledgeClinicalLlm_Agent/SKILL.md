@@ -65,6 +65,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 11. **Test-time acquisition procedure and evaluation**: For each clinical question, generate focused retrieval subqueries and multiple reasoning trajectories; select only decision-relevant evidence after checking source authority, recency, applicability, and provenance; synthesize a pseudo-reference answer and use self-consistency to separate confident cases for reward-guided heuristic extraction from unconfident cases for reflection on reasoning gaps. Reconcile contradictions explicitly, bind every material claim and acquired knowledge entry to its supporting citation, and abstain or escalate when evidence is insufficient, irreconcilable, or unsafe. Add, modify, or merge validated knowledge in a capacity-controlled knowledge base that guides later inference without parameter updates, and evaluate the workflow against both zero-shot and static-RAG baselines without asserting improvements unless measured.
 
+12. **Acquisition controls and ablation**: Control test-time query generation for clinical specificity and coverage; rank source authority before inclusion; enforce evidence-freshness checks against the decision date; preserve, reconcile, or escalate material contradictions; allocate the context budget by decision relevance, authority, and safety impact; verify that each citation entails the claim it supports; and ablate retrieved knowledge to identify conclusions that depend on unsupported parametric reasoning rather than acquired evidence.
+
 ## Inputs / Outputs
 
 **Inputs**

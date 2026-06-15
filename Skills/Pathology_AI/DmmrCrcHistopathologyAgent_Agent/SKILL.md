@@ -52,13 +52,16 @@ This skill guides computational pathology workflows for predicting mismatch repa
 4. **Low-magnification feature review**
    Preserve slide-level architecture and broad tissue context during analysis instead of restricting review to only high-power tumor tiles.
 
-5. **Inference workflow support**
+5. **Multi-region sampling and attribution audit**
+   Sample tumor, non-tumor, and low-magnification regions explicitly; aggregate their predictions at slide level; run region-ablation comparisons and attention audits to assess each region's contribution; validate findings on external cohorts; and check scanner, staining, fixation, sectioning, and other tissue-processing variables to guard against shortcut learning.
+
+6. **Inference workflow support**
    Run or audit a dMMR prediction pipeline by documenting preprocessing, magnification levels, tile sampling, aggregation logic, calibration method, and model version.
 
-6. **Validation and error analysis**
+7. **Validation and error analysis**
    Compare predictions against reference testing, stratify errors by tissue region and slide quality, and flag cases where non-tumor or low-magnification signals may drive model behavior.
 
-7. **Clinical-pathology handoff**
+8. **Clinical-pathology handoff**
    Produce a concise report with case identifiers, model inputs, region basis, limitations, confidence or risk category if supplied by the model, and recommended correlation with standard molecular or immunohistochemical testing.
 
 ## Inputs / Outputs

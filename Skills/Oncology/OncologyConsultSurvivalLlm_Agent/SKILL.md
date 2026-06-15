@@ -59,6 +59,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 8. **Comparison interpretation**: When comparing zero-shot and fine-tuned models, separate performance from operational tradeoffs such as data requirements, reproducibility, site-specific adaptation, privacy burden, and robustness to documentation style.
 
+9. **Comparative validation framework**: Compare fine-tuned and zero-shot models against simpler baselines using patient-level temporal splits, strict leakage controls, censoring-aware endpoints, and calibration assessment; seek external validation when available, and explicitly report when fine-tuning does not outperform zero-shot or simpler approaches.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 688 skills across 46 categories. Last refresh: 2026-06-14T10:35:29.260913+00:00._
+_Auto-generated index. 690 skills across 46 categories. Last refresh: 2026-06-15T10:47:59.592469+00:00._
 
 ### 3D_Genomics (8)
 
@@ -310,7 +310,7 @@ _Auto-generated index. 688 skills across 46 categories. Last refresh: 2026-06-14
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (31)
+### Clinical (32)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -327,6 +327,7 @@ _Auto-generated index. 688 skills across 46 categories. Last refresh: 2026-06-14
 - **chatehr-clinician-assistant** — EHR Chat Assistant
 - **clinical-guideline-development-llm** — LLM-assisted clinical practice guideline development workflow grounded in real-time evaluation, evidence traceability, expert review, rec...
 - **clinical-llm-evaluation-benchmarking** — Design and run rigorous clinical LLM evaluation workflows grounded in systematic review evidence on AI-generated clinical note quality me...
+- **clinical-llm-patient-education** — Translate radiology reports and clinical documents into personalized patient education while preserving meaning, uncertainty, next steps,...
 - **clinical-nlp-extractor** — Extracts medical entities (Diseases, Medications, Procedures) and patient outcome mentions with temporal anchoring from unstructured clin...
 - **clinical-note-summarization** — Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the ...
 - **digital-twin-clinical-agent** — AI-powered patient digital twin creation for clinical trial simulation, treatment outcome prediction, and personalized medicine using rea...
@@ -850,9 +851,10 @@ _Auto-generated index. 688 skills across 46 categories. Last refresh: 2026-06-14
 - **bio-transcription-translation** — Transcribe DNA to RNA and translate to protein using Biopython. Use when converting between DNA, RNA, and protein sequences, finding ORFs...
 - **bio-write-sequences** — Write biological sequences to files (FASTA, FASTQ, GenBank, EMBL) using Biopython Bio.SeqIO. Use when saving sequences, creating new sequ...
 
-### Skills_Automation (5)
+### Skills_Automation (6)
 
 - **agent-skill-catalog-graph** — Use graph-backed catalogs such as ctx to discover, compare, and recommend skills, agents, MCPs, and harnesses for LLM automation workflows.
+- **agent-skill-package-management** — Install and manage versioned AI agent skills, commands, tools, and knowledge bundles reproducibly with manifests, trust checks, lockfiles...
 - **claude-code-skill-marketplace-ops** — Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependen...
 - **claude-official-plugins-operations** — Use Anthropic-managed claude-plugins-official for vetted Claude Code plugin discovery, trust review, installation hygiene, dependency ass...
 - **open-design-agentic-prototyping** — Use Open Design to plan safe local-first agentic workflows for design systems, prototypes, previews, and HTML/PDF/PPTX/MP4 exports.
