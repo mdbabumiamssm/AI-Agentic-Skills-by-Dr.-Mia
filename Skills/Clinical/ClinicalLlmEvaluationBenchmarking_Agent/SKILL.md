@@ -84,7 +84,7 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    Produce a reusable benchmark plan, annotation guide, data card, metric table, adjudication summary, risk register, regression checklist, and deployment recommendation.
 
 14. **On-premises diagnosis deployment evaluation**  
-   For open-source distilled reasoning LLMs proposed for on-premises clinical diagnosis, design controlled evaluations of diagnostic accuracy, calibration, quantization and distillation degradation, local hardware constraints, privacy benefits, latency, and failure modes against appropriate baselines; define deployment-specific safety gates and task-specific go/no-go thresholds, and require safety review, governance approval, and regression testing before clinical use.
+   For open-source distilled reasoning LLMs proposed for on-premises clinical diagnosis, design controlled evaluations of diagnostic accuracy, calibration, uncertainty reporting, quantization and distillation degradation, local hardware constraints, privacy-constrained deployment checks, latency, and failure modes; select clinically relevant baselines, including proprietary-model comparators when appropriate; define deployment-specific safety gates and task-specific go/no-go thresholds versus those baselines; and require safety review, governance approval, and regression testing before clinical use.
 
 15. **Specialty-stratified cross-provider ICU nursing QA benchmarking**  
    Construct specialty-specific intensive care nursing question sets and run blinded comparisons across providers such as ChatGPT, DeepSeek, and Google Gemini using expert-reference scoring; apply appropriate statistical model comparisons, report uncertainty, evaluate factual accuracy, clinical relevance, and clinically important omissions separately, and define escalation requirements for uncertain, unsafe, or high-risk answers. Treat exam-question performance as task-specific evidence and do not generalize it to bedside safety without prospective clinical workflow validation.
@@ -109,6 +109,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 
 22. **Systematic clinical-note quality measurement and reporting**
    Separate clinical-note quality measures into factuality, omission, structure, usability, safety, and downstream task utility; report evaluator reliability, assess agreement between human judgments and automated metrics, and use benchmark reporting templates that document each measure, evaluator, comparison method, and result.
+
+23. **Fine-grained medical Q&A evaluation pattern**
+   Build domain-specific Q&A datasets with documented construction criteria; label omissions and hallucinations separately; apply an item-level clinical error taxonomy; report trustworthiness metrics for answer validity, evidence support, clinical risk, and reliability; and use benchmark reporting templates that disclose dataset provenance, annotation decisions, limitations, and trustworthy-use boundaries.
+
+24. **Clinical education benchmark module**
+   For board-style or CME question benchmarks, score correctness, content omission, and risk of harm as independent endpoints; prespecify clinician adjudication rules for reviewer qualifications, disagreement resolution, and severity handling; and report results by specialty rather than relying only on pooled aggregate performance.
 
 ## Inputs / Outputs
 
