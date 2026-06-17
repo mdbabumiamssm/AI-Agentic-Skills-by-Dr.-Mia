@@ -1,0 +1,73 @@
+<!--
+# COPYRIGHT NOTICE
+# This file is part of the "Universal AI Agentic Skills" project.
+# Copyright (c) 2026 MD BABU MIA, PhD <md.babu.mia@mssm.edu>
+# All Rights Reserved.
+#
+# This code is proprietary and confidential.
+# Unauthorized copying of this file, via any medium is strictly prohibited.
+#
+# Provenance: Authenticated by MD BABU MIA
+-->
+
+
+
+<!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
+
+---
+name: 'on-prem-clinical-llm-deployment'
+description: 'Plan and validate on-prem clinical LLM deployments for distilled open-source diagnosis models, balancing performance, privacy, hardware, governance, and human oversight.'
+measurable_outcome: 'Execute skill workflow successfully with valid output within 15 minutes.'
+allowed-tools:
+  - read_file
+  - run_shell_command
+  - web_fetch
+---
+
+# On-Prem Clinical LLM Deployment
+
+## Overview
+
+Use this skill to decide whether an on-premises clinical LLM deployment is appropriate and to design a validation and governance plan before use in diagnosis-support workflows. It is grounded in evidence that distilled open-source DeepSeek-R1-style models can create practical tradeoffs for clinical deployment, especially around local performance, privacy, hardware constraints, validation burden, and human oversight. Treat model output as decision support only, with licensed clinicians retaining responsibility for patient care.
+
+## When to Use This Skill
+
+- Evaluate distilled or open-source medical LLMs for on-premises clinical use.
+- Compare local deployment against hosted frontier model options for diagnosis support.
+- Plan validation for PHI-sensitive clinical workflows before production release.
+- Assess GPU, latency, storage, monitoring, availability, and cost constraints.
+- Define governance, audit, incident-response, and rollback controls for a clinical AI service.
+- Prepare human-oversight procedures for model uncertainty, escalation, and clinician review.
+
+## Core Capabilities
+
+1. Deployment suitability assessment: Clarify whether on-prem deployment is justified by privacy, network isolation, institutional policy, latency, cost, or availability requirements.
+2. Model comparison workflow: Compare candidate local models against hosted frontier alternatives using the same clinical task definitions, datasets, prompts, and review criteria.
+3. Clinical validation plan: Define retrospective testing, shadow evaluation, clinician adjudication, subgroup analysis, failure review, and acceptance criteria without inventing unsupported benchmark claims.
+4. Infrastructure planning: Estimate hardware, quantization, inference server, scaling, backup, monitoring, and maintenance needs for local operation.
+5. Privacy and security controls: Map PHI handling, access control, audit logging, de-identification, retention, encryption, and network boundaries.
+6. Governance and documentation: Produce model cards, data lineage notes, change-control records, risk registers, and release checklists appropriate for clinical operations.
+7. Human oversight design: Specify clinician-in-the-loop review, uncertainty disclosure, contraindication handling, escalation paths, and limits on autonomous diagnostic use.
+8. Post-deployment monitoring: Track drift, degraded performance, unsafe outputs, downtime, user feedback, prompt changes, and incident triggers after release.
+
+## Inputs / Outputs
+
+Inputs:
+
+- Intended clinical workflow, users, patient population, and deployment environment.
+- Candidate model names, versions, licenses, weights, quantization settings, and serving stack.
+- Local hardware constraints, security requirements, PHI policy, and network boundaries.
+- Evaluation dataset description, reference standard, clinician review process, and comparator models.
+- Institutional risk tolerance, approval pathway, monitoring requirements, and rollback plan.
+
+Outputs:
+
+- On-prem deployment decision memo with assumptions, risks, and go/no-go recommendation.
+- Validation protocol covering datasets, tasks, metrics, review roles, and acceptance criteria.
+- Infrastructure and operations checklist for serving, monitoring, access control, and maintenance.
+- Governance package outline including model card, audit plan, change log, and incident response.
+- Human-oversight workflow defining allowed use, prohibited use, escalation, and final clinical accountability.
+
+## References
+
+- Source finding: https://pubmed.ncbi.nlm.nih.gov/42062641/

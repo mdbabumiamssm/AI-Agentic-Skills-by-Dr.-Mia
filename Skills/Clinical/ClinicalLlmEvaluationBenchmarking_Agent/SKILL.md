@@ -116,6 +116,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 24. **Clinical education benchmark module**
    For board-style or CME question benchmarks, score correctness, content omission, and risk of harm as independent endpoints; prespecify clinician adjudication rules for reviewer qualifications, disagreement resolution, and severity handling; and report results by specialty rather than relying only on pooled aggregate performance.
 
+25. **Fine-grained domain-specific medical Q&A dataset controls**
+   For trustworthy medical LLM benchmarking, evaluate domain-specific Q&A datasets with item-level error taxonomies, separate omission and harm labels, domain coverage checks, calibration by question type, and dataset provenance controls.
+
 ## Inputs / Outputs
 
 **Inputs**

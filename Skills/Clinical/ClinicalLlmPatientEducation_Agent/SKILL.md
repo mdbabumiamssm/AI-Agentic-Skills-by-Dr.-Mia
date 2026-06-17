@@ -65,19 +65,23 @@ Use this skill to convert radiology reports and other clinical documents into un
    - When a clinician-authored explanation is available, compare coverage of findings, uncertainty, urgency, next steps, tone, and patient relevance.
    - Treat disagreements as review items rather than assuming either explanation is correct without checking the source document.
 
-7. **Harmful-simplification detection**
+7. **MRI-report education benchmarking**
+   - For MRI-report patient education evaluations, compare generated explanations against expert interpretations when available, preserving uncertainty and follow-up recommendations from the report.
+   - Measure omissions and overstatements as review findings, and require clinician review before any generated explanation is delivered to a patient.
+
+8. **Harmful-simplification detection**
    - Flag omitted critical findings, lost negation, incorrect anatomy or laterality, changed severity, unsupported causal claims, false reassurance, unnecessary alarm, and invented recommendations.
    - Check whether simplification hides incidental findings, limitations, or conditional follow-up language that could affect care.
 
-8. **Professional-review governance**
+9. **Professional-review governance**
    - Require qualified professional review before patient delivery when content may affect diagnosis, prognosis, urgency, treatment, medication, procedures, surveillance, or decisions to seek or defer care.
    - Escalate immediately when the source or context indicates a potentially urgent finding, acute deterioration, or emergency symptoms. Do not replace local emergency instructions or clinical judgment.
 
-9. **Privacy-conscious handling**
+10. **Privacy-conscious handling**
    - Use the minimum necessary patient information and omit direct identifiers from outputs unless explicitly required in an authorized workflow.
    - Do not retrieve or combine external patient data without authorization.
 
-10. **Quality-control workflow**
+11. **Quality-control workflow**
     - Complete the following sequence:
       1. Parse the source and list clinically material facts.
       2. Draft a faithful plain-language explanation.

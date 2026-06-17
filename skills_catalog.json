@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T10:42:45.462387+00:00",
+  "generated_at": "2026-06-17T10:40:49.119676+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 690,
+  "total_skills": 691,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-16T10:42:23.418014+00:00",
-      "body_length": 3919,
+      "last_modified": "2026-06-17T10:39:35.320430+00:00",
+      "body_length": 3928,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-16T10:40:43.814400+00:00",
-      "body_length": 12743,
+      "last_modified": "2026-06-17T10:34:47.766418+00:00",
+      "body_length": 13049,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1652,8 +1652,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-06-15T10:48:01.022964+00:00",
-      "body_length": 6872,
+      "last_modified": "2026-06-17T10:38:37.351629+00:00",
+      "body_length": 7265,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-16T10:35:57.835485+00:00",
-      "body_length": 6524,
+      "last_modified": "2026-06-17T10:37:39.885826+00:00",
+      "body_length": 7517,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2075,7 +2075,7 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-06-16T10:39:22.708718+00:00",
+      "last_modified": "2026-06-16T10:42:47.157922+00:00",
       "body_length": 2585,
       "capabilities": [
         "When to Use This Skill",
@@ -2140,6 +2140,29 @@
         "Explainability Methods",
         "Quality Control",
         "Author"
+      ]
+    },
+    {
+      "name": "on-prem-clinical-llm-deployment",
+      "description": "Plan and validate on-prem clinical LLM deployments for distilled open-source diagnosis models, balancing performance, privacy, hardware, governance, and human oversight.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
+      "relative_path": "Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
+      "last_modified": "2026-06-17T10:34:07.460556+00:00",
+      "body_length": 4028,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -13750,8 +13773,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-16T10:38:33.909911+00:00",
-      "body_length": 10300,
+      "last_modified": "2026-06-17T10:36:43.140021+00:00",
+      "body_length": 10654,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
