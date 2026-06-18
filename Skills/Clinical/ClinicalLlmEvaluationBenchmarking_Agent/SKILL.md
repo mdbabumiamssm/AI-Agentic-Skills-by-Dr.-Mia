@@ -119,6 +119,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 25. **Fine-grained domain-specific medical Q&A dataset controls**
    For trustworthy medical LLM benchmarking, evaluate domain-specific Q&A datasets with item-level error taxonomies, separate omission and harm labels, domain coverage checks, calibration by question type, and dataset provenance controls.
 
+26. **Fine-grained domain Q&A evaluation workflow**
+   Construct domain-specific Q&A datasets with documented source, inclusion, and evidence criteria; use clinician adjudication to label ambiguity, omissions, evidence grounding, and item-level error categories; assess calibration and clinically relevant subgroups; and report item-level findings alongside aggregate accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**

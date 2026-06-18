@@ -56,10 +56,18 @@ This skill analyzes a list of medications to identify known interactions, focusi
 21. **Comparative DDI Benchmark Audit**: Compare LLM antiseizure-medication interaction assessments with authoritative compendia such as Lexicomp and Drugs.com; score severity and mechanism agreement separately; test and record sensitivity to bounded iterative prompting; track omitted interactions; verify supporting citations; and escalate conflicting source findings to a pharmacist or qualified clinician.
 22. **PubMed 41994367 ASM DDI Benchmarking**: For antiseizure medication DDI benchmarks informed by the 2026 cross-sectional comparison of LLMs and Drugs.com versus Lexicomp, compare generated answers against authoritative databases rather than model consensus, report severity-classification agreement or disagreement, state bounded iterative prompting limits, and require pharmacist review before clinical interpretation.
 23. **ASM DDI Omission and Recommendation Audit**: When checking antiseizure medication DDIs, compare LLM outputs against authoritative references such as Lexicomp, capture omissions in severity, mechanism, or evidence support, preserve iterative prompt audit trails, and avoid clinical recommendations that are not supported by the benchmark reference.
+24. **Authoritative DDI Evaluation and Prompt Testing**: Prioritize validated interaction databases such as Lexicomp over Drugs.com and LLM output; assess severity and mechanism agreement separately, treat omitted interactions as false-negative risks, and use bounded iterative prompting to test answer stability rather than establish correctness.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
 LLM-generated DDI findings are screening drafts, not standalone clinical evidence. For antiseizure medication benchmarks, compare each generated answer and any Drugs.com output against authoritative databases such as Lexicomp; document prompts and finite iteration limits; classify severity explicitly; record unresolved disagreements without resolving them by model consensus; and route outputs to pharmacist review before clinical use.
+
+## Evaluation and Prompting
+
+1. Establish the source hierarchy before evaluation: use a validated interaction database such as Lexicomp as the authoritative comparator, use Drugs.com as a secondary comparison source, and treat LLM output as unvalidated.
+2. Compare severity and mechanism agreement separately across sources, and record omissions as potential false negatives requiring review.
+3. Run a predefined, bounded sequence of iterative prompts and record whether each iteration changes the identified interaction, severity, mechanism, or recommendation.
+4. Do not interpret prompt-to-prompt agreement or improvement as validation. Never substitute LLM output for Lexicomp or another validated interaction database.
 
 ## Workflow
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T10:40:49.119676+00:00",
+  "generated_at": "2026-06-18T10:35:12.956520+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 691,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-17T10:39:35.320430+00:00",
+      "last_modified": "2026-06-17T10:40:50.735171+00:00",
       "body_length": 3928,
       "capabilities": [
         "Core Capabilities",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-17T10:34:47.766418+00:00",
-      "body_length": 13049,
+      "last_modified": "2026-06-18T10:33:20.985407+00:00",
+      "body_length": 13428,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1652,7 +1652,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-06-17T10:38:37.351629+00:00",
+      "last_modified": "2026-06-17T10:40:50.735171+00:00",
       "body_length": 7265,
       "capabilities": [
         "Overview",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-17T10:37:39.885826+00:00",
-      "body_length": 7517,
+      "last_modified": "2026-06-18T10:34:03.131302+00:00",
+      "body_length": 8134,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2155,7 +2155,7 @@
       ],
       "file_path": "Skills/Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
       "relative_path": "Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
-      "last_modified": "2026-06-17T10:34:07.460556+00:00",
+      "last_modified": "2026-06-17T10:40:50.735171+00:00",
       "body_length": 4028,
       "capabilities": [
         "Overview",
@@ -13773,12 +13773,13 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-17T10:36:43.140021+00:00",
-      "body_length": 10654,
+      "last_modified": "2026-06-18T10:34:47.686191+00:00",
+      "body_length": 11726,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
         "Comparative Benchmark: LLM-Based ASM DDI Checks",
+        "Evaluation and Prompting",
         "Workflow",
         "Example Usage",
         "References"
