@@ -122,6 +122,15 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 26. **Fine-grained domain Q&A evaluation workflow**
    Construct domain-specific Q&A datasets with documented source, inclusion, and evidence criteria; use clinician adjudication to label ambiguity, omissions, evidence grounding, and item-level error categories; assess calibration and clinically relevant subgroups; and report item-level findings alongside aggregate accuracy.
 
+27. **Intensive-care nursing comparative evaluation**
+   For intensive-care nursing questions, use expert reference answers, direct model-to-model comparison, clinically weighted error categories, and dedicated analysis of unsafe omissions; report these dimensions separately rather than relying on aggregate accuracy alone.
+
+28. **Fine-grained medical Q&A dataset quality controls**
+   Label item-level difficulty and ambiguity, assess answer-evidence alignment, apply separate omission and contradiction taxonomies, report clinically relevant subgroup results and annotator agreement, and check for dataset contamination.
+
+29. **Management-critical omission and harm adjudication**
+   Score correctness, content omission, and risk of harm as separate endpoints; require severity-weighted clinician adjudication; and explicitly report cases where fluent answers omit management-critical details.
+
 ## Inputs / Outputs
 
 **Inputs**
