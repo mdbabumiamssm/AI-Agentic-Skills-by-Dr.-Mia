@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T10:43:20.092798+00:00",
+  "generated_at": "2026-06-20T10:39:39.854785+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 691,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-17T10:40:50.735171+00:00",
-      "body_length": 3928,
+      "last_modified": "2026-06-20T10:39:16.626160+00:00",
+      "body_length": 4338,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + AgentCore Reference Architecture",
@@ -1629,7 +1629,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-19T10:42:12.414711+00:00",
+      "last_modified": "2026-06-19T10:43:21.741446+00:00",
       "body_length": 14326,
       "capabilities": [
         "Overview",
@@ -1652,7 +1652,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-06-19T10:40:48.643020+00:00",
+      "last_modified": "2026-06-19T10:43:21.742446+00:00",
       "body_length": 8334,
       "capabilities": [
         "Overview",
@@ -1950,7 +1950,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-19T10:36:43.776893+00:00",
+      "last_modified": "2026-06-19T10:43:21.742446+00:00",
       "body_length": 8635,
       "capabilities": [
         "When to Use This Skill",
@@ -1972,7 +1972,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-06-19T10:33:53.925501+00:00",
+      "last_modified": "2026-06-19T10:43:21.742446+00:00",
       "body_length": 4163,
       "capabilities": [
         "At-a-Glance",
@@ -2075,7 +2075,7 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-06-19T10:38:55.587423+00:00",
+      "last_modified": "2026-06-19T10:43:21.742446+00:00",
       "body_length": 2596,
       "capabilities": [
         "When to Use This Skill",
@@ -13773,8 +13773,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-19T10:38:12.839575+00:00",
-      "body_length": 12112,
+      "last_modified": "2026-06-20T10:35:10.682208+00:00",
+      "body_length": 12625,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
