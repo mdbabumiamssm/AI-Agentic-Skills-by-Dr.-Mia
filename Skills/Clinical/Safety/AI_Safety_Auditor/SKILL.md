@@ -61,6 +61,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 14. **Test-Time Knowledge Acquisition Decision-Support Checks**: Validates medical decision support workflows that acquire knowledge at inference time by requiring retrieval/source validation, knowledge freshness checks, contradiction escalation, evidence provenance, and fail-closed abstention or clinician review when supporting evidence is weak.
 15. **Pre-Reasoning Test-Time Knowledge Acquisition Audit**: Requires clinical agents to retrieve current vetted references before medical reasoning, log source provenance, compare pre- and post-retrieval answer changes, and escalate uncertainty when retrieved evidence conflicts.
 16. **Knowledge-Augmented Recommendation Release Gate**: Before allowing test-time knowledge-augmented clinical decision-support recommendations, requires source vetting, retrieval provenance, conflict detection, hallucination checks, and evaluation against no-retrieval baselines.
+17. **Medical Answer Safety Adjudication**: Scores answer correctness, clinically important omissions, and risk of harm through blinded expert review; applies severity weighting, resolves reviewer disagreements through adjudication, and retains representative unsafe-response examples for audit and remediation.
 
 ## Workflow
 
@@ -98,6 +99,7 @@ python3 Skills/Clinical/Safety/AI_Safety_Auditor/audit_output.py --input dischar
 *   https://pubmed.ncbi.nlm.nih.gov/42042855/
 *   https://pubmed.ncbi.nlm.nih.gov/42039929/
 *   https://pubmed.ncbi.nlm.nih.gov/41953846/
+*   https://pubmed.ncbi.nlm.nih.gov/41908501/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

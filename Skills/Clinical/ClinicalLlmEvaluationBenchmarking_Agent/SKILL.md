@@ -131,6 +131,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 29. **Management-critical omission and harm adjudication**
    Score correctness, content omission, and risk of harm as separate endpoints; require severity-weighted clinician adjudication; and explicitly report cases where fluent answers omit management-critical details.
 
+30. **Fine-grained domain Q&A evidence and reliability audit**
+   Evaluate each item with a prespecified error taxonomy; score omissions separately; verify supporting evidence; flag ambiguity and define handling rules; report clinically relevant subgroup results and inter-rater agreement; and check benchmark items and source data for dataset leakage.
+
 ## Inputs / Outputs
 
 **Inputs**

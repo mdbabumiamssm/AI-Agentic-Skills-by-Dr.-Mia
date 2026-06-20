@@ -38,6 +38,7 @@ allowed-tools:
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
 - Apply benchmark-driven quality evaluation for AI-generated notes across correctness, omissions, factual consistency, note completeness, risk-of-harm scoring, and human review rubric selection.
 - Compare automated note-quality checks against clinician review in benchmark-style evaluation across factual consistency, omission detection, note completeness, safety/harm review, and rubric-based scoring.
+- For urologic consultation, procedure, and follow-up notes, check factual completeness against the source, detect and flag unsupported content, require clinician review and sign-off before record entry, and prohibit autonomous documentation without human oversight.
 - Support human-reviewed AI drafting and summarization for urologic documentation, including consultation, procedure, and follow-up notes, while requiring verification before record entry.
 - For urologic specialty documentation, preserve procedure-specific terminology; distinguish summarization from autonomous documentation; validate omissions and unsupported additions; and require clinician sign-off before record entry.
 

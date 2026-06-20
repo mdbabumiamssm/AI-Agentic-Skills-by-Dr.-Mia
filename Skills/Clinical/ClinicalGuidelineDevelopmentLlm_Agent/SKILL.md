@@ -49,9 +49,10 @@ Use this skill to support clinical practice guideline development with an LLM wh
 5. **Real-time expert review workflow**: Present draft outputs in reviewable units, capture expert corrections, and revise only within approved evidence boundaries.
 6. **Real-time evaluation protocol**: Require concurrent expert review of LLM outputs, trace each statement to its supporting evidence, classify detected errors, grade recommendations, adjudicate disagreements or uncertain content, and prevent any unreviewed LLM-generated text from entering the guideline.
 7. **Live guideline-development evaluation design**: Retrieve evidence during drafting, preserve recommendation-level traceability, require expert adjudication, log disagreements and their disposition, measure evidence-retrieval, drafting, and review latency, and stop evaluation of any draft that is unsafe or unsupported.
-8. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
-9. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
-10. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
+8. **Specialty-guideline concordance testing**: Compare LLM recommendations criterion by criterion against applicable professional-society recommendations, classifying discrepancies as omissions, contradictions, outdated advice, or potential harm.
+9. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
+10. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
+11. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
 
 ## Inputs / Outputs
 
@@ -74,3 +75,4 @@ Use this skill to support clinical practice guideline development with an LLM wh
 ## References
 
 - Erstad BL. Real-Time Evaluation of a Large Language Model for Clinical Practice Guideline Development. *Crit Care Explor*. 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42042855/
+- Kabir R, Braud SC, Hinson CS, Nazerali RS. Are large language models consistent with the ASPS and AAPS guidelines? A comparison of AI chatbot recommendations and plastic surgery clinical guidance. *J Plast Reconstr Aesthet Surg*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41985209/

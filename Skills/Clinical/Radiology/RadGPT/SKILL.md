@@ -47,6 +47,7 @@ An LLM-based agent designed to summarize and explain complex radiology reports f
 2.  **Entity Extraction**: Identifies key anatomical structures and pathologies.
 3.  **Q&A**: Answers follow-up questions about the report.
 4.  **MRI Report Patient Education**: Translates MRI reports into personalized plain language while preserving diagnostic meaning, uncertainty, negation, laterality, severity, follow-up recommendations, and red flags; sets and checks an audience-appropriate readability target; checks the explanation against the source report for omissions and hallucinations; compares consequential interpretations with a qualified radiology or clinical expert; and explicitly separates patient education from diagnosis or treatment advice, escalating consequential findings for clinician review before delivery.
+5.  **Closed-System Radiology-Response Evaluation**: Evaluate closed-system radiology responses for correctness, relevance, omissions, unsafe recommendations, uncertainty communication, and agreement with authoritative radiography references.
 
 ## Workflow
 
@@ -66,6 +67,7 @@ python -m radgpt.explain --report ./report.txt --target_audience patient
 ## References
 
 *   https://pubmed.ncbi.nlm.nih.gov/41865475/
+*   https://pubmed.ncbi.nlm.nih.gov/42024724/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
