@@ -67,6 +67,7 @@ Use this skill to convert radiology reports and other clinical documents into un
 
 7. **MRI-report education benchmarking**
    - For MRI-report patient education evaluations, compare generated explanations against expert interpretations when available, preserving uncertainty and follow-up recommendations from the report.
+   - Evaluate semantic fidelity, readability, uncertainty preservation, personalization to supplied patient context, omissions, potential harm, and actionable next steps; document discrepancies and require clinician review before patient delivery.
    - Measure omissions and overstatements as review findings, and require clinician review before any generated explanation is delivered to a patient.
 
 8. **Harmful-simplification detection**

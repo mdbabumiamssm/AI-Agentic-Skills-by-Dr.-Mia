@@ -67,6 +67,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 12. **Acquisition controls and ablation**: Control test-time query generation for clinical specificity and coverage; rank source authority before inclusion; enforce evidence-freshness checks against the decision date; preserve, reconcile, or escalate material contradictions; allocate the context budget by decision relevance, authority, and safety impact; verify that each citation entails the claim it supports; and ablate retrieved knowledge to identify conclusions that depend on unsupported parametric reasoning rather than acquired evidence.
 
+13. **Test-time knowledge-acquisition runbook**: Generate targeted queries from the clinical question and unresolved reasoning gaps; check publication, revision, and access dates for freshness; vet source authority, provenance, applicability, and evidentiary role before inclusion; surface conflicts and resolve them only when source differences justify doing so; stop retrieval when decision-critical claims are adequately supported, new searches add no material evidence, or time, context, safety, or source limits require abstention or escalation; bind each material claim to the evidence that supports it; and ablate the workflow against a no-retrieval baseline to identify which outputs depend on acquired knowledge without claiming improvement unless measured.
+
 ## Inputs / Outputs
 
 **Inputs**

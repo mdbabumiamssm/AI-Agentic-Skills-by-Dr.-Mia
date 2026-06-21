@@ -61,6 +61,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 9. **Comparative validation framework**: Compare fine-tuned and zero-shot models against simpler baselines using patient-level temporal splits, strict leakage controls, censoring-aware endpoints, and calibration assessment; seek external validation when available, and explicitly report when fine-tuning does not outperform zero-shot or simpler approaches.
 
+10. **Zero-shot versus fine-tuning decision framework**: Select between zero-shot and fine-tuned approaches only after evaluating both with patient-level temporal splits, document leakage controls, censoring-aware endpoints, calibration, external validation where available, and clinically relevant subgroup analysis; report comparative results cautiously, including uncertainty, limitations, and whether evidence supports use beyond research or clinician-reviewed decision support.
+
 ## Inputs / Outputs
 
 **Inputs**

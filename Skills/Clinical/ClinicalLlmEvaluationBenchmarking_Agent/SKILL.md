@@ -143,6 +143,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 33. **Ophthalmology CME answer safety adjudication**
    Score correctness, clinically material omission, and risk of harm separately; require blinded expert adjudication; and report harmful-error rates independently from overall answer accuracy.
 
+34. **Versioned fine-grained medical Q&A evaluation**
+   Evaluate each item with a prespecified error taxonomy; score omissions and potential harm separately; report results across clinical domain strata; assess confidence calibration; check for benchmark leakage; document adjudication and disagreement-resolution procedures; and version datasets, annotations, rubrics, and benchmark releases for reproducible comparison.
+
+35. **Systematic clinical-note quality benchmark framework**
+   Evaluate AI-generated clinical notes across factuality, completeness, hallucination, clinical usefulness, and harm-sensitive scoring; stratify results by note type; report inter-rater reliability; and validate automated metrics against clinician judgments before using them as clinical-quality proxies.
+
 ## Inputs / Outputs
 
 **Inputs**

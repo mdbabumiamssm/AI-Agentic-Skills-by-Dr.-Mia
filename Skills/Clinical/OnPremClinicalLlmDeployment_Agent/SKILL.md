@@ -49,6 +49,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 6. Governance and documentation: Produce model cards, data lineage notes, change-control records, risk registers, and release checklists appropriate for clinical operations.
 7. Human oversight design: Specify clinician-in-the-loop review, uncertainty disclosure, contraindication handling, escalation paths, and limits on autonomous diagnostic use.
 8. Post-deployment monitoring: Track drift, degraded performance, unsafe outputs, downtime, user feedback, prompt changes, and incident triggers after release.
+9. Distilled DeepSeek-R1 case-study assessment: Document quantization settings and hardware constraints; evaluate diagnostic accuracy, calibration, and throughput; preserve reproducibility artifacts; verify privacy controls; track exact model versions; and enforce human-review gates without assuming unsupported benchmark results.
 
 ## Inputs / Outputs
 

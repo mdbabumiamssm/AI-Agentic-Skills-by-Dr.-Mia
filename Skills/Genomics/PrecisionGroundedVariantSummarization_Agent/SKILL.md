@@ -49,6 +49,7 @@ This skill helps produce trustworthy narrative summaries for genetic variants by
 6. **Hallucination controls** - Do not fill missing fields from memory, do not infer clinical significance from gene function alone, and label absent evidence as not found in the consulted sources rather than as evidence of absence.
 7. **Audit-ready output review** - Check that every clinically meaningful statement maps to a cited source and that limitations, database disagreements, and required human review are explicit.
 8. **Precision Grounding architecture and evaluation** - Perform database-specific retrieval by routing each variant question and claim to the appropriate evidence database; normalize heterogeneous evidence into a common structure without erasing source-specific context; attach claim-level provenance and source-freshness metadata; preserve conflicting classifications; reject unsupported claims; and require expert review of clinical assertions and unresolved conflicts.
+9. **Version-aware evidence reconciliation and abstention** - Normalize variant identity before joining records; join evidence only across explicit genome build, transcript, allele, condition, and database version or access-date context; preserve conflicting classifications instead of collapsing them; attach claim-level provenance and traceable citations; flag evidence freshness limitations; and abstain from asserting a classification or relationship when support is insufficient, ambiguous, or not traceable.
 
 ## Inputs / Outputs
 

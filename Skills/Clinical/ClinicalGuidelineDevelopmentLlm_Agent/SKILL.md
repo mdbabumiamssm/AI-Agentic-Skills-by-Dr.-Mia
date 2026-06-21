@@ -49,10 +49,11 @@ Use this skill to support clinical practice guideline development with an LLM wh
 5. **Real-time expert review workflow**: Present draft outputs in reviewable units, capture expert corrections, and revise only within approved evidence boundaries.
 6. **Real-time evaluation protocol**: Require concurrent expert review of LLM outputs, trace each statement to its supporting evidence, classify detected errors, grade recommendations, adjudicate disagreements or uncertain content, and prevent any unreviewed LLM-generated text from entering the guideline.
 7. **Live guideline-development evaluation design**: Retrieve evidence during drafting, preserve recommendation-level traceability, require expert adjudication, log disagreements and their disposition, measure evidence-retrieval, drafting, and review latency, and stop evaluation of any draft that is unsafe or unsupported.
-8. **Specialty-guideline concordance testing**: Compare LLM recommendations criterion by criterion against applicable professional-society recommendations, classifying discrepancies as omissions, contradictions, outdated advice, or potential harm.
-9. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
-10. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
-11. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
+8. **Continuous recommendation lifecycle**: During active development, perform evidence surveillance; capture each source and retrieval time; draft or update recommendations only against captured evidence; log discrepancies between drafts, evidence, and current guidance with status and disposition; route unresolved or clinically material discrepancies to expert adjudication; preserve provenance for searches, evidence, LLM outputs, human edits, decisions, and approvals; and revise a recommendation when new evidence changes its certainty, benefit-harm balance, or applicability, when adjudication requires a change, when a logged discrepancy is upheld, or when its evidence or provenance becomes incomplete or outdated.
+9. **Specialty-guideline concordance testing**: Compare LLM recommendations criterion by criterion against applicable professional-society recommendations, classifying discrepancies as omissions, contradictions, outdated advice, or potential harm.
+10. **Conflict and dissent handling**: Track conflicts of interest, competing interpretations, panel disagreements, and the final governance disposition.
+11. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
+12. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
 
 ## Inputs / Outputs
 

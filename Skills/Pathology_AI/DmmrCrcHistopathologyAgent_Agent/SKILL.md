@@ -64,6 +64,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 8. **Clinical-pathology handoff**
    Produce a concise report with case identifiers, model inputs, region basis, limitations, confidence or risk category if supplied by the model, and recommended correlation with standard molecular or immunohistochemical testing.
 
+9. **Comparative evidence screening workflow**
+   Explicitly sample non-tumor and low-magnification regions alongside tumor regions; compare tumor-only, non-tumor-ablated, low-magnification-ablated, and full-region strategies; aggregate tile evidence with documented logic; inspect attention or attribution outputs for interpretability; validate performance on external cohorts; and report predictions only as screening signals requiring confirmatory diagnostic testing.
+
 ## Inputs / Outputs
 
 ### Inputs
