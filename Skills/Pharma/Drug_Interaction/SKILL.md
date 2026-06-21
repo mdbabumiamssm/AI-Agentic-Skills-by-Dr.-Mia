@@ -1,3 +1,12 @@
+---
+name: 'drug-interaction-checker'
+description: 'Checks for potential drug-drug interactions (DDIs) between a list of medications.'
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
+---
+
 <!--
 # COPYRIGHT NOTICE
 # This file is part of the "Universal AI Agentic Skills" project.
@@ -10,16 +19,6 @@
 # Provenance: Authenticated by MD BABU MIA
 
 -->
-
----
-name: 'drug-interaction-checker'
-description: 'Checks for potential drug-drug interactions (DDIs) between a list of medications.'
-measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
-allowed-tools:
-  - read_file
-  - run_shell_command
----
-
 
 # Drug-Drug Interaction (DDI) Checker
 
@@ -61,6 +60,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 26. **Benchmark-Driven DDI Verification**: Normalize medication names and formulations before comparison; verify each DDI against an authoritative reference such as Lexicomp; report interaction-severity concordance; cite the evidence supporting each clinically relevant finding; predefine and log finite prompt iterations; escalate conflicting, incomplete, or unsupported findings to a pharmacist or qualified clinician; and never treat repeated prompting or repeated model agreement as independent confirmation.
 27. **Authoritative ASM Interaction Benchmarking**: Benchmark antiseizure-medication interaction cases against Lexicomp-style authoritative references; test and record prompt sensitivity with bounded iterative prompting; report severity concordance; verify every supporting citation; and mandatorily escalate conflicting results to a pharmacist or qualified clinician.
 28. **ASM DDI Source Hierarchy and Discordance Review**: Evaluate antiseizure-medication DDIs using Lexicomp or another authoritative reference as the primary comparator, secondary references such as Drugs.com as corroboration, and LLM output as unvalidated; report severity and mechanism agreement separately, test and document stability across bounded iterative prompts, disclose uncertainty and source discordance, and require pharmacist review for every discordant result before clinical use.
+29. **ASM DDI Validation, Agreement Scoring, and Escalation**: Validate each antiseizure-medication DDI against authoritative references using a source hierarchy that prioritizes Lexicomp or another validated compendium, treats Drugs.com as a secondary comparator, and treats LLM output as unvalidated; score severity and mechanism agreement separately; use predefined, bounded iterative prompts to test answer sensitivity; and mandatorily escalate uncertain, unsupported, or discordant interactions to a pharmacist or qualified clinician.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 

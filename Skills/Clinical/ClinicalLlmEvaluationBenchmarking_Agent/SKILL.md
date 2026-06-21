@@ -134,6 +134,15 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 30. **Fine-grained domain Q&A evidence and reliability audit**
    Evaluate each item with a prespecified error taxonomy; score omissions separately; verify supporting evidence; flag ambiguity and define handling rules; report clinically relevant subgroup results and inter-rater agreement; and check benchmark items and source data for dataset leakage.
 
+31. **Specialty-aware intensive-care nursing benchmark interpretation**
+   For intensive-care nursing questions, use clinician-authored scoring rubrics and reference answers, compare ChatGPT, DeepSeek, and Google Gemini under the same question set and conditions, and analyze safety-critical errors and omissions separately from overall accuracy. Treat board-style question accuracy as task-specific evidence that cannot establish bedside performance or safety without validation in clinical workflows.
+
+32. **Fine-grained medical Q&A validation and failure analysis**
+   Validate domain-specific medical Q&A datasets with an item-level taxonomy; score omissions and uncertainty separately; analyze clinically relevant subgroups; and explicitly check whether aggregate accuracy conceals clinically important failures.
+
+33. **Ophthalmology CME answer safety adjudication**
+   Score correctness, clinically material omission, and risk of harm separately; require blinded expert adjudication; and report harmful-error rates independently from overall answer accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**
