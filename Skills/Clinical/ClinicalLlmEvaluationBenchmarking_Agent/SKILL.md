@@ -149,6 +149,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 35. **Systematic clinical-note quality benchmark framework**
    Evaluate AI-generated clinical notes across factuality, completeness, hallucination, clinical usefulness, and harm-sensitive scoring; stratify results by note type; report inter-rater reliability; and validate automated metrics against clinician judgments before using them as clinical-quality proxies.
 
+36. **Fine-grained trustworthy domain Q&A evaluation**
+   Evaluate domain-specific Q&A datasets with item-level error taxonomies and separate ambiguity and clinically material omission labels; require specialty-expert adjudication; assess calibration and harmful answers; document dataset construction, provenance, annotations, and limitations; and report factual recall separately from clinically safe reasoning.
+
+37. **Clinical-note metric validity and expert-review controls**
+   Evaluate factual correctness, completeness, organization, clinical usefulness, hallucination, harmfulness, and style as distinct clinical-note quality dimensions; document each metric's validity and inter-rater reliability; and require expert review when automated scores lack demonstrated validity or agreement with expert judgment for the intended dimension and clinical context.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -50,6 +50,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 7. Human oversight design: Specify clinician-in-the-loop review, uncertainty disclosure, contraindication handling, escalation paths, and limits on autonomous diagnostic use.
 8. Post-deployment monitoring: Track drift, degraded performance, unsafe outputs, downtime, user feedback, prompt changes, and incident triggers after release.
 9. Distilled DeepSeek-R1 case-study assessment: Document quantization settings and hardware constraints; evaluate diagnostic accuracy, calibration, and throughput; preserve reproducibility artifacts; verify privacy controls; track exact model versions; and enforce human-review gates without assuming unsupported benchmark results.
+10. Evidence-based compact-model gate: Validate diagnostic performance of distilled DeepSeek-R1 candidates before deployment; treat distillation and quantization as potential clinical-performance risks; select model size and precision against available hardware; document the privacy benefit of keeping clinical data local; test relevant patient subgroups; and reject deployment when a compact model underperforms predefined clinical acceptance criteria or the selected comparator.
 
 ## Inputs / Outputs
 

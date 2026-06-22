@@ -67,6 +67,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 9. **Comparative evidence screening workflow**
    Explicitly sample non-tumor and low-magnification regions alongside tumor regions; compare tumor-only, non-tumor-ablated, low-magnification-ablated, and full-region strategies; aggregate tile evidence with documented logic; inspect attention or attribution outputs for interpretability; validate performance on external cohorts; and report predictions only as screening signals requiring confirmatory diagnostic testing.
 
+10. **Evidence-aligned dMMR risk prioritization**
+    Use multi-region sampling across tumor, non-tumor, and low-magnification tissue; enforce leakage-safe patient-level train, validation, and test splits; compare magnification-level and region ablations; review attention maps and attribution outputs for plausible regional evidence; perform external validation; and frame outputs as dMMR risk prioritization for confirmatory testing rather than a definitive diagnosis.
+
 ## Inputs / Outputs
 
 ### Inputs

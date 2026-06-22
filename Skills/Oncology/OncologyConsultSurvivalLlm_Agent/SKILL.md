@@ -63,6 +63,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 10. **Zero-shot versus fine-tuning decision framework**: Select between zero-shot and fine-tuned approaches only after evaluating both with patient-level temporal splits, document leakage controls, censoring-aware endpoints, calibration, external validation where available, and clinically relevant subgroup analysis; report comparative results cautiously, including uncertainty, limitations, and whether evidence supports use beyond research or clinician-reviewed decision support.
 
+11. **Direct adaptation comparison framework**: Compare zero-shot prompting and task-specific fine-tuning on the same endpoint, eligible cohort, initial-consultation document cutoff, preprocessing, and held-out patients. Enforce the cutoff before text extraction and audit copied-forward or dated content for post-baseline leakage; document class imbalance and use imbalance-aware evaluation rather than accuracy alone. Preserve temporal validation and, when available, external-site validation; compare calibration as well as discrimination, report confidence intervals or other uncertainty estimates, and disclose unstable subgroup results. Prefer prompting when it provides sufficiently calibrated, reproducible performance under these validations with lower data and governance burden; choose task-specific adaptation only when it yields a reliable, clinically meaningful improvement that persists across temporal and external evaluation.
+
 ## Inputs / Outputs
 
 **Inputs**
