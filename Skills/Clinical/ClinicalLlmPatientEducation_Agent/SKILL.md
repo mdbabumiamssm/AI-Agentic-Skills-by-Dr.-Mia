@@ -97,6 +97,7 @@ Use this skill to convert radiology reports and other clinical documents into un
     - Support consent discussions by organizing and explaining the supplied information, but do not conduct or document informed consent, assess decision-making capacity, or replace the surgeon's consent discussion.
     - For postoperative instructions, organize only source-stated wound or device care, activity, diet, medication, follow-up, and warning-sign guidance without adding or changing clinical directions.
     - Check readability against the stated audience and target reading level, preserve uncertainty and conditional language, and adapt presentation to supplied language, sensory, cognitive, literacy, or other accessibility needs; require qualified multilingual review before delivering translated content.
+    - For multilingual materials, explicitly assess whether translation changes procedure details, expectation setting, uncertainty, recovery instructions, or warning signs; label unresolved language risks and withhold delivery until qualified language review and treating-surgeon approval are complete.
     - Clearly direct patients to escalate source-stated postoperative warning signs through the clinician-approved care or emergency pathway, without inventing symptoms or urgency thresholds.
     - Include teach-back prompts asking the patient to explain key preparation, recovery, and escalation instructions in their own words, and require treating-surgeon approval before patient delivery or use in consent or care decisions.
 

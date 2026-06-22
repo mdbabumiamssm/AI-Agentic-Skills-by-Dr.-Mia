@@ -155,6 +155,18 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 37. **Clinical-note metric validity and expert-review controls**
    Evaluate factual correctness, completeness, organization, clinical usefulness, hallucination, harmfulness, and style as distinct clinical-note quality dimensions; document each metric's validity and inter-rater reliability; and require expert review when automated scores lack demonstrated validity or agreement with expert judgment for the intended dimension and clinical context.
 
+38. **Blinded intensive-care nursing cross-provider error analysis**
+   Benchmark intensive-care nursing question answering across ChatGPT, DeepSeek, and Google Gemini under matched conditions using blinded clinician scoring, and explicitly analyze clinically consequential errors separately from aggregate accuracy.
+
+39. **Trustworthy fine-grained domain QA assessment**
+   Evaluate domain-specific medical Q&A with item-level error taxonomies, ambiguity and evidence-quality labels, clinically relevant subgroup analysis, expert adjudication, calibration checks, and dataset documentation covering construction, provenance, annotations, and limitations.
+
+40. **Professional-society guideline concordance evaluation**
+   Map each model recommendation to the applicable professional-society statement; score omissions and contradictions separately; and flag advice that exceeds or misstates the guideline's scope.
+
+41. **Plausibility-sensitive clinical answer adjudication**
+   Score correctness, clinically important omissions, and risk of harm as separate dimensions; report errors weighted by clinical severity; and require adjudicators to label factually plausible answers as unsafe or incomplete when omitted content or likely downstream use creates clinical risk.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -182,3 +194,4 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 - PubMed: Fonseca RDC, Rios RA, Castaldoni R, Carvalho AA, Lopes TJS. "Fine-grained evaluation of a domain-specific Q&A dataset to support trustworthy medical language models." *Health Inf Sci Syst*. 2026 Dec. https://pubmed.ncbi.nlm.nih.gov/42039929/
 - PubMed: Gülhan Güner S, Tan Z, Gülpınar S. "Comparative performance of artificial intelligence models in intensive care nursing questions: an evaluation of ChatGPT, DeepSeek, and Google Gemini." *BMC Nursing*. 2026 May 2. https://pubmed.ncbi.nlm.nih.gov/42069581/
 - PubMed: Chen JL, Lu AJ, Verma R, Wang L, Koch DD. "Assessment of Correctness, Content Omission, and Risk of Harm in Large Language Model Responses to Ophthalmology Continuing Medical Education Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41908501/
+- PubMed: Kabir R, Braud SC, Hinson CS, Nazerali RS. "Are large language models consistent with the ASPS and AAPS guidelines? A comparison of AI chatbot recommendations and plastic surgery clinical guidance." *J Plast Reconstr Aesthet Surg*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41985209/
