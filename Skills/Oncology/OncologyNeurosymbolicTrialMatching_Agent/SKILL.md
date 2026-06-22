@@ -51,6 +51,7 @@ This skill produces explainable oncology clinical trial candidate matches by com
 8. **Clinician review package:** Produce a compact, auditable report containing candidate trials, criterion-level decisions, missing-data requests, conflicts, provenance, and review timestamps.
 9. **Prospective evaluation and operations:** Preserve knowledge-graph provenance, audit symbolic eligibility checks and criterion-level explanations, record multi-agent conflict resolutions and clinician overrides, audit recall against reviewed relevant trials, and track operational throughput metrics without inferring unreported performance benchmarks.
 10. **Prospective validation pattern:** Use the reported 3,804-patient prospective evaluation as a validation design pattern: measure criterion-level traceability, knowledge-graph provenance coverage, agent-conflict resolution outcomes, turnaround time, clinician overrides, and prospective matching metrics, while reporting only metrics supported by collected evidence.
+11. **Primary implementation pattern:** Follow the prospective 3,804-patient evaluation pattern by grounding retrieval in an oncology-specific knowledge graph, assigning specialized agent roles, applying symbolic eligibility checks with explicit conflict resolution, attaching criterion-level evidence, tracking coverage metrics, validating prospectively, and producing clinician-auditable outputs.
 
 ## Inputs / Outputs
 

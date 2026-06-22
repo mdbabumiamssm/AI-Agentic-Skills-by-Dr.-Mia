@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Apply the `aws-samples/sample-strands-agent-with-agentcore` reference architecture to Strands Agents and Bedrock AgentCore runtime deployment by defining identity and least-privilege IAM, MCP and A2A integration boundaries, browser and voice tool controls, session-state ownership, observability, deployment topology, and production-hardening requirements before adapting the sample.
 - Use `aws-samples/sample-strands-agent-with-agentcore` as a Strands Agents plus Amazon Bedrock AgentCore reference architecture for MCP and A2A integration and browser and voice tools; explicitly review identity and least-privilege IAM boundaries, deployment topology, observability, per-session isolation, and production-hardening gaps before adapting the sample.
 - Review the Strands Agents and Amazon Bedrock AgentCore reference architecture for MCP and A2A integration, browser automation and voice tools, explicit identity boundaries, end-to-end observability, deployment topology, and production hardening requirements.
 - Validate Strands Agents plus Amazon Bedrock AgentCore reference architectures for multimodal or voice-enabled agents against explicit identity and session-state ownership, MCP and A2A trust boundaries, isolated browser automation, end-to-end observability, documented deployment topology, and least-privilege controls, using `aws-samples/sample-strands-agent-with-agentcore` as the implementation reference.
