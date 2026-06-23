@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T10:45:04.237432+00:00",
+  "generated_at": "2026-06-23T13:36:58.080929+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 692,
   "total_errors": 21,
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-23T10:44:32.732441+00:00",
+      "last_modified": "2026-06-23T10:45:05.637314+00:00",
       "body_length": 7110,
       "capabilities": [
         "Core Capabilities",
@@ -13798,7 +13798,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-23T10:42:22.060947+00:00",
+      "last_modified": "2026-06-23T10:45:05.637314+00:00",
       "body_length": 17219,
       "capabilities": [
         "When to Use This Skill",
