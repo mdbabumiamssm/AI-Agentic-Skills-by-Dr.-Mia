@@ -167,6 +167,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 41. **Plausibility-sensitive clinical answer adjudication**
    Score correctness, clinically important omissions, and risk of harm as separate dimensions; report errors weighted by clinical severity; and require adjudicators to label factually plausible answers as unsafe or incomplete when omitted content or likely downstream use creates clinical risk.
 
+42. **AI-generated clinical-note quality benchmark dimensions**  
+   For systematic reviews or experimental benchmarks of AI-generated clinical notes, evaluate factual correctness, omissions, hallucinations, clinical risk, style and format compliance, and inter-rater reliability as separate dimensions; use benchmark datasets with human clinician adjudication to compare evaluation methods.
+
 ## Inputs / Outputs
 
 **Inputs**

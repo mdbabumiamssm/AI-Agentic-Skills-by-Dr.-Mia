@@ -71,6 +71,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 14. **Evidence-controlled acquisition pipeline**: Generate focused queries for the clinical decision and identified knowledge gaps; vet retrieved sources for authority, provenance, recency, and patient-context applicability; deduplicate overlapping evidence by claim and source lineage; construct a bounded context that preserves decision-critical evidence, limitations, and citations; handle conflicts by reporting unresolved disagreement or preferring a source only when its authority, currency, or applicability justifies that choice; verify that citations resolve to the intended source and support the associated claim; run acquisition ablations such as no-retrieval, source-removal, and evidence-removal checks without asserting performance gains unless measured; enforce search-count, time, and context-size limits to control latency; and fail closed by withholding the affected recommendation and escalating for clinician review when trustworthy evidence is unavailable, unverifiable, materially conflicting, or insufficient.
 
+15. **Inference-time evidence acquisition guardrails**: Retrieve current evidence at inference time for each medical decision; grade and filter candidate sources before injecting them into context; cite the specific evidence spans supporting material claims; label static model knowledge separately from retrieved knowledge; and evaluate whether retrieval improves correctness without adding unsafe authority bias or overconfident deference to retrieved sources.
+
 ## Inputs / Outputs
 
 **Inputs**
