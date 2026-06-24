@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T13:56:22.931512+00:00",
+  "generated_at": "2026-06-24T21:50:37.939203+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-06-24T13:53:23.078652+00:00",
+      "last_modified": "2026-06-24T13:56:24.331816+00:00",
       "body_length": 8586,
       "capabilities": []
     },
@@ -2198,8 +2198,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-06-24T13:37:37.072369+00:00",
-      "body_length": 5828,
+      "last_modified": "2026-06-24T21:41:26.465363+00:00",
+      "body_length": 6158,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -13471,8 +13471,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-06-24T10:44:55.761067+00:00",
-      "body_length": 6762,
+      "last_modified": "2026-06-24T21:46:45.732467+00:00",
+      "body_length": 7150,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13821,8 +13821,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-24T13:49:57.204702+00:00",
-      "body_length": 18879,
+      "last_modified": "2026-06-24T21:47:36.199354+00:00",
+      "body_length": 19220,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
