@@ -70,6 +70,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 36. **Pair-Level LLM DDI Evaluation Protocol**: Evaluate each medication pair against Lexicomp or an equivalent pharmacist-curated reference standard; record pair-level concordance; audit severity classifications and omitted reference interactions; run predefined iterative-prompt sensitivity tests; verify that cited sources support each interaction claim; and require pharmacist review for every clinically consequential result before clinical use.
 37. **Benchmark-Informed ASM DDI Warning**: For antiseizure medication DDI use, compare LLM responses against authoritative references such as Lexicomp, use iterative prompting only as an audit aid, flag hallucinated severity or mechanism claims, and keep final interaction decisions tied to curated drug databases.
 38. **ASM DDI Cautionary Evaluation Module**: For antiseizure medication DDI comparisons informed by PubMed 41994367, set the source hierarchy before analysis, treat Lexicomp or another curated DDI database as the clinical decision reference, use Drugs.com and LLM outputs only as comparison surfaces, document iterative prompting as a pitfall-prone stability check rather than validation, re-check high-risk medication combinations against curated DDI databases, and defer clinical decisions to those curated sources plus pharmacist or qualified clinician review.
+39. **LLM-vs-Reference ASM DDI Evaluation**: For antiseizure medication DDI checks, compare LLM outputs against Lexicomp or an equivalent reference, use iterative prompting only as an assistive layer, capture severity and evidence discrepancies, and require pharmacist review before making actionable recommendations.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
@@ -100,6 +101,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

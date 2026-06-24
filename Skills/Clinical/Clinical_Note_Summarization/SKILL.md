@@ -41,6 +41,7 @@ allowed-tools:
 - For urologic consultation, procedure, and follow-up notes, check factual completeness against the source, detect and flag unsupported content, require clinician review and sign-off before record entry, and prohibit autonomous documentation without human oversight.
 - Support human-reviewed AI drafting and summarization for urologic documentation, including consultation, procedure, and follow-up notes, while requiring verification before record entry.
 - For urologic specialty documentation, preserve procedure-specific terminology; distinguish summarization from autonomous documentation; validate omissions and unsupported additions; and require clinician sign-off before record entry.
+- For AI-assisted urologic operative notes, clinic documentation, and patient instructions, require human review for specialty-specific terminology, omitted negatives, billing/coding risk, and medicolegal traceability before record entry or patient release.
 
 ## Workflow
 1. **Load system prompt:** `prompt.md` enforces no hallucinations + data gap surfacing.

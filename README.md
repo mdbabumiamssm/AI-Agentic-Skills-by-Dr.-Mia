@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 692 skills across 46 categories. Last refresh: 2026-06-24T10:44:54.268929+00:00._
+_Auto-generated index. 693 skills across 46 categories. Last refresh: 2026-06-24T13:37:35.570799+00:00._
 
 ### 3D_Genomics (8)
 
@@ -310,7 +310,7 @@ _Auto-generated index. 692 skills across 46 categories. Last refresh: 2026-06-24
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (33)
+### Clinical (34)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -338,6 +338,7 @@ _Auto-generated index. 692 skills across 46 categories. Last refresh: 2026-06-24
 - **on-prem-clinical-llm-deployment** — Plan and validate on-prem clinical LLM deployments for distilled open-source diagnosis models, balancing performance, privacy, hardware, ...
 - **precision-oncology-agent** — Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.
 - **prior-auth-coworker** — SOTA Prior Auth Review Agent aligned with Anthropic and OpenAI healthcare initiatives.
+- **prosthetics-llm-decision-support** — Assist clinician-reviewed prosthetic recommendations using ProsthetiX-AI-style intake, evidence retrieval, safety checks, and documentation.
 - **psychiatry-knowledge-fused-reasoning** — Guides psychiatry-specific LLM support using PKFAR-style knowledge fusion and augmented reasoning for diagnosis, risk, medications, and c...
 - **radgpt-radiology-reporter** — Radiology Reporter
 - **safety-monitor** — Safety Monitor

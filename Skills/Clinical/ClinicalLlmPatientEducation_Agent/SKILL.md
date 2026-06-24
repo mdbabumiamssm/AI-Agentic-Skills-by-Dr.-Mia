@@ -93,13 +93,22 @@ Use this skill to convert radiology reports and other clinical documents into un
       7. Label unresolved questions and required professional review.
 
 12. **Perioperative patient-communication workflows**
-    - Provide plain-language preoperative explanations and set expectations using clinician-provided information about the procedure purpose, preparation, expected course, risks, benefits, alternatives, and patient questions.
+    - Provide plain-language preoperative explanations and set expectations using clinician-provided information about the procedure purpose, preparation, expected course, risk explanations, benefits, alternatives, and patient questions.
+    - Generate neutral questions patients can bring to the surgeon or care team about the procedure, risks, recovery expectations, alternatives, and follow-up without steering decisions.
     - Support consent discussions by organizing and explaining the supplied information, but do not conduct or document informed consent, assess decision-making capacity, or replace the surgeon's consent discussion.
     - For postoperative instructions, organize only source-stated wound or device care, activity, diet, medication, follow-up, and warning-sign guidance without adding or changing clinical directions.
     - Check readability against the stated audience and target reading level, preserve uncertainty and conditional language, and adapt presentation to supplied language, sensory, cognitive, literacy, or other accessibility needs; require qualified multilingual review before delivering translated content.
     - For multilingual materials, explicitly assess whether translation changes procedure details, expectation setting, uncertainty, recovery instructions, or warning signs; label unresolved language risks and withhold delivery until qualified language review and treating-surgeon approval are complete.
     - Clearly direct patients to escalate source-stated postoperative warning signs through the clinician-approved care or emergency pathway, without inventing symptoms or urgency thresholds.
+    - Escalate for clinician review when risk, consent, urgency, postoperative warning signs, or patient misunderstanding could affect decisions about surgery, anesthesia, medications, follow-up, or seeking care.
     - Include teach-back prompts asking the patient to explain key preparation, recovery, and escalation instructions in their own words, and require treating-surgeon approval before patient delivery or use in consent or care decisions.
+
+13. **Gastroenterology patient-education workflows**
+    - Explain gastroenterology reports and procedure documents in plain language while preserving source-stated findings, uncertainty, limitations, and follow-up recommendations.
+    - Support colonoscopy preparation education by organizing only clinician-provided preparation steps, timing, diet, medication, transportation, and escalation instructions without adding or changing clinical directions.
+    - For gastrointestinal symptoms, provide triage boundaries only as general education and source-stated escalation guidance; do not diagnose, rank likely causes, assign urgency beyond the supplied source, or advise delaying or seeking care without clinician-approved criteria.
+    - Ground counseling in supplied guidelines, institutional materials, or clinician-authored instructions, and label any missing guideline support as an unresolved review item.
+    - Exclude diagnosis, treatment selection, medication changes, procedure decisions, surveillance intervals, or decisions to seek or defer care from autonomous LLM output; require qualified clinician review for any such content.
 
 ## Inputs / Outputs
 
@@ -132,3 +141,4 @@ Do not present the output as a diagnosis, treatment plan, substitute for clinica
 
 - PubMed: [Comparing large language models and human experts in interpreting MRI reports for personalized patient education](https://pubmed.ncbi.nlm.nih.gov/41865475/)
 - PubMed: [Artificial Intelligence to Improve Patient-Physician Communication in Surgery](https://pubmed.ncbi.nlm.nih.gov/41948164/)
+- PubMed: [Artificial intelligence in gastroenterology clinical practice: Scoping review of large language model applications](https://pubmed.ncbi.nlm.nih.gov/41921370/)
