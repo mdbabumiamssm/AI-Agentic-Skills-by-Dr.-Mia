@@ -68,9 +68,11 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 13. **Validate against curated data.** Compare outputs with an independently manually curated registry using a locked schema and adjudication guide. Report field-level completeness, exact or clinically meaningful agreement, precision, recall, error categories, abstention rate, and review burden as applicable; stratify by document type and tumor subtype without inventing performance claims.
 
-14. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+14. **Use the bone sarcoma rare-neoplasm example as a validation case.** Validate schema-first LLM extraction for rare-neoplasm real-world data collection with a bone sarcoma scenario that exercises temporal normalization, oncology ontology mapping, provenance capture, adjudication, and registry-readiness checks, aligned to the 2026 PubMed-indexed example without inventing unsupported benchmarks or claims.
 
-15. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
+15. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+
+16. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
 ## Inputs / Outputs
 

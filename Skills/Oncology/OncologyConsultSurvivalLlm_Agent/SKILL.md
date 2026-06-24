@@ -65,6 +65,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 11. **Direct adaptation comparison framework**: Compare zero-shot prompting and task-specific fine-tuning on the same endpoint, eligible cohort, initial-consultation document cutoff, preprocessing, and held-out patients. Enforce the cutoff before text extraction and audit copied-forward or dated content for post-baseline leakage; document class imbalance and use imbalance-aware evaluation rather than accuracy alone. Preserve temporal validation and, when available, external-site validation; compare calibration as well as discrimination, report confidence intervals or other uncertainty estimates, and disclose unstable subgroup results. Prefer prompting when it provides sufficiently calibrated, reproducible performance under these validations with lower data and governance burden; choose task-specific adaptation only when it yields a reliable, clinically meaningful improvement that persists across temporal and external evaluation.
 
+12. **Evidence-informed model selection**: Use the 2026 Phaterpekar et al. fine-tuning versus zero-shot survival prediction study as evidence to require direct comparison of candidate general LLM approaches on initial oncology consultation documents, with post-baseline leakage prevention, held-out patient validation, calibration review, and cautious clinician-reviewed reporting before any research or decision-support use.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -85,4 +87,4 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 ## References
 
-- Phaterpekar T, Zeng Z, Mali Y, Leung B, Ho C. "Investigating fine-tuning versus zero-shot learning for general large language models when predicting cancer survival from initial oncology consultation documents." PubMed: https://pubmed.ncbi.nlm.nih.gov/42004490/
+- Phaterpekar T, Zeng Z, Mali Y, Leung B, Ho C. "Investigating fine-tuning versus zero-shot learning for general large language models when predicting cancer survival from initial oncology consultation documents." ESMO Real World Data Digit Oncol. 2026 Jun. PubMed: https://pubmed.ncbi.nlm.nih.gov/42004490/
