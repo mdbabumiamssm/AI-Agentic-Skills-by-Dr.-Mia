@@ -73,6 +73,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 39. **LLM-vs-Reference ASM DDI Evaluation**: For antiseizure medication DDI checks, compare LLM outputs against Lexicomp or an equivalent reference, use iterative prompting only as an assistive layer, capture severity and evidence discrepancies, and require pharmacist review before making actionable recommendations.
 40. **High-Risk Neurology DDI Safeguard**: For antiseizure and other high-risk neurology medication DDI checks, use authoritative DDI databases such as Lexicomp or Drugs.com as primary sources, treat LLM answers only as secondary explanations, log how each iterative prompt changes the interaction, severity, mechanism, or recommendation, and flag clinically significant or uncertain results for pharmacist review.
 41. **ASM DDI Benchmark Error Classification**: For antiseizure medication DDI benchmarking, compare LLM outputs against Lexicomp or another authoritative reference, document how iterative prompting changes the answer, classify severity errors and omitted reference interactions, and require pharmacist review before any patient-facing use.
+42. **Cautionary LLM DDI Benchmarking Note**: For drug-drug interaction checking, especially antiseizure medications, benchmark LLM outputs and public drug websites against Lexicomp or other curated references, require source-grounded interaction severity, capture prompt-iteration effects, and flag that neither public drug websites nor LLM outputs substitute for pharmacist review.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
@@ -103,6 +104,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 

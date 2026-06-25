@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:50:37.939203+00:00",
+  "generated_at": "2026-06-25T10:40:34.374862+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-24T13:37:37.071369+00:00",
-      "body_length": 8189,
+      "last_modified": "2026-06-25T10:39:34.263400+00:00",
+      "body_length": 8549,
       "capabilities": [
         "Core Capabilities",
         "AgentCore Reference Architecture: Strands Agents on Bedrock",
@@ -2198,7 +2198,7 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-06-24T21:41:26.465363+00:00",
+      "last_modified": "2026-06-24T21:50:39.769989+00:00",
       "body_length": 6158,
       "capabilities": [
         "At-a-Glance",
@@ -13471,7 +13471,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-06-24T21:46:45.732467+00:00",
+      "last_modified": "2026-06-24T21:50:39.769989+00:00",
       "body_length": 7150,
       "capabilities": [
         "Overview",
@@ -13821,8 +13821,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-24T21:47:36.199354+00:00",
-      "body_length": 19220,
+      "last_modified": "2026-06-25T10:35:53.269202+00:00",
+      "body_length": 19650,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17323,8 +17323,8 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-06-15T10:48:01.023964+00:00",
-      "body_length": 6601,
+      "last_modified": "2026-06-25T10:40:18.193240+00:00",
+      "body_length": 6852,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

@@ -73,6 +73,8 @@ Use this skill to install and manage agent capability packages across supported 
 
 14. **Verify and report.** Confirm package discovery, entry-point loading, dependency integrity, target-agent registration, and lockfile consistency. Return a concise report of resolved versions, provenance, changes, warnings, rollback data, and verification results.
 
+15. **Compare AKM package-manager patterns.** Use AKM (Agent Kit Manager) as another agent-kit package manager pattern when evaluating manifests, lockfiles, trust checks, cross-agent portability, install/update/remove behavior, and rollback hygiene.
+
 ## Inputs / Outputs
 
 ### Inputs
