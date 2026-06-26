@@ -75,6 +75,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 16. **Retrieval-and-verification deployment pattern**: For medical decision-making tasks, generate focused test-time queries, vet candidate sources before use, inject only verified evidence into the response context, capture citations for every material claim, check evidence freshness against the clinical decision date, and keep the workflow within no-fine-tune deployment boundaries so acquired knowledge informs inference without changing model parameters.
 
+17. **Decision-triggered knowledge acquisition**: Trigger retrieval when a medical decision support answer depends on current guidelines, drug labels, diagnostic thresholds, safety warnings, patient-specific applicability, or uncertain model knowledge; vet sources for authority, provenance, publication or revision date, applicability, and evidentiary role before injection; format injected evidence as claim, source, date checked, applicability, limitations or contradictions, and citation; cite every material recommendation, contraindication, threshold, drug fact, and risk statement; compare source dates against the clinical decision date; preserve unresolved contradictions instead of forcing consensus; and abstain or escalate when retrieved evidence is weak, unverifiable, outdated, materially conflicting, or insufficient for the requested decision.
+
 ## Inputs / Outputs
 
 **Inputs**

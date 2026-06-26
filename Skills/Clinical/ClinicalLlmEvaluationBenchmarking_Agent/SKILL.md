@@ -176,6 +176,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 44. **Fine-grained specialty-calibrated medical Q&A dataset evaluation**  
    For domain-specific medical Q&A datasets supporting trustworthy medical language models, use an item-level taxonomy; label omissions and potential harms separately; calibrate results by clinical specialty; run adversarial ambiguity and answerability checks; and report benchmark construction, annotation decisions, item-level findings, limitations, and trustworthy-use boundaries.
 
+45. **Domain-specific Q&A benchmark suitability review**  
+   Before using a medical Q&A dataset as a trustworthy language-model benchmark, require documented dataset provenance and source-evidence links; specialty-stratified item coverage; an item-level error taxonomy for factual errors, hallucinated or unsupported content, ambiguity, and answerability; separate hallucination and omission scoring; calibration checks by item type or specialty; and explicit suitability criteria that state when the dataset is reliable enough for benchmark reporting.
+
+46. **AI-generated clinical-note evaluation method benchmark reporting**  
+   For systematic review-informed experimental benchmarks of AI-generated clinical-note quality methods, compare rubric-based ratings, clinician-rated judgments, automated metrics, factuality checks, omission scoring, and harm-risk evaluations as distinct methods; report benchmark fields for note task and type, dataset provenance, comparator systems, evaluation method, evaluator type, rubric or metric definition, factuality, omission, and harm-risk endpoints, reliability or agreement results, and method-comparison findings.
+
 ## Inputs / Outputs
 
 **Inputs**

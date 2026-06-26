@@ -67,6 +67,7 @@ Use this skill to convert radiology reports and other clinical documents into un
 
 7. **MRI-report interpretation validation**
    - Use personalized MRI-report education as a validation scenario by comparing generated explanations against expert interpretations when available, preserving radiology findings, uncertainty, and follow-up recommendations from the report.
+   - For MRI-report patient education, compare generated explanations against human expert interpretations when available; preserve radiology meaning, uncertainty, urgency, and follow-up recommendations; and require clinician-facing safeguards before personalized explanations are used.
    - Evaluate semantic fidelity, reading-level adaptation, uncertainty preservation, personalization to supplied patient context, omissions, overstatements, potential harm, red-flag escalation, and actionable next steps.
    - Document discrepancies and require clinician review before any generated explanation is delivered to a patient.
 
