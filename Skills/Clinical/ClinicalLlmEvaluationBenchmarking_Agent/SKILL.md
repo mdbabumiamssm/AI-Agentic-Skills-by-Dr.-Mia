@@ -182,6 +182,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 46. **AI-generated clinical-note evaluation method benchmark reporting**  
    For systematic review-informed experimental benchmarks of AI-generated clinical-note quality methods, compare rubric-based ratings, clinician-rated judgments, automated metrics, factuality checks, omission scoring, and harm-risk evaluations as distinct methods; report benchmark fields for note task and type, dataset provenance, comparator systems, evaluation method, evaluator type, rubric or metric definition, factuality, omission, and harm-risk endpoints, reliability or agreement results, and method-comparison findings.
 
+47. **Fine-grained domain-specific medical Q&A trustworthiness reporting**  
+   For trustworthy medical LLM benchmarking, label each domain-specific Q&A item with answerability, ambiguity, evidence support, omission, harm, and uncertainty fields; stratify results by medical subdomain; assess uncertainty calibration within those strata; and document dataset construction, provenance, annotation rules, limitations, and trustworthy-use boundaries.
+
+48. **Ophthalmology CME-style evaluation**  
+   For ophthalmology continuing medical education question benchmarks, score correctness, content omission, and risk of harm as separate endpoints; check response consistency with applicable guidelines or reference standards; and report results using specialty-stratified summaries rather than pooled accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**
