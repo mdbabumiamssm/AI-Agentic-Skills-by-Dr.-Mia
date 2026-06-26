@@ -67,6 +67,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 12. **Evidence-informed model selection**: Use the 2026 Phaterpekar et al. fine-tuning versus zero-shot survival prediction study as evidence to require direct comparison of candidate general LLM approaches on initial oncology consultation documents, with post-baseline leakage prevention, held-out patient validation, calibration review, and cautious clinician-reviewed reporting before any research or decision-support use.
 
+13. **Fine-tuning versus zero-shot evaluation module**: Evaluate fine-tuned and zero-shot general LLMs on the same initial-consultation survival prediction task with locked train/test cohort separation, patient-level non-overlap, post-baseline leakage controls, calibration assessment, censoring-aware reporting, and conservative language that limits outputs to research or clinician-reviewed decision support unless locally validated.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -67,6 +67,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 8. **PKFAR knowledge-fusion workflow and evaluation**  
    Apply explicit retrieval and fusion stages: retrieve psychiatry-relevant evidence, attribute each fused claim to its supporting case fact or source, and apply psychiatry-specific reasoning controls before synthesis. Preserve competing differential diagnoses with supporting, opposing, and missing evidence; require medication safeguards for contraindications, interactions, adverse effects, monitoring, and clinician verification; and require structured suicide, self-harm, violence, intoxication, withdrawal, and level-of-care risk checks with urgent escalation when indicated. When evaluating an implementation, use ablation testing to assess the contribution of retrieval, fusion, and reasoning controls, and use clinician-adjudicated review rather than unsupported automated correctness claims.
 
+9. **PKFAR core psychiatry pattern**  
+   Use PKFAR as the core psychiatry knowledge-fused reasoning pattern: retrieve only case-relevant psychiatric knowledge from user-provided records, local policies, guidelines, formularies, medication references, and trusted clinical sources; fuse retrieved knowledge with the supplied case context; triage suicide, self-harm, violence, psychosis, mania, intoxication, withdrawal, self-neglect, and grave-disability risks; check medication decisions against diagnosis, comorbidity, substance use, pregnancy, labs, adverse effects, interactions, adherence, prior response, and monitoring context; state uncertainty, missing data, and competing explanations; and escalate urgent or high-risk findings to clinician-supervised emergency or higher-level-of-care review instead of issuing autonomous decisions.
+
 ## Inputs / Outputs
 
 **Inputs**

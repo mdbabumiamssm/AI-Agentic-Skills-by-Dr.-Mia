@@ -70,6 +70,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 10. **Evidence-aligned dMMR risk prioritization**
     Use multi-region sampling across tumor, non-tumor, and low-magnification tissue; enforce leakage-safe patient-level train, validation, and test splits; compare magnification-level and region ablations; review attention maps and attribution outputs for plausible regional evidence; perform external validation; and frame outputs as dMMR risk prioritization for confirmatory testing rather than a definitive diagnosis.
 
+11. **Leakage-controlled multi-magnification tiling plan**
+    Include tumor, non-tumor, and low-magnification WSI tiles when data permit; keep region and magnification strata explicit through sampling, aggregation, error analysis, and reporting; split cohorts at patient or case level before tiling to prevent leakage; validate tumor-only versus multi-region strategies against reference dMMR/MSI labels; and hand off results as screening evidence that must be reconciled with standard clinical testing.
+
 ## Inputs / Outputs
 
 ### Inputs

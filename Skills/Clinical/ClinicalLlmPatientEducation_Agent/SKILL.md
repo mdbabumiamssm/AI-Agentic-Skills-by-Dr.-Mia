@@ -65,10 +65,10 @@ Use this skill to convert radiology reports and other clinical documents into un
    - When a clinician-authored explanation is available, compare coverage of findings, uncertainty, urgency, next steps, tone, and patient relevance.
    - Treat disagreements as review items rather than assuming either explanation is correct without checking the source document.
 
-7. **MRI-report education benchmarking**
-   - For MRI-report patient education evaluations, compare generated explanations against expert interpretations when available, preserving uncertainty and follow-up recommendations from the report.
-   - Evaluate semantic fidelity, readability, uncertainty preservation, personalization to supplied patient context, omissions, potential harm, and actionable next steps; document discrepancies and require clinician review before patient delivery.
-   - Measure omissions and overstatements as review findings, and require clinician review before any generated explanation is delivered to a patient.
+7. **MRI-report interpretation validation**
+   - Use personalized MRI-report education as a validation scenario by comparing generated explanations against expert interpretations when available, preserving radiology findings, uncertainty, and follow-up recommendations from the report.
+   - Evaluate semantic fidelity, reading-level adaptation, uncertainty preservation, personalization to supplied patient context, omissions, overstatements, potential harm, red-flag escalation, and actionable next steps.
+   - Document discrepancies and require clinician review before any generated explanation is delivered to a patient.
 
 8. **Harmful-simplification detection**
    - Flag omitted critical findings, lost negation, incorrect anatomy or laterality, changed severity, unsupported causal claims, false reassurance, unnecessary alarm, and invented recommendations.

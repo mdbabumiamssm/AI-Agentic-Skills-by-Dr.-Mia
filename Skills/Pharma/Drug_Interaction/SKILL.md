@@ -75,6 +75,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 41. **ASM DDI Benchmark Error Classification**: For antiseizure medication DDI benchmarking, compare LLM outputs against Lexicomp or another authoritative reference, document how iterative prompting changes the answer, classify severity errors and omitted reference interactions, and require pharmacist review before any patient-facing use.
 42. **Cautionary LLM DDI Benchmarking Note**: For drug-drug interaction checking, especially antiseizure medications, benchmark LLM outputs and public drug websites against Lexicomp or other curated references, require source-grounded interaction severity, capture prompt-iteration effects, and flag that neither public drug websites nor LLM outputs substitute for pharmacist review.
 43. **Antiseizure DDI Reference-Benchmark Gate**: When comparing LLM responses and Drugs.com-style outputs for antiseizure medication DDIs, use Lexicomp or another trusted reference as the benchmark, grade severity against that source hierarchy, predefine finite iterative-prompting limits, document unresolved disagreements, and require pharmacist review before clinical use.
+44. **ASM LLM/Drugs.com-to-Lexicomp Comparison Pattern**: Use antiseizure-medication DDI comparisons between LLM-assisted checks, Drugs.com, and Lexicomp as a cautionary evaluation pattern: set Lexicomp or another validated compendium at the top of the source hierarchy, treat Drugs.com and LLM outputs as comparison inputs, predefine and report iterative-prompting limits, reconcile severity discrepancies before conclusions are presented, and require pharmacist or qualified human review for discordant, uncertain, or clinically relevant results.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
@@ -105,6 +106,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 

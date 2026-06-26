@@ -170,7 +170,10 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 42. **AI-generated clinical-note quality benchmark dimensions**  
    For systematic reviews or experimental benchmarks of AI-generated clinical notes, evaluate factual correctness, omissions, hallucinations, clinical risk, style and format compliance, and inter-rater reliability as separate dimensions; use benchmark datasets with human clinician adjudication to compare evaluation methods.
 
-43. **Fine-grained specialty-calibrated medical Q&A dataset evaluation**  
+43. **Clinical-note rubric and safety regression design**  
+   For AI-generated clinical-note evaluation, translate systematic review and experimental benchmark findings into prespecified rubrics that separate factuality checks, clinically material omissions, note-quality dimensions, inter-rater adjudication, and safety risk; use the same checks as regression tests before model, prompt, template, retrieval, or integration changes.
+
+44. **Fine-grained specialty-calibrated medical Q&A dataset evaluation**  
    For domain-specific medical Q&A datasets supporting trustworthy medical language models, use an item-level taxonomy; label omissions and potential harms separately; calibrate results by clinical specialty; run adversarial ambiguity and answerability checks; and report benchmark construction, annotation decisions, item-level findings, limitations, and trustworthy-use boundaries.
 
 ## Inputs / Outputs

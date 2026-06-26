@@ -73,6 +73,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 15. **Inference-time evidence acquisition guardrails**: Retrieve current evidence at inference time for each medical decision; grade and filter candidate sources before injecting them into context; cite the specific evidence spans supporting material claims; label static model knowledge separately from retrieved knowledge; and evaluate whether retrieval improves correctness without adding unsafe authority bias or overconfident deference to retrieved sources.
 
+16. **Retrieval-and-verification deployment pattern**: For medical decision-making tasks, generate focused test-time queries, vet candidate sources before use, inject only verified evidence into the response context, capture citations for every material claim, check evidence freshness against the clinical decision date, and keep the workflow within no-fine-tune deployment boundaries so acquired knowledge informs inference without changing model parameters.
+
 ## Inputs / Outputs
 
 **Inputs**
