@@ -78,10 +78,15 @@ This skill analyzes a list of medications to identify known interactions, focusi
 44. **ASM LLM/Drugs.com-to-Lexicomp Comparison Pattern**: Use antiseizure-medication DDI comparisons between LLM-assisted checks, Drugs.com, and Lexicomp as a cautionary evaluation pattern: set Lexicomp or another validated compendium at the top of the source hierarchy, treat Drugs.com and LLM outputs as comparison inputs, predefine and report iterative-prompting limits, reconcile severity discrepancies before conclusions are presented, and require pharmacist or qualified human review for discordant, uncertain, or clinically relevant results.
 45. **PMID 41994367 ASM DDI Benchmark Lessons**: For antiseizure-medication DDI benchmarking that compares LLMs and Drugs.com with Lexicomp, set Lexicomp or another validated drug-information compendium as the source-of-truth comparator, treat iterative prompting as a prompt-sensitivity pitfall rather than proof of correctness, reconcile severity labels before reporting conclusions, cite the evidence source behind each clinically relevant interaction, and require pharmacist review for discordant, uncertain, or patient-care-relevant findings.
 46. **LLM DDI Validation Workflow Against References**: Validate LLM-generated drug-drug interaction answers against authoritative references such as Lexicomp and Drugs.com, using antiseizure medications as a high-risk example; check severity classification, evidence support, and concordance or discordance across sources before accepting or escalating the answer.
+47. **ASM DDI Safety Benchmark Gate**: For antiseizure medication DDI safety benchmarks, compare LLM-generated assessments and Drugs.com outputs against Lexicomp or another validated comparator, normalize interaction severity labels before reporting agreement, treat iterative prompting as a bounded prompt-sensitivity check rather than proof of correctness, and require pharmacist or qualified clinician review before clinical interpretation.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
 LLM-generated DDI findings are screening drafts, not standalone clinical evidence. For antiseizure medication benchmarks, compare each generated answer and any Drugs.com output against authoritative databases such as Lexicomp; document prompts and finite iteration limits; classify severity explicitly; record unresolved disagreements without resolving them by model consensus; and route outputs to pharmacist review before clinical use.
+
+## Safety Benchmark: LLM vs Lexicomp/Drugs.com ASM DDIs
+
+Use PubMed PMID 41994367 as a cautionary evaluation pattern for antiseizure medication drug-drug interactions, not as a standalone performance guarantee. Apply this source hierarchy before analysis: Lexicomp or another validated DDI compendium as the benchmark comparator, Drugs.com as a secondary comparison source, and LLM output as an unvalidated draft. Normalize severity/category labels across sources before reporting concordance or discordance; predefine and log finite iterative prompts as prompt-sensitivity checks; and block clinical release until a pharmacist or qualified clinician reviews discordant, uncertain, or patient-care-relevant findings.
 
 ## Evaluation and Prompting
 
@@ -108,6 +113,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
