@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T10:37:25.128135+00:00",
+  "generated_at": "2026-06-28T00:31:17.007123+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-27T10:37:15.195305+00:00",
-      "body_length": 10090,
+      "last_modified": "2026-06-28T00:31:04.233398+00:00",
+      "body_length": 10511,
       "capabilities": [
         "Core Capabilities",
         "AgentCore Reference Architecture: Strands Agents on Bedrock",
@@ -13821,8 +13821,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-27T10:35:36.197647+00:00",
-      "body_length": 22790,
+      "last_modified": "2026-06-28T00:29:20.699835+00:00",
+      "body_length": 23237,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
