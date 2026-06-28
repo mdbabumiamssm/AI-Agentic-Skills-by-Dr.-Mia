@@ -42,6 +42,7 @@ allowed-tools:
 - Support human-reviewed AI drafting and summarization for urologic documentation, including consultation, procedure, and follow-up notes, while requiring verification before record entry.
 - For urologic specialty documentation, preserve procedure-specific terminology; distinguish summarization from autonomous documentation; validate omissions and unsupported additions; and require clinician sign-off before record entry.
 - For AI-assisted urologic operative notes, clinic documentation, and patient instructions, require human review for specialty-specific terminology, omitted negatives, billing/coding risk, and medicolegal traceability before record entry or patient release.
+- Apply specialty-documentation safety checks for urologic note drafts, including clinician oversight, source-note traceability, procedure-specific omission review, and separation from billing or medico-legal finalization.
 
 ## Workflow
 1. **Load system prompt:** `prompt.md` enforces no hallucinations + data gap surfacing.
@@ -62,6 +63,12 @@ allowed-tools:
 - **Privacy:** Confirm that PHI handling, storage, transmission, and access follow applicable organizational privacy controls.
 - **Clinician attestation:** Require the responsible clinician to review, edit as needed, and attest the final documentation.
 - **Failure handling:** Withhold the generated note from the record when verification fails, source data are unavailable, or the system errors; route the case to manual documentation and correction.
+
+## Specialty-Documentation Safety
+- Require clinician oversight for urologic documentation drafts before record entry or patient-facing use.
+- Preserve traceability to source notes for diagnoses, procedures, findings, and follow-up plans.
+- Check omissions of procedure-specific details and specialty terminology before clinician review.
+- Keep AI-generated drafts separate from billing or medico-legal finalization until clinician attestation is complete.
 
 ## References
 - For detailed schema, guardrails, and integration snippets see `README.md`, `prompt.md`, and `usage.py`.

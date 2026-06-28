@@ -194,6 +194,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 50. **Trustworthy medical Q&A benchmark construction checks**  
    For domain-specific medical Q&A datasets, construct benchmarks with documented item selection, domain coverage checks, item-level taxonomy labels, and separate omission and hallucination annotations; report annotation practices, dataset limits, and trustworthy-use boundaries alongside model performance.
 
+51. **Stratified domain-specific medical Q&A reporting**  
+   For domain-specific medical Q&A evaluation, stratify results by specialty, question type, evidence source, omission risk, calibration, and harm class; compare model performance within those strata and treat aggregate accuracy as a secondary summary rather than the sole trustworthiness claim.
+
+52. **Ophthalmology CME omission-harm separation**  
+   For ophthalmology CME-style benchmarks, require scoring schemes that distinguish harmless incompleteness from omissions or recommendations that create clinical risk; report correctness, content omission, and risk of harm as separate dimensions.
+
 ## Inputs / Outputs
 
 **Inputs**

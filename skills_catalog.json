@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T13:36:06.990109+00:00",
+  "generated_at": "2026-06-28T22:31:43.262132+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-28T13:35:07.668153+00:00",
-      "body_length": 11310,
+      "last_modified": "2026-06-28T22:31:32.517968+00:00",
+      "body_length": 11689,
       "capabilities": [
         "Core Capabilities",
         "AgentCore Reference Architecture: Strands Agents on Bedrock",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-28T13:12:53.085195+00:00",
-      "body_length": 22935,
+      "last_modified": "2026-06-28T22:29:45.928566+00:00",
+      "body_length": 23593,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-28T13:12:53.085195+00:00",
-      "body_length": 11835,
+      "last_modified": "2026-06-28T22:30:34.152291+00:00",
+      "body_length": 12144,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -1972,8 +1972,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-06-24T13:37:37.072369+00:00",
-      "body_length": 4688,
+      "last_modified": "2026-06-28T22:25:25.830945+00:00",
+      "body_length": 5369,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -1982,6 +1982,7 @@
         "Workflow",
         "Guardrails",
         "Human Oversight Before Record Entry",
+        "Specialty-Documentation Safety",
         "References"
       ]
     },
@@ -2075,8 +2076,8 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-06-28T13:12:53.085195+00:00",
-      "body_length": 2437,
+      "last_modified": "2026-06-28T22:28:54.817875+00:00",
+      "body_length": 2448,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2198,8 +2199,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-06-28T13:12:53.085195+00:00",
-      "body_length": 7561,
+      "last_modified": "2026-06-28T22:26:11.697468+00:00",
+      "body_length": 8198,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -13821,8 +13822,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-28T13:32:18.536708+00:00",
-      "body_length": 24383,
+      "last_modified": "2026-06-28T22:27:51.536318+00:00",
+      "body_length": 24819,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17324,7 +17325,7 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-06-28T13:35:56.613752+00:00",
+      "last_modified": "2026-06-28T13:36:08.813363+00:00",
       "body_length": 6981,
       "capabilities": [
         "Overview",
