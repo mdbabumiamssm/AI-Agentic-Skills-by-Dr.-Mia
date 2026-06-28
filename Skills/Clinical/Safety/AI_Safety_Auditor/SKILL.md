@@ -62,6 +62,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 15. **Pre-Reasoning Test-Time Knowledge Acquisition Audit**: Requires clinical agents to retrieve current vetted references before medical reasoning, log source provenance, compare pre- and post-retrieval answer changes, and escalate uncertainty when retrieved evidence conflicts.
 16. **Knowledge-Augmented Recommendation Release Gate**: Before allowing test-time knowledge-augmented clinical decision-support recommendations, requires source vetting, retrieval provenance, conflict detection, hallucination checks, and evaluation against no-retrieval baselines.
 17. **Medical Answer Safety Adjudication**: Scores answer correctness, clinically important omissions, and risk of harm through blinded expert review; applies severity weighting, resolves reviewer disagreements through adjudication, and retains representative unsafe-response examples for audit and remediation.
+18. **Ophthalmology CME-Style Answer Safety Audit**: For ophthalmology continuing medical education-style clinical answers, label item-level correctness, clinically important content omissions, likely harm severity, unsafe reassurance, and missing referral or escalation language before accepting an LLM response.
 
 ## Workflow
 

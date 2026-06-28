@@ -188,6 +188,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 48. **Ophthalmology CME-style evaluation**  
    For ophthalmology continuing medical education question benchmarks, score correctness, content omission, and risk of harm as separate endpoints; check response consistency with applicable guidelines or reference standards; and report results using specialty-stratified summaries rather than pooled accuracy alone.
 
+49. **ICU nursing scenario question-answering slice**  
+   Compare frontier and open models on clinician-authored intensive-care nursing scenarios under matched conditions; report clinically important omissions and unsafe recommendations separately from accuracy; and require human clinical review before any deployment decision.
+
+50. **Trustworthy medical Q&A benchmark construction checks**  
+   For domain-specific medical Q&A datasets, construct benchmarks with documented item selection, domain coverage checks, item-level taxonomy labels, and separate omission and hallucination annotations; report annotation practices, dataset limits, and trustworthy-use boundaries alongside model performance.
+
 ## Inputs / Outputs
 
 **Inputs**
