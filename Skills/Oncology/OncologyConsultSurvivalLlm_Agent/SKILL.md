@@ -69,6 +69,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 13. **Fine-tuning versus zero-shot evaluation module**: Evaluate fine-tuned and zero-shot general LLMs on the same initial-consultation survival prediction task with locked train/test cohort separation, patient-level non-overlap, post-baseline leakage controls, calibration assessment, censoring-aware reporting, and conservative language that limits outputs to research or clinician-reviewed decision support unless locally validated.
 
+14. **Initial-consultation comparison safeguards**: When comparing fine-tuning versus zero-shot survival prediction from initial oncology consultation documents, use the same baseline document cutoff and endpoint definition for both approaches; prevent leakage from future notes, outcomes, treatments, or copied-forward post-baseline content; split cohorts by patient and, when feasible, by time and site; include calibration review and censoring-aware reporting; and state that any clinical use requires clinician review and local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

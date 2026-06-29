@@ -57,6 +57,7 @@ This skill produces explainable oncology clinical trial candidate matches by com
 14. **Prospective evidence scenario:** Treat the prospective 3,804-patient oncology trial-matching evaluation as an evidence scenario for neuro-symbolic eligibility reasoning, oncology knowledge-graph grounding, multi-agent role separation, conflict resolution, and clinician-auditable evidence outputs without inventing unreported performance values.
 15. **Prospective 3,804-patient workflow:** Apply the reported workflow pattern by retrieving candidate trials through an oncology-specific knowledge graph, parsing eligibility with neuro-symbolic rules, resolving multi-agent conflicts explicitly, attaching criterion-level evidence, ranking patient-trial candidates for clinician review, and preserving clinician-auditable review loops.
 16. **Validation anchor:** Use the published prospective 3,804-patient evaluation as a validation anchor for neuro-symbolic multi-agent oncology trial matching, documenting knowledge-graph-backed eligibility parsing, symbolic rule execution, conflict-resolution outcomes, patient-level audit trails, and prospective workflow reporting without adding unsupported benchmark claims.
+17. **Prospective cohort reporting pattern:** In prospective matching runs, pair knowledge-graph-backed criterion parsing with separated specialist-agent roles, explicit conflict disposition, patient-level audit traces, and cohort-scale performance reporting limited to locally measured, source-supported evidence.
 
 ## Inputs / Outputs
 
