@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T10:44:41.824475+00:00",
+  "generated_at": "2026-06-29T11:25:16.361502+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,11 +284,11 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-06-29T02:14:40.731926+00:00",
-      "body_length": 12087,
+      "last_modified": "2026-06-29T11:24:57.374722+00:00",
+      "body_length": 12450,
       "capabilities": [
         "Core Capabilities",
-        "AgentCore Reference Architecture: Strands Agents on Bedrock",
+        "Strands Agents + Bedrock AgentCore Reference Architecture",
         "Workflow",
         "Output Requirements",
         "References"
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-06-28T22:31:44.879900+00:00",
-      "body_length": 23593,
+      "last_modified": "2026-06-29T11:21:16.645613+00:00",
+      "body_length": 23958,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-06-28T22:31:44.879900+00:00",
-      "body_length": 12144,
+      "last_modified": "2026-06-29T11:23:43.747673+00:00",
+      "body_length": 12775,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -1972,8 +1972,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-06-28T22:31:44.879900+00:00",
-      "body_length": 5369,
+      "last_modified": "2026-06-29T11:19:30.968609+00:00",
+      "body_length": 5660,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2199,8 +2199,8 @@
       ],
       "file_path": "Skills/Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
       "relative_path": "Clinical/Oncology/Precision_Oncology_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:33:24.156120+00:00",
-      "body_length": 8702,
+      "last_modified": "2026-06-29T11:20:28.822607+00:00",
+      "body_length": 9064,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -13449,7 +13449,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:38:00.128972+00:00",
+      "last_modified": "2026-06-29T10:44:43.770196+00:00",
       "body_length": 8374,
       "capabilities": [
         "Overview",
@@ -13472,7 +13472,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:39:44.479490+00:00",
+      "last_modified": "2026-06-29T10:44:43.771196+00:00",
       "body_length": 8139,
       "capabilities": [
         "Overview",
@@ -13623,7 +13623,7 @@
       ],
       "file_path": "Skills/Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
       "relative_path": "Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:36:11.168234+00:00",
+      "last_modified": "2026-06-29T10:44:43.771196+00:00",
       "body_length": 8522,
       "capabilities": [
         "Overview",
@@ -13822,8 +13822,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-29T10:41:46.942464+00:00",
-      "body_length": 25693,
+      "last_modified": "2026-06-29T11:22:07.742628+00:00",
+      "body_length": 26337,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",

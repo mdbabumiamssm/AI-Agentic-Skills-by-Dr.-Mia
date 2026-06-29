@@ -200,6 +200,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 52. **Ophthalmology CME omission-harm separation**  
    For ophthalmology CME-style benchmarks, require scoring schemes that distinguish harmless incompleteness from omissions or recommendations that create clinical risk; report correctness, content omission, and risk of harm as separate dimensions.
 
+53. **Fine-grained domain-specific medical QA grading pattern**  
+   For domain-specific medical Q&A evaluation, define question taxonomies, assign separate omission and harm labels, grade answers against supporting evidence, check annotator agreement, analyze clinically relevant subgroups, and report calibration rather than relying on aggregate accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**

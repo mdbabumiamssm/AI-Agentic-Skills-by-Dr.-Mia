@@ -46,10 +46,11 @@ allowed-tools:
 - Use the `aws-samples/sample-strands-agent-with-agentcore` AgentCore reference architecture for Strands Agents on Bedrock to plan MCP integration contracts, A2A handoff boundaries, browser automation and voice assistant interfaces, TypeScript deployment units, least-privilege IAM, and the decision point for managed AgentCore versus custom orchestration.
 - Build a production-readiness checklist from the Strands Agents on Bedrock AgentCore reference architecture that covers MCP and A2A trust boundaries, browser and voice tool permissions, workload and user identity separation, observable agent and tool paths, deployment topology and rollback units, and unresolved hardening requirements before release.
 - Prefer managed AWS agent infrastructure with Bedrock AgentCore hosting for Strands Agents when the workload fits the sample's managed runtime, IAM, guardrail, MCP/A2A, browser, voice assistant, and deployment boundaries; prefer self-hosted runtimes only when custom routing, isolation, deployment, or control-plane requirements are explicit and documented.
+- Use the 2026-05-04 TypeScript `aws-samples/sample-strands-agent-with-agentcore` repository as the Strands Agents plus Bedrock AgentCore reference architecture for chatbot deployment: define deployment boundaries, MCP and A2A interfaces, browser and voice tool surfaces, least-privilege IAM, observability, and production guardrails before adapting it.
 
-## AgentCore Reference Architecture: Strands Agents on Bedrock
+## Strands Agents + Bedrock AgentCore Reference Architecture
 
-- Treat the sample as a TypeScript chatbot reference: keep chat or channel entrypoints, Strands agent orchestration, AgentCore hosting/runtime binding, Bedrock access, and tool adapters as explicit boundaries.
+- Treat the sample as a TypeScript chatbot deployment reference: keep chat or channel entrypoints, Strands agent orchestration, AgentCore hosting/runtime binding, Bedrock access, and tool adapters as explicit boundaries.
 - Review MCP tool contracts and A2A handoff paths before adding tools, multi-agent routing, browser automation, or voice assistant channels.
 - For browser automation or voice assistant tools, document the invocation path, permission boundary, and channel-specific failure handling before enabling them in an agent flow.
 - Keep browser automation and voice assistant patterns behind explicit permission, network, and channel-handling boundaries.
