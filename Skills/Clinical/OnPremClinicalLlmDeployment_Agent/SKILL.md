@@ -54,6 +54,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 11. On-prem diagnosis comparison gate: Benchmark locally hosted distilled or open-source candidates against closed/provider models before deployment; document hardware requirements and privacy tradeoffs; include specialty-stratified diagnostic performance checks; and require human oversight plus rollback criteria for on-prem clinical use.
 12. Distilled DeepSeek-R1 diagnosis validation case: Use the 2026 clinical diagnosis comparison as a case for selecting appropriate benchmarks, running privacy-preserving local inference, documenting performance tradeoffs versus hosted frontier models, sizing on-prem hardware, and requiring clinician oversight before any diagnostic use.
 13. Comparative diagnosis evidence gate: Use the 2026 J Med Syst finding on distilled DeepSeek-R1 open-source diagnosis models to require model-selection tradeoff review, privacy and hardware-constraint documentation, diagnosis-performance validation against defined comparators, failure analysis of incorrect or unsafe diagnostic outputs, and explicit governance approval before any clinical use.
+14. Distilled open-source diagnosis deployment checks: For on-prem DeepSeek-R1-distilled or similar open-source diagnosis models, require comparative performance review, hardware and privacy constraint assessment, explicit model-selection rationale, predefined validation thresholds, and human oversight before clinical use.
 
 ## Inputs / Outputs
 

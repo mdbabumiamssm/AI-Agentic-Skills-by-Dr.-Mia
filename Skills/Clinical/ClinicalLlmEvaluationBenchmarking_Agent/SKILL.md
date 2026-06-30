@@ -203,6 +203,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 53. **Fine-grained domain-specific medical QA grading pattern**  
    For domain-specific medical Q&A evaluation, define question taxonomies, assign separate omission and harm labels, grade answers against supporting evidence, check annotator agreement, analyze clinically relevant subgroups, and report calibration rather than relying on aggregate accuracy alone.
 
+54. **Systematic-review-backed clinical-note evaluation comparison**  
+   For AI-generated clinical-note benchmarks, prespecify rubric-based correctness, omission, and harm endpoints; include inter-rater checks; document benchmark dataset provenance and note type; and compare evaluation methods experimentally under matched inputs, outputs, rubrics, evaluator types, and reporting fields.
+
 ## Inputs / Outputs
 
 **Inputs**

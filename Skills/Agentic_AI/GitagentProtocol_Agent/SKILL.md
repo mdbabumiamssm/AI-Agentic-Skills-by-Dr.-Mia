@@ -53,6 +53,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 8. **Framework-agnostic GitAgent specification guidance**: Review repository layout, manifest validation, skill and tool declarations, compatibility checks, versioning, packaging, and migration notes for existing agent repositories.
 9. **Protocol-first agent specification pattern**: Prefer GitAgent Protocol definitions when the agent needs portable repository layout conventions, packaging, and portability checks across runtimes; keep runtime-specific configs for harness-only execution details.
 10. **Current git-native agent specification workflow**: Define a repository layout for portable agent definitions, package reusable skills as git-versioned project assets, run interoperability checks across target harnesses, and migrate from framework-specific agent configs when portability, reviewability, or shared repository execution is required.
+11. **Protocol adoption readiness**: Guide migration from ad hoc agent specs into framework-agnostic, git-native definitions by validating manifests, checking repository packaging, confirming interoperability across target harnesses, and reviewing tool, permission, and dependency declarations for security risks.
 
 ## Inputs / Outputs
 

@@ -77,6 +77,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 17. **Decision-triggered knowledge acquisition**: Trigger retrieval when a medical decision support answer depends on current guidelines, drug labels, diagnostic thresholds, safety warnings, patient-specific applicability, or uncertain model knowledge; vet sources for authority, provenance, publication or revision date, applicability, and evidentiary role before injection; format injected evidence as claim, source, date checked, applicability, limitations or contradictions, and citation; cite every material recommendation, contraindication, threshold, drug fact, and risk statement; compare source dates against the clinical decision date; preserve unresolved contradictions instead of forcing consensus; and abstain or escalate when retrieved evidence is weak, unverifiable, outdated, materially conflicting, or insufficient for the requested decision.
 
+18. **Unsupported-reasoning safeguards**: For clinical decision support, start test-time acquisition whenever recommendations, contraindications, diagnostic thresholds, drug facts, patient-specific applicability, or model uncertainty require current evidence; vet each retrieved source for authority, provenance, freshness, applicability, and direct support before citation injection; include dates checked and applicability limits with injected evidence; and block, qualify, or escalate any conclusion that remains uncited, stale, unverifiable, or only supported by internal model reasoning.
+
 ## Inputs / Outputs
 
 **Inputs**

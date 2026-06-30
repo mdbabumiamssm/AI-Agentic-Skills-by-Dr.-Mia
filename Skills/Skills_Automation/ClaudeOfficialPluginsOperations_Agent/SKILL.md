@@ -45,6 +45,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 5. Migration planning: Map current skills, MCP servers, or plugins to official Claude Code plugin options, identifying overlaps, gaps, compatibility risks, and staged adoption steps.
 6. Operational reporting: Return concise findings that separate evidence, recommendation, residual risk, and next actions so users can make adoption decisions quickly.
 7. Vetted-directory review: Use the official GitHub directory metadata, plugin trust signals, install hygiene checks, compatibility testing, and migration guidance to move from unofficial marketplaces or community catalogs toward official Anthropic-managed Claude Code plugins.
+8. Official directory adoption: Prioritize vetted plugin discovery from `anthropics/claude-plugins-official`; record provenance checks, dependency review, installation hygiene steps, version tracking, and migration notes when replacing community plugin catalogs.
 
 ## Inputs / Outputs
 Inputs:
@@ -62,3 +63,4 @@ Outputs:
 
 ## References
 - Source finding: `anthropics/claude-plugins-official`, official Anthropic-managed directory of high quality Claude Code Plugins: https://github.com/anthropics/claude-plugins-official
+- https://github.com/anthropics/claude-plugins-official
