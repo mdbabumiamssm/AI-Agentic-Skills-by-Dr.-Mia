@@ -46,6 +46,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 6. Operational reporting: Return concise findings that separate evidence, recommendation, residual risk, and next actions so users can make adoption decisions quickly.
 7. Vetted-directory review: Use the official GitHub directory metadata, plugin trust signals, install hygiene checks, compatibility testing, and migration guidance to move from unofficial marketplaces or community catalogs toward official Anthropic-managed Claude Code plugins.
 8. Official directory adoption: Prioritize vetted plugin discovery from `anthropics/claude-plugins-official`; record provenance checks, dependency review, installation hygiene steps, version tracking, and migration notes when replacing community plugin catalogs.
+9. Preferred vetted source workflow: Treat Anthropic's official `claude-plugins-official` GitHub directory as the preferred plugin discovery source, then document trust review, dependency hygiene, installation boundaries, and migration guidance before using unofficial marketplaces.
 
 ## Inputs / Outputs
 Inputs:
