@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T10:44:20.225885+00:00",
+  "generated_at": "2026-07-02T10:45:11.075323+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-01T10:43:25.023069+00:00",
+      "last_modified": "2026-07-01T10:44:21.543936+00:00",
       "body_length": 9635,
       "capabilities": []
     },
@@ -7064,8 +7064,8 @@
       ],
       "file_path": "Skills/Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
       "relative_path": "Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
-      "last_modified": "2026-06-26T02:36:03.754292+00:00",
-      "body_length": 7493,
+      "last_modified": "2026-07-02T10:44:00.753701+00:00",
+      "body_length": 7553,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13449,8 +13449,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:44:43.770196+00:00",
-      "body_length": 8374,
+      "last_modified": "2026-07-02T10:36:58.862684+00:00",
+      "body_length": 8952,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13472,8 +13472,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-06-30T10:44:52.786118+00:00",
-      "body_length": 8545,
+      "last_modified": "2026-07-02T10:38:51.809411+00:00",
+      "body_length": 9006,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13623,8 +13623,8 @@
       ],
       "file_path": "Skills/Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
       "relative_path": "Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
-      "last_modified": "2026-06-29T10:44:43.771196+00:00",
-      "body_length": 8522,
+      "last_modified": "2026-07-02T10:34:30.588061+00:00",
+      "body_length": 8914,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13822,8 +13822,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-06-29T11:25:17.779737+00:00",
-      "body_length": 26337,
+      "last_modified": "2026-07-02T10:40:53.364125+00:00",
+      "body_length": 26864,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17375,7 +17375,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
-      "last_modified": "2026-07-01T10:44:07.383969+00:00",
+      "last_modified": "2026-07-01T10:44:21.543936+00:00",
       "body_length": 4804,
       "capabilities": [
         "Overview",

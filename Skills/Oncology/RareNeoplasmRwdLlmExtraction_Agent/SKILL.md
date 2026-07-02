@@ -70,9 +70,11 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 14. **Use the bone sarcoma rare-neoplasm example as a validation case.** Validate schema-first LLM extraction for rare-neoplasm real-world data collection with a bone sarcoma scenario that exercises sarcoma-specific variable schemas, temporal event extraction from fragmented oncology notes, registry-ready field validation, oncology ontology mapping, evidence provenance capture, adjudication checks, and validation metrics for sparse rare-cancer records, aligned to the 2026 PubMed-indexed example without inventing unsupported benchmarks or claims.
 
-15. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+15. **Use bone sarcoma RWD extraction examples.** For sparse rare-neoplasm records, capture longitudinal outcome variables only when documented, map disease, treatment, and event terms to approved ontologies, normalize partial or relative dates, link each abstraction to source documents and evidence spans, and route ambiguous or conflicting registry-ready variables to human adjudication.
 
-16. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
+16. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+
+17. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
 ## Inputs / Outputs
 
