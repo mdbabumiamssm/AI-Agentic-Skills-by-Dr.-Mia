@@ -73,7 +73,9 @@ Use this skill to install and manage agent capability packages across supported 
 
 14. **Verify and report.** Confirm package discovery, entry-point loading, dependency integrity, target-agent registration, and lockfile consistency. Return a concise report of resolved versions, provenance, changes, warnings, rollback data, and verification results.
 
-15. **Compare AKM package-manager patterns.** Use AKM (Agent Kit Manager) as an example of cross-agent package management for AI agent skills, commands, tools, and knowledge. When adopting or comparing AKM-style workflows, review manifests, pin versions, enforce lockfiles, run trust checks, keep rollback records, and remove packages only through dependency-aware safe removal.
+15. **Compare AKM package-manager patterns.** Use AKM (Agent Kit Manager) as another package-manager example for AI agent skills, commands, tools, and knowledge. Compare AKM with ccpi/craftdesk-style managers by checking manifest-driven installation, declared target-agent compatibility, pinned sources and versions, trust checks, lockfile behavior, rollback support, and dependency-aware safe removal.
+
+16. **Compare Craftdesk package-manager patterns.** Include Craftdesk as a TypeScript package-manager example for Claude Code skills, agents, and related AI resources. In the comparison matrix, review dependency metadata, install/update/remove hygiene, lockfile expectations, trust review for each source, and conflict handling when multiple skill sources target the same skill, agent, command, file, or registration.
 
 ## Inputs / Outputs
 
@@ -100,3 +102,4 @@ Use this skill to install and manage agent capability packages across supported 
 ## References
 
 - [akm - Agent Kit Manager](https://github.com/itlackey/akm)
+- [Craftdesk](https://github.com/mensfeld/craftdesk)

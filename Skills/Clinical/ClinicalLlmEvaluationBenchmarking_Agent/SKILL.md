@@ -206,6 +206,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 54. **Systematic-review-backed clinical-note evaluation comparison**  
    For AI-generated clinical-note benchmarks, prespecify rubric-based correctness, omission, and harm endpoints; include inter-rater checks; document benchmark dataset provenance and note type; and compare evaluation methods experimentally under matched inputs, outputs, rubrics, evaluator types, and reporting fields.
 
+55. **ICU nursing question-answering benchmark scenario**  
+   Treat intensive-care nursing question answering as a specialty benchmark: validate nursing-domain items and reference answers, compare ChatGPT, DeepSeek, and Google Gemini under matched prompts and conditions, score clinically important omissions and potential harm separately from correctness, and avoid extrapolating board-style QA performance to bedside nursing support without clinical workflow validation.
+
 ## Inputs / Outputs
 
 **Inputs**
