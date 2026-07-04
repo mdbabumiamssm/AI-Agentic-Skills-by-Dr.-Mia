@@ -73,6 +73,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 15. **Finding-specific comparison checklist**: For survival prediction from initial oncology consultation documents, compare zero-shot and fine-tuned LLMs only after locking the endpoint definition and prediction time zero, applying identical baseline document cutoffs, preventing post-consultation leakage, evaluating calibration and uncertainty on held-out patients, seeking external validation before generalizing beyond the source setting, and reporting outputs as cautious clinician-reviewed research or decision-support estimates rather than definitive survival predictions.
 
+16. **Study-specific non-deployment guardrails**: When applying the 2026 fine-tuning versus zero-shot oncology consultation survival prediction finding, preprocess clinical documents to remove or flag copied-forward, dated, outcome-revealing, or post-consultation text before comparison; lock the survival endpoint and prediction time zero; review calibration and subgroup performance on held-out patients; and frame results as prognostic research signals requiring local validation rather than deployment-ready clinical predictions.
+
 ## Inputs / Outputs
 
 **Inputs**
