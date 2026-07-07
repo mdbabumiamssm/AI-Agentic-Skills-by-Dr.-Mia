@@ -58,6 +58,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 14. **Safety and scope control**: Flag unsupported claims, outdated evidence, population mismatches, off-label implications, and recommendations requiring human adjudication.
 15. **Audit-ready output**: Produce a concise record of prompts, evidence inputs, LLM-generated drafts, human edits, decisions, and remaining uncertainties.
 16. **Concurrent LLM evaluation checkpoints**: Evaluate each LLM-assisted guideline-development step in real time against traceable evidence and recommendation-grading support; require expert-panel checkpoint review, conflict disposition, and explicit documentation of where LLM output is accepted, revised, or rejected before it enters the guideline record.
+17. **Real-time guideline-development governance pattern**: During clinical practice guideline drafting, require evidence traceability, expert adjudication, recommendation grading, bias checks, and explicit boundaries that limit LLM assistance to support tasks until accountable human reviewers approve inclusion in the guideline record.
 
 ## Inputs / Outputs
 

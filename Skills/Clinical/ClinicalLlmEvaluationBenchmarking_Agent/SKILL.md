@@ -209,6 +209,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 55. **ICU nursing question-answering benchmark scenario**  
    Treat intensive-care nursing question answering as a specialty benchmark: validate nursing-domain items and reference answers, compare ChatGPT, DeepSeek, and Google Gemini under matched prompts and conditions, score clinically important omissions and potential harm separately from correctness, and avoid extrapolating board-style QA performance to bedside nursing support without clinical workflow validation.
 
+56. **Core AI-generated clinical-note quality reference**  
+   Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core evaluation reference; design evaluations that separately cover correctness, omissions, harm risk, factuality, rubric design, inter-rater adjudication, and regression-test datasets.
+
 ## Inputs / Outputs
 
 **Inputs**

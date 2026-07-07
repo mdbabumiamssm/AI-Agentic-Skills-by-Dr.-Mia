@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 693 skills across 46 categories. Last refresh: 2026-07-06T10:44:57.114229+00:00._
+_Auto-generated index. 693 skills across 46 categories. Last refresh: 2026-07-07T10:52:20.980570+00:00._
 
 ### 3D_Genomics (8)
 

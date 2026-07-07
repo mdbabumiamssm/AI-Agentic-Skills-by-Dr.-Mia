@@ -75,6 +75,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 16. **Study-specific non-deployment guardrails**: When applying the 2026 fine-tuning versus zero-shot oncology consultation survival prediction finding, preprocess clinical documents to remove or flag copied-forward, dated, outcome-revealing, or post-consultation text before comparison; lock the survival endpoint and prediction time zero; review calibration and subgroup performance on held-out patients; and frame results as prognostic research signals requiring local validation rather than deployment-ready clinical predictions.
 
+17. **Model-selection and validation pattern**: Treat the 2026 fine-tuning versus zero-shot oncology consultation survival study as a pattern for selecting between general LLM approaches only after using the same initial-consultation baseline, enforcing patient-level separation and leakage controls, applying censoring-aware survival evaluation, checking calibration and clinically relevant subgroups, and reporting results in conservative language that avoids definitive survival claims.
+
 ## Inputs / Outputs
 
 **Inputs**

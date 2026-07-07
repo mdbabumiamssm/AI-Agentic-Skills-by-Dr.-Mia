@@ -79,6 +79,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 18. **Unsupported-reasoning safeguards**: For clinical decision support, start test-time acquisition whenever recommendations, contraindications, diagnostic thresholds, drug facts, patient-specific applicability, or model uncertainty require current evidence; vet each retrieved source for authority, provenance, freshness, applicability, and direct support before citation injection; include dates checked and applicability limits with injected evidence; and block, qualify, or escalate any conclusion that remains uncited, stale, unverifiable, or only supported by internal model reasoning.
 
+19. **Test-time retrieval-and-verification workflow**: Plan retrieval queries from the clinical decision and unresolved knowledge gaps; vet candidate sources for authority, provenance, recency, applicability, and evidentiary role; inject only verified evidence with captured citations and freshness dates into the response context; and guard against ungrounded reasoning by blocking, qualifying, or escalating unsupported conclusions without fine-tuning or parameter updates.
+
 ## Inputs / Outputs
 
 **Inputs**

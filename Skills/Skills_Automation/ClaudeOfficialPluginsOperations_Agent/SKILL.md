@@ -48,6 +48,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 8. Official directory adoption: Prioritize vetted plugin discovery from `anthropics/claude-plugins-official`; record provenance checks, dependency review, installation hygiene steps, version tracking, and migration notes when replacing community plugin catalogs.
 9. Preferred vetted source workflow: Treat Anthropic's official `claude-plugins-official` GitHub directory as the preferred plugin discovery source, then document trust review, dependency hygiene, installation boundaries, and migration guidance before using unofficial marketplaces.
 10. Catalog-governed operations: Vet candidate plugins against the managed catalog, compare any community marketplace alternatives, review install permissions and bundled MCP servers, pin trusted versions where possible, and document fallback paths for deprecated plugins.
+11. Official marketplace migration: Start plugin discovery from the official Anthropic-managed `anthropics/claude-plugins-official` directory, inspect dependencies and plugin manifests before install, pin approved versions or commits, keep installation state clean and reversible, and document migration decisions when replacing community marketplace plugins.
 
 ## Inputs / Outputs
 Inputs:
