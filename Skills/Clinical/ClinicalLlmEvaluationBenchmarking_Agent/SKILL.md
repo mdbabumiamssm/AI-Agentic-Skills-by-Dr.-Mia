@@ -218,6 +218,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 58. **Ophthalmology CME explicit harm taxonomy**
    For ophthalmology-style continuing medical education evaluations, score correctness, content omission, and risk of harm as separate criteria; require specialty expert adjudication; define explicit harm taxonomy labels for unsafe recommendations, delayed-care risk, misleading reassurance, and clinically material omissions; and use aggregate accuracy only as a secondary summary.
 
+59. **Fine-grained Q&A dataset curation before model comparison**
+   Before using domain-specific medical Q&A datasets to compare medical LLMs, run item-level quality checks for answerability, evidence support, ambiguity, omissions, and clinical risk; label ambiguity and clinically material omissions explicitly; define trustworthy-answer rubrics for correctness, completeness, uncertainty, and source support; and curate or exclude unsuitable items before benchmark reporting.
+
 ## Inputs / Outputs
 
 **Inputs**

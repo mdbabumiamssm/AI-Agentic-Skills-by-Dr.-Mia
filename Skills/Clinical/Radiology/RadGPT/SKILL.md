@@ -49,6 +49,7 @@ An LLM-based agent designed to summarize and explain complex radiology reports f
 4.  **MRI Report Patient Education**: Translates MRI reports into personalized plain language while preserving diagnostic meaning, uncertainty, negation, laterality, severity, follow-up recommendations, and red flags; sets and checks an audience-appropriate readability target; checks the explanation against the source report for omissions and hallucinations; compares consequential interpretations with a qualified radiology or clinical expert; and explicitly separates patient education from diagnosis or treatment advice, escalating consequential findings for clinician review before delivery.
 5.  **Closed-System Radiology-Response Evaluation**: Evaluate closed-system radiology responses for correctness, relevance, omissions, unsafe recommendations, uncertainty communication, and agreement with authoritative radiography references.
 6.  **Closed-System LLM Radiography Checklist**: Review AI-generated radiography responses from closed-system LLMs for factual correctness, clinical risk, uncertainty language, scope limits, and comparison against applicable radiography education or reporting standards.
+7.  **Closed-System Radiography Response Safeguards**: Assess locked or text-only LLM radiography answers for factual correctness, omitted safety context, patient-facing language quality, escalation triggers for clinician or radiologist review, and stated limits when used in radiologic education workflows.
 
 ## Workflow
 
