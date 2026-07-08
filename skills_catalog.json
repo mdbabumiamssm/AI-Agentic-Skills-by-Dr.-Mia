@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T03:05:38.364039+00:00",
+  "generated_at": "2026-07-08T10:36:15.631897+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-08T03:04:42.605841+00:00",
-      "body_length": 14448,
+      "last_modified": "2026-07-08T10:36:04.199204+00:00",
+      "body_length": 14909,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -1629,7 +1629,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-08T03:02:52.438258+00:00",
+      "last_modified": "2026-07-08T03:05:39.979565+00:00",
       "body_length": 26014,
       "capabilities": [
         "Overview",
@@ -1950,7 +1950,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-07-08T03:03:45.293962+00:00",
+      "last_modified": "2026-07-08T03:05:39.979565+00:00",
       "body_length": 13420,
       "capabilities": [
         "When to Use This Skill",
@@ -2076,7 +2076,7 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-07-08T03:01:55.315672+00:00",
+      "last_modified": "2026-07-08T03:05:39.979565+00:00",
       "body_length": 2539,
       "capabilities": [
         "When to Use This Skill",
@@ -13822,8 +13822,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-08T03:00:35.638705+00:00",
-      "body_length": 30086,
+      "last_modified": "2026-07-08T10:33:28.142455+00:00",
+      "body_length": 30570,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
