@@ -91,6 +91,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 57. **ASM DDI Lexicomp/Drugs.com Source-of-Truth Benchmark Gate**: For antiseizure medication DDI benchmarking informed by PMID 41994367, compare LLM-assisted outputs and Drugs.com findings against Lexicomp or another validated source-of-truth comparator; normalize severity/category labels, including contraindicated or avoid-combination flags, before judging concordance; document bounded iterative prompting as a sensitivity caveat rather than evidence of correctness; and require pharmacist or qualified clinician review before any LLM-assisted DDI output is used clinically.
 58. **PMID 41994367 ASM Contraindication Review Gate**: When comparing LLM responses and Drugs.com findings against Lexicomp for antiseizure-medication DDIs, apply an explicit evidence hierarchy before conclusions, preserve contraindicated or avoid-combination severity labels during normalization, treat iterative prompting as an answer-drift risk rather than validation, and require pharmacist review before releasing discordant, uncertain, or patient-care-relevant results.
 59. **ASM DDI Benchmark Extraction and Hallucination Gate**: For antiseizure medication DDI benchmarking informed by PMID 41994367, compare LLM outputs and Drugs.com findings against Lexicomp under a predefined source hierarchy; set finite iterative prompting limits before testing; extract contraindication flags and severity/category labels explicitly; flag unsupported interaction, mechanism, severity, or recommendation claims as possible hallucinations; and require pharmacist or qualified clinician review for high-risk, discordant, uncertain, or patient-care-relevant interactions.
+60. **Antiseizure Medication DDI Benchmarking Against Lexicomp**: For antiseizure-medication DDI benchmarking, compare LLM answers against authoritative references such as Lexicomp, capture how iterative prompting changes interaction findings or severity/category labels, flag hallucinated or unsupported interaction severity, and require pharmacist review before clinical use.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
@@ -99,6 +100,10 @@ LLM-generated DDI findings are screening drafts, not standalone clinical evidenc
 ## Safety Benchmark: LLM vs Lexicomp/Drugs.com ASM DDIs
 
 Use PubMed PMID 41994367 as a cautionary evaluation pattern for antiseizure medication drug-drug interactions, not as a standalone performance guarantee. Apply this source hierarchy before analysis: Lexicomp or another validated DDI compendium as the benchmark comparator, Drugs.com as a secondary comparison source, and LLM output as an unvalidated draft. Normalize severity/category labels across sources before reporting concordance or discordance; predefine and log finite iterative prompts as prompt-sensitivity checks; and block clinical release until a pharmacist or qualified clinician reviews discordant, uncertain, or patient-care-relevant findings.
+
+## Antiseizure-Medication DDI Benchmarking
+
+Use the 2026 cross-sectional ASM DDI comparison as a prompt-sensitivity and reference-alignment check. Compare LLM answers against authoritative references such as Lexicomp, include Drugs.com only as a comparison surface when available, record prompt-iteration effects on interaction detection and severity/category labeling, flag hallucinated or unsupported severity claims, and require pharmacist review before clinical use.
 
 ## Evaluation and Prompting
 
@@ -125,6 +130,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/

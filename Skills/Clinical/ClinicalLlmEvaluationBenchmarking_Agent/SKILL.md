@@ -212,6 +212,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 56. **Core AI-generated clinical-note quality reference**  
    Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core evaluation reference; design evaluations that separately cover correctness, omissions, harm risk, factuality, rubric design, inter-rater adjudication, and regression-test datasets.
 
+57. **Fine-grained specialty and reasoning-type Q&A adjudication**  
+   For domain-specific medical Q&A dataset benchmarking, stratify questions by specialty and reasoning type; score answer correctness separately from omissions and unsafe overreach; track dataset provenance throughout construction and reporting; and use reviewer adjudication to support trustworthy medical model comparisons.
+
+58. **Ophthalmology CME explicit harm taxonomy**
+   For ophthalmology-style continuing medical education evaluations, score correctness, content omission, and risk of harm as separate criteria; require specialty expert adjudication; define explicit harm taxonomy labels for unsafe recommendations, delayed-care risk, misleading reassurance, and clinically material omissions; and use aggregate accuracy only as a secondary summary.
+
 ## Inputs / Outputs
 
 **Inputs**
