@@ -70,6 +70,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 9. **PKFAR core psychiatry pattern**  
    Use PKFAR as the core psychiatry knowledge-fused reasoning pattern: retrieve only case-relevant psychiatric knowledge from user-provided records, local policies, guidelines, formularies, medication references, and trusted clinical sources; fuse retrieved knowledge with the supplied case context; triage suicide, self-harm, violence, psychosis, mania, intoxication, withdrawal, self-neglect, and grave-disability risks; check medication decisions against diagnosis, comorbidity, substance use, pregnancy, labs, adverse effects, interactions, adherence, prior response, and monitoring context; state uncertainty, missing data, and competing explanations; and escalate urgent or high-risk findings to clinician-supervised emergency or higher-level-of-care review instead of issuing autonomous decisions.
 
+10. **PKFAR motivating architecture**  
+   Use PKFAR as the motivating architecture for psychiatry support: combine knowledge-fused retrieval with reasoning augmentation, run diagnostic and medication safety checks, enforce risk assessment constraints, and document which statements come from case evidence or retrieved sources versus model inference.
+
 ## Inputs / Outputs
 
 **Inputs**

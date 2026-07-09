@@ -81,6 +81,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 19. **Test-time retrieval-and-verification workflow**: Plan retrieval queries from the clinical decision and unresolved knowledge gaps; vet candidate sources for authority, provenance, recency, applicability, and evidentiary role; inject only verified evidence with captured citations and freshness dates into the response context; and guard against ungrounded reasoning by blocking, qualifying, or escalating unsupported conclusions without fine-tuning or parameter updates.
 
+20. **Clinical decision knowledge-acquisition loop**: For each medical decision, generate focused test-time queries, vet candidate sources for clinical authority, provenance, recency, and patient applicability, inject only verified evidence with citations and date-checked notes into the model context, capture source URLs for material claims, label uncertainty or missing evidence explicitly, and keep deployment within no-fine-tune boundaries so acquired knowledge informs inference without modifying model parameters.
+
 ## Inputs / Outputs
 
 **Inputs**
