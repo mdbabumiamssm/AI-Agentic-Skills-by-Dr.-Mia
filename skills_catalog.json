@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:38:34.740016+00:00",
+  "generated_at": "2026-07-10T10:57:03.038133+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 693,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-10T10:38:20.843988+00:00",
-      "body_length": 15808,
+      "last_modified": "2026-07-10T10:54:07.742563+00:00",
+      "body_length": 16230,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -797,8 +797,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-07T10:52:22.614810+00:00",
-      "body_length": 10510,
+      "last_modified": "2026-07-10T10:56:01.099236+00:00",
+      "body_length": 11155,
       "capabilities": []
     },
     {
@@ -13822,8 +13822,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-10T10:34:34.231375+00:00",
-      "body_length": 32102,
+      "last_modified": "2026-07-10T10:50:28.810253+00:00",
+      "body_length": 32645,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17326,8 +17326,8 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-07-03T10:41:27.538656+00:00",
-      "body_length": 7477,
+      "last_modified": "2026-07-10T10:56:53.937089+00:00",
+      "body_length": 7479,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -17351,8 +17351,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeCodeSkillMarketplaceOps_Agent/SKILL.md",
-      "last_modified": "2026-07-06T10:44:58.539509+00:00",
-      "body_length": 11846,
+      "last_modified": "2026-07-10T10:55:11.536377+00:00",
+      "body_length": 12388,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

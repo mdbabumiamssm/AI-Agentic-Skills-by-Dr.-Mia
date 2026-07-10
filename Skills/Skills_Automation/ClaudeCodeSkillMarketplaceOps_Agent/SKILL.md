@@ -50,6 +50,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 2. **ccpi/tonsofskills large-catalog operations**
    Review ccpi-managed tonsofskills marketplace catalogs, including the reported 425 plugins, 2,810 skills, and 200 agents, using discovery heuristics, trust scoring, dependency and prompt-injection review, conflict detection, install hygiene, and rollback planning before adoption.
 
+- **ccpi/tonsofskills scale and adoption checks**
+  Treat `jeremylongshore/claude-code-plugins-plus-skills`, tonsofskills.com, and the ccpi CLI as a large third-party marketplace source with reported scale signals of 425 plugins, 2,810 skills, 200 agents, and 2,095 GitHub stars. Use those signals for discovery prioritization only; still perform trust review, dependency inspection, namespace conflict handling, version or commit pinning when supported, staged install validation, rollback planning, and update-diff review before adoption.
+
 - **ccpi marketplace adoption gate**
   For ccpi/tonsofskills candidates, score trust before installation, review direct and transitive dependencies, check skill/plugin/command/MCP namespace conflicts, pin versions or commits when supported, install into a staging profile with clear uninstall notes, and fork rather than install directly when local hardening, dependency pinning, namespace edits, or policy-specific restrictions are required.
 
