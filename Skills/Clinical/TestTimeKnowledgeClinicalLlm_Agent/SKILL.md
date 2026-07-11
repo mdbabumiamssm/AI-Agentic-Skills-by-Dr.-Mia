@@ -83,6 +83,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 20. **Clinical decision knowledge-acquisition loop**: For each medical decision, generate focused test-time queries, vet candidate sources for clinical authority, provenance, recency, and patient applicability, inject only verified evidence with citations and date-checked notes into the model context, capture source URLs for material claims, label uncertainty or missing evidence explicitly, and keep deployment within no-fine-tune boundaries so acquired knowledge informs inference without modifying model parameters.
 
+21. **Inference-time evidence delta check**: Retrieve current evidence during medical decision support inference, vet sources before use, inject only concise decision-relevant context, cite each material clinical claim, compare the answer with and without acquired knowledge to measure what changed, and block or escalate recommendations that remain unverified, stale, unsupported, or unsafe.
+
 ## Inputs / Outputs
 
 **Inputs**

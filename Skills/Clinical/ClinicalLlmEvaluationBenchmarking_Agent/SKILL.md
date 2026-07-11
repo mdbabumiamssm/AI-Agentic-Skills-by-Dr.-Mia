@@ -224,6 +224,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 60. **Clinical-note rubric strengthening from method benchmarks**
    For AI-generated clinical note evaluation, build rubrics and benchmark datasets that explicitly separate correctness, omissions, harmfulness, factual consistency, note completeness, inter-rater reliability, and dataset construction details so quality methods can be compared experimentally.
 
+61. **Fine-grained trustworthy medical Q&A dataset governance**
+   For domain-specific medical Q&A benchmarks, specify item-level error taxonomies, separate omission and harm scoring, calibration checks, specialty-stratified reporting, and dataset governance fields for provenance, annotation rules, limitations, and trustworthy-use boundaries.
+
+62. **Systematic-review-backed clinical-note rubric comparison**
+   For AI-generated clinical-note benchmarks, construct datasets with documented note type and provenance; evaluate correctness, factuality, omissions, note completeness, and risk of harm as separate endpoints; report inter-rater agreement; and experimentally compare evaluation rubrics under matched benchmark inputs and outputs.
+
 ## Inputs / Outputs
 
 **Inputs**

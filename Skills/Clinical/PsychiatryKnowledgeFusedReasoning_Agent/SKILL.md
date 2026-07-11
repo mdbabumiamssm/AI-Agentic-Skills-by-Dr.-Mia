@@ -73,6 +73,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 10. **PKFAR motivating architecture**  
    Use PKFAR as the motivating architecture for psychiatry support: combine knowledge-fused retrieval with reasoning augmentation, run diagnostic and medication safety checks, enforce risk assessment constraints, and document which statements come from case evidence or retrieved sources versus model inference.
 
+11. **PKFAR citation and escalation guardrails**  
+   Use structured psychiatric knowledge retrieval before synthesis; cite the supplied case fact, retrieved psychiatric source, or model-inference status for diagnostic, medication, and risk-relevant conclusions; avoid final diagnosis, prescribing, dosing, or disposition decisions; and escalate urgent, high-risk, or clinically uncertain findings to a licensed clinician or emergency care pathway.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -93,4 +96,4 @@ The skill is intended for clinician-facing support, chart review, education, and
 
 ## References
 
-- Wang R, Yu C, Dong Q, Qiu J, Wen T. **PKFAR: psychiatry knowledge-fused augmented reasoning with large language models.** PubMed: https://pubmed.ncbi.nlm.nih.gov/41982804/
+- Wang R, Yu C, Dong Q, Qiu J, Wen T. **PKFAR: psychiatry knowledge-fused augmented reasoning with large language models.** Health Inf Sci Syst, 2026 Dec. PubMed PMID: 41982804. https://pubmed.ncbi.nlm.nih.gov/41982804/

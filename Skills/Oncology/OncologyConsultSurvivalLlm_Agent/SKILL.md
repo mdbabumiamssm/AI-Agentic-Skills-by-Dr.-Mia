@@ -77,6 +77,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 17. **Model-selection and validation pattern**: Treat the 2026 fine-tuning versus zero-shot oncology consultation survival study as a pattern for selecting between general LLM approaches only after using the same initial-consultation baseline, enforcing patient-level separation and leakage controls, applying censoring-aware survival evaluation, checking calibration and clinically relevant subgroups, and reporting results in conservative language that avoids definitive survival claims.
 
+18. **PubMed 42004490 comparison update**: For initial oncology consultation-note survival prediction, treat fine-tuning versus zero-shot general LLM use as a head-to-head evaluation question rather than assuming one approach is superior. Lock the survival endpoint and prediction time zero before modeling, prevent future-outcome leakage, assess calibration on held-out patients, and limit outputs to cautious clinician-reviewed research or decision-support estimates.
+
 ## Inputs / Outputs
 
 **Inputs**
