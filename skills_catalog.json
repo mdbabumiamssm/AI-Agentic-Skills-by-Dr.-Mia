@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T14:37:18.598324+00:00",
+  "generated_at": "2026-07-13T10:44:52.620456+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 695,
   "total_errors": 21,
@@ -797,8 +797,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-10T10:57:04.575060+00:00",
-      "body_length": 11155,
+      "last_modified": "2026-07-13T10:42:39.983838+00:00",
+      "body_length": 11738,
       "capabilities": []
     },
     {
@@ -955,8 +955,8 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-07-06T10:44:58.539509+00:00",
-      "body_length": 6063,
+      "last_modified": "2026-07-13T10:43:23.706700+00:00",
+      "body_length": 6386,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1999,7 +1999,7 @@
       ],
       "file_path": "Skills/Clinical/DermatologyMultimodalLlmBccAnalysis_Agent/SKILL.md",
       "relative_path": "Clinical/DermatologyMultimodalLlmBccAnalysis_Agent/SKILL.md",
-      "last_modified": "2026-07-12T14:36:36.926463+00:00",
+      "last_modified": "2026-07-12T14:37:20.037407+00:00",
       "body_length": 4187,
       "capabilities": [
         "Overview",
@@ -13229,7 +13229,7 @@
       ],
       "file_path": "Skills/Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
       "relative_path": "Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
-      "last_modified": "2026-07-12T14:26:30.523243+00:00",
+      "last_modified": "2026-07-12T14:37:20.037407+00:00",
       "body_length": 5204,
       "capabilities": [
         "Overview",
@@ -13868,7 +13868,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-12T14:32:42.247769+00:00",
+      "last_modified": "2026-07-12T14:37:20.037407+00:00",
       "body_length": 34747,
       "capabilities": [
         "When to Use This Skill",
