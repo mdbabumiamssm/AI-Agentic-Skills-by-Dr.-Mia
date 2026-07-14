@@ -79,6 +79,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 18. **PubMed 42004490 comparison update**: For initial oncology consultation-note survival prediction, treat fine-tuning versus zero-shot general LLM use as a head-to-head evaluation question rather than assuming one approach is superior. Lock the survival endpoint and prediction time zero before modeling, prevent future-outcome leakage, assess calibration on held-out patients, and limit outputs to cautious clinician-reviewed research or decision-support estimates.
 
+19. **Fine-tuning versus zero-shot survival guidance**: When using general LLMs to predict cancer survival from initial oncology consultation notes, require parallel zero-shot and fine-tuned evaluation on the same endpoint and patient-level cohorts; perform leakage checks for post-consultation outcomes, treatments, copied-forward content, and dated future evidence; stratify cohorts by clinically relevant factors such as cancer type, stage, and treatment intent when available; assess calibration and report uncertainty rather than point estimates alone; and state that outputs are not standalone clinical predictions without clinician review and local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

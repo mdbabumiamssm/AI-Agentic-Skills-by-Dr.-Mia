@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T10:44:52.620456+00:00",
+  "generated_at": "2026-07-14T10:45:47.860971+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 695,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-12T10:43:29.999363+00:00",
-      "body_length": 17097,
+      "last_modified": "2026-07-14T10:44:52.355578+00:00",
+      "body_length": 17569,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -797,8 +797,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-13T10:42:39.983838+00:00",
-      "body_length": 11738,
+      "last_modified": "2026-07-14T10:45:37.759447+00:00",
+      "body_length": 12243,
       "capabilities": []
     },
     {
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-07-13T10:43:23.706700+00:00",
+      "last_modified": "2026-07-13T10:44:54.302424+00:00",
       "body_length": 6386,
       "capabilities": [
         "Overview",
@@ -1606,8 +1606,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.962497+00:00",
-      "body_length": 8554,
+      "last_modified": "2026-07-14T10:35:29.794563+00:00",
+      "body_length": 8860,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.962497+00:00",
-      "body_length": 27598,
+      "last_modified": "2026-07-14T10:39:18.610655+00:00",
+      "body_length": 27987,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-07-09T10:43:53.897187+00:00",
-      "body_length": 14216,
+      "last_modified": "2026-07-14T10:42:34.777995+00:00",
+      "body_length": 14619,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2179,8 +2179,8 @@
       ],
       "file_path": "Skills/Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
       "relative_path": "Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.962497+00:00",
-      "body_length": 7820,
+      "last_modified": "2026-07-14T10:34:41.713780+00:00",
+      "body_length": 8470,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2383,8 +2383,8 @@
       ],
       "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
       "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.963497+00:00",
-      "body_length": 12342,
+      "last_modified": "2026-07-14T10:40:10.572471+00:00",
+      "body_length": 12973,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13495,8 +13495,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.963497+00:00",
-      "body_length": 10449,
+      "last_modified": "2026-07-14T10:37:14.611125+00:00",
+      "body_length": 11118,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13518,8 +13518,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-07-11T10:41:54.963497+00:00",
-      "body_length": 10126,
+      "last_modified": "2026-07-14T10:38:19.812872+00:00",
+      "body_length": 10529,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13669,8 +13669,8 @@
       ],
       "file_path": "Skills/Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
       "relative_path": "Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
-      "last_modified": "2026-07-07T10:52:22.615810+00:00",
-      "body_length": 9021,
+      "last_modified": "2026-07-14T10:36:23.637333+00:00",
+      "body_length": 9354,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

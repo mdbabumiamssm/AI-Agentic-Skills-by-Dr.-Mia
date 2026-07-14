@@ -59,6 +59,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 16. Privacy-preserving local diagnosis evaluation case: Use the 2026 distilled DeepSeek-R1 on-prem clinical deployment comparison to assess hardware-performance tradeoffs, model-selection cautions, governance checkpoints, and required human oversight before relying on local diagnosis-support outputs.
 17. Comparative distilled DeepSeek-R1 validation case: Use the 2026 PubMed-indexed comparative study of open-source distilled DeepSeek-R1 medical diagnosis models as a validation case, not proof of production readiness; document hardware and privacy tradeoffs, benchmark design and comparator selection, local model governance, diagnosis safety gates for incorrect or unsafe outputs, and explicit clinician oversight before production use.
 18. Distilled open-source diagnosis benchmark gate: For on-prem DeepSeek-R1-distilled or other open-source diagnosis models, design comparator benchmarks before selection, record diagnostic performance caveats, weigh privacy benefits against local hardware limits, validate the exact local model and serving configuration, and require human oversight gates before clinical use.
+19. Comparative on-prem diagnosis deployment guidance: For distilled DeepSeek-R1 or similar open-source diagnosis models, require documented model-selection rationale, privacy-versus-hardware tradeoff review, evaluation against predefined clinical diagnosis benchmarks or comparators, hallucination and unsafe-output controls with failure review, and explicit human oversight gates before any diagnosis-support release.
 
 ## Inputs / Outputs
 
@@ -81,3 +82,4 @@ Outputs:
 ## References
 
 - Source finding: https://pubmed.ncbi.nlm.nih.gov/42062641/
+- PubMed 42062641, "Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance.": https://pubmed.ncbi.nlm.nih.gov/42062641/

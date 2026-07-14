@@ -230,6 +230,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 62. **Systematic-review-backed clinical-note rubric comparison**
    For AI-generated clinical-note benchmarks, construct datasets with documented note type and provenance; evaluate correctness, factuality, omissions, note completeness, and risk of harm as separate endpoints; report inter-rater agreement; and experimentally compare evaluation rubrics under matched benchmark inputs and outputs.
 
+63. **Clinical-note evaluation method evidence source**
+   Use the 2026 systematic review and experimental benchmark of AI-generated clinical note evaluation methods as a core evidence source; evaluate correctness, completeness, omission detection, and harm scoring separately; include inter-rater comparison; and document the limits of automated evaluation relative to human evaluation.
+
 ## Inputs / Outputs
 
 **Inputs**
