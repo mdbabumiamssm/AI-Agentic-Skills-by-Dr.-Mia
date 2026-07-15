@@ -87,6 +87,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 22. **Medical decision-support acquisition pattern**: Formulate focused test-time queries from the clinical decision, patient context, and unresolved knowledge gaps; vet sources for authority, provenance, recency, applicability, and direct support before use; inject only concise verified evidence, limitations, contradiction notes, and citation URLs into the model context; require citations for material recommendations, contraindications, thresholds, drug facts, and risk statements; preserve or escalate unresolved contradictions; and deploy acquired knowledge only at inference time without fine-tuning or parameter updates.
 
+23. **Moving-boundary clinical knowledge acquisition**: For decision support where guidelines, labels, safety notices, or practice standards may have changed, retrieve current evidence at test time; vet source authority and provenance before use; inject only concise decision-relevant context with citation URLs and date-checked notes; surface conflicts without forcing consensus; and prefer retrieval-time context updates over fine-tuning when the knowledge boundary is moving.
+
 ## Inputs / Outputs
 
 **Inputs**

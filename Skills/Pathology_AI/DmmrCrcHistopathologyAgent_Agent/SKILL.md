@@ -76,6 +76,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 12. **Non-tumor low-magnification validation pattern**
     Use the reported colorectal cancer dMMR histopathology finding as a validation pattern: deliberately sample non-tumor and low-magnification WSI regions alongside tumor regions, require region-level attribution or ablation to show how regions influence slide-level risk, document slide sampling and aggregation logic, route positive or uncertain outputs to clinical confirmatory testing, and flag deployment caveats such as site-specific staining, scanner, preprocessing, and shortcut-learning risks.
 
+13. **Biomarker model interpretation beyond tumor-only tiles**
+    Interpret dMMR biomarker models with explicit attention to non-tumor and low-magnification WSI regions reported by the 2026 colorectal cancer histopathology finding; avoid assuming tumor-only tiles are the sole valid evidence source; document region-selection rationale, attribution or ablation support, and validation handoff for confirmatory clinical testing.
+
 ## Inputs / Outputs
 
 ### Inputs

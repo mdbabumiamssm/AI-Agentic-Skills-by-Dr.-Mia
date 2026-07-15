@@ -72,11 +72,13 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 15. **Use the bone sarcoma RWD extraction template.** For sparse rare-neoplasm records, define registry-ready variable schemas for diagnosis, pathology, staging, treatment, response, recurrence, outcome events, and missingness; normalize absolute, partial, and relative dates; map disease, treatment, site, and event terms to approved ontologies; capture provenance with source documents and evidence spans; route ambiguous or conflicting variables to adjudication queues; and validate outputs against manually curated records.
 
-16. **Apply the bone sarcoma sparse-record validation pattern.** Use the bone sarcoma rare-neoplasm RWD example to validate schema-first abstraction, temporal normalization, ontology mapping, provenance capture, clinician adjudication, and error analysis for sparse oncology records without adding unsupported benchmarks or claims.
+16. **Apply the PubMed 42021926 bone sarcoma RWD extraction pattern.** Treat the 2026 bone sarcoma rare-neoplasm paper as a concrete pattern for schema-first variable capture, temporal normalization, provenance-linked evidence extraction, ontology mapping, validation against manual abstraction, and registry-readiness checks without adding unsupported performance claims.
 
-17. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+17. **Apply the bone sarcoma sparse-record validation pattern.** Use the bone sarcoma rare-neoplasm RWD example to validate schema-first abstraction, temporal normalization, ontology mapping, provenance capture, clinician adjudication, and error analysis for sparse oncology records without adding unsupported benchmarks or claims.
 
-18. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
+18. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+
+19. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
 ## Inputs / Outputs
 

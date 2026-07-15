@@ -233,6 +233,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 63. **Clinical-note evaluation method evidence source**
    Use the 2026 systematic review and experimental benchmark of AI-generated clinical note evaluation methods as a core evidence source; evaluate correctness, completeness, omission detection, and harm scoring separately; include inter-rater comparison; and document the limits of automated evaluation relative to human evaluation.
 
+64. **Clinical-note quality rubric expansion**
+   Expand AI-generated clinical-note evaluation rubrics into separate scoring fields for correctness, clinically material omissions, hallucinations or unsupported content, patient-safety risk, note structure and format compliance, inter-rater reliability, and benchmark design; compare evaluation methods experimentally with fixed inputs, outputs, evaluator types, rubric definitions, and reporting fields.
+
 ## Inputs / Outputs
 
 **Inputs**
