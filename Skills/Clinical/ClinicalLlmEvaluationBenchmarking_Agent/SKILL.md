@@ -236,6 +236,21 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 64. **Clinical-note quality rubric expansion**
    Expand AI-generated clinical-note evaluation rubrics into separate scoring fields for correctness, clinically material omissions, hallucinations or unsupported content, patient-safety risk, note structure and format compliance, inter-rater reliability, and benchmark design; compare evaluation methods experimentally with fixed inputs, outputs, evaluator types, rubric definitions, and reporting fields.
 
+65. **Nursing-facing ICU question benchmark pattern**
+   For intensive-care nursing question evaluations, build role-specific gold standards with nursing-domain experts, compare ChatGPT, DeepSeek, and Google Gemini on the same items and prompts, and conduct unsafe-answer review for recommendations, omissions, or overconfidence that could affect nursing decisions. Treat nursing-facing clinical LLM evaluation as requiring domain expert adjudication rather than generic medical QA scoring.
+
+66. **Repeatable trustworthy medical Q&A benchmark reporting**
+   For domain-specific medical Q&A datasets supporting trustworthy medical language models, predefine item-level error taxonomy, separate omission and potential-harm labels, dataset provenance checks, specialty-level calibration analysis, and repeatable benchmark report fields for construction criteria, annotation rules, item-level findings, limitations, and trustworthy-use boundaries.
+
+67. **Plastic-surgery guideline-concordance adjudication**
+   When evaluating chatbot recommendations against specialty society guidance such as ASPS and AAPS plastic surgery guidance, compare each recommendation to the relevant guidance statement; label clinically material omissions, contraindications, overreach, and conflicts separately; and require harm-focused expert adjudication before using guideline-concordance scores in safety conclusions.
+
+68. **Ophthalmology board-style frontier model comparison**
+   For ophthalmology board-style question benchmarks comparing frontier models such as Gemini 3 Pro and GPT-5 family models, grade responses against specialty-specific gold answers; report exact model family, version, and evaluation date; assess confidence calibration; and separate exam-question performance from clinical readiness or patient-care safety claims.
+
+69. **Ophthalmology CME benchmark template with partial-credit safety tracking**
+   For ophthalmology CME-style question benchmarks, use a template that scores correctness, partial correctness, content omission, missing safety-critical content, and risk of harm as separate fields; explicitly track partially correct answers and omissions that could affect clinical safety rather than collapsing them into overall accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -263,4 +278,5 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 - PubMed: Fonseca RDC, Rios RA, Castaldoni R, Carvalho AA, Lopes TJS. "Fine-grained evaluation of a domain-specific Q&A dataset to support trustworthy medical language models." *Health Inf Sci Syst*. 2026 Dec. https://pubmed.ncbi.nlm.nih.gov/42039929/
 - PubMed: Gülhan Güner S, Tan Z, Gülpınar S. "Comparative performance of artificial intelligence models in intensive care nursing questions: an evaluation of ChatGPT, DeepSeek, and Google Gemini." *BMC Nursing*. 2026 May 2. https://pubmed.ncbi.nlm.nih.gov/42069581/
 - PubMed: Chen JL, Lu AJ, Verma R, Wang L, Koch DD. "Assessment of Correctness, Content Omission, and Risk of Harm in Large Language Model Responses to Ophthalmology Continuing Medical Education Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41908501/
+- PubMed: Shean RS, Mallapu JK, Shah T, Rasheed HA, Younessi DN. "Comparative Performance of Gemini 3 Pro and GPT-5 Family Models on Ophthalmology Board-Style Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41970036/
 - PubMed: Kabir R, Braud SC, Hinson CS, Nazerali RS. "Are large language models consistent with the ASPS and AAPS guidelines? A comparison of AI chatbot recommendations and plastic surgery clinical guidance." *J Plast Reconstr Aesthet Surg*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41985209/

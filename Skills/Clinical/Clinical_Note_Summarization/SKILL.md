@@ -44,6 +44,7 @@ allowed-tools:
 - For urologic specialty documentation, preserve procedure-specific terminology; distinguish summarization from autonomous documentation; validate omissions and unsupported additions; and require clinician sign-off before record entry.
 - For AI-assisted urologic operative notes, clinic documentation, and patient instructions, require human review for specialty-specific terminology, omitted negatives, billing/coding risk, and medicolegal traceability before record entry or patient release.
 - Apply specialty-documentation safety checks for urologic note drafts, including clinician oversight, source-note traceability, procedure-specific omission review, and separation from billing or medico-legal finalization.
+- Use AI-assisted urologic documentation only as structured note drafting support that may reduce documentation burden: preserve visit-specific terminology across consultation, procedure, follow-up, operative, clinic, and patient-instruction contexts; complete privacy review for source text and generated drafts; and prohibit using generated notes without clinician verification, editing, and sign-off.
 
 ## Workflow
 1. **Load system prompt:** `prompt.md` enforces no hallucinations + data gap surfacing.

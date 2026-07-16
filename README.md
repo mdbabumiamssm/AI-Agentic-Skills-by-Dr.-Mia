@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 695 skills across 46 categories. Last refresh: 2026-07-15T16:07:40.057489+00:00._
+_Auto-generated index. 696 skills across 46 categories. Last refresh: 2026-07-16T10:45:39.011111+00:00._
 
 ### 3D_Genomics (8)
 
@@ -310,7 +310,7 @@ _Auto-generated index. 695 skills across 46 categories. Last refresh: 2026-07-15
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (35)
+### Clinical (36)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -333,6 +333,7 @@ _Auto-generated index. 695 skills across 46 categories. Last refresh: 2026-07-15
 - **dermatology-multimodal-llm-bcc-analysis** — Guide multimodal LLM-assisted review of clinical and dermoscopic images for basal cell carcinoma mimickers, emphasizing differential diag...
 - **digital-twin-clinical-agent** — AI-powered patient digital twin creation for clinical trial simulation, treatment outcome prediction, and personalized medicine using rea...
 - **ehr-fhir-integration** — Provides comprehensive tools for working with Electronic Health Records (EHR) using the HL7 FHIR standard.
+- **gastroenterology-llm-clinical-practice** — Support evidence-grounded use of LLMs in gastroenterology clinical practice, including endoscopy, IBD, hepatology, triage, documentation,...
 - **microsoft-prior-auth-multi-agent-accelerator** — Guide payer-side prior authorization review using Microsoft Azure multi-agent patterns, Foundry-hosted agents, MCP healthcare data access...
 - **multimodal-medical-imaging** — Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.
 - **multimodal-radpath-fusion-agent** — AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data ...

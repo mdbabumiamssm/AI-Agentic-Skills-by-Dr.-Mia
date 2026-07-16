@@ -68,6 +68,7 @@ Use this skill to convert radiology reports and other clinical documents into un
 7. **MRI-report interpretation validation**
    - Use personalized MRI-report education as a validation scenario by comparing generated explanations against expert interpretations when available, preserving radiology findings, uncertainty, and follow-up recommendations from the report.
    - For MRI-report patient education, compare generated explanations against human expert interpretations when available; preserve radiology meaning, uncertainty, urgency, and follow-up recommendations; and require clinician-facing safeguards before personalized explanations are used.
+   - For MRI-report patient education workflows, preserve source-stated incidental findings and use patient-safe wording that avoids unsupported reassurance, alarm, diagnosis, or care-direction changes while enforcing clinician review before delivery.
    - Evaluate semantic fidelity, reading-level adaptation, uncertainty preservation, personalization to supplied patient context, omissions, overstatements, potential harm, red-flag escalation, and actionable next steps.
    - Document discrepancies and require clinician review before any generated explanation is delivered to a patient.
 
@@ -93,7 +94,7 @@ Use this skill to convert radiology reports and other clinical documents into un
       6. Run the harmful-simplification and escalation checks.
       7. Label unresolved questions and required professional review.
 
-12. **Perioperative patient-communication workflows**
+12. **Surgery-specific patient-physician communication workflows**
     - Provide plain-language preoperative explanations and set expectations using clinician-provided information about the procedure purpose, preparation, expected course, risk explanations, benefits, alternatives, and patient questions.
     - Generate neutral questions patients can bring to the surgeon or care team about the procedure, risks, recovery expectations, alternatives, and follow-up without steering decisions.
     - Support consent discussions by organizing and explaining the supplied information, but do not conduct or document informed consent, assess decision-making capacity, or replace the surgeon's consent discussion.

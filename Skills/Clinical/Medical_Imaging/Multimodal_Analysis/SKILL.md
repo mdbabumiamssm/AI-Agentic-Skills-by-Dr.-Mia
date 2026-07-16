@@ -37,6 +37,7 @@ The **Multimodal Medical Imaging Analysis Skill** leverages state-of-the-art Vis
 2.  **Report Generation**: Draft radiology reports in standard formats.
 3.  **VQA (Visual Question Answering)**: Answer specific questions about an image (e.g., "Is there a fracture in the left femur?").
 4.  **Dermatology and Dermoscopy Use Case**: For suspected basal cell carcinoma and common mimickers, use modality-specific prompts for clinical skin photographs versus dermoscopic images; check image quality for focus, lighting, scale, lesion completeness, artifacts, and occlusion before analysis; record available lesion metadata without inferring missing values; include basal cell carcinoma mimic differential checks; calibrate confidence to image quality and clinical context; report uncertainty explicitly; frame outputs as triage support rather than a definitive diagnosis; do not treat chatbot image output as diagnostic without task-specific clinical validation; and require clinician or dermatologist review before diagnostic use or any clinical action.
+5.  **Closed-System Radiography Response Evaluation**: Use as a guardrail pattern for radiography workflows by separating patient-facing explanation, technical radiography guidance, and diagnostic claims; require radiographer or radiologist review before deployment.
 
 ## Workflow
 
@@ -60,5 +61,6 @@ python3 Skills/Clinical/Medical_Imaging/Multimodal_Analysis/multimodal_agent.py 
 ## References
 
 - https://pubmed.ncbi.nlm.nih.gov/41952838/
+- https://pubmed.ncbi.nlm.nih.gov/42024724/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-15T16:07:40.057489+00:00",
+  "generated_at": "2026-07-16T10:45:39.011111+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 695,
+  "total_skills": 696,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-14T10:45:49.343414+00:00",
-      "body_length": 17569,
+      "last_modified": "2026-07-16T10:45:28.505494+00:00",
+      "body_length": 17984,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -1629,8 +1629,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-15T10:50:11.929136+00:00",
-      "body_length": 28442,
+      "last_modified": "2026-07-16T10:43:16.308692+00:00",
+      "body_length": 30931,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1652,8 +1652,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-06-26T10:40:42.262094+00:00",
-      "body_length": 11383,
+      "last_modified": "2026-07-16T10:44:32.396578+00:00",
+      "body_length": 11648,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1950,8 +1950,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-07-14T10:45:49.343414+00:00",
-      "body_length": 14619,
+      "last_modified": "2026-07-16T10:44:01.160625+00:00",
+      "body_length": 14910,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -1972,8 +1972,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-06-29T11:25:17.778737+00:00",
-      "body_length": 5660,
+      "last_modified": "2026-07-16T10:34:48.950452+00:00",
+      "body_length": 6064,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2088,6 +2088,31 @@
       ]
     },
     {
+      "name": "gastroenterology-llm-clinical-practice",
+      "description": "Support evidence-grounded use of LLMs in gastroenterology clinical practice, including endoscopy, IBD, hepatology, triage, documentation, and patient education.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/GastroenterologyLlmClinicalPractice_Agent/SKILL.md",
+      "relative_path": "Clinical/GastroenterologyLlmClinicalPractice_Agent/SKILL.md",
+      "last_modified": "2026-07-16T10:42:27.663764+00:00",
+      "body_length": 6126,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "multimodal-medical-imaging",
       "description": "Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.",
       "tool_type": "",
@@ -2099,8 +2124,8 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-07-08T10:52:04.129330+00:00",
-      "body_length": 2568,
+      "last_modified": "2026-07-16T10:36:55.673262+00:00",
+      "body_length": 2879,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -13868,8 +13893,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-12T14:37:20.037407+00:00",
-      "body_length": 34747,
+      "last_modified": "2026-07-16T10:38:11.588148+00:00",
+      "body_length": 35230,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
