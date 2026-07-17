@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T10:45:39.011111+00:00",
+  "generated_at": "2026-07-17T10:39:56.289431+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 696,
+  "total_skills": 697,
   "total_errors": 21,
   "skills": [
     {
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-16T10:45:28.505494+00:00",
-      "body_length": 17984,
+      "last_modified": "2026-07-17T10:39:40.478302+00:00",
+      "body_length": 18470,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -1629,7 +1629,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-16T10:43:16.308692+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 30931,
       "capabilities": [
         "Overview",
@@ -1652,7 +1652,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-07-16T10:44:32.396578+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 11648,
       "capabilities": [
         "Overview",
@@ -1950,7 +1950,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-07-16T10:44:01.160625+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 14910,
       "capabilities": [
         "When to Use This Skill",
@@ -1972,7 +1972,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-07-16T10:34:48.950452+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 6064,
       "capabilities": [
         "At-a-Glance",
@@ -2100,7 +2100,7 @@
       ],
       "file_path": "Skills/Clinical/GastroenterologyLlmClinicalPractice_Agent/SKILL.md",
       "relative_path": "Clinical/GastroenterologyLlmClinicalPractice_Agent/SKILL.md",
-      "last_modified": "2026-07-16T10:42:27.663764+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 6126,
       "capabilities": [
         "Overview",
@@ -2124,7 +2124,7 @@
       ],
       "file_path": "Skills/Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
       "relative_path": "Clinical/Medical_Imaging/Multimodal_Analysis/SKILL.md",
-      "last_modified": "2026-07-16T10:36:55.673262+00:00",
+      "last_modified": "2026-07-16T10:45:40.556476+00:00",
       "body_length": 2879,
       "capabilities": [
         "When to Use This Skill",
@@ -2256,6 +2256,29 @@
         "Core Capabilities",
         "Workflow",
         "Guardrails",
+        "References"
+      ]
+    },
+    {
+      "name": "ophthalmology-llm-safety-evaluation",
+      "description": "Evaluate ophthalmology LLM answers to CME or board-style questions for correctness, omissions, harm risk, guideline consistency, and clinician review.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
+      "relative_path": "Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-07-17T10:36:12.793911+00:00",
+      "body_length": 4573,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },
@@ -13893,8 +13916,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-16T10:38:11.588148+00:00",
-      "body_length": 35230,
+      "last_modified": "2026-07-17T10:35:06.546085+00:00",
+      "body_length": 35684,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",

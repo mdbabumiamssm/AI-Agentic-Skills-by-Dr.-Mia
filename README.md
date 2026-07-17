@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 696 skills across 46 categories. Last refresh: 2026-07-16T10:45:39.011111+00:00._
+_Auto-generated index. 697 skills across 46 categories. Last refresh: 2026-07-17T10:39:56.289431+00:00._
 
 ### 3D_Genomics (8)
 
@@ -310,7 +310,7 @@ _Auto-generated index. 696 skills across 46 categories. Last refresh: 2026-07-16
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (36)
+### Clinical (37)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -338,6 +338,7 @@ _Auto-generated index. 696 skills across 46 categories. Last refresh: 2026-07-16
 - **multimodal-medical-imaging** — Analyzes medical images (X-ray, MRI, CT) using multimodal LLMs to identify anomalies and generate reports.
 - **multimodal-radpath-fusion-agent** — AI-powered multimodal diagnostic fusion integrating radiology imaging (CT/MRI/PET), digital pathology (WSI), genomics, and clinical data ...
 - **on-prem-clinical-llm-deployment** — Plan and validate on-prem clinical LLM deployments for distilled open-source diagnosis models, balancing performance, privacy, hardware, ...
+- **ophthalmology-llm-safety-evaluation** — Evaluate ophthalmology LLM answers to CME or board-style questions for correctness, omissions, harm risk, guideline consistency, and clin...
 - **precision-oncology-agent** — Fuse genomic variants, pathology findings, and clinical context to draft evidence-linked therapy options for tumor board review.
 - **prior-auth-coworker** — SOTA Prior Auth Review Agent aligned with Anthropic and OpenAI healthcare initiatives.
 - **prosthetics-llm-decision-support** — Assist clinician-reviewed prosthetic recommendations using ProsthetiX-AI-style intake, evidence retrieval, safety checks, and documentation.
