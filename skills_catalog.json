@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T10:39:56.289431+00:00",
+  "generated_at": "2026-07-18T10:45:26.135807+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 697,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-17T10:39:40.478302+00:00",
-      "body_length": 18470,
+      "last_modified": "2026-07-18T10:39:17.037336+00:00",
+      "body_length": 18933,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -797,8 +797,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-15T10:50:11.929136+00:00",
-      "body_length": 12576,
+      "last_modified": "2026-07-18T10:40:17.381277+00:00",
+      "body_length": 13101,
       "capabilities": []
     },
     {
@@ -955,8 +955,8 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-07-13T10:44:54.302424+00:00",
-      "body_length": 6386,
+      "last_modified": "2026-07-18T10:41:27.301151+00:00",
+      "body_length": 6725,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2272,7 +2272,7 @@
       ],
       "file_path": "Skills/Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
       "relative_path": "Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
-      "last_modified": "2026-07-17T10:36:12.793911+00:00",
+      "last_modified": "2026-07-17T10:39:57.828247+00:00",
       "body_length": 4573,
       "capabilities": [
         "Overview",
@@ -13916,7 +13916,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-17T10:35:06.546085+00:00",
+      "last_modified": "2026-07-17T10:39:57.828247+00:00",
       "body_length": 35684,
       "capabilities": [
         "When to Use This Skill",
@@ -17470,8 +17470,8 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
-      "last_modified": "2026-07-15T10:50:11.930135+00:00",
-      "body_length": 5692,
+      "last_modified": "2026-07-18T10:45:15.035479+00:00",
+      "body_length": 6068,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

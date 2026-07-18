@@ -24,6 +24,7 @@ allowed-tools:
 
 ## Core Capabilities
 
+- Use the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` reference architecture as an implementation pattern for managed Strands Agents deployment on Amazon Bedrock AgentCore, covering A2A/MCP interoperability, browser automation and voice assistant components, least-privilege IAM boundaries, observability paths, and production guardrails before adapting the TypeScript sample.
 - Apply the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` TypeScript reference architecture as an implementation pattern for agentic chatbots with Strands Agents and Amazon Bedrock AgentCore: define AgentCore deployment boundaries, MCP and A2A integration contracts, browser automation and voice-assistant surfaces, least-privilege IAM boundaries, and production guardrails before adapting the sample.
 - Add a Strands Agents plus Amazon Bedrock AgentCore reference architecture review for Bedrock-hosted agent workflows: verify MCP integration contracts, agent-to-agent handoff patterns, browser automation boundaries, least-privilege IAM scoping, and production deployment checks before adapting `aws-samples/sample-strands-agent-with-agentcore`.
 - Use the 2026-05-04 `aws-samples/sample-strands-agent-with-agentcore` TypeScript reference architecture as a managed agent chatbot implementation pattern: map Strands Agents orchestration onto Amazon Bedrock AgentCore, verify MCP tool contracts, isolate browser automation and voice assistant paths, define least-privilege IAM boundaries, and document deployment guardrails before adapting the sample.
@@ -90,6 +91,7 @@ allowed-tools:
 
 ## References
 
+- https://github.com/aws-samples/sample-strands-agent-with-agentcore
 - https://github.com/aws-samples/sample-strands-agent-with-agentcore
 - https://github.com/aws-samples/sample-strands-agent-with-agentcore
 - https://github.com/aws-samples/sample-strands-agent-with-agentcore
