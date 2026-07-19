@@ -47,6 +47,12 @@ This skill wires an AI agent into the cyanheads `pubmed-mcp-server`, a TypeScrip
 7. **Article-ID conversion** — Translate between PMID, PMCID, and DOI to stitch records across NCBI and publisher systems.
 8. **Dual transport** — Run as a local STDIO MCP server for desktop clients (Claude Desktop, IDEs) or as a Streamable HTTP server for shared/remote agent access.
 9. **Server selection boundary** — Prefer this simpler NCBI-focused server when the workflow depends on PubMed/NCBI E-utilities, MeSH, PMID/PMCID/DOI conversion, and low-overhead STDIO or HTTP integration; consider a broader biomedical literature research MCP such as `u9401066/pubmed-search-mcp` when the task needs combined PubMed, Europe PMC, CORE, and OpenAlex search with full-text lookup, citation networks, and PICO extraction in one server.
+10. **Alternative landscape awareness** — Compare against `u9401066/pubmed-search-mcp` for workflows that need multi-source biomedical search across PubMed, Europe PMC, CORE, and OpenAlex, plus claimed PICO analysis, citation networks, and full-text retrieval capabilities.
+
+## Alternatives and Comparison
+- **`u9401066/pubmed-search-mcp`** — Python MCP server positioned as a broader biomedical literature research option with 40 tools, multi-source search across PubMed, Europe PMC, CORE, and OpenAlex, full-text access claims, citation networks, and PICO analysis support.
+- **Selection tradeoff** — Use this `pubmed-ncbi-mcp-server` skill when the task should stay focused on NCBI E-utilities, MeSH, PubMed identifiers, and lower-overhead PubMed/PMC workflows. Consider `pubmed-search-mcp` when cross-source literature discovery or PICO/citation-network tooling is required.
+- **Maturity caveat** — Treat `pubmed-search-mcp` as lower-adoption software based on the source finding's 9 GitHub stars as of its 2026-04-29 publication timestamp; validate installation, tool behavior, and full-text retrieval claims before relying on it in production or evidence-critical workflows.
 
 ## Inputs / Outputs
 **Inputs**

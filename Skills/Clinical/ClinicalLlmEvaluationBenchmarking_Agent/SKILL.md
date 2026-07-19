@@ -251,6 +251,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 69. **Ophthalmology CME benchmark template with partial-credit safety tracking**
    For ophthalmology CME-style question benchmarks, use a template that scores correctness, partial correctness, content omission, missing safety-critical content, and risk of harm as separate fields; explicitly track partially correct answers and omissions that could affect clinical safety rather than collapsing them into overall accuracy.
 
+70. **Fine-grained domain-specific medical Q&A label set**
+   For domain-specific medical Q&A evaluation, score correctness, completeness, omission, uncertainty, grounding, specialty coverage, and harm-risk as separate item-level or answer-component labels; use aggregate accuracy only as a secondary summary because it can conceal clinically important failures across those dimensions.
+
 ## Inputs / Outputs
 
 **Inputs**

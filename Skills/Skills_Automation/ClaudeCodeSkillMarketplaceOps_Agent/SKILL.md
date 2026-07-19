@@ -56,6 +56,9 @@ Use it to turn marketplace browsing into a repeatable review workflow: identify 
 - **ccpi marketplace adoption gate**
   For ccpi/tonsofskills candidates, score trust before installation, review direct and transitive dependencies, check skill/plugin/command/MCP namespace conflicts, pin versions or commits when supported, install into a staging profile with clear uninstall notes, and fork rather than install directly when local hardening, dependency pinning, namespace edits, or policy-specific restrictions are required.
 
+- **ccpi/tonsofskills collection triage**
+  For large third-party ccpi/tonsofskills collections, triage catalog entries before installation, score trust and provenance, review dependencies plus requested tools, permissions, scripts, and MCP surfaces, check skill/plugin/command namespace conflicts, use a lockfile or version/commit pinning workflow when supported, and keep rollback notes that identify install paths, changed files, and uninstall steps.
+
 - **ccpi catalog acceptance and rejection criteria**
   For ccpi/tonsofskills skill packs, combine catalog trust scoring with dependency and permission review, version or commit pinning, rollback notes, and namespace conflict handling before adoption. Reject low-quality or duplicate packs when provenance is unclear, instructions are too broad to audit, dependencies or requested permissions are unjustified, triggers conflict with trusted local skills, or an existing vetted package already covers the same capability.
 

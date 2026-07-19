@@ -48,7 +48,7 @@ Use this skill to evaluate, adapt, or explain the Microsoft Prior Authorization 
 5. **Audit trail requirements** - Capture inputs, retrieved evidence, agent outputs, rubric outcomes, confidence scores, and final reviewer actions for traceability.
 6. **Azure deployment fit check** - Assess whether Azure Container Apps, Azure Developer CLI deployment, and Foundry-hosted agents fit the target enterprise environment.
 7. **Clinical operations adaptation** - Convert the reference accelerator into an implementation plan that respects payer policies, clinical review workflows, and oversight responsibilities.
-8. **Solution accelerator implementation** - Apply the Microsoft pattern of four Foundry-hosted Compliance, Clinical, Coverage, and Synthesis agents with gate-based review rubrics, MCP healthcare data access, confidence scoring, audit trails, human-in-the-loop controls, and `azd` deployment to Azure Container Apps.
+8. **Solution accelerator implementation** - Apply the Microsoft Agent Framework accelerator architecture with four Azure AI Foundry Hosted Agents: Compliance, Clinical, Coverage, and Synthesis, plus gate-based review rubrics, MCP healthcare data access, confidence scoring, audit trails, human-in-the-loop controls, and `azd` deployment to Azure Container Apps.
 
 ## Inputs / Outputs
 

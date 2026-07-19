@@ -51,6 +51,7 @@ OfficeCLI is especially relevant for mixed Office workflows because it is descri
 7. **Mixed-format automation**: Coordinate Word, Excel, and PowerPoint operations in one repeatable shell workflow for reports, analyses, decks, and accompanying spreadsheets.
 8. **Safe batch editing**: For multi-file operations, enumerate targets first, write to copies or a dedicated output directory by default, avoid in-place mutation without explicit authorization, and keep per-file command results for rollback or review.
 9. **Fidelity validation and handoff**: Re-read or inspect outputs after edits, confirm files remain openable and structurally intact, compare key document features such as Word text coverage, Excel sheets/ranges, or PowerPoint slide counts against the intended changes, capture command failures, and return produced file paths plus a concise summary of changes.
+10. **Round-trip and preservation checks**: For Word, Excel, and PowerPoint automation, treat OfficeCLI as a free, open-source, single-binary path that does not require Microsoft Office, then validate edited files by re-reading them, checking format preservation against expected structure and content, and flagging complex layouts, embedded objects, chart-heavy slides, macros, or formula-heavy workbooks as failure modes requiring extra inspection before handoff.
 
 ## Inputs / Outputs
 
