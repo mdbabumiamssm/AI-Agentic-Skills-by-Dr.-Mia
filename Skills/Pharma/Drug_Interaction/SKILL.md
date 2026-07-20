@@ -105,6 +105,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 71. **ASM DDI Lexicomp/Drugs.com Clinical-Use Gate**: For antiseizure-medication DDI benchmarking informed by PMID 41994367, compare LLM outputs and Drugs.com findings against Lexicomp using a predefined source hierarchy; set finite iterative-prompting limits before testing; normalize severity/category labels, including contraindicated or avoid-combination flags; and require citations from authoritative interaction databases before any clinical use.
 72. **LLM-vs-Reference ASM DDI Evaluation Pattern**: For antiseizure-medication DDI evaluation, compare LLM-generated answers and Drugs.com-style outputs against Lexicomp or a similar authoritative gold-standard DDI database; record iterative prompting changes in interaction detection, severity classification, and recommendations; use antiseizure medication examples as high-risk test cases; and explicitly warn that LLMs and consumer-facing references must not replace authoritative DDI databases or pharmacist/qualified clinician review.
 73. **PMID 41994367 ASM DDI Benchmarking Caveat**: For antiseizure-medication drug-drug interaction benchmarking informed by the 2026 cross-sectional comparison of large language models and Drugs.com versus Lexicomp, reconcile LLM and Drugs.com outputs against authoritative sources before conclusions, document iterative prompting as a caveat rather than proof of correctness, and explicitly warn against relying on LLM-only interaction calls.
+74. **Antiseizure Medication DDI Comparative Source Gate**: For antiseizure-medication DDI evaluations comparing LLMs, Drugs.com, and Lexicomp, set Lexicomp or another authoritative drug reference as the highest-priority source, use Drugs.com and LLM outputs only as comparison inputs, predefine finite iterative-prompting limits, log discrepancies in interaction presence, severity/category, mechanism, and recommendation across sources, and ground final interaction summaries in authoritative drug references rather than model consensus.
 
 ## Comparative Benchmark: LLM-Based ASM DDI Checks
 
@@ -143,6 +144,7 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
