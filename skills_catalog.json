@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T10:42:06.840509+00:00",
+  "generated_at": "2026-07-20T10:53:26.755132+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 697,
   "total_errors": 21,
@@ -284,8 +284,8 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-19T10:46:13.125225+00:00",
-      "body_length": 19803,
+      "last_modified": "2026-07-20T10:53:15.720019+00:00",
+      "body_length": 20277,
       "capabilities": [
         "Core Capabilities",
         "Strands Agents + Bedrock AgentCore Reference Architecture",
@@ -13567,7 +13567,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-07-20T10:37:47.926955+00:00",
+      "last_modified": "2026-07-20T10:42:08.426409+00:00",
       "body_length": 11275,
       "capabilities": [
         "Overview",
@@ -13917,8 +13917,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-20T10:38:48.551828+00:00",
-      "body_length": 37349,
+      "last_modified": "2026-07-20T10:49:07.160546+00:00",
+      "body_length": 37830,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
