@@ -52,6 +52,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 12. Preferred trust baseline: Use the official Anthropic-managed `anthropics/claude-plugins-official` directory as the baseline for plugin discovery, vetting, dependency review, installation hygiene, and migration away from uncurated marketplace entries.
 13. Current official-plugin operations: Vet official plugin entries against their repository and manifest before adoption, inspect permissions, dependencies, and bundled MCP/tool declarations, pin approved versions or commits, test installs in isolated workspaces, handle conflicts with existing skills or MCP tools, and plan staged migrations from unofficial plugin sources.
 14. Official plugin directory operations: Prefer Anthropic-managed sources when available, verify plugin provenance, inspect permissions and dependencies, pin approved versions or commits, document migration from community plugins, and keep installation approval explicit.
+15. Vetted listing lifecycle: Use `anthropics/claude-plugins-official` as the vetted discovery source, capturing the listing URL, visible repository metadata, trust review, dependency checks, install hygiene decisions, approved version or commit, and migration plan from unofficial marketplaces.
 
 ## Inputs / Outputs
 Inputs:
