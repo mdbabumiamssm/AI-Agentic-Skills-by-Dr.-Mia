@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-20T10:53:26.755132+00:00",
+  "generated_at": "2026-07-21T10:45:01.043885+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 697,
+  "total_skills": 698,
   "total_errors": 21,
   "skills": [
     {
@@ -284,7 +284,7 @@
       ],
       "file_path": "Skills/AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
       "relative_path": "AI_Providers/AWS_Bedrock_Operations_2026/SKILL.md",
-      "last_modified": "2026-07-20T10:53:15.720019+00:00",
+      "last_modified": "2026-07-20T10:53:28.263992+00:00",
       "body_length": 20277,
       "capabilities": [
         "Core Capabilities",
@@ -797,8 +797,8 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-07-19T03:07:29.998712+00:00",
-      "body_length": 13610,
+      "last_modified": "2026-07-21T10:41:22.493429+00:00",
+      "body_length": 14004,
       "capabilities": []
     },
     {
@@ -955,8 +955,8 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-07-19T03:07:29.999712+00:00",
-      "body_length": 7114,
+      "last_modified": "2026-07-21T10:42:08.879527+00:00",
+      "body_length": 7453,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1392,6 +1392,29 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "strands-agentcore-reference-architecture",
+      "description": "Implement AWS Strands Agents with Amazon Bedrock AgentCore reference architectures for chat, voice, A2A/MCP, browser automation, observability, deployment, and security.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/StrandsAgentcoreReferenceArchitecture_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/StrandsAgentcoreReferenceArchitecture_Agent/SKILL.md",
+      "last_modified": "2026-07-21T10:40:35.381315+00:00",
+      "body_length": 4669,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -13917,7 +13940,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-20T10:49:07.160546+00:00",
+      "last_modified": "2026-07-20T10:53:28.263992+00:00",
       "body_length": 37830,
       "capabilities": [
         "When to Use This Skill",
