@@ -260,6 +260,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 72. **Systematic review and experimental clinical-note benchmark methods**
    For AI-generated clinical-note quality benchmarks, use systematic review-informed experimental method comparisons that separately evaluate factuality, completeness, clinical usefulness, hallucination, and reviewer calibration; report benchmark templates with note task and type, dataset provenance, evaluator type, rubric or metric definition, scoring dimension, agreement or calibration results, and method-comparison findings.
 
+73. **Fine-grained domain-specific medical Q&A benchmark documentation**
+   For clinical LLM evaluations using domain-specific medical Q&A datasets, document item-level error taxonomy, trustworthiness scoring fields, specialty stratification, answer omission tracking, annotation decisions, item-level findings, limitations, and trustworthy-use boundaries.
+
+74. **Documentation-assistant clinical-note regression datasets**
+   For AI-generated clinical-note documentation assistants, use the 2026 systematic review and experimental benchmark of clinical-note quality methods to select evaluation methods that separate note-level factuality checks, clinically material omissions, risk taxonomy labels, inter-rater reliability reporting, and reusable regression datasets before prompt, model, retrieval, template, or workflow changes.
+
 ## Inputs / Outputs
 
 **Inputs**

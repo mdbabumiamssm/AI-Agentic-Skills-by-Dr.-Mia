@@ -85,6 +85,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 21. **PubMed finding integration**: Incorporate the 2026 ESMO Real World Data Digit Oncol finding as support for comparing zero-shot and fine-tuned general LLMs on initial oncology consultation documents without assuming either approach is clinically sufficient. Define the survival endpoint and prediction time zero before modeling, enforce post-consultation leakage checks, assess calibration on held-out patients, and report outputs with cautious clinician-reviewed language requiring local validation.
 
+22. **Tumor-board survival comparison guidance**: Choose zero-shot versus fine-tuned LLMs through a prespecified head-to-head validation on the same initial oncology consultation-note cohort rather than assuming either approach is superior. Freeze prediction time zero at the initial consult, remove or flag post-consultation outcomes, treatments, copied-forward dated evidence, and other future information, calibrate time-to-event outputs against held-out follow-up and censoring data, and present uncertainty explicitly for tumor-board review.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -91,6 +91,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 24. **Citation-aware test-time acquisition pattern**: Generate retrieval queries from the clinical decision and known evidence gaps; vet candidate sources before use for authority, provenance, recency, applicability, and direct support; inject only concise evidence snippets with citation URLs and date-checked staleness notes; produce answers that tie material claims to retrieved sources; and when trustworthy retrieved evidence conflicts, present the conflict, prefer a source only when authority, currency, or applicability justifies it, or fall back to qualifying, withholding, or escalating the affected recommendation.
 
+25. **Test-time knowledge acquisition decision-support workflow**: For LLM-assisted medical decisions, generate focused clinical subqueries, retrieve from trusted medical sources, vet evidence for authority, provenance, recency, applicability, and direct support, inject only verified context with preserved citations, surface conflicts without forcing unsupported consensus, and enforce no-fine-tuning deployment controls so acquired knowledge affects inference context without changing model parameters.
+
 ## Inputs / Outputs
 
 **Inputs**

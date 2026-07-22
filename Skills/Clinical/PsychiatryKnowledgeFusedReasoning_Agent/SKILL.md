@@ -79,6 +79,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 12. **PKFAR-style clinician-reviewed support loop**  
    Use structured retrieval from psychiatry knowledge sources to support symptom and medication reasoning, risk assessment, and provenance-labeled synthesis; route outputs through clinician review for mental health decision support, especially when findings affect diagnosis, medication changes, safety planning, or level-of-care decisions.
 
+13. **PKFAR psychiatry-specific knowledge injection pattern**  
+   Apply PKFAR as a psychiatry-specific knowledge-fused augmented reasoning pattern by retrieving and injecting relevant psychiatric knowledge before synthesis; enforce diagnostic-risk controls, medication safety checks, hallucination checks against case facts and retrieved sources, and clinician-reviewed care planning rather than autonomous diagnosis, prescribing, or disposition.
+
 ## Inputs / Outputs
 
 **Inputs**
