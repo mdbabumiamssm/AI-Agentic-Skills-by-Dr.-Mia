@@ -49,8 +49,9 @@ Use this skill to evaluate large language model responses to ophthalmology conti
 5. Check guideline consistency: Compare recommendations against current ophthalmology guidelines, drug labels, emergency referral standards, or authoritative review sources when available.
 6. Capture specialty harm modes: Look for ophthalmology-specific safety failures, including missed acute angle closure, retinal detachment symptoms, endophthalmitis, giant cell arteritis, orbital cellulitis, chemical injury, optic neuritis, medication toxicity, amblyopia timing, and diabetic or glaucoma follow-up errors.
 7. Support model comparison: Use the same rubric, source set, and adjudication rules across models, with anonymized response labels when possible.
-8. Require clinician adjudication: Route uncertain, high-stakes, or discrepant assessments to an ophthalmologist or qualified clinician reviewer before treating them as final.
-9. Produce audit-ready output: Return structured tables with prompt ID, topic, model label, correctness, omissions, harm rating, evidence notes, reviewer status, and adjudication comments.
+8. Evaluate Gemini 3 Pro and GPT-5 family board-style benchmarks: For ophthalmology board-style question comparisons, record the exact model name/version and run date, stratify questions by specialty topic when available, score correctness, omissions, and harm with the same rubric across models, and state that benchmark results do not substitute for ophthalmologist review.
+9. Require clinician adjudication: Route uncertain, high-stakes, or discrepant assessments to an ophthalmologist or qualified clinician reviewer before treating them as final.
+10. Produce audit-ready output: Return structured tables with prompt ID, topic, model label, correctness, omissions, harm rating, evidence notes, reviewer status, and adjudication comments.
 
 ## Inputs / Outputs
 
@@ -74,3 +75,4 @@ Outputs:
 ## References
 
 - Chen JL, Lu AJ, Verma R, Wang L, Koch DD. "Assessment of Correctness, Content Omission, and Risk of Harm in Large Language Model Responses to Ophthalmology Continuing Medical Education Questions." PubMed: https://pubmed.ncbi.nlm.nih.gov/41908501/
+- Shean RS, Mallapu JK, Shah T, Rasheed HA, Younessi DN. "Comparative Performance of Gemini 3 Pro and GPT-5 Family Models on Ophthalmology Board-Style Questions." PubMed: https://pubmed.ncbi.nlm.nih.gov/41970036/

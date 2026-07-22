@@ -60,6 +60,8 @@ This skill does not provide autonomous medical decisions. It helps assemble evid
 
 9. **ASCO GI cancer AI workflow reference** - Use the 2026 ASCO Educational Book review as a clinical workflow reference for organizing AI support across endoscopy, imaging, pathology, molecular profiling, clinical trial routing, surveillance, and clinician-governed deployment boundaries.
 
+10. **Current ASCO evidence anchor** - Use the 2026 ASCO Educational Book review on AI for GI cancer management as a current review-level anchor when scoping endoscopy, radiology/pathology, molecular profiling, treatment planning, trial matching, and surveillance workflows; keep outputs framed as clinician-governed decision support and explicitly surface data-quality, validation, bias, implementation, and generalizability limitations.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -81,4 +83,4 @@ This skill does not provide autonomous medical decisions. It helps assemble evid
 
 ## References
 
-- PubMed source finding: Harnessing Artificial Intelligence for the Management of Patients With GI Cancers. https://pubmed.ncbi.nlm.nih.gov/42044465/
+- Goyal L, Chung C, Mori Y, Hall WA, Kehl KL. Harnessing Artificial Intelligence for the Management of Patients With GI Cancers. Am Soc Clin Oncol Educ Book. 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/42044465/

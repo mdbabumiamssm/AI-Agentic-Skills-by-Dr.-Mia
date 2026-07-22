@@ -55,7 +55,7 @@ Use this skill to support evidence-based prosthetic recommendation workflows for
 
 7. Clinician handoff: End with a concise review checklist, unresolved questions, evidence links, and explicit language that the output requires prosthetist or prescribing clinician review before clinical use.
 
-8. ProsthetiX-AI clinical decision-support pattern: For evidence-based prosthetic recommendations, use a structured intake schema covering patient goals and functional constraints, retrieve relevant evidence, screen contraindications, generate patient-specific documentation, and require clinician approval checkpoints before recommendations are finalized or shared.
+8. ProsthetiX-AI clinical decision-support pattern: For evidence-based prosthetic recommendations, use structured intake, evidence retrieval, functional goal matching, contraindication checks, explainable recommendation summaries, patient-specific documentation, and clinician sign-off before recommendations are finalized or shared.
 
 ## Inputs / Outputs
 

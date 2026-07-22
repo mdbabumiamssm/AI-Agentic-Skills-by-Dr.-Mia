@@ -63,6 +63,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 19. **Real-time safety adjudication pattern**: For each LLM-assisted guideline recommendation, keep evidence traceability, route the graded recommendation through expert adjudication, preserve audit logs of prompts, evidence inputs, model outputs, reviewer decisions, grades, and dispositions, and apply stopping rules when the recommendation is unsafe, unsupported, untraceable, or outside the approved evidence boundary.
 20. **Real-time guideline text acceptance gate**: Before any LLM-generated guideline text is accepted, verify evidence traceability, confirm recommendation-grading support, capture expert adjudication, log conflicts or disagreements with their disposition, and complete the required governance checkpoint.
 21. **Worked real-time evaluation reference**: Use the 2026 real-time LLM guideline-development evaluation as a worked reference during clinical practice guideline drafting to require evidence traceability, recommendation grading support, expert adjudication, failure capture, and governance checkpoints before accepting LLM-assisted content.
+22. **Recommendation drafting checkpoint pattern**: During real-time LLM-assisted guideline drafting, checkpoint each recommendation by tying draft language to traceable evidence, preserving grading discipline under the selected framework, recording expert adjudication, and blocking unsupported, overconfident, ungraded, or untraceable guideline language.
 
 ## Inputs / Outputs
 

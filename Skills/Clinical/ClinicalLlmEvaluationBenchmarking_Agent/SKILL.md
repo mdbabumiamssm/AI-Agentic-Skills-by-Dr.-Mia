@@ -254,6 +254,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 70. **Fine-grained domain-specific medical Q&A label set**
    For domain-specific medical Q&A evaluation, score correctness, completeness, omission, uncertainty, grounding, specialty coverage, and harm-risk as separate item-level or answer-component labels; use aggregate accuracy only as a secondary summary because it can conceal clinically important failures across those dimensions.
 
+71. **Domain-specific medical Q&A dataset curation audit**
+   For trustworthy medical language model benchmarks, evaluate each domain-specific Q&A item with a prespecified error taxonomy; score omissions and potential harm independently from correctness; report trustworthiness dimensions such as answerability, ambiguity, evidence support, uncertainty, reliability, and clinical risk; and curate benchmark items by checking provenance, source-evidence alignment, annotation consistency, domain coverage, limitations, and trustworthy-use boundaries.
+
+72. **Systematic review and experimental clinical-note benchmark methods**
+   For AI-generated clinical-note quality benchmarks, use systematic review-informed experimental method comparisons that separately evaluate factuality, completeness, clinical usefulness, hallucination, and reviewer calibration; report benchmark templates with note task and type, dataset provenance, evaluator type, rubric or metric definition, scoring dimension, agreement or calibration results, and method-comparison findings.
+
 ## Inputs / Outputs
 
 **Inputs**

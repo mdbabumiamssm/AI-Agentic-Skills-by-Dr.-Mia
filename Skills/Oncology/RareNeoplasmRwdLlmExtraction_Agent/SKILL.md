@@ -76,9 +76,11 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 17. **Apply the bone sarcoma sparse-record validation pattern.** Use the bone sarcoma rare-neoplasm RWD example to validate schema-first abstraction, temporal normalization, ontology mapping, provenance capture, clinician adjudication, and error analysis for sparse oncology records without adding unsupported benchmarks or claims.
 
-18. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+18. **Validate registry-field governance with the bone sarcoma example.** Use the 2026 bone sarcoma rare-neoplasm RWD example as a validation pattern for schema-first variable capture, temporal normalization, oncology ontology mapping, audit-trail completeness, and clinician adjudication of LLM-extracted registry fields.
 
-19. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
+19. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+
+20. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
 ## Inputs / Outputs
 

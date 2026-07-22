@@ -76,6 +76,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 11. **PKFAR citation and escalation guardrails**  
    Use structured psychiatric knowledge retrieval before synthesis; cite the supplied case fact, retrieved psychiatric source, or model-inference status for diagnostic, medication, and risk-relevant conclusions; avoid final diagnosis, prescribing, dosing, or disposition decisions; and escalate urgent, high-risk, or clinically uncertain findings to a licensed clinician or emergency care pathway.
 
+12. **PKFAR-style clinician-reviewed support loop**  
+   Use structured retrieval from psychiatry knowledge sources to support symptom and medication reasoning, risk assessment, and provenance-labeled synthesis; route outputs through clinician review for mental health decision support, especially when findings affect diagnosis, medication changes, safety planning, or level-of-care decisions.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -89,6 +89,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 23. **Moving-boundary clinical knowledge acquisition**: For decision support where guidelines, labels, safety notices, or practice standards may have changed, retrieve current evidence at test time; vet source authority and provenance before use; inject only concise decision-relevant context with citation URLs and date-checked notes; surface conflicts without forcing consensus; and prefer retrieval-time context updates over fine-tuning when the knowledge boundary is moving.
 
+24. **Citation-aware test-time acquisition pattern**: Generate retrieval queries from the clinical decision and known evidence gaps; vet candidate sources before use for authority, provenance, recency, applicability, and direct support; inject only concise evidence snippets with citation URLs and date-checked staleness notes; produce answers that tie material claims to retrieved sources; and when trustworthy retrieved evidence conflicts, present the conflict, prefer a source only when authority, currency, or applicability justifies it, or fall back to qualifying, withholding, or escalating the affected recommendation.
+
 ## Inputs / Outputs
 
 **Inputs**

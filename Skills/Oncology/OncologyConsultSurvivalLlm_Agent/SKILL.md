@@ -83,6 +83,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 20. **Consultation-note survival study controls**: For work informed by the 2026 fine-tuning versus zero-shot study, prespecify the survival endpoint, censoring rule, and prediction time zero before text extraction; use patient-level cohort splits with no document overlap; compare zero-shot and fine-tuned LLMs against a clearly defined baseline comparator on the same eligible cohort; audit post-consultation leakage; evaluate calibration and uncertainty; and report findings cautiously as initial-consultation-note research signals rather than standalone survival predictions.
 
+21. **PubMed finding integration**: Incorporate the 2026 ESMO Real World Data Digit Oncol finding as support for comparing zero-shot and fine-tuned general LLMs on initial oncology consultation documents without assuming either approach is clinically sufficient. Define the survival endpoint and prediction time zero before modeling, enforce post-consultation leakage checks, assess calibration on held-out patients, and report outputs with cautious clinician-reviewed language requiring local validation.
+
 ## Inputs / Outputs
 
 **Inputs**
