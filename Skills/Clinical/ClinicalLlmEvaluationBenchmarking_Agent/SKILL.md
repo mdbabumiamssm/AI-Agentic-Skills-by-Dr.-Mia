@@ -272,6 +272,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 76. **Fine-grained Q&A dataset readiness before model selection**
    Before selecting models from domain-specific medical Q&A benchmark results, audit dataset quality at the item level with an explicit error taxonomy, answerability and ambiguity checks, omission scoring, evidence-support review, and trustworthy-model reporting fields that disclose dataset limits and benchmark-use boundaries.
 
+77. **Fine-grained clinical Q&A trustworthiness reporting**
+   For domain-specific clinical Q&A datasets, score each item with an error taxonomy that separates factual errors, unsupported claims, omissions, and potential harm; calibrate results by question type; check source-grounding for reference answers and model responses; and report item-level trustworthiness findings alongside aggregate accuracy rather than relying on aggregate accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**

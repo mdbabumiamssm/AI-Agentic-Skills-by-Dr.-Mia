@@ -95,6 +95,7 @@ Use this skill to convert radiology reports and other clinical documents into un
       7. Label unresolved questions and required professional review.
 
 12. **Surgery-specific patient-physician communication workflows**
+    - Convert operative, perioperative, and follow-up information into patient-facing explanations while preserving source-stated uncertainty, consent-sensitive language, warning signs, and clinician review requirements.
     - Provide plain-language preoperative explanations and set expectations using clinician-provided information about the procedure purpose, preparation, expected course, risk explanations, benefits, alternatives, and patient questions.
     - Generate neutral questions patients can bring to the surgeon or care team about the procedure, risks, recovery expectations, alternatives, and follow-up without steering decisions.
     - Support consent discussions by organizing and explaining the supplied information, but do not conduct or document informed consent, assess decision-making capacity, or replace the surgeon's consent discussion.

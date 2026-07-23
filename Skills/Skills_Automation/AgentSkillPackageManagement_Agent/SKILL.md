@@ -73,9 +73,9 @@ Use this skill to install and manage agent capability packages across supported 
 
 14. **Verify and report.** Confirm package discovery, entry-point loading, dependency integrity, target-agent registration, and lockfile consistency. Return a concise report of resolved versions, provenance, changes, warnings, rollback data, and verification results.
 
-15. **Compare AKM package-manager patterns.** Use AKM (Agent Kit Manager) as another package-manager example for AI agent skills, commands, tools, and knowledge bundles. Compare AKM with ccpi/craftdesk-style managers by checking reproducible manifest-driven installs, lockfile behavior, pinned sources and versions, provenance review, safe removal, rollback support, and cross-agent compatibility checks.
+15. **Compare AKM package-manager patterns.** Use AKM (Agent Kit Manager) as another package-manager example for AI agent skills, commands, tools, and knowledge bundles. Compare AKM with ccpi/craftdesk-style managers by checking manifest structure, reproducible installs, pinned source and version handling, source trust and provenance review, lock/update behavior, and cross-agent portability.
 
-16. **Compare Craftdesk package-manager patterns.** Include Craftdesk as a TypeScript package-manager example for Claude Code skills, agents, and related AI resources. In the comparison matrix, review dependency metadata, install/update/remove hygiene, lockfile expectations, trust review for each source, and conflict handling when multiple skill sources target the same skill, agent, command, file, or registration.
+16. **Compare Craftdesk package-manager patterns.** Include Craftdesk as a TypeScript package-manager example for Claude Code skills, agents, and related AI resources. In the comparison matrix, review dependency handling and metadata, install/update/remove hygiene, version tracking, lockfile expectations, rollback expectations, trust review for each third-party bundle or source before adoption, and conflict handling when multiple skill sources target the same skill, agent, command, file, or registration.
 
 ## Inputs / Outputs
 
