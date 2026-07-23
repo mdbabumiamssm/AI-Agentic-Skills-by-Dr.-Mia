@@ -266,6 +266,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 74. **Documentation-assistant clinical-note regression datasets**
    For AI-generated clinical-note documentation assistants, use the 2026 systematic review and experimental benchmark of clinical-note quality methods to select evaluation methods that separate note-level factuality checks, clinically material omissions, risk taxonomy labels, inter-rater reliability reporting, and reusable regression datasets before prompt, model, retrieval, template, or workflow changes.
 
+75. **Versioned ICU nursing question benchmark case**
+   Treat intensive-care nursing questions as a specialty evaluation case for comparing ChatGPT, DeepSeek, and Google Gemini: document each item's source and reference-answer provenance, capture model names, versions, and evaluation dates, and perform nursing-safety harm review that separates unsafe recommendations, clinically important omissions, and correctness from aggregate performance.
+
+76. **Fine-grained Q&A dataset readiness before model selection**
+   Before selecting models from domain-specific medical Q&A benchmark results, audit dataset quality at the item level with an explicit error taxonomy, answerability and ambiguity checks, omission scoring, evidence-support review, and trustworthy-model reporting fields that disclose dataset limits and benchmark-use boundaries.
+
 ## Inputs / Outputs
 
 **Inputs**
