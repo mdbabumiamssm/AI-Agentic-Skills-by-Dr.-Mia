@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T12:00:55.968725+00:00",
+  "generated_at": "2026-07-23T18:11:41.103783+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -1652,8 +1652,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-23T11:57:34.956869+00:00",
-      "body_length": 34511,
+      "last_modified": "2026-07-23T18:07:47.097560+00:00",
+      "body_length": 34952,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1675,8 +1675,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-07-23T11:59:09.347568+00:00",
-      "body_length": 11869,
+      "last_modified": "2026-07-23T18:10:39.029519+00:00",
+      "body_length": 12081,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1995,8 +1995,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-07-16T10:45:40.556476+00:00",
-      "body_length": 6064,
+      "last_modified": "2026-07-23T18:06:44.363768+00:00",
+      "body_length": 6362,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -2387,8 +2387,8 @@
       ],
       "file_path": "Skills/Clinical/Radiology/RadGPT/SKILL.md",
       "relative_path": "Clinical/Radiology/RadGPT/SKILL.md",
-      "last_modified": "2026-07-08T10:52:04.129330+00:00",
-      "body_length": 2973,
+      "last_modified": "2026-07-23T18:08:42.868964+00:00",
+      "body_length": 3353,
       "capabilities": [
         "When to Use",
         "Core Capabilities",
@@ -13940,8 +13940,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-23T11:58:17.730731+00:00",
-      "body_length": 39404,
+      "last_modified": "2026-07-23T18:09:44.340282+00:00",
+      "body_length": 39970,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17444,8 +17444,8 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-07-23T12:00:40.971288+00:00",
-      "body_length": 7561,
+      "last_modified": "2026-07-23T18:11:28.582719+00:00",
+      "body_length": 7606,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

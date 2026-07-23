@@ -275,6 +275,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 77. **Fine-grained clinical Q&A trustworthiness reporting**
    For domain-specific clinical Q&A datasets, score each item with an error taxonomy that separates factual errors, unsupported claims, omissions, and potential harm; calibrate results by question type; check source-grounding for reference answers and model responses; and report item-level trustworthiness findings alongside aggregate accuracy rather than relying on aggregate accuracy alone.
 
+78. **Fine-grained medical Q&A taxonomy and calibration checks**
+   For domain-specific medical Q&A evaluation, define question taxonomies and difficulty labels before scoring; assign separate omission and potential-harm labels; stratify results by medical subdomain and difficulty; preserve reference provenance and source-evidence links; assess calibration; and report inter-rater agreement checks for item labels and adjudicated scores.
+
 ## Inputs / Outputs
 
 **Inputs**
