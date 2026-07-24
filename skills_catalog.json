@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T18:11:41.103783+00:00",
+  "generated_at": "2026-07-24T10:45:48.760075+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -1652,7 +1652,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-23T18:07:47.097560+00:00",
+      "last_modified": "2026-07-23T18:11:42.824775+00:00",
       "body_length": 34952,
       "capabilities": [
         "Overview",
@@ -1675,7 +1675,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-07-23T18:10:39.029519+00:00",
+      "last_modified": "2026-07-23T18:11:42.824775+00:00",
       "body_length": 12081,
       "capabilities": [
         "Overview",
@@ -1995,7 +1995,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-07-23T18:06:44.363768+00:00",
+      "last_modified": "2026-07-23T18:11:42.824775+00:00",
       "body_length": 6362,
       "capabilities": [
         "At-a-Glance",
@@ -2387,7 +2387,7 @@
       ],
       "file_path": "Skills/Clinical/Radiology/RadGPT/SKILL.md",
       "relative_path": "Clinical/Radiology/RadGPT/SKILL.md",
-      "last_modified": "2026-07-23T18:08:42.868964+00:00",
+      "last_modified": "2026-07-23T18:11:42.824775+00:00",
       "body_length": 3353,
       "capabilities": [
         "When to Use",
@@ -13301,8 +13301,8 @@
       ],
       "file_path": "Skills/Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
       "relative_path": "Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
-      "last_modified": "2026-07-22T10:49:07.385109+00:00",
-      "body_length": 6003,
+      "last_modified": "2026-07-24T10:32:40.762141+00:00",
+      "body_length": 5697,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13567,8 +13567,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-07-22T10:49:07.385109+00:00",
-      "body_length": 12754,
+      "last_modified": "2026-07-24T10:38:09.057658+00:00",
+      "body_length": 13259,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13590,8 +13590,8 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-07-22T10:49:07.385109+00:00",
-      "body_length": 12050,
+      "last_modified": "2026-07-24T10:40:09.991449+00:00",
+      "body_length": 12426,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13741,8 +13741,8 @@
       ],
       "file_path": "Skills/Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
       "relative_path": "Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
-      "last_modified": "2026-07-22T10:49:07.385109+00:00",
-      "body_length": 10594,
+      "last_modified": "2026-07-24T10:36:12.771845+00:00",
+      "body_length": 10958,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -13940,8 +13940,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-23T18:09:44.340282+00:00",
-      "body_length": 39970,
+      "last_modified": "2026-07-24T10:42:31.003191+00:00",
+      "body_length": 40413,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17444,7 +17444,7 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-07-23T18:11:28.582719+00:00",
+      "last_modified": "2026-07-23T18:11:42.825775+00:00",
       "body_length": 7606,
       "capabilities": [
         "Overview",

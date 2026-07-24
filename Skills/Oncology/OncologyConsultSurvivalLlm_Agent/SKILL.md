@@ -87,6 +87,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 22. **Tumor-board survival comparison guidance**: Choose zero-shot versus fine-tuned LLMs through a prespecified head-to-head validation on the same initial oncology consultation-note cohort rather than assuming either approach is superior. Freeze prediction time zero at the initial consult, remove or flag post-consultation outcomes, treatments, copied-forward dated evidence, and other future information, calibrate time-to-event outputs against held-out follow-up and censoring data, and present uncertainty explicitly for tumor-board review.
 
+23. **Initial-consult survival study guidance**: Apply the PubMed 42004490 finding by splitting cohorts at the patient level with no train/test overlap, enforcing post-consultation leakage controls before text extraction, comparing fine-tuned and zero-shot LLMs against a defined baseline, using survival-specific and censoring-aware metrics with calibration review, and reporting prognostic outputs from initial consult documents cautiously as research or clinician-reviewed decision-support estimates.
+
 ## Inputs / Outputs
 
 **Inputs**
