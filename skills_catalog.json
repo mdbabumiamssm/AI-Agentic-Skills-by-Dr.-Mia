@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T10:45:48.760075+00:00",
+  "generated_at": "2026-07-25T10:36:40.049362+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -1652,8 +1652,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-07-23T18:11:42.824775+00:00",
-      "body_length": 34952,
+      "last_modified": "2026-07-25T10:33:11.867909+00:00",
+      "body_length": 35334,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1973,8 +1973,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-07-23T08:02:22.258462+00:00",
-      "body_length": 15669,
+      "last_modified": "2026-07-25T10:35:48.357459+00:00",
+      "body_length": 16041,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -13301,7 +13301,7 @@
       ],
       "file_path": "Skills/Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
       "relative_path": "Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
-      "last_modified": "2026-07-24T10:32:40.762141+00:00",
+      "last_modified": "2026-07-24T10:45:50.600806+00:00",
       "body_length": 5697,
       "capabilities": [
         "Overview",
@@ -13567,7 +13567,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyConsultSurvivalLlm_Agent/SKILL.md",
-      "last_modified": "2026-07-24T10:38:09.057658+00:00",
+      "last_modified": "2026-07-24T10:45:50.600806+00:00",
       "body_length": 13259,
       "capabilities": [
         "Overview",
@@ -13590,7 +13590,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-07-24T10:40:09.991449+00:00",
+      "last_modified": "2026-07-24T10:45:50.601807+00:00",
       "body_length": 12426,
       "capabilities": [
         "Overview",
@@ -13741,7 +13741,7 @@
       ],
       "file_path": "Skills/Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
       "relative_path": "Oncology/RareNeoplasmRwdLlmExtraction_Agent/SKILL.md",
-      "last_modified": "2026-07-24T10:36:12.771845+00:00",
+      "last_modified": "2026-07-24T10:45:50.601807+00:00",
       "body_length": 10958,
       "capabilities": [
         "Overview",
@@ -13940,8 +13940,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-07-24T10:42:31.003191+00:00",
-      "body_length": 40413,
+      "last_modified": "2026-07-25T10:34:50.222623+00:00",
+      "body_length": 41479,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -13949,6 +13949,7 @@
         "Safety Benchmark: LLM vs Lexicomp/Drugs.com ASM DDIs",
         "Antiseizure-Medication DDI Benchmarking",
         "Evaluation and Prompting",
+        "LLM-Assisted DDI Evaluation",
         "Workflow",
         "Example Usage",
         "References"
@@ -17444,8 +17445,8 @@
       ],
       "file_path": "Skills/Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
       "relative_path": "Skills_Automation/AgentSkillPackageManagement_Agent/SKILL.md",
-      "last_modified": "2026-07-23T18:11:42.825775+00:00",
-      "body_length": 7606,
+      "last_modified": "2026-07-25T10:36:30.964341+00:00",
+      "body_length": 7679,
       "capabilities": [
         "Overview",
         "When to Use This Skill",

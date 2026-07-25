@@ -66,6 +66,7 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 31. **Annotated Clinician-Note Outcome Snippets**: Identify patient outcome mentions in clinician notes; capture event timing, uncertainty, negation, and source snippets for outcome and temporal claims; validate extracted labels against annotated clinical notes before downstream analytics.
 32. **Adjudication-Ready Outcome Status and Timing Extraction**: From clinician notes, distinguish the outcome mention, outcome status, onset timing, resolution timing, evidence span, uncertainty, negation, and adjudication-ready provenance so extracted outcome records can be reviewed against source-note evidence.
 33. **LLM-Based Patient Outcome Extraction with Adjudicated Temporal Anchoring**: Use LLMs to identify patient outcome events in clinician notes, normalize event time from explicit dates and relative temporal cues, label uncertain outcomes separately from observed or negated outcomes, retain source evidence for outcome and timing claims, and validate extracted events and timing against clinician-adjudicated outcomes before downstream use.
+34. **LLM Outcome Mention Extraction with Temporal Anchoring**: Define outcome schemas before extraction; normalize event timing from note dates, explicit dates, and relative temporal cues; preserve source spans for outcome and timing evidence; separate observed outcomes from inferred outcomes; and validate extracted labels against clinician-adjudicated outcome labels.
 
 ## Workflow
 

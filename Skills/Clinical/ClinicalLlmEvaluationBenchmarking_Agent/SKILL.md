@@ -278,6 +278,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 78. **Fine-grained medical Q&A taxonomy and calibration checks**
    For domain-specific medical Q&A evaluation, define question taxonomies and difficulty labels before scoring; assign separate omission and potential-harm labels; stratify results by medical subdomain and difficulty; preserve reference provenance and source-evidence links; assess calibration; and report inter-rater agreement checks for item labels and adjudicated scores.
 
+79. **Fine-grained domain-specific medical Q&A adjudication limits**
+   For domain-specific medical Q&A evaluation, stratify dataset items by question type and clinical domain; use separate omission and harm taxonomies; require expert adjudication with inter-rater agreement reporting; calibrate results by question type; and report model limitations separately from raw accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**
