@@ -82,9 +82,11 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 20. **Use PubMed 42021926 as a registry-quality validation case.** Treat the 2026 bone sarcoma rare-neoplasm RWD example as a concrete validation case for schema-first LLM extraction, temporal normalization, oncology ontology mapping, provenance capture, manual adjudication, and registry-ready quality metrics, while limiting claims to the reported paper scope.
 
-21. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+21. **Apply the bone sarcoma variable-definition pattern.** Use the 2026 bone sarcoma rare-neoplasm RWD example as a concrete extraction pattern: define registry variables schema-first, normalize temporality and event order, attach registry-grade provenance to each value, map diagnosis, morphology, site, treatment, response, recurrence, and outcome terms to approved oncology ontologies, route uncertain or conflicting fields to adjudication queues, and validate outputs against independent manual abstraction without adding unsupported benchmarks.
 
-22. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
+22. **Maintain an audit trail.** Record model and prompt versions, schema and ontology versions, preprocessing steps, source hashes or stable identifiers, extraction status, reviewer actions, and final disposition. Make each final value traceable to source evidence and any transformation or adjudication.
+
+23. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
 ## Inputs / Outputs
 

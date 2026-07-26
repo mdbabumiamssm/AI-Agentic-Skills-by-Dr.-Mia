@@ -82,6 +82,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 13. **PKFAR psychiatry-specific knowledge injection pattern**  
    Apply PKFAR as a psychiatry-specific knowledge-fused augmented reasoning pattern by retrieving and injecting relevant psychiatric knowledge before synthesis; enforce diagnostic-risk controls, medication safety checks, hallucination checks against case facts and retrieved sources, and clinician-reviewed care planning rather than autonomous diagnosis, prescribing, or disposition.
 
+14. **PKFAR-style evidence-bound psychiatry synthesis**  
+   Use structured psychiatric knowledge retrieval before reasoning; keep diagnosis and risk conclusions within the limits of supplied case facts and retrieved sources; ground medication and care-plan considerations in cited evidence, contraindications, monitoring needs, and clinician review; display uncertainty, missing data, and competing explanations; and block unsupported psychiatric recommendations, including autonomous diagnosis, prescribing, dosing, disposition, or safety-plan decisions.
+
 ## Inputs / Outputs
 
 **Inputs**

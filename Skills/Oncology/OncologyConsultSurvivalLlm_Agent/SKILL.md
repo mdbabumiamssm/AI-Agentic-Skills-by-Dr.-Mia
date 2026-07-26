@@ -89,6 +89,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 23. **Initial-consult survival study guidance**: Apply the PubMed 42004490 finding by splitting cohorts at the patient level with no train/test overlap, enforcing post-consultation leakage controls before text extraction, comparing fine-tuned and zero-shot LLMs against a defined baseline, using survival-specific and censoring-aware metrics with calibration review, and reporting prognostic outputs from initial consult documents cautiously as research or clinician-reviewed decision-support estimates.
 
+24. **Chronology, subgroup, and governance gate**: For fine-tuning versus zero-shot survival prediction from initial oncology consultation documents, require patient-level train/test separation that respects document and outcome chronology when timestamps are available; audit post-baseline leakage, copied-forward future evidence, and label-derived text before modeling; assess calibration and clinically relevant subgroup errors on held-out patients; and document model governance, local validation needs, and cautious clinician-reviewed framing before any prognostic use.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -281,6 +281,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 79. **Fine-grained domain-specific medical Q&A adjudication limits**
    For domain-specific medical Q&A evaluation, stratify dataset items by question type and clinical domain; use separate omission and harm taxonomies; require expert adjudication with inter-rater agreement reporting; calibrate results by question type; and report model limitations separately from raw accuracy.
 
+80. **Rubric-driven domain-specific medical Q&A dataset evaluation**
+   For trustworthy medical LLM benchmarks using domain-specific Q&A datasets, design specialty-calibrated rubrics before scoring; apply item-level error taxonomies for ambiguity, answerability, evidence support, unsupported or hallucinated content, omissions, and potential harm; score omissions and harm independently from correctness; and document dataset construction, provenance, annotation rules, item-level findings, limitations, and trustworthy-use boundaries.
+
+81. **Expanded clinical-note quality rubric controls**
+   For AI-generated clinical-note quality evaluations, expand rubrics into separate fields for factuality, completeness, note structure, safety risk, provenance, inter-rater agreement, and reusable regression testing so systematic review-informed method comparisons can distinguish documentation quality dimensions instead of collapsing them into one score.
+
 ## Inputs / Outputs
 
 **Inputs**
