@@ -53,6 +53,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 13. Current official-plugin operations: Vet official plugin entries against their repository and manifest before adoption, inspect permissions, dependencies, and bundled MCP/tool declarations, pin approved versions or commits, test installs in isolated workspaces, handle conflicts with existing skills or MCP tools, and plan staged migrations from unofficial plugin sources.
 14. Official plugin directory operations: Prefer Anthropic-managed sources when available, verify plugin provenance, inspect permissions and dependencies, pin approved versions or commits, document migration from community plugins, and keep installation approval explicit.
 15. Vetted listing lifecycle: Use `anthropics/claude-plugins-official` as the vetted discovery source, capturing the listing URL, visible repository metadata, trust review, dependency checks, install hygiene decisions, approved version or commit, and migration plan from unofficial marketplaces.
+16. Directory-vetting adoption checklist: Before adopting a plugin from `anthropics/claude-plugins-official`, verify the trusted source, review plugin scope against the requested workflow, inspect dependency and permission hygiene, check visible update cadence, test for conflicts with existing skills, plugins, or MCP tools, and define rollback steps.
 
 ## Inputs / Outputs
 Inputs:

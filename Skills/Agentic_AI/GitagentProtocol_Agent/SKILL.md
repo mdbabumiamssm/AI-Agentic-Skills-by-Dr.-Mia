@@ -59,6 +59,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 14. **MCP-compatible GitAgent package review**: Use the `open-gitagent/gitagent-protocol` repository as the current framework-agnostic, git-native source when checking repository layout, manifest validation, declared skills and tools, portability across agent harnesses, versioning, and compatibility notes for MCP-backed agent workflows.
 15. **Trusted GitAgent Protocol execution review**: Before executing agent definitions from a repository, inspect the git-native layout, validate manifests and declared skills/tools, package only reviewed repository assets, run interoperability checks against the intended agent harnesses, and complete a trust review of permissions, dependencies, setup commands, and runtime assumptions.
 16. **open-gitagent specification refresh**: Treat `open-gitagent/gitagent-protocol` as the current framework-agnostic, git-native specification model for defining AI agents; verify repository layout, interoperability checks, git-based packaging guidance, and migration notes from tool-specific skill formats into portable GitAgent files.
+17. **Git-native packaging checks**: For existing skill or agent bundles, verify repository layout, manifest validity, framework-agnostic agent definition boundaries, interoperability across target harnesses, and migration notes needed to package them as portable GitAgent Protocol assets.
 
 ## Inputs / Outputs
 
