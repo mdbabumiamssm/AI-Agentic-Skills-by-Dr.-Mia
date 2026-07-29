@@ -91,6 +91,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 24. **Chronology, subgroup, and governance gate**: For fine-tuning versus zero-shot survival prediction from initial oncology consultation documents, require patient-level train/test separation that respects document and outcome chronology when timestamps are available; audit post-baseline leakage, copied-forward future evidence, and label-derived text before modeling; assess calibration and clinically relevant subgroup errors on held-out patients; and document model governance, local validation needs, and cautious clinician-reviewed framing before any prognostic use.
 
+25. **Zero-shot versus fine-tuned consult-note comparison**: Compare zero-shot and fine-tuned general LLM survival predictions from initial oncology consultation documents on prespecified, identical endpoints and patient-level cohort splits; control leakage by excluding post-consultation outcomes, later treatments, copied-forward future evidence, and label-derived text; evaluate calibration and report uncertainty on held-out patients; and interpret results cautiously as research or clinician-reviewed decision-support signals rather than standalone clinical predictions.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -64,6 +64,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 21. Distilled DeepSeek-R1 adoption triage: Before adopting distilled DeepSeek-R1 or other open-source diagnosis models on premises, run comparative performance checks on the target diagnostic tasks, document local hardware constraints and privacy rationale, calibrate confidence behavior against clinical diagnostic use cases, and route low-confidence or high-risk outputs through explicit clinician oversight gates.
 22. DeepSeek-R1 distilled diagnosis comparison evidence: Treat PubMed 42062641 as evidence to benchmark model size against diagnosis performance for the exact on-prem configuration, record hardware and privacy constraints, route diagnostic-risk cases through predefined gates, and require clinician oversight before clinical use.
 23. Distilled DeepSeek-R1 deployment caution: Treat benchmark degradation after distillation as a material clinical deployment risk; require specialty- and task-specific validation, PHI-safe on-prem evaluation harnesses, hardware/privacy tradeoff documentation, and governance gates before clinical use.
+24. Distilled reasoning model readiness guardrail: Use the 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models to require target-environment performance validation, privacy-versus-on-prem hardware constraint review, and clinician-governed diagnostic workflows before release rather than assuming distilled reasoning models are production-ready.
 
 ## Inputs / Outputs
 
@@ -88,3 +89,4 @@ Outputs:
 - Source finding: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - PubMed 42062641, "Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance.": https://pubmed.ncbi.nlm.nih.gov/42062641/
 - PubMed 42062641, J Med Syst, 2026 May 1: https://pubmed.ncbi.nlm.nih.gov/42062641/
+- PubMed 42062641, 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models: https://pubmed.ncbi.nlm.nih.gov/42062641/

@@ -85,6 +85,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 14. **PKFAR-style evidence-bound psychiatry synthesis**  
    Use structured psychiatric knowledge retrieval before reasoning; keep diagnosis and risk conclusions within the limits of supplied case facts and retrieved sources; ground medication and care-plan considerations in cited evidence, contraindications, monitoring needs, and clinician review; display uncertainty, missing data, and competing explanations; and block unsupported psychiatric recommendations, including autonomous diagnosis, prescribing, dosing, disposition, or safety-plan decisions.
 
+15. **PKFAR-style structured retrieval and oversight pattern**  
+   Apply a structured retrieval pass before psychiatric synthesis; inject diagnostic, risk, and medication knowledge only when it is case-relevant and attributable to supplied facts or retrieved sources; label evidence provenance for clinically important claims; and keep final diagnosis, prescribing, dosing, disposition, and safety-plan decisions under human psychiatric oversight.
+
 ## Inputs / Outputs
 
 **Inputs**

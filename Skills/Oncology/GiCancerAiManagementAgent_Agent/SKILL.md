@@ -58,7 +58,7 @@ This skill does not provide autonomous medical decisions. It helps assemble evid
 
 8. **Safety, equity, and governance review** - Check whether AI-derived outputs have traceable inputs, clinical validation context, uncertainty statements, bias concerns, escalation criteria, and documentation suitable for human oversight.
 
-9. **Current ASCO GI cancer AI context** - Use the 2026 ASCO Educational Book review on AI for GI cancer management as current context when scoping endoscopy, imaging, pathology, molecular profiling, treatment planning, clinical trial support, and surveillance workflows; keep outputs framed as clinician-governed decision support and explicitly surface evidence, validation, bias, implementation, generalizability limitations, and limits on autonomous recommendations.
+9. **Current ASCO GI cancer AI context** - Use the 2026 ASCO Educational Book review on AI for GI cancer management as high-level evidence context when scoping endoscopy, imaging, pathology, molecular profiling, treatment planning, clinical trial support, surveillance, governance, and human oversight workflows; keep outputs framed as clinician-governed decision support and explicitly surface evidence, validation, bias, implementation, generalizability limitations, and limits on autonomous recommendations.
 
 ## Inputs / Outputs
 

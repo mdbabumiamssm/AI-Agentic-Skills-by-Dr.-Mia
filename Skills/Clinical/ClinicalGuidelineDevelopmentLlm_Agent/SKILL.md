@@ -66,6 +66,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 22. **Recommendation drafting checkpoint pattern**: During real-time LLM-assisted guideline drafting, checkpoint each recommendation by tying draft language to traceable evidence, preserving grading discipline under the selected framework, recording expert adjudication, and blocking unsupported, overconfident, ungraded, or untraceable guideline language.
 23. **Reviewer handoff and governance log**: During real-time LLM evaluation, hand off each draft recommendation with traceable evidence, recommendation-grade context, reviewer decision fields, disagreement and disposition logging, and audit-ready human governance records before panel acceptance.
 24. **Real-time provenance and divergence stop pattern**: For each LLM-assisted recommendation, maintain provenance tables linking source evidence, recommendation grade, expert adjudication, conflict status, and final disposition; stop drafting or review when model output diverges from source evidence until the discrepancy is resolved by accountable experts.
+25. **Autonomous drafting limit checkpoints**: In real-time LLM evaluation for clinical practice guideline development, checkpoint evidence traceability, recommendation grading, expert-panel review, conflict handling, and final disposition before any LLM-assisted text can move beyond support status into an approved guideline draft.
 
 ## Inputs / Outputs
 

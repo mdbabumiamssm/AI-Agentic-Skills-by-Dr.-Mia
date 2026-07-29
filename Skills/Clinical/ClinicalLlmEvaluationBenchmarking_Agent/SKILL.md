@@ -287,6 +287,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 81. **Expanded clinical-note quality rubric controls**
    For AI-generated clinical-note quality evaluations, expand rubrics into separate fields for factuality, completeness, note structure, safety risk, provenance, inter-rater agreement, and reusable regression testing so systematic review-informed method comparisons can distinguish documentation quality dimensions instead of collapsing them into one score.
 
+82. **Fine-grained domain-specific medical Q&A curation and trustworthiness checks**
+   For domain-specific medical Q&A datasets, curate items before benchmarking by documenting source provenance, inclusion criteria, reference-answer evidence, annotation decisions, and exclusion rules; score each item with an error taxonomy that separates factual accuracy, educational value, unsupported content, omissions, answer-evidence alignment, and potential harm risk; and report item-level trustworthiness findings alongside aggregate model scores.
+
+83. **Systematic clinical-note rubric benchmark design**
+   For AI-generated clinical-note quality evaluations, design systematic review-informed rubrics that separately score correctness, completeness, hallucination or unsupported content, safety risk, documentation utility, and inter-rater reliability; use experimental benchmark designs that compare evaluation methods under documented inputs, outputs, evaluator types, rubric definitions, and reporting fields.
+
 ## Inputs / Outputs
 
 **Inputs**
