@@ -51,6 +51,7 @@ An LLM-based agent designed to summarize and explain complex radiology reports f
 6.  **Closed-System LLM Radiography Checklist**: Review AI-generated radiography responses from closed-system LLMs for factual correctness, clinical risk, uncertainty language, scope limits, and comparison against applicable radiography education or reporting standards.
 7.  **Closed-System Radiography Response Safeguards**: Assess locked or text-only LLM radiography answers for factual correctness, omitted safety context, patient-facing language quality, escalation triggers for clinician or radiologist review, and stated limits when used in radiologic education workflows.
 8.  **Closed-System LLM Radiography Response Validation**: Log prompt text and model version for each closed-system LLM radiography response; compare outputs with applicable radiography educational standards; detect unsafe omissions and overstatements; and route responses with clinical uncertainty, omitted safety context, or potential patient-care impact to radiologist review.
+9.  **Closed-System Radiography-Response QA**: Check closed-system LLM radiography outputs for technical accuracy, patient-facing readability, stated scope limits, appropriate escalation language, source grounding in the provided report or authoritative references, and review by radiography or radiology professionals before clinical use.
 
 ## Workflow
 

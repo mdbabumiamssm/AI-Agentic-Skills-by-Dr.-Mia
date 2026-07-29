@@ -243,7 +243,7 @@ Use this skill to avoid relying on a single automatic score when clinical useful
    For domain-specific medical Q&A datasets supporting trustworthy medical language models, predefine item-level error taxonomy, separate omission and potential-harm labels, dataset provenance checks, specialty-level calibration analysis, and repeatable benchmark report fields for construction criteria, annotation rules, item-level findings, limitations, and trustworthy-use boundaries.
 
 67. **Plastic-surgery guideline-concordance adjudication**
-   When evaluating chatbot recommendations against specialty society guidance such as ASPS and AAPS plastic surgery guidance, compare each recommendation to the relevant guidance statement; label clinically material omissions, contraindications, overreach, and conflicts separately; and require harm-focused expert adjudication before using guideline-concordance scores in safety conclusions.
+   When evaluating specialty chatbot recommendations against society guidance such as ASPS and AAPS plastic surgery guidance, map each recommendation to the relevant society-guideline statement; detect clinically material omissions; flag unsafe recommendations, contraindications, overreach, and conflicts separately; define referral thresholds for specialist or urgent clinician review; and require specialty clinician adjudication before using guideline-concordance scores in safety conclusions.
 
 68. **Ophthalmology board-style frontier model comparison**
    For ophthalmology board-style question benchmarks comparing frontier models such as Gemini 3 Pro and GPT-5 family models, grade responses against specialty-specific gold answers; report exact model family, version, and evaluation date; assess confidence calibration; and separate exam-question performance from clinical readiness or patient-care safety claims.
@@ -292,6 +292,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 
 83. **Systematic clinical-note rubric benchmark design**
    For AI-generated clinical-note quality evaluations, design systematic review-informed rubrics that separately score correctness, completeness, hallucination or unsupported content, safety risk, documentation utility, and inter-rater reliability; use experimental benchmark designs that compare evaluation methods under documented inputs, outputs, evaluator types, rubric definitions, and reporting fields.
+
+84. **ICU nursing QA protocol-validation slice**
+   For intensive-care nursing question-answering benchmarks comparing ChatGPT, DeepSeek, and Google Gemini-style systems, define a specialty-specific item taxonomy, standardize prompts and model conditions across providers, tag clinically important omissions and potential harms separately from correctness, and validate answers against ICU nursing protocols rather than generic medical QA scoring.
+
+85. **Fine-grained trustworthy medical Q&A item scoring**
+   For domain-specific medical Q&A datasets supporting trustworthy medical language model benchmarks, score each item for correctness, missing content, uncertainty, provenance, hallucination or unsupported content, and harm risk; use prespecified adjudication rules for ambiguous, incomplete, uncertain, or potentially harmful answers, and report item-level findings alongside aggregate benchmark summaries.
 
 ## Inputs / Outputs
 
