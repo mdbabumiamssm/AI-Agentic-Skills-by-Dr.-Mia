@@ -105,6 +105,7 @@ Use this skill to convert radiology reports and other clinical documents into un
     - For multilingual materials, explicitly assess whether translation changes procedure details, expectation setting, uncertainty, recovery instructions, or warning signs; label unresolved language risks and withhold delivery until qualified language review and treating-surgeon approval are complete.
     - Clearly direct patients to escalate source-stated postoperative warning signs through the clinician-approved care or emergency pathway, without inventing symptoms or urgency thresholds.
     - Escalate for clinician review when risk, consent, urgency, postoperative warning signs, or patient misunderstanding could affect decisions about surgery, anesthesia, medications, follow-up, or seeking care.
+    - Treat LLM outputs as clinician-approved communication support only; do not allow them to replace direct surgical counseling, individualized consent discussion, or patient questions answered by the surgical team.
     - Include teach-back prompts asking the patient to explain key preparation, recovery, and escalation instructions in their own words, and require treating-surgeon approval before patient delivery or use in consent or care decisions.
 
 13. **Gastroenterology patient-education workflows**
