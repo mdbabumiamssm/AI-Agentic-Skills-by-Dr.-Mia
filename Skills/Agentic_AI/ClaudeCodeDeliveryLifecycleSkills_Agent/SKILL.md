@@ -53,6 +53,7 @@ This skill is most useful when a project needs a repeatable engineering workflow
 8. **Verified editing boundary** - Prefer hash-verified or line-verified editing workflows when using `hex-line` style operations so changes apply to the intended source text.
 9. **Code graph analysis boundary** - Use `hex-graph` style code knowledge graphs for navigation, dependency discovery, and impact analysis; do not treat graph output as a substitute for reading critical source files.
 10. **Remote SSH boundary** - Use `hex-ssh` style remote execution only when explicitly authorized, with narrow commands, clear targets, and no unrelated system changes.
+11. **Delivery lifecycle pattern integration** - Coordinate agile workflow agents, multi-model review gates, documentation/audit/performance stages, and security review for bundled MCP servers such as hash-verified editing, graph indexing, and SSH.
 
 ## Inputs / Outputs
 

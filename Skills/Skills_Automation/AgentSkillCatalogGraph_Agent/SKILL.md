@@ -47,6 +47,7 @@ This skill guides graph-backed discovery and selection of agent skills, MCP serv
 4. **Dependency and conflict analysis** - Check whether recommended items require missing runtimes, incompatible tools, duplicate responsibilities, or mutually exclusive assumptions.
 5. **Recommendation capping** - Return a concise set of candidates ranked by task fit, coverage, operational risk, and setup burden instead of listing every match.
 6. **Workflow handoff** - Produce practical next steps: install/use candidates, verify prerequisites, run sample commands, or document why an item was rejected.
+7. **ctx catalog governance** - Treat ctx's 104,078-node LLM-wiki graph, 92,815 skills, 10,786 MCPs, and 13 harnesses as a high-recall catalog pattern; cap recommendations, score provenance, detect conflicts, and require review before installing generated or low-quality skills.
 
 ## Inputs / Outputs
 
