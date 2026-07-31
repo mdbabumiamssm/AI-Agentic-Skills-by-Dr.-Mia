@@ -65,6 +65,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 22. DeepSeek-R1 distilled diagnosis comparison evidence: Treat PubMed 42062641 as evidence to benchmark model size against diagnosis performance for the exact on-prem configuration, record hardware and privacy constraints, route diagnostic-risk cases through predefined gates, and require clinician oversight before clinical use.
 23. Distilled DeepSeek-R1 deployment caution: Treat benchmark degradation after distillation as a material clinical deployment risk; require specialty- and task-specific validation, PHI-safe on-prem evaluation harnesses, hardware/privacy tradeoff documentation, and governance gates before clinical use.
 24. Distilled reasoning model readiness guardrail: Use the 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models to require target-environment performance validation, privacy-versus-on-prem hardware constraint review, and clinician-governed diagnostic workflows before release rather than assuming distilled reasoning models are production-ready.
+25. Distilled DeepSeek-R1 substitution guard: Use PubMed 42062641 as comparative evidence for benchmark and comparator selection, not as deployment approval; document privacy benefits alongside hardware and performance tradeoffs; require local clinical validation and governance before diagnosis-support use; preserve human oversight and escalation paths; and do not treat smaller distilled models as drop-in substitutes for governed clinical decision support.
 
 ## Inputs / Outputs
 

@@ -53,8 +53,9 @@ Use this skill to evaluate large language model responses to ophthalmology conti
 9. Evaluate Gemini 3 Pro and GPT-5 family board-style benchmarks: For ophthalmology board-style question comparisons, record the exact model name/version and run date, stratify questions by specialty topic when available, score answer correctness, omissions, and harm with the same rubric across models, and limit benchmark use to education, evaluation, and clinician-supervised review rather than autonomous care.
 10. Lock board-style comparison methods: For Gemini 3 Pro and GPT-5 family evaluations, freeze exact model versions, prompts, parameters, run dates, and answer-key sources; map items to a predefined ophthalmology specialty board taxonomy; and send ambiguous or disputed answers to ophthalmologist adjudication instead of forcing a binary label.
 11. Use board-style model-comparison templates: For Gemini 3 Pro and GPT-5 family comparisons, report each item with prompt ID, specialty topic, answer key, model label, correctness label, omission score or notes, guideline-consistency status, harm-aware rationale, and reviewer/adjudication status.
-12. Require clinician adjudication: Route uncertain, high-stakes, or discrepant assessments to an ophthalmologist or qualified clinician reviewer before treating them as final.
-13. Produce audit-ready output: Return structured tables with prompt ID, topic, model label, correctness, omissions, harm rating, evidence notes, reviewer status, and adjudication comments.
+12. Incorporate current board-style comparison cases: Use the 2026 Gemini 3 Pro and GPT-5 family ophthalmology board-style comparison as a model-evaluation case for documenting benchmark construction, reviewing answer rationales, checking omissions and harm risks, and reporting cross-model patterns rather than reducing the analysis to model ranking alone.
+13. Require clinician adjudication: Route uncertain, high-stakes, or discrepant assessments to an ophthalmologist or qualified clinician reviewer before treating them as final.
+14. Produce audit-ready output: Return structured tables with prompt ID, topic, model label, correctness, omissions, harm rating, evidence notes, reviewer status, and adjudication comments.
 
 ## Inputs / Outputs
 

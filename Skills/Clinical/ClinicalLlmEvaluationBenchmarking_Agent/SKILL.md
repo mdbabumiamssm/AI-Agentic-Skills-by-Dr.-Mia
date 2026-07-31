@@ -305,6 +305,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 87. **Fine-grained domain-specific medical Q&A readiness reporting**
    For domain-specific medical Q&A datasets supporting trustworthy medical language models, define an item taxonomy; label omissions and contradictions separately; grade potential harm; preserve evidence traceability for reference answers and model claims; calibrate results by question type; and report benchmark accuracy separately from clinical readiness.
 
+88. **Fine-grained domain-specific medical Q&A dataset evaluation practices**
+   For domain-specific medical Q&A datasets used in trustworthy medical LLM benchmarks, audit item-level errors with prespecified categories, classify omissions and potential harm separately, review domain coverage before model comparison, and require reports to include provenance, annotation decisions, item-level findings, limitations, and trustworthy-use boundaries.
+
+89. **AI-generated clinical-note quality method reproducibility**
+   For AI-generated clinical-note quality evaluations, use systematic review and experimental benchmark evidence to prespecify rubric fields for factuality, omission, hallucination or unsupported content, clinical usefulness, inter-rater agreement, and benchmark reproducibility; report the input set, output set, evaluator type, rubric definitions, and comparison procedure so evaluation methods can be compared transparently.
+
 ## Inputs / Outputs
 
 **Inputs**
