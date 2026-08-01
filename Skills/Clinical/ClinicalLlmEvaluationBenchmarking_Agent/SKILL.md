@@ -311,6 +311,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 89. **AI-generated clinical-note quality method reproducibility**
    For AI-generated clinical-note quality evaluations, use systematic review and experimental benchmark evidence to prespecify rubric fields for factuality, omission, hallucination or unsupported content, clinical usefulness, inter-rater agreement, and benchmark reproducibility; report the input set, output set, evaluator type, rubric definitions, and comparison procedure so evaluation methods can be compared transparently.
 
+90. **Clinical-note evaluation method selection and agreement reporting**
+   Use systematic review and experimental benchmark evidence when selecting AI-generated clinical-note evaluation rubrics; score correctness, clinically material omissions, and harm risk as separate endpoints; report inter-rater agreement; and document benchmark comparison methods, rubric definitions, evaluator types, and reporting fields.
+
 ## Inputs / Outputs
 
 **Inputs**

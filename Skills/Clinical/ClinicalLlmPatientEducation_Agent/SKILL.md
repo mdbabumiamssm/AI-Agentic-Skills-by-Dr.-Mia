@@ -70,6 +70,7 @@ Use this skill to convert radiology reports and other clinical documents into un
    - For MRI-report patient education, compare generated explanations against human expert interpretations when available; preserve radiology meaning, uncertainty, urgency, and follow-up recommendations; and require clinician-facing safeguards before personalized explanations are used.
    - For MRI-report patient education workflows, preserve source-stated incidental findings and use patient-safe wording that avoids unsupported reassurance, alarm, diagnosis, or care-direction changes while enforcing clinician review before delivery.
    - Distinguish report findings from the impression or conclusion, surface source-stated red flags and follow-up needs, compare against expert explanations when available, and score readability plus factuality.
+   - For MRI-report patient education checks, verify that the draft preserves radiology meaning, translates report uncertainty plainly, avoids unsupported reassurance, lists clinician-facing follow-up prompts for review, and compares with expert interpretation when available.
    - Evaluate semantic fidelity, reading-level adaptation, uncertainty preservation, personalization to supplied patient context, omissions, overstatements, potential harm, red-flag escalation, and actionable next steps.
    - Document discrepancies and require clinician review before any generated explanation is delivered to a patient.
 

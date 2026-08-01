@@ -51,6 +51,7 @@ This skill produces explainable oncology clinical trial candidate matches by com
 8. **Clinician review package:** Produce a compact, auditable report containing candidate trials, criterion-level decisions, missing-data requests, conflicts, provenance, and review timestamps.
 9. **Prospective 3,804-patient benchmark case:** Use the 2026 PubMed-indexed prospective evaluation in 3,804 oncology patients as a benchmark case for neuro-symbolic multi-agent oncology trial matching grounded in an oncology-specific knowledge graph, with criterion-level reasoning, explicit conflict resolution, clinician-auditable evidence, and prospective performance reporting; do not infer unstated benchmark or performance values.
 10. **Prospective evaluation workflow controls:** Normalize trial eligibility concepts through the oncology knowledge graph before symbolic evaluation, use multi-agent adjudication with documented conflict resolution, preserve criterion-level evidence for every match decision, and report trial-matching metrics without inventing benchmarks not stated in the cited prospective study.
+11. **Clinician-auditable prospective outputs:** For prospective oncology trial matching, ground candidate retrieval in the oncology-specific knowledge graph, run neuro-symbolic eligibility checks, resolve multi-agent conflicts with documented rationale, and emit patient-level evidence trails with `MET`, `NOT`, or `UNKNOWN` outputs for clinician audit.
 
 ## Inputs / Outputs
 

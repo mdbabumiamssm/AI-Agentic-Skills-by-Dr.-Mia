@@ -93,6 +93,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 25. **Test-time knowledge acquisition decision-support workflow**: For LLM-assisted medical decisions, generate focused clinical subqueries, retrieve from trusted medical sources, vet evidence for authority, provenance, recency, applicability, and direct support, inject only verified context with preserved citations, surface conflicts without forcing unsupported consensus, and enforce no-fine-tuning deployment controls so acquired knowledge affects inference context without changing model parameters.
 
+26. **Recommendation-change logging**: For each test-time knowledge acquisition run, retrieve current evidence, vet source quality before use, inject only concise decision-relevant context, require citations for material claims, track conflicts across credible sources, and log when retrieved evidence changes, qualifies, withholds, or escalates the clinical recommendation.
+
 ## Inputs / Outputs
 
 **Inputs**

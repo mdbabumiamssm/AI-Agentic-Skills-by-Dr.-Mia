@@ -93,6 +93,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 25. **Zero-shot versus fine-tuned consult-note comparison**: Compare zero-shot and fine-tuned general LLM survival predictions from initial oncology consultation documents on prespecified, identical endpoints and patient-level cohort splits; control leakage by excluding post-consultation outcomes, later treatments, copied-forward future evidence, and label-derived text; evaluate calibration and report uncertainty on held-out patients; and interpret results cautiously as research or clinician-reviewed decision-support signals rather than standalone clinical predictions.
 
+26. **Fine-tuning decision gate with drift checks**: Decide between zero-shot and fine-tuned survival prediction only after head-to-head validation on initial consultation notes with the same endpoint, prediction time zero, patient-level splits, and leakage controls. Check for cohort drift across training, validation, and intended-use cohorts, including cancer mix, stage, treatment intent, note source, site, and time period; reassess calibration under drift and report predictions cautiously as clinician-reviewed research or decision-support estimates requiring local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

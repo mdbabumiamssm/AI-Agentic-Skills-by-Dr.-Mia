@@ -79,6 +79,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 13. **Biomarker model interpretation beyond tumor-only tiles**
     Interpret dMMR biomarker models with explicit attention to non-tumor and low-magnification WSI regions reported by the 2026 colorectal cancer histopathology finding; avoid assuming tumor-only tiles are the sole valid evidence source; document region-selection rationale, attribution or ablation support, and validation handoff for confirmatory clinical testing.
 
+14. **Region-level dMMR evidence handoff guardrails**
+    Preserve the mapping from non-tumor, tumor, and low-magnification WSI evidence to slide-level risk scores; validate region contributions before relying on the biomarker signal; hand off positive, uncertain, or discordant predictions for standard dMMR/MSI confirmation; and check site, scanner, stain, preprocessing, and tissue-background effects for shortcut learning.
+
 ## Inputs / Outputs
 
 ### Inputs
