@@ -314,6 +314,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 90. **Clinical-note evaluation method selection and agreement reporting**
    Use systematic review and experimental benchmark evidence when selecting AI-generated clinical-note evaluation rubrics; score correctness, clinically material omissions, and harm risk as separate endpoints; report inter-rater agreement; and document benchmark comparison methods, rubric definitions, evaluator types, and reporting fields.
 
+91. **Clinical-note deployment-claim benchmark gate**
+   Before making deployment claims for AI-generated clinical notes, compare evaluation methods on benchmark datasets, separate correctness from omission and harm endpoints, track inter-rater reliability, and require clinician adjudication of benchmark results.
+
 ## Inputs / Outputs
 
 **Inputs**

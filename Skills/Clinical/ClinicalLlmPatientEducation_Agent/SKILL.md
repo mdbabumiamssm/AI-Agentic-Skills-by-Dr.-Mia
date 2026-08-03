@@ -67,6 +67,7 @@ Use this skill to convert radiology reports and other clinical documents into un
 
 7. **MRI-report interpretation validation**
    - Use personalized MRI-report education as a validation scenario by comparing generated explanations against expert interpretations when available, preserving radiology findings, uncertainty, and follow-up recommendations from the report.
+   - For MRI report interpretation, preserve the report's meaning and uncertainty, translate findings into patient-readable language, avoid diagnosis beyond the report, surface next-step questions for clinicians, and compare model output against expert review when available.
    - For MRI-report patient education, compare generated explanations against human expert interpretations when available; preserve radiology meaning, uncertainty, urgency, and follow-up recommendations; and require clinician-facing safeguards before personalized explanations are used.
    - For MRI-report patient education workflows, preserve source-stated incidental findings and use patient-safe wording that avoids unsupported reassurance, alarm, diagnosis, or care-direction changes while enforcing clinician review before delivery.
    - Distinguish report findings from the impression or conclusion, surface source-stated red flags and follow-up needs, compare against expert explanations when available, and score readability plus factuality.

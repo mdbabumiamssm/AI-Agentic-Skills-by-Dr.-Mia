@@ -60,6 +60,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 15. **Trusted GitAgent Protocol execution review**: Before executing agent definitions from a repository, inspect the git-native layout, validate manifests and declared skills/tools, package only reviewed repository assets, run interoperability checks against the intended agent harnesses, and complete a trust review of permissions, dependencies, setup commands, and runtime assumptions.
 16. **open-gitagent specification refresh**: Treat `open-gitagent/gitagent-protocol` as the current framework-agnostic, git-native specification model for defining AI agents; verify repository layout, interoperability checks, git-based packaging guidance, and migration notes from tool-specific skill formats into portable GitAgent files.
 17. **Git-native packaging checks**: For existing skill or agent bundles, verify repository layout, manifest validity, framework-agnostic agent definition boundaries, interoperability across target harnesses, and migration notes needed to package them as portable GitAgent Protocol assets.
+18. **Discoverable GitAgent package migration**: When migrating client-specific skill formats into GitAgent Protocol, keep the package framework-agnostic and git-native by making agent definitions discoverable in the repository, checking compatibility with target clients, reviewing trust boundaries before execution, and documenting which runtime-specific behavior stays outside the portable package.
 
 ## Inputs / Outputs
 

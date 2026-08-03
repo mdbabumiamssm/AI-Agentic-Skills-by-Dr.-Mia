@@ -95,6 +95,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 26. **Recommendation-change logging**: For each test-time knowledge acquisition run, retrieve current evidence, vet source quality before use, inject only concise decision-relevant context, require citations for material claims, track conflicts across credible sources, and log when retrieved evidence changes, qualifies, withholds, or escalates the clinical recommendation.
 
+27. **Retrieve-vet-inject-cite improvement check**: Apply test-time knowledge acquisition as an explicit sequence: retrieve focused evidence for the clinical decision, vet each source for authority, provenance, freshness, applicability, and direct claim support, inject only concise verified evidence with limitations and conflict notes, and cite every material recommendation, contraindication, threshold, drug fact, or risk statement. Reject or qualify stale, low-authority, unverifiable, or non-applicable evidence before it reaches the model context, and compare outputs with and without the acquired knowledge to determine whether decision support improves without fine-tuning or parameter updates.
+
 ## Inputs / Outputs
 
 **Inputs**

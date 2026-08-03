@@ -67,6 +67,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 24. Distilled reasoning model readiness guardrail: Use the 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models to require target-environment performance validation, privacy-versus-on-prem hardware constraint review, and clinician-governed diagnostic workflows before release rather than assuming distilled reasoning models are production-ready.
 25. Distilled DeepSeek-R1 substitution guard: Use PubMed 42062641 as comparative evidence for benchmark and comparator selection, not as deployment approval; document privacy benefits alongside hardware and performance tradeoffs; require local clinical validation and governance before diagnosis-support use; preserve human oversight and escalation paths; and do not treat smaller distilled models as drop-in substitutes for governed clinical decision support.
 26. Distilled DeepSeek-R1 on-prem diagnosis comparison guard: Require local benchmark sets for the target diagnostic workflow, document privacy and hardware tradeoffs for the exact deployment, add clinician review gates before clinical use, and explicitly separate diagnostic assistance from autonomous diagnosis.
+27. Distilled open-source reasoning deployment gate: For on-prem diagnostic settings, benchmark distilled open-source reasoning candidates against closed frontier models on the same diagnostic tasks; document privacy and hardware tradeoffs; validate locally on institution-specific cases; and require governance checkpoints before any clinical use.
 
 ## Inputs / Outputs
 
@@ -93,3 +94,4 @@ Outputs:
 - PubMed 42062641, J Med Syst, 2026 May 1: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - PubMed 42062641, 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - https://pubmed.ncbi.nlm.nih.gov/42062641/
+- Source finding update: https://pubmed.ncbi.nlm.nih.gov/42062641/
