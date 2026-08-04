@@ -317,6 +317,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 91. **Clinical-note deployment-claim benchmark gate**
    Before making deployment claims for AI-generated clinical notes, compare evaluation methods on benchmark datasets, separate correctness from omission and harm endpoints, track inter-rater reliability, and require clinician adjudication of benchmark results.
 
+92. **Intensive-care nursing QA rubric slice**
+   For intensive-care nursing QA comparisons of ChatGPT, DeepSeek, and Google Gemini, score guideline fidelity, medication and dose safety, escalation language, omitted contraindications, and unsafe confident answers as separate rubric dimensions; require human clinical review of answers that are unsafe despite confident wording.
+
+93. **General-versus-medical LLM Q&A calibration audit**
+   For domain-specific medical Q&A datasets, tag each item by domain, apply an item-level error taxonomy, preserve evidence attribution for reference answers and model claims, score uncertainty and harm risk separately, check for dataset leakage, and calibrate results across general-purpose and medical LLMs before reporting trustworthy benchmark conclusions.
+
 ## Inputs / Outputs
 
 **Inputs**
