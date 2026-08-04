@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T10:44:50.627523+00:00",
+  "generated_at": "2026-08-04T10:38:20.138906+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:43:06.582601+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 15763,
       "capabilities": []
     },
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:43:58.132525+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 8145,
       "capabilities": [
         "Overview",
@@ -1652,7 +1652,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:37:50.323039+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 40883,
       "capabilities": [
         "Overview",
@@ -1675,7 +1675,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmPatientEducation_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:41:20.872753+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 12852,
       "capabilities": [
         "Overview",
@@ -1973,7 +1973,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-08-03T10:40:29.473825+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 16865,
       "capabilities": [
         "When to Use This Skill",
@@ -2227,7 +2227,7 @@
       ],
       "file_path": "Skills/Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
       "relative_path": "Clinical/OnPremClinicalLlmDeployment_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:35:01.458244+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 11695,
       "capabilities": [
         "Overview",
@@ -2454,7 +2454,7 @@
       ],
       "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
       "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
-      "last_modified": "2026-08-03T10:38:40.277973+00:00",
+      "last_modified": "2026-08-03T10:44:52.207444+00:00",
       "body_length": 15668,
       "capabilities": [
         "Overview",
@@ -13940,8 +13940,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-03T10:36:53.825110+00:00",
-      "body_length": 49522,
+      "last_modified": "2026-08-04T10:35:22.131520+00:00",
+      "body_length": 50556,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -13951,6 +13951,7 @@
         "Evaluation and Prompting",
         "LLM-Assisted DDI Evaluation",
         "LLM DDI Evaluation: Antiseizure Stress Test",
+        "LLM-versus-Reference DDI Validation",
         "Workflow",
         "Example Usage",
         "References"
