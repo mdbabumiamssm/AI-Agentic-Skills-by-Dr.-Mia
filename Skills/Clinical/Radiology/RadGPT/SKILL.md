@@ -54,6 +54,7 @@ An LLM-based agent designed to summarize and explain complex radiology reports f
 9.  **Closed-System Radiography-Response QA**: Check closed-system LLM radiography outputs for technical accuracy, patient-facing readability, stated scope limits, appropriate escalation language, source grounding in the provided report or authoritative references, and review by radiography or radiology professionals before clinical use.
 10. **Closed-System LLM Radiography Response Evaluation**: Build modality-specific radiography prompt sets; have radiographers review response correctness; check patient-facing language for clarity and safety; capture hallucinations, unsupported claims, and missing caveats; and document limits when image context is absent or unavailable.
 11. **Closed-System LLM Radiography Response QA Mode**: Assess closed-system LLM outputs for radiographic positioning and projection terminology, anatomy-specific correctness, omitted safety context, and clear separation of patient-facing explanations from diagnostic claims requiring qualified clinical review.
+12. **Closed-System LLM Radiography Source-Finding Evaluation**: Check AI-generated radiography responses for correct radiography terminology, factual alignment with the provided source findings, patient-facing readability, hallucinated imaging findings, and clear technologist/radiologist review boundaries before clinical use.
 
 ## Workflow
 

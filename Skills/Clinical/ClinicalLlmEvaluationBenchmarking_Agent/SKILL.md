@@ -323,6 +323,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 93. **General-versus-medical LLM Q&A calibration audit**
    For domain-specific medical Q&A datasets, tag each item by domain, apply an item-level error taxonomy, preserve evidence attribution for reference answers and model claims, score uncertainty and harm risk separately, check for dataset leakage, and calibrate results across general-purpose and medical LLMs before reporting trustworthy benchmark conclusions.
 
+94. **ICU nursing QA consistency and local validation gate**
+   For intensive-care nursing question-answer evaluation, build specialty-specific item banks, compare frontier and open models under matched prompts and conditions, run answer-consistency checks across repeated attempts or model settings, define escalation criteria for unsafe nursing advice, and require local validation before clinical education or workflow use.
+
+95. **Fine-grained domain-specific medical Q&A benchmark adjudication**
+   For trustworthy medical model benchmarks using domain-specific Q&A datasets, stratify items by difficulty, label omissions and potential harms separately, define reviewer disagreement adjudication procedures, summarize calibration by clinically relevant item strata, and document dataset construction, provenance, annotation rules, limitations, and trustworthy-use boundaries.
+
 ## Inputs / Outputs
 
 **Inputs**

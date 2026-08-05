@@ -63,6 +63,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 16. **Knowledge-Augmented Recommendation Release Gate**: Before allowing test-time knowledge-augmented clinical decision-support recommendations, requires source vetting, retrieval provenance, conflict detection, hallucination checks, and evaluation against no-retrieval baselines.
 17. **Medical Answer Safety Adjudication**: Scores answer correctness, clinically important omissions, and risk of harm through blinded expert review; applies severity weighting, resolves reviewer disagreements through adjudication, and retains representative unsafe-response examples for audit and remediation.
 18. **Ophthalmology CME-Style Answer Safety Audit**: For ophthalmology continuing medical education-style clinical answers, label item-level correctness, clinically important content omissions, likely harm severity, unsafe reassurance, and missing referral or escalation language before accepting an LLM response.
+19. **Specialty-Society Guideline Consistency Checks**: Compare clinical AI recommendations against relevant specialty-society guidance, using plastic surgery guidance such as ASPS and AAPS guidelines as an example; flag omissions, contraindications, and discordant recommendations; and require expert review before patient-facing use.
 
 ## Workflow
 
@@ -101,6 +102,7 @@ python3 Skills/Clinical/Safety/AI_Safety_Auditor/audit_output.py --input dischar
 *   https://pubmed.ncbi.nlm.nih.gov/42039929/
 *   https://pubmed.ncbi.nlm.nih.gov/41953846/
 *   https://pubmed.ncbi.nlm.nih.gov/41908501/
+*   https://pubmed.ncbi.nlm.nih.gov/41985209/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
