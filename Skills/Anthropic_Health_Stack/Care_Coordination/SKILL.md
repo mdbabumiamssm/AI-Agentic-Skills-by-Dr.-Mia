@@ -25,11 +25,19 @@ allowed-tools:
 
 This skill implements the Care Coordination workflow using Anthropic's Claude.
 
+## Core Capabilities
+
+- Support surgical patient-physician communication workflows by drafting pre-op explanations, simplifying post-op instructions, summarizing shared-decision discussions, checking patient consent comprehension, defining escalation boundaries, and requiring surgeon review before patient-facing use.
+
 ## Usage
 
 ```bash
 python3 Skills/Anthropic_Health_Stack/Care_Coordination/coworker.py
 ```
+
+## References
+
+- https://pubmed.ncbi.nlm.nih.gov/41948164/
 
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
