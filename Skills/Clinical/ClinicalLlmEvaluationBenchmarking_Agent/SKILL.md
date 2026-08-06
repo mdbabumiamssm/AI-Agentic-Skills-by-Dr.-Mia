@@ -329,6 +329,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 95. **Fine-grained domain-specific medical Q&A benchmark adjudication**
    For trustworthy medical model benchmarks using domain-specific Q&A datasets, stratify items by difficulty, label omissions and potential harms separately, define reviewer disagreement adjudication procedures, summarize calibration by clinically relevant item strata, and document dataset construction, provenance, annotation rules, limitations, and trustworthy-use boundaries.
 
+96. **Fine-grained medical Q&A model-comparison reporting**
+   For trustworthy medical language model benchmarks using domain-specific Q&A datasets, annotate each item with scoring fields for answer validity, omissions, potential harm, ambiguity, and domain coverage; compare candidate models under the same item set and scoring rubric; and report results with templates that separate item-level findings, domain coverage analysis, model-comparison summaries, annotation decisions, limitations, and trustworthy-use boundaries.
+
+97. **Systematic clinical-note evaluation reliability and residual-risk reporting**
+   For AI-generated clinical-note evaluations informed by systematic review and experimental benchmark evidence, prespecify rubrics that separately score correctness, clinically material omissions, note completeness, and safety risk; construct benchmark datasets with documented note task, note type, dataset provenance, evaluator type, rubric definitions, and method-comparison fields; report inter-rater reliability and residual risk so automated or rubric-based quality conclusions are not overstated.
+
 ## Inputs / Outputs
 
 **Inputs**

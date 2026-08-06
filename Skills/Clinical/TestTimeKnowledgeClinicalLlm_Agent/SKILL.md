@@ -97,6 +97,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 27. **Retrieve-vet-inject-cite improvement check**: Apply test-time knowledge acquisition as an explicit sequence: retrieve focused evidence for the clinical decision, vet each source for authority, provenance, freshness, applicability, and direct claim support, inject only concise verified evidence with limitations and conflict notes, and cite every material recommendation, contraindication, threshold, drug fact, or risk statement. Reject or qualify stale, low-authority, unverifiable, or non-applicable evidence before it reaches the model context, and compare outputs with and without the acquired knowledge to determine whether decision support improves without fine-tuning or parameter updates.
 
+28. **Citation-bound test-time acquisition workflow**: For medical decision support, retrieve current evidence for the active question, vet source authority, provenance, recency, relevance, and patient applicability before use, inject only concise evidence snippets and limitations into context, require citations for each material clinical claim, compare the cited output against a no-retrieval baseline to identify retrieval-dependent changes, and withhold, qualify, or escalate conclusions when evidence is stale, irrelevant, unverifiable, or insufficient.
+
 ## Inputs / Outputs
 
 **Inputs**

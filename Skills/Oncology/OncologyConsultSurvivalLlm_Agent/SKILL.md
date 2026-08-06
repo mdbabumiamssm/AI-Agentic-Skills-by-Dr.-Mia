@@ -95,6 +95,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 26. **Fine-tuning decision gate with drift checks**: Decide between zero-shot and fine-tuned survival prediction only after head-to-head validation on initial consultation notes with the same endpoint, prediction time zero, patient-level splits, and leakage controls. Check for cohort drift across training, validation, and intended-use cohorts, including cancer mix, stage, treatment intent, note source, site, and time period; reassess calibration under drift and report predictions cautiously as clinician-reviewed research or decision-support estimates requiring local validation.
 
+27. **Consultation-document comparison protocol**: Compare fine-tuned and zero-shot general LLM survival predictions from initial oncology consultation documents under a shared protocol: lock prediction time zero, survival endpoint, censoring rule, and follow-up window; use patient-level validation splits with no train, validation, or test overlap and temporal or external splits when available; audit post-consultation treatments, outcomes, copied-forward future information, and label-derived text for leakage; check calibration and uncertainty on held-out patients; and report results cautiously as clinician-reviewed research or decision-support estimates requiring local validation rather than definitive survival predictions.
+
 ## Inputs / Outputs
 
 **Inputs**

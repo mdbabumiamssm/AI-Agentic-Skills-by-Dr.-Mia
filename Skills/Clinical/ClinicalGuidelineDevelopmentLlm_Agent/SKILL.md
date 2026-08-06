@@ -69,6 +69,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 25. **Autonomous drafting limit checkpoints**: In real-time LLM evaluation for clinical practice guideline development, checkpoint evidence traceability, recommendation grading, expert-panel review, conflict handling, and final disposition before any LLM-assisted text can move beyond support status into an approved guideline draft.
 26. **Clinical governance example from real-time evaluation**: Use the 2026 real-time guideline-development evaluation as a governance example requiring evidence traceability, recommendation grading, conflict checks, versioned reviewer decisions, and explicit boundaries between LLM drafting assistance and expert panel authority.
 27. **Draft-section evaluation checklist**: For every LLM-assisted draft section, verify evidence traceability, route the section through expert adjudication, record recommendation grading status, perform bias and omission review, and preserve governance records before the section can enter the guideline draft.
+28. **Real-time LLM evaluation gate**: During clinical practice guideline development, treat LLM output as drafting assistance only; require evidence traceability, recommendation grading checks, expert panel review, hallucination screening, and documented panel approval before any text carries guideline authority.
 
 ## Inputs / Outputs
 

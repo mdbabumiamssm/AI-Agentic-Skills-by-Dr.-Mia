@@ -68,6 +68,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 25. Distilled DeepSeek-R1 substitution guard: Use PubMed 42062641 as comparative evidence for benchmark and comparator selection, not as deployment approval; document privacy benefits alongside hardware and performance tradeoffs; require local clinical validation and governance before diagnosis-support use; preserve human oversight and escalation paths; and do not treat smaller distilled models as drop-in substitutes for governed clinical decision support.
 26. Distilled DeepSeek-R1 on-prem diagnosis comparison guard: Require local benchmark sets for the target diagnostic workflow, document privacy and hardware tradeoffs for the exact deployment, add clinician review gates before clinical use, and explicitly separate diagnostic assistance from autonomous diagnosis.
 27. Distilled open-source reasoning deployment gate: For on-prem diagnostic settings, benchmark distilled open-source reasoning candidates against closed frontier models on the same diagnostic tasks; document privacy and hardware tradeoffs; validate locally on institution-specific cases; and require governance checkpoints before any clinical use.
+28. Distilled DeepSeek-R1 comparative validation evidence: Use the 2026 J Med Syst comparative study as evidence that open-source distilled DeepSeek-R1-derived diagnosis models require validation before on-prem clinical deployment; choose benchmarks and comparators for the intended diagnostic task; document privacy benefits against diagnostic performance tradeoffs and hardware constraints; and require clinician oversight for all diagnosis-support outputs.
 
 ## Inputs / Outputs
 
@@ -95,3 +96,4 @@ Outputs:
 - PubMed 42062641, 2026 comparative study of distilled DeepSeek-R1 open-source diagnosis models: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Source finding update: https://pubmed.ncbi.nlm.nih.gov/42062641/
+- Zhong W, Fu Y, Peng D, Liu Y, Liu Y. Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance. J Med Syst. 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42062641/
