@@ -82,6 +82,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 14. **Region-level dMMR evidence handoff guardrails**
     Preserve the mapping from non-tumor, tumor, and low-magnification WSI evidence to slide-level risk scores; validate region contributions before relying on the biomarker signal; hand off positive, uncertain, or discordant predictions for standard dMMR/MSI confirmation; and check site, scanner, stain, preprocessing, and tissue-background effects for shortcut learning.
 
+15. **Tumor and context-region molecular-testing triage**
+    Evaluate tumor, non-tumor, and low-magnification WSI regions as separate evidence streams for colorectal cancer dMMR prediction; require region-level attribution or ablation checks before accepting slide-level risk; and route positive, uncertain, or attribution-discordant outputs to validated molecular testing rather than treating histopathology prediction as diagnostic confirmation.
+
 ## Inputs / Outputs
 
 ### Inputs

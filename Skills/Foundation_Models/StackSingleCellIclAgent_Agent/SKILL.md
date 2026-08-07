@@ -48,6 +48,7 @@ This skill operationalizes Arc Institute's **Stack**, a single-cell foundation m
 6. **Result post-processing** — Decode model outputs into per-cell predictions or embeddings, attach them back to the AnnData object, and export tables or UMAP-ready matrices for downstream analysis.
 7. **Evaluation harness** — Compute few-shot accuracy, macro-F1, or perturbation correlation metrics by holding out labeled cells and varying the size of the in-context support set.
 8. **Comparative benchmarking** — Optionally contrast Stack's zero-shot/few-shot performance with fine-tuned single-cell foundation model baselines on the same query split.
+9. **Stack ICL workflow framing** — Treat each task as inference-only prompt conditioning rather than fine-tuning: package labeled reference/context cells and unlabeled query cells from AnnData together, keep benchmark comparisons matched on the same held-out query split and context budget, and validate predicted annotations against conventional annotation baselines before treating them as ground truth.
 
 ## Inputs / Outputs
 

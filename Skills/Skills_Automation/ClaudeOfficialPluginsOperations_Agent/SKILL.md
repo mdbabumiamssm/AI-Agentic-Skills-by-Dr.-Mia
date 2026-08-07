@@ -55,6 +55,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 15. Vetted listing lifecycle: Use `anthropics/claude-plugins-official` as the vetted discovery source, capturing the listing URL, visible repository metadata, trust review, dependency checks, install hygiene decisions, approved version or commit, and migration plan from unofficial marketplaces.
 16. Directory-vetting adoption checklist: Before adopting a plugin from `anthropics/claude-plugins-official`, verify the trusted source, review plugin scope against the requested workflow, inspect dependency and permission hygiene, check visible update cadence, test for conflicts with existing skills, plugins, or MCP tools, and define rollback steps.
 17. Authoritative directory preference: Treat `anthropics/claude-plugins-official` as the authoritative vetted plugin directory when a matching official plugin exists; prefer it over marketplace packages when provenance is clearer, dependencies and install steps can be reviewed, migration impact is documented, and the official option covers the required workflow.
+18. Anthropic-managed official plugin workflow: Use the GitHub `anthropics/claude-plugins-official` directory as a vetted source for Claude Code plugin discovery; before installation, perform trust review, inspect dependencies and permission requests, keep installs clean and reversible, avoid conflicts with existing plugins, skills, or MCP servers, and document migration decisions when replacing informal plugin directories.
 
 ## Inputs / Outputs
 Inputs:
@@ -74,3 +75,4 @@ Outputs:
 - Source finding: `anthropics/claude-plugins-official`, official Anthropic-managed directory of high quality Claude Code Plugins: https://github.com/anthropics/claude-plugins-official
 - https://github.com/anthropics/claude-plugins-official
 - https://github.com/anthropics/claude-plugins-official
+- GitHub finding, published 2026-05-04 by `anthropics`: https://github.com/anthropics/claude-plugins-official

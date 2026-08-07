@@ -45,23 +45,25 @@ Use this skill to design, implement, or review agentic AI chatbot and assistant 
 
 1. **Reference architecture mapping** - Identify the user-facing surface, orchestration layer, Strands agent runtime, Bedrock AgentCore integration, tool services, state stores, and deployment units before coding.
 
-2. **TypeScript implementation planning** - Preserve the repository's TypeScript deployment shape, package boundaries, environment configuration, and build scripts when extending the sample.
+2. **AWS sample reference implementation** - Use `aws-samples/sample-strands-agent-with-agentcore` as the TypeScript baseline for Strands Agents plus Bedrock AgentCore patterns across A2A/MCP integration, browser automation, voice assistant paths, deployment boundaries, IAM/security controls, and observability handoff.
 
-3. **AgentCore runtime integration** - Connect agent handlers, model invocation paths, memory or session state, and runtime configuration to Amazon Bedrock AgentCore patterns.
+3. **TypeScript implementation planning** - Preserve the repository's TypeScript deployment shape, package boundaries, environment configuration, and build scripts when extending the sample.
 
-4. **A2A interoperability design** - Define agent cards, capability metadata, request routing, identity expectations, and handoff behavior when agents need to collaborate.
+4. **AgentCore runtime integration** - Connect agent handlers, model invocation paths, memory or session state, and runtime configuration to Amazon Bedrock AgentCore patterns.
 
-5. **MCP interoperability design** - Treat MCP servers as explicit tool boundaries with typed inputs, scoped permissions, error handling, and auditable tool-call traces.
+5. **A2A interoperability design** - Define agent cards, capability metadata, request routing, identity expectations, and handoff behavior when agents need to collaborate.
 
-6. **Browser automation support** - Isolate browser automation tools from core agent logic, constrain browsing permissions, capture durable evidence, and handle timeouts or nondeterministic page behavior.
+6. **MCP interoperability design** - Treat MCP servers as explicit tool boundaries with typed inputs, scoped permissions, error handling, and auditable tool-call traces.
 
-7. **Chat and voice surface guidance** - Separate transport concerns from agent reasoning so web chat, streaming chat, and voice assistant flows can share orchestration logic.
+7. **Browser automation support** - Isolate browser automation tools from core agent logic, constrain browsing permissions, capture durable evidence, and handle timeouts or nondeterministic page behavior.
 
-8. **Observability and evaluation** - Instrument requests, model calls, tool calls, traces, latency, failures, session IDs, and human feedback without logging secrets or sensitive payloads.
+8. **Chat and voice surface guidance** - Separate transport concerns from agent reasoning so web chat, streaming chat, and voice assistant flows can share orchestration logic.
 
-9. **IAM and security boundaries** - Apply least-privilege IAM, scoped secrets, per-tool authorization, network egress controls, data-retention limits, and clear trust boundaries between agents, tools, and users.
+9. **Observability and evaluation** - Instrument requests, model calls, tool calls, traces, latency, failures, session IDs, and human feedback without logging secrets or sensitive payloads.
 
-10. **Deployment readiness review** - Check environment variables, infrastructure outputs, rollback approach, alarms, dependency versions, and operational runbooks before promoting changes.
+10. **IAM and security boundaries** - Apply least-privilege IAM, scoped secrets, per-tool authorization, network egress controls, data-retention limits, and clear trust boundaries between agents, tools, and users.
+
+11. **Deployment readiness review** - Check environment variables, infrastructure outputs, rollback approach, alarms, dependency versions, and operational runbooks before promoting changes.
 
 ## Inputs / Outputs
 

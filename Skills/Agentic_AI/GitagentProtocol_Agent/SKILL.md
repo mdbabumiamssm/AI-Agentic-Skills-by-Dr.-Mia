@@ -61,6 +61,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 16. **open-gitagent specification refresh**: Treat `open-gitagent/gitagent-protocol` as the current framework-agnostic, git-native specification model for defining AI agents; verify repository layout, interoperability checks, git-based packaging guidance, and migration notes from tool-specific skill formats into portable GitAgent files.
 17. **Git-native packaging checks**: For existing skill or agent bundles, verify repository layout, manifest validity, framework-agnostic agent definition boundaries, interoperability across target harnesses, and migration notes needed to package them as portable GitAgent Protocol assets.
 18. **Discoverable GitAgent package migration**: When migrating client-specific skill formats into GitAgent Protocol, keep the package framework-agnostic and git-native by making agent definitions discoverable in the repository, checking compatibility with target clients, reviewing trust boundaries before execution, and documenting which runtime-specific behavior stays outside the portable package.
+19. **Portable GitAgent protocol packaging**: Package agent repositories with a clear git-native layout, validated agent manifest, framework-agnostic skill and tool definitions, interoperability checks for target runtimes, trust review of permissions and dependencies, and migration notes for teams converting existing agent repositories into portable definitions.
 
 ## Inputs / Outputs
 
@@ -82,3 +83,4 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 ## References
 
 - GitAgent Protocol repository: https://github.com/open-gitagent/gitagent-protocol
+- Source finding: https://github.com/open-gitagent/gitagent-protocol

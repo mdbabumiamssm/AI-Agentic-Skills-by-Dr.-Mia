@@ -99,6 +99,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 28. **Citation-bound test-time acquisition workflow**: For medical decision support, retrieve current evidence for the active question, vet source authority, provenance, recency, relevance, and patient applicability before use, inject only concise evidence snippets and limitations into context, require citations for each material clinical claim, compare the cited output against a no-retrieval baseline to identify retrieval-dependent changes, and withhold, qualify, or escalate conclusions when evidence is stale, irrelevant, unverifiable, or insufficient.
 
+29. **Uncertainty-triggered clinical knowledge acquisition**: Trigger test-time retrieval only when answer uncertainty, guideline dependence, drug-label dependence, diagnostic threshold dependence, or patient-specific applicability risk is high; vet retrieved sources before use; inject concise evidence with provenance; cite the supporting source for material claims; compare pre-retrieval and post-retrieval answers to surface changed recommendations or confidence; and require clinician review before any final diagnostic, treatment, medication, or operational decision.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -335,6 +335,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 97. **Systematic clinical-note evaluation reliability and residual-risk reporting**
    For AI-generated clinical-note evaluations informed by systematic review and experimental benchmark evidence, prespecify rubrics that separately score correctness, clinically material omissions, note completeness, and safety risk; construct benchmark datasets with documented note task, note type, dataset provenance, evaluator type, rubric definitions, and method-comparison fields; report inter-rater reliability and residual risk so automated or rubric-based quality conclusions are not overstated.
 
+98. **AI-generated clinical-note quality method benchmark design**
+   Use the 2026 systematic review and experimental benchmark of AI-generated clinical-note quality methods to design evaluations that separately assess correctness, omissions, hallucination, completeness, clinical usefulness, harm risk, and inter-rater agreement; document benchmark design fields so evaluation methods can be compared under matched clinical-note tasks, inputs, outputs, evaluator types, and rubric or metric definitions.
+
 ## Inputs / Outputs
 
 **Inputs**
