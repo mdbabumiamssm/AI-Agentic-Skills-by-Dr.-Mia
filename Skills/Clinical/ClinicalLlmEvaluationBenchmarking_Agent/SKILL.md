@@ -338,6 +338,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 98. **AI-generated clinical-note quality method benchmark design**
    Use the 2026 systematic review and experimental benchmark of AI-generated clinical-note quality methods to design evaluations that separately assess correctness, omissions, hallucination, completeness, clinical usefulness, harm risk, and inter-rater agreement; document benchmark design fields so evaluation methods can be compared under matched clinical-note tasks, inputs, outputs, evaluator types, and rubric or metric definitions.
 
+99. **Domain-specific medical Q&A benchmark reporting template**
+   For fine-grained evaluation of domain-specific medical Q&A datasets, require item-level error taxonomy fields, trustworthiness scoring for answer validity and evidence support, separate omission and harm labels, dataset provenance checks, annotation-rule documentation, item-level finding summaries, limitations, and trustworthy-use boundary reporting.
+
+100. **Note-specific clinical quality dimensions**
+   For AI-generated clinical-note quality evaluation, score factual correctness, omissions, hallucinations, readability, billing or compliance risk, clinician edit burden, and inter-rater reliability as separate note-specific dimensions; use these fields when comparing human review, rubric-based review, and automated evaluation methods.
+
 ## Inputs / Outputs
 
 **Inputs**

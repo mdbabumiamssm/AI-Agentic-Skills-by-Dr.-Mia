@@ -97,6 +97,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 27. **Consultation-document comparison protocol**: Compare fine-tuned and zero-shot general LLM survival predictions from initial oncology consultation documents under a shared protocol: lock prediction time zero, survival endpoint, censoring rule, and follow-up window; use patient-level validation splits with no train, validation, or test overlap and temporal or external splits when available; audit post-consultation treatments, outcomes, copied-forward future information, and label-derived text for leakage; check calibration and uncertainty on held-out patients; and report results cautiously as clinician-reviewed research or decision-support estimates requiring local validation rather than definitive survival predictions.
 
+28. **Explicit zero-shot versus fine-tuned comparison guidance**: For general LLM survival prediction from initial oncology consult notes, evaluate zero-shot and fine-tuned approaches head-to-head on the same cohort, document cutoff, survival endpoint, censoring rule, and time horizon; control leakage from post-consultation outcomes, later treatments, future dated text, copied-forward content, and label-derived signals; assess calibration and uncertainty on held-out patients; seek external validation before applying results beyond the source setting; and report clinician-facing outputs cautiously as research or decision-support estimates requiring clinician review, not standalone survival predictions.
+
 ## Inputs / Outputs
 
 **Inputs**

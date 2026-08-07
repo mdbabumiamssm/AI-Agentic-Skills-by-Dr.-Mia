@@ -91,6 +91,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 16. **PKFAR psychiatry-specific source-vetted reasoning pattern**  
    Apply PKFAR as a psychiatry-specific knowledge-fused reasoning pattern by vetting retrieval sources before use, supporting psychiatric differential diagnosis without replacing clinical judgment, checking medication and safety-risk implications, structuring uncertainty around missing or conflicting evidence, and requiring clinician review for any diagnosis, medication, safety, or disposition-relevant output.
 
+17. **PKFAR-style clinician-governed augmented reasoning**  
+   Run structured psychiatric knowledge retrieval before synthesis, preserve diagnostic uncertainty with supporting, opposing, and missing evidence, check medication and safety-risk implications, cite diagnostic, medication, and risk-relevant claims to case facts or retrieved sources, and keep outputs within clinician-governed decision support boundaries rather than autonomous diagnosis, prescribing, or disposition.
+
 ## Inputs / Outputs
 
 **Inputs**

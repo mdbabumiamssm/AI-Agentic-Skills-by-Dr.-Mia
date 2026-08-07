@@ -70,6 +70,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 26. **Clinical governance example from real-time evaluation**: Use the 2026 real-time guideline-development evaluation as a governance example requiring evidence traceability, recommendation grading, conflict checks, versioned reviewer decisions, and explicit boundaries between LLM drafting assistance and expert panel authority.
 27. **Draft-section evaluation checklist**: For every LLM-assisted draft section, verify evidence traceability, route the section through expert adjudication, record recommendation grading status, perform bias and omission review, and preserve governance records before the section can enter the guideline draft.
 28. **Real-time LLM evaluation gate**: During clinical practice guideline development, treat LLM output as drafting assistance only; require evidence traceability, recommendation grading checks, expert panel review, hallucination screening, and documented panel approval before any text carries guideline authority.
+29. **Live evaluation lesson controls**: During real-time LLM evaluation, keep every draft statement traceable to evidence, keep recommendation grading inside the approved framework and panel process, require live expert review, log failures and corrections, and separate drafting assistance from consensus decisions.
 
 ## Inputs / Outputs
 

@@ -69,6 +69,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 26. Distilled DeepSeek-R1 on-prem diagnosis comparison guard: Require local benchmark sets for the target diagnostic workflow, document privacy and hardware tradeoffs for the exact deployment, add clinician review gates before clinical use, and explicitly separate diagnostic assistance from autonomous diagnosis.
 27. Distilled open-source reasoning deployment gate: For on-prem diagnostic settings, benchmark distilled open-source reasoning candidates against closed frontier models on the same diagnostic tasks; document privacy and hardware tradeoffs; validate locally on institution-specific cases; and require governance checkpoints before any clinical use.
 28. Distilled DeepSeek-R1 comparative validation evidence: Use the 2026 J Med Syst comparative study as evidence that open-source distilled DeepSeek-R1-derived diagnosis models require validation before on-prem clinical deployment; choose benchmarks and comparators for the intended diagnostic task; document privacy benefits against diagnostic performance tradeoffs and hardware constraints; and require clinician oversight for all diagnosis-support outputs.
+29. Distilled DeepSeek-R1-derived model evaluation: Treat the 2026 comparative study as evidence for diagnosis-task benchmarking of distilled DeepSeek-R1-derived open-source models before on-prem use; document privacy and security tradeoffs, local hardware constraints, and exact model provenance; and require clinician oversight before production deployment.
 
 ## Inputs / Outputs
 
@@ -97,3 +98,4 @@ Outputs:
 - https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Source finding update: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Zhong W, Fu Y, Peng D, Liu Y, Liu Y. Open-Source Large Language Models Distilled DeepSeek-R1 Pose Challenges for On-Premises Clinical Deployment in Medical Diagnosis: A Comparative Study of Performance. J Med Syst. 2026 May 1. https://pubmed.ncbi.nlm.nih.gov/42062641/
+- PubMed 42062641 comparative study on distilled DeepSeek-R1-derived open-source models for on-premises clinical diagnosis deployment: https://pubmed.ncbi.nlm.nih.gov/42062641/
