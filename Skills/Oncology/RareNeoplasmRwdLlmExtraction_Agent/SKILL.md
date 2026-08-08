@@ -96,6 +96,8 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 27. **Run release checks.** Reject outputs that fail schema validation, contain unsupported values, lack required provenance, expose unauthorized identifiers, or violate chronology constraints. Sample accepted, rejected, and abstained cases for periodic human quality review and monitor drift when data sources or models change.
 
+28. **Apply the bone sarcoma validation pattern.** Use the 2026 PubMed-indexed bone sarcoma rare-neoplasm RWD extraction example as a validation pattern for schema-first variable definition, temporal normalization, oncology ontology mapping, source provenance capture, privacy review, and human adjudication before registry-ready output export, without adding unsupported benchmarks or claims.
+
 ## Inputs / Outputs
 
 ### Inputs
