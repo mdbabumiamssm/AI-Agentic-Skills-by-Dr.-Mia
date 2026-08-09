@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:38:15.374019+00:00",
+  "generated_at": "2026-08-09T10:36:52.306660+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -13942,11 +13942,12 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-09T05:37:23.908569+00:00",
-      "body_length": 54706,
+      "last_modified": "2026-08-09T10:35:33.119281+00:00",
+      "body_length": 55579,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
+        "Medication-Safety Benchmarking for LLM-Assisted DDI Review",
         "Comparative Benchmark: LLM-Based ASM DDI Checks",
         "Safety Benchmark: LLM vs Lexicomp/Drugs.com ASM DDIs",
         "Antiseizure-Medication DDI Benchmarking",
