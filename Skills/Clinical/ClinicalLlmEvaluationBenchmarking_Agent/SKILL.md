@@ -344,6 +344,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 100. **Note-specific clinical quality dimensions**
    For AI-generated clinical-note quality evaluation, score factual correctness, omissions, hallucinations, readability, billing or compliance risk, clinician edit burden, and inter-rater reliability as separate note-specific dimensions; use these fields when comparing human review, rubric-based review, and automated evaluation methods.
 
+101. **Specialty-calibrated medical Q&A trustworthiness limits**
+   For domain-specific medical Q&A dataset evaluation, use item-level error taxonomy, separate omission and harm scoring, calibration across specialties, reproducible benchmark metadata, and trustworthy reporting of dataset limits, annotation choices, and use boundaries rather than aggregate accuracy alone.
+
+102. **Systematic-review-backed clinical-note documentation workflow evaluation**
+   For AI-generated clinical-note documentation workflows, design rubrics and experimental benchmark datasets that separately assess correctness, completeness, harmful omissions, style and usability, and inter-rater reliability; compare evaluation methods under documented benchmark construction rather than treating a single metric as sufficient.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -101,6 +101,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 29. **Consultation-note cohort and prognostic-output safeguards**: For workflows informed by the 2026 fine-tuning versus zero-shot survival prediction study, construct the cohort from initial oncology consultation documents with patient-level identifiers, consultation dates, endpoint definitions, follow-up and censoring data, and no train/validation/test patient overlap; prevent leakage from post-consultation notes, outcomes, treatments, copied-forward dated text, and label-derived signals before either prompting or fine-tuning; compare zero-shot and fine-tuned models on the same eligible cohort and endpoint; review calibration and uncertainty on held-out patients; and report prognostic LLM outputs cautiously as clinician-reviewed research or decision-support estimates requiring local validation.
 
+30. **Fine-tuning versus zero-shot prognostic governance**: Use the PubMed 42004490 finding to require a prespecified comparison of fine-tuned and zero-shot general LLM survival prediction from initial oncology consultation notes without assuming superiority; enforce leakage controls for future outcomes, post-consultation treatments, copied-forward dated text, and label-derived signals; check cohort drift across training, validation, test, and intended-use populations; use censoring-aware evaluation and calibration review; and communicate prognostic outputs in guarded language as locally validated, clinician-reviewed research or decision-support estimates rather than definitive survival predictions.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -94,6 +94,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 17. **PKFAR-style clinician-governed augmented reasoning**  
    Run structured psychiatric knowledge retrieval before synthesis, preserve diagnostic uncertainty with supporting, opposing, and missing evidence, check medication and safety-risk implications, cite diagnostic, medication, and risk-relevant claims to case facts or retrieved sources, and keep outputs within clinician-governed decision support boundaries rather than autonomous diagnosis, prescribing, or disposition.
 
+18. **PKFAR-specific curated knowledge injection and provenance pattern**  
+   Inject curated psychiatry knowledge into the reasoning process only after matching it to the case context; use it to support differential diagnosis, medication and safety-risk reasoning, citation/provenance capture, and clinician-supervised review boundaries without treating the model output as independent clinical authority.
+
 ## Inputs / Outputs
 
 **Inputs**
