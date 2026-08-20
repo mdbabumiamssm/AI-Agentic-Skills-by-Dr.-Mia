@@ -350,6 +350,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 102. **Systematic-review-backed clinical-note documentation workflow evaluation**
    For AI-generated clinical-note documentation workflows, design rubrics and experimental benchmark datasets that separately assess correctness, completeness, harmful omissions, style and usability, and inter-rater reliability; compare evaluation methods under documented benchmark construction rather than treating a single metric as sufficient.
 
+103. **Fine-grained domain-specific medical Q&A trustworthiness workflow**
+   For trustworthy medical language model benchmarks using domain-specific Q&A datasets, score each item for correctness, omission, harm risk, ambiguity, evidence support, and specialty slice; run dataset quality checks for provenance, answerability, evidence alignment, coverage, annotation consistency, and limitations; report calibration by relevant item or specialty strata; and use a prespecified adjudication workflow for reviewer disagreement and clinically important failures.
+
 ## Inputs / Outputs
 
 **Inputs**
