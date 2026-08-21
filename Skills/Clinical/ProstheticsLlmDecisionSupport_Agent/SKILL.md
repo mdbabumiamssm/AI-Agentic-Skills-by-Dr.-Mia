@@ -59,6 +59,8 @@ Use this skill to support evidence-based prosthetic recommendation workflows for
 
 9. ProsthetiX-AI workflow details: Build a patient intake schema covering de-identified demographics, amputation details, residual-limb condition, comorbidities, current prosthesis, mobility/function goals, activity environment, preferences, and device constraints; run contraindication checks and safety review before option ranking; retrieve evidence before drafting recommendation rationale; and output structured intake, evidence summary, safety flags, recommendation rationale, unresolved questions, and documentation for prosthetist oversight and sign-off.
 
+10. ProsthetiX-AI clinical decision support pattern: Require a structured intake schema, evidence retrieval before rationale drafting, contraindication checks before option ranking, shared decision-making documentation of preferences and tradeoffs, and rehabilitation specialist or prosthetist review before implementation.
+
 ## Inputs / Outputs
 
 Inputs this skill can consume:

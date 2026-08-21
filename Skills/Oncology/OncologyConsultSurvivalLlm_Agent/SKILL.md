@@ -105,6 +105,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 31. **Document-window constrained survival comparison**: For fine-tuning versus zero-shot survival prediction from initial oncology consultation documents, restrict model inputs to the prespecified initial-consultation window, define outcome censoring and follow-up before evaluation, audit leakage from future outcomes or post-consultation content, assess calibration on held-out patients, and report results cautiously as clinician-reviewed research or decision-support estimates rather than standalone clinical predictions.
 
+32. **Fine-tuning versus zero-shot consult-study protocol**: Use the PubMed 42004490 oncology consultation survival study to guide leakage-controlled comparison of fine-tuned and zero-shot general LLMs only after defining the survival endpoint, prediction time zero, censoring rule, and follow-up window; preprocess documents to restrict inputs to initial-consultation content and flag copied-forward, dated, outcome-revealing, or post-consultation text; evaluate calibration and uncertainty on held-out patients; and report predicted survival risk cautiously as a clinician-reviewed research or decision-support estimate requiring local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

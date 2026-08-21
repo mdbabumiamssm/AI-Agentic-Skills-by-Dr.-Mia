@@ -72,6 +72,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 29. Distilled DeepSeek-R1-derived model evaluation: Treat the 2026 comparative study as evidence for diagnosis-task benchmarking of distilled DeepSeek-R1-derived open-source models before on-prem use; document privacy and security tradeoffs, local hardware constraints, and exact model provenance; and require clinician oversight before production deployment.
 30. Distilled DeepSeek-R1-style deployment gating: Use PubMed 42062641 as comparative evidence to select local benchmarks and comparators for the intended diagnostic workflow, run privacy-preserving validation on the exact on-prem model configuration, document hardware/performance tradeoffs, review failure modes from incorrect diagnostic outputs, and require explicit human oversight before clinical use.
 31. Comparative distilled DeepSeek-R1-derived diagnostic results gate: For on-prem candidates, document the reported paired comparisons before selection: DeepSeek-R1-671B outperformed DeepSeek-V3 on simulated diagnostic cases (95.45% vs. 88.18%; p = 0.008), DeepSeek-R1-8B underperformed Llama3.1-8B (47.27% vs. 64.54%; p = 0.003), and mid-sized distilled models showed no significant differences from their base models; treat reasoning drift, red-flag recognition failure, and diagnostic priority inversion as failure modes to review; capture GPU, memory, latency, and storage constraints together with the privacy benefit of local PHI processing; validate the exact model, prompt, quantization, and serving stack against clinician gold-standard diagnoses and real or institution-specific patient data before use; and require human oversight, escalation, and rollback for all diagnosis-support outputs.
+32. Open-source diagnostic model tradeoff review: Use the 2026 PubMed comparative study on distilled DeepSeek-R1/open-source diagnosis models as evidence to require performance validation in the target clinical environment, documentation of privacy constraints, hardware sizing for the exact on-prem configuration, local governance approval, and explicit human oversight before clinical use.
 
 ## Inputs / Outputs
 
@@ -103,3 +104,4 @@ Outputs:
 - PubMed 42062641 comparative study on distilled DeepSeek-R1-derived open-source models for on-premises clinical diagnosis deployment: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Source URL: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Source finding update: https://pubmed.ncbi.nlm.nih.gov/42062641/
+- PubMed 42062641 source finding: https://pubmed.ncbi.nlm.nih.gov/42062641/

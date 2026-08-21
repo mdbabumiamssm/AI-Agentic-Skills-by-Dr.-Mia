@@ -103,6 +103,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 30. **Inference-time knowledge acquisition workflow**: During medical decision support inference, retrieve evidence for the active clinical question, vet source quality before use, inject only concise decision-relevant context, require citations and explicit uncertainty statements, compare the cited output against a no-retrieval baseline, and guard against stale, low-quality, unverifiable, or non-applicable retrieved knowledge by qualifying, withholding, or escalating the affected recommendation.
 
+31. **Test-time knowledge acquisition decision check**: Trigger retrieval when medical decision-making depends on current guidance, drug safety information, diagnostic thresholds, patient-specific applicability, or uncertain model knowledge; vet evidence for authority, provenance, freshness, applicability, and direct support before citation injection; report uncertainty and missing evidence explicitly; and compare the result with fine-tuning, static RAG, or no-retrieval approaches only as a workflow distinction unless measured results are available.
+
 ## Inputs / Outputs
 
 **Inputs**

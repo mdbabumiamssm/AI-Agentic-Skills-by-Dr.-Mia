@@ -97,6 +97,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 18. **PKFAR-specific curated knowledge injection and provenance pattern**  
    Inject curated psychiatry knowledge into the reasoning process only after matching it to the case context; use it to support differential diagnosis, medication and safety-risk reasoning, citation/provenance capture, and clinician-supervised review boundaries without treating the model output as independent clinical authority.
 
+19. **PKFAR-style psychiatry review gates**  
+   Run structured psychiatric knowledge retrieval before diagnostic, medication, or risk synthesis; keep diagnostic and medication reasoning within documented evidence boundaries; apply suicide, self-harm, violence, intoxication, withdrawal, self-neglect, and grave-disability cautions; attach provenance to case facts, retrieved sources, or model inference; and require licensed clinician review before any diagnosis, prescribing, safety-planning, or level-of-care decision is acted on.
+
 ## Inputs / Outputs
 
 **Inputs**
