@@ -72,6 +72,7 @@ Use this skill to support clinical practice guideline development with an LLM wh
 28. **Real-time LLM evaluation gate**: During clinical practice guideline development, treat LLM output as drafting assistance only; require evidence traceability, recommendation grading checks, expert panel review, hallucination screening, and documented panel approval before any text carries guideline authority.
 29. **Live evaluation lesson controls**: During real-time LLM evaluation, keep every draft statement traceable to evidence, keep recommendation grading inside the approved framework and panel process, require live expert review, log failures and corrections, and separate drafting assistance from consensus decisions.
 30. **Real-time authority separation checkpoint**: During clinical practice guideline development, evaluate LLM drafting support in real time with traceable evidence, recommendation grading checks, expert panel checkpoints, conflict logging, and explicit documentation that final clinical authority remains with the accountable guideline panel.
+31. **Discrete real-time LLM role pattern**: Define separate LLM support roles for evidence triage, draft recommendation generation, consistency checking, and grading support; require traceable source links, conflict logging, mandatory expert adjudication, and explicit limits that prevent autonomous recommendation changes outside human-approved evidence and grading boundaries.
 
 ## Inputs / Outputs
 

@@ -353,6 +353,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 103. **Fine-grained domain-specific medical Q&A trustworthiness workflow**
    For trustworthy medical language model benchmarks using domain-specific Q&A datasets, score each item for correctness, omission, harm risk, ambiguity, evidence support, and specialty slice; run dataset quality checks for provenance, answerability, evidence alignment, coverage, annotation consistency, and limitations; report calibration by relevant item or specialty strata; and use a prespecified adjudication workflow for reviewer disagreement and clinically important failures.
 
+104. **AI-generated clinical-note quality benchmark templates**
+   For systematic review-informed experimental benchmarks of AI-generated clinical-note quality methods, define separate evaluation dimensions for correctness, omissions, hallucinations, risk of harm, documentation completeness, inter-rater reliability, and rubric design; use benchmark reporting templates that document the note task, dataset provenance, evaluator type, rubric or metric definition, scoring endpoint, agreement results, and method-comparison findings.
+
 ## Inputs / Outputs
 
 **Inputs**

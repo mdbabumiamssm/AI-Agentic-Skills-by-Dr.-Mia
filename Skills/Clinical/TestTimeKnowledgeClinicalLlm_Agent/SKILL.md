@@ -101,6 +101,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 29. **Uncertainty-triggered clinical knowledge acquisition**: Trigger test-time retrieval only when answer uncertainty, guideline dependence, drug-label dependence, diagnostic threshold dependence, or patient-specific applicability risk is high; vet retrieved sources before use; inject concise evidence with provenance; cite the supporting source for material claims; compare pre-retrieval and post-retrieval answers to surface changed recommendations or confidence; and require clinician review before any final diagnostic, treatment, medication, or operational decision.
 
+30. **Inference-time knowledge acquisition workflow**: During medical decision support inference, retrieve evidence for the active clinical question, vet source quality before use, inject only concise decision-relevant context, require citations and explicit uncertainty statements, compare the cited output against a no-retrieval baseline, and guard against stale, low-quality, unverifiable, or non-applicable retrieved knowledge by qualifying, withholding, or escalating the affected recommendation.
+
 ## Inputs / Outputs
 
 **Inputs**

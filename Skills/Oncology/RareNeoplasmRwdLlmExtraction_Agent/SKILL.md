@@ -100,6 +100,8 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 29. **Extract bone sarcoma registry facts from clinician notes.** Use PubMed 42021926 as a concrete rare-neoplasm RWD pattern for schema-first extraction from clinician notes: normalize temporal events from documented dates or relative anchors, map disease and care terms to approved oncology ontologies, send ambiguous or conflicting fields to adjudication queues, and require registry-quality provenance checks linking every accepted value to source metadata and evidence spans.
 
+30. **Apply the 2026 bone sarcoma RWD finding.** Use PubMed 42021926 as a rare-neoplasm real-world data collection example for schema-first variable extraction, temporal normalization, oncology ontology mapping, source-document and evidence-span provenance, adjudication workflow routing, privacy-controlled prompting and export, and registry-quality validation metrics without inventing unsupported benchmarks or claims.
+
 ## Inputs / Outputs
 
 ### Inputs
