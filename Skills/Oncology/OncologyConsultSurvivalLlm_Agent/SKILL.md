@@ -107,6 +107,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 32. **Fine-tuning versus zero-shot consult-study protocol**: Use the PubMed 42004490 oncology consultation survival study to guide leakage-controlled comparison of fine-tuned and zero-shot general LLMs only after defining the survival endpoint, prediction time zero, censoring rule, and follow-up window; preprocess documents to restrict inputs to initial-consultation content and flag copied-forward, dated, outcome-revealing, or post-consultation text; evaluate calibration and uncertainty on held-out patients; and report predicted survival risk cautiously as a clinician-reviewed research or decision-support estimate requiring local validation.
 
+33. **Worked consultation-note comparison for tumor-board review**: For a worked fine-tuning versus zero-shot comparison on initial oncology consultation notes, define the survival endpoint, prediction time zero, censoring rule, and follow-up window before modeling; split cohorts at the patient level with no train, validation, or test document overlap and use temporal or site splits when available; restrict inputs to the prespecified initial-consultation window and audit future outcomes, later treatments, copied-forward dated text, and label-derived signals for leakage; review calibration and uncertainty on held-out patients; and present results cautiously for tumor-board review as clinician-reviewed research or decision-support estimates requiring local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

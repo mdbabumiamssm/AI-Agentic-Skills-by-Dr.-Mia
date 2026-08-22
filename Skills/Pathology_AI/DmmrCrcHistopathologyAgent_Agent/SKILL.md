@@ -85,6 +85,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 15. **Tumor and context-region molecular-testing triage**
     Evaluate tumor, non-tumor, and low-magnification WSI regions as separate evidence streams for colorectal cancer dMMR prediction; require region-level attribution or ablation checks before accepting slide-level risk; and route positive, uncertain, or attribution-discordant outputs to validated molecular testing rather than treating histopathology prediction as diagnostic confirmation.
 
+16. **Non-tumor low-power evidence review checkpoint**
+    Preserve non-tumor and low-magnification WSI regions as reviewable dMMR evidence sources; summarize region-level support before validation handoff; and integrate positive, uncertain, or discordant histopathology predictions cautiously with standard confirmatory workflows such as MMR IHC, MSI PCR, or NGS.
+
 ## Inputs / Outputs
 
 ### Inputs
@@ -106,3 +109,4 @@ This skill guides computational pathology workflows for predicting mismatch repa
 ## References
 
 - PubMed source finding: https://pubmed.ncbi.nlm.nih.gov/41875848/
+- Petäinen L, Väyrynen JP, Böhm J, Ruusuvuori P, Ahtiainen M. dMMR prediction from colorectal cancer histopathology: Leveraging non-tumor and low-magnification regions. PubMed: https://pubmed.ncbi.nlm.nih.gov/41875848/

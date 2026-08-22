@@ -362,6 +362,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 106. **AI-generated clinical-note quality adjudication design**
    For systematic review-informed experimental benchmarks of AI-generated clinical-note quality methods, score factuality, omissions, safety risk, note structure, and completeness as separate dimensions; report inter-rater reliability; document limits of automated metrics; and design human adjudication with prespecified reviewer roles, rubrics, disagreement resolution, and final adjudication rules.
 
+107. **Core clinical-note quality methods reference**
+   Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core evaluation reference; require rubrics and reports to separately document correctness, omissions, clinical risk, rubric design, inter-rater review, and benchmark reporting requirements.
+
 ## Inputs / Outputs
 
 **Inputs**

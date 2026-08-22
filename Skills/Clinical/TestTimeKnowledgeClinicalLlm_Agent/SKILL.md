@@ -105,6 +105,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 31. **Test-time knowledge acquisition decision check**: Trigger retrieval when medical decision-making depends on current guidance, drug safety information, diagnostic thresholds, patient-specific applicability, or uncertain model knowledge; vet evidence for authority, provenance, freshness, applicability, and direct support before citation injection; report uncertainty and missing evidence explicitly; and compare the result with fine-tuning, static RAG, or no-retrieval approaches only as a workflow distinction unless measured results are available.
 
+32. **Retrieval-and-verification test-time acquisition**: For LLM-assisted medical decision support, acquire evidence during inference when the answer depends on current or uncertain clinical knowledge; vet candidate sources for authority, provenance, recency, applicability, and direct claim support; inject only concise verified context with citation URLs, date-checked notes, limitations, and conflict flags; cite every material recommendation, contraindication, diagnostic threshold, drug fact, and risk statement; and report unresolved uncertainty, missing evidence, or unsafe ambiguity without fine-tuning or parameter updates.
+
 ## Inputs / Outputs
 
 **Inputs**

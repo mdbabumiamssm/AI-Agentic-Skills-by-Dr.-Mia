@@ -104,6 +104,8 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 31. **Harden registry-ready extraction with PubMed 42021926.** Use the bone sarcoma rare-neoplasm paper to require schema-first registry variables, normalize absolute, partial, and relative temporal expressions, map extracted disease and care terms to approved oncology ontologies, link every accepted value back to source notes and evidence spans, route ambiguous or conflicting outputs through adjudication, enforce privacy controls for prompting and export, and validate outputs against registry-ready variables without adding unsupported performance claims.
 
+32. **Convert fragmented oncology records into registry-ready variables.** Use the PubMed 42021926 bone sarcoma example to guide schema-first extraction across notes, pathology, imaging, operative records, and treatment summaries: normalize treatment and outcome events from documented dates or relative anchors, map diagnosis, morphology, site, treatment, response, recurrence, and outcome terms to approved ontologies, retain source identifiers and evidence spans for every value, route ambiguous, conflicting, or unsupported fields to adjudication queues, and report registry-ready validation metrics only when measured against curated reference records.
+
 ## Inputs / Outputs
 
 ### Inputs
