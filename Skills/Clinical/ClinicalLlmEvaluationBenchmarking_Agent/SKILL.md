@@ -365,6 +365,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 107. **Core clinical-note quality methods reference**
    Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core evaluation reference; require rubrics and reports to separately document correctness, omissions, clinical risk, rubric design, inter-rater review, and benchmark reporting requirements.
 
+108. **Pre-scoring domain-specific medical Q&A audit**
+   Before model scoring, audit domain-specific medical Q&A datasets at the item level; classify question type and clinical risk; label content omissions and potential harm explicitly; and report factual correctness separately from trustworthiness and deployment readiness.
+
 ## Inputs / Outputs
 
 **Inputs**
