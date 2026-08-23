@@ -47,23 +47,25 @@ Use this skill to design, implement, or review agentic AI chatbot and assistant 
 
 2. **AWS sample reference implementation** - Use `aws-samples/sample-strands-agent-with-agentcore` as the TypeScript baseline for Strands Agents plus Bedrock AgentCore patterns across A2A/MCP integration, browser automation, voice assistant paths, deployment boundaries, IAM/security controls, and observability handoff.
 
-3. **TypeScript implementation planning** - Preserve the repository's TypeScript deployment shape, package boundaries, environment configuration, and build scripts when extending the sample.
+3. **AWS sample topology and guardrail coverage** - Map the AWS sample's TypeScript deployment topology across Strands Agents and Bedrock AgentCore, A2A/MCP integration points, browser automation tools, voice and chat variants, observability paths, IAM boundaries, and guardrail testing before adapting it.
 
-4. **AgentCore runtime integration** - Connect agent handlers, model invocation paths, memory or session state, and runtime configuration to Amazon Bedrock AgentCore patterns.
+4. **TypeScript implementation planning** - Preserve the repository's TypeScript deployment shape, package boundaries, environment configuration, and build scripts when extending the sample.
 
-5. **A2A interoperability design** - Define agent cards, capability metadata, request routing, identity expectations, and handoff behavior when agents need to collaborate.
+5. **AgentCore runtime integration** - Connect agent handlers, model invocation paths, memory or session state, and runtime configuration to Amazon Bedrock AgentCore patterns.
 
-6. **MCP interoperability design** - Treat MCP servers as explicit tool boundaries with typed inputs, scoped permissions, error handling, and auditable tool-call traces.
+6. **A2A interoperability design** - Define agent cards, capability metadata, request routing, identity expectations, and handoff behavior when agents need to collaborate.
 
-7. **Browser automation support** - Isolate browser automation tools from core agent logic, constrain browsing permissions, capture durable evidence, and handle timeouts or nondeterministic page behavior.
+7. **MCP interoperability design** - Treat MCP servers as explicit tool boundaries with typed inputs, scoped permissions, error handling, and auditable tool-call traces.
 
-8. **Chat and voice surface guidance** - Separate transport concerns from agent reasoning so web chat, streaming chat, and voice assistant flows can share orchestration logic.
+8. **Browser automation support** - Isolate browser automation tools from core agent logic, constrain browsing permissions, capture durable evidence, and handle timeouts or nondeterministic page behavior.
 
-9. **Observability and evaluation** - Instrument requests, model calls, tool calls, traces, latency, failures, session IDs, and human feedback without logging secrets or sensitive payloads.
+9. **Chat and voice surface guidance** - Separate transport concerns from agent reasoning so web chat, streaming chat, and voice assistant flows can share orchestration logic.
 
-10. **IAM and security boundaries** - Apply least-privilege IAM, scoped secrets, per-tool authorization, network egress controls, data-retention limits, and clear trust boundaries between agents, tools, and users.
+10. **Observability and evaluation** - Instrument requests, model calls, tool calls, traces, latency, failures, session IDs, and human feedback without logging secrets or sensitive payloads.
 
-11. **Deployment readiness review** - Check environment variables, infrastructure outputs, rollback approach, alarms, dependency versions, and operational runbooks before promoting changes.
+11. **IAM and security boundaries** - Apply least-privilege IAM, scoped secrets, per-tool authorization, network egress controls, data-retention limits, and clear trust boundaries between agents, tools, and users.
+
+12. **Deployment readiness review** - Check environment variables, infrastructure outputs, rollback approach, alarms, dependency versions, and operational runbooks before promoting changes.
 
 ## Inputs / Outputs
 
