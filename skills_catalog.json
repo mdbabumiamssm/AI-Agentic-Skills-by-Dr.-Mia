@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T11:37:40.405756+00:00",
+  "generated_at": "2026-08-23T18:06:04.913604+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-08-23T11:34:39.047654+00:00",
+      "last_modified": "2026-08-23T11:37:42.020132+00:00",
       "body_length": 18294,
       "capabilities": []
     },
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-08-23T11:35:28.882896+00:00",
+      "last_modified": "2026-08-23T11:37:42.020132+00:00",
       "body_length": 9690,
       "capabilities": [
         "Overview",
@@ -1407,7 +1407,7 @@
       ],
       "file_path": "Skills/Agentic_AI/StrandsAgentcoreReferenceArchitecture_Agent/SKILL.md",
       "relative_path": "Agentic_AI/StrandsAgentcoreReferenceArchitecture_Agent/SKILL.md",
-      "last_modified": "2026-08-23T11:33:39.412673+00:00",
+      "last_modified": "2026-08-23T11:37:42.020132+00:00",
       "body_length": 5301,
       "capabilities": [
         "Overview",
@@ -13942,8 +13942,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-22T15:18:40.309590+00:00",
-      "body_length": 60778,
+      "last_modified": "2026-08-23T18:03:15.003780+00:00",
+      "body_length": 61394,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
