@@ -100,6 +100,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 19. **PKFAR-style psychiatry review gates**  
    Run structured psychiatric knowledge retrieval before diagnostic, medication, or risk synthesis; keep diagnostic and medication reasoning within documented evidence boundaries; apply suicide, self-harm, violence, intoxication, withdrawal, self-neglect, and grave-disability cautions; attach provenance to case facts, retrieved sources, or model inference; and require licensed clinician review before any diagnosis, prescribing, safety-planning, or level-of-care decision is acted on.
 
+20. **PKFAR psychiatry reference-standard evaluation pattern**  
+   Treat PKFAR as a psychiatry-specific knowledge-fused augmented reasoning pattern that injects controlled, case-relevant psychiatric knowledge before synthesis; preserves diagnostic uncertainty and competing explanations; checks medication safety and crisis escalation boundaries; and evaluates outputs against user-provided psychiatry reference standards, clinician-adjudicated cases, local policies, or trusted clinical references without inventing unsupported benchmarks.
+
 ## Inputs / Outputs
 
 **Inputs**

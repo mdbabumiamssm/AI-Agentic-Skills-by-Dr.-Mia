@@ -368,6 +368,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 108. **Pre-scoring domain-specific medical Q&A audit**
    Before model scoring, audit domain-specific medical Q&A datasets at the item level; classify question type and clinical risk; label content omissions and potential harm explicitly; and report factual correctness separately from trustworthiness and deployment readiness.
 
+109. **Task-specific clinical-note rubric strengthening**
+   For AI-generated clinical-note evaluations, use systematic review and experimental benchmark evidence to strengthen task-specific note rubrics with separate fields for factuality, completeness, hallucination or unsupported content, usability, safety risk, inter-rater reliability, and note-type-specific quality metrics; compare rubric, human-review, and automated methods under the same benchmark task before treating any score as a clinical-quality proxy.
+
 ## Inputs / Outputs
 
 **Inputs**
