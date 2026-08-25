@@ -103,6 +103,9 @@ The skill is intended for clinician-facing support, chart review, education, and
 20. **PKFAR psychiatry reference-standard evaluation pattern**  
    Treat PKFAR as a psychiatry-specific knowledge-fused augmented reasoning pattern that injects controlled, case-relevant psychiatric knowledge before synthesis; preserves diagnostic uncertainty and competing explanations; checks medication safety and crisis escalation boundaries; and evaluates outputs against user-provided psychiatry reference standards, clinician-adjudicated cases, local policies, or trusted clinical references without inventing unsupported benchmarks.
 
+21. **PKFAR-style source-grounded psychiatry recommendations**  
+   Retrieve curated psychiatric knowledge before synthesis, use augmented reasoning over reported symptoms and medication context, apply safety checks for risk assessment, ground recommendations in supplied case facts or retrieved sources, and keep diagnosis, prescribing, safety planning, and disposition decisions within clinician review boundaries.
+
 ## Inputs / Outputs
 
 **Inputs**

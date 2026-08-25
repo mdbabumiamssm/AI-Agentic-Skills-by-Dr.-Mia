@@ -111,6 +111,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 34. **Fine-tuning versus prompting evidence gate**: Use the PubMed 42004490 study as evidence that choosing fine-tuning versus zero-shot prompting for general LLM survival prediction from initial oncology consultation documents should be a prespecified comparison, not an assumption. Define the endpoint, prediction time zero, censoring rule, follow-up window, and patient-level cohort splits before modeling; enforce leakage controls for post-consultation outcomes or copied-forward future text; assess calibration on held-out patients; and report clinical-facing outputs cautiously as research or clinician-reviewed decision-support estimates requiring local validation.
 
+35. **Fine-tuning versus zero-shot decision framework**: For cancer survival prediction from initial oncology consultation documents, compare zero-shot prompting and fine-tuning with a prespecified protocol that extracts only baseline clinical covariates available in the initial consult, locks patient-level train, validation, and test cohort splits before modeling, controls leakage from future outcomes, treatments, copied-forward text, or label-derived signals, evaluates calibration and prognostic uncertainty on held-out patients, and reports risk estimates cautiously as clinician-reviewed research or decision-support outputs rather than definitive survival predictions.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -132,3 +134,4 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 ## References
 
 - Phaterpekar T, Zeng Z, Mali Y, Leung B, Ho C. "Investigating fine-tuning versus zero-shot learning for general large language models when predicting cancer survival from initial oncology consultation documents." ESMO Real World Data Digit Oncol. 2026 Jun. PubMed: https://pubmed.ncbi.nlm.nih.gov/42004490/
+- https://pubmed.ncbi.nlm.nih.gov/42004490/

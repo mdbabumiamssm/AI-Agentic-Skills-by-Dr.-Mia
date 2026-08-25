@@ -75,6 +75,7 @@ Use this skill to decide whether an on-premises clinical LLM deployment is appro
 32. Open-source diagnostic model tradeoff review: Use the 2026 PubMed comparative study on distilled DeepSeek-R1/open-source diagnosis models as evidence to require performance validation in the target clinical environment, documentation of privacy constraints, hardware sizing for the exact on-prem configuration, local governance approval, and explicit human oversight before clinical use.
 33. Distilled open-source reasoning validation: Treat PubMed 42062641 as evidence that distilled open-source reasoning models need local benchmark design before on-prem clinical diagnosis deployment; compare the exact local configuration with selected hosted frontier baselines where available; document privacy and hardware tradeoffs; require human oversight gates; and report failure modes such as reasoning drift, red-flag recognition failure, and diagnostic priority inversion without treating the study as deployment approval.
 34. Distilled DeepSeek-R1-derived diagnostic model evaluation evidence: Use Zhong et al. 2026 (PubMed 42062641) as comparative evidence for evaluating distilled DeepSeek-R1-derived open-source diagnostic models before on-prem clinical deployment; design benchmarks around the intended diagnostic workflow and chosen comparators; document model-selection caveats, privacy and governance tradeoffs, local hardware constraints, and required clinician oversight before production use.
+35. Distilled DeepSeek-R1-style diagnostic model evaluation gate: For on-prem clinical diagnostic deployments, evaluate distilled open-source DeepSeek-R1-style candidates with benchmarks selected for the intended diagnostic workflow and chosen comparators; document privacy benefits, PHI controls, hardware capacity, latency, storage, and model-serving tradeoffs for the exact local configuration; review failure modes from incorrect, unsafe, uncertain, or unsupported diagnostic outputs; require governance controls for model approval, audit logging, change control, incident response, and rollback; and mandate clinician oversight before production use.
 
 ## Inputs / Outputs
 
@@ -107,5 +108,6 @@ Outputs:
 - Source URL: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - Source finding update: https://pubmed.ncbi.nlm.nih.gov/42062641/
 - PubMed 42062641 source finding: https://pubmed.ncbi.nlm.nih.gov/42062641/
+- https://pubmed.ncbi.nlm.nih.gov/42062641/
 - https://pubmed.ncbi.nlm.nih.gov/42062641/
 - https://pubmed.ncbi.nlm.nih.gov/42062641/

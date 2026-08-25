@@ -59,6 +59,7 @@ This skill helps produce trustworthy narrative summaries for genetic variants by
 16. **PubMed 41950627 Precision Grounding practices** - Retrieve evidence from evidence-based databases before drafting variant summaries; attach provenance links to generated claims; preserve and explain database conflicts; run hallucination checks against retrieved evidence; and state uncertainty explicitly when databases disagree or evidence is sparse.
 17. **Core Precision Grounding variant-summarization pattern** - Treat database-backed retrieval as the default drafting substrate; attach source provenance to each claim; detect conflicts across consulted clinical databases; assign uncertainty labels for sparse, ambiguous, stale, or conflicting evidence; enforce hallucination controls against retrieved records; and produce evidence-linked final summaries.
 18. **Precision Grounding trustworthy genetics report pattern** - Use Precision Grounding as a named variant-summarization pattern that combines evidence databases, provenance links, conflict reconciliation, source freshness checks, and hallucination controls before issuing trustworthy genetics reports.
+19. **Expert-review variant summary templates** - Use Precision Grounding templates that require evidence-database retrieval, claim-level provenance, explicit conflict handling across ClinVar and related consulted sources, hallucination checks against retrieved records, and variant-level conclusions prepared for expert review.
 
 ## Inputs / Outputs
 

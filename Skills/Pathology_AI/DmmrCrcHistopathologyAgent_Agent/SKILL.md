@@ -88,6 +88,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 16. **Non-tumor low-power evidence review checkpoint**
     Preserve non-tumor and low-magnification WSI regions as reviewable dMMR evidence sources; summarize region-level support before validation handoff; and integrate positive, uncertain, or discordant histopathology predictions cautiously with standard confirmatory workflows such as MMR IHC, MSI PCR, or NGS.
 
+17. **Non-tumor and low-magnification dMMR prediction protocol**
+    For colorectal cancer dMMR prediction workflows informed by the 2026 PubMed finding, sample non-tumor and low-magnification WSI regions alongside tumor tiles; keep region and magnification strata explicit through aggregation and error review; require external validation before deployment claims; provide explainability through attention, attribution, or region-ablation review; hand off positive, uncertain, or discordant results for pathology review with confirmatory IHC, PCR, or NGS correlation; and do not treat histopathology prediction as a standalone diagnostic result.
+
 ## Inputs / Outputs
 
 ### Inputs
@@ -110,3 +113,4 @@ This skill guides computational pathology workflows for predicting mismatch repa
 
 - PubMed source finding: https://pubmed.ncbi.nlm.nih.gov/41875848/
 - Petäinen L, Väyrynen JP, Böhm J, Ruusuvuori P, Ahtiainen M. dMMR prediction from colorectal cancer histopathology: Leveraging non-tumor and low-magnification regions. PubMed: https://pubmed.ncbi.nlm.nih.gov/41875848/
+- Petäinen L, Väyrynen JP, Böhm J, Ruusuvuori P, Ahtiainen M. dMMR prediction from colorectal cancer histopathology: Leveraging non-tumor and low-magnification regions. Comput Methods Programs Biomed. 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41875848/

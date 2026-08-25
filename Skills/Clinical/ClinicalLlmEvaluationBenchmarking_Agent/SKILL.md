@@ -371,6 +371,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 109. **Task-specific clinical-note rubric strengthening**
    For AI-generated clinical-note evaluations, use systematic review and experimental benchmark evidence to strengthen task-specific note rubrics with separate fields for factuality, completeness, hallucination or unsupported content, usability, safety risk, inter-rater reliability, and note-type-specific quality metrics; compare rubric, human-review, and automated methods under the same benchmark task before treating any score as a clinical-quality proxy.
 
+110. **Human-versus-automated clinical-note scoring benchmark**
+   For AI-generated clinical-note quality workflows, design systematic review-informed experimental benchmarks that compare human clinician scoring with automated evaluation methods across correctness, omission detection, harm-risk classification, rubric-defined documentation quality, inter-rater agreement, and repeatable regression tests for model, prompt, template, retrieval, or documentation workflow changes.
+
 ## Inputs / Outputs
 
 **Inputs**
