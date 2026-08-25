@@ -109,6 +109,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 33. **Test-time knowledge acquisition workflow**: Retrieve current evidence at inference for the active clinical decision, vet source authority and provenance before use, inject concise decision-relevant context with citation URLs, run contradiction checks against retrieved evidence and model reasoning, cite provenance for material claims, and state that retrieval supports but does not replace clinician judgment.
 
+34. **Baseline-aware medical decision support acquisition**: For each LLM-assisted medical decision, retrieve current evidence, vet source authority and provenance, inject concise context with citation provenance, detect conflicts across credible sources, and compare the resulting answer against zero-shot or fine-tuned baselines without claiming benefit unless the comparison is actually measured.
+
 ## Inputs / Outputs
 
 **Inputs**

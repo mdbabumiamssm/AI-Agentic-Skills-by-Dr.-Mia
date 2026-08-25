@@ -374,6 +374,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 110. **Human-versus-automated clinical-note scoring benchmark**
    For AI-generated clinical-note quality workflows, design systematic review-informed experimental benchmarks that compare human clinician scoring with automated evaluation methods across correctness, omission detection, harm-risk classification, rubric-defined documentation quality, inter-rater agreement, and repeatable regression tests for model, prompt, template, retrieval, or documentation workflow changes.
 
+111. **Systematic review clinical-note quality benchmark reporting**
+   For AI-generated clinical-note quality benchmarks, use systematic review and experimental benchmark guidance to define rubrics and reporting templates that separately document correctness, omissions, harm risk, note completeness, rubric design, inter-rater reliability, evaluator type, metric definitions, and method-comparison findings.
+
 ## Inputs / Outputs
 
 **Inputs**

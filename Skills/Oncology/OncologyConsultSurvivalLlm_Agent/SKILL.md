@@ -113,6 +113,8 @@ Use this skill when the task involves oncology-document prognostic modeling and 
 
 35. **Fine-tuning versus zero-shot decision framework**: For cancer survival prediction from initial oncology consultation documents, compare zero-shot prompting and fine-tuning with a prespecified protocol that extracts only baseline clinical covariates available in the initial consult, locks patient-level train, validation, and test cohort splits before modeling, controls leakage from future outcomes, treatments, copied-forward text, or label-derived signals, evaluates calibration and prognostic uncertainty on held-out patients, and reports risk estimates cautiously as clinician-reviewed research or decision-support outputs rather than definitive survival predictions.
 
+36. **Initial-consult train/test safeguard**: For fine-tuning versus zero-shot survival prediction from initial oncology consultation documents, use locked patient-level train/test document splits with no overlap, restrict inputs to baseline consultation text, audit future outcome, treatment, copied-forward, dated, and label-derived leakage before prompting or fine-tuning, evaluate calibration and clinically relevant subgroup performance on held-out patients, and report prognostic outputs cautiously as clinician-reviewed research or decision-support estimates requiring local validation.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -110,6 +110,8 @@ Extract structured real-world data from oncology notes, pathology reports, opera
 
 34. **Apply the bone sarcoma manual-abstraction validation example.** Use PubMed 42021926 as a concrete rare-neoplasm RWD example that starts with schema-first variable capture, normalizes temporal expressions and event order, maps tumor and care terms to approved ontologies, links every extracted value to source provenance, routes uncertain fields to clinician adjudication, and validates outputs against manually abstracted registry fields without adding unsupported benchmarks or claims.
 
+35. **Use the bone sarcoma registry-readiness example.** Apply PubMed 42021926 as a rare-neoplasm real-world data extraction example for schema-first variable capture, temporal normalization, approved oncology ontology mapping, provenance fields for source documents and evidence spans, adjudication workflow routing for ambiguous or conflicting values, and registry-readiness checks before export without adding unsupported benchmarks or claims.
+
 ## Inputs / Outputs
 
 ### Inputs

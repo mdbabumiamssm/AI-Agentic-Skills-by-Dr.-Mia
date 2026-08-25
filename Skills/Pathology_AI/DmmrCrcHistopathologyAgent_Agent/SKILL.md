@@ -91,6 +91,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 17. **Non-tumor and low-magnification dMMR prediction protocol**
     For colorectal cancer dMMR prediction workflows informed by the 2026 PubMed finding, sample non-tumor and low-magnification WSI regions alongside tumor tiles; keep region and magnification strata explicit through aggregation and error review; require external validation before deployment claims; provide explainability through attention, attribution, or region-ablation review; hand off positive, uncertain, or discordant results for pathology review with confirmatory IHC, PCR, or NGS correlation; and do not treat histopathology prediction as a standalone diagnostic result.
 
+18. **Region-stratified molecular-label validation handoff**
+    Build dMMR colorectal cancer histopathology review around explicit tumor, non-tumor, and low-magnification WSI sampling strata; keep region-level evidence traceable through slide-level aggregation; validate predictions against available molecular, MSI, or MMR IHC labels; and route positive, uncertain, or discordant outputs to pathologist review rather than standalone diagnostic action.
+
 ## Inputs / Outputs
 
 ### Inputs
