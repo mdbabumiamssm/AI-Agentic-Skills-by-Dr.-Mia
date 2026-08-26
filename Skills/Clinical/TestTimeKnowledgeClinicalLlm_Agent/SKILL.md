@@ -111,6 +111,8 @@ Use this skill to make a clinical answer traceable to current evidence while pre
 
 34. **Baseline-aware medical decision support acquisition**: For each LLM-assisted medical decision, retrieve current evidence, vet source authority and provenance, inject concise context with citation provenance, detect conflicts across credible sources, and compare the resulting answer against zero-shot or fine-tuned baselines without claiming benefit unless the comparison is actually measured.
 
+35. **Model-prior evidence comparison workflow**: At inference time, retrieve current clinical evidence for the active decision, vet source authority before use, inject concise evidence snippets with provenance citations, compare the retrieved evidence against the model's prior answer or assumptions, and require clinician review before accepting any recommendation changed by the acquired knowledge.
+
 ## Inputs / Outputs
 
 **Inputs**

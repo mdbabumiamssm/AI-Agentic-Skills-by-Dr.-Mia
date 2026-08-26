@@ -377,6 +377,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 111. **Systematic review clinical-note quality benchmark reporting**
    For AI-generated clinical-note quality benchmarks, use systematic review and experimental benchmark guidance to define rubrics and reporting templates that separately document correctness, omissions, harm risk, note completeness, rubric design, inter-rater reliability, evaluator type, metric definitions, and method-comparison findings.
 
+112. **Core evaluation-methods reference for AI-generated clinical notes**
+   Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core reference for evaluation-method selection; require separate correctness, omission, harm-risk, and note-quality rubric fields; define inter-rater adjudication and benchmark dataset design before scoring; and report results with templates that document evaluator type, rubric or metric definition, agreement findings, and method-comparison results.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -61,6 +61,7 @@ This skill helps produce trustworthy narrative summaries for genetic variants by
 18. **Precision Grounding trustworthy genetics report pattern** - Use Precision Grounding as a named variant-summarization pattern that combines evidence databases, provenance links, conflict reconciliation, source freshness checks, and hallucination controls before issuing trustworthy genetics reports.
 19. **Expert-review variant summary templates** - Use Precision Grounding templates that require evidence-database retrieval, claim-level provenance, explicit conflict handling across ClinVar and related consulted sources, hallucination checks against retrieved records, and variant-level conclusions prepared for expert review.
 20. **Auditable ClinVar-style Precision Grounding assertions** - Retrieve evidence from evidence-based databases before drafting; represent ClinVar-style assertions with classification, condition, submitter or expert-panel context when available, and source provenance; preserve conflicting assertions; run hallucination controls against retrieved records; and generate only summary statements that remain auditable to cited evidence.
+21. **Clinical variant uncertainty language** - For clinical variant summaries, use Precision Grounding to retrieve database-backed evidence, link assertions to provenance, detect conflicts across ClinVar and other consulted sources, run hallucination checks against retrieved records, and state uncertainty explicitly when support is sparse, conflicting, ambiguous, or unavailable.
 
 ## Inputs / Outputs
 

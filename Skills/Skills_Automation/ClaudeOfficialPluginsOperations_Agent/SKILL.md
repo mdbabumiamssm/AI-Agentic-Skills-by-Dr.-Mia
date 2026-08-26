@@ -58,6 +58,7 @@ This skill guides work that uses the official Anthropic-managed `claude-plugins-
 18. Anthropic-managed official plugin workflow: Use the GitHub `anthropics/claude-plugins-official` directory as a vetted source for Claude Code plugin discovery; before installation, perform trust review, inspect dependencies and permission requests, keep installs clean and reversible, avoid conflicts with existing plugins, skills, or MCP servers, and document migration decisions when replacing informal plugin directories.
 19. Trusted adoption baseline: Treat the official Anthropic-managed `anthropics/claude-plugins-official` directory as the baseline for Claude Code plugin adoption; distinguish official entries from marketplace plugins, inspect dependencies and permission requests, pin approved versions or commits, avoid namespace conflicts with existing plugins, skills, and MCP servers, and plan migrations from unofficial plugin bundles.
 20. Official directory trust-review workflow: Use the Anthropic-managed `anthropics/claude-plugins-official` GitHub repository as a vetted source for high quality Claude Code Plugins; for each candidate, record source URL and visible repository metadata, inspect manifests, dependencies, permissions, and install scripts, check visible update cadence, keep installs isolated and reversible, and document migration from uncurated plugin marketplaces before adoption.
+21. Anthropic-managed discovery lifecycle: Treat `anthropics/claude-plugins-official` as the official Anthropic-managed directory of high quality Claude Code Plugins while still performing per-plugin manifest review, dependency and install-script inspection, clean reversible installs, update monitoring, conflict checks against local skills, plugins, and MCP servers, and documented migration away from unvetted marketplace plugins.
 
 ## Inputs / Outputs
 Inputs:
@@ -80,3 +81,4 @@ Outputs:
 - GitHub finding, published 2026-05-04 by `anthropics`: https://github.com/anthropics/claude-plugins-official
 - Official Anthropic-managed Claude Code plugin directory: https://github.com/anthropics/claude-plugins-official
 - GitHub source finding, published 2026-05-04 by `anthropics`, topics `claude-code`, `mcp`, `skills`: https://github.com/anthropics/claude-plugins-official
+- GitHub source finding, `anthropics/claude-plugins-official`, official Anthropic-managed directory of high quality Claude Code Plugins, published 2026-05-04 by `anthropics`: https://github.com/anthropics/claude-plugins-official

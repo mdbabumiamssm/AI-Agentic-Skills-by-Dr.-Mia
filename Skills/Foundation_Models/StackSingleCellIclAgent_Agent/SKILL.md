@@ -49,6 +49,7 @@ This skill operationalizes Arc Institute's **Stack**, a single-cell foundation m
 7. **Evaluation harness** — Compute few-shot accuracy, macro-F1, or perturbation correlation metrics by holding out labeled cells and varying the size of the in-context support set.
 8. **Comparative benchmarking** — Optionally contrast Stack's zero-shot/few-shot performance with fine-tuned single-cell foundation model baselines on the same query split.
 9. **Stack ICL workflow framing** — Treat each task as inference-only prompt conditioning rather than fine-tuning: package labeled reference/context cells and unlabeled query cells from AnnData together, keep benchmark comparisons matched on the same held-out query split and context budget, and validate predicted annotations against conventional annotation baselines before treating them as ground truth.
+10. **Inference-time ICL task adaptation** — Format datasets so support exemplars and query cells carry aligned genes, labels, perturbation or condition metadata, and batch annotations; select representative exemplars per class or condition; adapt annotation and perturbation tasks through no-finetune context construction; evaluate outputs against held-out annotation labels or perturbation responses when available; and document limits versus fine-tuned single-cell models instead of assuming ICL predictions supersede tuned baselines.
 
 ## Inputs / Outputs
 
@@ -72,3 +73,4 @@ This skill operationalizes Arc Institute's **Stack**, a single-cell foundation m
 - scGPT foundation model: https://github.com/bowang-lab/scGPT
 - scFoundation foundation model: https://github.com/biomap-research/scFoundation
 - AnnData / Scanpy ecosystem: https://github.com/scverse/scanpy
+- Source finding: https://github.com/ArcInstitute/stack

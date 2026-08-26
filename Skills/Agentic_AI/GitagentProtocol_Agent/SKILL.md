@@ -65,6 +65,7 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 20. **GitAgent Protocol interoperability standard**: Use GitAgent Protocol as the git-native standard for agent definitions by reviewing repository layout, manifest validation, packaging, compatibility checks across agent clients, and migration guidance from ad hoc `CLAUDE.md` files or skill-only conventions.
 21. **Framework-neutral manifest workflow**: Prefer GitAgent Protocol over runtime-specific agent configs when teams need a git-native, framework-agnostic agent package with manifest structure, portable skills and tools, repository-reviewed packaging, interoperability checks, and explicit boundaries for runtime-only execution behavior.
 22. **Git-native agent protocol packaging guidance**: Before distributing GitAgent Protocol specifications, confirm repository layout, manifest validation, versioning, cross-runtime portability, security review of declared tools and skills, and CI checks for package integrity.
+23. **Current open-gitagent standard refresh**: Align agent spec layout, repository packaging rules, interoperability claims, validation checks, and migration notes with the framework-agnostic, git-native `open-gitagent/gitagent-protocol` standard for teams defining agents outside a single runtime.
 
 ## Inputs / Outputs
 
@@ -89,3 +90,4 @@ The workflow emphasizes git-friendly structure, clear agent metadata, reusable i
 - Source finding: https://github.com/open-gitagent/gitagent-protocol
 - GitHub source finding, published 2026-05-04: https://github.com/open-gitagent/gitagent-protocol
 - open-gitagent/gitagent-protocol: https://github.com/open-gitagent/gitagent-protocol
+- open-gitagent/gitagent-protocol source finding: https://github.com/open-gitagent/gitagent-protocol

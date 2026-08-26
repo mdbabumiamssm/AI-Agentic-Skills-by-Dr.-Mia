@@ -94,6 +94,9 @@ This skill guides computational pathology workflows for predicting mismatch repa
 18. **Region-stratified molecular-label validation handoff**
     Build dMMR colorectal cancer histopathology review around explicit tumor, non-tumor, and low-magnification WSI sampling strata; keep region-level evidence traceable through slide-level aggregation; validate predictions against available molecular, MSI, or MMR IHC labels; and route positive, uncertain, or discordant outputs to pathologist review rather than standalone diagnostic action.
 
+19. **Low-magnification and non-tumor region requirement**
+    Require region-stratified WSI sampling across tumor, non-tumor, and low-magnification regions; document tumor versus non-tumor feature attribution before relying on slide-level dMMR risk; perform external validation before deployment claims; and hand off positive, uncertain, or discordant findings for confirmatory MMR testing.
+
 ## Inputs / Outputs
 
 ### Inputs
