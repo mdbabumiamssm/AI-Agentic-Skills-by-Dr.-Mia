@@ -380,6 +380,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 112. **Core evaluation-methods reference for AI-generated clinical notes**
    Use the 2026 systematic review and experimental benchmark of AI-generated clinical note quality methods as the core reference for evaluation-method selection; require separate correctness, omission, harm-risk, and note-quality rubric fields; define inter-rater adjudication and benchmark dataset design before scoring; and report results with templates that document evaluator type, rubric or metric definition, agreement findings, and method-comparison results.
 
+113. **ICU nursing specialty benchmark pattern**
+   For intensive-care nursing question evaluation, separate factual correctness, triage safety, nursing-scope boundaries, escalation language, and guideline concordance as distinct rubric fields; compare frontier and open reasoning models only under matched prompts, clinician-reviewed scoring, and explicit non-deployment assumptions.
+
+114. **Fine-grained domain Q&A dataset auditing**
+   For domain-specific medical Q&A datasets, classify question type, answerability, evidence sufficiency, omission risk, harmfulness, calibration, and inter-rater adjudication so medical LLM benchmarks test trustworthy behavior rather than aggregate accuracy alone.
+
 ## Inputs / Outputs
 
 **Inputs**
