@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T12:54:34.463153+00:00",
+  "generated_at": "2026-08-27T01:10:03.378113+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:45:28.480922+00:00",
+      "last_modified": "2026-08-26T12:54:35.902481+00:00",
       "body_length": 18635,
       "capabilities": []
     },
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:47:15.375179+00:00",
+      "last_modified": "2026-08-26T12:54:35.902481+00:00",
       "body_length": 10091,
       "capabilities": [
         "Overview",
@@ -1631,7 +1631,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalGuidelineDevelopmentLlm_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:34:14.022398+00:00",
+      "last_modified": "2026-08-26T12:54:35.902481+00:00",
       "body_length": 15040,
       "capabilities": [
         "Overview",
@@ -1654,7 +1654,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:36:57.267337+00:00",
+      "last_modified": "2026-08-26T12:54:35.902481+00:00",
       "body_length": 50539,
       "capabilities": [
         "Overview",
@@ -2456,7 +2456,7 @@
       ],
       "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
       "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:39:02.197531+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 19721,
       "capabilities": [
         "Overview",
@@ -6561,7 +6561,7 @@
       ],
       "file_path": "Skills/Foundation_Models/StackSingleCellIclAgent_Agent/SKILL.md",
       "relative_path": "Foundation_Models/StackSingleCellIclAgent_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:50:03.402214+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 5716,
       "capabilities": [
         "Overview",
@@ -7160,7 +7160,7 @@
       ],
       "file_path": "Skills/Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
       "relative_path": "Genomics/PrecisionGroundedVariantSummarization_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:40:52.599962+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 11024,
       "capabilities": [
         "Overview",
@@ -12079,7 +12079,7 @@
       ],
       "file_path": "Skills/MCP_Servers/PubmedNcbiMcpServer_Agent/SKILL.md",
       "relative_path": "MCP_Servers/PubmedNcbiMcpServer_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:52:26.133300+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 6178,
       "capabilities": [
         "Overview",
@@ -13592,7 +13592,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:35:27.314403+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 11635,
       "capabilities": [
         "Overview",
@@ -13918,7 +13918,7 @@
       ],
       "file_path": "Skills/Pathology_AI/DmmrCrcHistopathologyAgent_Agent/SKILL.md",
       "relative_path": "Pathology_AI/DmmrCrcHistopathologyAgent_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:43:04.773725+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 10162,
       "capabilities": [
         "Overview",
@@ -13942,8 +13942,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-25T23:00:46.899840+00:00",
-      "body_length": 63374,
+      "last_modified": "2026-08-27T01:06:30.146891+00:00",
+      "body_length": 63977,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17501,7 +17501,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:54:23.866461+00:00",
+      "last_modified": "2026-08-26T12:54:35.903481+00:00",
       "body_length": 9773,
       "capabilities": [
         "Overview",
