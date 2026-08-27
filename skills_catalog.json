@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T01:10:03.378113+00:00",
+  "generated_at": "2026-08-27T11:53:32.595599+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 698,
   "total_errors": 21,
@@ -13942,7 +13942,7 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-27T01:06:30.146891+00:00",
+      "last_modified": "2026-08-27T01:10:05.458544+00:00",
       "body_length": 63977,
       "capabilities": [
         "When to Use This Skill",
