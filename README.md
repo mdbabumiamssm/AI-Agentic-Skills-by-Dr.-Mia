@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 698 skills across 46 categories. Last refresh: 2026-08-27T17:29:44.403237+00:00._
+_Auto-generated index. 699 skills across 46 categories. Last refresh: 2026-08-28T12:24:29.582144+00:00._
 
 ### 3D_Genomics (8)
 
@@ -311,7 +311,7 @@ _Auto-generated index. 698 skills across 46 categories. Last refresh: 2026-08-27
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (37)
+### Clinical (38)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -346,6 +346,7 @@ _Auto-generated index. 698 skills across 46 categories. Last refresh: 2026-08-27
 - **psychiatry-knowledge-fused-reasoning** — Guides psychiatry-specific LLM support using PKFAR-style knowledge fusion and augmented reasoning for diagnosis, risk, medications, and c...
 - **radgpt-radiology-reporter** — Radiology Reporter
 - **safety-monitor** — Safety Monitor
+- **surgical-patient-communication-ai** — Draft clinician-reviewed surgical communication, education, consent-support, expectation-setting, and escalation materials using AI gover...
 - **test-time-knowledge-clinical-llm** — Use test-time knowledge acquisition to retrieve, vet, inject, and cite current clinical evidence for LLM-assisted medical decision suppor...
 - **trial-eligibility-agent** — Parse trial protocols and patient data to produce criterion-level MET/NOT/UNKNOWN determinations with evidence and gaps for clinical tria...
 - **trialgpt-matching** — Trial shortlist

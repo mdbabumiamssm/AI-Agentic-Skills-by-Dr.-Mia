@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-27T17:29:44.403237+00:00",
+  "generated_at": "2026-08-28T12:24:29.582144+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 698,
+  "total_skills": 699,
   "total_errors": 21,
   "skills": [
     {
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-08-27T17:25:46.266562+00:00",
+      "last_modified": "2026-08-27T17:29:46.404236+00:00",
       "body_length": 19154,
       "capabilities": []
     },
@@ -955,7 +955,7 @@
       ],
       "file_path": "Skills/Agentic_AI/GitagentProtocol_Agent/SKILL.md",
       "relative_path": "Agentic_AI/GitagentProtocol_Agent/SKILL.md",
-      "last_modified": "2026-08-27T17:26:18.893757+00:00",
+      "last_modified": "2026-08-27T17:29:46.404236+00:00",
       "body_length": 10539,
       "capabilities": [
         "Overview",
@@ -2441,6 +2441,31 @@
         "Core Capabilities",
         "Workflow",
         "Example Usage"
+      ]
+    },
+    {
+      "name": "surgical-patient-communication-ai",
+      "description": "Draft clinician-reviewed surgical communication, education, consent-support, expectation-setting, and escalation materials using AI governance for surgery workflows.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/SurgicalPatientCommunicationAi_Agent/SKILL.md",
+      "relative_path": "Clinical/SurgicalPatientCommunicationAi_Agent/SKILL.md",
+      "last_modified": "2026-08-28T12:23:47.640702+00:00",
+      "body_length": 5848,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
+        "References"
       ]
     },
     {
@@ -13592,7 +13617,7 @@
       ],
       "file_path": "Skills/Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
       "relative_path": "Oncology/OncologyNeurosymbolicTrialMatching_Agent/SKILL.md",
-      "last_modified": "2026-08-27T17:19:59.278001+00:00",
+      "last_modified": "2026-08-27T17:29:46.404236+00:00",
       "body_length": 12074,
       "capabilities": [
         "Overview",
@@ -13942,8 +13967,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-27T12:03:46.937312+00:00",
-      "body_length": 64376,
+      "last_modified": "2026-08-28T12:22:24.546180+00:00",
+      "body_length": 64871,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -17501,7 +17526,7 @@
       ],
       "file_path": "Skills/Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
       "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
-      "last_modified": "2026-08-27T17:29:34.394315+00:00",
+      "last_modified": "2026-08-27T17:29:46.405236+00:00",
       "body_length": 10210,
       "capabilities": [
         "Overview",
