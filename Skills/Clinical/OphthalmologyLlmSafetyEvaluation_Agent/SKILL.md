@@ -59,6 +59,7 @@ Use this skill to evaluate large language model responses to ophthalmology conti
 15. Compare newer model families on board-style ophthalmology items: For Gemini 3 Pro, GPT-5 family, or later model-family comparisons, require leakage controls, subspecialty stratification, omission and harm-risk scoring, confidence-calibration review, and an explicit statement separating exam performance from clinical readiness.
 16. Require clinician adjudication: Route uncertain, high-stakes, or discrepant assessments to an ophthalmologist or qualified clinician reviewer before treating them as final.
 17. Produce audit-ready output: Return structured tables with prompt ID, topic, model label, correctness, omissions, harm rating, evidence notes, reviewer status, and adjudication comments.
+18. Report CME-question model comparisons conservatively: For CME-question evaluations, escalate moderate or high harm, guideline-discordant advice, omitted sight-threatening red flags, urgent referral gaps, or unresolved adjudication conflicts to ophthalmology review; report correctness, content omissions, risk of harm, and guideline-consistency patterns separately without unsupported claims of clinical readiness.
 
 ## Inputs / Outputs
 

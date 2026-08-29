@@ -386,6 +386,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 114. **Fine-grained domain Q&A dataset auditing**
    For domain-specific medical Q&A datasets, classify question type, answerability, evidence sufficiency, omission risk, harmfulness, calibration, and inter-rater adjudication so medical LLM benchmarks test trustworthy behavior rather than aggregate accuracy alone.
 
+115. **Trustworthy medical Q&A comparison templates**
+   For domain-specific medical Q&A benchmark comparisons, design item-level rubrics, tag omissions and potential harms separately, report results by specialty strata, check calibration, review benchmark items for dataset leakage, and use reporting templates that document dataset construction, annotation rules, item-level findings, limitations, and trustworthy-use boundaries.
+
 ## Inputs / Outputs
 
 **Inputs**
