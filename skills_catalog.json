@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:20:48.050125+00:00",
+  "generated_at": "2026-08-29T12:07:01.487749+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 699,
   "total_errors": 21,
@@ -1654,7 +1654,7 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-08-29T00:18:17.414005+00:00",
+      "last_modified": "2026-08-29T00:20:49.968357+00:00",
       "body_length": 51675,
       "capabilities": [
         "Overview",
@@ -1975,7 +1975,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-08-29T00:20:37.757442+00:00",
+      "last_modified": "2026-08-29T00:20:49.968357+00:00",
       "body_length": 19711,
       "capabilities": [
         "When to Use This Skill",
@@ -2297,7 +2297,7 @@
       ],
       "file_path": "Skills/Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
       "relative_path": "Clinical/OphthalmologyLlmSafetyEvaluation_Agent/SKILL.md",
-      "last_modified": "2026-08-29T00:20:02.588002+00:00",
+      "last_modified": "2026-08-29T00:20:49.968357+00:00",
       "body_length": 8027,
       "capabilities": [
         "Overview",
@@ -13967,8 +13967,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-29T00:19:09.741125+00:00",
-      "body_length": 65635,
+      "last_modified": "2026-08-29T12:02:31.746074+00:00",
+      "body_length": 66083,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
