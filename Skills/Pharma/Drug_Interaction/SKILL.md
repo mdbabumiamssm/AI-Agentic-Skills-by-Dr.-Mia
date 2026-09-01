@@ -154,6 +154,8 @@ This skill analyzes a list of medications to identify known interactions, focusi
 120. **ASM LLM-versus-Reference Contraindication Gate**: For antiseizure-medication DDI benchmarking informed by PMID 41994367, compare LLM outputs and Drugs.com findings with Lexicomp as the reference comparator, document finite iterative-prompting limits and unresolved answer changes, preserve contraindication or avoid-combination severity labels as escalation triggers, and require pharmacist or qualified clinician review before clinical use.
 121. **LLM-vs-Lexicomp ASM DDI Benchmark Pattern**: For antiseizure-medication DDI benchmarks comparing LLM output and Drugs.com-style results with Lexicomp, predefine finite iterative-prompting controls; score interaction presence, severity/category, and actionability or management advice separately under a source hierarchy that treats Lexicomp or another validated DDI compendium as the comparator, Drugs.com as secondary comparison, and LLM content as an unvalidated draft; check for false reassurance such as unsupported no-interaction conclusions, omitted reference interactions, or downplayed severity; and require pharmacist or qualified clinician review before any patient-facing or clinical recommendation.
 122. **Antiseizure DDI Validation Warning**: For antiseizure-medication DDI outputs, benchmark LLM answers against authoritative interaction databases such as Lexicomp and compare Drugs.com as a reference comparator; test and document iterative prompting effects; flag unsupported severity/category claims; and require pharmacist or qualified clinician review before any DDI output is used clinically.
+123. **Antiseizure Lexicomp/Drugs.com Validation Pattern**: For antiseizure medication DDI checks, compare each medication-pair assessment against Lexicomp and Drugs.com as comparators, reconcile interaction-presence and severity/category differences before reporting conclusions, document finite iterative-prompting limits and any answer changes as cautions rather than validation, and require pharmacist or qualified clinician review before clinical use.
+124. **Reference-Grounded DDI Validation Workflow**: Validate generated interaction assessments against an authoritative clinical reference such as Lexicomp; stratify results by interaction severity; measure omission and false-alarm rates without imposing unsupported performance thresholds; repeat the comparison across predefined iterative prompt changes to assess sensitivity; preserve the publication, revision, or access date recorded for every source used; and require pharmacist review before issuing any consequential recommendation.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -212,6 +214,8 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 ## References
 
 *   PubMed PMID 41994367: "Comparative performance of large language models and Drugs.com versus Lexicomp for antiseizure medication drug-drug interactions: A cross-sectional study with iterative prompting analysis." Explor Res Clin Soc Pharm, 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/

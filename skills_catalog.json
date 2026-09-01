@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T12:05:32.517168+00:00",
+  "generated_at": "2026-09-01T13:16:43.411125+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 699,
   "total_errors": 21,
@@ -797,7 +797,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-08-30T12:05:17.801251+00:00",
+      "last_modified": "2026-08-30T12:05:34.208282+00:00",
       "body_length": 19810,
       "capabilities": []
     },
@@ -13967,8 +13967,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-08-29T12:07:03.166012+00:00",
-      "body_length": 66083,
+      "last_modified": "2026-09-01T13:15:56.983997+00:00",
+      "body_length": 67174,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
