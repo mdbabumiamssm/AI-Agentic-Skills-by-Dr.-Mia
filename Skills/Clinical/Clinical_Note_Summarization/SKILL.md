@@ -1,3 +1,12 @@
+---
+name: clinical-note-summarization
+description: Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the provided prompt + usage script.
+measurable_outcome: Produce SOAP markdown and JSON outputs covering all four sections with at least 95% note coverage and explicit missing information within 2 minutes per note.
+allowed-tools:
+  - read_file
+  - run_shell_command
+---
+
 <!--
 # COPYRIGHT NOTICE
 # This file is part of the "Universal AI Agentic Skills" project.
@@ -10,15 +19,6 @@
 # Provenance: Authenticated by MD BABU MIA
 
 -->
-
----
-name: clinical-note-summarization
-description: Structure raw clinical notes into SOAP-format summaries with explicit contradictions, missing data, and ICD-linked assessments using the provided prompt + usage script.
-measurable_outcome: Produce SOAP markdown and JSON outputs covering all four sections with at least 95% note coverage and explicit missing information within 2 minutes per note.
-allowed-tools:
-  - read_file
-  - run_shell_command
----
 
 ## At-a-Glance
 - **description (10-20 chars):** SOAP builder
@@ -36,6 +36,7 @@ allowed-tools:
 
 ## Core Capabilities
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
+- For generated or transformed urologic documentation, preserve procedure- and operative-note structure; verify staging and laterality; reconcile medications and devices; detect and flag contradictions; attribute statements to their source documentation; and require responsible clinician review and sign-off before record entry or patient-facing use.
 - For urologic workflows, preserve procedural details, laterality, staging, and device information; keep drafts linked to source documentation; detect and flag omissions and copy-forward errors; and require clinician sign-off before medico-legal content is finalized.
 - Apply benchmark-driven quality evaluation for AI-generated notes across correctness, omissions, factual consistency, note completeness, risk-of-harm scoring, and human review rubric selection.
 - Compare automated note-quality checks against clinician review in benchmark-style evaluation across factual consistency, omission detection, note completeness, safety/harm review, and rubric-based scoring.

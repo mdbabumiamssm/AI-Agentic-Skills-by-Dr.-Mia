@@ -395,6 +395,15 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 117. **Fine-grained domain Q&A failure analysis**
    Evaluate domain-specific medical Q&A beyond aggregate accuracy by assessing item answerability, evidence support, semantic correctness, clinically important omissions, prespecified error-taxonomy categories, clinically relevant subgroup performance, and inter-rater agreement; include adjudicated examples of representative failures.
 
+118. **Fine-grained medical Q&A adjudication-to-regression protocol**
+   For each item, apply a prespecified error taxonomy; score correctness and completeness as separate dimensions; flag potentially harmful omissions; and record evidence attribution for the reference answer and evaluated claims. Report performance by clinical domain and item difficulty, measure annotator agreement and adjudicate disagreements, check for dataset leakage, assess calibration within relevant slices, and document dataset construction, provenance, versions, annotation rules, and limitations. Convert adjudicated errors into versioned regression cases that retain the input, expected evidence-supported answer elements, error labels, severity, and pass/fail criteria; rerun them after model, prompt, retrieval, or evaluation changes, using aggregate accuracy only as a secondary summary.
+
+119. **Intensive-care nursing question-answering benchmark profile**
+   Grade intensive-care nursing answers against nurse-authored reference answers using specialty-specific error categories; track provider, exact model version, and evaluation date; score clinically material omissions and potential harm separately; assess whether stated uncertainty is calibrated to answer correctness and risk; and treat board-style accuracy as benchmark-specific evidence, not evidence of bedside readiness without clinical workflow validation.
+
+120. **Item-level domain-specific medical Q&A dataset construction and release audit**
+   Construct and audit domain-specific medical Q&A datasets item by item: verify taxonomy coverage, answerability, ambiguity, and reference-answer quality; measure and report inter-rater agreement; check for benchmark contamination; assign fine-grained error labels; analyze clinically relevant subgroups; and publish trustworthy release documentation covering construction, provenance, annotation rules, limitations, intended uses, and use boundaries.
+
 ## Inputs / Outputs
 
 **Inputs**
