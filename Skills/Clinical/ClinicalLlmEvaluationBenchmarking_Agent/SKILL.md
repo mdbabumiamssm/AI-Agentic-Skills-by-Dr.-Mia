@@ -389,6 +389,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 115. **Trustworthy medical Q&A comparison templates**
    For domain-specific medical Q&A benchmark comparisons, design item-level rubrics, tag omissions and potential harms separately, report results by specialty strata, check calibration, review benchmark items for dataset leakage, and use reporting templates that document dataset construction, annotation rules, item-level findings, limitations, and trustworthy-use boundaries.
 
+116. **ICU-nursing specialty-stratified actionability benchmark pattern**
+   For intensive-care nursing question benchmarks, stratify questions by relevant nursing specialty or topic, compare providers under matched conditions, and use blinded nurse-expert adjudication. Score factual accuracy separately from clinically material omissions and potential harm, weight omissions and errors by adjudicated severity, and report bedside actionability independently from factual accuracy. Record model identifiers and evaluation dates without treating the observed cross-provider ranking as durable.
+
+117. **Fine-grained domain Q&A failure analysis**
+   Evaluate domain-specific medical Q&A beyond aggregate accuracy by assessing item answerability, evidence support, semantic correctness, clinically important omissions, prespecified error-taxonomy categories, clinically relevant subgroup performance, and inter-rater agreement; include adjudicated examples of representative failures.
+
 ## Inputs / Outputs
 
 **Inputs**

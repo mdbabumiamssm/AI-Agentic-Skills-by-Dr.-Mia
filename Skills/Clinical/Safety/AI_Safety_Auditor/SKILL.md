@@ -64,6 +64,7 @@ The **AI Safety Auditor** is a critical "human-in-the-loop" simulator and automa
 17. **Medical Answer Safety Adjudication**: Scores answer correctness, clinically important omissions, and risk of harm through blinded expert review; applies severity weighting, resolves reviewer disagreements through adjudication, and retains representative unsafe-response examples for audit and remediation.
 18. **Ophthalmology CME-Style Answer Safety Audit**: For ophthalmology continuing medical education-style clinical answers, label item-level correctness, clinically important content omissions, likely harm severity, unsafe reassurance, and missing referral or escalation language before accepting an LLM response.
 19. **Specialty-Society Guideline Consistency Checks**: Compare clinical AI recommendations against relevant specialty-society guidance, using plastic surgery guidance such as ASPS and AAPS guidelines as an example; flag omissions, contraindications, and discordant recommendations; and require expert review before patient-facing use.
+20. **Recommendation-Level Guideline-Concordance Auditing**: Uses plastic surgery guidance as a reusable pattern to map each clinical AI claim to the relevant guideline, score clinically important omissions and potential harm, check whether the supporting evidence is current, and distinguish superficial agreement from clinically complete advice.
 
 ## Workflow
 

@@ -156,6 +156,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 122. **Antiseizure DDI Validation Warning**: For antiseizure-medication DDI outputs, benchmark LLM answers against authoritative interaction databases such as Lexicomp and compare Drugs.com as a reference comparator; test and document iterative prompting effects; flag unsupported severity/category claims; and require pharmacist or qualified clinician review before any DDI output is used clinically.
 123. **Antiseizure Lexicomp/Drugs.com Validation Pattern**: For antiseizure medication DDI checks, compare each medication-pair assessment against Lexicomp and Drugs.com as comparators, reconcile interaction-presence and severity/category differences before reporting conclusions, document finite iterative-prompting limits and any answer changes as cautions rather than validation, and require pharmacist or qualified clinician review before clinical use.
 124. **Reference-Grounded DDI Validation Workflow**: Validate generated interaction assessments against an authoritative clinical reference such as Lexicomp; stratify results by interaction severity; measure omission and false-alarm rates without imposing unsupported performance thresholds; repeat the comparison across predefined iterative prompt changes to assess sensitivity; preserve the publication, revision, or access date recorded for every source used; and require pharmacist review before issuing any consequential recommendation.
+125. **LLM-versus-Authoritative-Database Validation Workflow**: Compare every LLM-generated interaction assessment against Lexicomp or an equivalent authoritative reference for interaction presence, mechanism, severity, and management; record all database disagreements; test whether the result remains stable across predefined prompt variants; and never use LLM output alone to clear a clinically significant interaction.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -295,5 +296,6 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->
