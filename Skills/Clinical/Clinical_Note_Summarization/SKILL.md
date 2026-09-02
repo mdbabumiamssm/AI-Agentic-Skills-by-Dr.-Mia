@@ -36,6 +36,7 @@ allowed-tools:
 
 ## Core Capabilities
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
+- Support human-reviewed AI drafting for urologic consultation, procedure and operative, follow-up, patient-instruction, and coding-support documentation, with source-note verification and clinician attestation before use.
 - For AI-assisted urologic documentation, maintain source-to-note traceability; explicitly check for omissions and contradictions; detect and flag templated or copied-forward text; require responsible clinician review, editing, and attestation; and limit generated content to documentation support rather than autonomous clinical judgment.
 - For generated or transformed urologic documentation, preserve procedure- and operative-note structure; verify staging and laterality; reconcile medications and devices; detect and flag contradictions; attribute statements to their source documentation; and require responsible clinician review and sign-off before record entry or patient-facing use.
 - For urologic workflows, preserve procedural details, laterality, staging, and device information; keep drafts linked to source documentation; detect and flag omissions and copy-forward errors; and require clinician sign-off before medico-legal content is finalized.
@@ -64,12 +65,14 @@ allowed-tools:
 - Mark outputs as documentation support only—not clinical decisions.
 - Strip/re-mask PHI before storing prompts/responses.
 
-## Human Oversight Before Record Entry
-- **Factual verification:** Compare symptoms, history, examination findings, test results, diagnoses, medications, procedures, and dates against the source documentation.
-- **Unsupported additions:** Remove or explicitly flag statements, inferred negatives, or recommendations that are not supported by the source.
-- **Coding implications:** Require clinician or qualified coding review of diagnosis and procedure wording and any resulting coding implications.
+## Human Oversight Before and After Record Entry
+- **Source-note fidelity:** Compare symptoms, history, examination findings, test results, diagnoses, medications, procedures, and dates against the source documentation.
+- **Templated-text propagation:** Detect and remove stale, copied-forward, or visit-inapplicable templated text before finalization.
+- **Omitted negatives:** Confirm that clinically relevant negatives documented in the source are retained; do not infer negatives that the source does not state.
+- **Unsupported assessment or coding:** Remove or explicitly flag assessments, recommendations, diagnosis or procedure wording, and coding implications that lack source support; require clinician or qualified coding review when coding is involved.
 - **Privacy:** Confirm that PHI handling, storage, transmission, and access follow applicable organizational privacy controls.
 - **Clinician attestation:** Require the responsible clinician to review, edit as needed, and attest the final documentation.
+- **Post-deployment sampling:** Periodically sample generated notes after deployment for source fidelity, propagated template text, omitted negatives, unsupported assessments or coding, privacy compliance, and completed clinician attestation; route identified issues for correction.
 - **Failure handling:** Withhold the generated note from the record when verification fails, source data are unavailable, or the system errors; route the case to manual documentation and correction.
 
 ## Specialty-Documentation Safety

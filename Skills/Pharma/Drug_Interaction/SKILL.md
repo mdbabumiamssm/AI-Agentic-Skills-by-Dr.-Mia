@@ -159,6 +159,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 125. **LLM-versus-Authoritative-Database Validation Workflow**: Compare every LLM-generated interaction assessment against Lexicomp or an equivalent authoritative reference for interaction presence, mechanism, severity, and management; record all database disagreements; test whether the result remains stable across predefined prompt variants; and never use LLM output alone to clear a clinically significant interaction.
 126. **ASM DDI Authoritative-Reference Stability and Escalation Check**: For each antiseizure-medication interaction pair, record pair-level provenance (drug names or formulations and source), apply a predefined evidence hierarchy with Lexicomp or an equivalent pharmacist-curated reference above secondary references and model output, compare mechanism and severity agreement separately, test stability across bounded iterative prompt variants, flag false reassurance such as unsupported no-interaction conclusions, omitted reference interactions, or downplayed severity, and escalate any model conflict with Lexicomp-class evidence to a pharmacist before clinical use.
 127. **Validated DDI Evidence Hierarchy and Conflict Escalation**: Prioritize validated interaction compendia such as Lexicomp over unsupported LLM recall; for each drug pair, require source citations and record source-specific severity and mechanism disagreements; include antiseizure-medication edge cases in evaluation; test and document stability across a predefined, bounded set of prompt iterations; and escalate unresolved or high-risk conflicts to a pharmacist before clinical use.
+128. **Antiseizure-Medication Validation**: Check each proposed antiseizure-medication interaction against authoritative interaction references, reconcile source differences in severity and mechanism, review relevant patient factors, state uncertainty explicitly, and require source-grounded verification by a pharmacist or qualified clinician. Iterative prompting may improve wording or recall, but it cannot replace that verification.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -198,6 +199,17 @@ Use Lexicomp or an equivalent curated DDI database as the ground-truth comparato
 ## Cautionary Evaluation: ASM DDIs
 
 For antiseizure medication drug-drug interaction answers, treat LLM output as an unvalidated draft and compare it with trusted references such as Lexicomp and Drugs.com before reporting conclusions. Iterative prompting may be documented as a bounded limitation or sensitivity check, but it must not replace source comparison. Escalate high-risk, discordant, uncertain, or patient-care-relevant interactions for pharmacist or qualified clinician review.
+
+## Antiseizure-Medication Validation
+
+Before using an antiseizure-medication interaction assessment:
+
+*   Check every proposed interaction against authoritative interaction references.
+*   Reconcile severity and mechanism across the references used; if differences cannot be resolved, report the source-specific conclusions and uncertainty explicitly.
+*   Review relevant patient factors that may change the interaction's clinical significance and identify any missing patient information.
+*   Require source-grounded verification by a pharmacist or qualified clinician before clinical use.
+
+Iterative prompting may improve wording or recall, but it cannot replace authoritative-source checks or source-grounded verification by a pharmacist or qualified clinician.
 
 ## Workflow
 
@@ -300,6 +312,8 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
+
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 <!-- AUTHOR_SIGNATURE: 9a7f3c2e-MD-BABU-MIA-2026-MSSM-SECURE -->

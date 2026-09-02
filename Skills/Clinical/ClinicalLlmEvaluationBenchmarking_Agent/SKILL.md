@@ -410,6 +410,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 122. **Fine-grained medical Q&A evaluation protocol**
    Define a question taxonomy and prespecify specialty and difficulty strata; construct source-grounded reference answers with traceable evidence; label omissions separately from other error modes; use qualified clinician adjudication with disagreement resolution; evaluate confidence calibration and abstention behavior; analyze clinically relevant subgroups; check for benchmark contamination; record the exact model version, prompt, and evaluation date; and report item- and stratum-level failures, uncertainty, and limitations alongside aggregate accuracy.
 
+123. **Reproducible intensive-care nursing benchmark slice**
+   Use nurse-authored intensive-care questions and specialty-expert scoring to compare ChatGPT, DeepSeek, and Google Gemini; analyze clinically material omissions and potential harm separately from accuracy; report inter-rater agreement; and record the provider, exact model/version, and evaluation date for reproducible comparisons. Treat board-style accuracy as benchmark-specific evidence that does not establish bedside readiness.
+
+124. **Pre-benchmark domain-specific medical Q&A dataset audit**
+   Before benchmarking, verify each item's answerability and the currency of its supporting evidence; detect ambiguous or contaminated items; stratify items by topic and difficulty; define fine-grained error and harm taxonomies; and report performance with item-level provenance rather than relying on aggregate accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**
