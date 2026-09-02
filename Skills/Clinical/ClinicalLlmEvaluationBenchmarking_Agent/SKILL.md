@@ -404,6 +404,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 120. **Item-level domain-specific medical Q&A dataset construction and release audit**
    Construct and audit domain-specific medical Q&A datasets item by item: verify taxonomy coverage, answerability, ambiguity, and reference-answer quality; measure and report inter-rater agreement; check for benchmark contamination; assign fine-grained error labels; analyze clinically relevant subgroups; and publish trustworthy release documentation covering construction, provenance, annotation rules, limitations, intended uses, and use boundaries.
 
+121. **Intensive-care nursing benchmark profile with drift controls**
+   Stratify intensive-care nursing questions by profession-specific topic and task type; compare ChatGPT, DeepSeek, and Google Gemini under matched conditions; weight errors by clinical consequence; review clinically material omissions and potential harm separately from correctness; assess uncertainty calibration within question strata; check items for question leakage; and record model versions and evaluation dates so results can be re-evaluated for model-version drift.
+
+122. **Fine-grained medical Q&A evaluation protocol**
+   Define a question taxonomy and prespecify specialty and difficulty strata; construct source-grounded reference answers with traceable evidence; label omissions separately from other error modes; use qualified clinician adjudication with disagreement resolution; evaluate confidence calibration and abstention behavior; analyze clinically relevant subgroups; check for benchmark contamination; record the exact model version, prompt, and evaluation date; and report item- and stratum-level failures, uncertainty, and limitations alongside aggregate accuracy.
+
 ## Inputs / Outputs
 
 **Inputs**

@@ -36,6 +36,7 @@ allowed-tools:
 
 ## Core Capabilities
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
+- For AI-assisted urologic documentation, maintain source-to-note traceability; explicitly check for omissions and contradictions; detect and flag templated or copied-forward text; require responsible clinician review, editing, and attestation; and limit generated content to documentation support rather than autonomous clinical judgment.
 - For generated or transformed urologic documentation, preserve procedure- and operative-note structure; verify staging and laterality; reconcile medications and devices; detect and flag contradictions; attribute statements to their source documentation; and require responsible clinician review and sign-off before record entry or patient-facing use.
 - For urologic workflows, preserve procedural details, laterality, staging, and device information; keep drafts linked to source documentation; detect and flag omissions and copy-forward errors; and require clinician sign-off before medico-legal content is finalized.
 - Apply benchmark-driven quality evaluation for AI-generated notes across correctness, omissions, factual consistency, note completeness, risk-of-harm scoring, and human review rubric selection.

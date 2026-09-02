@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T23:25:17.645501+00:00",
+  "generated_at": "2026-09-02T12:45:22.188461+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
   "total_skills": 699,
   "total_errors": 21,
@@ -1654,8 +1654,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-09-01T23:18:34.717524+00:00",
-      "body_length": 54607,
+      "last_modified": "2026-09-02T12:40:52.031132+00:00",
+      "body_length": 55770,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1997,8 +1997,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-09-01T23:14:39.082376+00:00",
-      "body_length": 7624,
+      "last_modified": "2026-09-02T00:21:39.964190+00:00",
+      "body_length": 7964,
       "capabilities": [
         "At-a-Glance",
         "Inputs",
@@ -13967,8 +13967,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-09-01T23:24:22.496270+00:00",
-      "body_length": 68360,
+      "last_modified": "2026-09-02T12:43:51.433550+00:00",
+      "body_length": 68896,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
