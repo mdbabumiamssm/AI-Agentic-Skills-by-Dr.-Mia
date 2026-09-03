@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T13:13:07.301753+00:00",
+  "generated_at": "2026-09-03T00:41:20.143684+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 699,
+  "total_skills": 700,
   "total_errors": 21,
   "skills": [
     {
@@ -1619,6 +1619,31 @@
       ]
     },
     {
+      "name": "clinical-cost-effectiveness-modeling",
+      "description": "Build auditable cost-effectiveness models for clinical interventions, including AI-derived outcomes, with QALYs, ICERs, uncertainty analysis, validation, and human review.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/ClinicalCostEffectivenessModeling_Agent/SKILL.md",
+      "relative_path": "Clinical/ClinicalCostEffectivenessModeling_Agent/SKILL.md",
+      "last_modified": "2026-09-03T00:41:10.049145+00:00",
+      "body_length": 12377,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "Inputs",
+        "Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "clinical-guideline-development-llm",
       "description": "LLM-assisted clinical practice guideline development workflow grounded in real-time evaluation, evidence traceability, expert review, recommendation grading, and human governance.",
       "tool_type": "",
@@ -1654,8 +1679,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-09-02T13:07:24.254642+00:00",
-      "body_length": 56655,
+      "last_modified": "2026-09-03T00:34:59.978073+00:00",
+      "body_length": 57682,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1997,7 +2022,7 @@
       ],
       "file_path": "Skills/Clinical/Clinical_Note_Summarization/SKILL.md",
       "relative_path": "Clinical/Clinical_Note_Summarization/SKILL.md",
-      "last_modified": "2026-09-02T13:03:38.112718+00:00",
+      "last_modified": "2026-09-02T13:13:08.751230+00:00",
       "body_length": 8733,
       "capabilities": [
         "At-a-Glance",
@@ -13967,8 +13992,8 @@
       ],
       "file_path": "Skills/Pharma/Drug_Interaction/SKILL.md",
       "relative_path": "Pharma/Drug_Interaction/SKILL.md",
-      "last_modified": "2026-09-02T13:12:19.000311+00:00",
-      "body_length": 70146,
+      "last_modified": "2026-09-03T00:37:26.130218+00:00",
+      "body_length": 70588,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",

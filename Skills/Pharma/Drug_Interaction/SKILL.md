@@ -160,6 +160,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 126. **ASM DDI Authoritative-Reference Stability and Escalation Check**: For each antiseizure-medication interaction pair, record pair-level provenance (drug names or formulations and source), apply a predefined evidence hierarchy with Lexicomp or an equivalent pharmacist-curated reference above secondary references and model output, compare mechanism and severity agreement separately, test stability across bounded iterative prompt variants, flag false reassurance such as unsupported no-interaction conclusions, omitted reference interactions, or downplayed severity, and escalate any model conflict with Lexicomp-class evidence to a pharmacist before clinical use.
 127. **Validated DDI Evidence Hierarchy and Conflict Escalation**: Prioritize validated interaction compendia such as Lexicomp over unsupported LLM recall; for each drug pair, require source citations and record source-specific severity and mechanism disagreements; include antiseizure-medication edge cases in evaluation; test and document stability across a predefined, bounded set of prompt iterations; and escalate unresolved or high-risk conflicts to a pharmacist before clinical use.
 128. **Antiseizure-Medication Validation**: Check each proposed antiseizure-medication interaction against authoritative interaction references, reconcile source differences in severity and mechanism, review relevant patient factors, state uncertainty explicitly, and require source-grounded verification by a pharmacist or qualified clinician. Iterative prompting may improve wording or recall, but it cannot replace that verification.
+129. **Source-Aware LLM DDI Evaluation Workflow**: Compare each LLM-generated DDI answer with curated references such as Lexicomp and Drugs.com; grade interaction presence, severity, mechanism, clinical actionability, and unsafe omissions separately; and assess answer consistency across predefined, controlled iterative prompts while recording prompt-specific changes and source disagreements.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -312,6 +313,8 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
+
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/

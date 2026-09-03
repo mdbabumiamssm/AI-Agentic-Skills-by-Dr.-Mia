@@ -416,6 +416,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 124. **Pre-benchmark domain-specific medical Q&A dataset audit**
    Before benchmarking, verify each item's answerability and the currency of its supporting evidence; detect ambiguous or contaminated items; stratify items by topic and difficulty; define fine-grained error and harm taxonomies; and report performance with item-level provenance rather than relying on aggregate accuracy.
 
+125. **ICU-nursing benchmark profile with locked models and paired adjudication**
+   For intensive-care nursing questions, lock and report the exact provider and model version, prompt, decoding settings, and evaluation date; stratify questions and results by ICU-nursing specialty or topic and prespecified difficulty; use independent nurse-expert review with disagreement adjudication; compare models with paired statistical tests on the same items; and score correctness, clinically material omissions, harmful advice, uncertainty, and appropriate abstention as separate endpoints.
+
+126. **Fine-grained medical Q&A dataset audit with slice uncertainty**
+   Audit domain-specific medical Q&A datasets for answerability and ambiguity; measure annotation agreement; screen for contamination and lexical leakage; stratify results by specialty and difficulty; assess calibrated correctness and evidence attribution; classify omissions and potential harms with separate taxonomies; and report confidence intervals for each slice.
+
 ## Inputs / Outputs
 
 **Inputs**

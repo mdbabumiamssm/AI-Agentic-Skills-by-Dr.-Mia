@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 699 skills across 46 categories. Last refresh: 2026-09-02T13:13:07.301753+00:00._
+_Auto-generated index. 700 skills across 46 categories. Last refresh: 2026-09-03T00:41:20.143684+00:00._
 
 ### 3D_Genomics (8)
 
@@ -311,7 +311,7 @@ _Auto-generated index. 699 skills across 46 categories. Last refresh: 2026-09-02
 - **regulatory-drafting** — SOTA Regulatory Drafting agent for healthcare workflows (FDA/EMA submissions) aligned with Anthropic healthcare initiatives.
 - **research-literature** — Research Literature agent for healthcare workflows.
 
-### Clinical (38)
+### Clinical (39)
 
 - **ai-safety-auditor** — Validates clinical AI outputs for safety, bias, and hallucination risks before delivery to end-users or clinicians.
 - **autonomous-oncology-agent** — Precision Oncology
@@ -326,6 +326,7 @@ _Auto-generated index. 699 skills across 46 categories. Last refresh: 2026-09-02
 - **bio-clinical-databases-tumor-mutational-burden** — Calculate tumor mutational burden from panel or WES data with proper normalization and clinical thresholds. Use when assessing immunother...
 - **bio-clinical-databases-variant-prioritization** — Filter and prioritize variants by pathogenicity, population frequency, and clinical evidence for rare disease analysis. Use when identify...
 - **chatehr-clinician-assistant** — EHR Chat Assistant
+- **clinical-cost-effectiveness-modeling** — Build auditable cost-effectiveness models for clinical interventions, including AI-derived outcomes, with QALYs, ICERs, uncertainty analy...
 - **clinical-guideline-development-llm** — LLM-assisted clinical practice guideline development workflow grounded in real-time evaluation, evidence traceability, expert review, rec...
 - **clinical-llm-evaluation-benchmarking** — Design and run rigorous clinical LLM evaluation workflows grounded in systematic review evidence on AI-generated clinical note quality me...
 - **clinical-llm-patient-education** — Translate radiology reports and clinical documents into personalized patient education while preserving meaning, uncertainty, next steps,...
