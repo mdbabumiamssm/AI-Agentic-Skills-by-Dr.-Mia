@@ -422,6 +422,15 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 126. **Fine-grained medical Q&A dataset audit with slice uncertainty**
    Audit domain-specific medical Q&A datasets for answerability and ambiguity; measure annotation agreement; screen for contamination and lexical leakage; stratify results by specialty and difficulty; assess calibrated correctness and evidence attribution; classify omissions and potential harms with separate taxonomies; and report confidence intervals for each slice.
 
+127. **Specialty-user intensive-care nursing benchmark pattern**
+   For intensive-care nursing questions, stratify results by knowledge domain and clinical risk; compare models under identical prompts; measure clinically important omissions and unsafe advice separately from accuracy; and require nurse-expert adjudication before drawing deployment conclusions.
+
+128. **Expert-authored, versioned medical Q&A benchmark workflow**
+   Construct items and reference answers with qualified domain experts; assign domain and difficulty labels; audit ambiguity and answerability before scoring; check items and source material for benchmark contamination; apply granular, prespecified error taxonomies; assess confidence calibration; report clinically relevant subgroup results; and version dataset items, annotations, rubrics, prompts, model settings, and benchmark releases for reproducible comparison.
+
+129. **Closed-system radiography-response evaluation profile**
+   For closed-system LLM evaluations of radiography responses, score factual correctness, scope-of-practice errors, unsupported recommendations, omissions, and harm potential as separate dimensions; document whether retrieval or external references were unavailable during testing.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -451,3 +460,4 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 - PubMed: Chen JL, Lu AJ, Verma R, Wang L, Koch DD. "Assessment of Correctness, Content Omission, and Risk of Harm in Large Language Model Responses to Ophthalmology Continuing Medical Education Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41908501/
 - PubMed: Shean RS, Mallapu JK, Shah T, Rasheed HA, Younessi DN. "Comparative Performance of Gemini 3 Pro and GPT-5 Family Models on Ophthalmology Board-Style Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41970036/
 - PubMed: Kabir R, Braud SC, Hinson CS, Nazerali RS. "Are large language models consistent with the ASPS and AAPS guidelines? A comparison of AI chatbot recommendations and plastic surgery clinical guidance." *J Plast Reconstr Aesthet Surg*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41985209/
+- PubMed: Clark KR. "Analysis of AI-Generated Radiography Responses Using a Closed-System LLM." *Radiol Technol*. 2026 May-Jun. https://pubmed.ncbi.nlm.nih.gov/42024724/

@@ -66,6 +66,7 @@ Use this skill to convert radiology reports and other clinical documents into un
    - Treat disagreements as review items rather than assuming either explanation is correct without checking the source document.
 
 7. **MRI-report interpretation validation**
+   - Benchmark LLM-generated MRI-report education against human expert interpretations for factual fidelity, retained uncertainty, reading level, actionable next steps, omission of urgent findings, and patient comprehension; require radiologist approval before patient release.
    - Use personalized MRI-report education as a validation scenario by comparing generated explanations against expert interpretations when available, preserving radiology findings, uncertainty, and follow-up recommendations from the report.
    - When comparing LLM-generated MRI-report education with human expert interpretations, check that the draft preserves clinical meaning, separates findings from the impression, explains uncertainty, avoids false reassurance, fits the target reading level, and routes next-step guidance through clinician review.
    - For MRI report interpretation, preserve the report's meaning and uncertainty, translate findings into patient-readable language, avoid diagnosis beyond the report, surface next-step questions for clinicians, and compare model output against expert review when available.

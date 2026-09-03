@@ -161,6 +161,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 127. **Validated DDI Evidence Hierarchy and Conflict Escalation**: Prioritize validated interaction compendia such as Lexicomp over unsupported LLM recall; for each drug pair, require source citations and record source-specific severity and mechanism disagreements; include antiseizure-medication edge cases in evaluation; test and document stability across a predefined, bounded set of prompt iterations; and escalate unresolved or high-risk conflicts to a pharmacist before clinical use.
 128. **Antiseizure-Medication Validation**: Check each proposed antiseizure-medication interaction against authoritative interaction references, reconcile source differences in severity and mechanism, review relevant patient factors, state uncertainty explicitly, and require source-grounded verification by a pharmacist or qualified clinician. Iterative prompting may improve wording or recall, but it cannot replace that verification.
 129. **Source-Aware LLM DDI Evaluation Workflow**: Compare each LLM-generated DDI answer with curated references such as Lexicomp and Drugs.com; grade interaction presence, severity, mechanism, clinical actionability, and unsafe omissions separately; and assess answer consistency across predefined, controlled iterative prompts while recording prompt-specific changes and source disagreements.
+130. **Antiseizure-Medication DDI Validation Protocol**: Treat an authoritative, pharmacist-reviewed reference such as Lexicomp as the ground-truth comparator; stratify each interaction by severity and mechanism; run a predefined, bounded iterative-prompt sensitivity test and record prompt-to-prompt changes; track false reassurance, including unsupported no-interaction conclusions, omitted reference interactions, and downplayed severity; require a citation to the authoritative reference for every clinically relevant claim; and escalate uncertain, unsupported, discordant, or clinically significant interactions to a pharmacist or qualified clinician before clinical use.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -313,6 +314,8 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
+
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/

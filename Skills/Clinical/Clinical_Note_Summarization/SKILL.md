@@ -35,6 +35,7 @@ allowed-tools:
 3. Optional JSON payload using schema from README.
 
 ## Core Capabilities
+- For AI-generated urologic documentation, use procedure-specific templates; preserve pertinent negative findings documented in the source; explicitly flag uncertainty and contradictions; validate specialty terminology; and require clinician review and approval before generated text enters the medical record.
 - Evaluate AI-generated clinical note quality for factual consistency, omitted clinically relevant facts, temporal accuracy, diagnosis/medication/procedure fidelity, note completeness, and rubric-based human review; treat automated benchmarks as supportive, caveated quality checks rather than definitive clinical validation.
 - Support human-reviewed AI drafting for urologic consultation, procedure and operative, follow-up, patient-instruction, and coding-support documentation, with source-note verification and clinician attestation before use.
 - For AI-assisted urologic documentation, maintain source-to-note traceability; explicitly check for omissions and contradictions; detect and flag templated or copied-forward text; require responsible clinician review, editing, and attestation; and limit generated content to documentation support rather than autonomous clinical judgment.
