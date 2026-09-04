@@ -431,6 +431,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 129. **Closed-system radiography-response evaluation profile**
    For closed-system LLM evaluations of radiography responses, score factual correctness, scope-of-practice errors, unsupported recommendations, omissions, and harm potential as separate dimensions; document whether retrieval or external references were unavailable during testing.
 
+130. **Fine-grained medical Q&A safety evaluation module**
+   Evaluate factual correctness, evidence support, completeness, uncertainty calibration, subgroup and topic performance, and clinically consequential error types as separate dimensions; include dataset documentation, expert adjudication, item-level failure analysis, confidence intervals, and contamination checks so aggregate accuracy does not conceal unsafe domain-specific behavior.
+
 ## Inputs / Outputs
 
 **Inputs**
