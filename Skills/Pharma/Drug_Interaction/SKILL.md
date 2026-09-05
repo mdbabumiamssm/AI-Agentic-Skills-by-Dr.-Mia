@@ -164,6 +164,7 @@ This skill analyzes a list of medications to identify known interactions, focusi
 130. **Antiseizure-Medication DDI Validation Protocol**: Treat an authoritative, pharmacist-reviewed reference such as Lexicomp as the ground-truth comparator; stratify each interaction by severity and mechanism; run a predefined, bounded iterative-prompt sensitivity test and record prompt-to-prompt changes; track false reassurance, including unsupported no-interaction conclusions, omitted reference interactions, and downplayed severity; require a citation to the authoritative reference for every clinically relevant claim; and escalate uncertain, unsupported, discordant, or clinically significant interactions to a pharmacist or qualified clinician before clinical use.
 131. **Antiseizure-Medication Safety Validation Workflow**: Compare each generated antiseizure-medication interaction answer against an authoritative interaction reference; classify agreement and disagreement separately by severity and mechanism; detect omissions and false positives; test and record whether predefined, bounded iterative prompting changes the conclusions; and require pharmacist review for discordant or high-risk results. Repeated prompting is not a substitute for validated drug-information sources.
 132. **Reproducible Antiseizure-Medication DDI Concordance Evaluation**: Evaluate antiseizure-medication DDI outputs against Lexicomp-style expert references using a predefined source hierarchy that places authoritative interaction databases above secondary sources such as Drugs.com and model output; record severity and mechanism concordance separately; run bounded iterative-prompt sensitivity tests while preserving the exact prompts, outputs, model/version, reference version or access date, and comparison decisions; and never treat prompting, prompt stability, or prompt refinement as a substitute for an authoritative interaction database.
+133. **Validated DDI-Answering Evaluation Workflow**: Normalize medication names and formulations before pair-level comparison, then use an authoritative reference such as Lexicomp as the adjudicated comparator to evaluate interaction detection, severity and mechanism agreement, management recommendations, and supporting source citations. Emphasize potential false negatives by flagging comparator-listed interactions omitted from the answer; record whether conclusions remain stable across a predefined, bounded iterative-prompt sequence; and require pharmacist review for every discordant or high-risk antiseizure-medication result before clinical use.
 
 ## Medication-Safety Benchmarking for LLM-Assisted DDI Review
 
@@ -316,6 +317,8 @@ python3 Skills/Pharma/Drug_Interaction/impl.py --drugs "Warfarin, Aspirin"
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
+*   https://pubmed.ncbi.nlm.nih.gov/41994367/
+
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/
 
 *   https://pubmed.ncbi.nlm.nih.gov/41994367/

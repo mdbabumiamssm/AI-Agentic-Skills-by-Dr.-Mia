@@ -1,3 +1,12 @@
+---
+name: 'clinical-nlp-extractor'
+description: 'Extracts medical entities (Diseases, Medications, Procedures) and patient outcome mentions with temporal anchoring from unstructured clinical text using regex and simple rules (or LLM wrappers).'
+measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
+allowed-tools:
+  - read_file
+  - run_shell_command
+---
+
 <!--
 # COPYRIGHT NOTICE
 # This file is part of the "Universal AI Agentic Skills" project.
@@ -10,15 +19,6 @@
 # Provenance: Authenticated by MD BABU MIA
 
 -->
-
----
-name: 'clinical-nlp-extractor'
-description: 'Extracts medical entities (Diseases, Medications, Procedures) and patient outcome mentions with temporal anchoring from unstructured clinical text using regex and simple rules (or LLM wrappers).'
-measurable_outcome: Execute skill workflow successfully with valid output within 15 minutes.
-allowed-tools:
-  - read_file
-  - run_shell_command
----
 
 
 # Clinical NLP Entity Extractor
@@ -76,6 +76,7 @@ The **Clinical NLP Skill** converts free-text clinical notes into structured dat
 41. **Clinician-Note Patient-Outcome Timeline Workflow**: Detect outcome mentions in clinician notes; anchor each mention to the note date, explicit dates, relative temporal cues, or bounded intervals; encode negation and uncertainty separately from observed outcomes; retain evidence spans for outcome and timing claims; assign adjudication labels for confirmed, rejected, uncertain, or conflicting cases; and evaluate patient-outcome timelines with metrics reported separately for outcome detection, temporal anchoring, and adjudication agreement without assuming preset benchmarks.
 42. **Outcome Extraction with Onset and Resolution Timing**: For clinician-note outcome extraction, define outcome event schemas with onset timing, resolution timing, note date, event status, temporal anchor, evidence span, negation, uncertainty, and adjudication fields; route ambiguous, conflicting, negated, uncertain, or timing-sensitive records through adjudication; and validate note-level plus patient-level extraction with separately reported outcome-identification and temporal-anchoring metrics without assuming preset benchmarks.
 43. **Occurrence-and-Time Outcome Labeling**: Assign separate labels for whether a patient-outcome event occurred and when it occurred; normalize temporal relations against both note and encounter dates; encode uncertainty and negation explicitly; deduplicate repeated events across longitudinal notes while preserving provenance; resolve annotation disagreements through inter-annotator adjudication; and report event-level extraction metrics plus timing metrics at stated tolerance windows without assuming preset benchmarks.
+44. **Event-and-Time Outcome Modeling**: Model outcomes as events rather than simple mentions; distinguish observed outcomes from plans and hypothetical events; normalize explicit dates and relative temporal expressions; represent intervals and uncertain timing; link each outcome and temporal claim to supporting note spans; reconcile longitudinal contradictions while preserving provenance; and evaluate event identity and temporal accuracy separately through clinician adjudication.
 
 ## Workflow
 

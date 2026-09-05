@@ -434,6 +434,12 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 130. **Fine-grained medical Q&A safety evaluation module**
    Evaluate factual correctness, evidence support, completeness, uncertainty calibration, subgroup and topic performance, and clinically consequential error types as separate dimensions; include dataset documentation, expert adjudication, item-level failure analysis, confidence intervals, and contamination checks so aggregate accuracy does not conceal unsafe domain-specific behavior.
 
+131. **Intensive-care nursing specialty evaluation pattern**
+   For intensive-care nursing questions, grade responses against clinician-authored reference answers using prespecified nursing-scope safety criteria; capture the exact model version and evaluation date; use blinded expert grading with disagreement adjudication; analyze confidence calibration and appropriate abstention; compare models with paired statistical methods on the same questions; and score factual correctness, clinical prioritization, escalation decisions, and potential patient harm as separate endpoints.
+
+132. **Fine-grained medical Q&A competency and failure-mode analysis**
+   Construct and analyze medical Q&A benchmarks with item-level competency taxonomies and traceable evidence provenance; label ambiguity, answerability, omissions, and potential harm separately; check for benchmark leakage; measure expert inter-rater agreement; analyze errors across clinically relevant subgroups; assess confidence calibration; and distinguish aggregate accuracy from clinically important failure modes in reporting.
+
 ## Inputs / Outputs
 
 **Inputs**
