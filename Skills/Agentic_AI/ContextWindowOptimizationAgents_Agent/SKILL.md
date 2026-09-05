@@ -84,6 +84,70 @@ Use it to keep the active context focused on task state, decisions, errors, chan
 39. **Concrete context-mode reduction pattern**: Use `mksglu/context-mode` as the concrete implementation pattern for coding-agent context reduction: sandbox verbose tool output, preserve concise active summaries, keep raw artifacts accessible out-of-band, and define regression checks that detect lost critical evidence during compression.
 40. **Audit-aware context-mode tooling pattern**: Treat `mksglu/context-mode` as a concrete TypeScript pattern for coding-agent context-window management: sandbox verbose tool output outside the active transcript, preserve compact summaries and raw-output recovery pointers across compatible agent runtimes, measure observed reduction against the source-reported 98% claim and 14-platform scope, and keep raw logs available when hidden evidence could affect debugging, summary-fidelity checks, reproduction, or audits.
 41. **High-adoption context-mode implementation reference**: Use `mksglu/context-mode` as a high-adoption TypeScript reference for coding-agent context hygiene based on the source finding's 12,504 GitHub stars, 14-platform support, and reported 98% reduction: sandbox verbose tool output outside the active transcript, retain compact summaries with transcript budget controls in active context, verify compatibility with the target coding agent, and fail open or recover raw output when aggressive compression hides decision-critical evidence such as errors, stack traces, failing commands, reproduction context, stale-summary conflicts, or audit anchors.
+42. **Evidence-safe Context Mode adoption**: Apply Context Mode's isolated subprocess and output-filtering architecture using the version-matched platform integration below; measure raw versus retained transcript size rather than assuming the source-reported 98% reduction, document local-storage, credential, permission, and network boundaries, define raw-output rerun or fail-open recovery, and gate rollout on regression tests that preserve identifiers, exact errors, citations, commands, file anchors, user decisions, and other task-critical evidence.
+
+**Context Mode Adoption Profile**
+
+Architecture: run analysis inside an isolated subprocess and return only intentional stdout to the conversation. For large output, filter or index the raw material locally and retrieve only relevant excerpts. Treat the subprocess boundary as context isolation, not as a guarantee of least privilege: authenticated CLIs may inherit credentials and permitted host paths, and anything explicitly printed can still enter the transcript.
+
+Compatibility matrix for the source finding's 14-platform snapshot:
+
+| Platform | Routing integration | Session start | Pre-compaction |
+|---|---|---|---|
+| Claude Code | MCP + automatic hooks | Hook | Hook |
+| Qwen Code | MCP + hooks | Hook | Hook |
+| Gemini CLI | MCP + hooks | Hook | Hook |
+| VS Code Copilot | MCP + hooks | Hook | Hook |
+| JetBrains Copilot | MCP + hooks | Hook | Hook |
+| Cursor | MCP + hooks | Not available | Not available |
+| OpenCode | MCP + TypeScript plugin | System-transform surrogate | Plugin hook |
+| KiloCode | MCP + TypeScript plugin | System-transform surrogate | Plugin hook |
+| OpenClaw | Native gateway plugin | Plugin hook | Plugin hook |
+| Codex CLI | MCP + hooks | Hook | Not available |
+| Antigravity | MCP + manual instruction file | Not available | Not available |
+| Kiro | MCP + tool hooks and steering file | Not available | Not available |
+| Zed | MCP + manual instruction file | Not available | Not available |
+| Pi Coding Agent | MCP + extension | Extension hook | Extension hook |
+
+Verify this matrix against the installed Context Mode and client versions before configuring a runtime; platform support can change after the dated source snapshot.
+
+Configuration examples from the source repository:
+
+```bash
+# Claude Code MCP-only smoke test; hooks and slash commands are not installed.
+claude mcp add context-mode -- npx -y context-mode
+```
+
+```toml
+# ~/.codex/config.toml after installing context-mode globally
+[mcp_servers.context-mode]
+command = "context-mode"
+```
+
+Pair MCP registration with the repository's version-matched hook and instruction-file configuration where supported. Restart the client, run `ctx doctor` or the platform's MCP-status command, and confirm a single active registration before relying on routing.
+
+Measurement and recovery:
+
+- On the same representative task, record raw output size and retained transcript size in bytes or tokens, then calculate `(raw - retained) / raw * 100`. Report the observed result alongside—not as a replacement for—the source-reported 98% reduction.
+- If hooks, routing, indexing, or session restoration fail, run the diagnostic command, bypass summarization for the affected call, and rerun the original command with raw output visible. Do not keep retrying a lossy summary.
+- If exact output may be needed for debugging or audit, retain an approved local artifact or reproducible command before condensation. Promote the raw artifact back into review when a summary is stale, contradictory, or missing evidence.
+
+Privacy boundaries:
+
+- Keep raw material and session indexes local, apply the host client's existing allow/deny rules, redact credentials from persisted tool inputs, and use the purge operation when retention is no longer authorized.
+- Local processing does not make output harmless: inherited credentials, allowed files, and network access remain available to the subprocess, and secrets printed to stdout can enter the conversation. Sanitize output before returning or persisting it and review stricter network controls for shared or hosted environments.
+
+Regression-test every summarizer or routing change with synthetic fixtures and reject the change if any required evidence is removed or altered:
+
+| Fixture | Required preservation |
+|---|---|
+| Opaque identifiers | Issue/PR IDs, commit hashes, request IDs, test names, symbols, and file/line anchors remain exact. |
+| Failures | Command, non-zero exit status, exception/error type, actionable error text, and failing test remain recoverable. |
+| Citations | Citation label, source URL, and the claim-to-source association remain intact. |
+| Decisions and constraints | User choices, acceptance criteria, unresolved risks, numeric values, and units survive condensation. |
+| Recovery | A reproducible rerun command or approved raw-artifact pointer works, and a deliberately stale summary triggers raw-output review. |
+
+Use exact-string assertions for opaque tokens, paths, URLs, error codes, and status values; use semantic assertions for decisions and implications. Compare task outcomes from the raw fixture and its summary, and fail the regression if the summary changes the answer or prevents reproduction.
 
 **Inputs / Outputs**
 
