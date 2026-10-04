@@ -5,7 +5,7 @@
 
 import os
 import time
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from platform.interface.llm_provider import LLMProvider
 from platform.schema.io_types import LLMRequest, LLMResponse
 

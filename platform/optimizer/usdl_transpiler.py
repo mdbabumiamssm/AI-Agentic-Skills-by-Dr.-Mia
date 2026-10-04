@@ -17,8 +17,7 @@ payloads so a single skill can run across OpenAI, Anthropic, Gemini, etc.
 
 from __future__ import annotations
 
-import re
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Dict, List
 

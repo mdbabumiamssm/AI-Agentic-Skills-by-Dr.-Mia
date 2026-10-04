@@ -9,7 +9,6 @@
 # Provenance: Authenticated by MD BABU MIA
 
 import time
-import random
 import asyncio
 
 # Enterprise Biomedical Dashboard

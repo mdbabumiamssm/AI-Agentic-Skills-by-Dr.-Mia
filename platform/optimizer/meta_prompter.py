@@ -8,9 +8,7 @@
 #
 # Provenance: Authenticated by MD BABU MIA
 
-import re
 from enum import Enum
-from typing import Dict, List
 
 # The Optimizer: Transforming Generic Prompts into SOTA Model-Specific Artifacts
 # "One Prompt Source, Many Optimized Outputs"

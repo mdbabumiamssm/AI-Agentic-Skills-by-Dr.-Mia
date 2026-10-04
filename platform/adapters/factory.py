@@ -13,7 +13,6 @@ from platform.interface.llm_provider import LLMProvider
 from platform.adapters.gemini_adapter import GeminiAdapter
 from platform.adapters.claude_runtime_adapter import Claude37Adapter
 from platform.adapters.local_adapter import LocalAdapter # Placeholder for future
-import os
 
 class LLMFactory:
     """

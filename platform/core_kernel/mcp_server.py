@@ -12,7 +12,7 @@ import sys
 import json
 import asyncio
 import logging
-from typing import Any, Dict, List
+from typing import Any, Dict
 import os
 
 # Add project root to path to import server

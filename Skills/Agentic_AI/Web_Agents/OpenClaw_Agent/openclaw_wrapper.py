@@ -1,6 +1,5 @@
 import time
-import json
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 
 class OpenClaw:
     """
