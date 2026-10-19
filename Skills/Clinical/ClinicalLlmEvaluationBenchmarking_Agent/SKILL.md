@@ -440,6 +440,9 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 132. **Fine-grained medical Q&A competency and failure-mode analysis**
    Construct and analyze medical Q&A benchmarks with item-level competency taxonomies and traceable evidence provenance; label ambiguity, answerability, omissions, and potential harm separately; check for benchmark leakage; measure expert inter-rater agreement; analyze errors across clinically relevant subgroups; assess confidence calibration; and distinguish aggregate accuracy from clinically important failure modes in reporting.
 
+133. **Patient-education evaluation module**
+   Evaluate information quality, understandability, actionability, and readability as four separate dimensions. Treat the HIV health-education cross-platform study (PubMed PMID 42893792) as a candidate reference: before implementing study-derived scoring, retrieve the full text and any supplements and extract the actual instruments and scoring rules, assessor qualifications and procedures (including blinding, independent ratings, disagreement resolution, and agreement reporting where documented), exact model versions, and study limitations. Mark unavailable details as unverified and defer implementation of dependent methods rather than inferring them from the title or metadata. Require clinician review of actionable statements for clinical correctness, omissions, and potential harm; readability is not evidence of clinical correctness. Document limits on generalizing HIV-education findings to other patient populations, languages, or clinical topics.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -470,3 +473,4 @@ Use this skill to avoid relying on a single automatic score when clinical useful
 - PubMed: Shean RS, Mallapu JK, Shah T, Rasheed HA, Younessi DN. "Comparative Performance of Gemini 3 Pro and GPT-5 Family Models on Ophthalmology Board-Style Questions." *Ophthalmol Sci*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41970036/
 - PubMed: Kabir R, Braud SC, Hinson CS, Nazerali RS. "Are large language models consistent with the ASPS and AAPS guidelines? A comparison of AI chatbot recommendations and plastic surgery clinical guidance." *J Plast Reconstr Aesthet Surg*. 2026 May. https://pubmed.ncbi.nlm.nih.gov/41985209/
 - PubMed: Clark KR. "Analysis of AI-Generated Radiography Responses Using a Closed-System LLM." *Radiol Technol*. 2026 May-Jun. https://pubmed.ncbi.nlm.nih.gov/42024724/
+- Candidate reference (methods pending verification): "Information quality, understandability, actionability and readability of large language models for HIV health education: A cross-platform evaluation." *HIV Med*. 2026 Oct 18. https://pubmed.ncbi.nlm.nih.gov/42893792/
