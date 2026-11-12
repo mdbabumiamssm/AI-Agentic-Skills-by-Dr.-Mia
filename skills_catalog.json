@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T14:11:07.817561+00:00",
+  "generated_at": "2026-11-12T14:39:53.363736+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 700,
+  "total_skills": 747,
   "total_errors": 21,
   "skills": [
     {
@@ -311,6 +311,29 @@
       "capabilities": [
         "Workflow",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "aws-agent-toolkit-integration",
+      "description": "Select, install, configure, and verify official AWS Agent Toolkit MCP servers, skills, or plugins for an AI coding agent working with AWS.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/AI_Providers/AwsAgentToolkitIntegration_Agent/SKILL.md",
+      "relative_path": "AI_Providers/AwsAgentToolkitIntegration_Agent/SKILL.md",
+      "last_modified": "2026-11-10T15:19:47.518576+00:00",
+      "body_length": 8731,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -630,6 +653,29 @@
       ]
     },
     {
+      "name": "agent-missing-evidence-safety-evaluation",
+      "description": "Evaluate tool-using agents when truthful responses omit permission-critical facts, measuring prohibited actions, evidence recovery, and unnecessary abstention on paired tasks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/AgentMissingEvidenceSafetyEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/AgentMissingEvidenceSafetyEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-23T12:41:47.725416+00:00",
+      "body_length": 8179,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "agent-sandbox-checkpoint-restore",
       "description": "Plan turn-aware, host-side checkpoint/restore for sandboxed agents by classifying OS-visible side effects and recovery-relevant state.",
       "tool_type": "",
@@ -716,6 +762,53 @@
       ]
     },
     {
+      "name": "airlock-multi-agent-fault-containment",
+      "description": "Reproduce and evaluate selective post-alert containment of multi-agent faults using narrowed permissions, dependency provenance, quarantine, and guarded cuts while measuring healthy work retention.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/AirlockMultiAgentFaultContainment_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/AirlockMultiAgentFaultContainment_Agent/SKILL.md",
+      "last_modified": "2026-11-05T13:57:34.912349+00:00",
+      "body_length": 9512,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Reproduction workflow",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "autonomous-research-benchmarking",
+      "description": "Set up and assess autonomous language-model research using Auto-Research Arena principles, separating admissibility, target improvement, resource budgets, and independently validated scientific progress.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/AutonomousResearchBenchmarking_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/AutonomousResearchBenchmarking_Agent/SKILL.md",
+      "last_modified": "2026-10-27T15:15:32.623192+00:00",
+      "body_length": 8291,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "cherry-studio-agent-workbench",
       "description": "Operate Cherry Studio as a multi-provider AI workbench for assistants, autonomous agents, coding-agent integrations, local model routing, credentials, and guardrails.",
       "tool_type": "",
@@ -785,6 +878,81 @@
       ]
     },
     {
+      "name": "computer-agent-task-verification",
+      "description": "Verify computer-agent task completion through explicit criteria, adaptive GUI or code checks, and traceable evidence for evaluation, data curation, and training.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ComputerAgentTaskVerification_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ComputerAgentTaskVerification_Agent/SKILL.md",
+      "last_modified": "2026-10-30T13:31:34.244006+00:00",
+      "body_length": 8443,
+      "capabilities": [
+        "Overview",
+        "Source and implementation status",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Confirmed method rules",
+        "Operational workflow",
+        "Evaluation against trajectory-only judgments",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "computer-use-task-verification",
+      "description": "Verify desktop, mobile, and web task completion through explicit success criteria, targeted environment exploration, and traceable evidence, with comparison against trajectory-only judgments.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ComputerUseTaskVerification_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ComputerUseTaskVerification_Agent/SKILL.md",
+      "last_modified": "2026-10-31T14:06:24.334208+00:00",
+      "body_length": 8228,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Source protocol and implementation status",
+        "Practical execution workflow",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "context-mode-agent-context-management",
+      "description": "Configure and validate Context Mode MCP tools and client hooks to contain tool output, retrieve indexed evidence, and preserve coding-agent session state while measuring context savings and task fidelity.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ContextModeAgentContextManagement_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ContextModeAgentContextManagement_Agent/SKILL.md",
+      "last_modified": "2026-10-21T13:09:10.452780+00:00",
+      "body_length": 9457,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "context-window-optimization-agents",
       "description": "Optimize AI coding-agent context by sandboxing verbose tool output, preserving useful summaries, and managing transcript hygiene across agent runtimes.",
       "tool_type": "",
@@ -797,7 +965,7 @@
       ],
       "file_path": "Skills/Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
       "relative_path": "Agentic_AI/ContextWindowOptimizationAgents_Agent/SKILL.md",
-      "last_modified": "2026-09-05T14:10:33.036950+00:00",
+      "last_modified": "2026-09-05T14:11:09.444315+00:00",
       "body_length": 25028,
       "capabilities": []
     },
@@ -863,6 +1031,75 @@
       ]
     },
     {
+      "name": "deer-flow-agent-orchestration",
+      "description": "Set up and operate DeerFlow for long-horizon research, coding, and artifact creation using configured models, sandboxes, skills, memory, and scoped subagents.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DeerFlowAgentOrchestration_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DeerFlowAgentOrchestration_Agent/SKILL.md",
+      "last_modified": "2026-10-21T13:08:08.549159+00:00",
+      "body_length": 10281,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "deer-flow-long-horizon-agent-harness",
+      "description": "Set up and operate DeerFlow for extended research, coding, and creation tasks using configured models, tools, sandboxes, memory, and controlled subagent delegation.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DeerFlowLongHorizonAgentHarness_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DeerFlowLongHorizonAgentHarness_Agent/SKILL.md",
+      "last_modified": "2026-11-12T14:38:41.907288+00:00",
+      "body_length": 7208,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "deer-flow-long-horizon-agent-workflows",
+      "description": "Configure and operate DeerFlow for bounded research and coding workflows using sandboxes, tools, skills, memory, and subagents, with artifact validation and interrupted-run recovery.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DeerFlowLongHorizonAgentWorkflows_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DeerFlowLongHorizonAgentWorkflows_Agent/SKILL.md",
+      "last_modified": "2026-10-29T14:33:55.618688+00:00",
+      "body_length": 10759,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "deer-flow-superagent-harness",
       "description": "Use Deer Flow, ByteDance''s open-source long-horizon SuperAgent harness, to research, code, and create with sandboxes, memories, tools, skills, subagents, and a message gateway.",
       "tool_type": "",
@@ -881,6 +1118,128 @@
         "Overview",
         "When to Use This Skill",
         "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "dify-agentic-workflow-operations",
+      "description": "Build, evaluate, and deploy Dify agentic workflows and retrieval pipelines with configured model providers, tools, and version-aware cloud or self-hosted operations.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DifyAgenticWorkflowOperations_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DifyAgenticWorkflowOperations_Agent/SKILL.md",
+      "last_modified": "2026-10-22T13:12:21.107351+00:00",
+      "body_length": 10265,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "dify-agentic-workflows",
+      "description": "Build, evaluate, deploy, and troubleshoot Dify agentic workflows and RAG pipelines with version-verified model, tool, and deployment configuration.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DifyAgenticWorkflows_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DifyAgenticWorkflows_Agent/SKILL.md",
+      "last_modified": "2026-11-11T14:48:32.762067+00:00",
+      "body_length": 10024,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Operational Workflow",
+        "Acceptance Criteria",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "enforceable-human-approval-for-agents",
+      "description": "Threat-model and test human approval gates against agent-controlled platforms, using I-HITL to distinguish enforceable approval from agent-accessible authentication.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/EnforceableHumanApprovalForAgents_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/EnforceableHumanApprovalForAgents_Agent/SKILL.md",
+      "last_modified": "2026-10-27T15:17:58.158917+00:00",
+      "body_length": 9844,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Evidence baseline and limits",
+        "Workflow: bounded initial assessment",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "executable-research-environments",
+      "description": "Turn research papers into executable environments with reproduced baselines, open research objectives, fair evaluation, and traceable artifacts using the Scientist World workflow.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ExecutableResearchEnvironments_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ExecutableResearchEnvironments_Agent/SKILL.md",
+      "last_modified": "2026-11-07T14:54:40.064178+00:00",
+      "body_length": 10591,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow and acceptance gates",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "falsification-gated-agent-memory",
+      "description": "Evaluate experience-derived agent lessons as scoped hypotheses using verifier-backed transfer, falsification, and regression probes before admitting versioned updates into persistent memory.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/FalsificationGatedAgentMemory_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/FalsificationGatedAgentMemory_Agent/SKILL.md",
+      "last_modified": "2026-11-11T14:44:28.098046+00:00",
+      "body_length": 10808,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow",
+        "Illustrative falsification case",
         "Inputs / Outputs",
         "References"
       ]
@@ -943,6 +1302,31 @@
       ]
     },
     {
+      "name": "gepa-curator-agent-improvement",
+      "description": "Curate agent experiences and retrieve reliable prior successes for reflective prompt optimization, with failure attribution and held-out evaluation.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/GepaCuratorAgentImprovement_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/GepaCuratorAgentImprovement_Agent/SKILL.md",
+      "last_modified": "2026-10-28T14:16:04.564024+00:00",
+      "body_length": 7154,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Published method",
+        "Local execution workflow",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "gitagent-protocol",
       "description": "Use GitAgent Protocol to define, inspect, and package framework-agnostic, git-native AI agent specifications for repository-based agent workflows.",
       "tool_type": "",
@@ -983,6 +1367,53 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "heads-of-security-prompt-injection-defense",
+      "description": "Plan, implement, and evaluate learned attention gates for prompt injection defense, with explicit trust boundaries, verified architecture support, adaptive attacks, and utility checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/HeadsOfSecurityPromptInjectionDefense_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/HeadsOfSecurityPromptInjectionDefense_Agent/SKILL.md",
+      "last_modified": "2026-10-28T14:14:15.507612+00:00",
+      "body_length": 9769,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Bounded workflow",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "hol-guard-agent-runtime-security",
+      "description": "Install, configure, and verify HOL Guard runtime protection for supported AI agent hosts, including tool execution, secret access, prompt injection, and extension supply-chain checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/HolGuardAgentRuntimeSecurity_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/HolGuardAgentRuntimeSecurity_Agent/SKILL.md",
+      "last_modified": "2026-10-29T14:32:10.367867+00:00",
+      "body_length": 11054,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1155,6 +1586,29 @@
       ]
     },
     {
+      "name": "multi-turn-coding-agent-evaluation",
+      "description": "Evaluate coding agents with SWE-DIVE dynamic user simulation, conversation validation, retained transcripts, and final code tests under matched interaction and resource budgets.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/MultiTurnCodingAgentEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/MultiTurnCodingAgentEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-22T13:08:05.902207+00:00",
+      "body_length": 7115,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "swarm-orchestrator",
       "description": "Run Agent Swarms",
       "tool_type": "",
@@ -1214,6 +1668,30 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "openviking-agent-context-management",
+      "description": "Install and integrate OpenViking to organize agent knowledge, memory, and skills, retrieve relevant context, and verify persistence, memory updates, and stale-context handling.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/OpenvikingAgentContextManagement_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/OpenvikingAgentContextManagement_Agent/SKILL.md",
+      "last_modified": "2026-11-12T14:37:37.046908+00:00",
+      "body_length": 11868,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow: bounded integration trial",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1375,6 +1853,29 @@
       ]
     },
     {
+      "name": "selective-auditing-ai-decisions",
+      "description": "Monitor sequential AI decisions using confidence-guided expert audits, record corrections, measure audit coverage, and document the limits of error-control guarantees.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/SelectiveAuditingAiDecisions_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/SelectiveAuditingAiDecisions_Agent/SKILL.md",
+      "last_modified": "2026-10-23T12:40:25.333557+00:00",
+      "body_length": 7626,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "smolagents-2026",
       "description": "Build lightweight code-first or tool-calling agents with Hugging Face smolagents. Use when minimal abstractions, code agents, sandboxed execution, and model flexibility matter more than a heavy orchestration runtime.",
       "tool_type": "",
@@ -1395,6 +1896,31 @@
       ]
     },
     {
+      "name": "speccompact-agent-context-compaction",
+      "description": "Reproduce and evaluate SpecCompact context compaction using a fine-tuned small drafter, parallel summary slots, and target-model semantic verification, measuring retention and latency against ordinary summarization.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/SpeccompactAgentContextCompaction_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/SpeccompactAgentContextCompaction_Agent/SKILL.md",
+      "last_modified": "2026-11-05T13:53:13.471432+00:00",
+      "body_length": 11015,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Fifteen-minute workflow",
+        "Paired evaluation protocol",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "strands-agentcore-reference-architecture",
       "description": "Implement AWS Strands Agents with Amazon Bedrock AgentCore reference architectures for chat, voice, A2A/MCP, browser automation, observability, deployment, and security.",
       "tool_type": "",
@@ -1409,6 +1935,29 @@
       "relative_path": "Agentic_AI/StrandsAgentcoreReferenceArchitecture_Agent/SKILL.md",
       "last_modified": "2026-08-23T11:37:42.020132+00:00",
       "body_length": 5301,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "strategist-inference-strategy-evolution",
+      "description": "Evolve reusable executable inference blueprints through development-set evaluation, library reuse, compute budgets, and held-out validation when improving agent reasoning workflows.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/StrategistInferenceStrategyEvolution_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/StrategistInferenceStrategyEvolution_Agent/SKILL.md",
+      "last_modified": "2026-11-03T13:25:38.399303+00:00",
+      "body_length": 8499,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -1464,6 +2013,55 @@
       ]
     },
     {
+      "name": "tool-agent-prefix-executability-evaluation",
+      "description": "Evaluate tool-agent trajectories against schemas, state preconditions, and data dependencies, reporting executable-prefix reliability and recovery alongside final success.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/ToolAgentPrefixExecutabilityEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/ToolAgentPrefixExecutabilityEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-31T14:10:04.373495+00:00",
+      "body_length": 6176,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow",
+        "Metric contract",
+        "Verification and interpretation",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "veriharm-coding-agent-safety-evaluation",
+      "description": "Evaluate coding agents in isolated environments using paired task and harm tests to measure harmful success and detect unintended filesystem, permission, and configuration changes.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/VeriharmCodingAgentSafetyEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/VeriharmCodingAgentSafetyEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-03T13:27:27.123321+00:00",
+      "body_length": 7993,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "browser-use-2026",
       "description": "Build browser-native AI task automation with Browser Use. Use when real web execution, persistent browser workspaces, and managed browser infrastructure are core to the workflow rather than incidental.",
       "tool_type": "",
@@ -1501,6 +2099,53 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "webharbor-gui-agent-environments",
+      "description": "Prepare WebHarbor website mirrors, reset task state, and record reproducible GUI agent evaluations using released Docker environments, Harbor tasks, and site verifiers.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/WebharborGuiAgentEnvironments_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/WebharborGuiAgentEnvironments_Agent/SKILL.md",
+      "last_modified": "2026-11-03T13:24:37.711337+00:00",
+      "body_length": 12285,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "workflowarena-orchestration-evaluation",
+      "description": "Prepare and evaluate WorkflowArena runs to compare executable multi-agent orchestration through verified deliverables, delegation traces, and reproducible model-harness configurations.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/WorkflowarenaOrchestrationEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/WorkflowarenaOrchestrationEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-10T15:17:44.160035+00:00",
+      "body_length": 8107,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1679,8 +2324,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-09-05T13:45:48.073712+00:00",
-      "body_length": 60635,
+      "last_modified": "2026-11-04T14:09:39.284913+00:00",
+      "body_length": 64352,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2000,8 +2645,8 @@
       ],
       "file_path": "Skills/Clinical/Clinical_NLP/SKILL.md",
       "relative_path": "Clinical/Clinical_NLP/SKILL.md",
-      "last_modified": "2026-09-05T13:45:48.073712+00:00",
-      "body_length": 20726,
+      "last_modified": "2026-10-19T15:14:14.453782+00:00",
+      "body_length": 22190,
       "capabilities": [
         "When to Use This Skill",
         "Core Capabilities",
@@ -2159,6 +2804,29 @@
         "Inputs / Outputs",
         "Inputs",
         "Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "longitudinal-clinical-memory-evaluation",
+      "description": "Construct and evaluate patient-state memory across medical dialogue sessions, testing dated state changes, person attribution, and retrieval of safety-relevant evidence.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Clinical/LongitudinalClinicalMemoryEvaluation_Agent/SKILL.md",
+      "relative_path": "Clinical/LongitudinalClinicalMemoryEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-06T14:18:03.276242+00:00",
+      "body_length": 9881,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },
@@ -2506,8 +3174,8 @@
       ],
       "file_path": "Skills/Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
       "relative_path": "Clinical/TestTimeKnowledgeClinicalLlm_Agent/SKILL.md",
-      "last_modified": "2026-08-26T12:54:35.903481+00:00",
-      "body_length": 19721,
+      "last_modified": "2026-11-04T14:08:29.005147+00:00",
+      "body_length": 23841,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -3339,6 +4007,29 @@
         "Inputs / Outputs",
         "Inputs",
         "Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "molecular-representation-auditing",
+      "description": "Audit molecular fingerprints and learned embeddings for collisions, structural and 3D similarity, and endpoint relevance before clustering, dataset splitting, or virtual screening.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Drug_Discovery/MolecularRepresentationAuditing_Agent/SKILL.md",
+      "relative_path": "Drug_Discovery/MolecularRepresentationAuditing_Agent/SKILL.md",
+      "last_modified": "2026-11-06T14:20:57.493468+00:00",
+      "body_length": 9362,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
         "References"
       ]
     },
@@ -6596,6 +7287,52 @@
         "Best Practices",
         "Reference Materials",
         "Next Steps After QC"
+      ]
+    },
+    {
+      "name": "findendro-llm-backtest-contamination-audit",
+      "description": "Audit temporal knowledge in financial LLM backtests using verified FinDendro protocols, comparing observed factual responses with cutoff assertions and documenting contamination risks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Finance/FindendroLlmBacktestContaminationAudit_Agent/SKILL.md",
+      "relative_path": "Finance/FindendroLlmBacktestContaminationAudit_Agent/SKILL.md",
+      "last_modified": "2026-11-05T13:54:31.229864+00:00",
+      "body_length": 8258,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "quantitative-research-agent-evaluation",
+      "description": "Evaluate quantitative research agents with Quant-Arena through executable signals, research-only feedback, frozen strategies, and cost-aware held-out A-share assessment.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Finance/QuantitativeResearchAgentEvaluation_Agent/SKILL.md",
+      "relative_path": "Finance/QuantitativeResearchAgentEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-22T13:05:55.335439+00:00",
+      "body_length": 7927,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -11996,6 +12733,75 @@
       ]
     },
     {
+      "name": "attention-gated-prompt-injection-defense",
+      "description": "Design and evaluate Heads of Security attention gates for prompt injection research, covering token trust boundaries, gate training, adaptive attacks, and utility regression checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/LLM_Research/AttentionGatedPromptInjectionDefense_Agent/SKILL.md",
+      "relative_path": "LLM_Research/AttentionGatedPromptInjectionDefense_Agent/SKILL.md",
+      "last_modified": "2026-10-29T14:29:02.314038+00:00",
+      "body_length": 9167,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "context-compression-evidence-evaluation",
+      "description": "Audit whether compressed contexts retain evidence for reference resolution, explicit qualifiers, and minority perspectives, with traceable failures and compression-cost reporting.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/LLM_Research/ContextCompressionEvidenceEvaluation_Agent/SKILL.md",
+      "relative_path": "LLM_Research/ContextCompressionEvidenceEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-20T13:21:19.981172+00:00",
+      "body_length": 10072,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "decision-model-document-retrieval",
+      "description": "Navigate document hierarchies using shared-context decision-model judgments without token generation, and compare retrieval quality, latency, and cost with lexical and embedding retrieval.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/LLM_Research/DecisionModelDocumentRetrieval_Agent/SKILL.md",
+      "relative_path": "LLM_Research/DecisionModelDocumentRetrieval_Agent/SKILL.md",
+      "last_modified": "2026-10-27T15:14:24.150336+00:00",
+      "body_length": 6923,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "opentrons-protocol-agent",
       "description": "Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.",
       "tool_type": "",
@@ -12112,6 +12918,125 @@
         "Overview",
         "When to Use This Skill",
         "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "governed-enterprise-mcp-gateway",
+      "description": "Onboard MCP servers through Gram, map enterprise identity roles to access, and verify authorization and per-action policy enforcement with observable tests.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/MCP_Servers/GovernedEnterpriseMcpGateway_Agent/SKILL.md",
+      "relative_path": "MCP_Servers/GovernedEnterpriseMcpGateway_Agent/SKILL.md",
+      "last_modified": "2026-10-27T15:20:26.197654+00:00",
+      "body_length": 10453,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Documented deployment and identity baseline",
+        "Operational workflow",
+        "Completion criteria",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "gram-governed-mcp-gateway",
+      "description": "Configure and validate Gram MCP gateway access through upstream registration, identity-provider role mapping, and per-action policy checks, with deployment-specific feature verification.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/MCP_Servers/GramGovernedMcpGateway_Agent/SKILL.md",
+      "relative_path": "MCP_Servers/GramGovernedMcpGateway_Agent/SKILL.md",
+      "last_modified": "2026-10-21T13:09:54.227166+00:00",
+      "body_length": 7108,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "gram-mcp-gateway-operations",
+      "description": "Set up and troubleshoot Gram MCP gateways, register upstream servers, map enterprise identities to access rules, and verify policy enforcement with scoped access tests.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/MCP_Servers/GramMcpGatewayOperations_Agent/SKILL.md",
+      "relative_path": "MCP_Servers/GramMcpGatewayOperations_Agent/SKILL.md",
+      "last_modified": "2026-11-12T14:36:06.114139+00:00",
+      "body_length": 10355,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "mcp-gateway-registry-operations",
+      "description": "Deploy and operate MCP Gateway & Registry, register servers, configure Keycloak or Entra OAuth identities, and verify scoped tool access and audit records.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/MCP_Servers/McpGatewayRegistryOperations_Agent/SKILL.md",
+      "relative_path": "MCP_Servers/McpGatewayRegistryOperations_Agent/SKILL.md",
+      "last_modified": "2026-10-22T13:10:49.833959+00:00",
+      "body_length": 11674,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "mobile-mcp-device-automation",
+      "description": "Operate and test iOS and Android apps through Mobile MCP using device discovery, accessibility inspection, screenshots, and verified interactions on simulators, emulators, and physical devices.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/MCP_Servers/MobileMcpDeviceAutomation_Agent/SKILL.md",
+      "relative_path": "MCP_Servers/MobileMcpDeviceAutomation_Agent/SKILL.md",
+      "last_modified": "2026-11-11T14:49:45.198073+00:00",
+      "body_length": 10806,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow",
         "Inputs / Outputs",
         "References"
       ]
@@ -12753,6 +13678,29 @@
         "Combine into phyloseq",
         "Database Comparison",
         "Related Skills"
+      ]
+    },
+    {
+      "name": "synthetic-cancer-multiomics-evaluation",
+      "description": "Evaluate synthetic paired cancer RNA-expression and CNV cohorts using patient-disjoint comparisons, biological coherence, and training-data proximity diagnostics.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Multi_Omics/SyntheticCancerMultiomicsEvaluation_Agent/SKILL.md",
+      "relative_path": "Multi_Omics/SyntheticCancerMultiomicsEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-06T14:24:38.831305+00:00",
+      "body_length": 8646,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -15708,6 +16656,29 @@
       ]
     },
     {
+      "name": "ml-research-artifact-reproducibility",
+      "description": "Reconstruct ML experiments from papers, code, and supporting artifacts, preserve procedural decisions, and audit execution evidence for reproducible handoffs.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Research_Tools/MlResearchArtifactReproducibility_Agent/SKILL.md",
+      "relative_path": "Research_Tools/MlResearchArtifactReproducibility_Agent/SKILL.md",
+      "last_modified": "2026-11-06T14:16:45.972465+00:00",
+      "body_length": 6901,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "nano-banana",
       "description": "AI-powered reasoning image engine for generating and editing high-quality biomedical infographics and realistic images.",
       "tool_type": "",
@@ -16079,6 +17050,29 @@
         "Differential Expression",
         "Results",
         "Related Skills"
+      ]
+    },
+    {
+      "name": "research-synthesis-claim-fidelity-auditing",
+      "description": "Audit research report claims against source passages to detect overstated synthesis, preserve contradictions and qualifications, and propose evidence-faithful revisions.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Research_Tools/ResearchSynthesisClaimFidelityAuditing_Agent/SKILL.md",
+      "relative_path": "Research_Tools/ResearchSynthesisClaimFidelityAuditing_Agent/SKILL.md",
+      "last_modified": "2026-10-27T15:19:09.701788+00:00",
+      "body_length": 9038,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -17467,6 +18461,29 @@
       ]
     },
     {
+      "name": "adaptive-skill-granularity-routing",
+      "description": "Route coding tasks among primitive tools, macro skills, and hybrid execution, then recover from observable macro failures while preserving workspace state and verifying results.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/AdaptiveSkillGranularityRouting_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/AdaptiveSkillGranularityRouting_Agent/SKILL.md",
+      "last_modified": "2026-10-23T12:44:23.407066+00:00",
+      "body_length": 8395,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "agent-skill-catalog-graph",
       "description": "Use graph-backed catalogs such as ctx to discover, compare, and recommend skills, agents, MCPs, and harnesses for LLM automation workflows.",
       "tool_type": "",
@@ -17554,6 +18571,29 @@
       "relative_path": "Skills_Automation/ClaudeOfficialPluginsOperations_Agent/SKILL.md",
       "last_modified": "2026-08-27T17:29:46.405236+00:00",
       "body_length": 10210,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "coder-eval-agent-skill-regression-testing",
+      "description": "Test skills, MCP servers, and CLIs with coding agents using Coder Eval sandboxed YAML tasks, observable success criteria, controlled A/B experiments, and CI release gates.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/CoderEvalAgentSkillRegressionTesting_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/CoderEvalAgentSkillRegressionTesting_Agent/SKILL.md",
+      "last_modified": "2026-11-10T15:22:36.032983+00:00",
+      "body_length": 7819,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -17754,6 +18794,30 @@
         "Quality Metrics",
         "Drug Discovery Success Stories",
         "Author"
+      ]
+    },
+    {
+      "name": "protein-geometry-agent-evaluation",
+      "description": "Evaluate protein-structure agents by separating metadata lookup from coordinate geometry, fixing structure selections and tool conditions, and reporting reproducible calculations with uncertainty-aware comparisons.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Structural_Biology/ProteinGeometryAgentEvaluation_Agent/SKILL.md",
+      "relative_path": "Structural_Biology/ProteinGeometryAgentEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-10-20T13:18:33.810081+00:00",
+      "body_length": 13950,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -19217,6 +20281,52 @@
         "Cell",
         "HIPAA Compliance Reminders",
         "Writing Style"
+      ]
+    },
+    {
+      "name": "skill-centered-clinical-genomics-agent",
+      "description": "Orchestrate a research workflow for genomic interpretation using task-specific skills, traceable guideline and database evidence, computational analysis, and specialist review, informed by ClinGeX.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Variant_Interpretation/SkillCenteredClinicalGenomicsAgent_Agent/SKILL.md",
+      "relative_path": "Variant_Interpretation/SkillCenteredClinicalGenomicsAgent_Agent/SKILL.md",
+      "last_modified": "2026-10-30T13:33:00.111491+00:00",
+      "body_length": 10150,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "document-ingestion-semantic-fidelity",
+      "description": "Validate Word and PDF ingestion for loss of meaning carried by formatting, preserve source-linked cues, and test requirement recovery before documents enter agent workflows.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Workflow_Management/DocumentIngestionSemanticFidelity_Agent/SKILL.md",
+      "relative_path": "Workflow_Management/DocumentIngestionSemanticFidelity_Agent/SKILL.md",
+      "last_modified": "2026-10-22T13:09:18.087627+00:00",
+      "body_length": 9850,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
