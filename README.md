@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 747 skills across 49 categories. Last refresh: 2026-11-12T14:39:53.363736+00:00._
+_Auto-generated index. 749 skills across 49 categories. Last refresh: 2026-11-13T15:31:00.843587+00:00._
 
 ### 3D_Genomics (8)
 
@@ -902,7 +902,7 @@ _Auto-generated index. 747 skills across 49 categories. Last refresh: 2026-11-12
 - **bio-transcription-translation** — Transcribe DNA to RNA and translate to protein using Biopython. Use when converting between DNA, RNA, and protein sequences, finding ORFs...
 - **bio-write-sequences** — Write biological sequences to files (FASTA, FASTQ, GenBank, EMBL) using Biopython Bio.SeqIO. Use when saving sequences, creating new sequ...
 
-### Skills_Automation (8)
+### Skills_Automation (10)
 
 - **adaptive-skill-granularity-routing** — Route coding tasks among primitive tools, macro skills, and hybrid execution, then recover from observable macro failures while preservin...
 - **agent-skill-catalog-graph** — Use graph-backed catalogs such as ctx to discover, compare, and recommend skills, agents, MCPs, and harnesses for LLM automation workflows.
@@ -910,6 +910,8 @@ _Auto-generated index. 747 skills across 49 categories. Last refresh: 2026-11-12
 - **claude-code-skill-marketplace-ops** — Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependen...
 - **claude-official-plugins-operations** — Use Anthropic-managed claude-plugins-official for vetted Claude Code plugin discovery, trust review, installation hygiene, dependency ass...
 - **coder-eval-agent-skill-regression-testing** — Test skills, MCP servers, and CLIs with coding agents using Coder Eval sandboxed YAML tasks, observable success criteria, controlled A/B ...
+- **grimoire-oci-agent-config-packaging** — Package and distribute AI-agent configuration with Grimoire OCI artifacts, digest-pinned installs, reviewed updates, rollback, and runtim...
+- **nvidia-skill-evaluator** — Evaluate AI agent skills with NVIDIA SkillEvaluator using quality gates, semantic overlap checks, synthetic datasets, and live comparison...
 - **open-design-agentic-prototyping** — Use Open Design to plan safe local-first agentic workflows for design systems, prototypes, previews, and HTML/PDF/PPTX/MP4 exports.
 - **refero-design-research-skill** — Research-first UI design skill for using Refero MCP to study real app screens and flows before making product design decisions.
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T14:39:53.363736+00:00",
+  "generated_at": "2026-11-13T15:31:00.843587+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 747,
+  "total_skills": 749,
   "total_errors": 21,
   "skills": [
     {
@@ -1066,7 +1066,7 @@
       ],
       "file_path": "Skills/Agentic_AI/DeerFlowLongHorizonAgentHarness_Agent/SKILL.md",
       "relative_path": "Agentic_AI/DeerFlowLongHorizonAgentHarness_Agent/SKILL.md",
-      "last_modified": "2026-11-12T14:38:41.907288+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 7208,
       "capabilities": [
         "Overview",
@@ -1158,7 +1158,7 @@
       ],
       "file_path": "Skills/Agentic_AI/DifyAgenticWorkflows_Agent/SKILL.md",
       "relative_path": "Agentic_AI/DifyAgenticWorkflows_Agent/SKILL.md",
-      "last_modified": "2026-11-11T14:48:32.762067+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 10024,
       "capabilities": [
         "Overview",
@@ -1232,7 +1232,7 @@
       ],
       "file_path": "Skills/Agentic_AI/FalsificationGatedAgentMemory_Agent/SKILL.md",
       "relative_path": "Agentic_AI/FalsificationGatedAgentMemory_Agent/SKILL.md",
-      "last_modified": "2026-11-11T14:44:28.098046+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 10808,
       "capabilities": [
         "Overview",
@@ -1683,7 +1683,7 @@
       ],
       "file_path": "Skills/Agentic_AI/OpenvikingAgentContextManagement_Agent/SKILL.md",
       "relative_path": "Agentic_AI/OpenvikingAgentContextManagement_Agent/SKILL.md",
-      "last_modified": "2026-11-12T14:37:37.046908+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 11868,
       "capabilities": [
         "Overview",
@@ -12984,7 +12984,7 @@
       ],
       "file_path": "Skills/MCP_Servers/GramMcpGatewayOperations_Agent/SKILL.md",
       "relative_path": "MCP_Servers/GramMcpGatewayOperations_Agent/SKILL.md",
-      "last_modified": "2026-11-12T14:36:06.114139+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 10355,
       "capabilities": [
         "Overview",
@@ -13030,7 +13030,7 @@
       ],
       "file_path": "Skills/MCP_Servers/MobileMcpDeviceAutomation_Agent/SKILL.md",
       "relative_path": "MCP_Servers/MobileMcpDeviceAutomation_Agent/SKILL.md",
-      "last_modified": "2026-11-11T14:49:45.198073+00:00",
+      "last_modified": "2026-11-12T14:39:54.948710+00:00",
       "body_length": 10806,
       "capabilities": [
         "Overview",
@@ -18598,6 +18598,54 @@
         "Overview",
         "When to Use This Skill",
         "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "grimoire-oci-agent-config-packaging",
+      "description": "Package and distribute AI-agent configuration with Grimoire OCI artifacts, digest-pinned installs, reviewed updates, rollback, and runtime compatibility checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/GrimoireOciAgentConfigPackaging_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/GrimoireOciAgentConfigPackaging_Agent/SKILL.md",
+      "last_modified": "2026-11-13T15:30:50.242864+00:00",
+      "body_length": 7612,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Completion criteria",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "nvidia-skill-evaluator",
+      "description": "Evaluate AI agent skills with NVIDIA SkillEvaluator using quality gates, semantic overlap checks, synthetic datasets, and live comparisons for skill refresh and regression review.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/NvidiaSkillEvaluator_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/NvidiaSkillEvaluator_Agent/SKILL.md",
+      "last_modified": "2026-11-13T15:25:48.927467+00:00",
+      "body_length": 6380,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Evaluation procedure",
         "Inputs / Outputs",
         "References"
       ]
