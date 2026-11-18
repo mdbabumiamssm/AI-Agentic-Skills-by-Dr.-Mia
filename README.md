@@ -211,6 +211,18 @@ Recommended practice:
 4. run the repository refresh validation on changed or affected skills
 5. open a pull request with a concise technical summary
 
+## BioMedsAI
+
+The maintainer, MD Babu Mia, PhD, is the founder of **[BioMedsAI](https://biomedsai.com/)**, a public benefit corporation for biomedical research and discovery.
+
+- **Padma, the AI scientist**: a self-serve workspace for study design review, analysis of your own data, and interpretation.
+- **Scientist-led analysis** and an **end-to-end package** from samples to a finished study, with lab work through partner laboratories.
+- **Human Scientist Consultation**, **independent evaluation of biomedical AI**, and **workshops and training**.
+
+New accounts start with a **Free Day**. **The $100,000 Surprise** puts up to US$100,000 in total toward discounts on BioMedsAI packages while it lasts ([terms](https://biomedsai.com/legal/disclaimers/)).
+
+Contact: **[communications@biomedsai.com](mailto:communications@biomedsai.com)** · [biomedsai.com](https://biomedsai.com/) · Research use only.
+
 ## License
 
 Copyright (c) 2026 MD BABU MIA, PhD.
