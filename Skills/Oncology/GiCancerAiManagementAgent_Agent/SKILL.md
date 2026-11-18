@@ -60,6 +60,16 @@ This skill does not provide autonomous medical decisions. It helps assemble evid
 
 9. **ASCO GI cancer AI management scoping** - Use the 2026 ASCO Educational Book review on AI for GI cancer management as a clinical workflow reference when mapping clinician-governed AI use across endoscopy, imaging, pathology, molecular profiling, treatment selection, trial routing, surveillance, explicit human review gates, evidence traceability, and clinician-governed deployment boundaries; keep outputs framed as decision support with traceable sources and no autonomous recommendations.
 
+10. **GI recommendation concordance evaluation** - Compare model recommendations separately with dated guideline-based recommendations and documented multidisciplinary tumour-board decisions using the workflow below; agreement is not proof of treatment correctness.
+
+## GI Recommendation-Evaluation Workflow
+
+1. **Extract study context before citing results.** For the study linked in References (PMID 43037729), record the actual concordance definitions, case selection, cancer sites, stage, prior treatment, resection status, performance status, available biomarkers, model configuration, and analysis unit. Its exploratory single-centre cohort comprised 30 postoperative adults, 10 each with pancreatic, gastric, and colorectal adenocarcinoma, reviewed January 2025–January 2026 after curative or potentially curative surgery. Three model runs per case were aggregated by majority vote. Keep case-level, run-level, and cross-guideline denominators separate; retrieve missing methods or supplementary details before quoting results.
+2. **Freeze inputs and references.** Save the de-identified vignette, prompt, model/version, run date, and supplied documents. Log missing patient information, including fitness, comorbidities, preferences, biomarkers, and treatment feasibility; do not infer absent facts. Record each guideline's organization, version, effective date, source link, and relevant recommendation. For retrospective comparisons use the version in force on the board decision date; label any comparison with current guidance separately. Preserve the board decision, date, rationale, and information available to it.
+3. **Score two comparisons independently.** Maintain separate model-versus-guideline and model-versus-board assessments. The study defined full concordance as matching major strategy and minor details; minor deviation preserved strategy but differed in details; major deviation changed a major component or omitted a definite recommendation where guidelines provided one. Both deviation categories counted as discordance. Extract the entity-specific component rubric before applying it. Do not interpret matching guideline-adherence categories as direct model–board agreement.
+4. **Adjudicate disagreements.** As a local evaluation procedure, have a GI oncology clinician independently assess each comparison, blinded to the board decision when scoring guideline alignment. Refer disputed ratings to a second clinician or multidisciplinary review. Document the differing components, possible over/undertreatment, missing context, guideline ambiguity, patient-specific exceptions, adjudicators, rationale, and unresolved uncertainty; distinguish this procedure from the study's reported methods.
+5. **Require clinician review.** Report both comparisons with their denominators and missing-data limitations. Agreement does not establish correctness, safety, or patient benefit, and disagreement may reflect reasonable individualized care. Require documented clinician review before any recommendation informs treatment.
+
 ## Inputs / Outputs
 
 **Inputs**
@@ -82,3 +92,4 @@ This skill does not provide autonomous medical decisions. It helps assemble evid
 ## References
 
 - Goyal L, Chung C, Mori Y, Hall WA, Kehl KL. Harnessing Artificial Intelligence for the Management of Patients With GI Cancers. Am Soc Clin Oncol Educ Book. 2026 Jun. https://pubmed.ncbi.nlm.nih.gov/42044465/
+- ChatGPT concordance with guidelines and tumour board treatment recommendations in gastrointestinal cancer. Langenbecks Arch Surg. Published 2026 Nov 16. [Full text and methods](https://link.springer.com/article/10.1007/s00423-026-04351-5). https://pubmed.ncbi.nlm.nih.gov/43037729/
