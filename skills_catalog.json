@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T15:31:00.843587+00:00",
+  "generated_at": "2026-11-20T15:03:50.069004+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 749,
+  "total_skills": 761,
   "total_errors": 21,
   "skills": [
     {
@@ -699,6 +699,29 @@
       ]
     },
     {
+      "name": "agent-scan-security-auditing",
+      "description": "Audit AI agents, MCP servers, and agent skills with Agent Scan through scoped scans, evidence review, remediation tracking, and verification rescans.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/AgentScanSecurityAuditing_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/AgentScanSecurityAuditing_Agent/SKILL.md",
+      "last_modified": "2026-11-19T14:03:18.953095+00:00",
+      "body_length": 10821,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "plan-and-solve-agent",
       "description": "Breaks down complex queries into a step-by-step plan before execution, improving performance on multi-hop reasoning tasks.",
       "tool_type": "",
@@ -1146,6 +1169,29 @@
       ]
     },
     {
+      "name": "dify-agentic-workflows-and-rag",
+      "description": "Build, evaluate, deploy, and troubleshoot Dify agentic workflows and RAG pipelines with version-verified model, tool, and retrieval configuration.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/DifyAgenticWorkflowsAndRag_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/DifyAgenticWorkflowsAndRag_Agent/SKILL.md",
+      "last_modified": "2026-11-17T16:15:50.855950+00:00",
+      "body_length": 12627,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "dify-agentic-workflows",
       "description": "Build, evaluate, deploy, and troubleshoot Dify agentic workflows and RAG pipelines with version-verified model, tool, and deployment configuration.",
       "tool_type": "",
@@ -1417,6 +1463,32 @@
       ]
     },
     {
+      "name": "knowhere-document-ingestion-for-rag",
+      "description": "Extract documents with Knowhere into structured chunks, preserve available source locations, and validate extraction fidelity before production RAG indexing.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/KnowhereDocumentIngestionForRag_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/KnowhereDocumentIngestionForRag_Agent/SKILL.md",
+      "last_modified": "2026-11-14T14:59:37.122666+00:00",
+      "body_length": 11466,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Documented input coverage",
+        "Workflow",
+        "Output schemas and provenance",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "langgraph-production-2026",
       "description": "Build durable LangGraph-based agents with checkpoints, interrupts, human review, and observability. Use when agent state, resumability, or long-running orchestration matter more than lightweight demos.",
       "tool_type": "",
@@ -1434,6 +1506,31 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "langfuse-agent-observability-and-evaluation",
+      "description": "Instrument OpenTelemetry-based agent traces with Langfuse, build evaluation datasets, attach scores, and compare prompt or harness revisions to diagnose failures and regressions.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/LangfuseAgentObservabilityAndEvaluation_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/LangfuseAgentObservabilityAndEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-19T14:02:14.565740+00:00",
+      "body_length": 10520,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Execution workflow",
+        "Troubleshooting and completion checks",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1540,6 +1637,30 @@
         "Workflow",
         "When to Use",
         "Output Requirements"
+      ]
+    },
+    {
+      "name": "mcp-tool-provider-binding-audit",
+      "description": "Audit multi-server MCP clients for tool-provider misbinding using provider-qualified inventories, metadata spoofing cases, and intended-versus-selected provider traces.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/McpToolProviderBindingAudit_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/McpToolProviderBindingAudit_Agent/SKILL.md",
+      "last_modified": "2026-11-17T16:10:13.493019+00:00",
+      "body_length": 10405,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow: bounded 15-minute audit",
+        "Inputs / Outputs",
+        "References"
       ]
     },
     {
@@ -1921,6 +2042,33 @@
       ]
     },
     {
+      "name": "spring-ai-agent-tools-and-skills",
+      "description": "Integrate spring-ai-agent-utils into Java applications with compatible Spring AI dependencies, registered tools, loaded agent skills, context handling, and executable failure checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/SpringAiAgentToolsAndSkills_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/SpringAiAgentToolsAndSkills_Agent/SKILL.md",
+      "last_modified": "2026-11-20T15:03:45.444969+00:00",
+      "body_length": 14460,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Workflow: select and verify dependencies",
+        "Executable application example",
+        "Extend loading and tool registration",
+        "Handle context and failures",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "strands-agentcore-reference-architecture",
       "description": "Implement AWS Strands Agents with Amazon Bedrock AgentCore reference architectures for chat, voice, A2A/MCP, browser automation, observability, deployment, and security.",
       "tool_type": "",
@@ -1958,6 +2106,29 @@
       "relative_path": "Agentic_AI/StrategistInferenceStrategyEvolution_Agent/SKILL.md",
       "last_modified": "2026-11-03T13:25:38.399303+00:00",
       "body_length": 8499,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "structure-guided-agent-memory-folding",
+      "description": "Evaluate structure-guided folding of persistent agent memories to reduce record count and retrieved context while measuring evidence retention, retrieval quality, token usage, and latency.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Agentic_AI/StructureGuidedAgentMemoryFolding_Agent/SKILL.md",
+      "relative_path": "Agentic_AI/StructureGuidedAgentMemoryFolding_Agent/SKILL.md",
+      "last_modified": "2026-11-20T15:02:16.591578+00:00",
+      "body_length": 8545,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -2324,8 +2495,8 @@
       ],
       "file_path": "Skills/Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
       "relative_path": "Clinical/ClinicalLlmEvaluationBenchmarking_Agent/SKILL.md",
-      "last_modified": "2026-11-04T14:09:39.284913+00:00",
-      "body_length": 64352,
+      "last_modified": "2026-11-15T14:45:34.711500+00:00",
+      "body_length": 66345,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
@@ -12802,6 +12973,32 @@
       ]
     },
     {
+      "name": "rag-counterfactual-provenance-auditing",
+      "description": "Audit whether cited RAG claims respond to retrieved evidence using controlled factual substitutions, repeated generation, and unchanged-context controls, while separating citation support from provenance.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/LLM_Research/RagCounterfactualProvenanceAuditing_Agent/SKILL.md",
+      "relative_path": "LLM_Research/RagCounterfactualProvenanceAuditing_Agent/SKILL.md",
+      "last_modified": "2026-11-14T14:56:02.835045+00:00",
+      "body_length": 11234,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Execution sequence and time budget",
+        "Measurement definitions",
+        "Optional attribution comparison",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "opentrons-protocol-agent",
       "description": "Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.",
       "tool_type": "",
@@ -14301,12 +14498,13 @@
       ],
       "file_path": "Skills/Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
       "relative_path": "Oncology/GiCancerAiManagementAgent_Agent/SKILL.md",
-      "last_modified": "2026-08-25T17:42:01.846070+00:00",
-      "body_length": 5761,
+      "last_modified": "2026-11-18T14:14:05.575887+00:00",
+      "body_length": 9094,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
         "Core Capabilities",
+        "GI Recommendation-Evaluation Workflow",
         "Inputs / Outputs",
         "References"
       ]
@@ -18532,6 +18730,30 @@
       ]
     },
     {
+      "name": "ai-rulez-agent-configuration-governance",
+      "description": "Govern AI agent rules, skills, plugins and MCP configuration with ai-rulez through canonical authoring, reproducible generation, artifact validation, dependency locking and provenance checks.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/AiRulezAgentConfigurationGovernance_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/AiRulezAgentConfigurationGovernance_Agent/SKILL.md",
+      "last_modified": "2026-11-14T14:57:04.257503+00:00",
+      "body_length": 7347,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Execution and completion criteria",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "claude-code-skill-marketplace-ops",
       "description": "Assess and safely adopt Claude Code skills/plugins from large marketplaces such as ccpi/tonsofskills, covering discovery, trust, dependencies, conflicts, and installation hygiene.",
       "tool_type": "",
@@ -18615,7 +18837,7 @@
       ],
       "file_path": "Skills/Skills_Automation/GrimoireOciAgentConfigPackaging_Agent/SKILL.md",
       "relative_path": "Skills_Automation/GrimoireOciAgentConfigPackaging_Agent/SKILL.md",
-      "last_modified": "2026-11-13T15:30:50.242864+00:00",
+      "last_modified": "2026-11-13T15:31:02.285810+00:00",
       "body_length": 7612,
       "capabilities": [
         "Overview",
@@ -18639,7 +18861,7 @@
       ],
       "file_path": "Skills/Skills_Automation/NvidiaSkillEvaluator_Agent/SKILL.md",
       "relative_path": "Skills_Automation/NvidiaSkillEvaluator_Agent/SKILL.md",
-      "last_modified": "2026-11-13T15:25:48.927467+00:00",
+      "last_modified": "2026-11-13T15:31:02.286810+00:00",
       "body_length": 6380,
       "capabilities": [
         "Overview",
@@ -18688,6 +18910,75 @@
       "relative_path": "Skills_Automation/ReferoDesignResearchSkill_Agent/SKILL.md",
       "last_modified": "2026-05-17T16:07:43.967967+00:00",
       "body_length": 4051,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "skill-guided-post-training",
+      "description": "Design and evaluate natural-language skill interventions that improve teacher demonstrations for supervised fine-tuning, measuring task success separately from undesirable behavioral habits.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/SkillGuidedPostTraining_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/SkillGuidedPostTraining_Agent/SKILL.md",
+      "last_modified": "2026-11-20T15:01:12.609011+00:00",
+      "body_length": 9902,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "waza-agent-skill-evaluation",
+      "description": "Evaluate agent workflows, custom agents, and skills with Waza using representative scenarios, deterministic checks, model-based graders, inspectable evidence, and CI regression gates.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Skills_Automation/WazaAgentSkillEvaluation_Agent/SKILL.md",
+      "relative_path": "Skills_Automation/WazaAgentSkillEvaluation_Agent/SKILL.md",
+      "last_modified": "2026-11-14T14:58:21.292019+00:00",
+      "body_length": 10688,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
+      "name": "atlas-coding-agent-change-tracking",
+      "description": "Connect supported coding agents to Atlas, trace sessions to repository changes, query their context, and prepare attributed changes for Git review.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/Software_Engineering/AtlasCodingAgentChangeTracking_Agent/SKILL.md",
+      "relative_path": "Software_Engineering/AtlasCodingAgentChangeTracking_Agent/SKILL.md",
+      "last_modified": "2026-11-17T16:14:21.527761+00:00",
+      "body_length": 8932,
       "capabilities": [
         "Overview",
         "When to Use This Skill",
