@@ -224,7 +224,7 @@ This repository includes open-source components and reference material under the
 
 <!-- BEGIN: PIPELINE_INDEX -->
 
-_Auto-generated index. 761 skills across 49 categories. Last refresh: 2026-11-20T15:03:50.069004+00:00._
+_Auto-generated index. 762 skills across 49 categories. Last refresh: 2026-11-21T13:46:00.322770+00:00._
 
 ### 3D_Genomics (8)
 
@@ -654,12 +654,13 @@ _Auto-generated index. 761 skills across 49 categories. Last refresh: 2026-11-20
 - **tcr-repertoire-analysis-agent** — AI-powered T-cell receptor repertoire analysis for cancer diagnosis, immunotherapy response prediction, and therapeutic TCR selection usi...
 - **tme-immune-profiling-agent** — Comprehensive AI-powered tumor microenvironment immune profiling integrating bulk deconvolution, single-cell analysis, and spatial transc...
 
-### LLM_Research (4)
+### LLM_Research (5)
 
 - **attention-gated-prompt-injection-defense** — Design and evaluate Heads of Security attention gates for prompt injection research, covering token trust boundaries, gate training, adap...
 - **context-compression-evidence-evaluation** — Audit whether compressed contexts retain evidence for reference resolution, explicit qualifiers, and minority perspectives, with traceabl...
 - **decision-model-document-retrieval** — Navigate document hierarchies using shared-context decision-model judgments without token generation, and compare retrieval quality, late...
 - **rag-counterfactual-provenance-auditing** — Audit whether cited RAG claims respond to retrieved evidence using controlled factual substitutions, repeated generation, and unchanged-c...
+- **skill-guided-agent-post-training** — Design and assess skill-guided teacher trajectories for agent fine-tuning, with controlled training-data comparisons and held-out evaluat...
 
 ### Lab_Automation (1)
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T15:03:50.069004+00:00",
+  "generated_at": "2026-11-21T13:46:00.322770+00:00",
   "generator": "ARTIFICIALINTELLIGENCEGROUP-pipeline v1.0",
-  "total_skills": 761,
+  "total_skills": 762,
   "total_errors": 21,
   "skills": [
     {
@@ -2054,7 +2054,7 @@
       ],
       "file_path": "Skills/Agentic_AI/SpringAiAgentToolsAndSkills_Agent/SKILL.md",
       "relative_path": "Agentic_AI/SpringAiAgentToolsAndSkills_Agent/SKILL.md",
-      "last_modified": "2026-11-20T15:03:45.444969+00:00",
+      "last_modified": "2026-11-20T15:03:51.764926+00:00",
       "body_length": 14460,
       "capabilities": [
         "Overview",
@@ -2127,7 +2127,7 @@
       ],
       "file_path": "Skills/Agentic_AI/StructureGuidedAgentMemoryFolding_Agent/SKILL.md",
       "relative_path": "Agentic_AI/StructureGuidedAgentMemoryFolding_Agent/SKILL.md",
-      "last_modified": "2026-11-20T15:02:16.591578+00:00",
+      "last_modified": "2026-11-20T15:03:51.764926+00:00",
       "body_length": 8545,
       "capabilities": [
         "Overview",
@@ -12999,6 +12999,29 @@
       ]
     },
     {
+      "name": "skill-guided-agent-post-training",
+      "description": "Design and assess skill-guided teacher trajectories for agent fine-tuning, with controlled training-data comparisons and held-out evaluation of task outcomes and behavior.",
+      "tool_type": "",
+      "primary_tool": "",
+      "measurable_outcome": "Execute skill workflow successfully with valid output within 15 minutes.",
+      "allowed-tools": [
+        "read_file",
+        "run_shell_command",
+        "web_fetch"
+      ],
+      "file_path": "Skills/LLM_Research/SkillGuidedAgentPostTraining_Agent/SKILL.md",
+      "relative_path": "LLM_Research/SkillGuidedAgentPostTraining_Agent/SKILL.md",
+      "last_modified": "2026-11-21T13:42:02.464604+00:00",
+      "body_length": 8062,
+      "capabilities": [
+        "Overview",
+        "When to Use This Skill",
+        "Core Capabilities",
+        "Inputs / Outputs",
+        "References"
+      ]
+    },
+    {
       "name": "opentrons-protocol-agent",
       "description": "Generates executable Python protocols for Opentrons OT-2 and Flex robots from natural language descriptions.",
       "tool_type": "",
@@ -18931,7 +18954,7 @@
       ],
       "file_path": "Skills/Skills_Automation/SkillGuidedPostTraining_Agent/SKILL.md",
       "relative_path": "Skills_Automation/SkillGuidedPostTraining_Agent/SKILL.md",
-      "last_modified": "2026-11-20T15:01:12.609011+00:00",
+      "last_modified": "2026-11-20T15:03:51.764926+00:00",
       "body_length": 9902,
       "capabilities": [
         "Overview",
