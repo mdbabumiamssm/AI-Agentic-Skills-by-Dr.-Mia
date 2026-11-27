@@ -1,0 +1,24 @@
+# Added by repo-autopilot. Only first-party manifests are watched; vendored
+# collections under Skills/External_Collections and */repo/* are intentionally excluded.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 2
+    labels: [dependencies, autopilot]
+  - package-ecosystem: pip
+    directories:
+      - /tests
+      - /test_demonstration
+      - /Skills/Clinical/Clinical_Note_Summarization
+      - /Skills/Genomics/Single_Cell_RNA_QC
+      - /Skills/Skills_Automation
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      python-minor-and-patch:
+        update-types: [minor, patch]
+    labels: [dependencies, autopilot]
